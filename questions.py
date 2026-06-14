@@ -138,6 +138,7 @@ def scan_format(report: str) -> str:
 - Do not scan tests, docs, build files, IDE files, sample configs, generated files, resources, scripts, mocks, package metadata, or generated code as audited targets.
 
 ## Bounty Scope
+Use the current report to find issues base on this scope 
 Only valid if it matches one impact:
 - Critical: direct loss >= $5k; unauthorized transfer/mint/burn >= $5k; permanent fund freeze >= $5k with no on-chain fix, excluding general network unavailability, hard fork required.
 - High: crash/halt >=1/3 validators without direct validator-node access; permanent chain split requiring hard fork; default RPC crash via malicious block/tx payload propagated through network.
