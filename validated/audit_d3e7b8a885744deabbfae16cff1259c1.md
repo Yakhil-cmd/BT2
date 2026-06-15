@@ -1,0 +1,1 @@
+Let me search for relevant patterns in the sei-chain codebase that might match this vulnerability class.
