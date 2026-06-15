@@ -122,6 +122,7 @@ Output only one of the two outcomes above. No extra text.
 """
     return prompt
 
+
 def scan_format(report: str) -> str:
     """
     Generate a short cross-project analog scan prompt for Sei sei-chain.
@@ -131,46 +132,34 @@ def scan_format(report: str) -> str:
 ## External Report
 {report}
 
-## Access Rules (Strict)
-- Treat production files in questions.py scope_files as accessible context.
-- Do not claim missing/inaccessible files.
-- Do not ask for repository contents.
-- Do not scan tests, docs, build files, IDE files, sample configs, generated files, resources, scripts, mocks, package metadata, or generated code as audited targets.
+## Rules
+- Do not claim files are missing or ask for repo contents.
+- Ignore tests, docs, configs, scripts, mocks, generated code, metadata.
+- Always return either a valid report or #NoVulnerability found for this question.
 
-## Bounty Scope
-Use the current report to find issues base on this scope 
-Only valid if it matches one impact:
-- Critical: direct loss >= $5k; unauthorized transfer/mint/burn >= $5k; permanent fund freeze >= $5k with no on-chain fix, excluding general network unavailability, hard fork required.
-- High: crash/halt >=1/3 validators without direct validator-node access; permanent chain split requiring hard fork; default RPC crash via malicious block/tx payload propagated through network.
-- Medium: malicious proposer freezes blocks >=10 min beyond skipped slots; L0/L1/L2 network bug causes deterministic unintended smart contract execution with no funds at risk; default RPC/gRPC crash via unauthenticated endpoint access; crash/halt >=10% and <1/3 validators via crafted non-bruteforce messages while liveness remains; block production delay >2.5s on realistic validator hardware via crafted tx/messages excluding malicious proposers; permanent fund freeze < $5k with no on-chain fix and hard fork required; direct loss < $5k including unauthorized transfer/mint/burn.
-- Low: transaction fee calculation outside protocol bounds; mempool inclusion/ordering outside protocol selection/priority rules; crash/halt <10% validators via crafted non-bruteforce messages while liveness remains.
+## Scope
+Valid only if it matches Sei bounty impact:
+- Critical: fund loss/freeze >= $5k, unauthorized transfer/mint/burn >= $5k, hard fork needed for frozen funds.
+- High: halt/crash >=1/3 validators, permanent chain split needing hard fork, default RPC crash via propagated malicious block/tx.
+- Medium: proposer freeze >=10min, unintended contract execution from network bug, unauth RPC/gRPC crash, halt/crash >=10% validators, block delay >2.5s, fund loss/freeze < $5k.
+- Low: wrong fee calculation, wrong mempool ordering/inclusion, halt/crash <10% validators.
 
-## Objective
-Find whether the same vulnerability class can occur in Sei sei-chain in-scope code.
-Use the external report as a hint, not as proof.
-Focus on unprivileged users only.
-Always match the result to one Bounty Scope impact before deciding validity.
+## Task
+Check if the same vuln class can exist in Sei.
+External report is only a hint.
+Only unprivileged attacker paths count.
+Reject unless sei-chain is the necessary vulnerable step.
 
-## Method
-1. Classify vuln type: parser/deserialization, auth/origin confusion, antehandler/signature validation, EVM/Cosmos address confusion, precompile/module permission bypass, parallel execution race, state divergence, mempool/nonce/recheck bug, consensus/liveness bug, block validation, staking/slashing accounting, bank/token supply accounting, oracle validation, IBC/bridge validation, wasm execution/gas bug, EVM gas/fee/refund bug, replay/cache, upgrade/version confusion, RPC/P2P crash, resource bounds, local storage/state corruption.
-2. Map to Sei components and exact production files.
-3. Prove root cause with exact file/function/line references.
-4. Confirm concrete scoped impact and realistic likelihood.
-5. Reject if sei-chain is not a necessary vulnerable step.
+## Check
+1. Classify: parsing, auth/origin, ante/signature, EVM/Cosmos address, precompile/module bypass, parallel/state divergence, mempool/nonce, consensus/liveness, block validation, staking/slashing, bank/supply, oracle, IBC/bridge, wasm/gas, EVM gas/fee, replay/cache, upgrade/version, RPC/P2P crash, resource DoS, state corruption.
+2. Map to exact file/function/lines.
+3. Prove attacker-controlled path, root cause, scoped impact, and likelihood.
 
-## Disqualify Immediately
-- No reachable attacker-controlled entry path.
-- Requires validator key compromise, governance majority, admin/maintainer/trusted operator action, leaked keys, or private infrastructure access.
-- Requires malicious/compromised StateSync Peer or P2P-mode state sync.
-- External dependency/app/contract behavior is the only cause.
-- Test/docs/config/build/script-only issue.
-- Theoretical-only issue with no protocol impact.
-- Normal market/oracle/liquidity movement is the only cause.
-- Impact is not one of the listed Bounty Scope impacts.
-- Impact or likelihood missing.
+## Reject
+No attacker path; needs validator key/governance/admin/operator/leaked key/private infra; needs malicious StateSync peer/P2P-mode state sync; only external app/contract/dependency cause; test/docs/config/script issue; theoretical only; market/oracle/liquidity-only; out of scope; missing impact/likelihood.
 
-## Output (Strict)
-If valid analog exists, output:
+## Output
+If valid:
 
 ### Title
 [Clear vulnerability statement] - ([File: file_path])
@@ -182,10 +171,7 @@ If valid analog exists, output:
 ### Recommendation
 ### Proof of Concept
 
-If not, output exactly:
+Else exactly:
 #NoVulnerability found for this question.
-
-No extra text.
 """
     return prompt
-
