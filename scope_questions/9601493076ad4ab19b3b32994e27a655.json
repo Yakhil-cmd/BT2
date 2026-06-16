@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: zk_ee/src/common_structs/events_storage.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b7c69ea-8b47-4f31-9755-06079bce59e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/history_counter.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1bbba4e1-ab60-4010-b5de-8c5d5cbb4184?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/history_list.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_938a0baa-cc6c-4ea1-9255-7e3c8443b3e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/history_map/element_pool.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2e68cd43-5639-493d-98b7-74ca86fcf226?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/history_map/element_with_history.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a8c7ab18-4378-4922-9141-376d28362a59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/history_map/mod.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_590c31db-bd31-447d-9eb4-64607caf0724?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/interop_root_storage.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_443ff96e-a5e4-4fcc-82da-e1146a6cd6f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/logs_storage.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_254d6e10-3528-446d-b76a-c68d5b329270?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/mod.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0c5b474-f12e-427e-abe1-657069f91231?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/new_preimages_publication_storage.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc76fb06-3da4-4e56-bdb3-8d9fd80deed1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/new_settlement_layer_chain_id_storage.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_46310202-67f1-4a7b-9ebc-5887ad0ca486?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/proof_data.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_afee1ea3-0c8b-45f9-b56a-71e3e9c4d9e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/pubdata_compression.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5945169f-776d-4a17-9dca-5d4edd1cb9a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/skip_list_quasi_vec/mod.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_96733fec-02e7-40b9-9f1f-a05b81bf265d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/state_root_view.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_179dfdf1-fef1-43b1-b615-8beadec0be4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/system_hooks.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65fbe65c-e91b-4dec-93a6-f122f348da0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/warm_storage_key.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_95fe5de0-52c5-44c0-9388-de93f9db4118?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_structs/warm_storage_value.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_641167f1-2f93-48b1-987b-4a9ed111f88e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_traits/key_like_with_bounds.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8aa1f038-8d4b-47d1-8897-e3b72449626e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/common_traits/mod.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_732a37e8-21f0-41d0-b25b-4bb2659051a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/execution_environment_type.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0e16ab1a-b130-4757-96b0-4999c9b2db68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/lib.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c22eb3fa-35d4-441b-8cff-1e2facfbe655?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/memory/allocator_ext.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc947eff-e999-4459-a76f-c4f8ce9c1927?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/memory/byte_slice.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_40886942-6ddd-4c72-a280-768b767a9002?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: zk_ee/src/memory/mod.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_138c9224-dfa0-4d6c-8abd-4ece574f5efc?mode=deep",
+    "questions_generated": false
+  }
+]
