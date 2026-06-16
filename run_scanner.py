@@ -88,6 +88,8 @@ def main():
         skipped_count = 0
         counter = 0
 
+        bot = Validator(teardown=True)
+
         for i, audit_file in enumerate(audit_files, 1):
             if audit_file.name in processed_files:
                 print(f"[{i}/{total}] Skipping (already processed): {audit_file.name}")
@@ -100,8 +102,6 @@ def main():
                 with open(audit_file, 'r', encoding='utf-8') as f:
                     content = f.read()
 
-                # Initialize the validator and process the content
-                bot = Validator(teardown=True)
                 print(f"Processing content from {audit_file.name}...")
 
                 # Assuming bot.ask_question() is what processes the content
