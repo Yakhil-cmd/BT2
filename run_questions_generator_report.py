@@ -112,7 +112,7 @@ def main():
             print(f"Found {total} URLs needing reports")
 
             counter = 0
-            report = GetQuestions(teardown=True)
+            report = GetQuestions(teardown=True, show_browser=True)
             for i, url in enumerate(pending_urls):
                 print(f"[{i + 1}/{total}] Generating report for: {url}")
                 report.get_questions(url)
@@ -120,6 +120,7 @@ def main():
                 if counter >= 500:
                     break
 
+            report.flush_remaining_questions()
             print(f"\n=== Completed {total} reports ===")
 
     except Exception as e:

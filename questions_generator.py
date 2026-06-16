@@ -159,12 +159,11 @@ class GenerateQuestions:
 
 
 class GetQuestions:
-    def __init__(self, teardown=False):
+    def __init__(self, teardown=False, show_browser=False):
 
         s = Service(ChromeDriverManager().install())
         self.options = webdriver.ChromeOptions()
         for argument in (
-            "--headless=new",
             "--no-sandbox",
             "--disable-dev-shm-usage",
             "--disable-gpu",
@@ -172,12 +171,9 @@ class GetQuestions:
         ):
             self.options.add_argument(argument)
 
-        # --- Add these two lines here ---
-        # self.options.add_argument("--headless")
-        # self.options.add_argument("--window-size=1920,1080")
-        # ---------------------------------
+        if not show_browser:
+            self.options.add_argument("--headless=new")
 
-        # removed headless so the browser window is visible
         # ensure window is visible and starts maximized
         self.options.add_argument('--start-maximized')
         self.teardown = teardown
@@ -191,7 +187,45 @@ class GetQuestions:
             service=s)
         self.driver.implicitly_wait(50)
         self.collections_url = []
+        self.chunk_size = 25
+        self.pending_questions = []
         super(GetQuestions, self).__init__()
+
+    def _save_question_folder(self, questions, scanned_directory):
+        folder_name = str(uuid.uuid4())
+        folder_path = os.path.join(scanned_directory, folder_name)
+        os.makedirs(folder_path, exist_ok=True)
+
+        for question in questions:
+            filename = f"question_{uuid.uuid4()}.md"
+            filepath = os.path.join(folder_path, filename)
+
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(question)
+                f.write("\n")
+
+        print(f"Saved {len(questions)} questions to {folder_path}")
+
+    def _save_complete_question_batches(self, scanned_directory):
+        saved_folders = 0
+
+        while len(self.pending_questions) >= self.chunk_size:
+            chunk = self.pending_questions[:self.chunk_size]
+            self.pending_questions = self.pending_questions[self.chunk_size:]
+            self._save_question_folder(chunk, scanned_directory)
+            saved_folders += 1
+
+        return saved_folders
+
+    def flush_remaining_questions(self):
+        scanned_directory = os.environ.get('SCANNED_DIR', 'scanned')
+        os.makedirs(scanned_directory, exist_ok=True)
+
+        if not self.pending_questions:
+            return
+
+        self._save_question_folder(self.pending_questions, scanned_directory)
+        self.pending_questions = []
 
     def get_questions(self, url):
         scanned_directory = os.environ.get('SCANNED_DIR', 'scanned')
@@ -218,27 +252,14 @@ class GetQuestions:
             all_questions = self.get_question_content(clipboard_content)
 
             try:
-                chunk_size = 25
                 total_questions = len(all_questions)
-
-                for i in range(0, total_questions, chunk_size):
-                    chunk = all_questions[i:i + chunk_size]
-                    folder_name = str(uuid.uuid4())
-                    folder_path = os.path.join(scanned_directory, folder_name)
-                    os.makedirs(folder_path, exist_ok=True)
-
-                    for question in chunk:
-                        filename = f"question_{uuid.uuid4()}.md"
-                        filepath = os.path.join(folder_path, filename)
-
-                        with open(filepath, 'w', encoding='utf-8') as f:
-                            f.write(question)
-                            f.write("\n")
-
-                    print(f"Saved {len(chunk)} questions to {folder_path}")
+                self.pending_questions.extend(all_questions)
+                saved_folders = self._save_complete_question_batches(scanned_directory)
 
                 print(
-                    f"\nSuccessfully split {total_questions} questions into {((total_questions - 1) // chunk_size) + 1} folders")
+                    f"\nExtracted {total_questions} questions, saved {saved_folders} full folders, "
+                    f"{len(self.pending_questions)} questions waiting for next batch"
+                )
             except Exception as a:
                 print(a)
 
