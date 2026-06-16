@@ -1,4 +1,0 @@
-[File: 'basic_bootloader/src/bootloader/constants.rs -> Scope: Critical. Direct and publicly triggerable loss of funds'] [Function: SENDER_ACCOUNT_INTRINSIC_PUBDATA / L2_TX_INTRINSIC_PUBDATA / balance change pubdata accounting] Can an unprivileged sender trigger a tx where the sender's balance changes more than twice during execution (validation debit, execution credit from SELFDESTRUCT beneficiary, refund credit), causing the actual pubdata for sender balance diffs to exceed 2*33 bytes (the worst-case assumed in SENDER_ACCOUNT_INTRINSIC_PUBDATA), and the excess pubdata to be published without payment, draining the DA budget? Preconditions: tx where sender is also the beneficiary of a SELFDESTRUCT in the called contract; execution increases sender balance mid-tx; refund also increases sender balance; three distinct balance change
-
-```python
-questions = [
