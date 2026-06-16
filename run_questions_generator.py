@@ -52,10 +52,10 @@ def main():
         print(f"Found {total} questions in {pending_file}")
         print(f"Chrome headless: {should_run_chrome_headless()}")
 
+        bot = GenerateQuestions(teardown=True)
         # Process questions
         for i, question in enumerate(questions, 1):
             print(f"[{i}/{total}] Processing: {question[:50]}...")
-            bot = GenerateQuestions(teardown=True)
             bot.ask_question(question)
 
             if i >= 25:  # Process maximum 25 questions
