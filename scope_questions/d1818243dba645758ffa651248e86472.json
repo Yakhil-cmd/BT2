@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/block_data_keeper.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b2464ae-d12c-4c37-80b9-c3143eb93bd0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/chain_check.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cb25c385-ab99-4509-915f-42b3c1ad268b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/metadata_init_op.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c07599a0-cb28-40da-9dd1-54e7f62886a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/mod.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0afa1a18-80f2-4154-9428-1f73ea989dee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/post_system_init_op.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4d56ad58-275b-421b-aecb-c2dc0b7b2417?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/post_tx_loop_op.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bffc5c32-d0f4-4515-a0e6-9b95031832cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/pre_tx_loop_op.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_726bd799-7048-42c4-9c9c-a1a8ae89efa3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/tx_loop.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_03b439d3-7a9b-4783-8750-0a43e2a61498?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/batch_data.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c5e64e11-3082-423f-8f84-2ff5cb3d4483?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/block_data.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a457e809-5ccb-4f70-bf7e-4b3757d30d48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/metadata_op.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_137ab3d7-beb6-48df-a796-96150570ec1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/mod.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b2623f3-d511-4765-b6a7-a03506377134?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_init_op.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f19be214-9a2f-4939-81fa-26a6546f6d34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/da_commitment_generator/blake2s_commitment_generator.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_362586e9-e4d9-4cd4-92a4-6ab4da53b768?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/da_commitment_generator/blob_commitment_generator/brp_roots_of_unity.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d357a25-06e8-412f-aef7-4c2ef107acd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/da_commitment_generator/blob_commitment_generator/commitment_and_proof_advice.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8c42c972-8948-41da-bc6c-94f6c099baf8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/da_commitment_generator/blob_commitment_generator/mod.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1268dfa-62f2-44fe-b890-3a17ec6a58b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/da_commitment_generator/blob_commitment_generator/polynomial_evaluation.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fc3809d4-0ef8-4ecc-bef6-d829a7d27ee3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/da_commitment_generator/keccak256_commitment_generator.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9aa05095-b15d-4142-ad04-569833b7b356?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/da_commitment_generator/mod.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a0c49313-deaa-497a-8143-c41da3c03cea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/mod.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed89631a-8c9b-4c5a-8134-979674e97f63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/post_tx_op_proving_multiblock_batch.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c9d15e5c-e830-49cb-a2fd-7d6f534b5a12?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/post_tx_op_proving_singleblock_batch.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b8767d4c-672f-40b6-88e1-22169dabfeb0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/post_tx_op_sequencing.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c375610-ae1b-4566-b7f2-48e67a3173eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: basic_bootloader/src/bootloader/block_flow/zk/post_tx_op/public_input.rs -> Scope: High. Circuit, node, or program mismatches that make valid ZKsync OS executions unprovable and require verification key regeneration'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d48cf866-d3fd-4b1b-8316-706daf8797b2?mode=deep",
+    "questions_generated": false
+  }
+]
