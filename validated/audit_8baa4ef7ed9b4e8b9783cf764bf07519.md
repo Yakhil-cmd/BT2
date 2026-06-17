@@ -1,0 +1,1 @@
+Looking at the ZKsync OS codebase for an analog to the "wrong address used for balance check in an internal operation" vulnerability class, I need to trace every path where a balance is checked against an address that may not actually hold the funds.
