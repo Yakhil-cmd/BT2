@@ -1,0 +1,1 @@
+Based on my research, I need to check the Ethereum path's `validation_impl.rs` to see if it also correctly uses `with_infinite_ergs` when calling `parse_and_warm_up_access_list`.
