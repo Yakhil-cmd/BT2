@@ -1,0 +1,1 @@
+Let me look at the event hook dispatch mechanism to understand caller restrictions.
