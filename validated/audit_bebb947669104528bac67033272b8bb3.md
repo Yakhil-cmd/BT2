@@ -1,1 +1,0 @@
-Let me look at the EIP-7251 consolidation contract and the `compute_gas_refund` function more carefully.

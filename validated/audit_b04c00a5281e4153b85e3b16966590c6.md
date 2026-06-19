@@ -1,1 +1,0 @@
-Let me look more carefully at the `computational_native_used` calculation and the `resources_before_refund` usage pattern.
