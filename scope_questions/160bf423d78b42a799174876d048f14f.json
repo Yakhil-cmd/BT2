@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: rs/state_manager/src/split.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1cd15e15-c66a-45fb-b822-658167f2cb58?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/state_sync.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8cbeb026-3639-4d69-8fff-12bec75a1b92?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/state_sync/chunkable.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2405f921-0939-4b0e-9e16-0cc6a46ff118?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/state_sync/chunkable/cache.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ab02833-036f-4db7-b2f5-9a488189306a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/state_sync/types.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6fd90701-e528-4a26-96ed-fb00c7a76ab9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/state_sync/types/proto.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6199a2a0-2f57-476a-8147-d622d407b9d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/stream_encoding.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3cbef7e-39c6-41a4-bc1a-dd8b250dde76?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/tip.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7fcf306e-354b-431b-8812-d97597cd855b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/tree_diff.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d8577d2f-d932-498d-adda-046475b4f739?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/state_manager/src/tree_hash.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bbc067f8-a5a9-414c-a35b-ea24de7dff6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/base_types/src/canister_id.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c58b0589-421b-49bb-87f8-0fdb2c4f106c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/base_types/src/environment_variables.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f59a102e-14cc-4f85-8d9c-5ebacf645519?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/base_types/src/lib.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c0ccd1a2-7013-406a-bf87-73e00a6cf791?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/base_types/src/pb_internal/mod.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6cc9816f-f1a4-4baf-981f-4872a737336c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/base_types/src/principal_id.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a70eb1e3-7275-4bd8-a508-1d780e31940f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/cycles/src/compound_cycles.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f83c2351-67fe-4b3b-8651-c4394e25d940?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/cycles/src/cycles.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2d012ea3-a202-415f-a45b-7c3ae79e8a0a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/cycles/src/cycles_account_manager_subnet_config.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9ed59ea6-8a33-4f2e-81d3-2edaad4b56e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/cycles/src/cycles_cost_schedule.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_67929070-6fb5-4878-adac-51a3ba536dc6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/cycles/src/cycles_use_case.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b4e114e-5a04-47eb-9a00-f1aa9fe02024?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/cycles/src/lib.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_86c9c138-3c6d-4c0b-9ef1-b76b63865f96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/cycles/src/nominal_cycles.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56639fe8-ae01-4340-9cc3-0d0678e0abe9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/management_canister_types/src/bounded_vec.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e7b2dbdb-91f1-4cf7-bdf8-80adba0a3daf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/management_canister_types/src/data_size.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_254e50de-5e0b-4477-96eb-3bd7b19efbb3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/types/management_canister_types/src/http.rs -> Scope: Medium. Difficult or conditional attack with moderate impact: non-volumetric platform-level crash of a single replica, constrained subnet availability issue requiring node/boundary-node positioning, limited key/session/funds exposure, or memory corruption with narrow exploitability'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_584bdea0-9086-450c-bc68-e26104286db9?mode=deep",
+    "questions_generated": false
+  }
+]
