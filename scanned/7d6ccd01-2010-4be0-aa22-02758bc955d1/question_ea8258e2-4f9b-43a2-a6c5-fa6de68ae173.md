@@ -1,1 +1,0 @@
-[File: 'rs/registry/canister/src/mutations/node_management/do_update_node_domain_directly.rs -> Scope: High'] [Function: do_update_node_domain / domain_to_ascii_strict edge cases with empty string] Can a node operator call update_node_domain_directly with domain=Some(\
