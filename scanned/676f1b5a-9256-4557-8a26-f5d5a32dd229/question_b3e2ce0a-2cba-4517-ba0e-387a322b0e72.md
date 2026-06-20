@@ -1,0 +1,1 @@
+[File: 'rs/rosetta-api/common/rosetta_core/src/metrics.rs -> Scope: Medium'] [Function: RosettaMetricsMiddleware::call /metrics path bypass] Can an unprivileged API client sending a POST request to /metrics under the path-equality check req.uri().path() == \

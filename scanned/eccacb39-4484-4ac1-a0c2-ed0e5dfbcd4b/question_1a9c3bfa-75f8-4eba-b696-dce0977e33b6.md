@@ -1,0 +1,1 @@
+[File: 'rs/https_outcalls/adapter/src/cli.rs -> Scope: Medium'] [Function: Cli::get_config / IncomingSource deserialization / lib.rs start_server] Can an attacker who controls the config file supply `{\
