@@ -1,1 +1,0 @@
-[File: 'rs/registry/canister/src/invariants/hostos_version.rs -> Scope: High'] [Function: check_hostos_version_invariants / get_all_hostos_versions_of_nodes] Can an unprivileged governance participant, after a legitimate NNS proposal assigns a node to hostos_version_id=Some(\
