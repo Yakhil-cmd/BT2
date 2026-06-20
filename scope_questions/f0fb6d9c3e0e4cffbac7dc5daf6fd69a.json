@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/fetch_stripped_artifact/download.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_22b27481-80a4-4ae7-a98e-ba24867b738c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/fetch_stripped_artifact/metrics.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c54d423b-0e1e-42cc-9dc2-d6e2c1fc66c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/fetch_stripped_artifact/mod.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f015b02-d7f4-4038-9719-72f9ecf81654?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/fetch_stripped_artifact/stripper.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1bbb0b16-dfc1-4a0a-b546-06d351d574c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/fetch_stripped_artifact/types.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af434616-b33b-4a7b-8efc-f3d3c543392b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/fetch_stripped_artifact/types/rpc.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d03df45-1276-435f-ab0f-e26229a0322a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/fetch_stripped_artifact/types/stripped.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5784d4d-c927-49a9-a492-99e08afe448c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_downloader/src/lib.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_96440328-7825-479e-99a6-7764461be55d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/artifact_manager/src/lib.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_528f8e04-5ea4-493c-a67f-4e96da29c0e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/consensus_manager/src/lib.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_55454a2e-2c8f-4b36-9fc1-126349d7bb00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/consensus_manager/src/metrics.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8e46c6aa-6e18-4c81-8240-5ea9ce55a16d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/consensus_manager/src/receiver.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5bdd1721-1a96-40d4-b3f3-ba824a0b88c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/consensus_manager/src/sender.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c5fdfb2c-f9ea-41b5-9995-408bc5a34a50?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/memory_transport/src/lib.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bb68919-2c1c-4812-915d-ec29ce063ca2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/peer_manager/src/lib.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a3e4661c-c371-484f-8d48-ef1e8d7b7f3b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/peer_manager/src/metrics.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_542d24a0-03b2-4c0a-9cdc-9929a874aa08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/quic_transport/src/connection_handle.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_164f335d-a71d-4060-9de0-5c2938f02a7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/quic_transport/src/connection_manager.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e95bcef7-e099-4cca-908c-f2db8423e3d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/quic_transport/src/lib.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bf202e3b-c369-4142-9ee8-5ca98d3cc780?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/quic_transport/src/metrics.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c171e055-907b-46e5-98b4-f9af1bf75abb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/quic_transport/src/request_handler.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c6f44c6b-6d05-446f-8d68-41a7325503c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/state_sync_manager/src/lib.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_680d4a09-9f56-4332-81d6-e12c4880dd36?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/state_sync_manager/src/metrics.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_900cef3a-f70a-48b4-a8e3-6a72b5fd3d52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/state_sync_manager/src/ongoing.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d5ea6b2-cd2f-4495-af64-222b0f89e11a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rs/p2p/state_sync_manager/src/ongoing/chunks_to_download.rs -> Scope: High. Relatively straightforward attack with significant constrained impact: unauthorized neuron/governance access, canister integrity loss, threshold-signature misuse, ledger/cycles loss or minting under limiting preconditions, or cross-subnet/chain-fusion asset compromise'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82a196fd-ee46-407f-97b6-e062a7fc9f64?mode=deep",
+    "questions_generated": false
+  }
+]
