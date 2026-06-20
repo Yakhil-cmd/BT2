@@ -1,1 +1,0 @@
-[File: 'packages/icrc-ledger-types/src/icrc122/mod.rs -> schema.rs'] [Function: block_validator / item(mthd, strict_req, is_text())] Can an unprivileged block submitter inject a 122mint block with `mthd` set to an arbitrary string (e.g., `\
