@@ -1,1 +1,0 @@
-[File: 'rs/ledger_suite/icrc1/index-ng/src/main.rs -> Scope: High'] [Function: process_balance_changes (Approve branch)] Can a ledger that emits an `Approve` block as the very first block in its history (block index 0) with both `fee` and `effective_fee` unset cause the index to trap permanently at `ic_cdk::trap(\
