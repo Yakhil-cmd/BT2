@@ -1,1 +1,0 @@
-[File: 'rs/boundary_node/rate_limits/canister/add_config.rs -> Scope: Medium'] [Function: ConfigAdder::add_config / types.rs InputConfig::try_from duplicate detection] Can an authorized caller submit a config where two rules have identical `incident_id` and `description` but `rule_raw` blobs that are semantically equivalent JSON objects with different key orderings (e.g., `{\
