@@ -1,1 +1,0 @@
-[File: 'rs/ledger_suite/icrc1/src/lib.rs -> Scope: Medium'] [Function: Block::from_transaction / Operation::FeeCollector arm] Can an unprivileged ledger user trigger a code path where `Block::from_transaction` is called with a `Transaction` whose `operation` is `Operation::FeeCollector`, hitting the `panic!(\
