@@ -1,0 +1,1 @@
+Let me look at the `handle_construction_hash` function and how the transaction hash is actually computed.
