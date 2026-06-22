@@ -1,0 +1,1 @@
+Let me examine the `assert_valid_signals_for_messages` implementation and the XNet payload builder's `validate_signals` function more closely.
