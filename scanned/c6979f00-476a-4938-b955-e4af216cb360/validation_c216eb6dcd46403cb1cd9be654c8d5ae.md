@@ -1,1 +1,0 @@
-I was unable to read the full contents of the relevant functions due to index limitations. Let me explain what I was able to verify and what remains uncertain.
