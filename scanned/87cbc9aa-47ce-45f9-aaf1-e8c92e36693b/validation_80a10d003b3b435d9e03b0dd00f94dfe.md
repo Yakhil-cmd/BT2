@@ -1,1 +1,0 @@
-Looking at the exact code path in `process()` and its callers to verify the claimed ordering issue.
