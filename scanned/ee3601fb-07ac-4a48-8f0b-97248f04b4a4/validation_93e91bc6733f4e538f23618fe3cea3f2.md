@@ -1,1 +1,0 @@
-Let me look at the block validation and chain construction to understand the full guard.
