@@ -1,1 +1,0 @@
-[File: 'engine-transactions/src/eip_2930.rs -> Scope: Critical. Permanent freezing of funds'] [Function: Transaction2930::rlp_append / SignedTransaction2930::sender] Can an attacker exploit the asymmetry between the to-field encoding (None encoded as empty string via s.append(&\
