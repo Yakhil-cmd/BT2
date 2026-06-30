@@ -1,0 +1,1 @@
+Let me look at the native precompile and the exit-to-NEAR flow more carefully, as these involve multi-step operations with fund transfers.
