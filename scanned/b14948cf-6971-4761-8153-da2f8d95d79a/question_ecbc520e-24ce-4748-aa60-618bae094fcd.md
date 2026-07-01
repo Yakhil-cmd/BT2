@@ -1,1 +1,0 @@
-[File: 'network/p2p/inspector/validation/utils.go -> Scope: Critical. Execution-layer vulnerability causing unauthorized account manipulation or unauthorized mutation of another user account state'] [Function: inspectGraftMessages / duplicateStrTracker.track / validateTopic] Can an attacker send GRAFT messages with empty string topic IDs (GetTopicID() returns \
