@@ -1,0 +1,1 @@
+[File: 'fee/src/lib.rs'] [Function: calculate_fee_details / agave-unstable-api feature gate] Can an unprivileged attacker exploit the fact that the entire fee/src/lib.rs module is gated behind #![cfg(feature = \

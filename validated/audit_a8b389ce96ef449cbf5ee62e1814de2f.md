@@ -1,1 +1,0 @@
-Let me look at the emulator's usage of `AttoFlowBalanceIsValidForFlowVault` and the token inspection module more carefully.

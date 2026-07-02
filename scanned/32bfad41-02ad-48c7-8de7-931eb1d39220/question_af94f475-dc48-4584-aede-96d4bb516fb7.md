@@ -1,0 +1,1 @@
+[File: 'core/src/bam_manager.rs -> Scope: Critical. Unintended permanent chain split requiring hard fork'] [Function: BamConnection::connection_task / inbound_stream VersionedMsg::V0 check] The connection_task breaks the inbound loop on receiving an unsupported versioned message (non-V0): 'error!(\

@@ -1,0 +1,1 @@
+[File: 'accounts-db/src/utils.rs -> Scope: Critical. Network not being able to confirm new transactions (total network shutdown)'] [Function: move_and_async_delete_path (lines 118-135)] Can exhaustion of OS thread resources (e.g., hitting `RLIMIT_NPROC` or OS thread limit) cause `thread::Builder::new().spawn(...)` to fail, triggering `.expect(\

@@ -1,1 +1,0 @@
-Let me look at the `ChannelExists` function and the subscription filter to understand the full picture.

@@ -1,0 +1,1 @@
+[File: 'runtime/src/bank/serde_snapshot.rs'] [Function: reconstruct_bank_from_fields / Bank::new_from_snapshot] Can an unprivileged attacker craft a snapshot where `BankFieldsToDeserialize.leader_id` does not match the pubkey computed by `Bank::slot_leader_from_epoch_stakes` for the snapshot slot, causing `Bank::new_from_snapshot` to panic with `\

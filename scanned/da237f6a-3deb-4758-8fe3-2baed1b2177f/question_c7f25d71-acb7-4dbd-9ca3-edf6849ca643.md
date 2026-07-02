@@ -1,0 +1,1 @@
+[File: 'runtime/src/serde_snapshot/types.rs'] [Function: deserialize_bank_fields / ExtraFieldsToDeserialize accounts_lt_hash expect()] Can an unprivileged attacker craft a snapshot stream where the `accounts_lt_hash` field in `ExtraFieldsToDeserialize` is explicitly serialized as `None` (rather than truncated/EOF), causing the `.expect(\

@@ -1,0 +1,1 @@
+[File: 'tls-utils/src/tls_certificates.rs -> Scope: Low'] [Function: socket_addr_to_quic_server_name] Can an unprivileged network peer whose QUIC endpoint address is an IPv6 SocketAddr under the precondition that format!(\

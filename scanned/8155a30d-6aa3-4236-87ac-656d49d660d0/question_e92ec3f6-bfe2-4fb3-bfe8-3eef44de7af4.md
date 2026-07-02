@@ -1,0 +1,4 @@
+[File: 'accounts-db/src/account_info.rs -> Scope: Critical. Unintended permanent chain split requiring hard fork'] [Function: calculate_accounts_lt_hash_at_startup_from_index / AccountInfo::is_zero_lamport + storage_location] Can an unprivileged attacker craft a sequence of transactions that leaves an AccountInfo in the disk index with is_zero_lamport=true but the actual stored account has nonzero lamports (or vice versa), causing calculate_accounts_lt_hash_at_startup_from_index to skip the account (due to the is_zero_lamport check) when computing the accounts lt hash at startup, producing a different lt_hash than the pre-restart value, causing verify_snapshot_bank to fail or the bank hash to diverge from the rest of the cluster? Preconditions: disk index is enabled; account is flushed to AppendVec with is_zero_lamport flag mismatched to actual lamports; validator restarts and rebuilds index. Call sequence: store account
+
+```python
+questions = [

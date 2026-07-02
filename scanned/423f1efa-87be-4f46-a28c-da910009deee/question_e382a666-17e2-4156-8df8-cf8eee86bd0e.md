@@ -1,0 +1,1 @@
+[File: 'runtime/src/serde_snapshot/utils.rs -> Scope: Low'] [Function: serialize_iter_as_seq / ExtraFieldsToDeserialize (lamports_per_signature)] Can an attacker craft a snapshot where the ExtraFieldsToSerialize section is truncated before the lamports_per_signature field, under the precondition that ExtraFieldsToDeserialize uses #[serde(deserialize_with = \

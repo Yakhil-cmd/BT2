@@ -1,0 +1,1 @@
+[File: 'runtime/src/bank/serde_snapshot.rs'] [Function: reconstruct_accountsdb_from_fields] Can an unprivileged attacker who controls a snapshot archive craft an `AccountsDbFields` payload where the deserialized storage map is empty (zero slot entries), triggering the `assert!(!storage.is_empty(), \

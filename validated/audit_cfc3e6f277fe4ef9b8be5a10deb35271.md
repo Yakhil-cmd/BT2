@@ -1,1 +1,0 @@
-Let me investigate the relevant files to trace this potential vulnerability.

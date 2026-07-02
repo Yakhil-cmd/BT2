@@ -1,1 +1,0 @@
-Let me look at the checkpoint hash verification and the V4 loading path more carefully.

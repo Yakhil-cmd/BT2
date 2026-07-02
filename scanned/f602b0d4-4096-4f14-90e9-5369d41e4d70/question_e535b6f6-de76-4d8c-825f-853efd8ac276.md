@@ -1,0 +1,1 @@
+[File: 'core/src/banking_simulation.rs -> Scope: High. Unintended chain split (network partition)'] [Function: prepare_simulation / freeze_time_by_slot.range(parent_slot..).next().expect] Can an unprivileged attacker who crafts a trace file with no BlockAndBankHash event at or after parent_slot cause the expect(\

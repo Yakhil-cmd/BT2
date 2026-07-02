@@ -1,0 +1,1 @@
+[File: 'fee/src/lib.rs -> Scope: Critical. Unintended permanent chain split requiring hard fork'] [Function: calculate_fee_details / FeeFeatures::from] Can an unprivileged transaction sender craft a transaction that, when processed across validators where some have compiled with 'agave-unstable-api' and others have not (due to the #![cfg(feature = \

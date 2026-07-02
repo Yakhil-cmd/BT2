@@ -1,0 +1,1 @@
+[File: 'poh/src/poh_service.rs'] [Function: read_record_receiver_and_process] Can an unprivileged attacker who causes PohRecorder::record to return any error in the low_power_tick_producer path trigger the unconditional panic at line 315 (`panic!(\

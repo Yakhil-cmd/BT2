@@ -1,0 +1,13 @@
+# Q2969: transaction_client Parsing divergence on public protocol messages
+
+## Question
+Can attacker-controlled transaction bytes, account set, compute budget, nonce, prioritization fee, and send timing reaching `send-transaction-service/src/transaction_client.rs::cancel` through transaction submission through the public send-transaction path make honest nodes parse or classify the same network message differently, so some nodes accept or act on it while others reject or ignore it?
+
+## Target
+- File/function: send-transaction-service/src/transaction_client.rs::cancel
+- Entrypoint: transaction submission through the public send-transaction path
+- Attacker controls: transaction bytes, account set, compute budget, nonce, prioritization fee, and send timing
+- Exploit idea: Target non-canonical encodings, duplicate fields, ambiguous framing, or inconsistent validation order that can split observable network behavior across nodes.
+- Invariant to test: Consensus-adjacent public protocol messages must have a single canonical interpretation across honest nodes.
+- Expected Immunefi impact: High. Unintended chain split (network partition)
+- Fast validation: Differential-test multiple nodes on identical crafted messages and assert identical parse, validation, and downstream action outcomes.

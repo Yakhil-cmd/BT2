@@ -1,0 +1,1 @@
+[File: 'rpc/src/slot_status_notifier.rs -> Scope: Low'] [Function: SlotStatusNotifierInterface::notify_slot_dead / mark_dead_slot] Can an unprivileged attacker craft a malformed shred or block that triggers a BlockstoreProcessorError with an arbitrarily large Debug representation, causing mark_dead_slot to format an unbounded error string via `format!(\

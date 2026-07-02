@@ -1,0 +1,1 @@
+[File: 'core/src/proxy/auth.rs'] [Function: generate_auth_tokens] Can an unprivileged block engine operator send a challenge string containing arbitrary bytes (including very long strings, Unicode, or embedded null bytes) in the GenerateAuthChallengeResponse, causing the formatted_challenge string `format!(\

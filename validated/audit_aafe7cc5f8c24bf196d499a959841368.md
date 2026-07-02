@@ -1,1 +1,0 @@
-Let me look at the `getBlockContext` function and the offchain block proposal to understand if there's an ordering issue with `TotalSupply`.
