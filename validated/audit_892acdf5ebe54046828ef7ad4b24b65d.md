@@ -1,0 +1,1 @@
+The project's `go.mod` declares `go 1.26.0`.
