@@ -1,0 +1,1 @@
+Let me look at the `AccountStatus` structure and `AppendAccountPublicKeyMetadata` to understand size limits on `keyMetadataBytes`.
