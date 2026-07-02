@@ -1,0 +1,1 @@
+Let me check the script procedure's `ExecutionTime()` to understand whether the primary commit actually fails.
