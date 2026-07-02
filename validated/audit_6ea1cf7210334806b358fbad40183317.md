@@ -1,0 +1,1 @@
+Let me verify how `lowestPossibleReferenceBlockHeight` is used in the builder to filter transactions.
