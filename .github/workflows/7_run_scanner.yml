@@ -86,7 +86,7 @@ jobs:
           max_attempts: 2
           timeout_seconds: 60
           retry_on: 'error'
-          retry_wait_seconds: 1200  # 5 minutes between retries
+          retry_wait_seconds: 800  # 5 minutes between retries
           command: |
             #!/bin/bash
             set -e
