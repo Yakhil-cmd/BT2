@@ -1,1 +1,0 @@
-[File: 'runtime/src/bank/serde_snapshot.rs'] [Function: verify_snapshot_bank / verify_accounts] Can an unprivileged attacker who controls a snapshot archive craft an `accounts_lt_hash` value in `ExtraFieldsToSerialize` that does not match the actual accounts in the storage files, causing `verify_snapshot_bank` to return `false` and trigger `panic!(\

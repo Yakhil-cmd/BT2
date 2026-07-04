@@ -1,1 +1,0 @@
-[File: 'svm-timings/src/lib.rs -> Scope: Critical. Direct loss of funds'] [Function: ExecuteTimings (agave-unstable-api feature gate)] Can an unprivileged transaction sender, by exploiting the fact that the entire svm-timings crate is gated behind #![cfg(feature = \

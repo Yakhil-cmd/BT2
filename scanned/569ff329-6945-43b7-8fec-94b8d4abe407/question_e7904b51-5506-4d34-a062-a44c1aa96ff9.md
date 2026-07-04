@@ -1,1 +1,0 @@
-[File: turbine/src/addr_cache.rs -> Scope: Low] [Function: AddrCache::maybe_trim_slot_counts / panic] Can an unprivileged shred sender, by crafting a sequence of record() calls that creates a state where self.window contains a (slot, count) entry but self.counts does not contain that slot (e.g., via a race condition or a bug in the count decrement logic), trigger the panic!(\

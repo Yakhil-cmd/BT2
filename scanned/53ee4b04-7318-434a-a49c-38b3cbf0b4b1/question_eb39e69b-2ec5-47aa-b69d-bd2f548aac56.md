@@ -1,1 +1,0 @@
-[File: 'votor/src/lib.rs -> votor/src/event_handler.rs'] [Function: EventHandler::handle_event (VotorEvent::Block branch)] Can an unprivileged attacker who causes bank.block_id() to return None (e.g., by replaying a block without setting the block_id field) trigger the expect(\

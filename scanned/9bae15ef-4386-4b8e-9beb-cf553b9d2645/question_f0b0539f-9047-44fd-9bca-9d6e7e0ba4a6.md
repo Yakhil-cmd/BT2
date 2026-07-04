@@ -1,1 +1,0 @@
-[File: 'gossip/src/legacy_contact_info.rs -> Scope: Critical. Direct loss of funds'] [Function: CrdsData::wallclock / CrdsData::pubkey / CrdsValue::label] Can an unprivileged attacker exploit the fact that CrdsData::wallclock(), CrdsData::pubkey(), and CrdsValue::label() all contain unreachable!(\
