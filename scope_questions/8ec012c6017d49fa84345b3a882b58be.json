@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/RewardSupplierStorage.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f96f3c3b-8321-4bfe-ba51-97f8e1477e1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/RewardSupplierExternalInterfaces.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_917558c3-6cc7-4d6e-a223-29847d48c59a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/RewardSupplier.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7e597971-39f3-4127-994e-877e35743730?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/MintManager.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_434c413e-0a41-4085-b3a6-d522e4a5e4ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/PeriodMintLimit.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81d064bc-30f6-43e1-a813-dafb529de7ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/upgrade/ProxySupportImpl.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_967eefb5-e1d8-4ac8-bae3-4f8a4aa67bce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/Addresses.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9eaa7d65-a99d-43c6-951f-b12b5bfa5ab3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/NamedStorage8.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_adbb788f-97d8-406c-8044-993083b5cbde?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/AccessControl.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a785c89a-d3e3-4b79-ad20-e2a323e1f897?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/RolesLib.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b59281f4-5729-4ba7-bf70-74720f1dfe44?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/ContractInitializer.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c0a7011-7d99-4045-889d-b81fc4161954?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/MGovernance.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1f94b21-27c6-48be-81de-f1d64c42fb00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/ProxySupport.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bec7218c-ca2c-4ce4-b486-2c884f0ec9b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/Identity.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_699e7ce3-f72b-4360-82ea-df24ef6896fa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/BlockDirectCall.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_78fadedb-2deb-4205-be24-2d335e5f0b82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/components/GovernanceStub.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1780c928-cd2f-4257-9af9-50ef7dae9e8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/components/Roles.sol -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0cb86faa-57df-488e-afa9-3801180b04a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/staking/staking.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc887512-0f31-4516-83ed-bba0d5a470dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/staking/interface.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fdaf7256-b4a9-427a-9a07-bfa56d93a6b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/reward_supplier/reward_supplier.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_55f7a37c-752c-4d69-a64f-611760bd4d9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/reward_supplier/interface.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b97f2af-d0e7-4d6d-939e-1176ba6a665e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/pool/pool.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bcf8ea04-6941-4654-8ebb-644d1854b1a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/pool/interface.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f0004d0-5d3b-49a9-95ea-5ef2bd3484dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/minting_curve/minting_curve.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a3ab6bc8-6e23-4c83-8417-784967acdf5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/minting_curve/interface.cairo -> Scope: Critical: Direct theft of user funds, whether at-rest or in-motion, excluding unclaimed yield; Protocol insolvency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a888e7e0-a505-4f73-8703-3b9406cf355c?mode=deep",
+    "questions_generated": false
+  }
+]
