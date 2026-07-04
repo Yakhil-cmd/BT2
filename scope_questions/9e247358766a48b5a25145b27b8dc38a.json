@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/RewardSupplierStorage.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_292742cc-5567-4a57-a077-530540d1894c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/RewardSupplierExternalInterfaces.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe33f277-dfc7-4649-b926-bd0b7a3482d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/RewardSupplier.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c323a6e-0320-4976-8b23-5a9c6478f780?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/MintManager.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4dd508f5-5246-4e54-afaf-eda5c8361ac5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/stake/PeriodMintLimit.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5cda1174-91ea-4303-95b6-40d49826b179?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/upgrade/ProxySupportImpl.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_859e81f3-e0a5-4536-b59c-4eea7863bff0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/Addresses.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_88c5f32c-b963-4531-98bf-14755a49447d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/NamedStorage8.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3c2edd91-ee5c-4dc2-8452-a25587c722c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/AccessControl.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2a4ad32b-f9c6-43ee-a2ad-1565cc043dd4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/libraries/RolesLib.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0981230c-81a4-4049-bc66-19084ce7cd9f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/ContractInitializer.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d6193516-a4c3-4b76-aebc-5a71dfb41fab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/MGovernance.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a58eff30-c0f6-4089-b563-bb09bf6c2a02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/ProxySupport.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f1d48290-a49e-4440-a0d4-3e6406205fbf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/Identity.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac0bc01e-42ac-478f-bf5a-e8ab3f275839?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/interfaces/BlockDirectCall.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_de2d9a7f-3b02-4708-abb1-b50a49ee11a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/components/GovernanceStub.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f69ad14c-0a6f-4e18-8f51-c1ff8f7c1985?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: L1/starkware/solidity/components/Roles.sol -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce43c7a4-37cf-4135-92eb-15e689b4bfaa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/staking/staking.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6e47c39a-a0b2-4f59-b880-0454643f5f45?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/staking/interface.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82789166-b878-4e04-94fc-ad1f3b18219a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/reward_supplier/reward_supplier.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5565e6d5-ac40-4579-8073-bb960be46b1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/reward_supplier/interface.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_94a04aef-9dc4-47e5-9d71-669e9bb1f2ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/pool/pool.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c95be8ce-4c1e-43c4-8929-4b49e1838992?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/pool/interface.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35631549-f79f-4e17-ae8a-5186945cb5aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/minting_curve/minting_curve.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_437d8215-403e-43fe-8a76-0489f5388543?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/minting_curve/interface.cairo -> Scope: High: Theft of unclaimed yield or unclaimed royalties'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d1aec541-82f1-4080-aa67-99071b6d227a?mode=deep",
+    "questions_generated": false
+  }
+]
