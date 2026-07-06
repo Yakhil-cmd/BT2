@@ -1,0 +1,1 @@
+Let me look at the pool contract's reward calculation in detail.
