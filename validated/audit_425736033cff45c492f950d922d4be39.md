@@ -1,0 +1,1 @@
+Let me look at the `calculate_block_rewards` function and the attestation contract more carefully.
