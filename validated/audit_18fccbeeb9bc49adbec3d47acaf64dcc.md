@@ -1,0 +1,1 @@
+Let me look at the staking contract's `update_rewards_from_attestation_contract` and related functions more carefully.
