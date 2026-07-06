@@ -1,0 +1,1 @@
+Looking at the external report's vulnerability class — **accounting state manipulation by an unprivileged caller** — I need to find an analog in the Starknet Staking codebase where a public function allows any caller to manipulate a global reward-accounting variable, causing yield loss for legitimate stakers.
