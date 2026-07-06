@@ -1,0 +1,1 @@
+Let me look at the `transfer_to_pools_when_unstake` function and the `_update_rewards` loop over pools.
