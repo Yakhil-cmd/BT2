@@ -1,0 +1,1 @@
+Let me look at the attestation contract and the staking contract's `calculate_block_rewards` function for any stale-data analog.

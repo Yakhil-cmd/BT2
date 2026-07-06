@@ -1,0 +1,1 @@
+Let me look at the pool info structure and the `get_strk_pool` method to understand how pools are stored.
