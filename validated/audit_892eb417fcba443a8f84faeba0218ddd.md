@@ -1,0 +1,1 @@
+Let me look at the staking interface to understand the intended callers of `update_rewards`.
