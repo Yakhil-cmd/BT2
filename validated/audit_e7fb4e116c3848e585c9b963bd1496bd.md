@@ -1,0 +1,1 @@
+Let me look at the pool contract and the `calculate_block_rewards` function more carefully.

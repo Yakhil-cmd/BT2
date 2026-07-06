@@ -1,0 +1,1 @@
+Let me look at the `_update_rewards` function and the reward supplier to understand the full reward flow.

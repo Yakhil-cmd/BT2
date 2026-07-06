@@ -1,0 +1,1 @@
+Let me look at the `find_sigma_standard_case` and related utility functions more carefully, as well as the staking utils for any search patterns.
