@@ -1,0 +1,1 @@
+Let me look at the `_update_rewards` function and the staking power calculation more carefully.
