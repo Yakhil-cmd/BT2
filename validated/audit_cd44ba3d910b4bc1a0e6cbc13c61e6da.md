@@ -1,0 +1,1 @@
+Let me look at the pool contract's exit flow and the staking contract's `unstake_action` to understand the full round-trip.

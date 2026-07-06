@@ -1,0 +1,1 @@
+Let me look more carefully at the staking contract's balance checks and the `UNEXPECTED_BALANCE` error, as well as the pool contract's accounting.
