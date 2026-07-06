@@ -1,0 +1,1 @@
+Let me look at the staking contract's `remove_from_delegation_pool_intent` and the `staker_own_balance_trace` to complete the picture.
