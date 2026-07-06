@@ -1,0 +1,1 @@
+Let me look at the `get_balance_at_current_epoch` function in full and the staker balance trace for a complete picture.

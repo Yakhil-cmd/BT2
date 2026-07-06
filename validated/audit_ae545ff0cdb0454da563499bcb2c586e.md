@@ -1,0 +1,1 @@
+Let me look at the `claim_from_reward_supplier` utility function and the `checked_transfer` implementation to confirm the failure path.
