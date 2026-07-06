@@ -1,0 +1,1 @@
+Let me look at the pool's `claim_rewards` function and the BTC pool reward token handling more carefully.
