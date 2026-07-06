@@ -1,0 +1,1 @@
+Let me look at the `update_rewards_from_attestation_contract` function and the pool's `cumulative_rewards_trace` more carefully.

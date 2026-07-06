@@ -1,0 +1,1 @@
+Let me look at the `compute_new_delegated_stake` function and the `switch_staking_delegation_pool` implementation to complete my analysis.
