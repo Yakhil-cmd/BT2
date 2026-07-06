@@ -1,0 +1,1 @@
+Let me look at the `update_rewards_from_attestation_contract` function and how total stake is read.
