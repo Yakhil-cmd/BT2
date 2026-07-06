@@ -1,0 +1,1 @@
+Let me look at the `claim_rewards` function in the pool and the staking contract's `unstake_action` to understand the full flow.

@@ -1,0 +1,1 @@
+Let me look at the staking contract's reward claiming and the `send_rewards_to_staker` function more carefully.
