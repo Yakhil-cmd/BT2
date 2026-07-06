@@ -1,0 +1,1 @@
+Let me look at the attestation contract and the `update_rewards_from_attestation_contract` flow more carefully.
