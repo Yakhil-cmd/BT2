@@ -1,0 +1,3 @@
+Looking at the external report's vulnerability class — a public/privileged state-changing function that lacks manipulation protection, allowing an attacker to front-run it and cause the protocol to operate in an unfavorable state — I need to find an analog in Starknet Staking where a state-changing function lacks proper access control and can be exploited by an unprivileged caller.
+
+Let me examine the `update_rewards` function and its access control.
