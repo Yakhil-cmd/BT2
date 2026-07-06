@@ -1,0 +1,1 @@
+Let me look at the `update_pool_rewards` function and how STRK vs BTC pool rewards are handled.

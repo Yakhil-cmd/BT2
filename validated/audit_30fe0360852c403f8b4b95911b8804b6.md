@@ -1,0 +1,1 @@
+Let me look at the L1 contracts and other relevant files to complete my analysis.
