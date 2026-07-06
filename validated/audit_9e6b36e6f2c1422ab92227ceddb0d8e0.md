@@ -1,0 +1,1 @@
+Let me look at the total staking power calculation and the `update_rewards_from_attestation_contract` function more carefully.
