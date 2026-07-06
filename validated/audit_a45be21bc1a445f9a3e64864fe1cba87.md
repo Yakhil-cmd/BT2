@@ -1,0 +1,1 @@
+Let me look at the staking contract's `increase_stake` and reward update logic more carefully.
