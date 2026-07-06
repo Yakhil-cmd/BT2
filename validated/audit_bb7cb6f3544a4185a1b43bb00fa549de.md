@@ -1,0 +1,1 @@
+Let me check the constants file and the `K` value, and also look at the `set_member_balance` comment more carefully.
