@@ -1,0 +1,1 @@
+Let me look at the pool's `update_rewards_from_staking_contract` function and how it updates the sigma.
