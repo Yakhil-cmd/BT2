@@ -1,0 +1,1 @@
+Let me check the `general_prerequisites` function and the `claim_rewards` function in staking.cairo to complete the analysis.
