@@ -1,0 +1,1 @@
+Let me look at the remaining parts of staking.cairo and the reward supplier to find any batch/loop operations with stale global state.

@@ -1,0 +1,1 @@
+Let me look at the `update_rewards` function and how it calls the reward calculation functions in V3 consensus mode.
