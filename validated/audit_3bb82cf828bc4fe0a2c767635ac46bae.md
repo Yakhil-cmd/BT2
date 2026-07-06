@@ -1,0 +1,1 @@
+Looking at the codebase for an analog to the "protection mechanism neutralized by a logic error" vulnerability class, I need to examine the `update_rewards` function and its access control.
