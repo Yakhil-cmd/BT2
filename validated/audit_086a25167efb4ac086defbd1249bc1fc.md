@@ -1,1 +1,0 @@
-Looking at the external report's vulnerability class — **state not updated before a computation, leading to incorrect amounts for users** — I need to find an analog in the Starknet Staking codebase where a state update that should precede a reward/balance computation can be skipped or blocked, causing users to receive incorrect amounts.

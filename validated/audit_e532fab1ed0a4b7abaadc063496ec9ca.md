@@ -1,1 +1,0 @@
-Let me look at the `increase_stake` function and the `get_current_total_staking_power` function to complete my analysis.

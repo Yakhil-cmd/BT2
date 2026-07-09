@@ -1,1 +1,0 @@
-Let me look at the `NormalizedAmount` type and its conversion functions, which are critical to understanding the accounting.

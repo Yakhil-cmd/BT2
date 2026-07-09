@@ -1,1 +1,0 @@
-Looking at the codebase, I need to find an analog to the "user-supplied data bypasses a required update step" vulnerability class. Let me examine the `update_rewards` function and its `disable_rewards` parameter.

@@ -1,1 +1,0 @@
-Looking at the external report's vulnerability class — a mutable global parameter that can be changed in a way that permanently prevents users from claiming rewards they've already earned — I need to find an analog in the Starknet Staking codebase.

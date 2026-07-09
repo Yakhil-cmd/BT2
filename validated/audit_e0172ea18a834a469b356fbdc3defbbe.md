@@ -1,1 +1,0 @@
-Let me look at the V3 consensus rewards path more carefully to check how `strk_total_stake` is computed and passed to `calculate_staker_own_rewards`.

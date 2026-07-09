@@ -1,1 +1,0 @@
-Let me look at where `token_decimals` is set in the staking contract and how `get_token_decimals` is used.

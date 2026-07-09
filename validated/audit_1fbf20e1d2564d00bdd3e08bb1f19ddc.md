@@ -1,1 +1,0 @@
-Looking at the external report's vulnerability class — **incomplete validation in a setter function where a combination of field values passes validation but causes downstream failures** — I'll search for analogous patterns in the Starknet Staking codebase.

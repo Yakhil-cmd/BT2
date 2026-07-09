@@ -1,1 +1,0 @@
-Let me look at the `assert_staker_is_active` function and the `exit_delegation_pool_intent` function more carefully.

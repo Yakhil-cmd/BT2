@@ -1,1 +1,0 @@
-Looking at the `update_rewards` function in `src/staking/staking.cairo` and comparing it to the spec's stated access control, I found a critical discrepancy. Let me verify the `general_prerequisites` function to confirm there's no hidden caller check.

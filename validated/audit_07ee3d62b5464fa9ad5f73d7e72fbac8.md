@@ -1,3 +1,0 @@
-Looking at the Starknet Staking codebase for an analog to the TrueFi griefing vulnerability (attacker manipulates a shared state variable right before a victim's transaction to reduce their value received), I need to find a place where an unprivileged caller can manipulate state that affects reward calculations.
-
-Let me examine the `update_rewards` function and the `last_reward_block` global state.

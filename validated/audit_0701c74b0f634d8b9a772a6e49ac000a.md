@@ -1,1 +1,0 @@
-Let me look at the `remove_from_delegation_pool_action` and `add_stake_from_pool` implementations in the staking contract to complete my analysis.

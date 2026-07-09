@@ -1,1 +1,0 @@
-Let me look at the interface and spec for `update_rewards` access control, and also check the `InternalStakerPoolInfoV2` commission function.

@@ -1,1 +1,0 @@
-Let me look at the pool contract's reward update function and the `update_rewards_from_staking_contract` more carefully.

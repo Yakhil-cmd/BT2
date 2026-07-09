@@ -1,1 +1,0 @@
-Let me read the rest of the staking contract to find `_update_rewards` and understand the full reward update flow.

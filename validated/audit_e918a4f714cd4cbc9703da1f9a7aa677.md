@@ -1,1 +1,0 @@
-Let me check the epoch duration and constants to assess the realistic growth rate.

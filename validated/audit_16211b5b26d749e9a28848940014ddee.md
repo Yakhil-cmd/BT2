@@ -1,1 +1,0 @@
-Based on what I've gathered, let me look at the `_update_rewards` internal function in staking.cairo to find the exact call site for `update_rewards_from_staking_contract`.

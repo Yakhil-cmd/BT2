@@ -1,1 +1,0 @@
-Let me read the pool constructor and the `Trace` type to understand the initialization and bounds checking.

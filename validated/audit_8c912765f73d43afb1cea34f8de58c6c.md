@@ -1,1 +1,0 @@
-Let me look at a few more specific functions before concluding.

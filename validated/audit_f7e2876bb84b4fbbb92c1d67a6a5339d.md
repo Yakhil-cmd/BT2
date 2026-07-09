@@ -1,1 +1,0 @@
-Let me look at the pool contract's reward update function and how it handles the `pool_balance` parameter.

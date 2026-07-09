@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class — **condition bypass** where a user circumvents a protection mechanism by exploiting the conditions that define it — I need to find an analog in Starknet Staking where a staker or delegator can bypass a classification or protection condition.
-
-The closest analog is the **commission commitment mechanism** in the staking contract. Let me verify the key evidence.

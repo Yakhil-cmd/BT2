@@ -1,1 +1,0 @@
-Let me look at the `update_rewards_from_attestation_contract` function and the staking objects more carefully.

@@ -1,1 +1,0 @@
-Looking at the `update_rewards` function in `src/staking/staking.cairo` and comparing it to the spec's stated access control, I need to verify the caller check (or lack thereof).

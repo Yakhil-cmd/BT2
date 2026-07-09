@@ -1,1 +1,0 @@
-Let me look more carefully at the pool member balance trace and how it interacts with exit intent amounts.

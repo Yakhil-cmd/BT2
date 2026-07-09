@@ -1,1 +1,0 @@
-Let me look at the `enter_delegation_pool` function and how the initial `reward_checkpoint` is set.

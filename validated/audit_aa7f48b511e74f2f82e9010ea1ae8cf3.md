@@ -1,1 +1,0 @@
-Let me look at the `find_sigma_standard_case` implementation and the epoch duration constants to assess the realistic gas impact.

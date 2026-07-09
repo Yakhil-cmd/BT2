@@ -1,1 +1,0 @@
-Let me look at the pool's `update_rewards_from_staking_contract` function and how `pool_balance` is passed and used.

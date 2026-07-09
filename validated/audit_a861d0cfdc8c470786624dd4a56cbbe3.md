@@ -1,1 +1,0 @@
-Let me look at the `calculate_block_rewards` function and how `last_reward_block` is used in reward calculations.

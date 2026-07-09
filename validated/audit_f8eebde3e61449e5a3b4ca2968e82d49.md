@@ -1,1 +1,0 @@
-Looking at the `update_rewards` implementation and its access control.

@@ -1,1 +1,0 @@
-Let me look at the reward supplier's `update_current_epoch_block_rewards` to understand what `block_rewards` represents in V3.

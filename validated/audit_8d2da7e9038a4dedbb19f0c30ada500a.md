@@ -1,1 +1,0 @@
-Let me look at the `remove_staker` function and the `unstake_action` flow to check if the `operational_address_to_staker_address` mapping is properly cleared.

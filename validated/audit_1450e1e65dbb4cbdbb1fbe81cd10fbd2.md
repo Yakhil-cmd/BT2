@@ -1,1 +1,0 @@
-Let me look at the attestation-based reward update and the `insert_staker_own_balance` / `insert_staker_delegated_balance` functions to understand the state timing.

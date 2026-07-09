@@ -1,1 +1,0 @@
-Let me look at the `update_rewards_from_attestation_contract` function more carefully to understand how `strk_total_stake` is set.

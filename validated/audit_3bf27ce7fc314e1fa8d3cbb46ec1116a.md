@@ -1,1 +1,0 @@
-Let me look at how rewards are distributed to pools and how the staking contract tracks pool balances for reward distribution.

@@ -1,1 +1,0 @@
-Let me look at the constants and the full staking contract reward distribution logic.

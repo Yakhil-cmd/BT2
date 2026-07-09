@@ -1,3 +1,0 @@
-Looking at the vulnerability class from C01 — a state variable set before execution is not cleared on early return, leaving a privileged window open — I need to find an analog in the Starknet Staking codebase where a state variable is written before the main operation completes, an early return path exists, and the state variable is not undone, causing unintended persistent effects.
-
-Let me examine the `update_rewards` function closely.

@@ -1,1 +1,0 @@
-Let me look at the pool contract's sigma update and reward distribution logic to complete the analysis.

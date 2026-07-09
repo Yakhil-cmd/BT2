@@ -1,1 +1,0 @@
-Let me look at the pool initialization and `enter_delegation_pool` to understand when `cumulative_rewards_trace` is first populated.

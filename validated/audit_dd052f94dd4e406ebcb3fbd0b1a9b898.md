@@ -1,1 +1,0 @@
-Let me look at the `update_rewards` function's access control and the `general_prerequisites` check more carefully.
