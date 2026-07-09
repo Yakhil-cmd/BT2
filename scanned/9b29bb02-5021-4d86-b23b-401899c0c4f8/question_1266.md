@@ -1,0 +1,13 @@
+# Q1266: Cross subprotocol messages
+
+## Question
+Can a single malicious participant or malicious coordinator below threshold enter through `ecdsa::ot_based_ecdsa::presign(...)`, `ecdsa::ot_based_ecdsa::sign(...)`, or the triple-generation pipeline` and inject `MTA package` from one subprotocol/channel into another so `correlated_ot_receiver` confuses private vs shared or child vs parent context, leading to Bypass of threshold signature requirements?
+
+## Target
+- File/function: `src/ecdsa/ot_based_ecdsa/triples/correlated_ot_extension.rs::correlated_ot_receiver`
+- Entrypoint: `ecdsa::ot_based_ecdsa::presign(...)`, `ecdsa::ot_based_ecdsa::sign(...)`, or the triple-generation pipeline`
+- Attacker controls: `params`, `k0`, `k1`, `x`, `protocol message timing`
+- Exploit idea: Inject child-channel or cross-channel `MTA package` messages where only same-channel traffic should count.
+- Invariant to test: Private, shared, parent, and child channel namespaces must not overlap for `MTA package` messages.
+- Expected Immunefi impact: Bypass of threshold signature requirements
+- Fast validation: Run two or more local protocol instances around `ecdsa::ot_based_ecdsa::presign(...)`, `ecdsa::ot_based_ecdsa::sign(...)`, or the triple-generation pipeline`, let one malicious participant inject conflicting, replayed, or cross-context `MTA package` data into `correlated_ot_receiver`, and assert whether honest nodes still accept a forged, leaked, or misbound output.

@@ -1,0 +1,13 @@
+# Q2335: Equivocate per recipient
+
+## Question
+Can a malicious participant below threshold enter through `keygen(...)`, `reshare(...)`, `refresh(...)`, `presign(...)`, `sign(...)`, or `ckd(...)` and send recipient-specific `polynomial` variants into `derive_randomness` so different honest parties bind different views of `Lagrange coefficient` yet still converge on an accepted downstream output, leading to Bypass of threshold signature requirements?
+
+## Target
+- File/function: `src/ecdsa/mod.rs::derive_randomness`
+- Entrypoint: `keygen(...)`, `reshare(...)`, `refresh(...)`, `presign(...)`, `sign(...)`, or `ckd(...)`
+- Attacker controls: `polynomial commitment`, `Lagrange coefficient`
+- Exploit idea: Feed different `polynomial` values to different honest parties and test whether `Lagrange coefficient` still converges without detection.
+- Invariant to test: All honest parties must observe one consistent `polynomial` / `Lagrange coefficient` transcript for the same round.
+- Expected Immunefi impact: Bypass of threshold signature requirements
+- Fast validation: Construct a deterministic unit or invariant test around `ecdsa::derive_randomness` that feeds crafted `polynomial` / `Lagrange coefficient` inputs, then assert whether downstream verification accepts an output that should have been rejected.

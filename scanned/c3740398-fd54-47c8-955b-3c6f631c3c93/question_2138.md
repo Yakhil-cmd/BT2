@@ -1,0 +1,13 @@
+# Q2138: Mismatch commitment and share
+
+## Question
+Can a malicious participant below threshold enter through `keygen(...)`, `reshare(...)`, `refresh(...)`, `presign(...)`, `sign(...)`, or `ckd(...)` and pair a valid-looking `interpolation set` with a different `serialized group element` reveal so `domain_separate_hash` checks each piece in isolation but never the combined statement, causing Cryptographic flaws?
+
+## Target
+- File/function: `src/crypto/hash.rs::domain_separate_hash`
+- Entrypoint: `keygen(...)`, `reshare(...)`, `refresh(...)`, `presign(...)`, `sign(...)`, or `ckd(...)`
+- Attacker controls: `domain_separator`, `data`
+- Exploit idea: Commit to one `interpolation set` and reveal another `serialized group element` that still satisfies separate local checks.
+- Invariant to test: A commitment and its corresponding `interpolation set` reveal must be validated as the same statement.
+- Expected Immunefi impact: Cryptographic flaws
+- Fast validation: Construct a deterministic unit or invariant test around `crypto::hash::domain_separate_hash` that feeds crafted `interpolation set` / `serialized group element` inputs, then assert whether downstream verification accepts an output that should have been rejected.
