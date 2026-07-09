@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: src/lib.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3bfb80d-b420-421d-be75-4552fbd1a60e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/dkg.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6fb495c4-46c7-4a67-b128-c0246ce775a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/participants.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7daca75f-2993-4a70-9497-9e1bcd078957?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/errors.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fffbcd97-7e26-447e-ba58-e0975addaffa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/thresholds.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_665b7e7d-7157-4900-9137-c831b13da17f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/mod.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_557283ba-ef3c-4fa1-a694-555a084c63d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/ciphersuite.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_066fe2d0-f5f4-498a-acd1-279136ee4da3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/commitment.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20e5a472-a332-4338-8702-a336ea198319?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/constants.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e139124f-91d1-49c6-ad48-d9495756d1ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/hash.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25662070-2962-473e-b819-e2c28c0c1225?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/polynomials.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_415bab9a-9942-40e9-9bd3-3c0eb902a9a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/random.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_89d0d0e3-b702-49b4-9e49-85032242803b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/mod.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_44b31e74-b45c-4c49-8440-f83929a42140?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlog.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f199370c-26bc-4353-80d9-9527b3bb961e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlogeq.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d9b64ffb-0874-4617-a2bd-c9dafdefa48c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_31d373d9-ca44-4bea-aa2c-f13670ac4e7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe_transcript.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6139562a-d3cf-496a-9042-e887466ceed8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/mod.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a033d0ce-c24b-4839-bc49-681fc5ce718a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/echo_broadcast.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3060df93-29ca-4b5f-93da-9709e8189245?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/helpers.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a5c2534-2a6e-4bfb-8a55-d69fe9997b5a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/internal.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b14dfcda-6eea-4963-bd63-3cbcbf50f056?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/mod.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c77493f-5483-48ea-9b0c-1e2beea0a850?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/app_id.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f92c111a-1817-428e-b695-c6f1cdbb4c26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/ciphersuite.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_267c7c46-790d-4be5-852a-a3c932f3685f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/protocol.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15e05323-e4bc-4113-882b-3a5b93e0e443?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/scalar_wrapper.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_16e42188-853a-4264-ac91-5ba1cfefeab0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/mod.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2355f3ca-1af4-41a4-bfac-7238dfe8c2c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/mod.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1d6f975e-b067-43b7-9620-db8564bdc6b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/presign.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b0b6801-ab24-45bf-b473-0c45d8b2f7a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/sign.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_111dad7b-fee7-4c56-b7b6-0cad7161a7e3?mode=deep",
+    "questions_generated": false
+  }
+]
