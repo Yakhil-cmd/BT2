@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: src/lib.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0728479c-8c06-4930-aec6-6fa115f94890?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/dkg.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_40d2126d-f0f6-4256-8586-7a0dcd26394f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/participants.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ebfb2cf5-0ae1-486d-914d-e4b31524afcb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/errors.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6ab178fa-9119-4f14-87fe-d9c73ed45ab7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/thresholds.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9f4cbd9d-33eb-4b08-88d3-7cb2f2185b09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/mod.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_76bbc370-725d-443a-b983-3da8ce836343?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/ciphersuite.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_194b2777-7ddb-409a-9441-070d0684645f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/commitment.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49e22141-0504-4400-ae2b-6040b2f80f37?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/constants.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_306d028a-cdb9-4eb0-b1dd-3bcf996a96fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/hash.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f86ba2c-6135-48bf-b4bc-907a394f02f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/polynomials.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0927b649-8b70-4423-99df-aa2abec91c3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/random.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d72c477e-d002-4ff6-ad02-146622c737e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/mod.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac5ff7e7-88b7-4654-918a-28b01b6da51a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlog.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da3e734b-6bdf-44f1-904b-ce1a0b7181ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlogeq.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3f0583b1-35cb-4eb9-83b5-de58112b6dd2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82703e06-40d5-40c7-9741-a9c30aa0c507?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe_transcript.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dfa39502-efb5-4ec2-8cec-3309b051efd5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/mod.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b35a3936-a6d5-41cb-8b00-40c6e1d7c0c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/echo_broadcast.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d73f88ee-9131-4872-8315-407a8d1d8cfd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/helpers.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df9cfef0-c2d0-4df5-8e1a-d7c7e23f4d6c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/internal.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7679aacc-ac5e-4957-91f2-aaa05c5cdaee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/mod.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fea2dab7-d6fd-47bb-b7c9-89a2fbb04490?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/app_id.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_39835561-78cd-41de-9b39-a2ef9bf5a954?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/ciphersuite.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df25fc29-55b3-4ab0-b077-1db30b0e598b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/protocol.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_394aa44b-9837-4c31-aa51-6ede52057393?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/scalar_wrapper.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8d63252d-613f-47ae-8078-3964130a6c7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/mod.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ee43adb-e497-4f92-95b3-c28eb70d6fcb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/mod.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7b34d1c7-9312-4a0d-aa81-04b0dc713ebd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/presign.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3decc0a3-1257-4c13-88b3-c4ea5175f271?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/sign.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b03ed922-9fb5-4fda-b16e-d7a99f22c896?mode=deep",
+    "questions_generated": false
+  }
+]
