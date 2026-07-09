@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: src/lib.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f422b508-701a-46d8-afb8-0a83fc52493f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/dkg.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_439ca0a2-7dd0-479e-8898-a1bc18467e50?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/participants.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_78a24a19-d167-420a-a3de-b0f415836c85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/errors.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2667f5f2-2d1e-4c19-8edf-6fc4991a7b7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/thresholds.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_02830b28-468f-4b74-b9e9-0d0edff2ae7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/mod.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d79ed21d-96f2-4b83-ada2-51082e66d321?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/ciphersuite.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3a7606a-43c2-42a9-bb73-b3ae2886a3fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/commitment.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fea79742-9733-4012-b377-0a935f4209aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/constants.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a6b2d247-3e3a-429c-86cf-2df23f779844?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/hash.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c8598aa8-befc-49ce-a080-b93772162958?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/polynomials.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e26f28c9-386a-4dab-90b6-e3d6a4edda05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/random.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6eb6a9f4-bcf9-4370-bfce-17665562cc38?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/mod.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d2f7d2e7-ffbf-42c7-abfa-b498a5c4f2e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlog.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d2c48271-8755-44ac-b8ee-7749dab27ac4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlogeq.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f80768b-6d99-4c0d-8fb9-21338e01a43b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_092a6ed6-861f-48d6-8e01-858165bf8401?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe_transcript.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2b03efd4-577f-4106-a048-0599067f4bb6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/mod.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed20fddd-358c-491a-93d2-fe77e44e54b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/echo_broadcast.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_819d0ad5-851b-430e-b110-a0ffdeedad47?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/helpers.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8386bb0b-4a2b-4a97-9057-77c81dad0533?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/internal.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_00f738ae-c0e7-4e6d-bd55-75667f7a48f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/mod.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad306fc8-e617-4cc1-857b-a96d6326f13e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/app_id.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2778f441-6b52-41b2-87b1-4bc7214c340f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/ciphersuite.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d2e2060-78f3-4ca4-9c25-bc8b0a6059cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/protocol.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c6f6663-68e3-4113-81ea-cf498903636a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/scalar_wrapper.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ced34549-5766-45f9-8b8c-98a925e8e654?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/mod.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3bcc301d-aa1b-4a48-8a89-c73c1f018679?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/mod.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e82dd291-65b1-4e25-99e0-2b11c3fbfcdb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/presign.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b5a8c853-98cf-4c16-990d-13b87e2f221c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/sign.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85a28f2b-ecaa-44b6-820c-45c06bd8ff0c?mode=deep",
+    "questions_generated": false
+  }
+]
