@@ -1,0 +1,1 @@
+[File: 'src/crypto/proofs/mod.rs -> dlogeq::encode_two_points'] [Function: encode_two_points] Can a malicious participant craft two distinct pairs of EC points (P1, P2) and (P1', P2') such that their concatenated encodings P1 || b\

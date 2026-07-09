@@ -1,0 +1,1 @@
+[File: 'src/crypto/proofs/dlogeq.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'] [Function: encode_two_points (separator b\

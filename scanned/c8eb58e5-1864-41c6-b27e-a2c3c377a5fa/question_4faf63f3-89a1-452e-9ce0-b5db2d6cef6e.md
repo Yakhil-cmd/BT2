@@ -1,0 +1,1 @@
+[File: 'src/crypto/constants.rs -> Scope: Medium: Griefing or resource-exhaustion by a malicious caller or participant causing unbounded CPU, memory, bandwidth, or non-terminating work beyond documented behavior'] [Function: NEAR_DLOGEQ_ENCODE_LABEL_STATEMENT / NEAR_DLOG_ENCODE_LABEL_STATEMENT (src/crypto/constants.rs) both equal b\

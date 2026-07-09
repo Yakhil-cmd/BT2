@@ -1,0 +1,1 @@
+[File: 'src/confidential_key_derivation/ciphersuite.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'] [Function: hash_to_curve (NEAR_CKD_DOMAIN)] Can an unprivileged attacker exploit the fact that hash_to_curve uses a single fixed DST NEAR_CKD_DOMAIN = b\

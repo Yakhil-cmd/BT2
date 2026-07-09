@@ -1,0 +1,1 @@
+[File: 'src/crypto/ciphersuite.rs -> Scope: Critical: Extraction, reconstruction, or disclosure of private signing shares, aggregate secret material, presign secrets, nonce material, or confidential derived secrets'] [Function: Ciphersuite / Transcript::fork / dlog::prove_with_nonce] Can an unprivileged attacker who observes a DLOG proof generated with `Transcript::fork(b\
