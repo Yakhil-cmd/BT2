@@ -1,0 +1,18 @@
+[
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/mod.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/batch_random_ot.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/bits.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/correlated_ot_extension.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/generation.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/mta.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/multiplication.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/ot_based_ecdsa/triples/random_ot_extension.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/robust_ecdsa/mod.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/robust_ecdsa/presign.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/ecdsa/robust_ecdsa/sign.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/frost/mod.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/frost/eddsa/mod.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/frost/eddsa/sign.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/frost/redjubjub/mod.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'",
+  "'File Name: src/frost/redjubjub/sign.rs -> Scope: High: Permanent denial of signing, key generation, reshare, refresh, or CKD for honest parties under valid protocol inputs and documented trust assumptions'"
+]
