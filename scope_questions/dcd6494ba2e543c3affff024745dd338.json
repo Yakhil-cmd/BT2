@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: src/lib.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0e7c353d-fb4c-44b2-87d5-4b1096466021?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/dkg.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0c6e25eb-2843-4994-b3eb-15ea3de75f27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/participants.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_66033f55-56a7-4d1f-8500-fdc954f04ecd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/errors.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e16bb775-6149-4d30-8209-2813f012759f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/thresholds.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1e123f72-5113-47df-b151-3767a18b04b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/mod.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac3d33b7-ea55-451a-8ff6-4713a0eb9c05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/ciphersuite.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7dbb6c42-7899-4aa9-aa13-abe74e3c356a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/commitment.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9ffad3f9-986a-4c6e-b1bc-d38a7523937b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/constants.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20990248-8906-4b3e-b68a-c7fa3a0b486b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/hash.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dabe3c04-f1cc-46aa-9c60-b1381e63ede8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/polynomials.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_36d4dcd4-4994-44b4-a1ea-079ed41d4cce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/random.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e66459dc-d118-46cc-b920-350878fda1e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/mod.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98202914-c955-4afb-aadd-b16432d86a30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlog.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_91188539-cd91-4c06-a1c5-b5df67a243bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/dlogeq.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e033c59f-2c3b-419e-bc16-da3b93a3ca6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af113c31-3c00-4d90-b57a-2c0cfcb34966?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/crypto/proofs/strobe_transcript.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_27427664-a9ef-4fc5-917b-e9bf57093c3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/mod.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0d7d8802-b709-4cce-ac53-3882c25fdd96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/echo_broadcast.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_13282824-e770-48d7-ab5d-e8d5a5057944?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/helpers.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1afba448-cf1f-4875-99b3-9304d604c0e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/protocol/internal.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c11c65e6-b9dc-406e-932f-67ab9800ef69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/mod.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f037851b-fe81-4bb7-a5b5-68567c6e149a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/app_id.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6e910e28-a377-478c-89e3-935ad99cf890?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/ciphersuite.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9a848aa2-622c-490d-a631-10d660e2e333?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/protocol.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0382add8-c6db-4de7-86ac-acbef68c51cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/confidential_key_derivation/scalar_wrapper.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_622596a4-2e0c-4f94-8781-ff659ec7368c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/mod.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a86f1156-6150-4af5-92b8-26ad203e3717?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/mod.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b9a22288-77c1-4a30-96f9-2a1b72ad5367?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/presign.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4f7ddb1c-90bd-4683-9338-fb08cb5d8336?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: src/ecdsa/ot_based_ecdsa/sign.rs -> Scope: High: Corruption of DKG, reshare, refresh, presign, sign, or CKD outputs so honest parties accept inconsistent public keys, participant sets, transcripts, or unusable cryptographic outputs'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3543941f-f800-4087-b9ab-4306610d75c2?mode=deep",
+    "questions_generated": false
+  }
+]
