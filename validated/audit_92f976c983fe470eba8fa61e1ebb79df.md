@@ -1,0 +1,3 @@
+Looking at the external report's vulnerability class — **two values that should be independently sourced are derived from the same underlying function, making a comparison trivially return a fixed/incorrect result** — I need to find an analog in the threshold-signatures codebase where a security-critical check or signal always returns a trivial result because both sides come from the same source.
+
+Let me examine the key protocol files more carefully.
