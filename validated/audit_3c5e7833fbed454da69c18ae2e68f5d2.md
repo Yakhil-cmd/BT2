@@ -1,0 +1,1 @@
+Let me look at the FROST signing and the triples generation code, which I haven't examined yet.

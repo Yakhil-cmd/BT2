@@ -1,0 +1,1 @@
+Let me look at the FROST signing implementations and the CKD module for the analog.

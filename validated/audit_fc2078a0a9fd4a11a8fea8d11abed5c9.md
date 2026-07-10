@@ -1,0 +1,1 @@
+Let me look at the public API and the specific unchecked arithmetic in `verify_proof_of_knowledge`.
