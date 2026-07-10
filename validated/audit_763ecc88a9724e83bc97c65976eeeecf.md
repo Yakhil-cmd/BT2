@@ -1,0 +1,1 @@
+Looking at the codebase, I need to find an analog to the "missing compatibility check when registering/adding an external component" vulnerability class. Let me examine the CKD protocol and presign functions more carefully.

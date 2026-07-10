@@ -1,0 +1,1 @@
+Let me look at the ECDSA rerandomization and the mod.rs files to understand the full picture.
