@@ -1,0 +1,1 @@
+Let me look more carefully at the FROST sign_v2 flow and the DKG keyshare validation to find the precise analog.
