@@ -1,0 +1,1 @@
+Looking at the vulnerability class — **missing validation of required properties when updating/transitioning a privileged state object** — I need to find an analog in this codebase where a critical protocol function accepts a new configuration without enforcing a required invariant, leaving the system in a broken state.
