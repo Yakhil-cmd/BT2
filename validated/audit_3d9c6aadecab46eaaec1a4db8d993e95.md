@@ -1,0 +1,1 @@
+Looking at the codebase, I need to find an analog to "unchecked return values from external calls used in arithmetic without validation." Let me examine the CKD coordinator's aggregation logic closely.
