@@ -1,0 +1,1 @@
+Let me look at the `assert_sign_inputs` function and the `KeygenOutput` struct to complete my analysis.
