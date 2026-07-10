@@ -1,1 +1,0 @@
-[File: 'src/thresholds.rs -> Scope: Critical: Unauthorized creation of a valid threshold signature, presignature, key share, or confidential derived key for attacker-chosen inputs'] [Function: ReconstructionLowerBound / confidential_key_derivation / hash_app_id_with_pk] Can a malicious client supply an app_id that is a prefix of another valid app_id (e.g., app_id=b\
