@@ -1,0 +1,1 @@
+Let me look at the FROST EdDSA signing and the reshare invariant check more carefully.
