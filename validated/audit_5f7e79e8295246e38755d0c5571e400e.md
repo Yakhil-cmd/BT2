@@ -1,0 +1,1 @@
+Let me look at the FROST signing code and OT-based ECDSA presigning to find potential participant-set mismatch issues.
