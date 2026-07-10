@@ -1,0 +1,1 @@
+Based on my investigation, I need to check the `TriplePub` structure to confirm the finding about the missing participant-set validation in presign.
