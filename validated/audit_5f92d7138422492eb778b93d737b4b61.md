@@ -1,0 +1,1 @@
+Let me look at the `lib.rs` and the refresh function to understand the full public API and state tracking.

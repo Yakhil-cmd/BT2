@@ -1,0 +1,1 @@
+Let me look at the rerandomization code and the OT-based ECDSA presign to check for double-application of tweaks or Lagrange coefficients.

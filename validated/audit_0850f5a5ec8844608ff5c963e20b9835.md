@@ -1,0 +1,1 @@
+Let me look at the FROST and DKG code for analogous patterns.
