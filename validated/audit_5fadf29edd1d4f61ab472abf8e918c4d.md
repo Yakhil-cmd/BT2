@@ -1,0 +1,1 @@
+Let me read the rest of `do_keyshare` and the DKG verification logic more carefully.
