@@ -1,0 +1,1 @@
+Let me look at the FROST and ECDSA signing code for potential Lagrange coefficient misuse during signing.
