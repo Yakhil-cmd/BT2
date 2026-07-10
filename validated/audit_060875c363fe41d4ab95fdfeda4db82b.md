@@ -1,0 +1,1 @@
+Let me look at the `TriplePub` struct and the triples module to understand what's stored and what's checked.

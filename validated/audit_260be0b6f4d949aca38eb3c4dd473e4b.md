@@ -1,0 +1,1 @@
+Let me look at the rerandomization/tweak code and the FROST signing code, as those are likely areas for this type of vulnerability.

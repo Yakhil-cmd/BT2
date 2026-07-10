@@ -1,0 +1,1 @@
+Let me look at the frost module and signing input validation more carefully.
