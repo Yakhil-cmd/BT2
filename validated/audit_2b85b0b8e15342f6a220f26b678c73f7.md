@@ -1,0 +1,1 @@
+Looking at the CKD protocol implementation for the analog to the "missing special-input validation" vulnerability class.
