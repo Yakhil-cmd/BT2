@@ -1,0 +1,1 @@
+Looking at the CKD coordinator's message handling in `do_ckd_coordinator` and comparing it to the DKG protocol's rigorous share validation, I can identify a valid analog.
