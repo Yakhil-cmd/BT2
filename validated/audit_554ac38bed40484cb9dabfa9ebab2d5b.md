@@ -1,0 +1,1 @@
+Let me look at the `recv_from_others` helper and the multiplication protocol to understand the full impact of a non-participant calling `generate_triple`.
