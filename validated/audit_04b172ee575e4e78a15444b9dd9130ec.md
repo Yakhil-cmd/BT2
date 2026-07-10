@@ -1,0 +1,1 @@
+Looking at the external report's vulnerability class — an authorization check that uses an unauthenticated identity, allowing anyone to bypass it — I need to find an analog in the threshold-signatures codebase where a privileged operation's authorization relies on an identity that is not cryptographically verified.
