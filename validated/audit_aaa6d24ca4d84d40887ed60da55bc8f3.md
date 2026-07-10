@@ -1,0 +1,1 @@
+Looking at the external report's vulnerability class — a hardcoded/configured check that permanently blocks a legitimate operation when a threshold is exceeded — I need to find an analogous pattern in the threshold-signatures codebase where a limit or check causes permanent denial of a protocol operation for honest parties.
