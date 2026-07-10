@@ -1,0 +1,1 @@
+Let me look deeper at the DKG protocol internals and the resharing validation logic.

@@ -1,0 +1,1 @@
+Let me look at the participants module and the ECDSA-specific code for any mathematical computation issues.
