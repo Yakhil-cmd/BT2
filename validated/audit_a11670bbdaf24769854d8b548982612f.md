@@ -1,0 +1,1 @@
+Looking at the codebase for an analog to the "missing minimum-output validation" vulnerability class (values received from an external source are used without bounds/correctness checking, allowing a manipulator to corrupt the output).
