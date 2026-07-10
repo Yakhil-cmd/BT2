@@ -1,0 +1,1 @@
+Let me look at the rerandomization code for robust ECDSA, which is where the `c` field in `PresignOutput` is used.
