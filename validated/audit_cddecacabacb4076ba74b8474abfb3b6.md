@@ -1,0 +1,3 @@
+Looking at the external report's vulnerability class — a **threshold-state bug** where a deactivated component can still perform operations because the deactivation state is not checked in all relevant code paths — I need to find an analog in this codebase where a participant that should be excluded can still inject messages that affect protocol outcomes.
+
+Let me examine the echo broadcast and message routing code carefully.

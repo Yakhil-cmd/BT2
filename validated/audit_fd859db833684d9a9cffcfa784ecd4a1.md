@@ -1,0 +1,1 @@
+Looking at the codebase, I need to check the CKD module's output types and the frost signing module for any stale-state analog.
