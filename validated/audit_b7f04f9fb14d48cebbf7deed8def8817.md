@@ -1,0 +1,1 @@
+Let me look at the FROST signing code and the CKD protocol for potential calculation errors.
