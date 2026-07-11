@@ -1,3 +1,0 @@
-Looking at the external report, the vulnerability class is: **missing validation of participant contributions allows a participant to manipulate a protocol output, bypassing a security property**. The analog in threshold-signatures is in the CKD protocol, where participant share contributions are aggregated by the coordinator with no proof of correctness.
-
-Let me verify the exact lines in the CKD protocol:

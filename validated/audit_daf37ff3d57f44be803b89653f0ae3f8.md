@@ -1,1 +1,0 @@
-Let me look at the FROST signing code and the ECDSA presign/sign code more carefully for missing state update patterns.

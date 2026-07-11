@@ -1,1 +1,0 @@
-Let me look at the ECDSA and FROST signing protocols for potential analogs.

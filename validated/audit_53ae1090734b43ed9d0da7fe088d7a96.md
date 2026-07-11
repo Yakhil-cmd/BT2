@@ -1,1 +1,0 @@
-Let me look deeper at the `batch_invert` function and the `compute_lagrange_coefficient` function, as well as the DKG reshare code.

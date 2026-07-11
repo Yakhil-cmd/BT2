@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class — **unchecked parameter consistency across components** — I need to find an analog in the threshold-signatures codebase where a parameter accepted independently by each participant is never cross-checked for equality, allowing a malicious participant to corrupt protocol output.
-
-Let me examine the CKD protocol's `compute_signature_share` and how `key_pair.public_key` is used.

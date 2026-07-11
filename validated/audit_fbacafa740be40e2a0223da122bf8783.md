@@ -1,3 +1,0 @@
-Looking at the vulnerability class from the external report — **a validation function that checks several fields of a protocol message but omits one critical binding field** — I need to find an analog in the threshold-signatures codebase where a protocol message processing function validates some properties but omits a critical cryptographic correctness check.
-
-Let me examine the CKD coordinator's message processing more closely.

@@ -1,1 +1,0 @@
-Let me look at the participants module and the lagrange function implementation more carefully.

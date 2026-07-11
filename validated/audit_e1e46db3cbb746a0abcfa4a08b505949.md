@@ -1,1 +1,0 @@
-Let me look at the FROST signing code and the CKD module more carefully for zero-state analogs.

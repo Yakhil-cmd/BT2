@@ -1,1 +1,0 @@
-Looking at the external report's vulnerability class: **user-controlled data flows into an aggregation/external operation without validation, allowing state manipulation that bypasses a post-condition check**. I need to find an analog where a malicious participant or coordinator can inject arbitrary values into a cryptographic aggregation step with no verification.

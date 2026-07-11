@@ -1,1 +1,0 @@
-Let me look at the FROST signing and ECDSA signing protocols for missing ownership/authorization checks.

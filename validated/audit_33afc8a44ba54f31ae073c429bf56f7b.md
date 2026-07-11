@@ -1,1 +1,0 @@
-Let me look at the FROST signing protocol and the reshare invariant checks more carefully.

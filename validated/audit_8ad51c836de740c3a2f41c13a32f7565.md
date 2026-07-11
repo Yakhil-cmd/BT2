@@ -1,1 +1,0 @@
-Let me look at a few more areas to be thorough before concluding.

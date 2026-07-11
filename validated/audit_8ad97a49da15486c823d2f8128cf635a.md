@@ -1,1 +1,0 @@
-Let me look at the FROST signing code and the rerandomization/tweak code, which I haven't examined yet.

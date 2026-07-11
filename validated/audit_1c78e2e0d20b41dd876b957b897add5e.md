@@ -1,1 +1,0 @@
-Let me look at the threshold types and the reshare validation more carefully.

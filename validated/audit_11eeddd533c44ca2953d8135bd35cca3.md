@@ -1,1 +1,0 @@
-Let me look at the FROST signing protocol and the rerandomization code, which are the remaining key areas.

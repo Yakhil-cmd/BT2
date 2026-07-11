@@ -1,1 +1,0 @@
-Let me look at the robust ECDSA signing code and the OT-based signing code for any state-ordering issues.

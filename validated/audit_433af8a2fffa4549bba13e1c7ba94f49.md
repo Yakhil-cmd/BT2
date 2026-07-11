@@ -1,1 +1,0 @@
-Let me look at the FROST EdDSA signing and the robust ECDSA protocols for more context.

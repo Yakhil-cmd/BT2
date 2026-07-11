@@ -1,1 +1,0 @@
-Looking at the CKD protocol in `src/confidential_key_derivation/protocol.rs`, I need to examine how the coordinator handles received participant shares, and whether there is any validation analogous to the missing minAnswer/maxAnswer check.

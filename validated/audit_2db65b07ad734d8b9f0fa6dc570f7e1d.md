@@ -1,1 +1,0 @@
-Let me look at the DKG initialization and threshold validation code more carefully.

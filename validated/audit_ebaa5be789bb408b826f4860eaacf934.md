@@ -1,1 +1,0 @@
-Let me look at the FROST signing functions and the OT-based ECDSA triple generation to check for state-not-updated patterns.

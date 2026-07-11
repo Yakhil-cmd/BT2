@@ -1,1 +1,0 @@
-Let me look at the FROST signing modules and the lib.rs to understand the full API surface.

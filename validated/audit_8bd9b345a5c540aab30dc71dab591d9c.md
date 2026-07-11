@@ -1,1 +1,0 @@
-Let me look at the triples generation and the `deal` function more carefully, as well as the `RerandomizationArguments` struct.

@@ -1,1 +1,0 @@
-Let me read the OT-based ECDSA signing coordinator function and the full DKG flow to confirm the attack path.

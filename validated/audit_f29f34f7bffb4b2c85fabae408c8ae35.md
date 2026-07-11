@@ -1,1 +1,0 @@
-Looking at the CKD protocol in `src/confidential_key_derivation/protocol.rs`, I can identify a concrete analog to the "lack of output safeguards" vulnerability class.

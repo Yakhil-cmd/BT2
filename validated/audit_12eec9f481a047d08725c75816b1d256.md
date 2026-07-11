@@ -1,1 +1,0 @@
-Let me look at the CKD protocol and the dkg.rs more carefully for contradictory constraints.

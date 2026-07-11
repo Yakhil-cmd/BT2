@@ -1,1 +1,0 @@
-Let me look at the FROST signing and robust ECDSA protocols for potential issues.

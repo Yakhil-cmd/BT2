@@ -1,1 +1,0 @@
-Let me look at the FROST signing files and the echo broadcast module, which are areas where state tracking and permissionless operations could be relevant.

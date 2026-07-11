@@ -1,1 +1,0 @@
-Let me look at the echo broadcast and protocol state management more carefully.

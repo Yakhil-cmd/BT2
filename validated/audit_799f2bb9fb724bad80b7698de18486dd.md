@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class — **assuming 1:1 equivalence between two values that can diverge, causing operations to fail when the assumption breaks** — I need to find an analog in the threshold-signatures codebase where a computation assumes two protocol parameters are equivalent when they can differ.
-
-Let me examine the OT-based ECDSA presign flow and the triple generation participant set assumption.

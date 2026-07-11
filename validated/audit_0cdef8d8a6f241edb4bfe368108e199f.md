@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class — **missing post-operation output validation** where a call returns success but the actual expected output is never verified — I need to find an analog in the threshold-signatures codebase where a protocol step completes without verifying that the cryptographic output was correctly produced.
-
-Let me examine the CKD coordinator logic and compare it to the other protocols that do have output validation.

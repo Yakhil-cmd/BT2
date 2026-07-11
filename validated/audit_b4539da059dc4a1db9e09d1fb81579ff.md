@@ -1,1 +1,0 @@
-Looking at the production signing code in `src/frost/eddsa/sign.rs`, I need to find an analog to "unchecked/ignored return values causing silent failures."

@@ -1,3 +1,0 @@
-Looking at the external report's vulnerability class: a custom access-control check restricts a valid protocol state (NFT in Auction) that was never whitelisted, causing permanent denial of functionality. The analog to search for in threshold-signatures is: a validation check that blocks a valid participant/protocol state, causing permanent denial of DKG, reshare, refresh, presign, or signing.
-
-Let me do targeted searches on the key validation paths.

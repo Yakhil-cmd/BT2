@@ -1,1 +1,0 @@
-Looking at the external report's vulnerability class — **two lists that should correspond are not validated for equal length or correct correspondence** — I need to find an analog in the threshold-signatures codebase where two participant sets or arrays that must match are used together without a correspondence check.

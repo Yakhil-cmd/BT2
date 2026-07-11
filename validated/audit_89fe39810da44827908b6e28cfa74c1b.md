@@ -1,1 +1,0 @@
-Let me look at the FROST signing and the protocol execution framework more carefully.
