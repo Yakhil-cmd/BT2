@@ -1,0 +1,1 @@
+[File: 'x/cronos/keeper/precompiles/interface.go -> ica.go'] [Function: IcaContract.Run / SubmitMsgsMethodName] Can an unprivileged EVM caller inject arbitrary JSON into the ICA packet memo by crafting a caller address whose hex string contains JSON metacharacters (e.g., '\
