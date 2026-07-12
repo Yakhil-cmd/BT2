@@ -1,1 +1,0 @@
-[File: 'x/cronos/keeper/precompiles/base_contract.go + ica.go'] [Function: IcaContract.Run / RegisterAccountMethodName] Can an unprivileged EVM contract register an ICA account with an arbitrary version string containing JSON injection characters (e.g., version = `\
