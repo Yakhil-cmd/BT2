@@ -1,0 +1,13 @@
+# Q1050: stale reverse mapping under same-block reorder supply integrity
+
+## Question
+Can an unprivileged attacker enter through token mapping update reached by transaction flow by controlling denom, contract address and existing ContractToDenomKey when two attacker-controlled transactions are valid separately but reordered in one block, then turn stale reverse state into dual ownership of one backing contract so that one contract cannot redeem or mint value for two denoms fails and bank supply, module escrow, contract balances, and ERC totalSupply cannot diverge profitably, leading to Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code?
+
+## Target
+- File/function: x/cronos/keeper/keeper.go::ensureContractNotMapped
+- Entrypoint: token mapping update reached by transaction flow
+- Attacker controls: denom, contract address and existing ContractToDenomKey; scenario focus: same-block reorder plus supply integrity.
+- Exploit idea: turn stale reverse state into dual ownership of one backing contract while two attacker-controlled transactions are valid separately but reordered in one block.
+- Invariant to test: one contract cannot redeem or mint value for two denoms; also verify bank supply, module escrow, contract balances, and ERC totalSupply cannot diverge profitably.
+- Expected Immunefi impact: Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code.
+- Fast validation: write a focused unit test around the named function and assert pre/post bank, module, and contract balances. Scoped to live HackenProof Cronos Blockchain Protocols: cryptographic flaws and vulnerabilities causing unintentional withdrawal, draining, or loss of user funds; excludes DoS/DDoS/spam, gas draining, leaked keys, privileged-address/admin abuse, basic governance attacks, known fork/dependency issues without a working Cronos PoC, tests, mocks, scripts, docs, disabled configs, and non-production code.

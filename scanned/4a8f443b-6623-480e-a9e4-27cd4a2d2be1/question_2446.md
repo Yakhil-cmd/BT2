@@ -1,0 +1,13 @@
+# Q2446: bank precompile blocked recipient under same-block reorder event binding
+
+## Question
+Can an unprivileged attacker enter through EVM mint or transfer precompile call by controlling recipient bytes, module-account-like address and amount when two attacker-controlled transactions are valid separately but reordered in one block, then send attacker-controlled funds to a protected module account and later withdraw/drain so that blocked module accounts cannot receive user-controlled precompile funds fails and recognized EVM logs are accepted only when backed by the contract state transition that emitted them, leading to Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code?
+
+## Target
+- File/function: x/cronos/keeper/precompiles/bank.go::checkBlockedAddr
+- Entrypoint: EVM mint or transfer precompile call
+- Attacker controls: recipient bytes, module-account-like address and amount; scenario focus: same-block reorder plus event binding.
+- Exploit idea: send attacker-controlled funds to a protected module account and later withdraw/drain while two attacker-controlled transactions are valid separately but reordered in one block.
+- Invariant to test: blocked module accounts cannot receive user-controlled precompile funds; also verify recognized EVM logs are accepted only when backed by the contract state transition that emitted them.
+- Expected Immunefi impact: Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code.
+- Fast validation: build a local integration test with two accounts and compare state root plus balances before and after the attempted flow. Scoped to live HackenProof Cronos Blockchain Protocols: cryptographic flaws and vulnerabilities causing unintentional withdrawal, draining, or loss of user funds; excludes DoS/DDoS/spam, gas draining, leaked keys, privileged-address/admin abuse, basic governance attacks, known fork/dependency issues without a working Cronos PoC, tests, mocks, scripts, docs, disabled configs, and non-production code.

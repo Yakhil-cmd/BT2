@@ -1,0 +1,13 @@
+# Q3836: mempool stale checked tx under failed tail call event binding
+
+## Question
+Can an unprivileged attacker enter through RPC CheckTx or InsertTx followed by commit and proposal by controlling same-sender txs, sequence, fees, balances and bridge/conversion messages when a later bank, EVM, IBC, or callback step fails after earlier fund-sensitive work has run, then keep stale checked txs after account state changes and execute invalid fund movement so that only txs valid against current committed state can enter blocks fails and recognized EVM logs are accepted only when backed by the contract state transition that emitted them, leading to Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code?
+
+## Target
+- File/function: app/mempool/manager.go::RecheckTxs
+- Entrypoint: RPC CheckTx or InsertTx followed by commit and proposal
+- Attacker controls: same-sender txs, sequence, fees, balances and bridge/conversion messages; scenario focus: failed tail call plus event binding.
+- Exploit idea: keep stale checked txs after account state changes and execute invalid fund movement while a later bank, EVM, IBC, or callback step fails after earlier fund-sensitive work has run.
+- Invariant to test: only txs valid against current committed state can enter blocks; also verify recognized EVM logs are accepted only when backed by the contract state transition that emitted them.
+- Expected Immunefi impact: Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code.
+- Fast validation: build a local integration test with two accounts and compare state root plus balances before and after the attempted flow. Scoped to live HackenProof Cronos Blockchain Protocols: cryptographic flaws and vulnerabilities causing unintentional withdrawal, draining, or loss of user funds; excludes DoS/DDoS/spam, gas draining, leaked keys, privileged-address/admin abuse, basic governance attacks, known fork/dependency issues without a working Cronos PoC, tests, mocks, scripts, docs, disabled configs, and non-production code.

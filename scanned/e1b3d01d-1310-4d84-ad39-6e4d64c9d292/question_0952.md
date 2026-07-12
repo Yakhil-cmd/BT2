@@ -1,0 +1,13 @@
+# Q0952: token mapping permission under replay attempt authorization
+
+## Question
+Can an unprivileged attacker enter through MsgUpdateTokenMapping by controlling sender field, signer, denom, contract, symbol and decimals when the attacker repeats a previously successful or failed packet, tx, event, or callback, then register a malicious contract for a valuable denom without CanChangeTokenMapping so that only authorized signers can create, replace or delete token mappings fails and the authenticated signer/caller is exactly the account whose assets or authority are used, leading to Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code?
+
+## Target
+- File/function: x/cronos/keeper/msg_server.go::UpdateTokenMapping
+- Entrypoint: MsgUpdateTokenMapping
+- Attacker controls: sender field, signer, denom, contract, symbol and decimals; scenario focus: replay attempt plus authorization.
+- Exploit idea: register a malicious contract for a valuable denom without CanChangeTokenMapping while the attacker repeats a previously successful or failed packet, tx, event, or callback.
+- Invariant to test: only authorized signers can create, replace or delete token mappings; also verify the authenticated signer/caller is exactly the account whose assets or authority are used.
+- Expected Immunefi impact: Critical - direct unintentional withdrawal, draining, or loss of user funds through Cronos blockchain/app code.
+- Fast validation: fuzz the controlled fields while asserting the invariant and rejecting any profitable state delta. Scoped to live HackenProof Cronos Blockchain Protocols: cryptographic flaws and vulnerabilities causing unintentional withdrawal, draining, or loss of user funds; excludes DoS/DDoS/spam, gas draining, leaked keys, privileged-address/admin abuse, basic governance attacks, known fork/dependency issues without a working Cronos PoC, tests, mocks, scripts, docs, disabled configs, and non-production code.
