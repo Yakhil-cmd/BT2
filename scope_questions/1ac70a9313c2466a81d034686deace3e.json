@@ -1,0 +1,147 @@
+[
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/interface.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fc6ee830-92c2-4c20-9f50-93a8ac8b7aa9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/relayer.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1d1dfb96-db3b-4a41-8606-141349fb5f96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/utils.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dbf9e7b0-9c32-41ed-8194-2fff928ee38a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/middleware/conversion_middleware.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c0fd7a77-bb84-45dc-97c5-e2093fb588f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/migrations/v2/migrate.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a3d1ad6e-f51b-466e-a4a2-a8acd4f4fc90?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/module.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fd43bae2-1f3e-42c5-a078-1bc5d3a6f4b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/proposal_handler.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ca25d3e7-4240-4806-b664-26c0e204507a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/rpc/api.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6246a5b4-ab84-45c2-8b7f-82626717e53b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/codec.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_374da9b6-c688-4502-a968-bac325e22777?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/contracts.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e6112f77-32b3-4cfc-9530-28da08ac6500?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/errors.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2a12c671-952d-4519-8d3d-9e10a273fa22?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/events.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1294b47-232c-4c16-9c6e-a74fa6baf57c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/genesis.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_039b774d-60ce-4a36-a235-393112b709fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/interfaces.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af76e416-e2d2-4d4c-9191-232777362e7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/keys.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c9ffd24-8b31-47c0-b62f-ca128e8ed534?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/messages.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_290358ef-d952-4be7-9859-ab6a7db840bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/params.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9abf0e00-d5f3-4271-8087-b28d61aaa6d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/proposal.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2a2f77ad-03f4-40e0-a5df-0f1049c723ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/query.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5dfdaee-98b2-4dc6-9bb7-2b5c5607ee07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/tracer.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77898e64-cb43-4f56-9b62-57bc8ba5f94a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/types.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d20dc53d-267d-4491-b7d7-67fb6dc4c0ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/autocli.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_de7a388b-e325-494c-847e-110e732d2409?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/keeper/keeper.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a863200-e99a-4b3b-a6f7-7c220617664b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/keyring/keyring.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da7909b9-e30e-48ca-9d22-9a0627574f8b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/module.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92f3f984-0aa9-46bd-83d6-239727645466?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/codec.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_80901532-ca83-4ef0-ae9d-ba2ab66a1cbc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/genesis.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_430618c3-baf7-4ea0-80ae-6fcde0bd29ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/keys.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2068f307-5d9f-4c06-bb53-a7ab7aeae3ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/msg.go -> Scope: High: Bypass of Cronos admin, governance authority, permission, token-mapping, bridge, block-list, or module-account authorization checks'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1d1420b9-619c-4e25-9bd2-7b364a2fe131?mode=deep",
+    "questions_generated": false
+  }
+]
