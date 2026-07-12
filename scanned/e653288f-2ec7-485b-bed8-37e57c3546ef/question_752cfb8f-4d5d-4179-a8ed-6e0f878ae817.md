@@ -1,1 +1,0 @@
-[File: 'x/e2ee/module.go'] [Function: Keeper.Key (QueryServer)] Can an unprivileged caller query Key for an address that has never registered a key, under no preconditions, by calling KVStore.Get(types.KeyPrefix(bz)) which returns nil, causing the handler to return KeyResponse{Key: string(nil)} = KeyResponse{Key: \
