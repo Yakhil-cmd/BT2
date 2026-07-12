@@ -1,1 +1,0 @@
-[File: 'x/cronos/keeper/precompiles/base_contract.go'] [Function: IcaContract.Run/SubmitMsgsMethodName + memo injection] Can an unprivileged EVM caller invoke ICA precompile submitMsgs with a connectionID string containing JSON-injection characters (e.g., containing '\
