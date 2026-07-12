@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: proto/e2ee/query.proto -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5bc2a6b9-ff27-47d9-a52d-6a5e3e812925?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/e2ee/tx.proto -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_933c7997-82a4-4335-a754-214d06366460?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/bindings/src/Bank.sol -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8c2a7a43-259a-484a-be09-de7bfd8ce34e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/bindings/src/CosmosTypes.sol -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7a6238da-7791-40ae-a98a-441a43de57cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/bindings/src/ICA.sol -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d744d852-d1bd-43aa-9f7e-038d814c0404?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/bindings/src/ICACallback.sol -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_88fd62cf-153a-433d-8a74-3a494bd24e3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/bindings/src/Relayer.sol -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dadba88f-eec3-424d-b5ea-f44fc063b5ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/bindings/src/RelayerFunctions.sol -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aafa201e-7052-473b-ae61-480a2b09ee19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/decoders.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a8e982c4-d15b-49c9-ab81-6509a3a70ffa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/event.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d519d02-7736-4069-8dc6-4399e9ea8bc1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/events.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c938f782-87e0-46e9-b559-5b6a5748f2bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/events/types/types.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92b5cfe6-219a-4a99-afd1-c57ea60e6000?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/exported/exported.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_921d115d-c44f-4708-a686-7ae8a5f9952d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/genesis.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4f66f65e-d41a-4dd0-a202-7954216a45d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/evm.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5828348-ae89-43d9-90bc-ba333e86dfd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/evm_hooks.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_177892d6-c36e-412d-b774-455f361e86e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/evmhandlers/send_cro_to_ibc.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3778c700-2eaf-4df2-b96e-37b85abe473c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/evmhandlers/send_to_account.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c3a89b1b-11f1-4d9c-bc7a-dab4e065eaa1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/evmhandlers/send_to_ibc.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7b11623-b4e8-457d-9dd8-b6806845b9b9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/evmhandlers/send_to_ibc_v2.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e01b45b3-6584-4aa3-9e09-2b7fdbd20ebc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/grpc_query.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6b48d437-215d-4ac8-bde6-2085d67dbea2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/ibc.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a8f3470-7c9d-4a34-a960-9fa3b6589821?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/keeper.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_97380cb7-25b7-44d1-bb1a-e12a924ba7d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/migrations.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_99067367-db3c-4127-9bc0-7783e3603e3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/msg_server.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60b27401-cd82-4fd3-95cc-cb6b34950e0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/params.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_367d5e9d-95ec-47b0-9b01-b0af8afcb5cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/permissions.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d8665a42-d54f-41e1-af7c-9e2e5709675f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/bank.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81727958-3e1b-4166-a821-4de78f736ef2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/base_contract.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_759bb29c-7ba4-4e62-bb7e-8aa2957312b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/ica.go -> Scope: Critical: Consensus divergence, deterministic state mismatch, invalid block acceptance, or chain halt triggered by an unprivileged transaction, EVM log, precompile call, IBC packet, proposal path, or mempool/proposal interaction'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4f41bfd2-a800-4aed-a370-18eaf48647d4?mode=deep",
+    "questions_generated": false
+  }
+]
