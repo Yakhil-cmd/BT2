@@ -1,1 +1,0 @@
-[File: 'x/e2ee/keyring/keyring.go -> Scope: High: Corruption of e2ee key/message state with direct security impact'] [Function: New / filepath.Join rootDir path] Can an attacker control the rootDir parameter passed to New under the precondition that rootDir is derived from user-supplied CLI flags without path sanitization, triggering the call sequence New(rootDir=\

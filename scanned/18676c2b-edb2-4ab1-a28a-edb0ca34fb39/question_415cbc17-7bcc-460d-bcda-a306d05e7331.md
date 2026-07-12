@@ -1,1 +1,0 @@
-[File: 'x/e2ee/keyring/keyring.go -> Scope: High: Corruption of e2ee key/message state with direct security impact'] [Function: keeper.Key (query)] Can an unprivileged caller query Key for an address that has no registered key under the precondition that KVStore.Get returns nil and the handler returns KeyResponse{Key: string(nil)} == KeyResponse{Key: \
