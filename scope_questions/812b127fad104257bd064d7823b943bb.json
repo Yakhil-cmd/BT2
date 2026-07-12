@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: app/app.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2eb31652-f01b-4c09-b8d2-c4cc604bb86b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/block_address.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_475ccae8-51a7-44d0-870b-9ee8097cfd85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/export.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af28dd54-142e-4fe8-afa9-377112b3e112?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/forks.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_551bf6f5-3ead-4119-992b-98a8113f6904?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/legacy.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a26400e8-7a63-4f9c-9516-8a4454533cbb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/decoder_cache.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8fca5e10-b9c9-4d8f-8602-a4f537f93599?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/encoder_cache.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cbaaa58b-a0ac-4d6a-addd-7c0a00b41c0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/gossip.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c824785-a1c3-4c67-8960-00645b25cf9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/helpers.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2c7c8e28-6666-42c7-ab96-d00cb59c37af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/manager.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b7955da-ccc0-445c-b6ee-1e34b81043de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/preverify.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_283118ee-c7cd-4447-8e55-fb4601d7d51c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/reap.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a6756dbe-8dbd-45e2-b3c4-8c18e2e12f74?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/mempool/recheck_worker.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b21b3ca0-382a-42a3-81c9-3288db29e589?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/prefix.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d09d2b7a-10b7-4c78-b42b-aa9f3844280d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/proposal.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5eb01fb4-17ad-4e25-ab9b-33d4a9b3af43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/state.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b99e5af3-5618-43d5-b5a2-eb3a7f2bae2f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/storeloader.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49766e5e-f02b-44d3-ba0e-b3f1f375122c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/unblockable.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a050e84e-65cc-4cef-a17e-510f26c5057c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/upgrades.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4599ab15-7de2-47b9-8420-3a29010e22ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/versiondb.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e5bd8eeb-4446-4650-a8ea-6fca3e751a96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: app/versiondb_placeholder.go -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_305b4dbf-2e97-42db-8be4-87786109526f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/src/ModuleCRC20.sol -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6713fc6e-6bf5-4948-8cef-30fa0320cc0a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/src/ModuleCRC20Proxy.sol -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6baef5d5-11a1-4311-99b7-8264f61528d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/src/ModuleCRC20ProxyAuthority.sol -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_26c51b5f-4fda-4695-b2b5-7caef4df3ad0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/src/ModuleCRC21.sol -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3411f3bc-234d-4e2b-8cf6-af2260776309?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/cronos/cronos.proto -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_978fe3bb-5abd-4480-bee6-b0dd554f55a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/cronos/genesis.proto -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac705177-ff50-4b3e-875b-3b086cfecabf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/cronos/query.proto -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_057196d1-e65f-4261-8296-f37ef10e84ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/cronos/tx.proto -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a0050083-c77e-4b24-91f5-fa962f6b2904?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: proto/e2ee/genesis.proto -> Scope: Critical: Unauthorized mint, burn, transfer, bridge, conversion, escrow release, or balance/accounting change for CRO, IBC vouchers, CRC20, CRC21, ERC20, or precompile-controlled assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b3ddf976-784a-40be-bf20-d881478f800d?mode=deep",
+    "questions_generated": false
+  }
+]
