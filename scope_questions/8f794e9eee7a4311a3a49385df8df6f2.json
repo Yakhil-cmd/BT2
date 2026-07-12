@@ -1,0 +1,147 @@
+[
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/interface.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f7058ed1-2717-4346-9a6c-c656412e4b3c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/relayer.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49352f8b-95aa-4bc2-9ce5-0667d28bdc48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/keeper/precompiles/utils.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1f880b3e-be47-4d15-b6f7-5aa997523fbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/middleware/conversion_middleware.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b369211a-db1b-4694-ad10-3f5a7b46c9b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/migrations/v2/migrate.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_71238bb5-fae9-40fc-8c15-080cb4de0749?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/module.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_371b9cc2-dd5d-4278-812d-6bf71c2adef8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/proposal_handler.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e799e01e-6b42-4246-b52d-d39bb0873978?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/rpc/api.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8208cec7-a7cf-4bc3-9592-76920bd5e363?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/codec.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4f1b3088-d2a9-4c2d-9278-7ce6b30a3ca9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/contracts.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e40d4a6d-efa2-4265-b78c-7ee980486a6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/errors.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a78a19c-fa60-4a3e-9b51-6ff05cd46caf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/events.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b9c0c890-2955-47b2-b63f-966a8e019a11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/genesis.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1657bcb5-2861-4917-9002-1e44b95ed753?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/interfaces.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_41b709f9-7cbf-49e6-936a-f44503597749?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/keys.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77fec798-8d07-450a-a41d-722d27a9c270?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/messages.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5dc44f5c-b3b9-4c04-a3ab-cce226f78895?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/params.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6a941464-ecd1-4e35-bc44-f81ddc9443fe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/proposal.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9a93085e-6962-4a53-b8ea-603259ed6a9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/query.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ef33b06c-bfa1-424e-a956-7c71d865fbb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/tracer.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d34321f-7971-4d2f-a332-c4f4ea62c969?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/cronos/types/types.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a22a44f-08ae-4b8b-96ff-a10a9ea77753?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/autocli.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10804d56-d9d9-43db-8c88-9226db9c465c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/keeper/keeper.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25bc3c7d-68d4-475b-a004-3acf620c3a62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/keyring/keyring.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1e03e7eb-991f-4227-99bb-c11eb1ea5221?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/module.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a96a4155-f703-4c96-9ad8-0c33064ab54d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/codec.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0bd0364d-de37-44c3-9a15-cd2978c7ca46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/genesis.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9181f930-49c1-458e-a813-108a71d94b23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/keys.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ee9d9a6-d9bd-4e3c-a3bd-5630b3f90a48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: x/e2ee/types/msg.go -> Scope: High: Corruption of token mappings, denom/contract binding, IBC channel/accounting state, EVM receipt/log processing, precompile state, or e2ee key/message state with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9ddb11c8-f2e3-4b37-ad15-5385b3e974aa?mode=deep",
+    "questions_generated": false
+  }
+]
