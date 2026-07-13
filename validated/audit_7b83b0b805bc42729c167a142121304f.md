@@ -1,0 +1,1 @@
+Looking at the external bug class — **wrong/missing caller validation in an intermediary call path** — I need to find an analog in Cronos where a function is called by an intermediary but validates the wrong address (or skips validation entirely), enabling unauthorized asset operations.
