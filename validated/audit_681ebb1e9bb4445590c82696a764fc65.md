@@ -1,0 +1,1 @@
+Let me look at the EVM handlers and precompiles more carefully for the analog pattern.
