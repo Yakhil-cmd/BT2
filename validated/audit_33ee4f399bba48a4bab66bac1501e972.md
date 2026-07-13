@@ -1,0 +1,1 @@
+Looking at the Cronos codebase, I need to trace the token conversion accounting flow and check whether any open burn path bypasses it.
