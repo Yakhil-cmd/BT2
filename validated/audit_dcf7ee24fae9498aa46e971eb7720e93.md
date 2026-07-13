@@ -1,1 +1,0 @@
-Let me look at `OnRecvVouchers` and the full keeper to check for any other accounting patterns.

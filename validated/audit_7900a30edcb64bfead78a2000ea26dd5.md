@@ -1,1 +1,0 @@
-Looking at the Cronos codebase for an analog to the external report's accounting bug (incomplete propagation of freed balance across multiple related state entries), I need to examine the token conversion, IBC, and EVM hook flows.

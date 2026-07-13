@@ -1,1 +1,0 @@
-Based on my thorough analysis of the Cronos codebase, I need to check the `send_to_ibc_v2` handler and the `send_to_account` handler before concluding.

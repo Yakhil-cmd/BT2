@@ -1,1 +1,0 @@
-Let me look at the `send_to_account` handler and the bank precompile's `transfer` authorization more carefully.

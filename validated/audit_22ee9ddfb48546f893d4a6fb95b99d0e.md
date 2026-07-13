@@ -1,1 +1,0 @@
-Looking at the external bug class (auth bypass — functions operating on behalf of an address without verifying the caller is that address), I need to find an analog in Cronos where an unprivileged actor can trigger unauthorized token operations on another user's balance.

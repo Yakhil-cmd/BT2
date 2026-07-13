@@ -1,1 +1,0 @@
-Looking at the external bug class — **missing post-execution state check allowing bypass of access controls** — I need to find an analog in Cronos where a guard that should run during execution is absent, letting an unprivileged actor bypass a restriction.

@@ -1,1 +1,0 @@
-Looking at the Cronos codebase, I need to check what state is stored in the `x/cronos` keeper versus what is actually exported in `ExportGenesis`.
