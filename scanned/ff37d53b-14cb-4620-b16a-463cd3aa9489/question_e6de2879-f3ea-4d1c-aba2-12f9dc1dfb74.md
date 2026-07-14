@@ -1,1 +1,0 @@
-[File: 'packages/api-react/src/slices/walletRpcPreferences.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'] [Function: loadFromStorage / createStore initialState] Can an unprivileged attacker who writes '{\
