@@ -1,1 +1,0 @@
-[File: 'packages/api-react/src/hooks/useSubscribeToEvent.ts'] [Function: useSubscribeToEvent / useNFTCoinAdded / useNFTCoinEvents] Can an inline arrow function passed as callback to useNFTCoinAdded (e.g., '(data) => handleNFTEvent(\
