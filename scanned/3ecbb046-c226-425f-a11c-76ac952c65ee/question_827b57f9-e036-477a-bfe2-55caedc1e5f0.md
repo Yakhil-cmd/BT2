@@ -1,1 +1,0 @@
-[File: 'packages/wallets/src/hooks/useClawbackDefaultTime.tsx -> Scope: High'] [Function: useClawbackDefaultTime / prefs.yaml migratePrefs] Can an attacker who controls a crafted prefs migration payload (e.g., via a malicious import or a tampered prefs.yaml) inject a 'clawbackDefaultTime' key with a value of type string instead of object (e.g., 'clawbackDefaultTime: \
