@@ -1,1 +1,0 @@
-[File: 'packages/core/src/hooks/useGetLatestVersionFromWebsite.ts -> Scope: High'] [Function: useAppVersion / appVersionOverride / useGetLatestVersionFromWebsite] Can an attacker set 'appVersionOverride' to a version string higher than the real latest (e.g. '999.0.0') under PRECONDITIONS (localStorage writable) by CALL_SEQUENCE (1. localStorage.setItem('appVersionOverride', '\
