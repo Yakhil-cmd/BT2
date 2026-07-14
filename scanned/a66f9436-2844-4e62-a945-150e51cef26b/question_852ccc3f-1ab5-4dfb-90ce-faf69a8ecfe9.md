@@ -1,1 +1,0 @@
-[File: 'packages/gui/src/components/signVerify/SignMessage.tsx -> Scope: High: Bypass of signing approval restrictions'] [Function: handleSignById error regex lines 104-109] Can a malicious RPC daemon under the precondition that it returns an error message crafted as \
