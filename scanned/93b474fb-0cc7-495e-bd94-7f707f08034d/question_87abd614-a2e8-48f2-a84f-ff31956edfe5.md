@@ -1,1 +1,0 @@
-[File: 'packages/gui/src/init-prefs.ts -> Scope: High: JSON.parse of fingerprintSettings with prototype pollution payload'] [Function: migrateGUIPrefsFromLocalStorage] Can an attacker inject a fingerprintSettings value containing a prototype pollution payload (e.g., `{\
