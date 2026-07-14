@@ -1,1 +1,0 @@
-[File: 'packages/wallets/src/components/WalletSendTransactionResultDialog.tsx'] [Function: WalletCATSend.handleSubmit / colour substring check case sensitivity] Can an attacker bypass the CAT coloured-address rejection check by supplying an address containing 'Colour' or 'COLOUR' (uppercase variants), since the check 'address.includes(\
