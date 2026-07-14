@@ -1,1 +1,0 @@
-[File: 'packages/core/src/components/ModalDialogs/ModalDialogsProvider.tsx -> packages/gui/src/electron/utils/openReactDialog.tsx'] [Function: openReactDialog/generateScriptContent] The confirm button in Confirm.tsx has a static data-payload='{\
