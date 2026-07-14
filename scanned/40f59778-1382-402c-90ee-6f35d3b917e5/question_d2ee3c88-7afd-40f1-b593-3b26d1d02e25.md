@@ -1,1 +1,0 @@
-[File: 'packages/gui/src/init-prefs.ts'] [Function: migrateGUIPrefsFromLocalStorage] Can an attacker inject a JSON value for a non-noParse key (e.g., cacheFolder) that is a valid JSON string but contains null bytes or path separators (e.g., \

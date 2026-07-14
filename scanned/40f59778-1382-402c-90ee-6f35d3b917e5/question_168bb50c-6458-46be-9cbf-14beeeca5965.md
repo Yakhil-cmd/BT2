@@ -1,1 +1,0 @@
-[File: 'packages/gui/src/init-prefs.ts'] [Function: migrateGUIPrefsFromLocalStorage] Can an attacker inject a crafted fingerprintSettings JSON object into localStorage that contains entries for fingerprints belonging to other wallets on the same machine (e.g., {\

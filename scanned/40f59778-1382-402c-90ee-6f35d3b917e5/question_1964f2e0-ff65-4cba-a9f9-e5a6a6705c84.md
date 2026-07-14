@@ -1,1 +1,0 @@
-[File: 'packages/gui/src/index.tsx'] [Function: migrateGUIPrefsFromLocalStorage (init-prefs.ts lines 34-38)] Can an unprivileged attacker who can write to localStorage before first boot under the precondition that a target key's value is a JSON string that parses to a prototype-polluting object (e.g., '{\
