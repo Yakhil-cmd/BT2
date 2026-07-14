@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferDataDialog.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1b4e0b57-d87a-4537-bee5-1607e3c46375?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferDataEntryDialog.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8c88d84f-aaae-47b8-8e3f-a2db159b0206?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferEditor.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_674f0fe5-09b9-43df-a38a-07eb7663a99a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferEditorConditionsPanel.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_472c94a5-07b4-4b44-9ac1-77c41589dcec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferEditorRowData.ts -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60a3e537-9c60-4dfe-97b2-005c3951ddeb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferExchangeRate.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6a159a1d-b68d-4c9f-b965-29f84c2ed1d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferImport.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f2d4bac3-9532-4a27-b24f-a2ba62ae3550?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferManager.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6a7c1592-c7f2-4626-8c17-b8d1561cab4b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferRowData.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_de3e6393-c665-4dd1-87f9-566b46d4f24c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferShareDialog.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49ef646b-c2bc-4187-b0a2-1d17dbdeb50c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferState.ts -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a8414bba-9934-45e8-bc3d-eda0f4e6c07a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferSummary.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d552d5e4-fbd9-4559-9f2f-1c1610a6be0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferSummaryRow.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eabfbf06-8ab9-4283-9084-b9f813c1787a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/utils.ts -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_22c097a0-d04e-4455-a7fe-405d4653b70d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/CancelOfferList.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_abf7151d-97b8-44ac-8d6b-58b52161f2e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/CreateOfferBuilder.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a2e8cfd-4162-443f-b57f-50fa6ab723f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/DataLayerOfferViewer.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d49aebe-fc5c-46a0-abb6-9c793b3b7486?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilder.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ca0d9f6-95ca-4a4d-9020-6fff51b3eb9e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderContext.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8f51ca8a-6bf9-454c-a937-c71604ab06ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderExpirationSection.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a9692e9-5465-4e10-96c5-c20a00770307?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderFeeSection.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70cd30a6-ae69-45d6-8eb0-801528ee695a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderImport.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ad2d37a-3213-4921-8983-e0f60a0345a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderNFT.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_52dbd13a-d95a-45ec-984a-cee9d0143ebd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderNFTRoyalties.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_75b14609-42ca-4115-9376-de1307cb081f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderNFTSection.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_925d57cc-21ad-4152-a1ed-24ef2868d00f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderProvider.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a46b42c3-24c4-416d-a0a3-f9c103759d16?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderRoyaltyPayouts.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_570b864a-a060-4aa4-97d4-5421a1fa722e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderToken.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e54dc933-898f-48e5-b391-e40db8f396a7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderTokenSelector.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0376d95b-54d9-46c7-b815-aa580f6e3dbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers2/OfferBuilderTokensSection.tsx -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f8f564cc-0102-4849-b6cf-af6fa0517959?mode=deep",
+    "questions_generated": false
+  }
+]
