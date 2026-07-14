@@ -1,0 +1,1 @@
+[File: 'packages/gui/src/components/walletConnect/WalletConnectAddConnectionDialog.tsx'] [Function: useWalletConnectPreferences -> localStorage] Can an unprivileged attacker with write access to the renderer's localStorage (e.g., via a compromised renderer context or Electron's lack of origin isolation) set 'walletConnectPreferences' to '{\

@@ -1,0 +1,1 @@
+[File: 'packages/gui/src/index.tsx -> Scope: Critical: Secret exposure or signing-context confusion'] [Function: migrateGUIPrefsFromLocalStorage (init-prefs.ts lines 28-38, JSON.parse without schema validation)] Can an unprivileged attacker who can write to localStorage inject a 'fingerprintSettings' value containing a prototype-pollution payload (e.g. '{\
