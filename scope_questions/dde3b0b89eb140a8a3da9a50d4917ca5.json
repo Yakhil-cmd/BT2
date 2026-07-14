@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useLocalStorage.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a850045-f103-4540-bf16-b6434554382a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinAdded.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c0dce2a4-1655-4aaa-840f-0f02650398f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinDIDSet.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da8be8ed-d201-4e42-93a8-bc43987e1fca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinRemoved.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7e9c1945-baed-4e81-8011-5fc2250f8c05?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinUpdated.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bdfdd766-5f6b-452f-98f6-16bcc13718f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/usePrefs.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_13ab6135-229f-47b1-9367-6f09b3300d2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useService.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9854aafa-d7ee-41d2-a3b2-6fd9fe5ce56c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useServices.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4351ed0b-bbbc-42a7-9493-23ae084539da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useSubscribeToEvent.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_68bc81e6-116f-4c42-8254-42c3613b78d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useThrottleQuery.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1ad3708d-9b5a-443b-b5a5-53f0c179df7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useVCEvents.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1ad4ca5-99fe-45b3-8bc8-8846040fb28c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/client.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09d64e25-fa4d-4c0e-abfe-bff664ffeff6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/daemon.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d469cfc4-af0a-4b83-8710-807aa15e4f2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/dataLayer.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0603d94-6a83-4c69-b75b-7de977aa2506?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/farmer.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_047f53de-7595-4111-88b4-3a776b4e0d80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/fullNode.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_869ecdf3-70bd-4967-82f8-db15cec53236?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/harvester.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bb6e3e3-e954-493b-87ec-a012a3d85735?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/plotter.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_06703b01-b999-4371-90d2-3ad85d9d62ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/wallet.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_72df2494-06b3-4032-967d-4aca4ded9950?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/slices/api.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bbbf1e68-f0bb-4b5d-bfbe-65ae8b43d2da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/slices/walletRpcPreferences.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6a1c6196-73fd-4b04-9fd5-0d9028d383b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/store.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_42002d4a-b3ed-41bd-acf0-4b59a4a1f804?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/EventEmitter.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3168a5e0-f347-45cd-a286-aea5ab05a9b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/onCacheEntryAddedInvalidate.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_480514f3-b3a9-4849-8030-45c4c6c46566?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/reduxToolkitEndpointAbstractions.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5eb26146-06f7-4473-8858-6f6b12222f6a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/withAllowUnsynced.ts -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cd78eef0-3397-4712-87bc-373146c915a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/AddressBookProvider/AddressBookProvider.tsx -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b675b995-45b7-465a-b2f0-5d213f386c19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/Auth/AuthProvider.tsx -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3442b458-eb8e-4314-b4d0-46a5fbb56903?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/GuestRoute/GuestRoute.tsx -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dd6400f2-5b40-4590-a23d-07147ca4d602?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/Link/Link.tsx -> Scope: High: Bypass of passphrase, profile, keyring-migration, auto-login, wallet-selection, WalletConnect approval, offer confirmation, signing approval, or custody/clawback restrictions with direct security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5ab1c85f-e148-4cd3-b332-fc8de382a6d4?mode=deep",
+    "questions_generated": false
+  }
+]
