@@ -1,1 +1,0 @@
-[File: 'packages/wallets/src/components/WalletSendTransactionResultDialog.tsx'] [Function: sendTransaction mutation / NO_TRANSACTIONS_WHILE_SYNCING filter] Can an attacker cause the sendTransaction promise to hang indefinitely by ensuring all sentTo entries have error='NO_TRANSACTIONS_WHILE_SYNCING', since processUpdates filters out these entries via 'if (error === \
