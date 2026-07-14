@@ -1,1 +1,0 @@
-[File: 'packages/gui/src/components/notification/NotificationWrapper.tsx'] [Function: NotificationAnnouncementDialog.handleURLClick / useOpenUnsafeLink] Can an unprivileged on-chain or WalletConnect attacker who crafts an ANNOUNCEMENT notification with a non-HTTP url field (e.g., 'javascript:fetch(\
