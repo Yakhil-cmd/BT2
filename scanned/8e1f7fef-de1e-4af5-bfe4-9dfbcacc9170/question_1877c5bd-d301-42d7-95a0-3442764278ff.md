@@ -1,0 +1,1 @@
+[File: 'packages/wallets/src/hooks/useWalletState.ts'] [Function: useWalletState / withAllowUnsynced / walletRpcPreferencesSlice] Can the walletRpcPreferencesSlice loadFromStorage function's JSON.parse of the localStorage value be exploited by injecting a malformed or prototype-polluting JSON string (e.g., {\

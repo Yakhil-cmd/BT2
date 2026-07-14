@@ -1,0 +1,1 @@
+[File: 'packages/api-react/src/hooks/useLocalStorage.ts -> Scope: Critical: Secret exposure or signing-context confusion'] [Function: useLocalStorage / walletRpcPreferences (allowUnsynced)] Can an unprivileged attacker who writes `{\
