@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/detail/NFTDetailV2.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_576cdec4-1a5c-4e77-93b8-b03d73f638d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/gallery/NFTGallery.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e59b4004-83d2-43b0-b121-14ebf4230d86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/provider/NFTProvider.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77c2354a-69e3-4fce-ae76-486fb48fab23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/provider/NFTProviderContext.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65b8df05-07c6-4a09-bbd2-1bdc72a1a078?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/provider/hooks/useMetadataData.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af3c6d38-0a7d-4116-b026-d3c0089b37c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/provider/hooks/useNFTData.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d722d23b-d50b-4ee2-a945-a4206021f17e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/provider/hooks/useNFTDataNachos.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2cbf2fb7-c818-4c2d-b559-81a8e6b94c4f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/provider/hooks/useNFTDataOnDemand.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f351d1b-4ef1-4641-915c-029ff85f5863?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/nfts/utils.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b9e0fbb9-70e2-4365-93b2-e5c85fdbd4a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/Notification.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a64f5552-ea9b-4758-a593-0b3c40227539?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationAnnouncement.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_83f92a6d-670f-409c-a0da-f9b133c7f9e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationAnnouncementDialog.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_560bdbc9-5be0-4520-94bb-5cc58e0d2343?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationOffer.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a6dc1b54-5aa4-47c0-87e9-b149331c7496?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationPreview.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cc7e1627-8c3a-4ccf-ae02-553b3f49de83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationPreviewNFT.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70d4d45f-690f-48f0-a3c5-f45800caa821?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationPreviewOffer.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_83d72fa5-268a-4b2f-a0d0-d1268c692bce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationSendDialog.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4dbede8b-fbbd-49d8-ac3f-d20d560ab23b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationWrapper.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_876d0ba8-d99a-404c-ae98-f69b52be6d28?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationsDropdown.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_681cec7d-3f98-45af-a1d5-1e6eeabecd43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationsMenu.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87633a8c-4273-40a7-b8c9-1897fb95a98b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/NotificationsProvider.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_80e8f8d5-015c-484c-b316-5efd653437a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/notification/utils.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff5d6d1e-0760-4a59-8171-b5afc1b9d458?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/ConfirmOfferCancellation.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_521b40a9-75c5-4c93-b6c3-155474b47b4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/NFTOfferEditor.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7dd8d205-cfd5-40fc-a288-af7b67bb6b1f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/NFTOfferPreview.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a4baa94f-c4da-49f9-8a32-7048be412250?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/NFTOfferTokenSelector.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_134f6fb5-c1b0-4b51-9a59-6ffb3b46744a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/NFTOfferViewer.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d293b890-37b9-48ca-967f-4f53a156fc11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferAcceptConfirmationDialog.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f96d43ec-0ebc-41f8-a65b-e9b11592d45b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferAsset.ts -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_17931159-d2fc-4354-96e7-0c7211c792b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/gui/src/components/offers/OfferAssetSelector.tsx -> Scope: Critical: Unauthorized signing, spend, transfer, offer acceptance/cancellation, clawback claim, payout change, or balance/accounting change affecting XCH, CAT, CR-CAT, NFT, DID, VC, DataLayer, or pooled farming rewards'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87d7e3ac-1946-4069-993e-755e4368d3ce?mode=deep",
+    "questions_generated": false
+  }
+]
