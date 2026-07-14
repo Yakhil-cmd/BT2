@@ -1,1 +1,0 @@
-[File: 'packages/api-react/src/slices/walletRpcPreferences.ts -> Scope: High'] [Function: loadFromStorage / !!parsed.allowUnsynced coercion] Can an attacker write any truthy non-boolean value (e.g., '\
