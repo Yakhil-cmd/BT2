@@ -1,0 +1,1 @@
+[File: 'packages/gui/src/components/settings/SettingsNotifications.tsx'] [Function: useBlockchainNotifications.prepareNotifications / JSON.parse message] Can an attacker-controlled on-chain notification, under preconditions where the blockchain notification message hex decodes to a JSON string with __proto__ or constructor keys (e.g., {\
