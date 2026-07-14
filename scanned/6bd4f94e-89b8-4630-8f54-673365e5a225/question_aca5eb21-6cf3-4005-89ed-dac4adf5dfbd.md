@@ -1,1 +1,0 @@
-[File: 'packages/core/src/hooks/useValidateChangePassphraseParams.tsx -> Scope: High'] [Function: validateChangePassphraseParams / SetPassphrasePrompt empty-both bypass] Can an unprivileged attacker exploit the SetPassphrasePrompt.validateDialog guard 'if (passphrase === \
