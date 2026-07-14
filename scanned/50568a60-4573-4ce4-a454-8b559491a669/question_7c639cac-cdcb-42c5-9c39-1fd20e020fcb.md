@@ -1,1 +1,0 @@
-[File: 'packages/wallets/src/components/WalletStatusHeight.tsx'] [Function: walletRpcPreferences loadFromStorage / JSON.parse] The walletRpcPreferences slice uses JSON.parse on raw localStorage content with only a try/catch fallback to defaults. Can an attacker inject a localStorage value like {\
