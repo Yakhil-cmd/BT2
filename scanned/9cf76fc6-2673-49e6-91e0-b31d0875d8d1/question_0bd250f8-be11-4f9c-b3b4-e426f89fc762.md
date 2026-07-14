@@ -1,1 +1,0 @@
-[File: 'packages/core/src/hooks/usePersist.ts' + 'packages/gui/src/init-prefs.ts' + 'packages/gui/src/electron/prefs.ts'] [Function: migrateGUIPrefsFromLocalStorage / sanitizeRendererPrefs] Can an unprivileged attacker inject a crafted JSON value for 'fingerprintSettings' into localStorage (e.g., {\
