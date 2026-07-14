@@ -1,1 +1,0 @@
-[File: 'packages/wallets/src/components/WalletStatus.tsx'] [Function: walletRpcPreferencesSlice.loadFromStorage / withAllowUnsynced] Can an attacker who can write to the Electron renderer's localStorage (e.g., via a malicious WalletConnect dApp that exploits a renderer-side injection) set the key 'chia-gui-walletRpcPreferences' to '{\
