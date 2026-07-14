@@ -1,1 +1,0 @@
-[File: 'packages/core/src/hooks/useGetLatestVersionFromWebsite.ts'] [Function: fetchLatestVersion / response.json() with prototype pollution payload] Can an attacker-controlled server return a JSON payload containing __proto__ or constructor keys (e.g., {\
