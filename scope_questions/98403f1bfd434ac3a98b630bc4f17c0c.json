@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: packages/api/src/Client.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_908648ba-ace3-4745-8c22-8bfdc317c26d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/Message.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_994c3cd9-e773-4f1f-b0de-57c2030389f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/Daemon.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d5933d0-cfc0-4ac6-9c89-c1cd6231ae58?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/DataLayer.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed2df009-84fd-4fe1-9a69-e98edd5f96ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/Events.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c71ce55-941d-41bf-92c7-bf5469d518f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/Farmer.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f11f6246-2cb8-47c1-b54e-f2d4261d0dbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/FullNode.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b7b6e30-cc63-4e18-a65c-ffb86ad5e3eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/Harvester.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc656fdb-bfbe-4139-9f40-99be25dd1aed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/PlotterService.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b33dea6e-57be-486f-be9f-d9af30ba88cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/Service.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_48674f7b-abeb-4a64-ac8a-9881d2c83e65?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/services/WalletService.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6b9277e7-c90b-4392-bda5-b713f45d5384?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/utils/calculateRoyalties.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b44d6aa7-123c-4038-8654-ad8ed8366f16?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/utils/normalizeHex.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f20e61e2-ace4-4c6a-a07f-b8ef9604ef6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/utils/toBech32m.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ca717a8-4c18-42b9-b9da-a1f789b1da76?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/utils/toCamelCase.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_045433e3-540c-4a67-b8cd-39d983fd2a0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/utils/toSafeNumber.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a9b4027b-9ed5-49b3-9f30-0f3fc2636389?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/utils/toSnakeCase.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e6c4b205-012a-4366-a4c7-3da5b906bf7e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/wallets/CAT.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60c96765-851c-44e3-9866-6a25b3b160e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/wallets/DID.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_47cadaed-c0b9-4c2f-91c6-58409bf3df35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/wallets/DL.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4268ad2d-584a-442b-afe1-e8e9a915cd99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/wallets/NFT.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0af7cb50-4db7-4ea1-9851-f759e45931aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/wallets/Pool.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c6c310c9-6ee9-4247-b6d2-0830c5ec42a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/wallets/RL.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_94e4598d-4202-4a57-a908-a85d019e7d33?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api/src/wallets/VC.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3191a842-ce8f-4f62-a4e6-426cea66e3a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/api.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1c1f769d-ed04-41a7-9fd9-d63b5549a2dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/chiaLazyBaseQuery.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_52ec624b-9df5-4590-b0dd-e2f095f56276?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useCurrentFingerprintSettings.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_54024e58-cd30-44af-8d37-a7b58bb57863?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useFingerprintSettings.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a7d22535-2d6d-4faa-a16b-fb0b4ba7fb75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useGetLocalCatName.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_142ec8ee-520b-4f71-a9c7-7a994ccc337e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useGetNFTWallets.ts -> Scope: High: Unsafe handling of external URLs, files, QR/import payloads, rendered metadata, or embedded content that produces direct asset loss, approval hijack, persistent lockout, or other concrete wallet security impact'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61673347-b8df-44f8-9eb8-ea84832e6310?mode=deep",
+    "questions_generated": false
+  }
+]
