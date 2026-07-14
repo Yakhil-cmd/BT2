@@ -1,1 +1,0 @@
-[File: 'packages/wallets/src/components/AddressBookAutocomplete.tsx -> Scope: High'] [Function: useEffect (JSON.stringify label construction)] Can an attacker inject a contact name containing JSON special characters (e.g., '\
