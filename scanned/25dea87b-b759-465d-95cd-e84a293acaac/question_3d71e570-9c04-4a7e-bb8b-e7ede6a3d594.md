@@ -1,1 +1,0 @@
-[File: 'packages/api-react/src/hooks/useSubscribeToEvent.ts' -> 'packages/gui/src/hooks/useNFTCoinEvents.ts'] [Function: useNFTCoinEvents / useNFTCoinAdded inline callback] Can the inline arrow function '(data) => handleNFTEvent(\
