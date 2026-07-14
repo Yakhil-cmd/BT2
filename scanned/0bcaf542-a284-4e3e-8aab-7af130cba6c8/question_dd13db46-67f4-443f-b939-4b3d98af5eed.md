@@ -1,1 +1,0 @@
-[File: 'packages/gui/src/components/settings/Settings.tsx -> SettingsCustodyClawbackOutgoing'] [Function: handleSubmit / setClawbackDefaultTime / useClawbackDefaultTime] Can an unprivileged attacker under preconditions where the user has clawback enabled pre-set the 'clawbackDefaultTime' prefs key to '{\
