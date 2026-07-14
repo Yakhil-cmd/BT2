@@ -1,1 +1,0 @@
-[File: 'packages/api-react/src/hooks/useLocalStorage.ts -> Scope: High: Bypass of WalletConnect approval restrictions with direct security impact'] [Function: useLocalStorage / useWalletConnectPreferences] Can an unprivileged attacker with renderer-process code execution (e.g., via a malicious dApp that opens a deep-link or crafted URI) write JSON '{\
