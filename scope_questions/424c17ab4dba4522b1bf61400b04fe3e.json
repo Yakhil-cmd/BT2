@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useLocalStorage.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5fdeedc0-7dc6-49ef-b3fa-a3e0e932a820?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinAdded.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70e3db90-8756-4869-bb52-1ade10b1ff21?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinDIDSet.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb739efa-9893-40a4-b27e-64863ebf7531?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinRemoved.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6e34fb23-02b1-4607-9c43-19dd8203d3e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useNFTCoinUpdated.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_45dad28a-6c03-415a-b65b-b4db5855406e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/usePrefs.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_59a765f4-acc0-43c5-b89f-7512ae29bcc0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useService.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5db613c9-7aa5-4388-b53d-1c2a60e5b09b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useServices.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e7777ae7-f7b6-4267-8c75-fb7d589933ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useSubscribeToEvent.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d1b8af3e-eabe-4865-930f-c78cc0965a4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useThrottleQuery.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5783ba64-3edb-4e87-9028-7037be716b27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/hooks/useVCEvents.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e562081a-7798-409a-bad8-b8db2602d1fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/client.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f2f218c4-906f-4a97-8850-2e3f1e8a7408?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/daemon.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c3fafb56-f1b9-436d-a977-bd16b29be294?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/dataLayer.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33b40cf8-e8e5-4dfc-90ea-43011832be61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/farmer.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a68d0dfb-fc7a-4d20-b58c-5a3556e3305a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/fullNode.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2cc9062d-5dc4-4842-bed7-02f3b95f0a58?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/harvester.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cdaefca0-4932-40e8-b798-6432f86c5160?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/plotter.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f157c292-dd35-4692-a070-fe527c691a94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/services/wallet.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3cf0aa52-4efb-49a5-af47-ece3034facc4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/slices/api.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a7b61b9d-ba1a-40cd-8dec-17f12fbc4d12?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/slices/walletRpcPreferences.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5924fecd-9336-49b2-8096-ced950efadb8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/store.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_427c865e-a3dd-4125-bf70-4b4378a3d6b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/EventEmitter.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9987a490-f8e7-405b-a5c0-4ce1256f15b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/onCacheEntryAddedInvalidate.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c95786f1-1a2a-4ab1-bd80-9a2ac44974cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/reduxToolkitEndpointAbstractions.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_251c2ab4-075c-4aaf-b7b9-48cb439bb0b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/api-react/src/utils/withAllowUnsynced.ts -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b4c9961-fc87-4617-9c0a-31a59b26c030?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/AddressBookProvider/AddressBookProvider.tsx -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e794f32f-3bd0-4756-9b11-86a9d6691823?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/Auth/AuthProvider.tsx -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc73e28b-49c4-456f-af52-9f15ee35f7ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/GuestRoute/GuestRoute.tsx -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d1884e80-8688-474b-a708-5fa1f0c4ac4e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: packages/core/src/components/Link/Link.tsx -> Scope: High: Corruption, spoofing, or unsafe trust of RPC, event, offer, NFT metadata, DataLayer, notification, or WalletConnect state that causes a user to approve, import, sign, send, revoke, burn, join, or display the wrong asset, identity, amount, destination, or status'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9cc9cd68-3e58-4332-a1bf-d247320d4ed8?mode=deep",
+    "questions_generated": false
+  }
+]
