@@ -1,1 +1,0 @@
-[File: 'packages/core/src/utils/getTransactionResult.ts + packages/wallets/src/components/WalletSend.tsx'] [Function: getTransactionResult, WalletSend.handleSubmit] When getTransactionResult returns {success:false, message:undefined} (e.g., sentTo[0][2] is undefined due to malformed RPC response), WalletSend.handleSubmit line 199 executes 'throw new Error(result.message ?? \
