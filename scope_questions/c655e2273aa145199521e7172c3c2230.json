@@ -1,7 +1,0 @@
-[
-  {
-    "question": "'File Name: packages/wallets/src/utils/isCATWalletPresent.ts -> Scope: Critical: Secret exposure or signing-context confusion that lets an unprivileged actor obtain mnemonic, passphrase, wallet secrets, WalletConnect approval authority, or valid signatures/transactions for the wrong wallet, profile, DID, NFT, or address'",
-    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_88e7d5fe-0844-443a-a667-a35358b43153?mode=deep",
-    "questions_generated": false
-  }
-]
