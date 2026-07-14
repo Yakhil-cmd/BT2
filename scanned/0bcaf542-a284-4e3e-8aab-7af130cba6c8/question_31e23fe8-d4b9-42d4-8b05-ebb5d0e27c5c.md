@@ -1,0 +1,1 @@
+[File: 'packages/gui/src/components/settings/Settings.tsx -> SettingsAdvanced'] [Function: setAllowUnsynced Redux action / walletRpcPreferencesSlice.loadFromStorage] Can an unprivileged attacker under preconditions where the user has not yet opened Settings -> Advanced pre-set the localStorage key 'chia-gui-walletRpcPreferences' to '{\
