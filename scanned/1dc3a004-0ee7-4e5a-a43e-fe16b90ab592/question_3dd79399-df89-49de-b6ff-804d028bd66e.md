@@ -1,1 +1,0 @@
-[File: 'packages/api/src/services/WalletService.ts'] [Function: onNewOnChainNotification / getNotifications] Can an on-chain attacker craft a notification message whose hex-decoded content, when passed through new TextDecoder().decode(new Uint8Array(hexToArray(hexMessage.replace(/^0x/, '')))), produces a JSON string with a prototype-polluting payload (e.g. {\
