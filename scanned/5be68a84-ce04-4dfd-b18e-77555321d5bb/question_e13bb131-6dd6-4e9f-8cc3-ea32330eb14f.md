@@ -1,1 +1,0 @@
-[File: 'packages/api-react/src/slices/api.ts'] [Function: walletRpcPreferences.loadFromStorage -> JSON.parse] Can an attacker who can write to localStorage supply a malformed or prototype-polluting JSON string under the chia-gui-walletRpcPreferences key, causing JSON.parse to throw (caught and defaulted) or, with a crafted payload like {\
