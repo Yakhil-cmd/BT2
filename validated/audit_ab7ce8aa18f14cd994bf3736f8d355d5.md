@@ -1,1 +1,0 @@
-Let me check the `bigNumberToLocaleString` behavior and the RPC trust boundary more carefully.
