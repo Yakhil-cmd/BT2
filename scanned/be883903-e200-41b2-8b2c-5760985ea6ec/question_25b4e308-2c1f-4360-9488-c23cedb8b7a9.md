@@ -1,1 +1,0 @@
-[File: 'packages/api-react/src/api.ts -> slices/walletRpcPreferences.ts'] [Function: `loadFromStorage` / `setAllowUnsynced`] Can an unprivileged actor (e.g., a malicious web page opened in the same Electron renderer context, or a crafted import file that triggers localStorage writes) set `localStorage['chia-gui-walletRpcPreferences']` to `{\
