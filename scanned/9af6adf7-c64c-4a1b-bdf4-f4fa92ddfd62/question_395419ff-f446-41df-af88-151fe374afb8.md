@@ -1,1 +1,0 @@
-[File: 'packages/wallets/src/components/WalletStatus.tsx'] [Function: walletRpcPreferencesSlice / loadFromStorage / JSON.parse] Can an attacker inject a malformed JSON string into localStorage key 'chia-gui-walletRpcPreferences' (e.g., '{\
