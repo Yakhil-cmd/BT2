@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/primitives-core/src/hash.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_2c92fc84-f49f-4595-8ca0-b8e14bd7acd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/serialize.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_39239c6c-07e6-4ddc-aef7-d4ef19563a1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/trie_key.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7be12db8-025f-4546-a9e5-0c610f3c959f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/types.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_85df5e94-970a-4c46-b36b-88c200e50389?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/action/mod.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c755cbf7-5208-461e-b26f-76ec81a37494?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_9c5b90f6-4fc4-4693-bd71-240c9d9937d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_body.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_215411ce-2a01-4397-bd74-01f6dbe4959d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_header.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_55f9c726-310a-438e-8f93-bcd1cdc813ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/challenge.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3d48d101-b6f9-4721-a566-8d2185fa40a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/congestion_info.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c6784602-6c7e-48a8-8cbf-6e47808b4deb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_block_info.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_f5922237-2fec-4c57-8888-f806e2e16b65?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_info.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ffd6b8ac-c1b8-4807-9d1b-3deeceecb057?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_manager.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fa6bfd2c-e34e-4bd4-b9a0-1953a8af82a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_sync.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7f7f26c2-f38a-4692-b123-b0240a892a19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/merkle.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d68858b7-5e14-4a4e-8151-f6fa4542dfc6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/optimistic_block.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ed1a4db6-852a-4376-ab5d-6ae16e520d91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/receipt.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_00e5d520-ba59-4a1c-b12d-c764ea5c2153?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/reed_solomon.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_cea5e99d-f72e-4837-bcbf-0983fc8b039e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/mod.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3f267306-96b6-43f9-819a-331858a4aeda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v1.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_78092aea-87f5-4a5c-96d3-60b7d84c5d57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v2.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7eeb3fa7-26b7-4d58-aef3-736655102732?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v3.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_14902faf-87b0-4f85-84e0-11c8a3bfd93d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_9ef3723e-e3cd-4e1a-9946-289256634e52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding/shard_chunk_header_inner.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_9dfe7c6b-a54a-4bd4-bfb3-cddb282eea99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/chunk_endorsement.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_92020eed-23b0-4583-a9ae-fb975d244142?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/partial_data.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5fa69be5-c283-4be1-b1f7-62116d2716fa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_95abf902-b945-4348-a5d8-7c39fc7ad2fe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0d0a8ae4-c243-41b9-a658-39cc80fc8759?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_part.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_f895d2aa-39ce-41e6-b1f0-2694355431e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_record.rs -> Scope: Critical. Unprivileged-user-triggered Receipt causality, promise dependencies, data receipts, yield/resume, timeout, or refund ordering bug executes work twice, too early, for the wrong account, or after rollback in a way that changes balances or persistent state.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3a09ca82-9538-4532-a016-5cf90f767172?mode=deep",
+    "questions_generated": false
+  }
+]
