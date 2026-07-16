@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/store/src/trie/ops/insert_delete.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_b0141219-ee29-47b6-a9b4-3ec29833339a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/interface.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6accac93-27ae-4b67-af52-7464b318d5d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/iter.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_414d1ead-5765-4fb7-835c-ce6fdf9ef560?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/resharding.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_515fdaa0-b05d-4519-894c-1c1deb845c82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/squash.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0b9cb556-e1b6-435c-8f45-ac724b4ea18e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/raw_node.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_aca724fe-e234-4817-aa0e-47cee125e701?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/receipts_column_helper.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6d4fa3dd-21b2-4bde-869a-e0f0115ed609?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/shard_tries.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bb48ce31-2364-485a-8fa6-1ccf1b71ea02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/split.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_257ab685-96ac-4de4-8b32-4e36167e2593?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/state_parts.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_eebf81d1-0f78-4cbc-8b10-0d0ad47cb4e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/state_snapshot.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_2e28d2bd-1642-4134-ae67-ce1fba5889d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/trie_recording.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d54b9442-d2d0-4747-877d-870025d97bf9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/trie_storage.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_02ac1867-bcda-437f-8b00-ae06b606d90a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/trie_storage_update.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_cdb2e0a1-572b-4a42-90f7-6b23bd3952e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/update.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_dce34c31-5afa-4316-95cc-064bb38d3a57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: nearcore/src/config_validate.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7d40d0ac-be0f-416b-bc36-d49d1b28af87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: nearcore/src/state_sync.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_e2cc5df6-3b76-4888-923a-7b4b73025e01?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: neard/src/cli.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_8c82be5b-4eb6-4ac4-b173-577781c807db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: neard/src/main.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_2a49342f-5857-4827-a869-efd9350a9f9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/cache.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5868e2a0-031b-41f4-b1f9-e73261c90f94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/features.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bf3f9451-438a-4b77-a211-630450c23f8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/imports.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bc35175d-2f8e-402b-8b37-1926284d2d18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/alt_bn128.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_702af3d1-49dc-44a1-9def-be63bbf2f28d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/bls12381.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_567bf094-c65e-403b-bff0-c4a87fcfbbf3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/context.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ff2a8614-1b19-49a4-a959-4365d5aacc72?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/gas_counter.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6770c9aa-17c1-4e52-993b-0d60b287ed20?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/logic.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_63031613-3c64-4b70-88e3-f80c76202edc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/recorded_storage_counter.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_cd0252ca-b422-408b-a567-f5d0bf7a4496?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/vmstate.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6948c27c-6ac6-4dc2-8360-1dd25a6f5d2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare.rs -> Scope: Critical. Unprivileged-user-triggered WASM preparation, instrumentation, VM feature gating, compiled-code cache, host-function dispatch, or gas metering bug executes code under the wrong protocol/runtime configuration or charges a lower cost than the canonical schedule.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0d401db6-483a-49ac-a942-5e093153b883?mode=deep",
+    "questions_generated": false
+  }
+]
