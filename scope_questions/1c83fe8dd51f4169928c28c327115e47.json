@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/primitives-core/src/hash.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5a980330-380c-4187-a826-aca12337c8b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/serialize.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ca19352f-8b89-4c3c-984f-57d5c2839c57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/trie_key.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ae0cc58a-e035-4b03-a896-b9472e9a4dcd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/types.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0129fe0a-1201-4d64-b379-898f5bd94554?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/action/mod.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a8e95a61-a6a4-4e23-8702-39e4a0ea0716?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bb41032a-a332-4d7a-901f-72215b99387e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_body.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7de72741-4dbe-414c-b73f-e055f653bcc8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_header.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_9a3bd232-bdb1-470d-87ac-3865efb95cd8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/challenge.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7e874f20-f078-410d-a802-d61cc0dc6b36?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/congestion_info.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3f493fa5-084d-4223-9e72-607bbc1624ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_block_info.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_92566b3d-a525-4be3-b26a-6bf8cbb949c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_info.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a8e25f98-952a-490f-b9d0-5b8672986fe1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_manager.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_faec7acf-c663-452b-bc66-e86d7370bc83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_sync.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_e676df69-ccfb-45ec-ba7c-a9b1d05c56ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/merkle.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0a602756-1576-4c08-8838-6cf16ce5e88f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/optimistic_block.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_02fbfda5-cbaf-41ca-92bc-b790af79497a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/receipt.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a0cbd67d-b61a-4290-a36c-620b1c9a3819?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/reed_solomon.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7aed865c-baae-4988-9828-6ee6a63bf365?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/mod.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c7438719-cf2e-4224-bfca-96cd1e41bc66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v1.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7fa8eae2-c8ba-4d13-9e5a-c4cf5b3fa3d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v2.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_cd94e774-0c1e-48eb-96e1-1587d3ada13f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v3.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fc663938-9eba-4171-91f5-5ca966470a4c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_9a71cb69-064b-48f9-8c62-5dfb7af9c214?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding/shard_chunk_header_inner.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_740f2a25-5ae0-4a3d-b93a-a7ed9cff0421?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/chunk_endorsement.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_068ce5b6-e0b8-41d3-9218-517f2e7944ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/partial_data.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_59ade19a-94e9-43d3-af5d-e5132b0b36ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/state_witness.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3d239461-d32b-4a2f-b148-0543eaa5cf63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_cfdc4027-1094-4253-a33f-909de5a51d06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_part.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0158686e-eb67-4448-a875-f8c6d04829bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_record.rs -> Scope: High. Unprivileged-user-triggered Transaction pool, nonce-mode, relayer/gas-key admission, action validation, or revalidation logic lets a transaction pass pre-inclusion checks that canonical runtime validation must reject, or drops a valid transaction for protocol-invalid reasons.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_eb610a8c-ff31-437d-b4b6-62ea6bee8ac7?mode=deep",
+    "questions_generated": false
+  }
+]
