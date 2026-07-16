@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/processing_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d2384296-b453-440f-8995-0d6cd4b89ecb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/stateless_validation/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bdde7ca9-79ca-49b7-8c0c-9c5966919d2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/types.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bb487f59-36a2-491e-824a-aeed4a3c24be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/update_shard.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_8b2e7064-58ba-40d9-900b-a640316eea92?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chain/src/validate.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7159f3d2-3494-41af-9a12-2f398ef11298?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/chunk_cache.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_22d4ba42-acdd-483a-8ff5-6a9c0310d4c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/client.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c0a9dbdb-0e45-494b-ba01-1e44a5834fa6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/logic.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c207351b-4f2f-4e07-8e42-fec9b3dae4f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/chunks/src/shards_manager_actor.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_080e3809-fdbc-4ef2-8053-de2a9bd96eae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_endorsement_handler.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_500d2afa-a3eb-46c8-888c-71260bcd0d53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_inclusion_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_4ebb7d22-4b44-4ced-80a1-23ba25540de2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/chunk_producer.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_25f966a4-f4bb-4e0a-9878-87401d74d2ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_19c9a37f-f032-470e-be01-c523afb9a594?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/client_actor.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bbd08ae2-06f8-4624-ae61-f12f35f00e6a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/pending_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_350df68a-d2af-4a73-8174-18cf804711eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/prepare_transactions.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_11714e95-b73c-442e-9b87-e3bf0774536e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/rpc_handler.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_14c63278-0d0b-4069-bce3-8dba4d3fb06e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/state_request_actor.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_2d1c80d4-ff7c-4ca4-be0a-e3d13da04f44?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_endorsement.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_f5cb9836-bb6a-4303-b9fa-c0880f459e8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validation_actor.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fedd1310-5578-4efe-980a-42c2a08916cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/mod.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_e21406c2-68e4-40eb-b082-10fef8344f2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/chunk_validator/orphan_witness_pool.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_e46230e4-5ee6-4bff-b4b2-74c6e4c4d917?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/encoding.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_1b2b864b-b216-4147-9240-c2b4db9e0f4f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_deploys_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0f2d0af7-6422-498c-9b90-9ecdf4daae7c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_actor.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_e49a1d05-058d-4133-953b-6aeaab3f37d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/partial_witness/partial_witness_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_de1784e4-dbcd-4491-8d22-a50bc950faba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/shadow_validate.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_66993c71-844a-4f02-99b7-a29eda23bd98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_producer.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d558fd84-55ac-435e-88f7-563cf034a716?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/state_witness_tracker.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a5b87106-169d-47fb-8b58-fffbcc2e5fe2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/client/src/stateless_validation/validate.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_1a0a6c39-eeeb-46f7-9c3d-d315288796ab?mode=deep",
+    "questions_generated": false
+  }
+]
