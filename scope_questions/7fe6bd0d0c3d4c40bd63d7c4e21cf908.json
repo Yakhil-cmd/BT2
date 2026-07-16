@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/primitives-core/src/hash.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fd4548cc-0db2-4ca3-8ad0-4d46194de024?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/serialize.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5b2cf903-60a7-4871-9ed1-6175b2e149e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/trie_key.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_2072f13b-31b5-4d39-95d7-41735a451125?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/types.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_00f4703a-3461-4876-ab04-81ee9a0207b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/action/mod.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d3796359-b42c-4219-88ce-057b4066eba0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fa2457b5-c0f3-403b-8ca7-4af6e0cc4a96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_body.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_46882814-7afe-41c8-add9-b5b271e39b70?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/block_header.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bc52f8c9-bd80-4ec8-a9dc-d07dee8ded0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/challenge.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_4d958dd1-ba84-4dc3-a382-d2a307a79168?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/congestion_info.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5d09fa0e-5c45-43d0-9fb9-7025455874ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_block_info.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_47e60806-d8ac-443a-9fd1-9f8446486377?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_info.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fbae2f45-4603-4a93-97ef-6102d6a1695b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_manager.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c855e484-6c86-403c-8632-894f4dd26f91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/epoch_sync.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0d6cc67e-6a45-49f7-b2fd-b48fa4443f36?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/merkle.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6066c95d-15af-4647-8fb6-1fffce7fcd95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/optimistic_block.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fe12d65d-0763-4e9e-a1c6-ce52f3c1ae79?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/receipt.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_61946e86-4ab1-455a-9bc8-04a5342f4b5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/reed_solomon.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_1c118062-780d-4d39-b1b1-e6bfce1d4367?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/mod.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_e512e283-4211-485b-b735-91e5fa87e842?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v1.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a2573c3d-4211-44bc-a93a-8efd32c42f16?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v2.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_33fe56c1-3e13-4b4e-b5b0-07b5c4e58c27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/shard_layout/v3.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a814ddf6-5b0c-4bb2-ae92-1f4e6e880ab1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ce5c3afc-cb06-4be1-b1bc-d341866831f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/sharding/shard_chunk_header_inner.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d8c6d9c9-6e28-416e-8347-0a75999dbe8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/chunk_endorsement.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_b9669674-66b0-4849-87ab-4e047ac352cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/partial_data.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ae1fb487-6620-4a26-af67-18c81a2e9957?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/spice/state_witness.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_f13aa79a-6ef4-43b1-9430-03da303fc9ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_138d01b5-160a-4633-b915-9cb6d69767c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_part.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_541d416f-6e9f-4c52-bf13-c626fd6c4e49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_record.rs -> Scope: High. Unprivileged-user-triggered View/RPC/light-client response, Merkle proof construction, block/chunk lookup, finality selection, or query routing bug returns a verified-looking but stale, wrong, or cross-shard value to clients that rely on nearcore proof semantics.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_dec72acb-fede-4710-8dc0-963f98c88ba0?mode=deep",
+    "questions_generated": false
+  }
+]
