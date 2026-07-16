@@ -1,0 +1,1 @@
+[File: 'chain/jsonrpc/src/api/view_state.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'] [Symbol: TrieViewer::view_state / paginated / state_size_limit / after_key=Some(b\
