@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_access_key.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7a2093cb-ae0b-4b57-ac8e-745e77cb2ab7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_account.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_f124a4e3-d6b0-4510-8ef7-83f8e9ec2d35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_code.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fe356cbc-8516-4317-921d-1120cc695438?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/api/view_state.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_814f4048-5812-462f-8bab-f92bb9ce60df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/jsonrpc/src/sharded_rpc.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_9b5d0ff6-5db6-4214-b2b8-aca77f7a9c8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/accounts_data/mod.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_50a08639-a2bd-4364-8ab0-ca2b4e9f36ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/announce_accounts/mod.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_861952c2-1525-41d7-ae17-67069894eacc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/client.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_693e8e3a-b168-4a8f-9558-81c31fe700ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/edge.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_76f44956-43db-4256-9a17-d647c1fc05e2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/mod.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_1cf07c41-3352-4711-827b-7403872ab915?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/peer.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ea9ce6c3-09d0-4e2d-a380-d3356c2fb18d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/network_protocol/state_sync.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5f06c7c4-e78f-44aa-8d30-28151fd94da5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/peer/peer_actor.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_29f670a0-6875-4da9-919f-2816ba0dc27a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/peer_manager/peer_manager_actor.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_81a58668-7619-474c-a712-d90513ce476b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/routing/edge.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_14900fb3-ca76-4a20-a284-61c73db534f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/routing/graph/mod.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_35af2756-4e79-481e-a254-d92f73cb3a8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/shards_manager.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0352a884-6923-477c-a8c7-d56772aa1af4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/state_sync.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3aaf2674-f35b-44bc-8c91-01c05003c901?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_daa238d4-e58a-4c0f-933e-b8b5e17d0149?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/network/src/types.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ab60c0a9-c83b-40c0-9efa-e5f92db345ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/pool/src/lib.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_be52c9a6-92a4-490c-86f4-57ec73cff006?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: chain/pool/src/types.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_076cc110-880b-4453-a8ac-181d52dac3a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/hash.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_64d7f516-ba62-4b5e-a24c-f5a69eb32fef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/hash_domain.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_13924cdb-6179-4058-9fea-3a2af4cf07e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/signature.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_2a3b2330-7832-4831-ba9d-a9f195035d64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/signer.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_9b0614b4-86b8-43fd-8ecd-62837731acaf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/crypto/src/vrf.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_e8ae52b6-1fe3-4b32-9341-c08235e598f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/account.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_66a1539f-340d-4fba-95a7-535984e62904?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/apply.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3732e0c5-c27c-4b7c-8d72-f6b4e0cb3f47?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives-core/src/gas.rs -> Scope: Critical. Unprivileged-user-triggered Account, access-key, delegate-action, gas-key, predecessor/receiver, signer, or implicit-account validation bug lets an unauthorized party spend funds, mutate account state, deploy code, or schedule receipts.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0ee34e3c-b2c5-4329-91d1-dcdb6ea77e86?mode=deep",
+    "questions_generated": false
+  }
+]
