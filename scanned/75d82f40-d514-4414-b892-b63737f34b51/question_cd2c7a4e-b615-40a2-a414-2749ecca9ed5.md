@@ -1,0 +1,1 @@
+[File: 'runtime/near-vm-runner/src/prepare/prepare_v2.rs -> Scope: Critical. Unprivileged-user-triggered Token balance, storage staking, rent-like storage accounting, validator reward, slashing, gas refund, burnt gas, or locked balance logic mints, burns, unlocks, refunds, or transfers the wrong amount.'] [Symbol: prepare_contract / finite_wasm::Analysis::instrument(\
