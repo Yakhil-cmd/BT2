@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/primitives/src/state_sync.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_81930ef1-be36-49f8-a37e-a041bbb5a760?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/chunk_endorsement.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ea975e40-6dbf-437c-bac3-07cb257bd318?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/chunk_endorsements_bitmap.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_f9bfc5f7-b57b-4e9b-900e-d1934654ad63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/contract_distribution.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_b9bdce02-6164-45fb-aa8c-237a92ca70d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/partial_witness.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c690848d-e393-45de-b43c-a980c5e961f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/state_witness.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_30d79e91-4872-4d6a-8550-e794146f47bc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/stored_chunk_state_transition_data.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c91da49e-ef94-4f24-a554-1f70fd1a0f06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/stateless_validation/validator_assignment.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_1b84c41b-7285-418b-8542-0cdb69ba8da9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/transaction.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_40ea976c-1caf-4c48-8004-5de6b2691c82?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/trie_key.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_847d508e-c167-466e-9ced-b56579aef87e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/trie_split.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c7c2b3a8-027e-41fe-bf24-e400729c580a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/types.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bf7f3d65-f104-49cf-9a64-49a3a3fadb79?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/upgrade_schedule.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_de01fe96-5fb0-467a-86c9-26498d31e30a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/validator_mandates/compute_price.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_46a7493d-07c7-424c-874f-99740f7c61d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/validator_signer.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_50746a7d-a506-4184-a172-5f07c655dac5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/chain_store.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a12917e0-4308-41b5-9c20-f1117151fd06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/chunk_store.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_281172a0-93a6-466c-a8f1-8d556a2dca45?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/epoch_store.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3bf64387-1095-4b06-bfd5-4897db498785?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/flat_store.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c06e332e-4307-498e-a260-32162b4733a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/adapter/trie_store.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d7fbc969-43d4-4f26-b4d6-45aea692f881?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/delta.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5799facf-a1fe-4750-a0c7-bbad8cf9dce0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/manager.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_73f0c061-55ef-4063-bd23-5a2c21c9f4aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/storage.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ddb9d248-669e-46b5-87e7-58952726fb95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/flat/types.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_77a62efe-c630-4c08-93b8-3417f6912afc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/merkle_proof.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ef9b26fb-8598-4549-85b1-bd5aefcb057b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/from_flat.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fc9a4fdb-ce6b-4bed-a8dd-57896b411b6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/iterator.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_14eedf48-9437-408a-bde4-1c9675257a66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/loading.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_aa848301-4978-40fd-bcb5-a7c561eb50d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/memtries.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0c29e8ba-01f0-484b-b1cd-206dd623b46b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/mem/memtrie_update.rs -> Scope: Critical. Unprivileged-user-triggered Trie key namespace, account subtree, contract code/data, access-key storage, delayed receipt queue, buffered receipt, or promise-yield record bug reads, writes, deletes, or rolls back state for the wrong account or shard.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_01a4e852-585e-4521-801f-207073737abe?mode=deep",
+    "questions_generated": false
+  }
+]
