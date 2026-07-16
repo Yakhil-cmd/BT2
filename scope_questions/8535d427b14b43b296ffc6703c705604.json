@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare/instrument_v3.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_62c5fb15-40c2-41ef-afef-84cea4dd4679?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare/prepare_v2.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_47f69a64-6056-4db8-8fe4-80a7f61dc0d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare/prepare_v3.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ef5cfb94-66c9-40e3-ae7c-aace5ef56248?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/runner.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_81549cc4-ed3b-4b67-985c-46046708a6a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/wasmtime_runner/logic.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_15f590d1-0d55-48aa-9ee2-1c5a7d70a13c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/wasmtime_runner/mod.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_248670c5-171e-4951-8168-377b9b51f86c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/access_keys.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a45959ae-06a1-4319-aa02-6883cece4307?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/action_validation.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_20211236-cf1e-48a5-aa8f-35f49f9aa92f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/actions.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_53fafb72-4f99-46f6-b8b2-b4f4aa47d5e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/adapter.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fd41af2a-2724-4277-a94c-9aee1415fb09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/bandwidth_scheduler/distribute_remaining.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_8fd22568-e00a-4df7-a28c-708151a06ff0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/bandwidth_scheduler/scheduler.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_be432588-1188-407e-8b2a-9b72cc2e809e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/cache_warming.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_cf0afee8-40d4-4fbf-bece-2b7a53eb5679?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/congestion_control.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ab335720-5cee-4a39-bddb-990f5fa33d3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/contract_code.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_0b3dcbc0-f944-4ea5-a3ed-3598627f4699?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/conversions.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5858c06e-ed12-4085-a0bf-8b724c2cef07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/deterministic_account_id.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_89a805ef-9374-4df9-aff7-2fa12e3657f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/ext.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3a9f4bc4-b5dd-4b10-be36-bfd58297a1d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/function_call.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_b9bfa594-5c2a-4623-9c78-59ec7ed64978?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/global_contracts.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_924602bc-7667-4ff5-ae94-c189964c77a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/pipelining.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5118b9c6-b139-4081-a7b2-a11a636f4c8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/prefetch.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_260bc167-91cd-4b07-a117-666a55c7a74a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/receipt_manager.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fd9782ef-e189-41f6-816f-e723e993529e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/types.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6f955090-c08a-485a-960f-1aa7dce746b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/runtime/src/verifier.rs -> Scope: High. Unprivileged-user-triggered Global contract deployment/distribution, code hash resolution, contract cache warming, or contract metadata handling executes stale, wrong, or unauthorized code for a valid receipt or query path.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_bb0dfe91-1892-4117-8909-7c5b2a717cda?mode=deep",
+    "questions_generated": false
+  }
+]
