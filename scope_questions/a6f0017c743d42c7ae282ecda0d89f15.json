@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: core/store/src/trie/ops/insert_delete.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_c0a988ea-eed2-404f-b822-b06ff08a4aa1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/interface.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fc74ce67-c42a-45c8-90db-1a3244895d02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/iter.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a56582b7-9720-4d00-811a-d1f9018d2899?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/resharding.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6f960200-be60-46ec-96c7-4ac2c02c8bd2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/ops/squash.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_77aacef9-9514-4e2e-a847-1e3e7bc29bfd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/raw_node.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3925a03d-915e-4d4c-9ed3-5a424402a75e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/receipts_column_helper.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_4b4b64d7-43cd-4e2c-83fa-7205f27e3f98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/shard_tries.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_cd1b97c0-f406-4fca-a1cf-919a85ab7786?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/split.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_408dbcb6-8975-4fcc-824f-f9e9f7390d92?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/state_parts.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_5fe3e1c7-db9f-41bc-bd2f-afc0420b066c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/state_snapshot.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_1e321f4a-23e6-45c5-a4c6-d56e322b11f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/trie_recording.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_30906a50-8a51-4a50-aa95-e495b963bbcf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/trie_storage.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_f77465b3-a30b-42fe-a251-69242296b1e2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/trie_storage_update.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fbc06391-99de-4e51-ac3c-681b3d5c2e71?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/store/src/trie/update.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_8cc93f8e-cc6b-4eb0-8a65-5c65a5777baa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: nearcore/src/config_validate.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_3e342847-883b-483d-8386-2524fdf5313e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: nearcore/src/state_sync.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_61514082-d736-44fc-b85a-89eee82d13ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: neard/src/cli.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_79434aee-10f9-4118-a2ba-8d8873abc640?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: neard/src/main.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_d87d6559-615e-44cd-a516-0b1a3c7081ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/cache.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_1ab9c720-1903-4bc9-b64a-48805e325f69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/features.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_ca0f739d-7e2c-4802-9c16-7fe3a1660726?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/imports.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_301ee228-dad2-4d45-ab95-0684429dae87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/alt_bn128.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_7b8a8212-198e-4d14-8d7d-1b74bd8acaab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/bls12381.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_fbc9e460-d5d0-4600-ab1c-d6e5ab000c63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/context.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_b1348f75-3a3e-43a8-943f-1bc53abf61ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/gas_counter.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_a6eabb86-01ae-403a-892e-746074a8c60b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/logic.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_4fa4f07e-d08e-43bf-bb4f-ea19f14c4b9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/recorded_storage_counter.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_8a67ae32-50cf-4476-a521-aab0d24f075d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/vmstate.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_6a21719a-d2cf-42c9-8d70-2f78472f807f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/prepare.rs -> Scope: High. Unprivileged-user-triggered Runtime config, protocol parameter, fee table, bandwidth/congestion limit, or feature activation boundary applies costs, limits, or validation rules from the wrong epoch/protocol version.'",
+    "url": "https://deepwiki.com/search/-generate-ledgersafety-audit-a_41906bb0-4af4-4a0f-983f-15477964b732?mode=deep",
+    "questions_generated": false
+  }
+]
