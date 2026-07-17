@@ -1,0 +1,1 @@
+Let me analyze the external bug's core invariant and search for a nearcore analog. The bug is about a mandatory "push" transfer to a recipient that can be blocked by the recipient's state, preventing a critical operation from completing.
