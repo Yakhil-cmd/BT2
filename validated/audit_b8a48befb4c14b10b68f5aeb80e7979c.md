@@ -1,0 +1,1 @@
+Let me analyze the bug class and search for a nearcore-native analog. The core invariant is: a state-mutating function (deposit/purchase) remains callable after a one-time terminal state transition (launch), causing locked funds and corrupted accounting.
