@@ -1,0 +1,1 @@
+Let me look at the verifier.rs gas key handling and the `action_deploy_global_contract` storage cost more carefully.
