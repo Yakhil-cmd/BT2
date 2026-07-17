@@ -1,0 +1,1 @@
+Let me look at the exact `postprocess_optimistic_block` code and the `BlockKnown` error path more carefully.
