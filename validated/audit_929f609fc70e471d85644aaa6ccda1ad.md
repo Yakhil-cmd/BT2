@@ -1,0 +1,1 @@
+I'll analyze the bug pattern: a guard meant to prevent *creation* of new items is incorrectly placed in a shared function also called during *transfer/replacement* of existing items, causing legitimate operations to revert. I need to find a nearcore analog in the target scopes.
