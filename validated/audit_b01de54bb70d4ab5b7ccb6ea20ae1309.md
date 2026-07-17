@@ -1,0 +1,3 @@
+I'll analyze this bug systematically. The core invariant is: **when shares are burned/decremented, the backing assets must also be removed from any total-supply calculation simultaneously**. I need to find a nearcore analog where a resource is decremented on one side but the backing amount remains in a global total, creating an exploitable price/rate mismatch.
+
+Let me search for relevant accounting code in nearcore:
