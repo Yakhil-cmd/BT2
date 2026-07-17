@@ -1,0 +1,1 @@
+Let me search for nearcore code related to transaction validity windows, time-based calculations, and the target scopes mentioned.
