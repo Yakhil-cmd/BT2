@@ -1,0 +1,1 @@
+I'll analyze the bug class (double-conversion / unit confusion where a value already in "share" units gets converted again, yielding a smaller result) and search for nearcore analogs in accounting, gas/token conversion, receipt causality, and VM/config selection.
