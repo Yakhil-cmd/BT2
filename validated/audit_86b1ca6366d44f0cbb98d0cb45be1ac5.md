@@ -1,0 +1,1 @@
+I'll analyze the external bug (conservation invariant: redeem returns less than requested, but original amount is used) and search for a nearcore analog in the scoped areas.
