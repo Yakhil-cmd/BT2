@@ -1,0 +1,1 @@
+I'll analyze the external bug (arithmetic overflow via attacker-controlled small denominator in accounting) and search for a nearcore-native analog.
