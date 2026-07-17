@@ -1,1 +1,0 @@
-Let me analyze the bug class from the external report and search for a nearcore analog. The core issue is: a function bypasses an epoch-based rate-limiting guard, allowing repeated additive accumulation of a resource (flux tokens). I need to find a nearcore analog involving accounting, authorization, receipt causality, or transaction admission.

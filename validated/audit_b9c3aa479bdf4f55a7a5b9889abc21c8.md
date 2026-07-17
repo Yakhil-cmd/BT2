@@ -1,3 +1,0 @@
-Let me analyze this bug carefully. The core invariant is: **accounting conservation** — an internal tracker of staked/deposited amounts diverges from actual balances when external token donations bypass the tracking mechanism, causing arithmetic underflow on withdrawal.
-
-I need to find a nearcore-native analog where unprivileged users can corrupt internal accounting by sending funds/tokens externally, causing underflow or incorrect balance tracking in production code.

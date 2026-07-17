@@ -1,1 +1,0 @@
-I'll analyze the external bug (permission checks consuming limited uses even when not needed) and search for a nearcore analog in authorization/accounting code.

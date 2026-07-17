@@ -1,1 +1,0 @@
-I'll analyze the external bug pattern (state counter grows on add but isn't decremented on remove/burn, eventually blocking legitimate operations) and search for nearcore analogs in the target scopes.

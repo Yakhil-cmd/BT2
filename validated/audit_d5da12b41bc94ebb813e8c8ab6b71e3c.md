@@ -1,3 +1,0 @@
-Let me analyze the external bug's core invariant: **conservation failure** — a user can extract more value than deposited because a liquidation/enforcement mechanism fails under adverse conditions. I need to find a nearcore-native analog in accounting, authorization, receipt causality, VM/config selection, trie namespace isolation, global contract/code selection, RPC proof/query trust, or pre-inclusion transaction validation.
-
-Let me look deeper at the specific production code paths — particularly the `apply_action_receipt` flow, the `verify_and_charge_transaction` pre-inclusion path, and the `action_delete_account` function.

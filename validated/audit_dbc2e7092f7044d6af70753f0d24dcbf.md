@@ -1,3 +1,0 @@
-I'll analyze the external bug's core invariant and search for a nearcore analog. The bug is about a **stale eligibility timestamp** that isn't reset when an action is cancelled, allowing a user to claim rewards/privileges they didn't earn. The invariant: when a user's active count drops to zero, their eligibility-tracking state must be reset.
-
-Let me search for analogous patterns in nearcore across the target scopes.

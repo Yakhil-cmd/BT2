@@ -1,1 +1,0 @@
-I'll analyze the bug class (integer division truncation in rate/fee calculations causing zero intermediate values that corrupt accounting) and search for nearcore analogs in production accounting code.

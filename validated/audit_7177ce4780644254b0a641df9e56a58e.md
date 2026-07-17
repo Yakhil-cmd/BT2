@@ -1,1 +1,0 @@
-I'll analyze the external bug's core invariant (share-to-amount accounting ignores a loss tier that can exceed the first-loss buffer) and search for a nearcore analog in the scoped areas.

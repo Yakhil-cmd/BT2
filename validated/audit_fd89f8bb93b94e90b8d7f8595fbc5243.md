@@ -1,3 +1,0 @@
-Let me analyze the external bug's core invariant and search for a nearcore analog. The bug is about a **partially-filled record created without the associated order/mechanism needed to close/exit/liquidate it** — a state inconsistency where an entity is marked as "in progress" but the completion path is severed.
-
-I'll search for nearcore analogs in receipt causality, transaction admission, and accounting.

@@ -1,1 +1,0 @@
-Let me analyze the bug class from the external report and search for nearcore analogs. The core bug is: an intermediate state update (triggered during a claim operation) extends a timing/cooldown value, making subsequent conditions impossible to satisfy. I'll map this to nearcore's accounting, authorization, receipt causality, and transaction admission domains.

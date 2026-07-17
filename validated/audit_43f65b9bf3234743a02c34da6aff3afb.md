@@ -1,1 +1,0 @@
-I'll analyze the bug class from the report (authorization bypass via payload bundling — a guard that checks for a specific action type in a multi-action payload and blocks/allows the entire payload based on that single check) and search for a nearcore analog.

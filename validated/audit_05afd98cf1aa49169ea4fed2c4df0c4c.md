@@ -1,1 +1,0 @@
-Looking at the exact code path described, I need to trace whether calling `promise_yield_resume` twice on the same `data_id` within one function execution can cause the callback to fire twice.

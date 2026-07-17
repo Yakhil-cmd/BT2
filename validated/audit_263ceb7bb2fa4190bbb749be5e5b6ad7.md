@@ -1,1 +1,0 @@
-Let me analyze the bug class from the external report: a user-provided recipient address is ignored, and funds go to the caller instead. I need to find a nearcore analog where a user-controlled destination is accepted but a different account receives the funds/state changes.

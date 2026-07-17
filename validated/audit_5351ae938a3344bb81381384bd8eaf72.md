@@ -1,1 +1,0 @@
-I'll analyze the external bug pattern (fee transfer to external recipient blocks critical finalization, causing funds to be permanently stuck) and search for a nearcore analog in the target scopes.

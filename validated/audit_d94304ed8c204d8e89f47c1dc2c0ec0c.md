@@ -1,1 +1,0 @@
-Let me look at how `apply_epoch_update_to_proposals` is called and how `stake_change` flows into `proposals_to_epoch_info`.

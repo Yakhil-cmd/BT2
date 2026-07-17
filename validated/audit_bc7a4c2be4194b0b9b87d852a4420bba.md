@@ -1,1 +1,0 @@
-Let me analyze the core invariant from the external bug: a configuration value (rate/decimal) is captured at initialization time, but the underlying parameter can be changed post-initialization, causing the stored value to become stale/incorrect. I need to find a nearcore-native analog in the target scopes.

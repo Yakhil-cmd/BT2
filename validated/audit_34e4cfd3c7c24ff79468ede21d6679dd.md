@@ -1,1 +1,0 @@
-Let me look at the `trie_id_len` implementation and `get_public_key` to complete the analysis.
