@@ -1,0 +1,3 @@
+Let me analyze the bug class from the report and search for a nearcore-native analog. The core invariant violated is: a counter tracking pending work items can be decremented (via burn) without a corresponding increment (via mint), allowing an attacker to drain the counter and block legitimate operations.
+
+I'll search for similar patterns in nearcore — specifically counters tracking pending state updates that can be asymmetrically manipulated.
