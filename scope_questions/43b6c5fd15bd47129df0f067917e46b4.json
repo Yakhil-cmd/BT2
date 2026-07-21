@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_manager.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_40c91a31-aaeb-404b-b11e-b2447eb6152e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_storage.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_e8ab5563-9f22-491a-80c0-bdefb1a57a13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_compile_to_casm/src/compiler.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_4de523cb-ddb8-44e9-aefe-41aa86e2cf87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_compile_to_native/src/compiler.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_5b7cd841-c8c9-4a1f-863d-73fb47022799?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/gateway.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bb1de5d4-9f48-41c2-8219-25794b443a51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/gateway_fixed_block_state_reader.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3412106e-85c4-495c-9871-7a1eb5f7e86f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/state_reader.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bbb9bc96-2fdf-442b-a5ea-303106c0b45a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/stateful_transaction_validator.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_2b24e9d5-e96e-451a-8abb-01a7c5fd4d52?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/stateless_transaction_validator.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_25f12299-b25d-4b67-bb09-71a4a036d921?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/sync_state_reader.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_0597cfd9-32aa-4975-ad3e-63060ec4cb46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway_types/src/deprecated_gateway_error.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bfa91e10-f801-473a-a95f-9b81c15525c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway_types/src/gateway_types.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_d8470b16-2e44-43dd-85d9-fd73f49850d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_http_server/src/deprecated_gateway_transaction.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_4fcbcff8-37f0-484b-8c2b-9fe88e01f3c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_http_server/src/http_server.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_5bded2fc-a054-4ead-b860-8af489421d13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/eth_to_strk_oracle.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_f145e2dd-755c-4630-bb2e-e262507eb769?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/l1_gas_price_provider.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_4d55e18c-cfb6-4a0e-a1b6-b3dd27eb074f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/l1_gas_price_scraper.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_e2de7ae7-3c34-4df6-ba30-0040cb6f435b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_provider.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_cac55c3b-c52e-4d2a-a518-e3dd5a99895a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_manager.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_ceb646e4-4b37-4d9b-9291-b9e27774d344?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/fee_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_6ff7f599-9631-45e9-ae0f-feec41ecf0c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/fifo_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3db03022-5b7c-418e-a433-b584e894e0ae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/mempool.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_4d029743-486b-4604-acab-277babc2a4c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/transaction_pool.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_8f67703e-5692-49e1-84e3-c1972ecb39d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/transaction_queue_trait.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_c39633b0-6a1b-4dfc-9501-85aee00b48ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/utils.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_684939a7-7e28-4f71-9f9a-114e93bfbff5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool_p2p/src/propagator/mod.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_e83ea986-96a3-49e3-b2aa-c87ebf7a5e8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool_p2p/src/runner/mod.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_1d7491e3-ce59-48d7-aed5-3671965332d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/api.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_04428464-555d-4884-a752-ec169c436bac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/middleware.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_cb7a98f8-f4c2-4c2b-be0b-0d533d854d11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/pending.rs -> Scope: Critical. Unprivileged-user-triggered class compilation, CASM/native cache, compiled class hash, Sierra/deprecated class conversion, or contract-class manager bug executes stale, wrong, or unauthorized code.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_8e179353-ad7d-4e49-b38a-31b3126c0b76?mode=deep",
+    "questions_generated": false
+  }
+]
