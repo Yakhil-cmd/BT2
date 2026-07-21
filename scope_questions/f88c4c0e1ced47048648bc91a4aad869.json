@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_manager.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_cbbca73d-a033-47ab-a70b-b67dda94f7e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_storage.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_2536850c-27b0-4211-9736-13a591281568?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_compile_to_casm/src/compiler.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_aa21cdea-7868-4684-9371-66f42c2ad8a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_compile_to_native/src/compiler.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_65844ea8-2496-4b0e-b243-50db6617c0f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/gateway.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_b63f7574-a567-46f6-bb73-987d2cb7acff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/gateway_fixed_block_state_reader.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_5b6b6b70-46ba-4379-aab5-1490cba788a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/state_reader.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_502f778a-13a2-45d5-8027-51f24800c075?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/stateful_transaction_validator.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_a60b32fd-8aa8-4f9d-a4d6-750cb4f68b89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/stateless_transaction_validator.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_f8245e40-abb9-4038-8def-e82cb450a0aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/sync_state_reader.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_0e7547b9-0946-48f0-b8d1-c537516554b5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway_types/src/deprecated_gateway_error.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_18d980ac-6ec6-4bb3-a331-fbde29def7ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway_types/src/gateway_types.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_047359d9-2e98-4d45-9dc8-da7de2cd6965?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_http_server/src/deprecated_gateway_transaction.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3342b16d-cf24-40a5-9d83-4dc1e4fd061a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_http_server/src/http_server.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_0ad5d15a-5c6c-449e-912f-a5b8e9df8ecf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/eth_to_strk_oracle.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_b0bd864a-bf76-4002-9012-3f89de525290?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/l1_gas_price_provider.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3d21823c-e951-4b27-9f00-be770f87df6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/l1_gas_price_scraper.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_25741a27-c4b9-4c65-9c95-b10267cd9e96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_provider.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_6ce81f1d-51f3-4f6b-87d2-512be4d21caa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_manager.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_18532521-edc5-4dd7-ae10-a185ddba234b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/fee_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_381d695d-7528-41e3-9c7a-3358d09a7aff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/fifo_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_a5cdd7d5-2b45-44b7-9860-14db7428f7c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/mempool.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_698fd0b0-06cc-4290-8fbe-52dbaa26abef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/transaction_pool.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_f885790b-2b6d-4d17-8df8-b82a4eb07f5c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/transaction_queue_trait.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_a60e911a-ccac-4f61-a812-a6c70300c559?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/utils.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_776000cf-0f41-4666-9b78-3113b0d8342a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool_p2p/src/propagator/mod.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_52f1e772-26b0-4030-b857-938371ad4604?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool_p2p/src/runner/mod.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_871caaef-95dc-4d6f-be0f-b4fd2ccc27d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/api.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_82f17a39-8d95-42f0-a527-60aaae22ad42?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/middleware.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_07a2edd5-58da-45de-854c-b82ba591ad34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/pending.rs -> Scope: Critical. Unprivileged-user-triggered execution, syscall, class declaration, library call, replace-class, storage, event, L1 message, or revert-handling bug changes state, receipts, events, messages, or class hashes incorrectly.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_86523f79-5870-49c0-a99d-849cb3a8401d?mode=deep",
+    "questions_generated": false
+  }
+]
