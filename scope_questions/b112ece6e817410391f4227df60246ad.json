@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/blockifier/src/execution/deprecated_entry_point_execution.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_b26e950d-5c49-432c-b1f6-d4b259e73431?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/deprecated_syscalls/deprecated_syscall_executor.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_e5e20d70-9b50-4c7f-8e66-094d93ec81e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/deprecated_syscalls/hint_processor.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bd31865c-4809-41bc-880b-f756d471d8a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/entry_point.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bcd35426-24b7-45ab-be5a-0d7059a29c3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/entry_point_execution.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_f71aacf4-14bc-49f1-bec8-893426fd04e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/execution_utils.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_2e8da15c-8ab1-402b-b948-e8a1d62dd4f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/native/contract_class.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_456961f1-cf51-49c8-a870-023a7308773a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/native/entry_point_execution.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_c1a4f2ad-a486-41de-84b9-8b7b0fb274a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/native/syscall_handler.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_5a4b1803-7b23-4a6b-a363-91848be9c3b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/native/utils.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_773801d7-c88f-4b00-ac81-468d9313804b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/secp.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_4935e941-60cd-453f-a381-8b43e14c8fa3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/syscalls/common_syscall_logic.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_a1a4c548-21e5-47b5-bb1e-198ba7d8bc0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/syscalls/hint_processor.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_df700320-ac5b-4973-88de-e11b7ddd77b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/syscalls/syscall_base.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_b24e1174-6b1f-429f-9d38-45473e9c28e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/syscalls/syscall_executor.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_d09c9df8-a342-4ef8-919d-af34363d55ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/syscalls/vm_syscall_utils.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_edef0cfe-4b97-4095-a286-e99cbc3d396a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/fee/eth_gas_constants.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_708bb65a-ea1d-49a6-ae0b-02930cc1d573?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/fee/fee_checks.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_9a523d3c-3cb5-45ef-ae8a-06a9c28c193b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/fee/fee_utils.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_ec8d6067-5d54-4f98-939b-ccc7d7bc2a44?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/fee/gas_usage.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bded120c-4e17-41ac-926b-f7b24d859f56?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/fee/receipt.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_c157e886-8aea-41bd-a1d5-2014f4b58657?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/fee/resources.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_571a6051-5cb5-40b1-bc4b-4509b86402e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/cached_state.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_82b19592-35dd-4b56-abd4-694bc7375e85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/compiled_class_hash_migration.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_47d91fe5-0ea6-45ad-9806-5858e7799eba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/contract_class_manager.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_9bf08f6b-46d5-41f5-91ea-545dfda085ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/global_cache.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_20a42ea7-1f89-4810-815c-c1cf77b95170?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/native_class_manager.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_7c67bff3-d4b7-4837-92c3-b3228d5a165c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/state_api.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_44ab0ec8-4172-4718-b2c8-a85854bd99e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/state_reader_and_contract_manager.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_596ee577-f9f3-44e7-80ec-4b96305f38de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/state/stateful_compression.rs -> Scope: High. Unprivileged-user-triggered RPC execution/view path returns verified-looking but wrong block, state, class, storage, fee estimate, simulation, trace, or pending value.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_910ef692-aeb2-4f38-ba15-9871cf7debdc?mode=deep",
+    "questions_generated": false
+  }
+]
