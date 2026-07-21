@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_manager.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_edd32e44-ce4f-43fa-8137-d2be6f680481?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_class_manager/src/class_storage.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_a497bd36-59ef-424a-bf4b-c342c297fd27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_compile_to_casm/src/compiler.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_919903c5-11b8-4e61-a444-51406f1b93d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_compile_to_native/src/compiler.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_43209232-7df4-4a90-88e2-1b1d47ae13c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/gateway.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_234648c7-c0dc-4a9b-8ad7-8ce54255e016?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/gateway_fixed_block_state_reader.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_5c9ce294-9047-4628-8cbb-8362bed52668?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/state_reader.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_78a078b9-c1b1-4664-83e3-30315ede9e91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/stateful_transaction_validator.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_6a5ea2c9-8a00-4ea3-910e-fffaf27807f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/stateless_transaction_validator.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_91e5759e-446f-4b33-8a65-3fc29cf5f489?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway/src/sync_state_reader.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_d2d7a9d6-e22d-4555-9ab6-ac02da4697e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway_types/src/deprecated_gateway_error.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_ba48facb-d03c-46ce-9d2c-8eedf72b27f5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_gateway_types/src/gateway_types.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_053a3f86-2488-4e91-8103-b1f2ec69b733?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_http_server/src/deprecated_gateway_transaction.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_89174eda-40c0-4596-9488-233b67e20dba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_http_server/src/http_server.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_f415d58a-e590-4016-a48e-12e6b982ef56?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/eth_to_strk_oracle.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3569783e-f656-4132-8ce6-9ac3de5fdf48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/l1_gas_price_provider.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bbd79994-83a4-4b1e-b4ab-85f96c2c59db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_gas_price/src/l1_gas_price_scraper.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_d01ef537-71fb-4a65-a7d2-084f7b200bc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/l1_provider.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3ab00c51-fb3e-4826-964c-942ef0783a60?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_l1_provider/src/transaction_manager.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_2818e449-7064-4fa5-b9e7-adb0ef24ddbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/fee_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_ba64fccf-8c49-45bf-960f-d4282cf1077c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/fifo_transaction_queue.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_2943bed1-c95a-4b87-91c6-d171616cfe97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/mempool.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_8dfd02fd-dfc1-4701-acd3-04ddc245b718?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/transaction_pool.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_e9a7ed06-a59a-41ee-b8c2-59f78749a859?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/transaction_queue_trait.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_16f5caa1-6b79-4dc2-bcdb-54cb9ee22e73?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool/src/utils.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_b0906467-7b35-40ce-8bac-a167557c409c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool_p2p/src/propagator/mod.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_a2e1655f-87a8-494d-9b8d-6feb40203e88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_mempool_p2p/src/runner/mod.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_b9a92aa3-1a72-4df3-b525-135c8721c49b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/api.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_c0c0124a-aa8d-4b50-afc9-d7b7af511185?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/middleware.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3020d086-221f-46d8-9d75-7e371c6d69aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/pending.rs -> Scope: Critical. Unprivileged-user-triggered account transaction validation, nonce, chain id, signature, resource bounds, tip, fee token, paymaster, or account deployment bug admits an unauthorized or invalid Starknet transaction.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_7d7d00a6-93af-4cd1-bde6-7eadc0043b85?mode=deep",
+    "questions_generated": false
+  }
+]
