@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/api/api_impl.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_68e6c765-2d5d-4111-81bb-e7aad5d8124a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/broadcasted_transaction.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_7194caf0-34b1-41c1-bee7-23b6e900812d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/deprecated_contract_class.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_239512a4-1c79-40e7-a44f-d46faa31bdf6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/error.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_2943168c-5aa5-4f9d-be2c-417767089c40?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/execution.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_3097ea9d-faaf-45df-8208-3b38151c68df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/state.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_6f9d7c94-53a7-48f0-b9a3-f7be93cb0450?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/transaction.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_0a4ba9c6-5460-45b2-9b24-f9702314d185?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/write_api_error.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_1669a66d-f1f7-4d2c-8ec8-2e379e97ebfa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc/src/v0_8/write_api_result.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_9ffcabe5-c8ec-4b6e-a834-8c9ee1f6fca2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc_execution/src/execution_utils.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_96149529-1289-428d-a1d3-6f0d0e800ee6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc_execution/src/objects.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_b37895b3-680b-41b8-ad86-5019c505a570?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_rpc_execution/src/state_reader.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_cf7fb3b2-26ad-49a2-b0b7-69dffa1aa363?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_signature_manager/src/blake_utils.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_665af9f7-864a-47bd-9091-1a4aae412d42?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_signature_manager/src/signature_manager.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_003f35d9-94f2-43b3-9071-09cc920c1b63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_state_reader/src/apollo_state.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_dab50082-e115-4dd9-aa69-295ce25b17f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_state_reader/src/lib.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_855c8ab7-0e36-4722-9426-352081482d0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/apollo_transaction_converter/src/transaction_converter.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_195ab9f0-5707-4c07-b78b-370eee0215a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/blockifier.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_a9eee204-e643-451a-9476-c6b26312ed03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/blockifier/block.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_bc1d9bb7-582d-4529-b727-7dd770554ad0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/blockifier/config.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_1c229af6-141e-49e5-9efc-128c705b4294?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/blockifier/stateful_validator.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_aa448646-ec4e-462b-90b2-728edaa6ce5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/blockifier/transaction_executor.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_8daf5b3b-eb2b-4860-a13a-3e31c81fe900?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/blockifier_versioned_constants.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_7a6c1359-c6f3-4268-8fed-9791d0787f26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/bouncer.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_4deb306b-4742-4686-b724-52c0c3f6028c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/context.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_7a28599d-091a-497f-9cc6-e6988cabf6e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/call_info.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_8fe8f3a5-85a4-4701-a6e6-03b2329d0bfb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/casm_hash_estimation.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_7f032807-c3b5-4b5f-a0f0-e7b4c89c90bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/common_hints.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_69b50e61-28ea-4ede-b43f-182bb9162da3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/contract_address.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_29211e50-d145-4fd2-b4fe-4c639ffdd499?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/execution/contract_class.rs -> Scope: Critical. Unprivileged-user-triggered fee, gas, bouncer, L1 gas price, resource accounting, refund, or balance-charge bug undercharges, over-refunds, mints/burns, or misorders economic effects.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_46a923a8-0cce-4f2b-8ae5-c1a250557b2b?mode=deep",
+    "questions_generated": false
+  }
+]
