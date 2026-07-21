@@ -1,0 +1,1 @@
+Let me look at the gateway's full `validate_and_add_tx` flow to check for any missing steps.
