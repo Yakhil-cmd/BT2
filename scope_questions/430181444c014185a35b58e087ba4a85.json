@@ -1,0 +1,112 @@
+[
+  {
+    "question": "'File Name: crates/blockifier/src/transaction/account_transaction.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_97692a68-18f5-454d-90e3-a162a479313d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/transaction/l1_handler_transaction.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_9a83437b-0e73-4ad0-87fb-2f7110a7cdc2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/transaction/objects.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_2b51cdf4-416d-44c4-a852-a55c37287bb2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/transaction/transaction_execution.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_d53297db-ba79-4616-91af-f0c48457d4a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/blockifier/src/transaction/transactions.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_ed183639-ccb3-473f-bdc2-9769797331e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/native_blockifier/src/py_block_executor.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_570f3347-19e8-44fc-8792-fe619d26e672?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/native_blockifier/src/py_declare.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_6d06c184-a5c0-4564-a3ad-022873f10ccc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/native_blockifier/src/py_deploy_account.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_7a8836e6-7756-4c18-aaf9-d31e22be598c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/native_blockifier/src/py_invoke_function.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_c74e9f3e-afdb-41c7-876f-c6d89e774d77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/native_blockifier/src/py_l1_handler.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_76a21d2f-3784-4ae0-b502-a23203f02651?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/native_blockifier/src/py_validator.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_48fd0306-0df0-4dd4-849d-12b62dd792cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/contract_class.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_1bdcd9ef-fb51-4ef2-9505-b97cc406ffa4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/contract_class/compiled_class_hash.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_0463e7b6-ba86-44b0-a7dd-34f8b190fc67?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/core.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_9d7fbdd3-735b-46f9-845a-197e40922c3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/executable_transaction.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_e8dbc8d7-0fcf-4a92-b67b-16dadf930940?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/execution_resources.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_8fc98945-f458-4e74-b2bc-869065285bd4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/rpc_transaction.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_40f354f4-28f9-4d85-a814-ed9672b63f3b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/state.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_fe3eb350-dd1a-4132-bc53-3d1a5e5c7259?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/transaction.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_252b8361-fff7-451c-8342-d44a44b8d3f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/transaction/constants.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_c4a25ca0-3e6e-4732-9c0e-188404382401?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/transaction/fields.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_56d963c5-11cc-4965-a5e8-e37b6435bb8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/starknet_api/src/transaction_hash.rs -> Scope: High. Unprivileged-user-triggered gateway, RPC, transaction converter, mempool, or mempool-p2p path accepts transactions canonical validation must reject, or rejects valid transactions before sequencing.'",
+    "url": "https://deepwiki.com/search/-generate-executionadmission-s_9484249d-032c-43e5-8720-fef3f0f045b2?mode=deep",
+    "questions_generated": false
+  }
+]
