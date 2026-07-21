@@ -1,0 +1,3 @@
+Looking at the external report's core invariant — a mapping/redirect that is applied without validating its own consistency can corrupt state and bypass intended checks — I need to find an analog in the sequencer where a conditional bypass of a security check relies on an overly broad predicate that can be satisfied by unintended inputs.
+
+Let me trace the `skip_stateful_validations` path carefully.
