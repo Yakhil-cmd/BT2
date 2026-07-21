@@ -1,1 +1,0 @@
-[File: 'crates/apollo_rpc/src/v0_8/write_api_result.rs -> Scope: High.'] [Symbol: convert_rpc_tx_to_internal_and_executable_txs / await_verification_task_and_extract_proof_data] Can an attacker-controlled invoke transaction with non-empty `proof_facts` and `proof` under a state where the proof verification task panics (not returns Err, but panics via `expect(\
