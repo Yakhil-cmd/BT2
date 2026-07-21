@@ -1,0 +1,1 @@
+Let me look at the CASM path's `InsufficientEntryPointGas` handling and how `call_contract` sets `initial_gas` for the inner call.
