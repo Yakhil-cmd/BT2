@@ -1,0 +1,1 @@
+Let me check the factory constructor and `nextPoolIdx` initialization, plus the `isPool` check usage in oracle registration.
