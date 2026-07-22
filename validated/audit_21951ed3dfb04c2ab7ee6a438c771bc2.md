@@ -1,0 +1,1 @@
+Let me look at the gateway's `run_validate_entry_point` and the full gateway flow more carefully.

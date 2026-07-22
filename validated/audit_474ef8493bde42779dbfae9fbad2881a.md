@@ -1,0 +1,1 @@
+Let me look at the `rewind_txs` function and the gateway's full validation flow more carefully.
