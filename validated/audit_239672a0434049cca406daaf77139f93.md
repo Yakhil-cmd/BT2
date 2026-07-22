@@ -1,0 +1,1 @@
+Now I have enough information to synthesize the full analysis. Let me look at the mempool state implementation to confirm the `contains_account` semantics.
