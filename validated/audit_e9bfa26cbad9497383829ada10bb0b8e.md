@@ -1,0 +1,1 @@
+Let me look more carefully at the `validate_state_preconditions` function and the full gateway flow.
