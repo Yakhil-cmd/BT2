@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: metric-core/contracts/utils/MetricReentrancyGuardTransient.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_533bb9f8-175a-45f1-b356-0c381d4a84e2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/base/MetricOmmSwapRouterBase.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_71a176d3-9f88-437b-a575-dfe71fdcc2e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/base/PeripheryPayments.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_ea45d2e9-0c25-404d-a9e5-3f8c57c20e30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/base/SelfPermit.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_5d575d61-d916-4431-a736-3fdc82ce5038?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/common/MetricOmmPoolStateView.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0cb135ac-1f4e-432a-82df-053a27beecf8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/extensions/base/BaseMetricExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_24085b33-d24e-49e0-940a-77d6f771e7b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/extensions/DepositAllowlistExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0157da53-8ed0-423b-8381-d8c2f098ffda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/extensions/OracleValueStopLossExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_f0f505ba-6550-4ef3-93d4-24369373e967?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/extensions/PriceVelocityGuardExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1f0d7a8b-f2f3-4580-b970-6e967b89ff27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/extensions/SwapAllowlistExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_7d5c0011-dbbc-43eb-8e19-f6271055edc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/extensions/IDepositAllowlistExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1bc9e9e9-419a-427b-b40c-24af18c7bc96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/extensions/IOracleValueStopLossExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_a76c6d99-4fa5-49bd-8def-c45236eb0d4f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/extensions/IPriceVelocityGuardExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_6e5382e1-28aa-451d-ac7d-fc88883d3ef1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/extensions/ISwapAllowlistExtension.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_46468524-fb8b-4981-b6aa-567e927d63be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/external/IERC20PermitAllowed.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_451a6cb4-3298-4b56-9647-3296de9d08ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/IMetricOmmPoolLiquidityAdder.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_a457a871-ea2d-4059-ad4f-761b7f06592a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/IMetricOmmSimpleRouter.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_4c1254c2-22fe-4525-9da8-a39e32cde9e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/IMetricOmmSwapQuoter.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_8260aeba-697d-48a9-9ac8-c052987a17b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/IMulticall.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_a31e3798-cbeb-4122-9680-8e74da20ec5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/IPeripheryPayments.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_36910483-f6e0-4dea-9c50-1972993a0a11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/ISelfPermit.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_8ac052dd-b260-43b9-a799-27a70e617e45?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/interfaces/IWETH9.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_3569f588-f9fb-4afc-ae55-f2e042356736?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/libraries/MetricOmmSwapInputs.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_4862d0f7-e80c-463f-afb1-007008f7384b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/libraries/MetricOmmSwapPath.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_e60295ca-2d2e-42d1-8f90-3c15b2c23a3b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/libraries/MetricOmmSwapQuoteDecode.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0c3dac24-7d30-47c4-8b87-74abe666d2cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/libraries/MetricOmmSwapResults.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1c77d0ef-76da-4527-ba49-8b4afb3d16b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/libraries/TransientCallbackPool.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1520feb3-468f-4adb-9331-c326a505e904?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/MetricOmmPoolLiquidityAdder.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_a9935660-4394-4f36-97dd-d2b20aa9a05b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-periphery/contracts/MetricOmmSimpleRouter.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_13508088-59e9-481a-8e87-175fdeb65b9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/AnchoredPriceProvider.sol -> Scope: Critical. Unprivileged or semi-trusted pool-admin path bypasses fee caps, provider timelock, or pause boundaries and causes direct loss of funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_b87c2fd9-30c8-4ca4-a120-b4f132933eb0?mode=deep",
+    "questions_generated": false
+  }
+]
