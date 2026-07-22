@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/AnchoredProviderFactory.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_171424fa-8077-40aa-b688-222fd55bd608?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchoredProviderFactory.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_9cdbf3f5-5120-406b-a15d-326da73aced9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchorSource.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_fbfa954a-1e82-4d9c-bc74-3c18c95d4143?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/ICompressedOracleV1.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_5441db1f-0a03-4021-8c8a-cfb553776962?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/CompressedOracle.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_6a4f3788-127a-4da9-9235-ddf7e5b89d13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/OracleBase.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1f9379cc-f47b-4d0d-8d2e-e2670b4dc6af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/ChainlinkOracle.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_2b7a61f0-c5f0-4e27-8026-405c9c1de96d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/en/abuse-protection-integration.md -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_f8d955c4-ae18-4171-9ab8-8d747c02917a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/ru/abuse-protection-integration.md -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1a616808-b299-4550-9fc0-15913b801659?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/OracleBase.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_d28dbb31-63f9-432e-beb1-cb565ab6671f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/PythOracle.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_17fb3b2e-81ce-4b66-ab3b-b13342e8782e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/Codebook256.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_7042275d-6ba6-48a6-9252-f3c77b688fa2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/LazerConsumer.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_11da6b7e-4625-465e-a658-054bf6abf7df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/TimeMs.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_99289dc3-6b02-45c9-9311-abf070a25c55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/U64x32.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_7bd38849-49b8-4e24-84fa-09b0ae76c69b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProviderFactory.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_3cf66f7a-7477-4eee-8d8b-5b2e2e62732b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProvider.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_bea6c9dd-493f-4e2c-b209-bd73649aeddf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProviderL2.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_aac0769c-009c-4d0d-a543-9b5d23903211?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProvider.sol -> Scope: Medium. Fee destination, protocol fee, bin fee, or collect-fee accounting is misconfigured or misapplied in a way that leaks protocol/user funds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_428a3a49-6d01-4576-b37b-3139c5ff74c4?mode=deep",
+    "questions_generated": false
+  }
+]
