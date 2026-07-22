@@ -1,0 +1,1 @@
+Let me look at the `_validatePoolParameters` function and the `ValidateExtensionsConfig` library to complete my analysis.
