@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/AnchoredProviderFactory.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_a5030887-47d7-477b-b3cd-83f5f1740b89?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchoredProviderFactory.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_9897437d-3878-46b5-a67b-e5491c261cd8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchorSource.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_ad170e83-ba33-4fae-807c-d0a77f354683?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/ICompressedOracleV1.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_d2003671-ee21-486e-938c-5d7f454dbcd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/CompressedOracle.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_43b2213b-1eea-4316-8309-3f2f7a6a5bff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/OracleBase.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_728d2b25-adb3-4870-b628-b22399305b86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/ChainlinkOracle.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_58106c42-8bfd-481f-a60f-7ad2f1521ced?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/en/abuse-protection-integration.md -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_04476b20-6c39-4218-ad92-2d11f946db49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/ru/abuse-protection-integration.md -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_308ef6a1-bd81-4137-b09f-4f0f9b4fecf9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/OracleBase.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_7afa17bd-6174-469a-9cc4-70593898a874?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/PythOracle.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_aabe4713-a914-4ac4-a47c-0efd0c854118?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/Codebook256.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_335a80b1-fa24-4b2b-835c-194308c94152?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/LazerConsumer.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_d89778e2-e098-4385-a312-38b466e29520?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/TimeMs.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_d5b48bc4-2445-4fb3-9384-4b92df3ea0d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/U64x32.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_2276e2b9-f44c-44f2-81ac-947f97ed2abf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProviderFactory.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0be8e16d-ee5f-41f6-baf2-0d3d7996a901?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProvider.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_d13e21be-6bec-447e-84c1-d87da218bb2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProviderL2.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_3dd5e654-79df-497c-989b-fb86ed3c158b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProvider.sol -> Scope: Medium. Pool-admin action honestly within expected setup exceeds configured bounds or bypasses delay and causes loss above Sherlock thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_14ee6750-1f39-4c55-9fa9-ff352b733199?mode=deep",
+    "questions_generated": false
+  }
+]
