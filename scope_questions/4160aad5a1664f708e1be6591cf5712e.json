@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/AnchoredProviderFactory.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_06fbd8eb-91c7-4d9d-bfd4-2c5fd41cff65?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchoredProviderFactory.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_e0490ab2-0ba5-445f-a60e-27c4bb21dea0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/IAnchorSource.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_f04988c7-4285-4703-9616-88f30a16fdcf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/interfaces/ICompressedOracleV1.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_c204ad57-e130-4260-ad12-4950a52e9698?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/CompressedOracle.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_81ea04a9-eaa0-496f-9751-90f9c0a77261?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/compressed/OracleBase.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_246a23c4-0ec1-4204-adf3-cd9c1515ce1f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/ChainlinkOracle.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_d954270a-d844-4234-9d79-24bcbc5cd8ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/en/abuse-protection-integration.md -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0a22eaeb-7a71-4f90-9139-2d3b3a081575?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/docs/ru/abuse-protection-integration.md -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_2367b75a-4575-4efa-b75a-42e8b4750379?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/OracleBase.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_f06e7b97-d8a8-4bcc-93cd-d724a36419d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/providers/PythOracle.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_3b9144a6-377d-4456-bf63-8c9b19e0f3bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/Codebook256.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_ecdcfbec-2126-47c7-8036-d7bd2a042a09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/LazerConsumer.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_fea6e6c5-1852-46df-9e3c-c69b17644e2a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/TimeMs.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_17816dd2-242c-41f5-8386-9b35fa626030?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/oracles/utils/U64x32.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_6fcab99b-fd48-4079-82fd-65c27ad45329?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProviderFactory.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_09f9f394-1f51-4a0f-895a-bdbb323ff741?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/PriceProvider.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_3da05844-d57b-474c-b2a3-46570935fd1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProviderL2.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_43833ece-60c8-4ae4-b6da-191484a825b9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: smart-contracts-poc/contracts/ProtectedPriceProvider.sol -> Scope: High. Extension validation/order failure skips a required allowlist, stop-loss, price-velocity, or accounting hook during real swaps or liquidity operations.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_62137e67-fb0a-4ead-b37b-84d9f0da26d2?mode=deep",
+    "questions_generated": false
+  }
+]
