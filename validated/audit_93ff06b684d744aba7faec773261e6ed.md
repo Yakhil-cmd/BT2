@@ -1,1 +1,0 @@
-Let me look at the full `extract_state_nonce_and_run_validations` function to complete the picture.

@@ -1,1 +1,0 @@
-Let me search the codebase for relevant validation logic related to the audit pivots mentioned.

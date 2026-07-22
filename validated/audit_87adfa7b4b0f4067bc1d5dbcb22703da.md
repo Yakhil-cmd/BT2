@@ -1,1 +1,0 @@
-Let me analyze the external bug (wrong chain context when fetching values) and search for a Sequencer-native analog.

@@ -1,1 +1,0 @@
-Let me look at the exact `STORED_BLOCK_HASH_BUFFER` constant and the `run_validate_entry_point` flow more carefully.

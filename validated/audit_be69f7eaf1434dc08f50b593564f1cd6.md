@@ -1,1 +1,0 @@
-Looking at the full gateway stateful validation path, I need to trace the `skip_stateful_validations` logic and the `validate_nonce` / `validate_resource_bounds` checks for any admission invariant broken by an analog to the "paused state blocks critical operations" pattern.

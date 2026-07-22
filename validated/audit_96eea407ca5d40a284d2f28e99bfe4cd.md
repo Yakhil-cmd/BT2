@@ -1,1 +1,0 @@
-Looking at the actual `create_block_context` function and how it's called from `estimate_fee` and `simulate_transactions`.

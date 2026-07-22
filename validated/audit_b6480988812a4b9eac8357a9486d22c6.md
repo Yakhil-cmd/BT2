@@ -1,1 +1,0 @@
-Let me look at the gateway stateful validation and the `add_tx_validations` function more carefully.

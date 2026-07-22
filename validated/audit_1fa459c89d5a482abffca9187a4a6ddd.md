@@ -1,1 +1,0 @@
-Let me do one final targeted search to confirm the `StatefulValidatorTrait` and the exact call path.

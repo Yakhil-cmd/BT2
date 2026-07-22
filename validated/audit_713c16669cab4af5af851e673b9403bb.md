@@ -1,1 +1,0 @@
-Looking at the `skip_stateful_validations` path in the gateway stateful validator, I need to trace exactly what happens when an invoke tx with nonce=1 is submitted for an account that has any pending transaction in the mempool.

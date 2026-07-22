@@ -1,1 +1,0 @@
-Let me check the `should_migrate` function and the `state_reader_and_contract_manager.rs` to understand the full flow.

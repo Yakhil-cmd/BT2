@@ -1,1 +1,0 @@
-Looking at the external bug's core invariant — a callback function callable by anyone due to a missing caller-authorization guard — I need to find a Sequencer-native analog where a function that should only be invoked by a trusted component lacks that guard, allowing an attacker to corrupt state or bypass validation.

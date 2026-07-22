@@ -1,1 +1,0 @@
-Let me look at `add_tx_inner` and the full mempool.rs to understand how `n_stuck_txs` is incremented when adding to a gap account.

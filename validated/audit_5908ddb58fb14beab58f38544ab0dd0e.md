@@ -1,1 +1,0 @@
-Looking at the actual code for `run_proof_verification` and the full proof_facts/proof_manager pipeline to assess this claim.

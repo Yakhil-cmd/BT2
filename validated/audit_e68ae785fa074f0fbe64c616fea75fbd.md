@@ -1,1 +1,0 @@
-Let me look at the `StatefulTransactionValidatorConfig` default and the `validate_tx_l2_gas_price_within_threshold` function more carefully.

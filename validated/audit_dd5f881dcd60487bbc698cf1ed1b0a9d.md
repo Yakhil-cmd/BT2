@@ -1,1 +1,0 @@
-Let me look at the `StatefulValidatorTrait` and the mempool's `validate_tx` to confirm the full picture.

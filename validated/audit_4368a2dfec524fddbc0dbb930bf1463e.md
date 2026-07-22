@@ -1,1 +1,0 @@
-Let me look at how `l1_data_gas_price_multiplier` is constructed from `l1_data_gas_price_multiplier_ppt`.
