@@ -148,5 +148,155 @@
     "question": "'File Name: metric-core/contracts/types/Slot0.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
     "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1e627d79-df80-4767-bdf1-0061bf634b5f?mode=deep",
     "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/callbacks/IMetricOmmModifyLiquidityCallback.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_b1f95860-6824-4dbd-a699-089ace241e91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/callbacks/IMetricOmmSwapCallback.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_1ab817fd-4a3c-4335-a80d-243b39879b33?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/extensions/IMetricOmmExtensions.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_345b5269-87c0-42c1-93dc-df2629e3640e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IExtsload.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_11f50059-5dd1-429b-9b21-953d70cbb335?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryOwner.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0c283c4a-ec00-4d0e-8694-ff8ca4f33e59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactoryPoolAdmin.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0addc0bb-4292-46f3-9c27-d8b4d4a1b0ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPoolFactory/IMetricOmmPoolFactory.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_27726b2d-513e-491e-aeb0-c1db06726f18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolActions.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_72f9773a-0a9e-417b-b60e-9edba2561dbf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolCollectFees.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_40c2382e-0b39-4808-9db2-3bce4253c732?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPoolFactoryActions.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_b8a1f41d-6197-4bf4-8988-a6d3598a60fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IMetricOmmPool/IMetricOmmPool.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_9d06734d-3af2-417f-8f5f-329d4f6cc3c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/interfaces/IPriceProvider/IPriceProvider.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_ad1422cb-4268-439d-9f6e-102aef4881ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/BinDataLibrary.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_ccaf6302-c410-468e-9bed-f5c192a79173?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/CallExtension.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_6162f360-410d-4887-bf2a-1d753f7db2fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/LiquidityLib.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_d586c63c-10be-4d18-abb1-97e68a613a0a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/PoolActions.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_9e71787b-7563-4aa0-ac9f-7ac09c921410?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/PoolStateLibrary.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_3568e470-5d7f-47ee-a9a1-7ddd8de6699f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/SignedMath.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_4f64fb87-093a-496d-89ae-de5c00deb534?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/Slot0Library.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_292b074b-e243-4a80-b35e-988d929d3140?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/SwapMath.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_040b943e-2176-4377-9f84-0e1e57df57a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/libraries/ValidateExtensionsConfig.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_629e4651-4e6c-438a-8d15-d98bb7ec249b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/MetricOmmPoolDeployer.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_c469d4a1-28a1-4060-9634-5d9bd2b29557?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/MetricOmmPoolFactory.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_28abebb0-a2cb-490b-97be-2cf74a9f81c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/MetricOmmPool.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_0f2c424d-2aac-4328-a5b7-9fe2f486fab2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/FactoryOperation.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_2ce8083d-082c-433b-ac12-796b1fe6c2b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/FactoryStorage.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_f176c950-8d3d-4346-94d8-7ab5c995da47?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/PoolExtensionsConfig.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_a37fcfff-aa8c-4e41-9661-6a83b1599b3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/PoolOperation.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_b8f5ca9d-1027-4529-835a-06e349e70b94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/PoolStorage.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_02f8e261-5da5-469a-b3a6-12759853bbb3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: metric-core/contracts/types/Slot0.sol -> Scope: Critical. Pool creation binds wrong tokens, scale multipliers, price provider, bin state, admin, or registry identity, enabling fund loss in standard ERC20 pools.'",
+    "url": "https://deepwiki.com/search/-generate-factoryadminconfig-s_16bb309c-261d-4838-9fbf-656e58b0730b?mode=deep",
+    "questions_generated": false
   }
 ]
