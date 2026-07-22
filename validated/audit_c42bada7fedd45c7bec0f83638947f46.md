@@ -1,0 +1,1 @@
+Looking at the external bug's core invariant — **state used for validation/fee-accounting must reflect the epoch at which the commitment was made, not a later epoch polluted by subsequent operations** — I need to find a Sequencer analog where a stale or incorrectly-scoped state check causes the wrong admission or validation decision.
