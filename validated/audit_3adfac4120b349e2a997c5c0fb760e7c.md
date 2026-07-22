@@ -1,0 +1,1 @@
+Let me look at the versioned storage read semantics to confirm the exact behavior.
