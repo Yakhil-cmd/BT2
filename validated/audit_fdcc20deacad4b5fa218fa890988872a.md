@@ -1,0 +1,1 @@
+Let me look at the bin validation at pool creation and the full swap math to complete my analysis.
