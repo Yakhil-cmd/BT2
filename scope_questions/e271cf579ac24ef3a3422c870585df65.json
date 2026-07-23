@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeCounterPart.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4e40a24f-d948-49f2-ba44-5c4c0aa42917?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeFee.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f3b13335-f381-4403-abc4-1f4e896a729a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeHandledRequests.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_fd3a5a25-ddbc-4631-8445-39f315a42959?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeOperator.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c46f85c3-d952-4547-815e-8ba7b48e931c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeTokens.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_47fcf11b-9662-4de1-a2aa-9d79fc8bb121?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeTransfer.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4024cac2-a5d8-4b1d-ae17-3816e7c81046?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeTransferERC20.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_e7d70908-8209-4545-8656-a725cba101d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeTransferERC721.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_de2dc272-59c6-4468-96c7-1e04cc0c4a71?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: contracts/service_chain/bridge/BridgeTransferKLAY.sol -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f118000b-3b1e-4e02-9f20-fc60300b9012?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/blake2b/blake2b.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4a74ecbe-d781-4e12-97a6-7f833ea66f93?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/blake2b/blake2bAVX2_amd64.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_cba974f6-5278-4bac-9291-8cc967e4ab0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/blake2b/blake2b_amd64.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b1346db6-b122-4a43-aaeb-d761334cbfcc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/blake2b/blake2b_generic.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_8eead6cd-d93b-46f6-a4d6-27599d906a29?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/blake2b/blake2b_ref.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b75feca9-747c-4ea0-835a-9af31b207f3c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/blake2b/blake2x.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_be0262e3-987a-4a69-affb-eb63bc412820?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/blake2b/register.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_457ef5a2-0c30-4eda-a829-b46d17c87bcc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bls/bls.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_bdfad582-f3db-47db-bb42-602dfa56afca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bls/blst/aliases.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_2e5da028-c2ba-47a8-ab5c-a2f995578011?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bls/blst/cache.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a12eeb3d-2597-4b80-b808-0b192bbbe4b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bls/blst/public_key.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b94d9298-c2bd-4d0a-aeb2-56d95d2978ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bls/blst/secret_key.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_11df2680-367a-4503-b309-a0931d660046?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bls/blst/signature.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c4beab66-38b1-485e-8de2-cf5f4bd48c73?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bls/types/bls_types.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b21a5393-5757-42ec-a0e8-d71c412d6aa9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bn256/bn256_fast.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_26c519cb-c318-471a-9ef7-067f7ec8d19e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bn256/bn256_slow.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_2a57d392-0e78-4b74-b622-d8f9c8b8169d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bn256/cloudflare/bn256.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c267fcd3-c7db-497c-bf89-0e3f633f0714?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bn256/cloudflare/constants.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_3a3cce0f-4473-4671-acf3-a33a19cb2f2b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bn256/cloudflare/curve.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_19098cc5-f4dc-4944-8ed9-9ae1043a3534?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bn256/cloudflare/gfp.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_d3188ae3-3d08-4c56-baa9-9e818729bbb0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crypto/bn256/cloudflare/gfp12.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_ff5e970f-1310-471a-9b6a-1c568944ac4c?mode=deep",
+    "questions_generated": false
+  }
+]
