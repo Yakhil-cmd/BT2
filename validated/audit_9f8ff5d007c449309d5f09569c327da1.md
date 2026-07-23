@@ -1,1 +1,0 @@
-Let me look at the extension config and deployer paths more carefully.

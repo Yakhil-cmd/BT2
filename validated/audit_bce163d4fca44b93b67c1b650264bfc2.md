@@ -1,1 +1,0 @@
-Let me look at the factory's `createPool` to see how `poolFeeConfig` is initialized, and check if there's a gap between pool deployment and config initialization.

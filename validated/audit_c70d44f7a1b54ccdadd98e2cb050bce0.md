@@ -1,1 +1,0 @@
-Let me look at the extension validation and the `collectFees` function more carefully, as well as the `ValidateExtensionsConfig` library.

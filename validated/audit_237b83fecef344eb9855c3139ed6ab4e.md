@@ -1,1 +1,0 @@
-Let me read the remaining factory functions and the price provider proposal flow.

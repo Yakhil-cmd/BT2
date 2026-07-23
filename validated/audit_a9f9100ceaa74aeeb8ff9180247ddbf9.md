@@ -1,1 +1,0 @@
-Let me look at the `ValidateExtensionsConfig` library and the `PoolStateLibrary` to complete my analysis.

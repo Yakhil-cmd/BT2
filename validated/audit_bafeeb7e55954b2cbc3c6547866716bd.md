@@ -1,1 +1,0 @@
-Let me look at the registry index initialization and the `isPool` check more carefully.

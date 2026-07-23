@@ -1,1 +1,0 @@
-Looking at the DYAD bug class: **an unprivileged actor updates shared state for a victim's position, causing the victim's withdrawal to revert, at negligible cost.** I need to find the same pattern in Metric OMM.

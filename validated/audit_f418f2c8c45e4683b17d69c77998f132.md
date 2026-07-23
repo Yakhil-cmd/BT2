@@ -1,1 +1,0 @@
-Looking at the `setPoolBinAdditionalFees` path in the factory and the `collectFees` overallocation test, I need to trace the exact cap-bypass analog.

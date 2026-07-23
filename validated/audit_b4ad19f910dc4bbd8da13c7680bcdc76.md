@@ -1,1 +1,0 @@
-I need to trace the external bug class — **unvalidated external contract address passed to a privileged function, whose return values drive token transfers** — through the Metric OMM factory, deployer, admin, fee, provider-change, pause, and extension-config paths.

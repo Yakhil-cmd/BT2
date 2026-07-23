@@ -1,1 +1,0 @@
-Let me look at the swap logic and how LP fees are tracked in bins to understand the full fee flow.

@@ -1,1 +1,0 @@
-Let me look at the `CallExtension` library and the extension initialization flow more carefully.

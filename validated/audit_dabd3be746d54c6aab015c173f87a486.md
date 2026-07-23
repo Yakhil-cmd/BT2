@@ -1,1 +1,0 @@
-Looking at the `SwapAllowlistExtension` and how the router calls the pool, I can identify a direct analog.

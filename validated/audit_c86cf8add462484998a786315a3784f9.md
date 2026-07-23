@@ -1,1 +1,0 @@
-Let me look at the `setFeeCaps` function and the `collectFees` surplus calculation more carefully.

@@ -1,1 +1,0 @@
-Let me look at the `_getBidAndAskPriceX64` function and the `AnchoredPriceProvider` clamp logic more carefully.

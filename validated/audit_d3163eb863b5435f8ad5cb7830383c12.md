@@ -1,1 +1,0 @@
-Let me look at the `ExtensionCalling` contract and how extensions are dispatched during pool operations.
