@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: snapshot/difflayer.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_7e1b2830-8edc-4123-9d2b-45f40da2ecec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/disklayer.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_dfe2709d-982e-45a0-b1e2-0d9c1c140b48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/generate.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_500aa5c4-a32e-4332-b6b9-17c0120ad17d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/iterator.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_360d0313-dde4-476a-b586-d88acefb37ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/iterator_binary.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f809dc27-5ffa-4e1c-9efc-29d495ecc079?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/iterator_fast.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_29534218-d856-4aad-b751-3f41faa1090b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/journal.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_51a89925-c710-4446-a81d-a34be7102c96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/snapshot.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_1374d75b-dccc-4647-8505-518a91295ede?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/sort.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_9768466e-7ad2-460e-bcd0-f798f109ecde?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/wipe.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_239368cf-a665-476a-8e03-c494d9d952b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/badger_database.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_ac156360-cc0d-499c-aa35-cc4da44f4c5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/batch.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_5c486441-f01b-4c7d-a828-daadd53fc4df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/cache_manager.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b61308ba-0f7e-46f6-b2ca-9c5315baeec4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/db_manager.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4e045646-1b70-40ad-8e72-7fe4f6699b7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/db_migration.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_7c155171-e485-4145-9306-91264245b037?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/dynamodb.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_d1bd8dae-2f11-42d6-8946-49b1d1b6b018?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/dynamodb_readonly.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_5c2e9d74-f154-491f-a925-3a427f4e912f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/filedb.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_9a021314-75eb-4e5b-bd02-4d5118156987?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/interface.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_6685f28d-21e3-41e8-a56c-3c9299226151?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/iterator.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4c859880-055c-4aaf-9870-dfd590baffaa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/leveldb_database.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_7504013a-96e4-42fb-89e1-90f72166ace3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/memory_database.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b68b3711-c86a-4274-a94c-91711cc420f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/metrics.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c9ecfa14-ddd3-4b18-bd38-22528e95a474?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/pebbledb_database.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f4bc01f3-54dc-4f2b-b7f0-8a3c59a55cf0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/rocksdb_database.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f2ed51c3-aa8d-4d78-9881-a8ab34a1cadc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/rocksdb_database_config.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4a6b9d46-614b-420a-a51b-9bc94ff1b0cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/rocksdb_database_nobuild.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a270364a-491e-4d49-8f09-c4ff001029e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/s3filedb.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_9c82b825-1f31-4c48-b66e-0d9502a74e02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/schema.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_e6251028-96fa-4793-a215-d956be990cdc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: storage/database/sharded_database.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_cba92795-b666-485c-8736-df9543e35a6b?mode=deep",
+    "questions_generated": false
+  }
+]
