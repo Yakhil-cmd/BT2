@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: kaiax/reward/spec.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_3504c38e-a645-4d71-84ef-0803c65a98ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/errors.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_2985acf9-50b8-4272-9b6c-553a8bc0a454?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/impl/api.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4fb1cf78-24b8-4912-9019-1065a811d05e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/impl/execution.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f4d54ee3-e071-4615-9138-aa933fb06851?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/impl/getter.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_6f9c7742-7866-4288-aa5c-7804bf5a99d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/impl/init.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b45e98ad-13f2-4bb4-bdb2-b84f70bde45f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/impl/preload_buffer.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_803c62e8-7c47-46c6-a948-48f39041df2f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/impl/schema.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_984564f9-40e3-4b8f-8cee-7788f2fa8705?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/interface.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_fd6cb51f-190a-4eb7-b217-9092f5133c94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/p2p_staking_info.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_7c5f52c2-66cc-4233-833b-ce0475bfff1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/staking/staking_info.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_8d4747cc-793b-40b2-ae53-715ef60c69bc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/errors.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_40339b9a-2694-4ff7-9c27-7ae5afeceb55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/impl/api.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_3040d9c0-d992-4d92-8986-c0e084adb1a5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/impl/execution.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c3007bac-5815-4ee2-81e2-7e99e14bebdb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/impl/getter.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f46e3ba8-8ba0-456a-bab4-f9fac837a96f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/impl/init.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f1921adf-26a7-40a3-963f-f48d2f69030d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/impl/schema.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_34cdebdb-33d3-46b6-a0bd-f7574404fbe5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/interface.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_6aab383b-8146-4ae2-9dc1-723343c3c0de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/supply/total_supply.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_23751f5c-38de-4b27-8a4e-6a4cd0dc266d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/system/impl/blockstate.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_169eb222-22f2-451f-b38c-167a6c8d7d4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/system/impl/init.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_10cb2d29-b6d0-4b22-b2fe-31f352ba198f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/system/interface.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_8f3f9b28-af84-4d6c-8182-5553df0abdb5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/address_set.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_82664641-1434-4569-b880-fb6157c09318?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/impl/api.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_936302ad-f44e-458b-ae38-fa5f97c21545?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/impl/blockstate.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c3898482-9932-488f-a731-47dcc876e6e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/impl/consensus.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_8b018257-c9f7-4afe-b27b-51d805a0dff0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/impl/error.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_23795dbb-f448-4473-aa35-37ed5f5f9c31?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/impl/execution.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_cfe9f4c7-884e-4863-ae97-ca5587c7dd5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/impl/getter.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_484212e0-5aae-4d52-ac27-7b75aa401669?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: kaiax/valset/impl/getter_context.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4bf8ac1f-31a7-474b-a2f7-711049bc7617?mode=deep",
+    "questions_generated": false
+  }
+]
