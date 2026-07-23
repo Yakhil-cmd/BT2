@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: blockchain/state/journal.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4545ab0f-84f9-4c32-af19-ef366e4ef405?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/state_object.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_68360fd0-5d4d-4924-9de3-3019a9d15d31?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/state_object_encoder.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_daf77c6a-fe31-4b7d-b852-035e10ffc244?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/statedb.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4ae2744a-7311-46aa-b3e4-2a2526f8bca6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/sync.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_0aaceecf-dcc0-4e5d-ab32-d62b24f7992d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/transient_storage.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_85f11ec2-864e-4e38-8f3f-76493a4bed4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state_migration.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_529e3a75-53b3-4411-a648-45146df7bfbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state_prefetcher.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_94f671e3-3e0f-4174-b3f5-efdcf6b97162?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state_processor.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a49f4300-09f1-4879-a706-447855998e02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state_transition.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_135f09db-4381-4111-a3e0-f8bfc9a8f860?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/addressbook_v2.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4df2602f-581c-447d-87dc-2606e4e2cd1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/auction.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b2ace814-3119-496a-9d27-1ae40969ee1d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/constant.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_cb3ddfe0-ec81-4cfe-b657-6ebd26c98a37?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/kip113.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_d18707fb-6573-4623-811b-731a1bc96fd2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/multicall.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a5cff709-ffea-410b-bfdd-7cd3f11b492d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/permissionless.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c9ef882d-6945-43ea-9987-22cbc153db1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/proxy.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_13379122-463c-4553-90b9-30d36b9e0b57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/rebalance.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_192445e7-ff81-480f-bdbb-3879f67f159d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/registry.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_25fda029-0148-42d0-848b-876366b1d391?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/storage.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4b5bb879-00f8-4245-80a1-f7cdc83e6c7a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/system/util.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_cb29e495-84ce-4caa-8338-638d6fe90651?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/tx_journal.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a7d84c50-6eef-4774-afc7-65266b7b3628?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/tx_list.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_97c34c72-876c-4e1c-839e-f7c965cd9ed3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/tx_pool.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a89f251b-5746-4b5e-9fe6-d28e74e9dee6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/types.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_189942e5-cc49-4950-b46f-7481147d1616?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/types/account/account.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_404f6d50-89bc-4718-88be-2b5e6cf2616f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/types/account/account_common.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_6ba1ae4f-f0f1-4624-8089-f85f6480c522?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/types/account/account_serializer.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_ad23fc95-5610-40cc-8cd4-8744afa99801?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/types/account/externally_owned_account.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_53ece84a-01dc-4362-87c0-1a51a82146c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/types/account/legacy_account.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_ed622a18-20c1-40c9-baba-b38deab633fb?mode=deep",
+    "questions_generated": false
+  }
+]
