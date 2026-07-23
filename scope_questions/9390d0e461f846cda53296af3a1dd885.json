@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: node/sc/event_parse.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_91b967b1-e147-4f52-b919-9457b7e799aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/local_backend.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_64aa4938-a1ca-4d4d-b017-d31aedbf8612?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/main_bridge_handler.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_43944b92-a58d-457c-9dcc-10712d37c805?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/main_event_handler.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_1d3244a0-a4a9-45bc-a903-4dbe8c84af63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/mainbridge.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_44222f2a-1307-4ca8-9f01-25a8476572fa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/protocol.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_e3af2ad0-e565-4108-ba74-834d9906b4f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/remote_backend.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b9a571e9-d84d-4e87-952a-aee689034b86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/sub_bridge_handler.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_84da732c-6424-415b-85b5-a102cf80ce59?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/sub_event_handler.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_54867e25-3c81-4df4-9033-0d0ee2b8e587?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/subbridge.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_48a1acd6-25bb-4e3c-80fb-3bb657a045ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/sc/vt_recovery.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_8cb9034a-a41e-4c35-a972-26e452297829?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: node/service.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_d3325987-1466-438d-8f4b-d57e6f689813?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/blob_config.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_5458d804-2d3e-4d83-9f70-9eb8961f1f02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/computation_cost_params.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_117a96c3-c24b-4f6d-b80f-1996a2932412?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/config.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a8b30877-6f85-47be-9b05-884c24b24df4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/denomination.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a4d0a213-8fb2-45df-bd4f-d927e7fe66f9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/governance_params.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_2f9cabb7-3e96-4ffa-81ba-ecbe1370fd83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/kip71_config.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_2f9d0b7c-09ec-4677-a851-8d5e34148708?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/network_params.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c3ba9238-1fdb-4108-83df-806355a4bfc9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: params/protocol_params.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f51d6479-c1dc-4cef-9314-a68f92307fef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/decode.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_c99beb7a-777e-4bff-982c-de86e905751e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/encbuffer.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_b51ec97c-e456-4d9e-b981-1d5adbe42e23?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/encode.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_bc9fcdb4-30f5-485c-842b-857ed9dc3fae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/internal/rlpstruct/rlpstruct.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_808cb4b1-308a-4ace-886c-78eb12d5055a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/iterator.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_f9c68606-fcfa-4656-8380-d68b36e0cc39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/raw.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_614bbd6b-988c-4a73-a41d-cbb0beda15cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/safe.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_226ffd81-254d-4240-aeb8-e3640397704e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/typecache.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_06fdba6f-dcce-49dd-b5d1-87a3b14802f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rlp/unsafe.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_7bf55dd8-b50a-42d7-bb93-290dbcab50b5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: snapshot/conversion.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_39b4a269-d1e1-4c65-9b02-524e881a9601?mode=deep",
+    "questions_generated": false
+  }
+]
