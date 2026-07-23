@@ -1,0 +1,13 @@
+# Q5550: FromStakingInfo gasless authorization replay
+
+## Question
+Can an unprivileged attacker reach `FromStakingInfo` through gasless transaction or sponsor-execution path using governance bytes, system-transition calldata, reward or staking edge state, counters, and header metadata and make `FromStakingInfo` reuse a sponsor approval across more than one executable user action, causing the invariant that each gasless approval or counter advance must authorize exactly one sponsored execution intent to fail and leading to Fee payment bypass?
+
+## Target
+- File/function: kaiax/staking/p2p_staking_info.go:49 (FromStakingInfo)
+- Entrypoint: gasless transaction or sponsor-execution path
+- Attacker controls: governance bytes, system-transition calldata, reward or staking edge state, counters, and header metadata
+- Exploit idea: make `FromStakingInfo` reuse a sponsor approval across more than one executable user action
+- Invariant to test: each gasless approval or counter advance must authorize exactly one sponsored execution intent
+- Expected Immunefi impact: Fee payment bypass
+- Fast validation: replay sponsored transactions with altered payload ordering and verify sponsor balances cannot be charged twice or for the wrong call

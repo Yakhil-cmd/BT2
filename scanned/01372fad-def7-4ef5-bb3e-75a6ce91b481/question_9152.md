@@ -1,0 +1,13 @@
+# Q9152: FeePayer bundling and ordering conflict
+
+## Question
+Can an unprivileged attacker reach `FeePayer` through transaction pool or bundle builder path using gas limit, fee cap, fee payer ratio, calldata, and transaction type bytes and make `FeePayer` reorder or co-execute conflicting intents so that later checks observe inconsistent state, causing the invariant that ordering-sensitive execution must preserve nonce monotonicity and dependency assumptions to fail and leading to Transaction manipulation?
+
+## Target
+- File/function: blockchain/vm/contract.go:44 (FeePayer)
+- Entrypoint: transaction pool or bundle builder path
+- Attacker controls: gas limit, fee cap, fee payer ratio, calldata, and transaction type bytes
+- Exploit idea: make `FeePayer` reorder or co-execute conflicting intents so that later checks observe inconsistent state
+- Invariant to test: ordering-sensitive execution must preserve nonce monotonicity and dependency assumptions
+- Expected Immunefi impact: Transaction manipulation
+- Fast validation: inject conflicting bundles and standalone transactions and assert builder output cannot violate nonce or dependency ordering
