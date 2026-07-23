@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: accounts/accounts.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_41922f9d-931e-4906-8b0b-a2670ec9feef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts/errors.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_d2d252a5-1930-462f-9644-41e70cf959e6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: accounts/manager.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_ec399bf9-9ba6-4230-8bf3-5be68de4e096?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/addrlock.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a0e27a5a-7093-46b1-aaba-38be7a53b5ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_debug.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_e84b9bb6-beab-494b-91a1-599f00d28ad3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_eth.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4c8e510e-573f-41be-b606-ac6d96436b8c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_kaia.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_e324f115-890d-4104-9e5c-f89b7a4d4d85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_kaia_account.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_68ae880b-c75e-4c53-9a35-b61f035007a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_kaia_blockchain.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_ee62cdef-4d58-43e6-b935-3452b517a73c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_kaia_transaction.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_44e40136-a8a9-4a63-8949-a03bc758ae57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_net.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_401fad03-0dd6-4a9a-8b7f-8cc8f2e3c721?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_personal.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a23ff927-edb6-4f98-9097-b1e0e5dcc28b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/api_txpool.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_fac76451-0c17-4ed8-8da3-cd3a6fdfecbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/backend.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_e0c3958c-5e3b-40b8-8980-4c995eca6e35?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/tx_args.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_cd903131-0083-45b2-9f90-c14eeff2c0b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/bad_blocks.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_83db7b26-ff1f-4c98-8844-22312a478ab4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/blob_storage.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_5184d690-e352-4668-9698-201c25a4e326?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/block_validator.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_9dcbf401-1f32-448d-819b-44cb063ce7da?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/blockchain.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_961e9f42-e515-47ed-9023-25945e031769?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/error.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_452d787e-4129-4a36-a5ac-5a35790bb98c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/evm.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_4a9bd0a4-8ae5-4069-887b-dc32d9f398b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/forkid/forkid.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a55c86f3-c1e0-42ed-af63-5e3b8d775b85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/gaspool.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_6e412e5c-946a-462c-8e96-66fda6cdd7a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/genesis.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_fc8ff09f-d76b-416b-a52b-f00dc69b2fed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/genesis_alloc.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_2fdfe38e-0bea-403a-8960-c04e58653112?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/headerchain.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_a508af61-c4b8-4380-9297-c37137c59302?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/init_derive_sha.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_24fdc377-24a7-4dce-a9d3-fa219783c4c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/access_list.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_76f7d899-c8fd-406a-90a5-a7aa10416be9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/database.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_9c5115ec-4aa1-4771-a9da-95f88ab054c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: blockchain/state/iterator.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'",
+    "url": "https://deepwiki.com/search/-generate-kaia-security-questi_8c8e571c-df5e-4a10-bdba-48ebd0004c92?mode=deep",
+    "questions_generated": false
+  }
+]
