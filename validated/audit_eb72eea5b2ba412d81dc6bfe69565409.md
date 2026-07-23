@@ -1,0 +1,1 @@
+Now I need to look at the pool's `swap` function to see what `sender` argument is passed to extensions, and how the router calls the pool.

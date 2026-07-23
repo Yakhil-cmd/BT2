@@ -1,0 +1,1 @@
+Let me look at the pool constructor and the `proposePoolPriceProvider` logic more carefully.
