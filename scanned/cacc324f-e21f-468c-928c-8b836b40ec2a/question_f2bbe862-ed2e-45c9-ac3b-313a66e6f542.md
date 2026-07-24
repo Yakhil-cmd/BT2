@@ -1,1 +1,0 @@
-[File: 'kaiax/gov/param.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'] [Symbol: bigIntCanonicalizer / RewardMintingAmount] Can an attacker-controlled negative decimal string (e.g., \
