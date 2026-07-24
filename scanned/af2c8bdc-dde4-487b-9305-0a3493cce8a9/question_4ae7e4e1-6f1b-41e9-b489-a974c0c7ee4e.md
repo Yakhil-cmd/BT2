@@ -1,0 +1,1 @@
+[File: 'networks/rpc/service.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'] [Symbol: BlockNumberOrHash.UnmarshalJSON / requireCanonical=false] Can an attacker-controlled JSON-RPC parameter '{\

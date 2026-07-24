@@ -1,0 +1,1 @@
+[File: 'networks/rpc/errors.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'] [Symbol: handleSubscriptionResult / deliver (handler.go)] Can an attacker-controlled subscription notification message (e.g., {\
