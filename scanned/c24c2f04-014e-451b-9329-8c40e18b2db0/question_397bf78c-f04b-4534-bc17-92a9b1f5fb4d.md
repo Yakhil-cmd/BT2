@@ -1,0 +1,1 @@
+[File: 'node/sc/api_bridge.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'] [Symbol: parseBridgeAddrWithAlias (empty string alias resolves to registered bridge)] Can an unauthenticated RPC caller supply cBridgeAddrOrAlias=\
