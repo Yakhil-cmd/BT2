@@ -1,0 +1,1 @@
+[File: 'rlp/typecache.go -> Scope: Medium'] [Symbol: writeBigIntPtr/makeSimplePtrDecoder] Can the nil-to-zero round-trip for *big.Int optional fields (nil BaseFee encodes as 0x80 via writeBigIntPtr; 0x80 decodes as new(big.Int) with value 0 via makeSimplePtrDecoder, since BaseFee carries rlp:\

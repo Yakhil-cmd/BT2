@@ -1,0 +1,1 @@
+[File: 'storage/statedb/flat_trie.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'] [Symbol: FlatStorageTrie.TryGet] Can FlatStorageTrie.TryGet() applying bytes.TrimLeft(value[:], \

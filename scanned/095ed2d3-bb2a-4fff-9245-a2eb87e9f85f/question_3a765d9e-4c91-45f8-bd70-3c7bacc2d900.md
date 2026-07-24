@@ -1,0 +1,1 @@
+[File: 'kaiax/valset/impl/schema.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'] [Symbol: ReadCouncil] Can a council JSON blob stored in the DB that contains duplicate addresses (e.g., [\
