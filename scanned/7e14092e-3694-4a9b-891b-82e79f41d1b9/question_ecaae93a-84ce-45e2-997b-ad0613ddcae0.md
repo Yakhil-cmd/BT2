@@ -1,1 +1,0 @@
-[File: 'kaiax/randao/impl/getter.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'] [Symbol: readBlsPermissioned / storageRootCache key] Can the storageRootCache key construction (getter.go:157) kip113Root.Hex()+\
