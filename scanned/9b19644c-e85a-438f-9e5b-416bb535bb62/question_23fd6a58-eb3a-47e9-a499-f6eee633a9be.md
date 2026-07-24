@@ -1,1 +1,0 @@
-[File: 'common/hexutil/hexutil.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'] [Symbol: U256.UnmarshalJSON] Can an attacker-controlled JSON RPC payload supplying an empty string (\
