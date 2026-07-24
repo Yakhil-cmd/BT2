@@ -1,0 +1,1 @@
+[File: 'common/math/integer.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'] [Symbol: ParseUint64 / HexOrDecimal64] Can an attacker-controlled genesis JSON with `\

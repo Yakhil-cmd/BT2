@@ -1,0 +1,1 @@
+[File: 'common/hexutil/json.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'] [Symbol: Big.UnmarshalText / checkNumberText] Can an attacker-controlled JSON fee-delegated transaction with empty-string V/R/S fields (e.g., {\

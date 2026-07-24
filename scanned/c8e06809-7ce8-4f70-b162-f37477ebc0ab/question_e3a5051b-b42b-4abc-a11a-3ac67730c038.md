@@ -1,0 +1,1 @@
+[File: 'storage/database/schema.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'] [Symbol: headBlockKey / headBlockBackupKey] Can a LevelDB prefix iterator initialized with prefix headBlockKey (\

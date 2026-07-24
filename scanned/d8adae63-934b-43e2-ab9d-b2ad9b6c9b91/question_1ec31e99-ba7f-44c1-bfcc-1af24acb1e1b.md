@@ -1,0 +1,1 @@
+[File: 'kaiax/gov/param.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'] [Symbol: RewardRatio / FormatChecker / 4-part acceptance] Can a governance voter set reward.ratio to a 4-part string (e.g., \

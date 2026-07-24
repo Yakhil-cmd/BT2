@@ -1,0 +1,1 @@
+[File: 'common/hexutil/json.go -> Scope: Critical. A service-chain bridge, system-contract, or cross-module execution flaw lets an attacker mint, unlock, withdraw, or redirect KAIA, ERC20, ERC721, or reward assets without required authority.'] [Symbol: Uint.UnmarshalText / CalcFeeWithRatio] Can an attacker-controlled feeRatio value > 100 (e.g., \

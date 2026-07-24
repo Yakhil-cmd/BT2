@@ -1,0 +1,1 @@
+[File: 'kaiax/gov/error.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'] [Symbol: bigIntCanonicalizer / RewardMintingAmount] Can a governance proposer craft a header.Vote with value []byte(\
