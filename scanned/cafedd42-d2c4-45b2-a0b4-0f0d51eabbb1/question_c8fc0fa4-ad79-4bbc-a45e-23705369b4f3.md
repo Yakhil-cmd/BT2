@@ -1,1 +1,0 @@
-[File: 'rlp/internal/rlpstruct/rlpstruct.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'] [Symbol: parseTag / ProcessFields] Can a struct used in governance or validator-set encoding accidentally carry an rlp:\

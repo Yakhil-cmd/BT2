@@ -1,1 +1,0 @@
-[File: 'rlp/internal/rlpstruct/rlpstruct.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'] [Symbol: ProcessFields / makeStructDecoder] Can a remote P2P peer send a types.Header RLP where the VRank field (rlp:\
