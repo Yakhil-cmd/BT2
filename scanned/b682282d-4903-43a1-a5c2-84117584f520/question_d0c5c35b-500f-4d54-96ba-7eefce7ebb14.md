@@ -1,1 +1,0 @@
-[File: 'storage/database/dynamodb.go -> Scope: Medium. An honest-but-permitted operation within configured limits misprices fees, rewards, snapshots, or persisted state and locks funds or breaks core chain functionality above material thresholds.'] [Symbol: dynamoDB.get / overSizedDataPrefix] Can a legitimate database value whose byte content equals overSizedDataPrefix ([]byte(\
