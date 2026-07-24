@@ -1,1 +1,0 @@
-[File: 'node/api_debug.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'] [Symbol: DebugNodeAPI.Metrics / metrics.DefaultRegistry.Each callback] Can a remote attacker-controlled HTTP client under HTTPModules=[\
