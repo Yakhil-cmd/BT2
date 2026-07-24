@@ -1,0 +1,1 @@
+[File: 'common/hexutil/json.go -> Scope: Critical. A block, proof, snapshot, trie, or sync input is accepted despite violating Kaia state-transition or consensus rules, causing invalid balances, double-spend, or chain split on honest nodes.'] [Symbol: U256.UnmarshalJSON / empty string handling] Can an attacker-controlled JSON input with a U256 field set to '\
