@@ -1,1 +1,0 @@
-[File: 'common/hexutil/json.go -> Scope: High. A public RPC, P2P, txpool, gasless, or bridge-message path bypasses intended auth, replay, nonce, or domain-separation checks and causes unauthorized execution, censorship, or durable state corruption.'] [Symbol: Bytes.UnmarshalText / checkText / SendTxArgs.Key] Can an attacker-controlled JSON field `\
