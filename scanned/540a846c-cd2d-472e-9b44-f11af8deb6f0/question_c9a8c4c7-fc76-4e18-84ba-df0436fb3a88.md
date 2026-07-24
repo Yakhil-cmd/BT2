@@ -1,0 +1,1 @@
+[File: 'kaiax/supply/errors.go -> Scope: Critical. A remote transaction, fee-delegation, account-key, or authorization bug executes without the required signature or role, stealing KAIA/tokens or spending another account nonce.'] [Symbol: getRebalanceBurn] Can a TreasuryRebalanceV2 contract owner who sets a crafted memo with a very large negative 'burnt' JSON field (e.g. {\

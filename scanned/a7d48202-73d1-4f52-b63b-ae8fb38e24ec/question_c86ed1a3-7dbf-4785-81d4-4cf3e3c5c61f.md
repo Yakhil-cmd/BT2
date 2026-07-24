@@ -1,0 +1,1 @@
+[File: 'common/hexutil/json.go -> Scope: High. A governance, validator-set, staking, reward, randao, header-gov, or auction boundary bypass grants unauthorized chain privileges or reroutes treasury, validator, or block-reward value.'] [Symbol: Uint.UnmarshalText / Uint64.UnmarshalText] Can an attacker-controlled JSON block with `\
