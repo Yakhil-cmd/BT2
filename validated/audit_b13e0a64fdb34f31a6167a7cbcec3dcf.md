@@ -1,0 +1,1 @@
+Let me look at the queue's staking info matching logic and the staking DB getter to complete the analysis.
