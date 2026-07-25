@@ -1,0 +1,1 @@
+Let me look at the critical `commitFastSyncData` call in downloader.go before rendering a verdict.
