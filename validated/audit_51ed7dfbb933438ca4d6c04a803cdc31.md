@@ -1,0 +1,1 @@
+I'll analyze the bug class from the external report and search the Kaia codebase for analogous patterns. The core bug is: **wrong variable used in a fee/threshold comparison**, where an original deposit amount is checked against a fee instead of the actual entitled/accrued amount, causing incorrect skipping of valid operations and wrong net-amount calculations.
