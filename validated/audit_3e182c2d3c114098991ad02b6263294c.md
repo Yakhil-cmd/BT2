@@ -1,0 +1,1 @@
+Let me check `IsChainDataAnchoring()` to confirm which types it covers.
