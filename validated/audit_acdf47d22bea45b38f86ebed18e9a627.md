@@ -1,0 +1,1 @@
+Let me look at the actual handler code and bridge peer authentication mechanisms more closely.
