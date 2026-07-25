@@ -1,0 +1,1 @@
+I need to trace the full attack path through the code before rendering a verdict.
