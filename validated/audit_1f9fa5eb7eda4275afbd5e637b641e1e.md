@@ -1,0 +1,1 @@
+Let me check the `ValidatedFeePayer()` getter and how transactions are processed in the block pipeline.
