@@ -1,0 +1,1 @@
+Let me read the critical section of `processStorageResponse` and the `OnStorage` handler more carefully before concluding.
