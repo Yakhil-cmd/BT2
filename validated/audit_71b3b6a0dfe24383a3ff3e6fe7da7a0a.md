@@ -1,0 +1,1 @@
+Let me look at the `getDeferredRewardFull` function and the burn amount calculation more carefully.
