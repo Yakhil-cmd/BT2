@@ -1,0 +1,1 @@
+Let me check the default HTTP API namespace configuration and how the `governance` namespace is exposed.
