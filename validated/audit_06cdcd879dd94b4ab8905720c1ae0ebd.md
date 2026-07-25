@@ -1,0 +1,1 @@
+Looking at the Kaia codebase for an analog to the "missing contract/interface validation" bug class, I need to find a place where an address is accepted, later called as a contract, but not validated to implement the required interface.
