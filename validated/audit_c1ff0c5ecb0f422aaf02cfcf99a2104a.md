@@ -1,0 +1,1 @@
+Looking at the staking amount calculation path in the Kaia codebase, I need to trace how `StakingAmounts` are populated and whether they can be inflated by unprivileged users.
