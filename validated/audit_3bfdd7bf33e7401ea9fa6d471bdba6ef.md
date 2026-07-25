@@ -1,0 +1,1 @@
+I need to search for off-by-one boundary comparison bugs in Kaia's reward, governance, staking, and validation code — specifically where `>=`/`<=` is used when `>`/`<` is intended (or vice versa), causing valid boundary values to be incorrectly rejected or accepted.
