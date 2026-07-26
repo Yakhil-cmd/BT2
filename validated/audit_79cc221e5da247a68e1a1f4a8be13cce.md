@@ -1,1 +1,0 @@
-Let me check the bridge peer authentication and connection setup to assess exploitability.

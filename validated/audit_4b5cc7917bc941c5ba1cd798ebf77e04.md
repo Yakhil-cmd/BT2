@@ -1,1 +1,0 @@
-I'll search the Kaia codebase for ownership/privilege patterns that could have a similar bypass vulnerability.

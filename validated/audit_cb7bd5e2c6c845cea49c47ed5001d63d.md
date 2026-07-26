@@ -1,1 +1,0 @@
-Let me look at the `deregisterOperator` function comment and the full `BridgeOperator.sol` to understand the outstanding votes scenario.

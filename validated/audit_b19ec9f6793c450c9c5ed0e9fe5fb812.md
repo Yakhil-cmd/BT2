@@ -1,1 +1,0 @@
-Looking at the Kaia codebase for an analog to the JalaSwap overflow bug (arithmetic that silently produces wrong values due to type-width assumptions), I need to find places where integer arithmetic on staking/reward/consensus values uses a narrower type than the stored data, causing silent corruption of protected state.

@@ -1,1 +1,0 @@
-I need to trace the full code path from the P2P message receipt through to any persisted state impact.

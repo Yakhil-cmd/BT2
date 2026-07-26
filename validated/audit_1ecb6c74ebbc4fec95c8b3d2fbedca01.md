@@ -1,1 +1,0 @@
-I need to trace the full vote-acceptance and ratification path carefully before rendering a verdict.

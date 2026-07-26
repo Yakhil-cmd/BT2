@@ -1,1 +1,0 @@
-Let me investigate the relevant code paths to evaluate this claim.

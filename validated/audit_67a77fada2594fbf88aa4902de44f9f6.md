@@ -1,1 +1,0 @@
-I need to trace the exact code path: `messageSet.Values()` → `core.commit()` → `backend.Commit()` → `WriteCommittedSeals` → `Enqueue`.

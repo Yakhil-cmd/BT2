@@ -1,1 +1,0 @@
-Looking at the external bug class (division by zero in a staking reward denominator), I need to find an analog in the Kaia reward/staking path. Let me trace the exact division sites.

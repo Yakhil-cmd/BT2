@@ -1,1 +1,0 @@
-Let me look at the `Rollback` implementation and the downloader's `processHeaders` more carefully before concluding.

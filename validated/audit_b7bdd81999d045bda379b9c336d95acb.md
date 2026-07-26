@@ -1,1 +1,0 @@
-Looking at the full code path: `runBn256ScalarMul` → `G1.ScalarMult` → `curvePoint.Mul` → `curveLattice.Multi` → `lattice.decompose`.

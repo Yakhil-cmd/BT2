@@ -1,1 +1,0 @@
-Looking at the external bug class — **overly broad error swallowing in a chained critical-path operation that causes the operation to proceed with incorrect state** — I need to find the Kaia analog. Let me examine the specific error-handling patterns in the treasury rebalance and validator-set paths.
