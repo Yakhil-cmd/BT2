@@ -1,4 +1,0 @@
-[
-  "'File Name: sui-execution/latest/sui-verifier/src/tx_context_restrictions_verifier.rs -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
-  "'File Name: sui-execution/latest/sui-verifier/src/verifier.rs -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'"
-]
