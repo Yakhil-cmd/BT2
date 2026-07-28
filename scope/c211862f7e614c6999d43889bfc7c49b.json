@@ -1,4 +1,0 @@
-[
-  "'File Name: sui-execution/latest/sui-verifier/src/tx_context_restrictions_verifier.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
-  "'File Name: sui-execution/latest/sui-verifier/src/verifier.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'"
-]
