@@ -1,4 +1,0 @@
-[
-  "'File Name: sui-execution/latest/sui-verifier/src/tx_context_restrictions_verifier.rs -> Scope: High. Deny-list, transfer-policy, capability, protected-object, or restricted-call invariant bypass lets an unprivileged actor route around a policy gate and move value or mutate guarded state they should not control'",
-  "'File Name: sui-execution/latest/sui-verifier/src/verifier.rs -> Scope: High. Deny-list, transfer-policy, capability, protected-object, or restricted-call invariant bypass lets an unprivileged actor route around a policy gate and move value or mutate guarded state they should not control'"
-]
