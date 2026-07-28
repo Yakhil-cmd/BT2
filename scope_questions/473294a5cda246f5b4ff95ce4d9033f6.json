@@ -148,5 +148,155 @@
     "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/lib.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
     "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_36847eac-f694-40e5-be17-919c0e073bef?mode=deep",
     "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/runtime_visitor.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_71bff572-d4c0-46a0-8c99-7b7007a52438?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/u256.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_162f0c01-6377-4844-8442-5b17909c5975?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/vm_status.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_10942587-2940-4cc8-a0fd-87a69ffa3b79?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-config/src/lib.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_280fe8d0-e57f-46ea-98d6-8c1624750895?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-config/src/runtime.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_43242cbc-1d71-46a8-9142-69fef1bfc91a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-config/src/verifier.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e47b5946-aa77-4b12-b5b5-a6e94c38589a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/cache/arena.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_25a91e64-8dbf-4d30-8b82-75ff0165dc0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/cache/identifier_interner.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_161ab8dd-c650-4cd6-b14d-54245b27859f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/cache/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_b4ce619d-c760-4510-93f9-a3a07ff9690f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/cache/move_cache.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_b5f209af-6d6b-472c-a170-5cf5645cad1a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/dispatch_tables.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_96ec2c52-648f-48b3-b3c9-384cf371a98f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/interpreter/eval.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_426483d7-0b12-4809-a5ac-81559af8b8a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/interpreter/helpers.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_f8b0fd65-2124-4694-ab8b-b92eb752da79?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/interpreter/locals.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_8eb82d28-942a-47e6-a608-4ebddf3f0957?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/interpreter/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_278842df-961d-4621-8a0b-146d5c14140c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/interpreter/state.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_0e9b544d-af96-40bb-acf6-f8be22bb8b29?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_dcd13ff4-b22f-4269-b106-7a6d43d4bc57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/tracing/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4544dadb-9bed-4fb1-8a1e-ba6f274da44b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/tracing/tracer.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_a9873b26-7d08-4d2c-b0ff-a5618445311a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/values/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_454c282f-abb3-4b1f-aac6-669358dfbe16?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/values/values_impl.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_682c369b-0219-4aa0-99d3-f35512e37ea0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/execution/vm.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_ade4ca17-4c4c-4b89-a6a4-5e86009958d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/jit/execution/ast.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_50c2bc80-793b-4446-b444-fa359876862a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/jit/execution/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_91f14d84-e070-4b92-91f3-71fbb7b0a02f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/jit/execution/translate.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_3fc1b3f5-51ec-4b9a-8c01-d3d90f1ed348?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/jit/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_5af84de2-f268-4f9b-a5e8-b8712804c26e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/jit/optimization/ast.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_dbdf4986-b39c-4f16-9859-192ea9cb9881?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/jit/optimization/mod.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_6592505c-3386-42e4-afcc-d494fe975cfb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/jit/optimization/translate.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_69b04ca7-d0b0-4c72-add9-4013a3e5365d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-vm-runtime/src/lib.rs -> Scope: Critical. Bytecode verifier, package loader, linker, native boundary, or upgrade-policy gap lets an unprivileged publisher smuggle forbidden behavior, forge capabilities or abilities, or mutate protected state outside the intended execution model'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_909f85ac-713d-4087-bb0c-32f51a8b9a65?mode=deep",
+    "questions_generated": false
   }
 ]
