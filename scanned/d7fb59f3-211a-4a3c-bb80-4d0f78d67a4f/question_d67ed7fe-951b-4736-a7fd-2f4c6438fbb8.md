@@ -1,1 +1,0 @@
-[File: one_time_witness_verifier.rs -> Scope: Critical] [Symbol: verify_module BRIDGE_SUPPORTED_ASSET/SUI module bypass] Does the unconditional `return Ok(())` short-circuit for `ModuleId::new(SUI_FRAMEWORK_ADDRESS, \
