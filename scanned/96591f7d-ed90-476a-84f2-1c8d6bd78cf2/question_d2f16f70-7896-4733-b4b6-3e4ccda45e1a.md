@@ -1,0 +1,1 @@
+[File: crates/sui-bridge/src/types.rs -> Scope: High] [Symbol: Message::digest for BridgeAction] Is there any public-input-reachable code path (e.g., generic envelope verification/signing helper operating over Envelope<BridgeAction, _>) that invokes the `Message::digest` implementation at types.rs:656-658, which unconditionally executes `unreachable!(\

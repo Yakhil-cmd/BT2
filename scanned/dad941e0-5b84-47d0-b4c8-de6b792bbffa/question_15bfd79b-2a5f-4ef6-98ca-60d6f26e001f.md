@@ -1,0 +1,1 @@
+[File: normalized.rs -> Scope: High] [Symbol: Type::to_type_tag / Datatype::to_struct_tag] Can a nested `vector<&T>` or struct type-argument containing a `Type::Reference` pass `is_closed()` (lines 450-466, which only recurses into the referent and never rejects `Reference` itself) yet later hit the `.expect(\

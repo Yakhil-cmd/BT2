@@ -1,0 +1,1 @@
+[File: 'language_storage.rs' -> Scope: Critical] Can the asymmetry between `StructTag`'s `Display` (uses `short_str_lossless`, no zero-padding, no prefix) and `to_canonical_string`/`to_canonical_display` (zero-padded, optional prefix) cause two code paths that ought to agree on 'the same type identity' — e.g. one path hashing/signing a `format!(\

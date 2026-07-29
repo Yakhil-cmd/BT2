@@ -1,0 +1,1 @@
+[File: crates/sui-bridge/src/crypto.rs -> Scope: Critical] [Symbol: BridgeAuthoritySignInfo::verify vs Move bridge::committee::verify_signatures] Because the Rust-side `verify()` hashes `msg.to_bytes()` (which already includes `BRIDGE_MESSAGE_PREFIX = b\

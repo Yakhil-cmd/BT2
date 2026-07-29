@@ -1,0 +1,1 @@
+[File: layout.rs] [Symbol: MoveLayoutView::inflate for Enum] Can an annotated enum layout containing a `VariantLayout::Unknown` variant (fields not registered) reach a caller that invokes `inflate()` on a value whose actual encoded variant tag matches the unknown variant, and if any caller silently maps the `anyhow::bail!(\

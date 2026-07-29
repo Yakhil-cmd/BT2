@@ -1,0 +1,1 @@
+[File: 'vm.rs' -> Scope: High] [Symbol: MoveVM::execute_function_bypass_visibility tracer/telemetry no state gate] Since `execute_function_bypass_visibility` accepts an optional `tracer` and is gated only by a `cfg!(feature = \

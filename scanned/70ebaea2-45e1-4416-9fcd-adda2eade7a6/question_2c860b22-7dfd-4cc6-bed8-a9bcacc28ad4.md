@@ -1,0 +1,1 @@
+[File: crates/sui-bridge/src/monitor.rs -> Scope: Critical] [Symbol: BridgeMonitor::run] Can an upstream channel closure of `sui_monitor_rx` or `eth_monitor_rx` (e.g. induced by a crash in the checkpoint-subscription task under adversarial checkpoint content) reach the `panic!(\

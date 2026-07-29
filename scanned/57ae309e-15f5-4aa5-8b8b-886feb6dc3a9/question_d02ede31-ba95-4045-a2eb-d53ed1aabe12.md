@@ -1,0 +1,1 @@
+[File: 'external-crates/move/crates/move-vm-runtime/src/runtime/package_resolution.rs' -> Scope: High] [Symbol: jit_and_cache_package] Can an attacker-controlled package-publish sequence race two threads inserting the same VersionId into MoveCache such that the final `.expect(\

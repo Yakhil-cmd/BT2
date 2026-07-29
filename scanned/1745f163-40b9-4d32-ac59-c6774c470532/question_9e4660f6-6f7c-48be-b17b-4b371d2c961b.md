@@ -1,0 +1,1 @@
+[File: crates/sui-bridge/src/client/bridge_client.rs -> Scope: Critical] [Symbol: BridgeClient::request_sign_bridge_action error classification] Can attacker-influenced on-chain event/error text returned by a bridge node response body contain the substring format!(\

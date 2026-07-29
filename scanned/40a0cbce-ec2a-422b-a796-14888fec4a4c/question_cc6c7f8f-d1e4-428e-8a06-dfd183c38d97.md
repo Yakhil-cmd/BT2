@@ -1,0 +1,1 @@
+[File: 'crates/sui-core/src/authority/authority_store_types.rs -> Scope: High'] [Symbol: StoreObjectWrapper::inner / into_inner] Both `inner()` (line 54-62) and `into_inner()` (line 63-71) panic via `panic!(\

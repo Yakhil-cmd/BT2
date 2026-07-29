@@ -1,0 +1,1 @@
+[File: 'crates/sui-core/src/authority/authority_store.rs' -> Scope: High] [Symbol: AuthorityStore::write_one_transaction_outputs ordering of effects vs. dependent entries] Given the comment at authority_store.rs:780-782 stating effects must be inserted before dependent entries for correct pruning, can a crash injected via the `fail_point!(\
