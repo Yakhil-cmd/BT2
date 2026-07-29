@@ -1,1 +1,0 @@
-[File: layout.rs -> Scope: High] [Symbol: LayoutRef::resolve (mod.rs) via layout.rs::resolve_ref] If a MoveTypeNode table is ever populated by a path other than MoveTypeLayoutBuilder::add_node (e.g. a future direct constructor, cache merge, or cross-pool Arc reuse), can a LayoutRef with LEAF_TAG set but an invalid low-15-bit discriminant reach `panic!(\
