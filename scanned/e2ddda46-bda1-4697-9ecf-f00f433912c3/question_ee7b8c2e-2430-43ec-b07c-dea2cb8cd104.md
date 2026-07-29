@@ -1,0 +1,1 @@
+[File: crates/sui-types/src/balance_change.rs -> Scope: High] [Symbol: coins()] Can a public transaction that leaves a bridge-claim or unstake output coin under `Owner::Party` reach the `Owner::Party { .. } => todo!(\

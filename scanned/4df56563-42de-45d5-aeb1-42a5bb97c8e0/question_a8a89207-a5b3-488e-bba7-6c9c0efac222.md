@@ -1,0 +1,1 @@
+[File: 'type_name.move' Scope: Critical] [Symbol: is_primitive] Can an attacker define a user struct or module named such that its fully-qualified type-name byte prefix exactly equals one of the primitive literals checked in `is_primitive` (`b\

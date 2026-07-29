@@ -1,0 +1,1 @@
+[File: crates/sui-types/src/crypto.rs -> Scope: High] [Symbol: RandomnessRound::signature_message deterministic round binding] Can `checked_add` overflow protection on `RandomnessRound` combined with the fixed prefix `\

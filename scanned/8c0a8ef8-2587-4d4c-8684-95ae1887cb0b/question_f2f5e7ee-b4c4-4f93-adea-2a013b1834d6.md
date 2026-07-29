@@ -1,0 +1,1 @@
+[File: ... Scope: High ...] [Symbol: AccumulatorWriteV1::merge IntegerTuple branch] Can an attacker route a withdrawal/deposit pair through an accumulator type whose AccumulatorValue is IntegerTuple under REQUIRED_ONCHAIN_STATE of multiple accumulator events for the same account in one transaction, reaching the `todo!(\
