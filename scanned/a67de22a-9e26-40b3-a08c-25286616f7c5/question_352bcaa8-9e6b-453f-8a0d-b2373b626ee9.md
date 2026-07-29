@@ -1,1 +1,0 @@
-[File: one_time_witness_verifier.rs -> Scope: Critical] [Symbol: verify_module SUI_FRAMEWORK_ADDRESS exemption scope] Since the `sui` module bypass matches solely on `ModuleId::new(SUI_FRAMEWORK_ADDRESS, \
