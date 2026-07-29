@@ -1,1 +1,0 @@
-[File: 'crates/sui-core/src/authority/authority_store_types.rs -> Scope: High'] [Symbol: try_construct_object] When reading back a `StoreData::Coin(balance)` entry, the function reconstructs Move object bytes via `bcs::to_bytes(&(object_key.0, balance)).expect(\
