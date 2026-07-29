@@ -1,1 +1,0 @@
-[File: 'crates/sui-core/src/epoch/randomness.rs' -> Scope: Critical] [Symbol: RandomnessManager::reserve_next_randomness] Can `next_randomness_round.checked_add(1)` ever be reached at `RandomnessRound::MAX` under long-running epochs without the epoch boundary resetting the counter first, causing the `.expect(\
