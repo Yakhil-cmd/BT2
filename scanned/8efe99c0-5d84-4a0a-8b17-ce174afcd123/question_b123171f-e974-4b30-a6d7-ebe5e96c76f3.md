@@ -1,1 +1,0 @@
-[File: 'File Name: crates/sui-types/src/global_state_hash.rs -> Scope: High'] [Symbol: GlobalStateHasher::accumulate_running_root idempotency check] Can an attacker trigger checkpoint re-execution (e.g. via crash-recovery replay after a `fail_point!(\
