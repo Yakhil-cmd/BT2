@@ -1,1 +1,0 @@
-[File: 'crates/sui-types/src/effects/object_change.rs' -> Scope: High] [Symbol: AccumulatorWriteV1::merge checked_add.expect] Can an attacker submit many transactions within one consensus commit whose Split/Merge Integer amounts sum past u64::MAX for a single AccumulatorAddress, so that `checked_add(v).expect(\
