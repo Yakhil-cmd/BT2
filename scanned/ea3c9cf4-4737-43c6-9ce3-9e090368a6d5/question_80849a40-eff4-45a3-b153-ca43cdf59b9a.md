@@ -1,1 +1,0 @@
-[File: crates/sui-bridge/src/sui_client.rs -> Scope: High] [Symbol: get_mutable_bridge_object_arg_must_succeed] Can persistent malformed/oversized RPC responses for the bridge shared-object `owner` field (attacker-influenced fullnode response or object metadata) cause every retry in `retry_with_max_elapsed_time!` to fail, hitting the explicit `panic!(
