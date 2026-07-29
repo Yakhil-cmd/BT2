@@ -1,1 +1,0 @@
-[File: 'crates/sui-core/src/jsonrpc_index.rs' -> Scope: High] [Symbol: IndexStore::get_transactions_by_move_function] Can an attacker submit a Move call whose module/function identifier strings exceed 'self.max_type_length' (default 128) so that the constructed 'max_string = \

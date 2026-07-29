@@ -1,1 +1,0 @@
-[File: 'crates/sui-core/src/jsonrpc_index.rs' -> Scope: High] [Symbol: IndexStore::get_address_balance_coin_types_iter] Can a public getAllBalances/getBalance caller for an arbitrary 'owner' SuiAddress reach the '.map(|result| result.expect(\
