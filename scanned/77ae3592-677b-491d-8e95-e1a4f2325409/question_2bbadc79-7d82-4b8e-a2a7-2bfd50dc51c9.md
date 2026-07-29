@@ -1,1 +1,0 @@
-[File: 'mysticeti_adapter.rs'] [Symbol: submit, cfg!(debug_assertions) branch, ClientError::OversizedTransaction] If validator release binaries are built with `debug_assertions` enabled (common in some CI/staging fleets), can an attacker submit a single oversized ConsensusTransaction that triggers `ClientError::OversizedTransaction` and hits `panic!(\
