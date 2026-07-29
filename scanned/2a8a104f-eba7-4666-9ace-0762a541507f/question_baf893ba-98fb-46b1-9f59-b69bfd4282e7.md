@@ -1,0 +1,1 @@
+[File: package_resolution.rs] [Symbol: resolve_package] Can attacker-controlled repeated publish/upgrade of a package that shares a colliding or race-prone lookup key under concurrent transaction execution reach `resolve_packages`->`packages.remove(&package_to_read)`, cross the disabled-in-release `debug_assert!(false, \

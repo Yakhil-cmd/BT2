@@ -1,0 +1,1 @@
+[File: crates/sui-types/src/sui_serde.rs -> Scope: Critical] [Symbol: SuiTypeTag::deserialize_as for TypeTag::Vector] Can deeply nested vector<vector<...>> type strings crafted by an attacker in a PTB type argument cause to_sui_type_tag_string's unbounded recursion (matching TypeTag::Vector(t) => format!(\

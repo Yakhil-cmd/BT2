@@ -1,0 +1,1 @@
+[File: authority_store_types.rs] [Symbol: StoreObjectWrapper::inner / into_inner panic branch] Can a corrupted or partially-written RocksDB row deserialize into an unreachable StoreObjectWrapper variant (bypassing the exhaustive match via future variant additions without updating this file), causing inner()/into_inner() to hit the `panic!(\

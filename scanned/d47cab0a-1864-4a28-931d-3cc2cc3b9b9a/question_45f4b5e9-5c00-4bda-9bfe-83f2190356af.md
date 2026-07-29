@@ -1,0 +1,1 @@
+[File: crates/sui-core/src/epoch/randomness.rs -> Scope: High] [Symbol: RandomnessManager::try_new stake-to-weight cast] Can a committee member with `StakeUnit` large enough to overflow `u16` (line ~392 `(*stake).try_into().expect(\
