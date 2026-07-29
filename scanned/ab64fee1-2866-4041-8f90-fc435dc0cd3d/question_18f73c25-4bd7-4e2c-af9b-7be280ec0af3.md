@@ -1,1 +1,0 @@
-[File: 'private_entry_arguments.rs' -> Scope: High] [Symbol: Cliques::root] Can a pathological but validly-typed sequence of `merge` calls construct a clique chain long enough, or cyclic due to an off-by-one in the merge/forward loop (lines 172-176), to trigger `invariant_violation!(\
