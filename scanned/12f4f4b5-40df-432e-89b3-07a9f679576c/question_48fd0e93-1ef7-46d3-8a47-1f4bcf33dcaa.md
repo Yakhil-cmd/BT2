@@ -1,1 +1,0 @@
-[File: crates/sui-core/src/checkpoints/checkpoint_executor/mod.rs -> Scope: Critical] [Symbol: extract_randomness_rounds / execute_checkpoint ordering vs commit_transaction_outputs] Randomness rounds are reported to RandomnessReporter only after commit_transaction_outputs and handle_finalized_checkpoint (post-persistence), using `.expect(\
