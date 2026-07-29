@@ -1,1 +1,0 @@
-[File: crates/sui-bridge/src/eth_syncer.rs -> Scope: Critical] [Symbol: run_event_listening_task events_sender.send(...).await.expect(...)] If the orchestrator's receiver end of the `eth_events_rx` channel is dropped (e.g., orchestrator task panics on `store.insert_pending_actions(&actions).expect(...)` due to an unexpected store error), does the `.expect(
