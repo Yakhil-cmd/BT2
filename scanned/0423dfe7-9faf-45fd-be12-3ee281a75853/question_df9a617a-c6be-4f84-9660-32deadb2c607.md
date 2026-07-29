@@ -1,0 +1,1 @@
+[File: 'parsing/parser.rs'] [Symbol: parse_u128 / parse_u256 combined with typed-suffix stripping in ValueToken::NumberTyped handling] Can an attacker submit a numeric literal string with a `u128` suffix whose digit content, after `strip_suffix(\

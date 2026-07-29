@@ -1,0 +1,1 @@
+[File: crates/sui-types/src/sui_serde.rs -> Scope: High] [Symbol: BigInt<T> used for gas price / gas budget / amount fields in transaction JSON] Can an attacker submit a numeric string for a gas-budget or coin-amount field routed through `BigInt<u64>` deserialization that parses successfully but represents a value whose decimal string differs from its canonical form (e.g. `

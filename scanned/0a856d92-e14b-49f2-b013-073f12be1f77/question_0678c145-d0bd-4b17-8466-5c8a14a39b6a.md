@@ -1,0 +1,1 @@
+[File: crates/sui-types/src/sui_serde.rs -> Scope: Critical] [Symbol: BigInt<T>::deserialize_as (DisplayFromStr)] Can an attacker submit a decimal string with a leading '+', leading zeros, whitespace, or a value at/above u64::MAX/u128::MAX to a public-RPC field typed via `#[serde_as(as =
