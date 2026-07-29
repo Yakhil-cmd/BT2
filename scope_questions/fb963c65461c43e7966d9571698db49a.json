@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: bridge/move/tokens/btc/sources/btc.move -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_079a33d7-732e-4e96-8e6f-3dc49c655d43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge/move/tokens/eth/sources/eth.move -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_1b865590-16f3-4a17-8bce-dc774f689980?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge/move/tokens/usdc/sources/usdc.move -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_040fd001-dffe-4a45-98ed-679a96b13afd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: bridge/move/tokens/usdt/sources/usdt.move -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_38c5026d-f3f0-4990-9070-3ae4d671b82a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/abi.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_1f9eea44-1a29-4f31-9f26-211c5e6fe50d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/action_executor.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_cb55909d-08af-4c04-8898-473013d9345d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/client/bridge_authority_aggregator.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_24f23a0d-19d8-4f2b-b32a-0d9b93d32e66?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/client/bridge_client.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_94a81d2a-9dd0-46f1-8995-f4aeb7ba02a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/client/mod.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_52a51eb3-6311-435a-a785-d6b67ebfd3ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/config.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_37907ec1-2407-4142-a2b4-71698332058e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/crypto.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_ec58129f-7d1f-4241-81e0-b2d0e5555f12?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/encoding.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_ed47bcbc-3cef-42d1-b885-13fe2b902830?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/error.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_40452428-d493-413f-805b-28ee0c2a8bd8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/eth_client.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_b7c9b4a3-98eb-4b90-8328-498e03d077cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/eth_syncer.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_8f7e8df7-3a0f-4dba-a5d5-c09d8b790da9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/eth_transaction_builder.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_6fb8c82a-9c64-4033-a5ff-479f65fd65b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/events.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_da63a198-bb75-4e4f-98e1-0cff04676fc0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/lib.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_d2ca5a97-2eeb-48c2-a142-d20a80560bc4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/metered_eth_provider.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4a832476-0272-49af-a98d-e61e141a95cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/monitor.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e78f6a7d-5b2f-41a1-b5cb-60141382d1a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/node.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_a9e98c5c-8db2-40a9-9ada-42d6299a16eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/orchestrator.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e142b510-0739-4ba4-81f8-7978bd961c0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/server/governance_verifier.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_502705f5-35fe-4113-88a3-a0ac4b05616b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/server/handler.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_30bc3608-681c-4130-82d0-22faf24cc03d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/server/mod.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_52f38c8f-053f-426f-aaf4-5a1780fe603a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/storage.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_8fa96876-17da-4845-a6bf-abc0ca27970f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/sui_bridge_watchdog/eth_bridge_status.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_84e417b6-98e2-42fa-906e-dd064469448e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/sui_bridge_watchdog/eth_vault_balance.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_7b27d5a0-26c1-410a-9fd8-4989a6d28475?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/sui_bridge_watchdog/mod.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_97444c85-5899-4980-be0e-102372a0fe7c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-bridge/src/sui_bridge_watchdog/sui_bridge_status.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_a7283504-577f-4b96-ae14-a8e54e445b7d?mode=deep",
+    "questions_generated": false
+  }
+]
