@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/balance.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_357dea27-2dd5-40be-b3c9-6061325c6439?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/bcs.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_1a9fc73a-c380-4b96-8010-03bb514cd2a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/borrow.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_5bf3beca-a1e1-4dbe-bc40-4fff85f8c6c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/clock.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_fb700724-fc61-43a4-9959-a10b1b73eb57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/coin.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_79c40d56-da50-4d7c-ba13-18988967e749?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/config.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_6a1ebcc8-e28f-4b89-9a49-fcd34db724ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/bls12381.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_211be5cf-43b0-4c2b-af4e-5d9c61c7383d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ecdsa_k1.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_b392d6e6-a309-4897-9ffb-f601a24eb8b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ecdsa_r1.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_883727ba-d41b-459a-91ad-a239cc891634?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ecvrf.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_1a1fd3d5-1fbc-4897-916b-aad4944f5f5f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ed25519.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_14414f2f-d0ce-43bf-8044-9d3664b999fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/groth16.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_3202cb86-5eae-47b7-ab9d-2297511f501d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/group_ops.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_13e642ed-5b6f-45d8-85ff-ba0dca244500?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/hash.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_aee18fed-ad70-44c3-8d73-fa813f5b5080?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/hmac.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_a6597038-999c-4a83-b8ac-ffcfbaea996c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/nitro_attestation.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_0ad48955-42b9-4222-a391-09e385e0b754?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/poseidon.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_0438e6ce-131e-4860-b057-d823392bb6c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/rangeproofs.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e0677c2d-a590-47ef-b8f1-0fee96c3ef0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ristretto255.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4bd8a114-b385-4ac1-ba69-f462b0fc8a91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/vdf.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_a0d25cfc-3252-4b19-a853-06078cdd79c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/zklogin_verified_id.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_d43277bc-edeb-4410-94f5-d6682cbeaf3b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/zklogin_verified_issuer.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_de5ead4b-d88d-4dc7-8613-5849278f80d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/deny_list.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_41e1cc2c-9926-4f4e-8033-a67f011884d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/derived_object.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_5e70f31e-85ae-499e-a3ff-42967fdf9ed2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/display.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_8906aa54-7435-4249-8aa3-62e6a52c59eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/dynamic_field.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_2f8d9c4a-f8f4-4e0f-99e0-9096e293bdca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/dynamic_object_field.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_990adcb9-22d8-4ef7-9e5c-1d081b89ef3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/event.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e3a542ea-1e56-4113-8d01-207b521f284d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/funds_accumulator.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_fdbf66ae-10cd-4d92-96ad-61b76ec68f46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/hex.move -> Scope: High. Withdrawal, redemption, unstake, bridge-claim, refund, or package-controlled asset recovery path can be permanently locked, burned, or made unclaimable by attacker-controlled public input without privileged assistance'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_3cc325a0-e6bb-46f8-b82d-956d5d98775a?mode=deep",
+    "questions_generated": false
+  }
+]
