@@ -1,0 +1,1 @@
+[File: identifier.rs] Can the `ident_str!` macro's compile-time-only validation (relying on `is_valid` being invoked as a const-context assertion) create a false sense of safety where the SUI-framework and bridge one-time-witness exemptions in one_time_witness_verifier.rs (`ident_str!(\

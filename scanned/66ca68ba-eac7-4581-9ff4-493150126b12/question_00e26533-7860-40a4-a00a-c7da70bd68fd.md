@@ -1,0 +1,1 @@
+[File: sui_system_state_inner_v1.rs -> Scope: High] [Symbol: ValidatorV1::verified_metadata] Can a validator candidate craft `ValidatorMetadataV1` bytes that pass an earlier, weaker on-chain Move-side metadata check but fail the Rust-side `self.metadata.verify(true)` at line 335, so that `verified_metadata()`'s `.expect(\

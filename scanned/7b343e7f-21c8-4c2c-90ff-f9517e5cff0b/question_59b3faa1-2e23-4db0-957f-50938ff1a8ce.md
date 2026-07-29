@@ -1,0 +1,1 @@
+[File: 'File Name: crates/sui-types/src/storage/object_store_trait.rs -> Scope: High.'] [Symbol: get_object_ref_prior_to_key_deprecated .expect] Can an unwrapped/unwrapped-then-deleted effect reference an object id/seq_num pair for which the object store's prior-key lookup returns an Err (I/O or corruption) rather than Ok(None), tripping `.expect(\

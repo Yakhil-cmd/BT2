@@ -1,0 +1,1 @@
+[File: resolver.rs, Scope: High] Does `ModuleResolver::get_packages_static::<N>` being called with `N` not matching the actual number of requested IDs (a static array size mismatch enforced only at compile time per call site) create any runtime code path where a `LinkageView`/`InMemoryStorage` implementation's `unreachable!(\

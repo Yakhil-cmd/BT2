@@ -1,0 +1,1 @@
+[File: 'runtime_value.rs' -> Scope: Critical] [Symbol: MoveValue::decorate panic arm] Can attacker-influenced layout/value mismatches (e.g. a package upgrade that changes a field's type-layout while stored objects still hold values serialized under the old layout) drive MoveValue::decorate's catch-all '_ => panic!(\
