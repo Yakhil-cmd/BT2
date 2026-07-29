@@ -8,5 +8,15 @@
     "question": "'File Name: sui-execution/latest/sui-verifier/src/verifier.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
     "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_668e2c03-ebcd-4b8a-a3f3-9e962783bc1a?mode=deep",
     "questions_generated": false
+  },
+  {
+    "question": "'File Name: sui-execution/latest/sui-verifier/src/tx_context_restrictions_verifier.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_c65c8e6d-d4f0-49a1-a8fd-694d7edb658a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: sui-execution/latest/sui-verifier/src/verifier.rs -> Scope: Critical. Derived-object, dynamic-field, UID, object-version, or ownership-aliasing flaw lets an attacker seize, shadow, overwrite, resurrect, or orphan foreign state and thereby escape custody or redirect protected value'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4cbc64fd-1542-454f-b79c-6e35056b3e85?mode=deep",
+    "questions_generated": false
   }
 ]
