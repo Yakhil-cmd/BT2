@@ -1,1 +1,0 @@
-[File: 'crates/sui-types/src/messages_grpc.rs' -> Scope: Critical] [Symbol: RawWaitForEffectsRequest::get_ping_type] Can an attacker-controlled i32 value in the optional `ping_type` field of a RawWaitForEffectsRequest sent over the public validator gRPC WaitForEffects endpoint, with no required prior state, reach the `.expect(\

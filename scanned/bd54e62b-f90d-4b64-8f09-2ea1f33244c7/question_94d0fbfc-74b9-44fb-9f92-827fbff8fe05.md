@@ -1,1 +1,0 @@
-[File: 'File Name: crates/sui-types/src/move_package.rs -> Scope: Critical.'] [Symbol: TypeOrigin serde alias 'struct_name'] Since TypeOrigin.datatype_name accepts the legacy field name via `#[serde(alias = \
