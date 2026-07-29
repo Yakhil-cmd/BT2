@@ -1,1 +1,0 @@
-[File: type_name.move -> Scope: High] Symbol `ENonModuleType` abort gate in `address_string`/`module_string`/`datatype_string`: given these functions assert `!self.is_primitive()` but never assert the *positive* condition that `self.name` is a syntactically well-formed struct/enum name, does a forged non-primitive `TypeName` (via `bcs::from_bytes`, `name` = e.g. `b\
