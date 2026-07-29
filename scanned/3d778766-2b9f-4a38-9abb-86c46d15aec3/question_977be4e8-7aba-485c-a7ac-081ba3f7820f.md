@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/type_input.rs -> Scope: Critical] [Symbol: StructInput deserialization alias handling] Can an attacker submit a JSON/BCS-encoded transaction input where the `type_params` field is populated via the legacy `type_params` alias instead of `type_args` (per `#[serde(rename = \
