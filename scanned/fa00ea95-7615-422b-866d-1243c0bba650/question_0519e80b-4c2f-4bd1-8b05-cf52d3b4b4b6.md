@@ -1,0 +1,1 @@
+[File: math.move] [Symbol: sqrt] Can x:u64 = u64::MAX drive std::macros::num_sqrt!<u64,u128> into an intermediate u128 computation that truncates or misrounds, corrupting a price/collateral value derived from sqrt() used in a public DeFi package? Proof idea: property test sqrt(x)^2 <= x < (sqrt(x)+1)^2 for x across full u64 range including MAX.

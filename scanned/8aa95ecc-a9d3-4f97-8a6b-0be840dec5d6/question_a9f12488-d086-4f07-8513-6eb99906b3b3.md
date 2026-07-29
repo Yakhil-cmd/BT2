@@ -1,0 +1,1 @@
+[File: jsonrpc_index.rs -> Scope: High] [Symbol: IndexStore::get_transactions_by_move_function] Can a module or function name longer than `self.max_type_length` (configured, default 128) cause the manually constructed upper/lower bound key `(package, module_val, function_val, cursor_val)` — built from `\

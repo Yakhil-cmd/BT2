@@ -1,0 +1,1 @@
+[File: serde_impl.rs] Can attacker-controlled BCS bytes drive `CompressedEnumFieldVisitor::visit_seq` (line 105-131) to hit the `Some(VariantLayout::Unknown)` branch (line 117) and return `A::Error::custom(\

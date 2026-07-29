@@ -1,0 +1,1 @@
+[File: crates/sui-types/src/full_checkpoint_content.rs -> Scope: Critical] [Symbol: CheckpointTransaction::changed_objects] Can a transaction that mutates then wraps or deletes an object in the same call (via dynamic field or nested Move call), submitted by any ordinary sender, cause effects.all_changed_objects() to list an id absent from output_objects, triggering the `.expect(\
