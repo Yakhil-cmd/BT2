@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/storage/shared_in_memory_store.rs -> Scope: High] [Symbol: SharedInMemoryStore::get_highest_verified_checkpoint] Can this method be invoked before insert_genesis_state has populated highest_verified_checkpoint, hitting .expect(\
