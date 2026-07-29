@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/deny_list_v1.rs -> Scope: Critical] [Symbol: get_deny_list_obj_initial_shared_version] Does the `unreachable!(\
