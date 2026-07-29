@@ -1,0 +1,1 @@
+[File: annotated_value.rs -> Scope: High] [Symbol: serialize_values -> MoveValue::simple_serialize] Can an attacker construct a MoveValue (e.g., via a crafted vector length or malformed U256/AccountAddress) that causes `bcs::to_bytes(self)` inside `simple_serialize` to return `None`, triggering the `.expect(\
