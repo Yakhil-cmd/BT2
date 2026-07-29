@@ -1,1 +1,0 @@
-[File: same scope] [Symbol: InMemoryStore::insert_committee panic branch] Can an out-of-order insert_committee call (epoch != epoch_to_committee.len()), reachable when insert_checkpoint auto-derives a next-epoch committee from a checkpoint delivered out of sequence, trigger the `panic!(\
