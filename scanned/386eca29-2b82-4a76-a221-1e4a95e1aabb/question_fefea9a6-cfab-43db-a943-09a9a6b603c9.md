@@ -1,1 +1,0 @@
-[File: lib.rs -> Scope: High] [Symbol: IdentStr::new / ident_str! macro const-eval boundary] Since IdentStr::new performs a runtime is_valid check identical to the compile-time ident_str! macro check, can an attacker submit a package containing a module/function identifier of length 0 after a leading underscore is stripped in some external re-parsing step (a string like
