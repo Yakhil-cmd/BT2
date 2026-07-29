@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/full_checkpoint_content.rs -> Scope: High] [Symbol: CheckpointTransaction::changed_objects] Can an attacker-supplied checkpoint transaction where TransactionEffects.all_changed_objects() references an object id missing from output_objects reach the .expect(\
