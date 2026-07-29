@@ -1,1 +1,0 @@
-[File: 'crates/sui-core/src/execution_cache.rs' -> Scope: High] [Symbol: ObjectCacheRead::get_latest_marker] Can an attacker-controlled transaction cause get_latest_marker_value_cache_only to return CacheResult::NegativeHit for a FullObjectID that legitimately has no marker recorded yet, hitting the panic!(\
