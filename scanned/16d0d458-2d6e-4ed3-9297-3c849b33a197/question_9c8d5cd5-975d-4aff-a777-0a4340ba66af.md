@@ -1,1 +1,0 @@
-[File: 'crates/sui-types/src/storage/shared_in_memory_store.rs' -> Scope: High] [Symbol: InMemoryStore::update_highest_synced_checkpoint / update_highest_verified_checkpoint] Given both functions `panic!(\
