@@ -1,1 +1,0 @@
-[File: object_change.rs] [Symbol: AccumulatorWriteV1::merge, IntegerTuple branch] Can an attacker-controlled transaction that emits two or more accumulator events with `AccumulatorValue::IntegerTuple` to the same AccumulatorObjId reach the `todo!(\

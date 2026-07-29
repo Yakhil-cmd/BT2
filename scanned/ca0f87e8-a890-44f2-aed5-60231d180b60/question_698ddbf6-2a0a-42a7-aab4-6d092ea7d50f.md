@@ -1,1 +1,0 @@
-[File: object_change.rs] [Symbol: AccumulatorWriteV1::merge, mismatched value-type fatal!] If an AccumulatorObjId ends up receiving both an `AccumulatorValue::Integer` write and an `AccumulatorValue::EventDigest` write in the same transaction (e.g. via colliding derivation or a future dual-purpose account), does the unconditional `mysten_common::fatal!(\
