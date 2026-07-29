@@ -1,1 +1,0 @@
-[File: vec_set.move -> remove] Can duplicate-looking but distinct K entries (differing in an ignored field) both remain in contents after a single remove call (line 39-42, which removes only the first find_index match), leaving a stale 'still reserved' key in the VecSet that later permanently blocks release of the corresponding reserved balance in the caller?
