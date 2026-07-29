@@ -1,1 +1,0 @@
-[File: consensus_validator.rs -> Scope: High] [Symbol: SuiTxValidator::vote_transaction, `NonEmpty::from_vec(computed_v1).expect(...)`] If `required_signers()` returns an empty iterator (degenerate/zero-signer transaction data reachable via crafted BCS TransactionData), does `computed_v1` become an empty Vec so that `NonEmpty::from_vec(computed_v1).expect(\
