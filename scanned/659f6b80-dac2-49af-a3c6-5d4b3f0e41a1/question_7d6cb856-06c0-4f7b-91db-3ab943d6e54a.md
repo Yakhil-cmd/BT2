@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/accumulator_event.rs -> Scope: Critical crash surface] [Symbol: AccumulatorEvent::total_sui_in_event] The match arm for `AccumulatorValue::IntegerTuple` and `AccumulatorValue::EventDigest` calls `fatal!(\
