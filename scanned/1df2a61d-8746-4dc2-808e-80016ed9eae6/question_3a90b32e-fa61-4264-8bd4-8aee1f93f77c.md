@@ -1,1 +1,0 @@
-[File: one_time_witness_verifier.rs -> Scope: Critical] [Symbol: verify_module special-case for SUI_FRAMEWORK_ADDRESS `sui` module] Given the hardcoded bypass at lines 47-49 that returns Ok(()) unconditionally for `ModuleId::new(SUI_FRAMEWORK_ADDRESS, \
