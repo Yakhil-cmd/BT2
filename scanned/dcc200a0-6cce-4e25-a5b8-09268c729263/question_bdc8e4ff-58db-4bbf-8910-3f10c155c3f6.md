@@ -1,1 +1,0 @@
-[File: 'crates/sui-types/src/balance_change.rs' -> Scope: Critical/High identity & authority misbinding in balance reporting] [Symbol: coins()] Can a transaction that leaves any input or output object owned by `Owner::Party { .. }` (the multisig/hybrid-custody owner variant) reach the `todo!(\
