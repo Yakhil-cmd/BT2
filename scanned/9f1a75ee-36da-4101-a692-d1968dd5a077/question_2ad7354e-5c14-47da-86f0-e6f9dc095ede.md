@@ -1,1 +1,0 @@
-[File: 'crates/sui-core/src/traffic_controller/mod.rs' -> Scope: High] [Symbol: handle_spam_tally/handle_error_tally] Can a burst of attacker-originated requests (unauthenticated public caller) that trigger fw_config.delegate_spam_blocking or delegate_error_blocking while node_fw_client is None (misconfigured but externally observable state) reach `nodefw_client.as_ref().expect(\

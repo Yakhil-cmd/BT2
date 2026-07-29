@@ -1,1 +1,0 @@
-[File: 'crates/sui-core/src/traffic_controller/mod.rs' -> Scope: High] [Symbol: TrafficController::spawn] Can policy_config.allow_list transition from Some to None between construction and TrafficController::spawn being invoked twice via any reload path, reaching `Acl::Allowlist(_) => fatal!(\
