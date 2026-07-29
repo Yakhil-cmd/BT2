@@ -1,1 +1,0 @@
-[File: mod.rs -> Scope: High...] [Symbol: TypeToken::next_token AddressIdent branch in parsing/types.rs] Can a hex-address token beginning with '0x' followed by underscores interleaved with hex digits (`0x1_2_3...`) be tokenized as a single AddressIdent and then parsed via `parse_address_number` after `replace('_',
