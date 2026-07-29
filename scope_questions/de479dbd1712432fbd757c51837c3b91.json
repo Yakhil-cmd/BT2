@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: external-crates/move/crates/move-bytecode-verifier/src/regex_reference_safety/mod.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_69118b93-232a-4cf7-8759-56307c139dca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-bytecode-verifier/src/regex_reference_safety/serializable_state.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_d71f71e2-c5e0-41e1-add8-fb54189c9fec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-bytecode-verifier/src/script_signature.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_30da8926-22c0-4d4d-9fb8-7d08ec3af4eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-bytecode-verifier/src/signature.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4e3ac8dc-b7ae-445c-b3e1-946eee07db26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-bytecode-verifier/src/stack_usage_verifier.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_d45a008f-b24e-4f18-897c-3e3650de2d76?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-bytecode-verifier/src/type_safety.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_fa278d0a-3899-4548-9f09-3a0fd842314f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-bytecode-verifier/src/verifier.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_9ed85f7e-55b5-4f8d-8006-b578523b1cc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/account_address.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_2ea422f3-7884-4ec3-9aeb-4539a26e089b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/annotated_extractor.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_655b4645-bd75-4bba-9764-19b0ef7b4c02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/annotated_value.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_72bd2890-ef31-4f6a-b17c-c6c9c573a6fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/annotated_visitor.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_8b9d4244-9726-4735-a3a2-14f76a23d710?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/compressed/annotated/layout.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_fa9fcc5d-ae8f-486a-bacb-31073efd46ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/compressed/annotated/mod.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_b3ffb6a6-38f9-4d1b-ac42-000781cf28af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/compressed/annotated/serde_impl.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_50d31cb6-a0d0-4125-ae5e-c6be40a165b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/compressed/mod.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_ad264871-e379-4c91-97d4-9b38415b0247?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/compressed/runtime/layout.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_dfb305ed-a925-4459-a696-7bc974a6fc68?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/compressed/runtime/mod.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_582630b3-16a5-41b2-9f67-54fc94d685d0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/compressed/runtime/serde_impl.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_d167eae5-a1cb-4b7d-a29a-18e67593d859?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/gas_algebra.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_7278d2bb-5631-4c9b-9b7c-a37a56650ea4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/identifier.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_484c80c7-83d2-41a4-99dc-cd5bcd9db2d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/language_storage.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_d1fcca27-d4a5-4756-b892-80afa398ca69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/lib.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_82ab4c23-f698-416f-9548-e9284fb85d7e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/metadata.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_3b18c847-b950-4700-bbff-5add23c539a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/parsing/address.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_41ba0b3b-bb43-47de-a235-abda88b3ebd7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/parsing/mod.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_a7262db5-9f78-41a3-9c1a-840a1125723c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/parsing/parser.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_07930745-2705-4e8c-89f6-6c632298b6b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/parsing/types.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_baf066ea-212a-4fac-b5fe-0f09f42de620?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/parsing/values.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_a677fc0f-dc78-4af7-8ee2-c9da8f7eb1d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/resolver.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_8417d270-df87-43dc-9819-cf7edad60914?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: external-crates/move/crates/move-core-types/src/runtime_value.rs -> Scope: Critical. Canonicalization, identity-confusion, or type-confusion failure lets an unprivileged actor make the runtime, verifier, or bridge treat attacker-controlled data as a different trusted object, package, type, signer, or asset, enabling theft, mint, unlock, or privileged mutation'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_7395a608-5f49-4b32-bd0d-159ed0b7e161?mode=deep",
+    "questions_generated": false
+  }
+]
