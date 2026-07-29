@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/nitro_attestation.rs -> Scope: High crash] [Symbol: AttestationDocument::to_map error path] When `document_data` is not a CBOR map, does the error branch at nitro_attestation.rs:449 (`format!(\
