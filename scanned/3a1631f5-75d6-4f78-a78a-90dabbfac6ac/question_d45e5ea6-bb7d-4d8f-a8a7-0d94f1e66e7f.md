@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/randomness_state.rs -> Scope: Critical] [Symbol: get_randomness_state_obj_initial_shared_version] If SUI_RANDOMNESS_STATE_OBJECT_ID's on-chain Owner is ever observed as non-Shared (e.g. an attacker-controlled object created at the exact same derived address via ID-derivation collision or object recreation after deletion), does the `unreachable!(\
