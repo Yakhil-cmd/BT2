@@ -1,1 +1,0 @@
-[File: context.rs -> Scope: High] [Symbol: refund_max_gas_budget/writes.get_mut(&gas_id)] Can a Move call inside the PTB wrap the gas coin object into another struct (rather than deleting or transferring it) such that `writes.get_mut(&gas_id)` returns None at line 1762, triggering `invariant_violation!(\
