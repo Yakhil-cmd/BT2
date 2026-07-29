@@ -1,1 +1,0 @@
-[File: coin_registry.rs] [Symbol: get_coin_registry_obj_initial_shared_version] Can any reachable on-chain state (e.g. a race during CoinRegistry object creation, or an equivocating fork/checkpoint view) cause the SUI_COIN_REGISTRY_OBJECT_ID object's `owner` field to be read as non-Shared, triggering the `unreachable!(\
