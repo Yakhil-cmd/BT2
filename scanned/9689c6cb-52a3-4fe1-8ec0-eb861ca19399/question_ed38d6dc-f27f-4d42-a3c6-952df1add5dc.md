@@ -1,1 +1,0 @@
-[File: 'external-crates/move/crates/move-core-types/src/resolver.rs' -> Scope: High] Can an attacker submit a MoveCall transaction whose `package`/`module`/`function` reference a package that fails to resolve via `ModuleResolver::get_module`, such that `TypeLayoutBuilder::build_from_name` (move-bytecode-utils/src/layout.rs:230) hits `.expect(\
