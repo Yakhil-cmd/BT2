@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/effects/object_change.rs -> Scope: Critical] [Symbol: AccumulatorWriteV1::merge -> mismatched AccumulatorValue variant branch] Can an attacker-controlled contract cause two AccumulatorWriteV1 entries for the same AccumulatorObjId to carry different AccumulatorValue variants (Integer vs EventDigest), reaching the `mysten_common::fatal!(\
