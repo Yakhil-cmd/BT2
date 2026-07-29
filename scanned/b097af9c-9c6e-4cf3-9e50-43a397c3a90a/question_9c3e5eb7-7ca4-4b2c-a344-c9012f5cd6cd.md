@@ -1,0 +1,1 @@
+[File: identifier.rs -> Scope: Critical] [Symbol: derive_object_id (crates/sui-types/src/derived_object.rs) DerivedObjectKey<T> wrapper StructTag] Since derive_object_id always constructs its wrapper module/name via the checked Identifier::new(\

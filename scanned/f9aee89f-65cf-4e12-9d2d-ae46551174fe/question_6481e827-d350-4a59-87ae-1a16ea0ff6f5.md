@@ -1,0 +1,1 @@
+[File: resolution.rs -> Scope: High] [Symbol: add_and_unify] After `resolution_table.resolution_table.entry(original_pkg_id)` finds the entry non-Vacant, the code calls `resolution_table.resolution_table.get_mut(&original_pkg_id).expect(\

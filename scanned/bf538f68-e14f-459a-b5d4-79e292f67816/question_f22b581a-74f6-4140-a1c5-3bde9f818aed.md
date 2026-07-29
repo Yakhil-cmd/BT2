@@ -1,0 +1,1 @@
+[File: crates/sui-types/src/full_checkpoint_content.rs -> Scope: High] [Symbol: CheckpointTransaction::removed_objects_pre_version] Can an attacker-supplied full-checkpoint file where TransactionEffects.all_removed_objects() lists an ObjectID absent from the accompanying input_objects Vec reach the .expect(\

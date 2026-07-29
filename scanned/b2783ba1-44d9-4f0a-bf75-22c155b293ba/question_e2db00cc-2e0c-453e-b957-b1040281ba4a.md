@@ -1,0 +1,1 @@
+[File: 'File Name: crates/sui-types/src/effects/effects_v2.rs -> Scope: Critical.'] [Symbol: AccumulatorWriteV1::merge] Can an attacker-influenced set of Merge/Split AccumulatorWriteV1 entries for the same accumulator address (via a PTB that performs many balance merges within one transaction) drive the fold's checked_add(v).expect(\
