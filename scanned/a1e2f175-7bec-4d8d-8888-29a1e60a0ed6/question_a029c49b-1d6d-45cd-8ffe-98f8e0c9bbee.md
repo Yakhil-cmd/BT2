@@ -1,0 +1,1 @@
+[File: 'File Name: crates/sui-bridge/src/orchestrator.rs -> Scope: High...'] [Symbol: submit_to_executor / metered_channel::Sender::send] Given that every call site (run_sui_grpc_watcher, run_eth_watcher, and the pending-action resubmission loop in run_with_grpc) uses .expect(\

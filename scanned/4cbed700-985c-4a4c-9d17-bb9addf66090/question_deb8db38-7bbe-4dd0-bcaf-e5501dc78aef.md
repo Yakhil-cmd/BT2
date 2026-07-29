@@ -1,0 +1,1 @@
+[File: 'limits.rs' -> Scope: High] [Symbol: LimitsVerifier::verify_identifiers, disallow_self_identifier] Can an attacker publish a module containing an identifier equal to a compiler-reserved marker other than the exact literal string \
