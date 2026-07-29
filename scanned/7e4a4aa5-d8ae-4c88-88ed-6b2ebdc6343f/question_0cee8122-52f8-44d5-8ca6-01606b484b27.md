@@ -1,1 +1,0 @@
-[File: ast.rs Scope: Critical] In `TryFrom<Type> for TypeTag` (ast.rs:357-381), can an attacker construct a `Type::Datatype` whose `type_arguments` contain a `Type::Reference`, causing the conversion to return `Err(\
