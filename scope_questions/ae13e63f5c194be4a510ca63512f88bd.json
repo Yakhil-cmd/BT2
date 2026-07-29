@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/balance.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_0e02c634-773b-471f-80d7-5829a670b096?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/bcs.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_245f2530-bbc8-4d2a-8a10-aa122b64effe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/borrow.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_fcfd9c60-1e61-408f-af8f-bbc84001d954?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/clock.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_5ea935e7-95d6-46af-9f1c-bcbec7d98bac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/coin.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_88ed6a29-ec52-48a5-9c07-86320595ffe0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/config.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_02a02d0b-da82-4f68-84fe-f6ec5061946b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/bls12381.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_09fb760c-2cb8-4737-ad04-e7423187d0e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ecdsa_k1.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_5f3fd7b9-c60e-4c10-9705-3f5f54527e99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ecdsa_r1.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_f6601264-2425-47c6-9a8e-30746d4c9dc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ecvrf.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_2b3fadc6-7bda-4575-aa13-5c1b103fd657?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ed25519.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_0d7dbea6-4b7e-4621-8cdd-67ae1ba2a99c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/groth16.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_83e1628f-aa1c-4514-aef7-236677221066?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/group_ops.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4c342bda-62b6-4572-8722-5bcdf17f19e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/hash.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_fbe7dda4-4980-493d-bba7-9958cd8e1354?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/hmac.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e133392f-dac7-4d98-b1cb-a40956e2ead5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/nitro_attestation.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e0f7c66d-2dfb-4613-bcaa-631cc67be6f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/poseidon.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_c95bbb9b-f84e-4fbf-bf26-a815e4f34297?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/rangeproofs.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_28c95659-9403-4fc2-a0a0-a3602b529806?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/ristretto255.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_5c71361e-516d-4f01-a9b9-cd0d52db4ada?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/vdf.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_5d038179-585f-4a0b-a04b-b6a53efde0a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/zklogin_verified_id.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_566646f4-1aee-4394-af48-db14de8809fe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/crypto/zklogin_verified_issuer.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_60a3429f-8468-423c-bd94-01125fff759c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/deny_list.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4e83fd76-1683-4417-97ab-b584ba5433e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/derived_object.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_db923569-7f6a-4e91-8632-6bb6df6ca3a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/display.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_e2b7ac97-f541-43de-bc2c-5d006ca89461?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/dynamic_field.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_762763c3-2ce1-4447-9154-de0ae8dad8b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/dynamic_object_field.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_02aa9690-67a7-496b-b708-28b1a5956861?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/event.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_4ae62dc3-7394-46ab-8993-0d0357ad3da1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/funds_accumulator.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_181dce82-fce3-4471-9291-866eee9343fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: crates/sui-framework/packages/sui-framework/sources/hex.move -> Scope: High. Public-input deserialization, BCS, file-format, verifier, or runtime edge case deterministically crashes validators or fullnodes, wedges critical processing, or forces network-visible instability on unmodified software'",
+    "url": "https://deepwiki.com/search/-generate-sui-protocol-securit_3e01e66d-c853-4f5a-a487-1ab65a70547b?mode=deep",
+    "questions_generated": false
+  }
+]
