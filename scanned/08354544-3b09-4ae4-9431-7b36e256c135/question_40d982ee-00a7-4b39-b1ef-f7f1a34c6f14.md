@@ -1,0 +1,1 @@
+[File: crates/sui-core/src/epoch/randomness.rs -> Scope: High] [Symbol: RandomnessManager::randomness_dkg_info_from_committee] Can a committee member's stored BLS public key bytes, if ever malformed relative to the expected G2Element byte length (e.g. via a stale/incompatible committee record across an upgrade), reach `bls12381::G2Element::from_byte_array(...).expect(\

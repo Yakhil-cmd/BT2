@@ -1,0 +1,1 @@
+[File: type_name.move -> Scope: High] Symbol `datatype_string`: the two `assert!(&str_bytes[i] == &colon)` / `assert!(&str_bytes[i] != &colon)` calls after the first colon-skip loop assume exactly one colon then a non-colon-prefixed datatype name; for a forged `TypeName` whose content has three consecutive colons (e.g. `\

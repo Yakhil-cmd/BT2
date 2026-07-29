@@ -1,0 +1,1 @@
+[File: crates/sui-core/src/authority/consensus_tx_status_cache.rs -> Scope: Critical] [Symbol: set_transaction_statuses] Can two consensus-ordered transactions that collide on the same ConsensusPosition key (same epoch/block/index) but are assigned different ConsensusTxStatus values trigger the `panic!(\

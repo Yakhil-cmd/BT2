@@ -1,0 +1,1 @@
+[File: 'crates/sui-core/src/jsonrpc_index.rs' -> Scope: High] [Symbol: IndexStore::get_owned_coins_iterator] Can a public sui_getCoins/getBalance caller supply an attacker-chosen 'coin_type' TypeTag string (via getBalance RPC) that round-trips through to '.map(|result| result.expect(\

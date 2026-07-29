@@ -1,0 +1,1 @@
+[File: 'crates/sui-core/src/execution_cache/writeback_cache.rs' -> Scope: High] [Symbol: WritebackCache::move_version_from_dirty_to_cache] Can an attacker craft a sequence of public transactions touching the same shared/owned ObjectID at consecutive versions such that concurrent commit_transaction_outputs batches race and the `assert_eq!(removed.as_ref(), Some(value), \

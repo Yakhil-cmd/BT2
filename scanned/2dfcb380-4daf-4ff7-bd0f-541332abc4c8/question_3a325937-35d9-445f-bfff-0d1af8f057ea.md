@@ -1,0 +1,1 @@
+[File: 'crates/sui-core/src/global_state_hasher.rs' -> Scope: High] [Symbol: accumulate_epoch] Can a reconfiguration boundary driven by public validator-set-changing transactions (e.g. rapid stake changes causing early epoch end) cause accumulate_epoch to be called for last_checkpoint_of_epoch before accumulate_running_root has completed for that checkpoint, hitting `.expect(\

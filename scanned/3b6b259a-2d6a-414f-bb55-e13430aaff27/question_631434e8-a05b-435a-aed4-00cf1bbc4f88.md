@@ -1,0 +1,1 @@
+[File: crates/sui-core/src/authority_server.rs -> Scope: High] [Symbol: handle_submit_transaction_inner, NonEmpty::from_vec(v1_aliases).expect(...)] Can a transaction with zero required signers (or a signer set reduced to empty via alias resolution) reach the v1 AddressAliases claim construction so that `NonEmpty::from_vec(v1_aliases).expect(\

@@ -1,0 +1,1 @@
+[File: private_generics_verifier_v2.rs -> Scope: High] [Symbol: verify_module module_id resolution] Is the exclusion of `sui::test_scenario` (line 168-173) keyed only on `module_address == SUI_FRAMEWORK_ADDRESS && module_name == \

@@ -1,0 +1,1 @@
+[File: normalized.rs] [Symbol: Type::subst] Can a package publish/upgrade or a programmable transaction path that ends up calling Type::subst with attacker-influenced type_args of insufficient length (fewer entries than referenced TypeParameter index) trigger the `.expect(\

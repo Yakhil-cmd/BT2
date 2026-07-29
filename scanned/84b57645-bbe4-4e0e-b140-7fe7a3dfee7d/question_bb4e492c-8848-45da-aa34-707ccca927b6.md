@@ -1,0 +1,1 @@
+[File: 'crates/sui-core/src/jsonrpc_index.rs' -> Scope: High] [Symbol: IndexStore::get_owned_coins_iterator_with_cursor] Can an attacker supply a pagination cursor '(coin_type, inverted_balance, object_id)' via public getCoins RPC that seeks to an out-of-domain CoinIndexKey2 causing the '.map(|result| result.expect(\
