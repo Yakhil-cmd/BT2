@@ -1,1 +1,0 @@
-[File: identifier.rs -> Scope: Critical] [Symbol: ModuleId::to_canonical_display / Display for ModuleId versus ModuleId::from_str] Can a package publish/upgrade transaction cause a module name Identifier to be constructed via a non-validating path (e.g. legacy bytecode deserialization compatibility) such that ModuleId::to_canonical_display's \
