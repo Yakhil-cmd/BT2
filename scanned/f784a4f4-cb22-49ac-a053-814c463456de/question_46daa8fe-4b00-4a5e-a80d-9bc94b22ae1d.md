@@ -1,1 +1,0 @@
-[File: gas_charger.rs -> Scope: High crash] [Symbol: PaymentKind::smash, line ~698-701] Can an attacker supply two PaymentMethod::AddressBalance entries whose SuiAddress differs but whose PaymentLocation hashes/compares equal due to an upstream address-normalization inconsistency, so that the `assert_eq!(*addr, other, \
