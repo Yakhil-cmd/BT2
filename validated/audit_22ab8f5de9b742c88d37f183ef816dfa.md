@@ -1,0 +1,13 @@
+[1](#0-0) [2](#0-1)
+
+### Citations
+
+**File:** crates/sui-core/src/checkpoints/mod.rs (L1-1)
+```rust
+// Copyright (c) Mysten Labs, Inc.
+```
+
+**File:** crates/sui-node/src/lib.rs (L1-1)
+```rust
+// Copyright (c) Mysten Labs, Inc.
+```
