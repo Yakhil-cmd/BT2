@@ -1,1 +1,0 @@
-[File: crates/sui-core/src/epoch/randomness.rs -> Scope: High] [Symbol: DkgRole::try_new authority_key_pair conversion] Can an authority's persisted protocol keypair bytes fail the fixed-length `try_into()` conversion feeding `bls12381::Scalar::from_byte_array(...).expect(\

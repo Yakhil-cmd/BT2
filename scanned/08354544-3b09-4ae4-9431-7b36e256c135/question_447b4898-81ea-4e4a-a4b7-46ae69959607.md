@@ -1,1 +1,0 @@
-[File: crates/sui-core/src/epoch/randomness.rs -> Scope: High] [Symbol: RandomnessManager::try_new, tables.dkg_output_v2.get] Can a validator process that crashes mid-write (or an unrelated storage corruption) leave a malformed/undecodable value in the dkg_output_v2 typed_store column, so that `.expect(\
