@@ -1,1 +1,0 @@
-[File: crates/sui-bridge/src/client/bridge_client.rs -> Scope: Critical] [Symbol: BridgeClient::bridge_action_to_path token_ids/token_addresses formatting for AddTokensOnEvmAction] Can `token_addresses` formatted via `format!(\
