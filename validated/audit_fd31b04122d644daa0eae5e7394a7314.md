@@ -1,0 +1,1 @@
+Now let's check where `check_ownership_invariants` is actually called from, to see if it's gated by `enable_expensive_checks` or dev-inspect mode.
