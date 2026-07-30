@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/messages_grpc.rs -> Scope: Critical] [Symbol: RawWaitForEffectsRequest::get_ping_type] Can an attacker send a RawWaitForEffectsRequest with an out-of-range ping_type enum value (line 558-562) that causes get_ping_type() to hit .expect(\
