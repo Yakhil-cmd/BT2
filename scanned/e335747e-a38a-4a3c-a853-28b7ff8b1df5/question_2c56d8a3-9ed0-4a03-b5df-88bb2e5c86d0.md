@@ -1,1 +1,0 @@
-[File: lib.rs -> Scope: High] [Symbol: U256::from_str_radix] Can an attacker-supplied numeric literal string (e.g. from Move source constant parsing or JSON-RPC argument) with leading zeros trigger `src.trim_start_matches('0')` producing an empty string for input '0', and does PrimitiveU256::from_str_radix(
