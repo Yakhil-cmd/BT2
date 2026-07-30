@@ -1,1 +1,0 @@
-[File: crates/sui-types/src/execution_params.rs -> Scope: Critical] [Symbol: get_early_execution_error / get_cancelled_objects] Can an attacker-crafted shared-object transaction produce a cancellation reason SequenceNumber that is neither SequenceNumber::CONGESTED nor SequenceNumber::RANDOMNESS_UNAVAILABLE, reaching the `_ => panic!(\
