@@ -1,1 +1,0 @@
-Let me check the actual `Function::equivalent` implementation in `normalized.rs`.

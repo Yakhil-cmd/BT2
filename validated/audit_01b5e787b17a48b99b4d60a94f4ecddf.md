@@ -1,1 +1,0 @@
-functions.read_file:0{"repo_name": "Thankgod67Ikhide/sui--007", "file_path": "crates/sui-bridge/src/sui_client.rs"}

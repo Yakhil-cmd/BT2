@@ -1,1 +1,0 @@
-functions.grep_search:0{"pattern": "fn new_cursor|impl VersionedBinary|fn set_position|fn position", "repo_name": "Thankgod67Ikhide/sui--027", "include": "external-crates/move/crates/move-binary-format/src/deserializer.rs"}

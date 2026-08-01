@@ -1,1 +1,0 @@
-Now let's find `save_wrapped_object_containers` and `save_loaded_runtime_objects` directly in `temporary_store.rs` to see the `.extend()` behavior referenced in the question.
