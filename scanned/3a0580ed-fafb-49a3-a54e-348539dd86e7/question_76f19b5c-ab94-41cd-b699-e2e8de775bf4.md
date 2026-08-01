@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-core/types/src/parser.rs -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'] [Symbol: parse_transaction_argument (Bytes branch)] Can an unprivileged attacker submit a hex-Bytes literal like 'x\
