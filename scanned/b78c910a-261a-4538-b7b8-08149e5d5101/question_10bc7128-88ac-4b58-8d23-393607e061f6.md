@@ -1,0 +1,1 @@
+[File: '...'] [Symbol: BoundsChecker::verify_module expect(...) panic path] Can an unprivileged attacker craft a script whose converted module fails BoundsChecker::verify_module in a way that triggers the .expect(\

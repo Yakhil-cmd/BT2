@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/block-executor/src/txn_provider/blocking_txns_provider.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] [Symbol: BlockingTxnProvider::set_txn panic path] Can an unprivileged attacker trigger the expect(\
