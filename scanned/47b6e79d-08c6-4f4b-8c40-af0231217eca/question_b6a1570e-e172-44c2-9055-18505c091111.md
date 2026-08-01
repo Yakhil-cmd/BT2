@@ -1,0 +1,1 @@
+[File: 'File Name: execution/executor/src/chunk_executor/chunk_result_verifier.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] [Symbol: StateSyncChunkVerifier::verify_chunk_result] Under cfg!(feature = \
