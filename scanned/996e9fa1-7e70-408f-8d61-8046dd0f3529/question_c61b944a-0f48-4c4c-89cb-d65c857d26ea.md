@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm/src/system_module_names.rs -> Scope: Critical.'] [Symbol: TransactionValidation::is_account_module_abort] Can an unprivileged attacker craft a Move abort whose AbortLocation matches the hardcoded ModuleId::new(CORE_CODE_ADDRESS, \
