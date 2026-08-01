@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/resources/fungible_asset_metadata.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] [Symbol: ident_str!(\

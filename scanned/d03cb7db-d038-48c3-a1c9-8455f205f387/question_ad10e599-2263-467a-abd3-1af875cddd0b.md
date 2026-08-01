@@ -1,0 +1,1 @@
+[File: types/src/move_any.rs -> Scope: High.] [Symbol: Any::unpack type_name substring/prefix comparison] Does `Any::unpack`'s `type_name == move_name` check reject type_name values that are prefixes, suffixes, or concatenations of the expected `move_name` (e.g., `\

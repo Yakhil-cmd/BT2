@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/resources/any.rs'] [Symbol: AnyResource::try_from_bytes] Can an unprivileged attacker exploit differing error-handling between `try_from_bytes`'s `anyhow::Result` mapping and a caller that treats any `Err` as \
