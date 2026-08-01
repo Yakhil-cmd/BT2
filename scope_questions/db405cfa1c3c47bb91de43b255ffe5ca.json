@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: api/types/src/transaction.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_9fd99054-783d-4782-9265-1084b1a25dda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/view.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2de320c3-88d5-4d1e-a5c6-dba597e3cb4a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/wrappers.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_4439967d-748b-4db3-9197-404df6291a22?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/aggregator_v1_extension.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b91a500a-ee4c-4d88-aa35-7f44e268b343?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/bounded_math.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_58d22b3f-fd66-496d-849f-5788c2e0ab54?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/delayed_change.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_183ba2d8-46de-4914-8f72-a3f83c90e535?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/delayed_field_extension.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_3cbdc094-d4cf-435f-8e19-efdd613d1fcb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/delta_change_set.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_6f9949dc-e196-4715-b239-7a0919fd47cc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/delta_math.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_fb5dd53e-8012-4c51-9bc4-fb968bd6dfb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/resolver.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ed39a81e-af32-4c1d-9cd9-f3f3d57202ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-aggregator/src/types.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_625f1ea3-df56-4f3f-85bb-c54e92f59fc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-algebra/src/abstract_algebra.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_57bc3f59-bc01-4401-84b7-5754a4bf854b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-algebra/src/algebra.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_67f5359c-59d0-41d3-8948-2c4ea86829ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-meter/src/algebra.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_52f1f8a4-a194-4d7e-92dd-cd5a380e8a83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-meter/src/meter.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_9e4c7f38-e12c-4e58-b448-21a5d11d9d46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-meter/src/traits.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_09dc010a-07c7-442a-a8d0-11db36f1b4cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/aptos_framework.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8e529aa0-3a58-4472-b631-aa9ff9d7a230?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/instr.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8678861c-b366-40fe-8691-ad80512c40e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/macros.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_dcf823bc-2c2b-4078-8555-6d7d0dea12c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/misc.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_a6e11e4b-003a-4727-96fb-3dada039a23f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/move_stdlib.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_0a4dbc84-c8ac-41ba-89a6-cf49ea29ccf5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/table.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_446bf9fe-1e3c-4eff-8fd8-14bd6ddd03ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/transaction.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_a122ccc2-14c5-472e-a5e0-82dbe191774b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/traits.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_56d4595e-0893-4041-8709-6465da8d0ca7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-gas-schedule/src/ver.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ff3b5e4f-dacc-41bc-86de-02fa5abd91e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-native-interface/src/builder.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_aaeeea64-8cc7-463e-8cce-637af8552231?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-native-interface/src/context.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_98fbdc35-b0f6-4b5f-b6b0-b57680c48194?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-native-interface/src/errors.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b05a91eb-c47d-40b3-8d59-32b153c522c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-native-interface/src/helpers.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_d83d876c-8cf3-48b9-baa3-74c84f601583?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/aptos-native-interface/src/native.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b0da54af-0942-41bd-b94b-7afbeb59ed00?mode=deep",
+    "questions_generated": false
+  }
+]
