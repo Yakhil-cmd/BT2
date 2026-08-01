@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/resources/fungible_asset_metadata.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] [Symbol: ConcurrentSupplyResource (no Arbitrary/fuzzing derive)] Since this struct lacks `#[cfg_attr(any(test, feature =

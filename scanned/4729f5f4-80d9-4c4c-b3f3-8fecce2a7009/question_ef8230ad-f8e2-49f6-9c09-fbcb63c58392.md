@@ -1,0 +1,1 @@
+[File: 'File Name: execution/executor/src/types/partial_state_compute_result.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] [Symbol: PartialStateComputeResult::ensure_state_checkpoint_output] Can an unprivileged attacker exploit the OnceCell.expect(\

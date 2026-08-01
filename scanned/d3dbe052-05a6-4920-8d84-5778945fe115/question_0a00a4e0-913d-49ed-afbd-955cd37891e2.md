@@ -1,0 +1,1 @@
+[File: '...reconfiguration_state.move...'] [Symbol: is_in_progress] Can an unprivileged attacker craft a transaction whose module context resolves `variant_type_name` comparison (`*state.variant.type_name().bytes() == b\
