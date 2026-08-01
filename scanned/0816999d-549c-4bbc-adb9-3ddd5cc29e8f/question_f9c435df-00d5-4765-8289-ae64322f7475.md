@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/resources/chain_id.rs -> Scope: High.'] [Symbol: ChainIdResource deserialization] Can an unprivileged actor submit a malformed account resource blob for the chain_id module/struct path (module_name b\
