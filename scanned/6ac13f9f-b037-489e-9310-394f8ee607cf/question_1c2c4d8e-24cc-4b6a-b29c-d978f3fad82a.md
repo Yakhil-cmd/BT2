@@ -1,0 +1,1 @@
+[File: 'File Name: dkg/src/epoch_manager.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] [Symbol: EpochManager::start_new_epoch] Can an attacker exploit the unconditional `expect(\

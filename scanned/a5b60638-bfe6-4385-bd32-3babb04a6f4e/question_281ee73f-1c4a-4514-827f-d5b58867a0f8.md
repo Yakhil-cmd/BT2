@@ -1,0 +1,1 @@
+[File: 'File Name: crates/aptos-crypto-derive/src/hasher.rs -> Scope: High.'] [Symbol: camel_to_snake] Can an unprivileged attacker abuse an empty-string or single-character type name (edge case in camel_to_snake's 'first' flag logic) passed indirectly through a macro-generated wrapper type used in transaction authenticator dispatch, producing a snake_name of
