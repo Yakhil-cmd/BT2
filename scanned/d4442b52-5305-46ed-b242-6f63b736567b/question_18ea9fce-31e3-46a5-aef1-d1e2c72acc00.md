@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-vm/runtime/src/debug.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] [Symbol: DebugContext::debug_loop function_string] Can an unprivileged attacker construct a module/function name whose format!(\

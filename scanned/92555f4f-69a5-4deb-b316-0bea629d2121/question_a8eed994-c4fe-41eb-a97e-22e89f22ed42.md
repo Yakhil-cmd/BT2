@@ -1,0 +1,1 @@
+[File: same file, Scope: High.] [Symbol: define_gas_parameters! prefix formatting] Can two different `$params_name` invocations sharing an identical `$prefix` literal (e.g. both using 'txn' as prefix for distinct structs covering primary vs fee-payer gas costs) cause `format!(\
