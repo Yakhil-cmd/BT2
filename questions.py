@@ -953,11 +953,8 @@ target_scopes = [
 
 APTOS_ALLOWED_IMPACT_SCOPE = """## Admission Impact Gate
 Accept only high-signal impacts at the transaction admission boundary:
-- Unauthorized transaction execution or state transition under the wrong sender, signer set, fee payer, or module context.
-- Replay, expiry, sequence, chain-id, or domain-binding failure that lets an attacker reuse or rebind a transaction.
-- Authenticator, WebAuthn, multisig, or approval validation accepting the wrong signing material or wrong approval set.
-- Pre-validation mismatch that causes a transaction which should fail admission to execute and commit.
-Still reject: malicious peer or node behavior, generic network DoS, Consensus Observer-only impact, `consensus/src/dag`, `experimental`, `keyless/pepper`, AIP-103 Permissioned Signer, AIP-104 Account Abstraction, leaked keys, privileged governance or admin assumptions, social engineering, third-party oracle errors, tests, mocks, fixtures, benches, examples, docs, readmes, generated or build files, `.toml`, event-only mismatches, minor rounding or style, and dependency-only claims without a repo root cause."""
+
+Still reject: malicious peer or node behavior, generic network DoS."""
 
 APTOS_AUDIT_PIVOTS = """## Admission Pivots
 - REST and BCS transaction input through mempool and vm-validator must preserve sender, signer, sequence, chain-id, expiry, and gas binding.
@@ -998,7 +995,7 @@ def question_generator(target_file: str) -> str:
     Return Python only.
 
     questions = [
-    "[File: {target_file}] [Symbol: symbol_or_module] Can unprivileged INPUT under REQUIRED_STATE pass ADMISSION_PATH and break MAINNET_AUTH_OR_REPLAY_INVARIANT, corrupting EXACT_VALUE with scoped impact SCOPE_IMPACT? Proof idea: add a focused repo test that drives TRANSACTION_ENTRYPOINT and asserts EXPECTED_REJECTION_OR_BINDING_PROPERTY.",
+    "[File: {target_file}] Can unprivileged INPUT under REQUIRED_STATE pass ADMISSION_PATH and break MAINNET_AUTH_OR_REPLAY_INVARIANT, corrupting EXACT_VALUE with scoped impact SCOPE_IMPACT? Proof idea: add a focused repo test that drives TRANSACTION_ENTRYPOINT and asserts EXPECTED_REJECTION_OR_BINDING_PROPERTY.",
     ]
     """
     return prompt
