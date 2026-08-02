@@ -1,1 +1,0 @@
-[File: 'File Name: crates/aptos-dkg/src/pvss/signed/generic_signing.rs -> Scope: High.'] [Symbol: GenericSigning::verify] Can an unprivileged attacker supply a transcript with an empty `get_dealers()` list under normal verification state, triggering the `ok_or_else(|| anyhow!(\
