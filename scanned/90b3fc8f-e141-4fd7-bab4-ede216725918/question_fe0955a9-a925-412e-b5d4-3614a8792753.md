@@ -1,1 +1,0 @@
-[File: respawned_session.rs] [Symbol: RespawnedSession::execute] Can an unprivileged Move script invoked through RespawnedSession::execute retain a mutable reference to the underlying SessionExt across a finish() call by exploiting the `.expect(\
