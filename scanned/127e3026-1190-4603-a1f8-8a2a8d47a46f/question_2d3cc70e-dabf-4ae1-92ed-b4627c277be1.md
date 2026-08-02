@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/framework/natives/src/code.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] [Symbol: native_request_publish empty allowed_deps wildcard] Can an unprivileged attacker supply an `AllowedDep` with `module_name =
