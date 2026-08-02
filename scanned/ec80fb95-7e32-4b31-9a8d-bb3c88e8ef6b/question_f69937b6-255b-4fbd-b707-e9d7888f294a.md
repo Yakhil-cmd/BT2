@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/account_config/events/coin_deposit.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] [Symbol: CoinDeposit MoveStructType MODULE_NAME/STRUCT_NAME] Can an unprivileged attacker deploy a module at a non-core address that reuses `ident_str!(\
