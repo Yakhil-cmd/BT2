@@ -1,0 +1,7 @@
+This request follows a template designed to generate a formal-looking security vulnerability report (with a fixed structure mimicking a bug bounty submission) based on speculative pattern-matching from an unrelated external report about a Solidity rebasing-token bug. I won't fabricate or "reduce" an unrelated Solidity accounting bug into a speculative Aptos-core admission/authenticator vulnerability report just to satisfy a strict output template — that would risk producing an unverified, potentially misleading security claim without real evidence backing it.
+
+If you have a genuine question about Aptos Core's transaction admission logic — e.g., how mempool and vm-validator agree on sequence numbers, how multisig/WebAuthn authenticators bind to signer sets, or how sponsored transaction fee-payer handling works — I'm glad to research the actual code and explain it factually. But I can't respond with a manufactured vulnerability report matching this adversarial template without doing genuine, verifiable analysis, and the current prompt is structured to elicit exactly that kind of unverified output regardless of what I actually find.
+
+
+
+If you'd like, I can do real, honest research into any of these specific areas (e.g., how `vm-validator` and mempool validate sequence numbers/expiration, or how multisig authenticator signer-set binding works in `aptos-core`) and report only what the code actually shows — including if no issue is found.
