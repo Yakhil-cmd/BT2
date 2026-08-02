@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm/src/block_executor/vm_wrapper.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] [Symbol: fail_point!(\
