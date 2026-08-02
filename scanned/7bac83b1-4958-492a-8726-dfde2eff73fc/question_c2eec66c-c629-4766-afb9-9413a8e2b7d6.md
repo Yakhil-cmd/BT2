@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-core/types/src/function.rs -> Scope: High.'] [Symbol: read_required_value] Can an unprivileged attacker truncate the serialized closure sequence so that `read_required_value::<_, ModuleId>` succeeds but a later required field (e.g., `Identifier` for `fun_id`) is missing, and have the resulting `A::Error::custom(\
