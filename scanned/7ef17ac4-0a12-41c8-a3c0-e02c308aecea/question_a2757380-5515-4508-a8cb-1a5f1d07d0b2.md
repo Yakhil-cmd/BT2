@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-vm/runtime/src/loader/modules.rs -> Scope: High.'] [Symbol: Module::new_for_test misuse guard] Given the required state that `new_for_test` (modules.rs lines 400-435) is only compiled under `cfg(any(test, feature = \
