@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/validator_signer.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] [Symbol: ValidatorSigner::private_key] Since `.private_key()` is gated by `#[cfg(any(test, feature = \
