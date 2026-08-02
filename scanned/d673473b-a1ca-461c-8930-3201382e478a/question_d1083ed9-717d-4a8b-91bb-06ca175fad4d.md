@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/account_config/resources/coin_store.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] [Symbol: CoinStoreResourceUntyped (Arbitrary/proptest)] Does the #[cfg(any(test, feature = \
