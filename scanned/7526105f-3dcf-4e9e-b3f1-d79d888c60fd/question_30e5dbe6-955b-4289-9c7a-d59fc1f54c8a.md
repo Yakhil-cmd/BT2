@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-core/types/src/language_storage.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] [Symbol: ModuleId (SCRIPT_MODULE_ID)] Can an unprivileged attacker construct a ModuleId equal to the well-known SCRIPT_MODULE_ID (address MAX_ADDRESS, name \
