@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: api/src/accept_type.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_af9c652f-c053-4b23-b7b0-35a76feeff7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/accounts.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_14d1ab32-670e-46b3-af01-447abbe20fc2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/basic.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e345c7e9-b40e-43ad-94e2-d732cc6e4aa3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/bcs_payload.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b06cecb6-9f15-419b-8a23-6e25ac7c27f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/blocks.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ad0e25b3-04ab-4ae8-a70e-1071cdf4c25f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/check_size.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_961145b2-a419-44ab-9016-798dd9d76c06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/context.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_cee35998-a85b-43b4-b8a6-de575eb45816?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/error_converter.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_0c735f31-aad3-4949-b295-c03aee097321?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/events.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_503bf04a-0622-45d4-b0b3-a71956930c03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/headers_sanity_check.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2fc4f3d0-17c5-436c-938e-b007ed57c635?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/index.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_1458ee15-fa89-47c0-b822-25135a097233?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/page.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_5e4e4bc0-a4f2-4916-9ae1-bff8463aec1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/response.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_056a228b-6797-4a07-8d32-8569e8f2e49c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/runtime.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_6a9b6659-7f5d-49e1-8f7a-2b3477aa4df4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/state.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_d9ce1064-4f5d-46c8-a9c4-c7759ea0cc86?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/transactions.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_9c7ae590-8ea1-4354-9864-72969e594bbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/src/view_function.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_dd787c4b-11ff-4e22-b0c1-5adb8b3f4499?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/account.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_31e34322-af2d-47e7-828f-2a9c8de55f8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/address.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_355b072f-c6a5-4221-b1b9-9c496723cc26?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/block.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8411c187-624b-4474-ae52-1b4bdbb32597?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/bytecode.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_74549785-a6b5-4cfb-b53f-ed026dba2676?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/convert.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ae30e830-8741-4131-8282-ab97fc747653?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/error.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_55fb0e74-a5a8-4ec2-ad6e-5b668ccdb9fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/hash.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_060b812c-941a-4816-b6df-49a0746c67c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/headers.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8a211c8a-a7e3-4bd0-8ebe-540efbf5e13c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/index.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_10567b1a-78ca-4c76-8a68-aa5d380923b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/ledger_info.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2c931e45-43e9-4350-ab1a-1faa5e111836?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/move_types.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_c37350fd-f429-451f-bec7-0988b049ab7f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/state.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_bc3cd82d-975b-4e8e-8b47-f6aeb59c7b2b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/types/src/table.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_094757bf-48ef-48c0-bd51-afa0e09e0344?mode=deep",
+    "questions_generated": false
+  }
+]
