@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: types/src/decryption.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_9dcb7b09-f7ed-4094-b543-adef90f7d9ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/delayed_fields.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_f193d5de-6e49-4d6a-8e46-f0dae7f248db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/dkg/chunky_dkg.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_96d43663-0030-454a-b039-a558f500b11d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/dkg/randomness_dkg.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_c951768f-45b5-4d23-ac31-ed9a1f8eb55d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/epoch_change.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2e3ca74c-b070-46e0-96bf-e5953e5bac1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/epoch_state.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_93268e21-3b1e-4aa2-aa1e-65bd38bcbc1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/error.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_d52fff88-e13f-4642-8709-ff51575a16f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/event.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_db9500cb-647e-4753-ad27-6b0ed1b70030?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/executable.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_f09b4663-986a-40e0-a786-a2f4edf1625d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/fee_statement.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e56e528f-2cef-418e-b6f2-6e8d301eedfe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/function_info.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b0dda561-bc7c-4b04-b88d-c01fe70ec3c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/governance.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_d1419f86-28bd-4dc0-8485-8c887b8e1547?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/lazy_bls.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_6cbf47bf-66b0-4844-bcc4-fb5e6a3bd6d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/ledger_info.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e04f3489-6c27-47c1-bd69-438a78aac859?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/mempool_status.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_1d59fa46-d1ed-496a-b932-7c1e9df8b5c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_any.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8693240d-e0ce-434a-a740-0d7bc1febf69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_fixed_point.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_7123a11e-e415-45e1-8ed6-b79fc007c708?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_utils/as_move_value.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_24b97512-84c6-4b2e-90c8-e72de101337e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_utils/move_event_v1.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_bd4d5351-6e46-43d9-93b9-30b6d5b5fefb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_utils/move_event_v2.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ded09173-822a-470b-8ff1-45b6a6bdf7d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/object_address.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_60ecf155-04c8-44d9-a6bc-960860725fa9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/approved_execution_hashes.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2db14caf-b9d3-4f0d-8581-795db52d7fed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/aptos_features.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_74669277-5495-407c-a45e-8f63db29a76e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/aptos_version.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_fcc5c384-cc2f-476b-8b47-936947d08668?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/chain_id.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b4f9e5fc-ae92-4bfc-b51a-bae952c28ddc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/chunky_dkg_config.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_a9601462-6c02-441e-8b90-2318a383c172?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/commit_history.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_4912a644-ce4b-43e0-b41d-0cdecf380524?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/consensus_config.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_4e580e08-5bcc-4cfb-a575-3da8fad3736b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/epoch_timeout_config.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_fc05bb9d-95e2-4277-8ac4-f71391f55043?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/execution_config.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ef5cd6d0-9c6b-4da6-b639-511143b6b22e?mode=deep",
+    "questions_generated": false
+  }
+]
