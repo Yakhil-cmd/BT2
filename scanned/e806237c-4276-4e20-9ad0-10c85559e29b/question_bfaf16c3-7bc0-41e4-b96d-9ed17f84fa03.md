@@ -1,1 +1,0 @@
-[File: 'File Name: crates/aptos-crypto/src/arkworks/weighted_sum.rs -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'] [Symbol: Affine::weighted_sum error path (.expect(\
