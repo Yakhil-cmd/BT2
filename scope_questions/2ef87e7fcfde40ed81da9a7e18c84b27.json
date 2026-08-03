@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/staking/mod.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b469942f-a076-4436-88d6-d688b5e3b612?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/staking/nom_pools.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6add780f-69b8-4bda-b30f-8d542113b04a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/governance/mod.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9a27e877-a6b4-4fb9-a8ab-e388882ca353?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/governance/origins.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7c0c81f-05fe-4f6a-ab17-df1362fe7dbd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/governance/tracks.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fd9c2e7c-911c-42b4-8639-7f53ddc288c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/primitives/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bfe62941-589a-4f89-8a36-1df6b86aa366?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61094922-da8b-4cd5-b978-95ce43546234?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/xcm_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe54e96d-b528-4355-9f20-10323d9aae47?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_common_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a62beb1-f86f-4fe8-bcd0-de5a10e5c0bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_to_ethereum_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2f213e33-c182-490d-acf2-be0565427f7b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_to_kusama_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6f96438a-708b-401d-afcb-39210b722f06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/primitives/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_245ac978-1bd7-47f1-aa62-7d71a88a712a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7bfafe3f-37aa-4db6-a86d-cbf24634b670?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/src/xcm_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f9ca91a8-4753-4e5c-9192-aec09af42187?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/src/bridge_to_polkadot_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d2ec04bb-e0c8-4dda-ac58-b3e3a2174363?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/primitives/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3add3f39-c54e-4311-a3e8-16989b33964a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-polkadot/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ffc7a599-1ec7-4c65-89f6-df6fed357d16?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-polkadot/src/coretime.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dfe36e3e-4e44-4756-927e-0373534ad9d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-polkadot/src/xcm_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e237cc4c-bdaf-43a6-b152-b961f4ae798f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-kusama/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c70e0af3-277e-4f87-bd2b-c963f22b4bd7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-kusama/src/coretime.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ab5e501-707a-46c8-ac4c-456c27d79f91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-kusama/src/xcm_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98adbbf7-42e4-48e0-8912-36f1fe3bf7df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eea3f404-e526-43d1-8d25-dc31da2a60b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/people.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ecfc4b1-3252-4ebe-870a-7396f6145ac1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/assets.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_797a5de3-db86-4c4a-b2be-54c4761b3770?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/xcm_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0cc32591-80cc-4cac-a817-af88e2948aeb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-kusama/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0bf58249-947b-45a0-9094-88b9be41a775?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-kusama/src/people.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e4ba0856-88b2-4c00-a124-3d15e2f4a2e4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-kusama/src/xcm_config.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2be0e8f7-3ef8-46ab-8fd9-8d858f3c20aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/lib.rs -> Scope: Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b90981c4-d673-4efc-91de-174b24ea7824?mode=deep",
+    "questions_generated": false
+  }
+]
