@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/transaction/encrypted_payload.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Does `try_into_decrypted`'s panic-on-wrong-state guard (`panic!(\

@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/natives/src/cryptography/multi_ed25519.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Can an unprivileged attacker exploit the `#[cfg(feature = \

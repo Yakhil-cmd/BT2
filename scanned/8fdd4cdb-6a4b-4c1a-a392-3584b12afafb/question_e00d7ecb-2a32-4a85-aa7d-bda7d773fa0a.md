@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/aptos-vm-environment/src/natives.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can the vector-bytecode-instruction filter inside `aptos_natives_with_builder` (which drops entries where `name == \
