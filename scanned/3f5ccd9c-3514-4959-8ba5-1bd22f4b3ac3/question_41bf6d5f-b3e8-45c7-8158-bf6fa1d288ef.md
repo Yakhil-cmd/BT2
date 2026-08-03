@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/aptos-vm-environment/src/natives.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Does `aptos_natives_with_builder` registering `native_position` natives under `EXPERIMENTAL_CODE_ADDRESS` (0x7) via `make_table_from_iter` and module name `\
