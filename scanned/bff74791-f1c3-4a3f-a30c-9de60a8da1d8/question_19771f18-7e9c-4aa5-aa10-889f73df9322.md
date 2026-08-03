@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/resources/any.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can an unprivileged caller submit an `AnyResource` whose `type_name` field is set to the literal string `\

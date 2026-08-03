@@ -1,0 +1,1 @@
+[File: 'File Name: crates/aptos-crypto/src/weighted_config.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Can the `expect(\

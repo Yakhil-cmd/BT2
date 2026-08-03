@@ -1,0 +1,1 @@
+[File: 'File Name: third_party/move/move-core/types/src/value.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Can an unprivileged attacker exploit the `AnySignature::verify` catch-all `_ => bail!(\
