@@ -1,0 +1,1 @@
+[File: 'File Name: api/types/src/convert.rs -> Scope: High.'] Can an unprivileged attacker submit an `EncryptedTransactionPayload` variant other than `Encrypted` (e.g., a client-forged `Decrypted` or `FailedDecryption` JSON payload) to `try_into_aptos_core_transaction_payload` (lines ~1019-1046), bypassing the `bail!(\

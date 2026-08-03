@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/framework/natives/src/type_info.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can an unprivileged caller pass a `StructTag` whose `type_args` list is large enough that the per-argument `write!(name, \

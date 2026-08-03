@@ -1,0 +1,1 @@
+[File: 'delegation_pool.move' -> Scope: Critical.] Can set_beneficiary_for_operator be invoked by an unprivileged signer who is not the actual stake pool operator, corrupting the operator-to-beneficiary approval set binding? Proof idea: unit test calling set_beneficiary_for_operator from a non-operator signer and assert ENOT_OPERATOR aborts before any state change.

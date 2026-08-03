@@ -1,0 +1,1 @@
+[File: 'File Name: execution/executor/src/chunk_executor/chunk_commit_queue.rs -> Scope: High.'] Can an unprivileged state-sync peer supply a transaction list where `get_first_transaction_version()` is `None`, causing `enqueue_chunk_by_execution`'s `ok_or_else(|| anyhow!(

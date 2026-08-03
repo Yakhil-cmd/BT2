@@ -1,0 +1,1 @@
+[File: resolve to consistent decode results, or one path performs BCS-strict validation the other doesn't miss so an attacker cannot get one component to admit a transaction the other would reject? Proof idea: differential test decoding identical raw AnyResource bytes via API path (api/src/error_converter.rs) and VM/type path, asserting identical accept/reject outcomes.
