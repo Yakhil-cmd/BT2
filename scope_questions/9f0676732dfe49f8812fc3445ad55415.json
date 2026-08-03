@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/object.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_5d6ba12b-7079-4d37-bd96-9282ede35c9c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/object_code_deployment.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_045f746f-36ef-42bd-94eb-abcd3eec6262?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/primary_fungible_store.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8ba8e29e-7d7c-4326-be20-c60ae61c728c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/randomness.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_15fe89d2-db2f-4b58-930a-4cdf575e5872?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/reconfiguration.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ca6d954e-b8ad-4a40-aa12-0d52e0c29474?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/reconfiguration_state.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e8db7e64-2556-438c-bb7d-49276e1cd8fa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/reconfiguration_with_dkg.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_41a61909-c113-41fe-9a8b-7d8747efae1e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/resource_account.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_130fb0ae-f3a2-4b17-a33e-9fbef65994ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/stake.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_0234b9e4-f771-4b9b-b6e9-029cd1955dce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/staking_contract.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e53a4de2-7835-4fb1-8aed-22395c6aa4b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/staking_proxy.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_f583600b-31e8-46aa-a28f-baad59fd2e87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/state_storage.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8400f6bf-8e7c-45d6-95f8-c0f76dfb2bb4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/storage_gas.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_08487ed6-3d1a-495d-84ed-8c7f7cbee60a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/system_addresses.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_c03c1986-6d73-40ed-8528-d746f07e7630?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/timestamp.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_12cacc9e-24e7-4b35-81df-85f4e17499b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/transaction_context.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_5388af07-650e-47d2-bd94-bbfc9d39fff9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/transaction_fee.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_4dedae56-1cf3-44b0-85a1-81a417244d2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/transaction_limits.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_0547d01b-ae9c-4938-8186-b9b797952ef7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/transaction_validation.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e7201946-f3a9-435b-b7e7-33cc3a536c11?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/util.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b3567841-d36b-4838-8403-1f091305817a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/validator_consensus_info.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_f0b96ab6-28e0-4273-ae36-cb56569c9876?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/vesting.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_460ef881-a32c-49ee-af88-d40042bb1f00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-framework/sources/voting.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_656d224e-275f-4fb1-805e-59b50737cabc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/any.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_f0671526-eb47-4861-8a35-15c2a8eba3df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/bcs_stream.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_526129d5-d41b-4647-9b02-267ff6536ea6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/capability.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_edc2ff28-05f2-4fea-83e2-95a6c3c04f2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/comparator.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_6e3315a7-1819-4bb0-8dac-5b1ddb25df41?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/copyable_any.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_84fa6a0f-30bd-400a-9616-c84faaae2b10?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/cryptography/bls12381.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_31aee3cc-b9e6-416d-b3f2-6650a42d8e1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: aptos-move/framework/aptos-stdlib/sources/cryptography/bls12381_algebra.move -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_0f17abdc-4eb6-48b1-81d4-b78efb5c9594?mode=deep",
+    "questions_generated": false
+  }
+]
