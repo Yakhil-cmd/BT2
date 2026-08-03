@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/staking/mod.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d93c02b2-6179-41a1-a2b5-55cabaffd541?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/staking/nom_pools.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad4ff1fd-ca60-4b79-b22f-28c38b55aed0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/governance/mod.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc70d52a-65a3-43b8-8cdf-d5145f4ac741?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/governance/origins.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1f4c3366-e70e-4377-b3c2-17824ad9709d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/governance/tracks.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0d6afc6-6a6c-4b6b-a8ab-67a474ca12bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/primitives/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70376997-7440-48bb-8a3d-3b4efac18ece?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e70eb2e3-7dec-4ce0-b48b-2f6e61be26d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/xcm_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f124504-aab6-4215-b966-af657a9cd2a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_common_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e84603c9-da09-40a0-9480-64b3ae160ec8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_to_ethereum_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7e901d1f-2218-405f-b338-02e985be0215?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_to_kusama_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98d51784-b031-49ef-9cb1-6052860280ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-polkadot/primitives/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3a1aade-6b0b-4ee0-b4f2-8116978d5bf5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_57343f44-f258-40c7-8f64-a0a89682cad6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/src/xcm_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4bddd6df-49bb-46bb-a27a-75a86bc07af3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/src/bridge_to_polkadot_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e0580160-50c7-41fa-8ef1-28bdbcf52a75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bridge-hubs/bridge-hub-kusama/primitives/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_59dde1f4-260d-4e53-ad37-ee2ac2224a90?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-polkadot/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_344d6a0a-2bb1-4c00-8281-bdb261d8ff42?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-polkadot/src/coretime.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_30ad8507-cdd8-423a-b9ee-abbfae5216bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-polkadot/src/xcm_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fccd9d06-bf10-4b26-bd3f-72074bc8bef4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-kusama/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b25025eb-4196-4b83-9302-ec33c8a58768?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-kusama/src/coretime.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0e131956-d4d9-4856-aa44-453a758b4fd9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/coretime/coretime-kusama/src/xcm_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ae1c1801-a6d2-43dc-9636-8320ad5bf718?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_707e07d2-f826-404d-a59c-99bf6dc18c6a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/people.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_42fa2cc7-f381-406e-b4d5-8ce454297084?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/assets.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8ae99414-1bac-4219-a3db-37a00a3c462b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-polkadot/src/xcm_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_42206e30-7e0d-45d5-b160-b661062f77a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-kusama/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_162563b0-c4ea-4cb6-9c85-83427b9c6b15?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-kusama/src/people.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b9f1ced7-1782-4863-8802-111acdc4f5db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/people/people-kusama/src/xcm_config.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e72f1ca1-3586-4bc5-bb87-88861c4de8f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/lib.rs -> Scope: Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_862eecfb-c41b-43bd-8185-5f8438d92434?mode=deep",
+    "questions_generated": false
+  }
+]
