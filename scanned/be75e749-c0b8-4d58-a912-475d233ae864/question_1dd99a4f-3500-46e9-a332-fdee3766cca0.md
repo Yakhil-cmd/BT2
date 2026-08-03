@@ -1,1 +1,0 @@
-[File: sigma_protocol_key_rotation.move -> Scope: Critical.] Can an unprivileged submitter reuse a `Proof` originally generated for the withdraw/transfer sigma protocol's domain separator (different `PROTOCOL_ID`, e.g. from `sigma_protocol_withdraw.move`) against a `KeyRotation` statement, corrupting the domain-separation invariant enforced by `PROTOCOL_ID = b\
