@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-binary-format/src/check_complexity.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can the `cfg!(feature = \
