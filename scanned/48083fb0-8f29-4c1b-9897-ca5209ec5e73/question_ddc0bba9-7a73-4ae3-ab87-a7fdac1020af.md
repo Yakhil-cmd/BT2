@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-gas-schedule/src/gas_schedule/table.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can an unprivileged sender abuse the `#[cfg(feature = \
