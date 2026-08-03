@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/xcm_config.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_894a4bcc-0462-4826-95c4-457b5de59dcc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/impls.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e0823771-b5f1-4f39-82b7-a5e82bdd3116?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/parameters.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4ff8fe23-b938-4674-992a-52c977c73061?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/mod.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8244310e-9e21-4c92-adcc-b6d28f319772?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/origins.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ac514d0e-82ae-4f43-ae8a-b14db0ac2305?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/tracks.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b48fa9c-2e8b-476e-ad9b-5a229c8dd989?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/mod.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_613bf52b-4098-4cf3-b064-aae96304f827?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/origins.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc06e35c-b5ad-48ac-b4ed-1b6989db12ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/tracks.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_86b9796d-0f65-42d2-b321-671eb54518bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/secretary/mod.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_03d31897-9bc1-4719-afc3-c484993243ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/lib.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_90f531a2-d0ba-4af6-be5c-4a83fbf94c02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/apis.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bbb9b844-399a-4627-b0cb-637f5057f49e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/xcm_config.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f1dc0a2f-d44a-40d9-8038-9dbbc6df3293?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/lib.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_89f1405c-e71c-4533-8043-7ddec1388b9e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/xcm_config.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b054ff2a-1b5f-4ff8-8676-f6c77cc77396?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/impls.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_babd63d5-5ae0-434f-a5f2-f5e23d466703?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/treasuries_xcm_payout.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_26d62bb1-6bc5-4c1d-88df-483d9bf63fff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/lib.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bbb78e27-ee66-412a-8e0e-d15d301d7bd0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/randomness.rs -> Scope: High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_948cc2fb-d058-475b-8d28-ec91b4be8f52?mode=deep",
+    "questions_generated": false
+  }
+]
