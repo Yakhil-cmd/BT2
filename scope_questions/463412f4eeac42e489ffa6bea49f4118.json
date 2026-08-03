@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: pallets/remote-proxy/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2807fd1c-aaab-40e3-a1ed-acdede588caa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pallets/rc-migrator/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_155d4c58-b916-4501-ac77-c6fa2f6ad345?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pallets/ah-ops/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_568123c0-84cf-4847-b411-2322d0bb1a65?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/common/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85cc8711-7b55-4a85-a7fa-9638eef01659?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4d60a60e-796d-4c79-9d66-4255b75bebbf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/xcm_config.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63e0f432-422c-4175-b90b-661898d137e2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/impls.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d275665-53a1-4112-aa0d-5e0dc5d7d5c6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/governance/mod.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_902be756-a03a-456e-aca1-3fbe04b848dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/governance/origins.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc8b014f-fd03-444e-b5ed-ef316cd187bc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/governance/tracks.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_55b1c55f-8c17-401a-8925-8cbfe1af13cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8318ce5d-9259-47ae-b772-cb2a65279355?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/xcm_config.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_71018744-7f79-4e67-b8bc-34c254b48861?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/mod.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_428c7e49-b0da-4c85-b32c-d54d6bb622db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/origins.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70083292-9189-4dd5-b853-0abeb12b31eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/tracks.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c020bf94-aee8-4736-9c70-6510b7706cb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/fellowship.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a492da7f-f355-4410-84b2-b9780b87fb0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_28e7d7e2-c2eb-4b02-957b-534dc5ae877b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/xcm_config.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_375e31f6-9844-46f2-824d-e338514ef6b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c097ab84-c9f4-45e0-9239-1e0f17f86e4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/treasury.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b260c98-c73a-47a4-9208-454f023df982?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/staking/mod.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_454e0939-15ed-4e39-b298-af82c5c40958?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/staking/nom_pools.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d420dc75-8719-468d-aa99-85a29b772707?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/staking/stepped_curve.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_838611fa-238b-46a9-81cb-0911e8c07fb3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/governance/mod.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1882d5cd-bf0b-44fb-a41c-d4a89e537c95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/governance/origins.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce95ff0f-39ec-425f-bcba-48384798e118?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/governance/tracks.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_89006361-dab9-455a-8637-0bf7a981e17e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/primitives/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f53a4573-5f08-4eea-8308-ad542b08ef12?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/lib.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_89a0bf72-e65f-4a93-9e1b-1bf3dd497d04?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/xcm_config.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_883070d4-ca1a-4af6-b68b-8a2ac8b4ed0b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/treasury.rs -> Scope: High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_21183620-7856-4388-abe3-be462783e03f?mode=deep",
+    "questions_generated": false
+  }
+]
