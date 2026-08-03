@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/transaction/analyzed_transaction.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can an unprivileged caller submit a payload where `func.module().name().as_str()` matches `\
