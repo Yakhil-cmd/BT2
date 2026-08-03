@@ -1,1 +1,0 @@
-[File: 'File Name: crates/aptos-crypto/src/slh_dsa_sha2_128s/slh_dsa_sigs.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can an unprivileged attacker exploit the `ValidCryptoMaterial::to_bytes` -> `AIP_80_PREFIX` (`\
