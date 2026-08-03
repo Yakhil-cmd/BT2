@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/lazy_bls.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can an unprivileged peer send a `SignatureWithStatus` whose `verification_status` field is excluded from `PartialEq`/`Eq` (`#[derivative(PartialEq = \
