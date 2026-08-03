@@ -1,1 +1,0 @@
-[File: 'File Name: ... code_unit_verifier.rs -> Scope: Critical ...'] Can an unprivileged sender submit a CompiledScript with zero code (a degenerate main function) so `verify_script_impl`'s `meter.enter_scope(\

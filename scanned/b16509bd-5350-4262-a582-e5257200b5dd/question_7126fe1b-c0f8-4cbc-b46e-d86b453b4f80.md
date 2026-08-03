@@ -1,1 +1,0 @@
-[File: 'File Name: ... code_unit_verifier.rs -> Scope: Critical ...'] Can an unprivileged sender submit a module where the per-function `meter.enter_scope` name passed to `Meter::enter_scope` (module.identifier_at(...).as_str()) is attacker-controlled and crafted to collide with an internal scope name used elsewhere in the same `BoundMeter` (e.g. the literal `\
