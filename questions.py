@@ -1,29 +1,31 @@
 import json
 import os
 
-MAX_REPO = 40
-SOURCE_REPO = 'paritytech/polkadot-sdk'
-REPO_NAME = 'polkadot-sdk'
-run_number = os.environ.get("GITHUB_RUN_NUMBER") or os.environ.get(
-    "CI_PIPELINE_IID", "0"
-)
+from decouple import config
+
+# todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
+MAX_REPO = 20
+# todo: the GitLab namespace/project path, for example group/project
+SOURCE_REPO = "polkadot-fellows/runtimes"
+# todo: the name of the repository
+REPO_NAME = "runtimes"
+
+run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
 
 def get_cyclic_index(run_number, max_index=100):
-    """Convert run number to a cyclic index between 1 and max_index."""
+    """Convert run number to a cyclic index between 1 and max_index"""
     return (int(run_number) - 1) % max_index + 1
 
 
 def load_repository_urls():
     """Load repository URLs from repositories.json."""
-    repo_file = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)), "repositories.json"
-    )
+    repo_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "repositories.json")
     if not os.path.exists(repo_file):
         return []
 
     try:
-        with open(repo_file, "r", encoding="utf-8") as f:
+        with open(repo_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
     except (json.JSONDecodeError, OSError):
         return []
@@ -45,532 +47,295 @@ else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
 scope_files = [
-    'substrate/frame/assets/src/extra_mutator.rs',
-    'substrate/frame/assets/src/functions.rs',
-    'substrate/frame/assets/src/impl_fungibles.rs',
-    'substrate/frame/assets/src/impl_stored_map.rs',
-    'substrate/frame/assets/src/lib.rs',
-    'substrate/frame/assets/src/types.rs',
-    'substrate/frame/asset-conversion/src/lib.rs',
-    'substrate/frame/asset-conversion/src/liquidity.rs',
-    'substrate/frame/asset-conversion/src/swap.rs',
-    'substrate/frame/asset-conversion/src/types.rs',
-    'substrate/frame/asset-rewards/src/lib.rs',
-    'substrate/frame/atomic-swap/src/lib.rs',
-    'substrate/frame/balances/src/impl_currency.rs',
-    'substrate/frame/balances/src/impl_fungible.rs',
-    'substrate/frame/balances/src/lib.rs',
-    'substrate/frame/balances/src/types.rs',
-    'substrate/frame/bounties/src/lib.rs',
-    'substrate/frame/contracts/src/address.rs',
-    'substrate/frame/contracts/src/chain_extension.rs',
-    'substrate/frame/contracts/src/debug.rs',
-    'substrate/frame/contracts/src/exec.rs',
-    'substrate/frame/contracts/src/gas.rs',
-    'substrate/frame/contracts/src/lib.rs',
-    'substrate/frame/contracts/src/primitives.rs',
-    'substrate/frame/contracts/src/schedule.rs',
-    'substrate/frame/contracts/src/storage/meter.rs',
-    'substrate/frame/contracts/src/storage.rs',
-    'substrate/frame/contracts/src/transient_storage.rs',
-    'substrate/frame/contracts/src/wasm/mod.rs',
-    'substrate/frame/contracts/src/wasm/prepare.rs',
-    'substrate/frame/contracts/src/wasm/runtime.rs',
-    'substrate/frame/conviction-voting/src/conviction.rs',
-    'substrate/frame/conviction-voting/src/lib.rs',
-    'substrate/frame/conviction-voting/src/traits.rs',
-    'substrate/frame/conviction-voting/src/types.rs',
-    'substrate/frame/conviction-voting/src/vote.rs',
-    'substrate/frame/democracy/src/conviction.rs',
-    'substrate/frame/democracy/src/lib.rs',
-    'substrate/frame/democracy/src/types.rs',
-    'substrate/frame/democracy/src/vote.rs',
-    'substrate/frame/democracy/src/vote_threshold.rs',
-    'substrate/frame/fast-unstake/src/lib.rs',
-    'substrate/frame/fast-unstake/src/types.rs',
-    'substrate/frame/identity/src/legacy.rs',
-    'substrate/frame/identity/src/lib.rs',
-    'substrate/frame/identity/src/types.rs',
-    'substrate/frame/indices/src/lib.rs',
-    'substrate/frame/lottery/src/lib.rs',
-    'substrate/frame/message-queue/src/lib.rs',
-    'substrate/frame/meta-tx/src/extension.rs',
-    'substrate/frame/meta-tx/src/lib.rs',
-    'substrate/frame/multisig/src/lib.rs',
-    'substrate/frame/nft-fractionalization/src/lib.rs',
-    'substrate/frame/nft-fractionalization/src/types.rs',
-    'substrate/frame/nfts/src/common_functions.rs',
-    'substrate/frame/nfts/src/features/approvals.rs',
-    'substrate/frame/nfts/src/features/atomic_swap.rs',
-    'substrate/frame/nfts/src/features/attributes.rs',
-    'substrate/frame/nfts/src/features/buy_sell.rs',
-    'substrate/frame/nfts/src/features/create_delete_collection.rs',
-    'substrate/frame/nfts/src/features/create_delete_item.rs',
-    'substrate/frame/nfts/src/features/lock.rs',
-    'substrate/frame/nfts/src/features/metadata.rs',
-    'substrate/frame/nfts/src/features/mod.rs',
-    'substrate/frame/nfts/src/features/roles.rs',
-    'substrate/frame/nfts/src/features/settings.rs',
-    'substrate/frame/nfts/src/features/transfer.rs',
-    'substrate/frame/nfts/src/impl_nonfungibles.rs',
-    'substrate/frame/nfts/src/lib.rs',
-    'substrate/frame/nfts/src/macros.rs',
-    'substrate/frame/nfts/src/types.rs',
-    'substrate/frame/nomination-pools/src/adapter.rs',
-    'substrate/frame/nomination-pools/src/lib.rs',
-    'substrate/frame/preimage/src/lib.rs',
-    'substrate/frame/proxy/src/lib.rs',
-    'substrate/frame/psm/src/lib.rs',
-    'substrate/frame/recovery/src/lib.rs',
-    'substrate/frame/recovery/src/types.rs',
-    'substrate/frame/referenda/src/branch.rs',
-    'substrate/frame/referenda/src/lib.rs',
-    'substrate/frame/referenda/src/types.rs',
-    'substrate/frame/revive/src/access_list.rs',
-    'substrate/frame/revive/src/address.rs',
-    'substrate/frame/revive/src/call_builder.rs',
-    'substrate/frame/revive/src/debug.rs',
-    'substrate/frame/revive/src/deposit_payment.rs',
-    'substrate/frame/revive/src/evm/api/account.rs',
-    'substrate/frame/revive/src/evm/api/block.rs',
-    'substrate/frame/revive/src/evm/api/debug_rpc_types.rs',
-    'substrate/frame/revive/src/evm/api/rlp_codec.rs',
-    'substrate/frame/revive/src/evm/api/signature.rs',
-    'substrate/frame/revive/src/evm/api/state_overrides.rs',
-    'substrate/frame/revive/src/evm/api/transaction.rs',
-    'substrate/frame/revive/src/evm/api.rs',
-    'substrate/frame/revive/src/evm/block_hash/block_builder.rs',
-    'substrate/frame/revive/src/evm/block_hash/hash_builder.rs',
-    'substrate/frame/revive/src/evm/block_hash/receipt.rs',
-    'substrate/frame/revive/src/evm/block_hash.rs',
-    'substrate/frame/revive/src/evm/block_storage.rs',
-    'substrate/frame/revive/src/evm/call.rs',
-    'substrate/frame/revive/src/evm/fees.rs',
-    'substrate/frame/revive/src/evm/runtime.rs',
-    'substrate/frame/revive/src/evm/tracing/call_tracing.rs',
-    'substrate/frame/revive/src/evm/tracing/execution_tracing.rs',
-    'substrate/frame/revive/src/evm/tracing/prestate_tracing.rs',
-    'substrate/frame/revive/src/evm/tracing.rs',
-    'substrate/frame/revive/src/evm/transfer_with_dust.rs',
-    'substrate/frame/revive/src/evm/tx_extension.rs',
-    'substrate/frame/revive/src/evm.rs',
-    'substrate/frame/revive/src/exec.rs',
-    'substrate/frame/revive/src/impl_fungibles.rs',
-    'substrate/frame/revive/src/lib.rs',
-    'substrate/frame/revive/src/limits.rs',
-    'substrate/frame/revive/src/metering/gas.rs',
-    'substrate/frame/revive/src/metering/math.rs',
-    'substrate/frame/revive/src/metering/mod.rs',
-    'substrate/frame/revive/src/metering/storage.rs',
-    'substrate/frame/revive/src/metering/weight.rs',
-    'substrate/frame/revive/src/precompiles/builtin/blake2f.rs',
-    'substrate/frame/revive/src/precompiles/builtin/bn128.rs',
-    'substrate/frame/revive/src/precompiles/builtin/ecrecover.rs',
-    'substrate/frame/revive/src/precompiles/builtin/identity.rs',
-    'substrate/frame/revive/src/precompiles/builtin/modexp.rs',
-    'substrate/frame/revive/src/precompiles/builtin/p256_verify.rs',
-    'substrate/frame/revive/src/precompiles/builtin/point_eval.rs',
-    'substrate/frame/revive/src/precompiles/builtin/ripemd160.rs',
-    'substrate/frame/revive/src/precompiles/builtin/sha256.rs',
-    'substrate/frame/revive/src/precompiles/builtin/storage.rs',
-    'substrate/frame/revive/src/precompiles/builtin/system.rs',
-    'substrate/frame/revive/src/precompiles/builtin.rs',
-    'substrate/frame/revive/src/precompiles.rs',
-    'substrate/frame/revive/src/primitives.rs',
-    'substrate/frame/revive/src/runtime_api/account_id.rs',
-    'substrate/frame/revive/src/runtime_api/address.rs',
-    'substrate/frame/revive/src/runtime_api/balance.rs',
-    'substrate/frame/revive/src/runtime_api/block_author.rs',
-    'substrate/frame/revive/src/runtime_api/block_gas_limit.rs',
-    'substrate/frame/revive/src/runtime_api/block_hash.rs',
-    'substrate/frame/revive/src/runtime_api/call.rs',
-    'substrate/frame/revive/src/runtime_api/code.rs',
-    'substrate/frame/revive/src/runtime_api/eth_block.rs',
-    'substrate/frame/revive/src/runtime_api/eth_estimate_gas.rs',
-    'substrate/frame/revive/src/runtime_api/eth_pre_dispatch_weight.rs',
-    'substrate/frame/revive/src/runtime_api/eth_transact.rs',
-    'substrate/frame/revive/src/runtime_api/gas_price.rs',
-    'substrate/frame/revive/src/runtime_api/get_storage.rs',
-    'substrate/frame/revive/src/runtime_api/instantiate.rs',
-    'substrate/frame/revive/src/runtime_api/max_extrinsic_weight_in_gas.rs',
-    'substrate/frame/revive/src/runtime_api/mod.rs',
-    'substrate/frame/revive/src/runtime_api/new_balance_with_dust.rs',
-    'substrate/frame/revive/src/runtime_api/nonce.rs',
-    'substrate/frame/revive/src/runtime_api/receipt_data.rs',
-    'substrate/frame/revive/src/runtime_api/runtime_pallets_address.rs',
-    'substrate/frame/revive/src/runtime_api/trace_block.rs',
-    'substrate/frame/revive/src/runtime_api/trace_call.rs',
-    'substrate/frame/revive/src/runtime_api/trace_tx.rs',
-    'substrate/frame/revive/src/runtime_api/upload_code.rs',
-    'substrate/frame/revive/src/state_overrides.rs',
-    'substrate/frame/revive/src/storage.rs',
-    'substrate/frame/revive/src/tracing.rs',
-    'substrate/frame/revive/src/transient_storage.rs',
-    'substrate/frame/revive/src/vm/evm/ext_bytecode.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/arithmetic/i256.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/arithmetic/modular.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/arithmetic.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/bitwise/bits.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/bitwise.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/block_info.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/contract/call_helpers.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/contract.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/control.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/host.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/memory.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/mod.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/stack.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/system.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/tx_info.rs',
-    'substrate/frame/revive/src/vm/evm/instructions/utility.rs',
-    'substrate/frame/revive/src/vm/evm/interpreter.rs',
-    'substrate/frame/revive/src/vm/evm/memory.rs',
-    'substrate/frame/revive/src/vm/evm/stack.rs',
-    'substrate/frame/revive/src/vm/evm/util.rs',
-    'substrate/frame/revive/src/vm/evm.rs',
-    'substrate/frame/revive/src/vm/mod.rs',
-    'substrate/frame/revive/src/vm/pvm/env.rs',
-    'substrate/frame/revive/src/vm/pvm.rs',
-    'substrate/frame/revive/src/vm/runtime_costs.rs',
-    'substrate/frame/revive/src/weightinfo_extension.rs',
-    'substrate/frame/scarcity/src/extension.rs',
-    'substrate/frame/scarcity/src/lib.rs',
-    'substrate/frame/staking/src/asset.rs',
-    'substrate/frame/staking/src/election_size_tracker.rs',
-    'substrate/frame/staking/src/inflation.rs',
-    'substrate/frame/staking/src/ledger.rs',
-    'substrate/frame/staking/src/lib.rs',
-    'substrate/frame/staking/src/pallet/impls.rs',
-    'substrate/frame/staking/src/pallet/mod.rs',
-    'substrate/frame/staking/src/slashing.rs',
-    'substrate/frame/tips/src/lib.rs',
-    'substrate/frame/treasury/src/lib.rs',
-    'substrate/frame/uniques/src/asset_ops/collection.rs',
-    'substrate/frame/uniques/src/asset_ops/item.rs',
-    'substrate/frame/uniques/src/asset_ops/mod.rs',
-    'substrate/frame/uniques/src/functions.rs',
-    'substrate/frame/uniques/src/impl_nonfungibles.rs',
-    'substrate/frame/uniques/src/lib.rs',
-    'substrate/frame/uniques/src/types.rs',
-    'substrate/frame/utility/src/lib.rs',
-    'substrate/frame/vesting/src/lib.rs',
-    'substrate/frame/vesting/src/vesting_info.rs',
-    'bridges/modules/beefy/src/lib.rs',
-    'bridges/modules/beefy/src/utils.rs',
-    'bridges/modules/grandpa/src/call_ext.rs',
-    'bridges/modules/grandpa/src/lib.rs',
-    'bridges/modules/grandpa/src/storage_types.rs',
-    'bridges/modules/grandpa/src/weights_ext.rs',
-    'bridges/modules/messages/src/call_ext.rs',
-    'bridges/modules/messages/src/inbound_lane.rs',
-    'bridges/modules/messages/src/lanes_manager.rs',
-    'bridges/modules/messages/src/lib.rs',
-    'bridges/modules/messages/src/outbound_lane.rs',
-    'bridges/modules/messages/src/proofs.rs',
-    'bridges/modules/messages/src/weights_ext.rs',
-    'bridges/modules/parachains/src/call_ext.rs',
-    'bridges/modules/parachains/src/lib.rs',
-    'bridges/modules/parachains/src/proofs.rs',
-    'bridges/modules/parachains/src/weights_ext.rs',
-    'bridges/modules/relayers/src/extension/grandpa_adapter.rs',
-    'bridges/modules/relayers/src/extension/messages_adapter.rs',
-    'bridges/modules/relayers/src/extension/mod.rs',
-    'bridges/modules/relayers/src/extension/parachain_adapter.rs',
-    'bridges/modules/relayers/src/extension/priority.rs',
-    'bridges/modules/relayers/src/lib.rs',
-    'bridges/modules/relayers/src/payment_adapter.rs',
-    'bridges/modules/relayers/src/stake_adapter.rs',
-    'bridges/modules/relayers/src/weights_ext.rs',
-    'bridges/primitives/header-chain/src/call_info.rs',
-    'bridges/primitives/header-chain/src/justification/mod.rs',
-    'bridges/primitives/header-chain/src/justification/verification/equivocation.rs',
-    'bridges/primitives/header-chain/src/justification/verification/mod.rs',
-    'bridges/primitives/header-chain/src/justification/verification/optimizer.rs',
-    'bridges/primitives/header-chain/src/justification/verification/strict.rs',
-    'bridges/primitives/header-chain/src/lib.rs',
-    'bridges/primitives/header-chain/src/storage_keys.rs',
-    'bridges/primitives/messages/src/call_info.rs',
-    'bridges/primitives/messages/src/lane.rs',
-    'bridges/primitives/messages/src/lib.rs',
-    'bridges/primitives/messages/src/source_chain.rs',
-    'bridges/primitives/messages/src/storage_keys.rs',
-    'bridges/primitives/messages/src/target_chain.rs',
-    'bridges/primitives/parachains/src/call_info.rs',
-    'bridges/primitives/parachains/src/lib.rs',
-    'bridges/primitives/relayers/src/extension.rs',
-    'bridges/primitives/relayers/src/lib.rs',
-    'bridges/primitives/relayers/src/registration.rs',
-    'bridges/snowbridge/pallets/ethereum-client/src/config/altair.rs',
-    'bridges/snowbridge/pallets/ethereum-client/src/config/electra.rs',
-    'bridges/snowbridge/pallets/ethereum-client/src/config/mod.rs',
-    'bridges/snowbridge/pallets/ethereum-client/src/functions.rs',
-    'bridges/snowbridge/pallets/ethereum-client/src/impls.rs',
-    'bridges/snowbridge/pallets/ethereum-client/src/lib.rs',
-    'bridges/snowbridge/pallets/ethereum-client/src/types.rs',
-    'bridges/snowbridge/pallets/inbound-queue/src/envelope.rs',
-    'bridges/snowbridge/pallets/inbound-queue/src/lib.rs',
-    'bridges/snowbridge/pallets/inbound-queue-v2/src/lib.rs',
-    'bridges/snowbridge/pallets/outbound-queue/src/api.rs',
-    'bridges/snowbridge/pallets/outbound-queue/src/lib.rs',
-    'bridges/snowbridge/pallets/outbound-queue/src/process_message_impl.rs',
-    'bridges/snowbridge/pallets/outbound-queue/src/send_message_impl.rs',
-    'bridges/snowbridge/pallets/outbound-queue/src/types.rs',
-    'bridges/snowbridge/pallets/outbound-queue-v2/src/api.rs',
-    'bridges/snowbridge/pallets/outbound-queue-v2/src/lib.rs',
-    'bridges/snowbridge/pallets/outbound-queue-v2/src/process_message_impl.rs',
-    'bridges/snowbridge/pallets/outbound-queue-v2/src/send_message_impl.rs',
-    'bridges/snowbridge/pallets/outbound-queue-v2/src/types.rs',
-    'bridges/snowbridge/pallets/system/src/api.rs',
-    'bridges/snowbridge/pallets/system/src/lib.rs',
-    'bridges/snowbridge/pallets/system-v2/src/api.rs',
-    'bridges/snowbridge/pallets/system-v2/src/lib.rs',
-    'bridges/snowbridge/pallets/system-frontend/src/backend_weights.rs',
-    'bridges/snowbridge/pallets/system-frontend/src/lib.rs',
-    'bridges/snowbridge/primitives/beacon/src/bits.rs',
-    'bridges/snowbridge/primitives/beacon/src/bls.rs',
-    'bridges/snowbridge/primitives/beacon/src/config.rs',
-    'bridges/snowbridge/primitives/beacon/src/lib.rs',
-    'bridges/snowbridge/primitives/beacon/src/merkle_proof.rs',
-    'bridges/snowbridge/primitives/beacon/src/serde_utils.rs',
-    'bridges/snowbridge/primitives/beacon/src/ssz.rs',
-    'bridges/snowbridge/primitives/beacon/src/types.rs',
-    'bridges/snowbridge/primitives/beacon/src/updates.rs',
-    'bridges/snowbridge/primitives/core/src/digest_item.rs',
-    'bridges/snowbridge/primitives/core/src/lib.rs',
-    'bridges/snowbridge/primitives/core/src/location.rs',
-    'bridges/snowbridge/primitives/core/src/operating_mode.rs',
-    'bridges/snowbridge/primitives/core/src/pricing.rs',
-    'bridges/snowbridge/primitives/core/src/reward.rs',
-    'bridges/snowbridge/primitives/core/src/ringbuffer.rs',
-    'bridges/snowbridge/primitives/core/src/sparse_bitmap.rs',
-    'bridges/snowbridge/primitives/inbound-queue/src/lib.rs',
-    'bridges/snowbridge/primitives/inbound-queue/src/v1.rs',
-    'bridges/snowbridge/primitives/inbound-queue/src/v2/converter.rs',
-    'bridges/snowbridge/primitives/inbound-queue/src/v2/message.rs',
-    'bridges/snowbridge/primitives/inbound-queue/src/v2/mod.rs',
-    'bridges/snowbridge/primitives/inbound-queue/src/v2/processor.rs',
-    'bridges/snowbridge/primitives/inbound-queue/src/v2/traits.rs',
-    'bridges/snowbridge/primitives/merkle-tree/src/lib.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/lib.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v1/converter/mod.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v1/message.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v1/mod.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v2/converter/convert.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v2/converter/mod.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v2/delivery_receipt.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v2/exporter.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v2/message.rs',
-    'bridges/snowbridge/primitives/outbound-queue/src/v2/mod.rs',
-    'bridges/snowbridge/primitives/verification/src/lib.rs',
-    'bridges/snowbridge/primitives/verification/src/receipt.rs',
-    'bridges/snowbridge/runtime/runtime-common/src/lib.rs',
-    'bridges/snowbridge/runtime/runtime-common/src/v2/mod.rs',
-    'bridges/snowbridge/runtime/runtime-common/src/v2/register_token.rs',
+    # =================================================================================
+    # Custom pallets and shared runtime logic
+    # =================================================================================
+    "pallets/remote-proxy/src/lib.rs",
+    "pallets/rc-migrator/src/lib.rs",
+    "pallets/ah-ops/src/lib.rs",
+    "relay/common/src/lib.rs",
+
+    # =================================================================================
+    # Relay Chain runtimes
+    # =================================================================================
+    "relay/polkadot/src/lib.rs",
+    "relay/polkadot/src/xcm_config.rs",
+    "relay/polkadot/src/impls.rs",
+    "relay/polkadot/src/governance/mod.rs",
+    "relay/polkadot/src/governance/origins.rs",
+    "relay/polkadot/src/governance/tracks.rs",
+    "relay/kusama/src/lib.rs",
+    "relay/kusama/src/xcm_config.rs",
+    "relay/kusama/src/governance/mod.rs",
+    "relay/kusama/src/governance/origins.rs",
+    "relay/kusama/src/governance/tracks.rs",
+    "relay/kusama/src/governance/fellowship.rs",
+
+    # =================================================================================
+    # Asset Hub runtimes
+    # =================================================================================
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/lib.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/xcm_config.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/treasury.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/staking/mod.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/staking/nom_pools.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/staking/stepped_curve.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/governance/mod.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/governance/origins.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/src/governance/tracks.rs",
+    "system-parachains/asset-hubs/asset-hub-polkadot/primitives/src/lib.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/lib.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/xcm_config.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/treasury.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/staking/mod.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/staking/nom_pools.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/governance/mod.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/governance/origins.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/src/governance/tracks.rs",
+    "system-parachains/asset-hubs/asset-hub-kusama/primitives/src/lib.rs",
+
+    # =================================================================================
+    # Bridge Hub runtimes
+    # =================================================================================
+    "system-parachains/bridge-hubs/bridge-hub-polkadot/src/lib.rs",
+    "system-parachains/bridge-hubs/bridge-hub-polkadot/src/xcm_config.rs",
+    "system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_common_config.rs",
+    "system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_to_ethereum_config.rs",
+    "system-parachains/bridge-hubs/bridge-hub-polkadot/src/bridge_to_kusama_config.rs",
+    "system-parachains/bridge-hubs/bridge-hub-polkadot/primitives/src/lib.rs",
+    "system-parachains/bridge-hubs/bridge-hub-kusama/src/lib.rs",
+    "system-parachains/bridge-hubs/bridge-hub-kusama/src/xcm_config.rs",
+    "system-parachains/bridge-hubs/bridge-hub-kusama/src/bridge_to_polkadot_config.rs",
+    "system-parachains/bridge-hubs/bridge-hub-kusama/primitives/src/lib.rs",
+
+    # =================================================================================
+    # Other system parachains
+    # =================================================================================
+    "system-parachains/coretime/coretime-polkadot/src/lib.rs",
+    "system-parachains/coretime/coretime-polkadot/src/coretime.rs",
+    "system-parachains/coretime/coretime-polkadot/src/xcm_config.rs",
+    "system-parachains/coretime/coretime-kusama/src/lib.rs",
+    "system-parachains/coretime/coretime-kusama/src/coretime.rs",
+    "system-parachains/coretime/coretime-kusama/src/xcm_config.rs",
+    "system-parachains/people/people-polkadot/src/lib.rs",
+    "system-parachains/people/people-polkadot/src/people.rs",
+    "system-parachains/people/people-polkadot/src/assets.rs",
+    "system-parachains/people/people-polkadot/src/xcm_config.rs",
+    "system-parachains/people/people-kusama/src/lib.rs",
+    "system-parachains/people/people-kusama/src/people.rs",
+    "system-parachains/people/people-kusama/src/xcm_config.rs",
+    "system-parachains/collectives/collectives-polkadot/src/lib.rs",
+    "system-parachains/collectives/collectives-polkadot/src/xcm_config.rs",
+    "system-parachains/collectives/collectives-polkadot/src/impls.rs",
+    "system-parachains/collectives/collectives-polkadot/src/parameters.rs",
+    "system-parachains/collectives/collectives-polkadot/src/ambassador/mod.rs",
+    "system-parachains/collectives/collectives-polkadot/src/ambassador/origins.rs",
+    "system-parachains/collectives/collectives-polkadot/src/ambassador/tracks.rs",
+    "system-parachains/collectives/collectives-polkadot/src/fellowship/mod.rs",
+    "system-parachains/collectives/collectives-polkadot/src/fellowship/origins.rs",
+    "system-parachains/collectives/collectives-polkadot/src/fellowship/tracks.rs",
+    "system-parachains/collectives/collectives-polkadot/src/secretary/mod.rs",
+    "system-parachains/bulletin/bulletin-polkadot/src/lib.rs",
+    "system-parachains/bulletin/bulletin-polkadot/src/apis.rs",
+    "system-parachains/bulletin/bulletin-polkadot/src/xcm_config.rs",
+    "system-parachains/encointer/src/lib.rs",
+    "system-parachains/encointer/src/xcm_config.rs",
+    "system-parachains/encointer/src/impls.rs",
+    "system-parachains/encointer/src/treasuries_xcm_payout.rs",
+    "system-parachains/common/src/lib.rs",
+    "system-parachains/common/src/randomness.rs",
 ]
+
 
 target_scopes = [
-    'Critical. An unprivileged attacker can make Polkadot SDK or Snowbridge accept a forged, stale, conflicting, or mis-bound finality proof, parachain head, beacon update, message proof, delivery receipt, or state root and then execute or import invalid state.',
-    'Critical. An unprivileged attacker can reach unauthorized execution, origin widening, or call-filter bypass through a public extrinsic, wrapper, contract path, meta-transaction, or bridge message and cause stronger-than-user effects.',
-    'Critical. An unprivileged attacker can steal, mint, unlock, withdraw, claim, redirect, or duplicate native assets, fungible assets, NFTs, staking balances, pool funds, treasury payouts, bridge rewards, or contract-held value they do not own.',
-    'Critical. An unprivileged attacker can replay or double-settle a message, proof, receipt, payout, withdrawal, refund, claim, unlock, approval, or contract side effect so one logical action executes or pays out more than once.',
-    'High. An unprivileged attacker can permanently lock user funds, NFTs, staking balances, pool balances, bridge lanes, message queues, or contract state by breaking finalization, cleanup, custody, or one-time settlement accounting in a production flow.',
-    'High. An unprivileged attacker can use a public path to trigger underpriced proof verification, VM execution, queue maintenance, or storage-heavy iteration that meaningfully degrades block production, stalls bridge progress, or keeps the chain processing attacker work below true cost.',
+    "Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets",
+    "Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain",
+    "Critical. XCM router, barrier, origin-conversion, or filter bypass in `relay/*/src/{lib.rs,xcm_config.rs}`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs}`, or `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs}` that lets a normal user reach calls, exports, or asset paths they should not reach",
+    "Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze",
+    "Critical. Runtime logic error in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, `system-parachains/*/src/*.rs`, or `pallets/ah-ops/src/lib.rs` that lets an unprivileged user violate intended runtime behaviour, create unauthorized state changes, or escalate privileges",
+    "Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets",
+    "High. Crafted but valid user input causes network-wide halt, stuck queue, or permanent message blockage in `relay/*/src/lib.rs`, `system-parachains/bridge-hubs/*/src/lib.rs`, `system-parachains/bulletin/bulletin-polkadot/src/apis.rs`, or `pallets/remote-proxy/src/lib.rs`",
+    "High. Reachable fee, weight, dispatch, or queue-accounting asymmetry in `relay/*/src/lib.rs`, `system-parachains/*/src/lib.rs`, or `*/xcm_config.rs` lets a normal user get unauthorized execution, grief critical paths at low cost, or force persistent state inconsistency",
 ]
 
-HYPERBRIDGE_ALLOWED_IMPACT_SCOPE = """## Polkadot SDK Impact Gate
-Accept only live-scope impacts aligned to the current HackenProof programs for `paritytech/polkadot-sdk`
-and Snowbridge BridgeHub code: implementation bugs that can bring down or take control of a Substrate-based
-chain without direct machine access, runtime bugs that compromise intended behavior, forged or mis-bound
-proof or state acceptance, unauthorized execution or origin escalation, theft or unbacked mint or unlock,
-duplicate settlement or payout, permanent user-fund or bridge-state lock, or public underpriced work that
-degrades block production or stalls bridge processing.
-Discard: malicious peer, malicious node, malicious validator, malicious collator, compromised relayer or
-prover assumptions, privileged governance or admin abuse as the root cause, leaked keys, social or physical
-attacks, dependency-only issues, docs, tests, mocks, scripts, generated files, `.toml`, disabled configs,
-front-run-only ideas, and off-repo infrastructure issues."""
 
-HYPERBRIDGE_AUDIT_PIVOTS = """## Polkadot SDK Pivots
-- Finality, header, parachain, beacon, message, and delivery-receipt proofs must bind chain, route, lane,
-  authority set, nonce, payload, and replay domain exactly once.
-- Public wrappers such as `utility`, `proxy`, `multisig`, `meta-tx`, `contracts`, and `revive` must not
-  widen origin, bypass filters, or undercharge nested execution.
-- Balances, assets, NFTs, staking, pools, treasury spends, bridge rewards, and contract-held value must
-  conserve value and settle exactly once to the rightful beneficiary and amount.
-- Message queues, bridge markers, receipts, and payout state must only advance after decode, dispatch,
-  execution, and settlement succeed atomically."""
-
-
+scope_scan = [
+]
 def question_generator(target_file: str) -> str:
     """
-    Generate security questions for one Polkadot SDK target.
+    Generate exploit-focused audit + fuzzing questions for one Polkadot Fellows runtime target.
+
+    ```
+    target_file format:
+    "'File Name: relay/polkadot/src/lib.rs -> Scope: Critical. Unauthorized asset mint or state transition break'"
     """
 
     prompt = f"""
-    Draft 18 to 24 exploit questions for this exact Polkadot SDK file:
+    ```
+    
+    Generate exploit-focused security audit and fuzzing questions for this exact Polkadot Fellows runtimes target:
+    
     {target_file}
-
-    Focus:
-    Stay on proof acceptance, message routing, queue progression, public dispatch wrappers,
-    contracts or revive execution, asset or NFT or staking or pool accounting, payout or claim
-    or refund flows, and origin or weight or accounting failures that a normal user can trigger.
-
-    {HYPERBRIDGE_ALLOWED_IMPACT_SCOPE}
-
-    {HYPERBRIDGE_AUDIT_PIVOTS}
+    
+    Project focus:
+    This repo defines Polkadot, Kusama, Asset Hub, Bridge Hub, Coretime, People, Collectives, Bulletin, Encointer, and shared runtime pallets. The main bounty focus is bugs that compromise intended runtime behaviour, especially asset accounting, origin isolation, XCM, bridge settlement, proxy proofs, and runtime dispatch rules.
 
     Rules:
-    * `File Name:` must be this file. `Scope:` must select exactly one `target_scopes` item.
-    * Use the repository context already in hand. Do not request more code.
-    * The attacker is strictly unprivileged: a normal external user using signed extrinsics,
-      public proof or message submission, contract calls, runtime APIs, or user-controlled payloads.
-    * Do not assume admin, governance, root, validator, collator, peer chain, node, trusted relayer,
-      trusted prover, leaked keys, or off-repo infra control.
-    * Never model a malicious peer, malicious node, or malicious relayer as the root cause.
-    * Ignore tests, mocks, fixtures, benches, docs, readmes, generated files, `.toml`, disabled configs,
-      dependency-only issues, and front-run-only ideas.
-    * Prefer critical paths first, but include strong high-severity questions when justified.
-    * Name the exact corrupted value: finalized header, state root, authority set, lane nonce, receipt marker,
-      beneficiary, amount, balance, share supply, approval, queue marker, code refcount, or effective origin.
-    * Every question must be testable with a focused Rust unit, integration, property, or fuzz-style test.
+    * Treat `File Name:` as the exact file/module.
+    * Treat `Scope:` as the ONLY impact to target.
+    * Assume full repo context is accessible.
+    * Do not ask for code or say anything is missing.
+    * Use exact Rust symbols when possible.
+    * Attacker is unprivileged only: a normal signed user, proxy user, or attacker-controlled account using valid extrinsics/XCM through supported runtime paths.
+    * Never assume sudo, governance, fellowship, collator, validator, relayer, operator, node, peer, or leaked keys.
+    * Do not rely on mocked origins, handcrafted internal helpers, direct storage writes, or impossible external-chain assumptions.
+    * Generate 10 to 18 high-signal questions.
+    * At least 70% must be multi-step flow, invariant, accounting, origin, replay, XCM, bridge, or cross-module questions.
+    * Every question must be testable by unit test, xcm-emulator test, fuzz test, invariant test, or differential test.
+    * Avoid generic checklist questions and repeated root causes.
 
-    Each question must include target symbol, attacker input, required state, execution or verification path,
-    broken invariant, corrupted value, scoped impact, and proof idea.
+    Core invariants:
+    * No unprivileged user can mint, unlock, move, or burn assets they do not control.
+    * Runtime origins, proxy proofs, and XCM origins must not be forgeable, stale-reusable, or replayable.
+    * Cross-chain asset accounting must stay balanced across local, reserve, and bridged representations.
+    * Filters, barriers, routers, fee checks, and weight checks must not be bypassed.
+    * Runtime behaviour must stay deterministic and must not admit unauthorized privileged calls.
+    * Crafted but valid user input must not permanently halt critical queues or freeze user funds.
 
-    Return Python only.
+    Each question must include:
+    1. target function/module;
+    2. attacker action;
+    3. preconditions;
+    4. call sequence;
+    5. invariant tested;
+    6. scoped impact;
+    7. proof idea.
+
+    Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File Name: {target_file}] [Scope: one_target_scopes_item] [Symbol: symbol_or_type] Can attacker-controlled INPUT under REQUIRED_STATE pass VERIFY_OR_EXECUTE_PATH and break INVARIANT, corrupting EXACT_VALUE with impact SCOPE_IMPACT? Proof idea: write a focused repo test that drives the public entrypoint and asserts authenticity, one-time settlement, beneficiary, origin, or accounting correctness.",
+    "[File: {target_file}] [Function: symbol_or_module] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: test/fuzz PARAMETERS and assert EXPECTED_PROPERTY.",
     ]
     """
     return prompt
 
-
-def audit_format(question: str) -> str:
+def audit_format(security_question: str) -> str:
     """
-    Generate a focused Polkadot SDK exploit-question validation prompt.
+    Generate a focused Polkadot runtimes exploit-validation prompt.
     """
-    return f"""# POLKADOT SDK REVIEW
 
-## Submitted Question
-{question}
+    prompt = f"""# SECURITY AUDIT PROMPT
 
-## Scope Limits
-- Review only production Polkadot SDK and Snowbridge bridge, runtime, pallet, contract, and support-crate logic in this repository.
-- The attacker must enter through unprivileged public extrinsics, proof or message submission, runtime APIs, callbacks, contract calls, or settlement inputs.
-- Ignore malicious peers, malicious nodes, compromised relayers or provers, front-run-only claims, and excluded bounty families.
+## Question
+{security_question}
 
-## Decision Standard
-Treat it as valid only if unprivileged input can cause false proof or state acceptance, unauthorized execution, origin widening, wrongful asset movement,
-duplicate settlement, wrong beneficiary or amount, permanent production fund lock, or public underpriced work that degrades block production or bridge progress.
-Reject claims that require privileged operators, malicious infrastructure, or non-production artifacts.
+## Rules
+- The referenced runtime file/path exists. Do not say files are missing.
+- Do not ask for code. Use available repository context.
+- Analyze only this question and only the scoped impact.
+- Attacker is unprivileged only: a signed user, proxy user, or attacker-controlled account using real runtime/XCM paths.
+- Ignore admin-only, governance-only, node-only, relayer-only, leaked-key, docs, style, gas-only, and best-practice issues.
+- Privileged functions matter only if they create a later user-triggered exploit path.
+- Do not rely on mocked origins, direct helper calls, direct storage mutation, malicious peers/nodes, or impossible external-chain assumptions.
 
-## Required Impacts
-{HYPERBRIDGE_ALLOWED_IMPACT_SCOPE}
+## Mission
+Prove or disprove this as a real runtime bug.
 
-{HYPERBRIDGE_AUDIT_PIVOTS}
+Check:
+- exact reachable Rust path;
+- attacker-controlled entry path from extrinsic, proxy, XCM, bridge, or runtime-dispatch flow;
+- state changes before/after cross-module, queue, or asset-accounting transitions;
+- whether origin conversion, filters, barriers, proxy proof checks, fee checks, or weight checks stop it;
+- whether the scoped impact is concrete;
+- whether a Rust unit/integration test, xcm-emulator test, or fuzz/invariant test can reproduce it.
 
-## Review Path
-1. Trace the exact verification, routing, dispatch, settlement, withdrawal, refund, or claim path.
-2. Compare the intended chain, route, origin, beneficiary, amount, receipt, commitment, or balance to the actual stored or executed result.
-3. Name the wrong header, state root, receipt marker, nonce, beneficiary, amount, balance, approval, queue marker, code state, or effective origin.
-4. Reject if duplicate guards, proof checks, filter checks, auth checks, queue semantics, or accounting invariants already stop the path.
+## Core Invariants
+- User-controlled assets must remain fully backed and cannot be stolen, duplicated, or permanently frozen.
+- Runtime origins, proxy proofs, and XCM origins must not be forgeable or replayable.
+- Bridge and XCM messages must only execute through intended routes with correct accounting.
+- Filters, barriers, fee logic, and weight logic must not be bypassable by normal users.
+- The runtime must not accept unauthorized privileged state transitions.
+- Critical queues and message paths must not be permanently halted by valid user input.
+
+## Valid Only If
+1. Exact file/function/line range exists.
+2. Root cause is a real missing check, bad accounting, replay, origin confusion, unsafe parsing, or logic error.
+3. Exploit path is: preconditions -> attacker action/data -> trigger -> bad state/result.
+4. Existing protections are reviewed and insufficient.
+5. Impact matches the scoped impact.
+6. PoC/test idea has clear assertions.
 
 ## Output
-If valid:
+If valid, output exactly:
 
 ### Title
-[Clear vulnerability statement] - ([File: file_path])
+[Bug statement] - ([File: file_path])
 
 ### Summary
+[2-3 sentences]
+
 ### Finding Description
+[Code path, root cause, attacker inputs, exploit flow, and why checks fail]
+
 ### Impact Explanation
+[Concrete scoped impact]
+
 ### Likelihood Explanation
+[Preconditions, feasibility, repeatability]
+
 ### Recommendation
+[Specific fix]
+
 ### Proof of Concept
+[Rust integration test, xcm-emulator test, or fuzz/invariant test plan with expected assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
-"""
 
-
-def scan_format(report: str) -> str:
-    """
-    Generate a cross-project analog scan prompt for Polkadot SDK issues.
-    """
-    prompt = f"""# POLKADOT SDK ANALOG SCAN
-
-## External Report
-{report}
-
-## Task
-Use the external report only as a bug-class seed. Reason only from this repository and find a real local analog in proof verification, message routing,
-queue handling, public dispatch wrappers, contracts or revive execution, staking or asset accounting, treasury or reward payouts, or Snowbridge delivery flow.
-
-## Required Impacts
-{HYPERBRIDGE_ALLOWED_IMPACT_SCOPE}
-
-{HYPERBRIDGE_AUDIT_PIVOTS}
-
-## Method
-- First reduce the external report to its core broken invariant and attacker primitive.
-- Internally generate 2 to 4 candidate Polkadot SDK paths, then keep only the strongest one with exact file and function support.
-- Prefer public-entrypoint paths that let an unprivileged attacker cause false state acceptance, unauthorized execution, wrong beneficiary or amount,
-  duplicate settlement or claim, fund loss or lock, or public underpriced work with chain or bridge impact.
-- Reject anything that needs a malicious peer, node, relayer, prover, admin, governance actor, validator, collator, leaked key, or front-run-only conditions.
-- Name the exact corrupted value and show why existing guards do not stop the path.
-- Do not answer with uncertainty, missing-context, or external-protocol analysis. Either produce a concrete local issue from repository evidence or return
-  `#NoVulnerability found for this question.`
-- If no locally provable analog survives these checks, return `#NoVulnerability found for this question.`
-
-## Output (Strict)
-If valid analog exists, output:
-
-### Title
-[Clear vulnerability statement] - ([File: file_path])
-
-### Summary
-### Finding Description
-### Impact Explanation
-### Likelihood Explanation
-### Recommendation
-### Proof of Concept
-
-If not, output exactly:
-#NoVulnerability found for this question.
+No extra text.
 """
     return prompt
 
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict Polkadot SDK validation prompt for security claims.
+    Generate a strict bounty-style validation prompt for Polkadot runtimes security claims.
     """
-    prompt = f"""# POLKADOT SDK CLAIM VALIDATION
+    prompt = f"""# VALIDATION PROMPT
 
 ## Security Claim
 {report}
 
 ## Rules
-- Validate only the submitted claim against production Polkadot SDK and Snowbridge bridge, runtime, pallet, contract, and support-crate logic in this repository.
-- Do not widen the claim, change the target scope, or raise severity without evidence.
-- A valid issue must come from an unprivileged external attacker using public extrinsics, proof or message submission, runtime APIs, callbacks,
-  contract calls, or settlement inputs exposed by scoped code.
-- Reject malicious peer or node behavior, compromised relayer or prover assumptions, leaked keys, privileged governance or validator powers,
-  off-repo infra control, front-run-only claims, tests, mocks, docs, readmes, generated files, `.toml`, and disabled configs.
-- The final impact must match one `target_scopes` item or the Polkadot SDK impact gate below and must name the exact corrupted value.
+- Validate only the submitted claim.
+- Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
+- Do not create a new vulnerability if the submitted claim is weak or invalid.
+- Do not upgrade severity unless the provided evidence proves the higher impact.
+- Reject admin-only, governance-only, node-only, relayer-only, leaked-key, best-practice, docs/style, gas-only, mocked-path, and purely theoretical issues.
+- Reject if the exploit requires unrealistic assumptions, victim mistakes, direct storage mutation, mocked XCM/origins, or unsupported protocol behavior.
+- A valid report must be triggerable by an unprivileged user, unless the claim proves privilege escalation from a user path.
+- The final impact must match an in-scope bounty impact for runtimes/bridge paths, not just a generic code bug.
+- Prefer #NoVulnerability over speculative reports.
 
-## Required Impacts
-{HYPERBRIDGE_ALLOWED_IMPACT_SCOPE}
+## Required Validation Checks
+All must pass:
+1. Exact in-scope file, function, and line/code references.
+2. Clear root cause and broken security/accounting assumption.
+3. Reachable exploit path: preconditions -> attacker action -> trigger -> bad result.
+4. Existing checks/guards reviewed and shown insufficient.
+5. Concrete in-scope impact with realistic likelihood.
+6. Reproducible proof path: unit PoC, fork test, invariant/fuzz test, or exact manual steps.
+7. No obvious rejection reason from SECURITY.md, known issues, privileges, or scope exclusions.
 
-{HYPERBRIDGE_AUDIT_PIVOTS}
-
-## Required Checks
-1. Exact file and function references in scoped code.
-2. A clear invariant tied to proof authenticity, route binding, one-time settlement, custody, payout, beneficiary correctness, origin correctness, or cost correctness.
-3. A reachable exploit path from attacker input to bad state, bad execution, bad payout, duplicate effect, or permanent lock.
-4. Existing guards reviewed and shown insufficient.
-5. Exact wrong value named: header, state root, authority set, receipt, nonce, beneficiary, amount, balance, approval, queue marker, code state, or effective origin.
-6. A reproducible proof path via Rust unit, integration, property, or fuzz-style testing.
+## Silent Triage Questions
+Before output, internally answer:
+- Can a normal external user trigger this through a real runtime or XCM path?
+- Does the code actually behave as claimed?
+- Is the impact caused by the runtime code, not by a malicious node, peer, or external dependency alone?
+- Is the loss/freeze/insolvency concrete, not hypothetical?
+- Would a bounty triager accept the proof?
+- What exact test would prove it?
 
 ## Output
 If valid, output exactly:
@@ -587,7 +352,7 @@ Audit Report
 [Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete allowed repository impact and severity rationale]
+[Concrete in-scope impact and severity rationale]
 
 ## Likelihood Explanation
 [Attacker capability, required conditions, feasibility, repeatability]
@@ -596,11 +361,66 @@ Audit Report
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or test plan]
+[Minimal reproducible steps or fuzz/invariant/fork test plan]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
 
 Output only one of the two outcomes above. No extra text.
+"""
+    return prompt
+
+
+def scan_format(report: str) -> str:
+    """
+    Generate a short cross-project analog scan prompt for Polkadot runtimes.
+    """
+    prompt = f"""# ANALOG SCAN PROMPT
+
+## External Report
+{report}
+
+## Access Rules (Strict)
+- Treat in-scope runtime files as accessible context.
+- Do not claim missing/inaccessible files.
+- Do not ask for repository contents.
+
+## Objective
+Find whether the same vulnerability class can occur in this repo's in-scope runtime code.
+Use the external report as a hint, not as proof.
+
+Note: Check SECURITY.md / Researcher.Md and think in this actual way.
+Note: Never generate a report that would result in an out-of-scope and rejected vulnerability.
+
+## Method
+1. Classify vuln type (auth, accounting, state transition, parsing/deserialization, crypto, replay, reentrancy, DoS).
+2. Map the vulnerability pattern to relay, Asset Hub, Bridge Hub, or shared runtime architecture to find a valid analog.
+3. Prove root cause with exact file/function/line references in the codebase.
+4. Confirm concrete impact + realistic likelihood for an unprivileged user.
+
+## Disqualify Immediately
+- No reachable attacker-controlled entry path.
+- Trusted-role compromise required.
+- Only mocked XCM/origin/helper paths are shown.
+- Theoretical-only issue with no protocol impact.
+- Impact or likelihood missing.
+
+## Output (Strict)
+If valid analog exists, output:
+
+### Title
+[Clear vulnerability statement] - ([File: file_path])
+
+### Summary
+### Finding Description
+### Impact Explanation
+### Likelihood Explanation
+### Recommendation
+### Proof of Concept
+
+If not, output exactly:
+#NoVulnerability found for this question.
+
+No extra text.
 """
     return prompt
