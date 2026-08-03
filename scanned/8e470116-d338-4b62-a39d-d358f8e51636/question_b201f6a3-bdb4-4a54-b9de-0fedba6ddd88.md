@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm-types/src/module_and_script_storage/read_recording.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Can an unprivileged attacker who repeatedly toggles between two accounts' identically-named modules (A, \
