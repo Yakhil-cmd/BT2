@@ -1,0 +1,1 @@
+functions.grep_search:2{"pattern": "is_simulation|simulation", "repo_name": "Camomtat/aptos-core--026", "include": "types/src/block_info.rs"}
