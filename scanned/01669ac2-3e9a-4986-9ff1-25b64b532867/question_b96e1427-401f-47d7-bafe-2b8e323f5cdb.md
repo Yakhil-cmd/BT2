@@ -1,1 +1,0 @@
-[File: 'File Name: api/types/src/wrappers.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Does `IdentifierWrapper::verify` bailing with `\
