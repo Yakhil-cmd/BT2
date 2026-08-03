@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/write_set.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Can NativePositionOp::as_write_op's expect(\
