@@ -1,0 +1,1 @@
+[File: 'File Name: storage/aptosdb/src/native_state_committer.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Does `NativeStateCommitter::apply`'s error path for non-`Position` `StateKey`s (`AptosDbError::Other(\

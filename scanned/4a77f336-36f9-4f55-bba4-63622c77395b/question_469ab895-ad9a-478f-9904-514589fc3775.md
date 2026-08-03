@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_address.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Does `create_token_address`'s use of the `\

@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_address.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can an unprivileged caller choose `collection` and `name` strings for `create_token_address` such that the concatenated seed (`collection || \
