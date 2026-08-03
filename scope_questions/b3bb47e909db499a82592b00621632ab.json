@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/xcm_config.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_24afdcb6-c62a-4660-b543-fa46a96f57d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/impls.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e26f2c93-fd51-46df-b76a-c4eb7cb187e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/parameters.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a6663883-d204-417b-b79d-156c13fbc4d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/mod.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_51e8f126-8a0c-4faf-bc08-4853e499a218?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/origins.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_29f3c367-473c-4067-8e3a-730660535635?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/tracks.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cbbeef8c-0dfa-4d7c-a99e-5ed51b8f2652?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/mod.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3dc5ac7d-2f3f-4eea-afa5-8337cd9cc83a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/origins.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6cd8c32f-c8c6-4d95-af68-884dec5fb182?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/tracks.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_54e177ee-9652-4018-9ae6-1e09f97927cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/secretary/mod.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8b5e808-5bb9-45fb-b3da-fe154c22783b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/lib.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df31c9e8-8118-49a9-b7ea-2eb1b4007110?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/apis.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1aacbc2-ce20-471a-ae44-83e6d43299c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/xcm_config.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85fae8b1-5844-49f9-8e31-fab887abb64d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/lib.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4963ebe5-0d66-443b-ab2d-28f7b973b0ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/xcm_config.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c6a724c-dbba-4b05-b396-a37da7e3c0f6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/impls.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_acdd3703-890b-4f9d-b3ff-b4367c3c1d6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/treasuries_xcm_payout.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_392e0022-c394-47c6-8d31-119d0e3a90d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/lib.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_da6a6044-53f2-47e5-aa97-330e16c017bd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/randomness.rs -> Scope: Critical. Forged, replayed, stale, or mismapped proof, proxy, or origin data in `pallets/remote-proxy/src/lib.rs`, `relay/*/src/xcm_config.rs`, or `system-parachains/*/src/xcm_config.rs` allowing unprivileged dispatch, unauthorized asset movement, or execution as another account/chain'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4077339b-6841-4235-9c75-1e7993f2e9f6?mode=deep",
+    "questions_generated": false
+  }
+]
