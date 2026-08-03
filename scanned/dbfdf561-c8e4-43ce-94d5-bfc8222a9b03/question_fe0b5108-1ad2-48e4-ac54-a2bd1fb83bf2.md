@@ -1,0 +1,1 @@
+[File: 'File Name: storage/storage-interface/src/state_store/leaf_entry.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Can an unprivileged attacker trigger the `expect(\

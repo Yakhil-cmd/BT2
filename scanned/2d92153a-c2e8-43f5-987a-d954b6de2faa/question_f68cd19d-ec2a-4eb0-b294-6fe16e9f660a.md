@@ -1,0 +1,1 @@
+[File: 'File Name: crates/aptos-crypto/src/blstrs/random.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Can an unprivileged attacker exploit `random_g1_point`'s domain separator `b\

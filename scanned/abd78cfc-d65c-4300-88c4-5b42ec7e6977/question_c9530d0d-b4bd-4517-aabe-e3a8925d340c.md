@@ -1,0 +1,1 @@
+[File: 'File Name: crates/aptos-dkg/src/pvss/encryption_dlog.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Can an unprivileged attacker who submits a `DecryptPrivKey` deserialized via `try_from` (lines 137-143) with the `#[cfg(feature = \

@@ -1,0 +1,1 @@
+[File: 'File Name: api/types/src/index.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Can an unprivileged client that queries GET \

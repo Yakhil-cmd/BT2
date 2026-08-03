@@ -1,0 +1,1 @@
+[File: 'File Name: api/src/response.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can the `#[oai(header = \

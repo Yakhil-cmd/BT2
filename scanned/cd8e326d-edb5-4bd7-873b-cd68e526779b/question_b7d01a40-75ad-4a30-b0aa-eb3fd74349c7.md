@@ -1,0 +1,1 @@
+[File: 'File Name: api/types/src/ledger_info.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can an unprivileged caller exploit the `#[serde(skip_serializing_if = \

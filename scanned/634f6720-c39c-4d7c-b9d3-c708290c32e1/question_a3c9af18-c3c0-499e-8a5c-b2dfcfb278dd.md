@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/account_config/resources/token_store.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Does SingleKeySignature::verify in api/types/src/transaction.rs's catch-all `_ => bail!(
