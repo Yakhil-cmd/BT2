@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/internals.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b1cbb49d-4fcc-4b2b-8ecd-0928e3a88af2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/module_script_conversion.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_7360a7d5-5a97-441f-a81e-d5b6e8841a0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/serializer.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_97f55207-3761-4fa8-93b7-07e2e64c3ae9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-binary-format/src/views.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_db9239bd-9dad-4c32-9e12-e55973fbd63b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/absint.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_ab012453-ef09-4103-84a0-2b6360edcd8e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/acquires_list_verifier.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e6602138-ca4f-456a-bc7f-dc3ea98fabdd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/check_duplication.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_3996ef58-c184-4dff-8fe8-6880a790b0f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/code_unit_verifier.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_6c7c3a50-2e94-4051-890b-04f609b9cf2f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/constants.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_17f29065-3b5a-4b3c-b5a7-807aef998242?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/control_flow.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_a8d1c50a-b5a2-4488-a349-a651fe02e607?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/control_flow_v5.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_aff9a447-cdb6-418f-8f13-1a1515689b08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/dependencies.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_1fb70e53-a3db-4cb6-b73f-7fa29e8bae2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/features.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_764019bf-8c68-4cf1-80a2-ee64a6a566f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/friends.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2018fad8-f687-4cb0-b3c7-57734b32dbf0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/instantiation_loops.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_0f195d54-ef4f-4a7b-8d4d-06dcc770d587?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/instruction_consistency.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_790370c4-797f-4810-b384-e1716a538673?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/limits.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_416461ef-6195-48d1-994d-4c5734848925?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/locals_safety/abstract_state.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_471a339c-abdc-4eda-81f8-657eb2f9e070?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/loop_summary.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_b416356c-bfb1-4bbe-b32f-a55c13654ac1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/meter.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2f5a6d24-2548-40f0-aefb-b359c2f50ac1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/reference_safety/abstract_state.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_03f7f515-3db2-49f3-9ccf-95daa681c7db?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/regression_tests/bounds_check.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2927745e-02a1-4df0-a2a9-4ce1bba10487?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/regression_tests/reference_analysis.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_a2e28153-2924-4c7f-8510-fb82a983ef55?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/regression_tests/struct_api.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_5d79d017-b685-4366-a713-3bf40c3ec243?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/script_signature.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_55240dfd-ac57-4a72-8843-f000baa25298?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/signature_v2.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8dc8164c-6f84-4afd-a888-838d3cc30a28?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/stack_usage_verifier.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_e49b0f34-9972-4e22-89d5-08d258eedae0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/struct_api_checker.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_30b83fe1-ecf0-4e1f-9f47-705c6e2e8458?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/struct_defs.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2b4cd9da-a38e-4565-9c09-301fc05d0f8e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: third_party/move/move-bytecode-verifier/src/type_safety.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_449524cc-6c55-402c-a276-342bd5c1ff0a?mode=deep",
+    "questions_generated": false
+  }
+]
