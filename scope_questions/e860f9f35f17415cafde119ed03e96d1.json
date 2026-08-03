@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: pallets/remote-proxy/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_032293e9-dd63-45a5-b1d4-6b464bfd6580?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pallets/rc-migrator/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c6213af-2165-4060-8710-5d92217f5509?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pallets/ah-ops/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_859d1091-9373-45f8-a21e-0185bfadc076?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/common/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9983383d-c859-4614-b32b-eae832983004?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f89365b4-6b06-48fc-bd1e-28c3a671668b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/xcm_config.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e6c231af-cc3b-4ffa-87e9-bf3b243292b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/impls.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_66e4ced1-118e-47dd-b7ab-f5f2fd2c9f3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/governance/mod.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b7aa221-634c-47d4-9ecd-ceae2ab04668?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/governance/origins.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc638c63-470a-41f4-8331-efb5d3144b33?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/polkadot/src/governance/tracks.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49428454-72c8-423b-8c16-c9ec9b44031d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1e37cfcd-f562-4c37-9556-b33768cf896b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/xcm_config.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_123f9dbe-238d-4871-a9ed-0a1f13af13d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/mod.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9220e27a-9b4a-4ef1-bbcf-4f441f3022c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/origins.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ff1783b-ca20-4bc1-83bd-3877fea6dea8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/tracks.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4ac8d4f1-0ed0-4f37-9b8c-0d0f5d856ec8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: relay/kusama/src/governance/fellowship.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_250688d5-faba-4aec-80a5-43df87feda2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92a8240b-30b2-46a6-b1ea-5160f292ab69?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/xcm_config.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_38044424-5e2d-497d-a3d8-71ed5fb1cd85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e93c89af-9163-4882-ba64-b1cf0b6867b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/treasury.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e0989a72-4c7c-4986-80df-576629ec304c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/staking/mod.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a862a43c-05f5-4e9d-9c0c-5d4a8bfa0bff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/staking/nom_pools.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9ce2a0e9-a1ba-42ff-9294-e7cbc3e89d9d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/staking/stepped_curve.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cf740987-c71c-43de-9051-726c4351608d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/governance/mod.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c446826-b79a-4060-aae5-2a8414671b96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/governance/origins.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_606e0b95-1bb8-464a-be2e-758c722ecd30?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/src/governance/tracks.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d53bff26-9ff9-4bd0-b987-b2d3b4266963?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-polkadot/primitives/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b5bcf7e-f96b-41ab-a0ef-d2a828ef1895?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/lib.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a7b43bd6-cfc7-4192-84c0-ff9924977db8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/xcm_config.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_363c88b5-8aeb-4b3b-b293-ec393e49325d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/asset-hubs/asset-hub-kusama/src/treasury.rs -> Scope: Critical. Unauthorized asset mint, burn, withdraw, reserve release, or cross-chain balance mismatch reachable by a normal user in `relay/*/src/lib.rs`, `system-parachains/asset-hubs/*/src/{lib.rs,xcm_config.rs,treasury.rs,staking/*}`, or `system-parachains/people/*/src/assets.rs`, causing direct loss of funds or unbacked assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_201bb28f-8779-4e6c-a0fa-d0c770de5c39?mode=deep",
+    "questions_generated": false
+  }
+]
