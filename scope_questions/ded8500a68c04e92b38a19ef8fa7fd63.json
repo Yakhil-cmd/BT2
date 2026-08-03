@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/xcm_config.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f4c1a037-4c7c-48b6-887f-395b65d11bdd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/impls.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8d925f41-c92b-444c-a994-8054153653e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/parameters.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a20bf05-ed5b-4089-bc3f-77ff220bd772?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/mod.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0ec7f9d-4b0f-46ef-82ae-68203ec7c16f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/origins.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b3268c3-b770-44b0-bc30-652738d6fab1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/tracks.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c942f3b-e848-4a06-9e20-337512d9ddd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/mod.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_11ce7679-b61c-4986-8af6-f8e27cc3b495?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/origins.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fc7ffba1-963b-4587-9afd-43e904748fab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/tracks.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ddba9d14-13b9-432d-a1c7-da1408a6a053?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/secretary/mod.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8a61d6ed-7f63-46f3-bb8b-9fcae88a928b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/lib.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81271a63-88b0-4044-a208-2dc6b5baff03?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/apis.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_36537abc-33e6-4906-bbce-546adc248c97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/xcm_config.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8f2ee84a-c868-492c-b733-ae048e127d14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/lib.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60bebd69-c3d6-4a4b-9815-4175d5d10d83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/xcm_config.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cee2e3fc-35bd-4499-ae1e-f958250fd365?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/impls.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1043ac30-c478-4523-90e4-c900d8314f9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/treasuries_xcm_payout.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1b68057b-7c8d-4691-92ca-b5820a6a1edf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/lib.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2dc92a8f-ca02-4bd1-a91b-52813b645f10?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/randomness.rs -> Scope: Critical. Bridge message, queue, or settlement flaw in `system-parachains/bridge-hubs/*/src/{lib.rs,xcm_config.rs,bridge_*_config.rs}` or `system-parachains/asset-hubs/asset-hub-polkadot/src/bridge_to_ethereum_config.rs` causing theft, duplicate delivery, replay, unauthorized unlock, or permanent asset loss/freeze'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e6a9568b-fcda-4102-8b6d-d0a7e0da8261?mode=deep",
+    "questions_generated": false
+  }
+]
