@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/aptos-vm-types/src/module_and_script_storage/module_storage.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Can the `#[cfg(test)] fail_point!(\
