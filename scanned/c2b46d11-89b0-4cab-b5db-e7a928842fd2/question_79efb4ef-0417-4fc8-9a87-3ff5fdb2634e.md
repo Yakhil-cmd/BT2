@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/chain_id.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can an unprivileged submitter craft a `RawTransaction` whose numeric `chain_id` field equals the local `ChainId::new(1)` (MAINNET) constant via `ChainId::from_str(\
