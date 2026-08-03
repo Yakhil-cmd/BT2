@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/block-executor/src/view.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Does `LatestView::patch_base_value`'s `#[cfg(test)] fail_point!(\
