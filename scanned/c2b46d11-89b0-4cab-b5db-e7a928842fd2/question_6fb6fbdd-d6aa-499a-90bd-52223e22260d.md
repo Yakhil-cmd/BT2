@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/chain_id.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can an unprivileged client submit a transaction with `chain_id` field set to the reserved value `0`, and does `ChainId::from_str(\

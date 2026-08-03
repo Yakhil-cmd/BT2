@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/chain_id.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Does `ChainId::from_str` accept out-of-range numeric strings like \
