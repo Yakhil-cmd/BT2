@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/account_config/resources/object.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can the `MoveStructType` tag returned by `ObjectGroupResource` (`MODULE_NAME =
