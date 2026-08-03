@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/move_any.rs -> Scope: Critical.'] Does Any::unpack's type_name equality check run before or after gas metering and fee-payer resolution in the enclosing transaction admission flow, such that an unprivileged attacker can submit a transaction with a deliberately mismatched Any to trigger a `bail!(\
