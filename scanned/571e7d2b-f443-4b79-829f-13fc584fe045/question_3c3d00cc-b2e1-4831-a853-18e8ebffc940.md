@@ -1,1 +1,0 @@
-[File: ...] Can `remove` be called on a `MutatorRef` for a key that does not exist, and does `simple_map::remove`'s abort behavior correctly reject rather than silently no-op, preserving the invariant that only genuinely admitted approval-set entries can be removed? Proof idea: call `remove` with a non-existent key and assert it aborts rather than succeeding as a no-op.
