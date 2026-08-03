@@ -1,0 +1,97 @@
+[
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/xcm_config.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25fa99ce-60b7-465b-818e-a3538baf0223?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/impls.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_12c4d9a0-99eb-4881-abaf-3d68ee85f9e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/parameters.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0d7663e8-2023-480e-bcaf-781508f46a2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/mod.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81c2ba29-bb82-47dd-b25f-ad4b0ab4d960?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/origins.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_46328dad-2bc2-4427-af33-1626799ec03c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/ambassador/tracks.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e2b46c85-9ec5-4379-b987-1a3f393ed851?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/mod.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_763428d2-07a9-4fc9-8ab0-72fa55a69088?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/origins.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_67bd2fb4-8d73-49d7-9d8e-1067c9ecea9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/fellowship/tracks.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f2e81bd8-de6b-4ce9-b4f2-4192febd17a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/collectives/collectives-polkadot/src/secretary/mod.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_897773d5-d1eb-45da-b39a-eb7b273eb868?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/lib.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc372c8b-0974-4de1-b413-2e6a2274ebd0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/apis.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e35bab4b-76d2-47af-b539-1d0643945ea4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/bulletin/bulletin-polkadot/src/xcm_config.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_065c42ac-8f1e-4bc3-8957-0c995938eb3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/lib.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6b1046a8-259d-4168-af0f-db42241ab9dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/xcm_config.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20a85e0d-1c99-498c-9ca9-1be2a833a317?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/impls.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_870375ea-04bc-443d-81f2-a287c193a364?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/encointer/src/treasuries_xcm_payout.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6053d406-c705-4950-b3ac-c86a6ee3c0d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/lib.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f4d5be6f-65c8-4244-bc54-a03aed847da1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: system-parachains/common/src/randomness.rs -> Scope: Critical. Crowdloan, lease, staking, treasury, payout, or remote-migration accounting bug in `pallets/ah-ops/src/lib.rs`, `relay/common/src/lib.rs`, `system-parachains/asset-hubs/*/src/{staking/*,treasury.rs}`, or `pallets/rc-migrator/src/lib.rs` that lets a normal user steal funds, claim twice, or permanently lock assets'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1cd11989-acfa-42ad-8f23-92de5f30f802?mode=deep",
+    "questions_generated": false
+  }
+]
