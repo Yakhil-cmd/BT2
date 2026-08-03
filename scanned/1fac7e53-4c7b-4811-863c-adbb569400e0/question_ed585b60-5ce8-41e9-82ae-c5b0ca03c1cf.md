@@ -1,0 +1,1 @@
+[File: 'File Name: aptos-move/block-executor/src/txn_last_input_output.rs -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'] Can an unprivileged attacker leverage `modified_group_key_and_tags_cloned`'s use of `.expect(\

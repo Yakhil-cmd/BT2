@@ -1,0 +1,1 @@
+[File: 'File Name: crates/aptos-dkg/src/fiat_shamir.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can `PolynomialCommitmentScheme::append_point`, which serializes an `AffineRepr` point via `serialize_compressed` and appends it under a fixed `b\

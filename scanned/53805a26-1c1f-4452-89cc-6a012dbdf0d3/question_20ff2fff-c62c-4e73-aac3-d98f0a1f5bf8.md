@@ -1,0 +1,1 @@
+[File: 'File Name: types/src/stake_pool.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Does the CLI's `client.get_account_resource_bcs::<StakePool>(*pool_address, \

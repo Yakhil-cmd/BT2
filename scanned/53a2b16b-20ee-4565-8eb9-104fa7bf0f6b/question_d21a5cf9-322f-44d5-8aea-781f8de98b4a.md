@@ -1,0 +1,1 @@
+[File: 'File Name: storage/aptosdb/src/ledger_db/transaction_auxiliary_data_db.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can an unprivileged submitter exploit the #[cfg(any(test, feature = \

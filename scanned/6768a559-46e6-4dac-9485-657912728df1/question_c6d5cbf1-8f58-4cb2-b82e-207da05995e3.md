@@ -1,0 +1,1 @@
+[File: 'File Name: crates/aptos-crypto/src/arkworks/hashing.rs -> Scope: High. An unprivileged attacker can satisfy authenticator, WebAuthn, multisig, or approval-set checks with the wrong signing material.'] Can an unprivileged attacker exploit the panic-on-exhaustion behavior of `unsafe_hash_to_affine` (`panic!(\
