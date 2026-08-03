@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/account_config/resources/chain_id.rs -> Scope: Critical. An unprivileged attacker can get a transaction committed under the wrong sender, secondary signer, fee payer, or module context.'] Can an unprivileged attacker exploit the lack of explicit error handling in fetch_chain_id's `.expect(\
