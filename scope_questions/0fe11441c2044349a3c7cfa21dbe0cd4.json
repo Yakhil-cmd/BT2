@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: types/src/decryption.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_c34568d7-d598-41fc-abc0-98d8c6d1eb1f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/delayed_fields.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_76a583b3-3adc-4e50-adff-bbc073147f8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/dkg/chunky_dkg.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_744ce43b-c6fe-4de2-a847-9c4065b11c75?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/dkg/randomness_dkg.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_8b926733-8a6c-484f-a50a-95f417dc6541?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/epoch_change.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_651b3ffd-0ef5-481d-bf12-e7d1df8cba63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/epoch_state.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2fb062b5-6f96-4a0c-b737-83d4d9d09de6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/error.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_19f6ccf9-c22c-4aeb-86c2-8c57f6dd5ef5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/event.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_33869700-620e-4717-bcf9-504f26b6fef9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/executable.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_c6f03d6f-30f7-4476-b824-8a76ad29063f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/fee_statement.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_92d0e850-b2dc-4f47-b1f5-0323f80e4aa0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/function_info.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_a2e8967e-8c2d-4fa2-9c9d-4b350c31b8b4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/governance.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_1a673f80-d4ff-4f47-a29d-4308efe4d4e7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/lazy_bls.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_6af98bc6-8e86-465f-9ba0-a55049a2a30e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/ledger_info.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_d6258b9b-2f56-49b1-9f27-3f5075c351b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/mempool_status.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_6c57bbd6-d2b6-422d-bbad-f27010b11f92?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_any.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_4ca49261-7584-46c6-abe1-475ff1eb8f01?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_fixed_point.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_aefa3373-abb5-4574-9f42-21c8313d216c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_utils/as_move_value.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_459aedf8-7eb5-4fd4-97ae-f8617b01e946?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_utils/move_event_v1.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_744fd3a0-bb90-4cb3-acf5-e425b860fecc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/move_utils/move_event_v2.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_eae319ed-0181-4dc9-a206-2ceff11aac98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/object_address.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_c4781495-be98-4cdf-a0ef-8821e747f9af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/approved_execution_hashes.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_79e74c75-cdb6-469e-bad2-9f94da4c2a43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/aptos_features.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_63ce56cc-3c9a-4a73-a05c-0d52768cb78c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/aptos_version.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_11bd9714-aae4-472b-addd-9d11179d92c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/chain_id.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_c13d3f45-8a54-4b8b-9150-dd8efb7f8412?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/chunky_dkg_config.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_984abc71-230a-449d-bace-948d16948b0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/commit_history.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_2d55b54d-d045-4e20-92b2-f1e96c187943?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/consensus_config.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_f7532555-b0f9-43c6-a94a-ce9498ebbde9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/epoch_timeout_config.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_5a790398-f88e-4ff6-9693-27b63e1b93c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: types/src/on_chain_config/execution_config.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'",
+    "url": "https://deepwiki.com/search/-generate-18-to-24-aptos-trans_bc25d574-df24-4e91-a7e9-2dd17265e2ac?mode=deep",
+    "questions_generated": false
+  }
+]
