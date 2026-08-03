@@ -1,1 +1,0 @@
-[File: 'File Name: types/src/access_path.rs -> Scope: Critical. Admission disagreement across REST, mempool, vm-validator, or VM validation lets a forbidden transaction reach execution and commit.'] Can an unprivileged caller rely on `AccessPath::resource_group_path_vec`'s `.expect(\
