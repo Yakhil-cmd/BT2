@@ -1,1 +1,0 @@
-[File: 'File Name: third_party/move/move-vm/types/src/delayed_values/derived_string_snapshot.rs -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can `u64_to_fixed_size_utf8_bytes` be called with `value` and `length` such that `format!(\
