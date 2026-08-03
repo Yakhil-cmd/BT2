@@ -1,1 +1,0 @@
-[File: 'File Name: crates/aptos-crypto/src/hash.rs -> Scope: High. An unprivileged attacker can replay, rebind, or revive a transaction by bypassing sequence, expiry, chain-id, or domain checks.'] Can an unprivileged attacker exploit TestOnlyHasher's empty salt (hash.rs:781, b\
