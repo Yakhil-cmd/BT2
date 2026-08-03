@@ -1,1 +1,0 @@
-[File: 'File Name: aptos-move/framework/aptos-framework/sources/genesis.move -> Scope: High. Unprivileged transaction input can pass gas, sponsor, or secondary-auth validation in a way that authorizes a transaction that should be rejected.'] Can the prologue/epilogue function name strings registered by `transaction_validation::initialize(&aptos_framework_account, b\
