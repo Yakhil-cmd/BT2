@@ -1,1 +1,0 @@
-[File: system-parachains/asset-hubs/*/src/lib.rs -> migrations.rs::MigrateBountyAccountAssets] Can a normal user front-run the `MigrateBountyAccountAssets::on_runtime_upgrade` migration by depositing additional KSM/DOT/USDT into the *old* `&str`-derived bounty pot account (`pallet_id.into_sub_account_truncating((
