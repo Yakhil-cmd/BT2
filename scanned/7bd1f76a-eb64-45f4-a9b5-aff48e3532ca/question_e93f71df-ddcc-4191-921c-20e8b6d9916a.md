@@ -1,1 +1,0 @@
-[File: pallets/ah-ops/src/lib.rs -> derivative_account_id / derivative_account_id_recursive / para_sov_child / para_sov_sibling] Can an attacker who knows the deterministic derivation scheme (`b2b256(\
