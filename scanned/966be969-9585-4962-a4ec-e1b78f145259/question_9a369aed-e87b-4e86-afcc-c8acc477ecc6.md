@@ -1,1 +1,0 @@
-[File: 'system-parachains/coretime/coretime-kusama/src/xcm_config.rs'] [Function: FungibleTransactor / RegionTransactor via `FungibleAdapter`/`NonFungibleAdapter` with `()` teleport tracker] Because both `AssetTransactors` use `()` for the teleport-tracking parameter (\
