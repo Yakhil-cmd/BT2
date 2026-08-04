@@ -1,1 +1,0 @@
-[File: system-parachains/asset-hubs/asset-hub-polkadot/src/xcm_config.rs -> Scope: Critical teleport tracking bypass] [Function: FungibleTransactor using TeleportTracking (AhMigrator) vs. ForeignFungiblesTransactor using NoChecking/CheckingAccount] Can an attacker exploit the migration-boundary state of `TeleportTracking` (\
