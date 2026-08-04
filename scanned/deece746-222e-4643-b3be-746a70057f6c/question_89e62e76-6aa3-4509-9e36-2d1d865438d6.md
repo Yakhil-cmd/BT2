@@ -1,0 +1,1 @@
+[File: system-parachains/coretime/coretime-kusama/src/coretime.rs -> Function: BurnCoretimeRevenue::on_nonzero_unbalanced / CoretimeBurnAccount] Can an unprivileged attacker front-run or interleave a transfer to `CoretimeBurnAccount` (derived via `PalletId(*b\

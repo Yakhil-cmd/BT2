@@ -1,0 +1,1 @@
+[File: pallets/ah-ops/src/lib.rs] [Function: Pallet::try_translate_rc_sovereign_to_ah] Can an attacker craft an ordinary AccountId32 (not derived from any real parachain sovereign) that happens to start with the 4 bytes `b\
