@@ -1,1 +1,0 @@
-[File: 'pallets/ah-ops/src/lib.rs -> try_translate_rc_sovereign_to_ah'] [Function: try_translate_rc_sovereign_to_ah] Can an unprivileged attacker craft an AccountId32 that begins with the literal ASCII bytes b\
