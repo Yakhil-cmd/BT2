@@ -1,1 +1,0 @@
-[File: pallets/ah-ops/src/lib.rs -> Scope: origin/replay] [Function: `try_translate_rc_sovereign_to_ah` / `try_rc_sovereign_derived_to_ah`] Since these helpers only pattern-match on the `para`/`sibl` 4-byte prefix plus trailing zero-padding of an `AccountId32`, can an attacker who controls a normal signed account whose raw 32 bytes happen to start with `b\
