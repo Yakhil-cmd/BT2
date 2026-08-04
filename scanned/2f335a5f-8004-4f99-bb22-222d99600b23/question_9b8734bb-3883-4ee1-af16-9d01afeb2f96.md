@@ -1,1 +1,0 @@
-[File: pallets/ah-ops/src/lib.rs] [Function: try_translate_rc_sovereign_to_ah / try_rc_sovereign_derived_to_ah] Can an attacker craft an `AccountId32` that is NOT a genuine `para`-prefixed sovereign account but happens to satisfy `raw.strip_prefix(b\
