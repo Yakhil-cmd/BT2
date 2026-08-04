@@ -1,1 +1,0 @@
-[File: pallets/ah-ops/src/lib.rs] [Function: Pallet::try_translate_rc_sovereign_to_ah / try_rc_sovereign_derived_to_ah] Can an unprivileged attacker construct an `AccountId32` that legitimately starts with `b\
