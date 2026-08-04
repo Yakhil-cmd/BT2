@@ -1,1 +1,0 @@
-[File: 'pallets/ah-ops/src/lib.rs'] [Function: Pallet::try_translate_rc_sovereign_to_ah] Can an attacker craft a 32-byte `AccountId32` that is NOT a genuine parachain sovereign account but still satisfies both `strip_prefix(b\
