@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: pubsub-client/src/pubsub_client.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7bf8a939-9111-4f1e-8920-c2d35726b632?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/cluster_tpu_info.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_05bb4ce6-cfe9-479f-90cf-acd4f3fde63a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/filter.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d1487b6d-fcbf-41e1-ab62-d1cb436581fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/lib.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25d44bc1-eb6a-43b0-98c6-93bee307bc18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/max_slots.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_50a3a754-7066-4fef-9829-b1bdba041789?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/optimistically_confirmed_bank_tracker.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82dd9f01-da30-4d7e-9b42-80a2272ab2a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/parsed_token_accounts.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7d62c7e-95b6-444c-a256-6ca8bbac9d3b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc/account_resolver.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_318a4025-f635-4294-a173-77eaf0655df1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5dc9e808-b90b-474f-9827-af271d3a8c5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_cache.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e69d1b10-5a4c-43e8-a927-6863f65e4c1f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_completed_slots_service.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_69739833-0df2-499e-ac08-87768fa6987c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_health.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b30782c-b50a-4c58-beb5-1a6620bbf00b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_pubsub.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_29526e36-cb77-448d-9da3-bbe7cafeb543?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_pubsub_service.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33bb74a7-6f6f-405c-a5d1-444fdb08d5b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_service.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_80090c63-5bb8-4f0e-b363-4c7a476fdaa3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_subscription_tracker.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_76d8a561-0f01-4060-9cc3-e2823777fad8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/rpc_subscriptions.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db1dddf8-d800-4da1-b225-7eead3cbdeb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/slot_status_notifier.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1d0ad87a-b36d-4fea-ad73-85bd4273d728?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/transaction_notifier_interface.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_43bc398d-bfd2-4ad0-b5ab-a520cb1e261b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc/src/transaction_status_service.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a445e0e3-a8ea-47db-95a1-759174bdcf5d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client/src/http_sender.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5cd1da73-537e-45ee-a0a3-e2a70467f9d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client/src/lib.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15cbca51-6381-4124-9a95-b1461899ed06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client/src/nonblocking/mod.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b3f4771-76bd-4cd7-adc3-3a9e0fd146fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client/src/nonblocking/rpc_client.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b7b9896-5802-4860-b430-5ff3c716a3cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client/src/rpc_client.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_034ff58c-f3f2-47eb-b643-244e171f00b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client/src/rpc_sender.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85fa40c9-0671-464f-8ac2-c24539a78e10?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client/src/spinner.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_509a8649-4210-48af-9c78-5914d82e51ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client-api/src/client_error.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6895ec02-6050-41d4-93d3-7c1fea43957f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client-api/src/custom_error.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff5ddb80-ed64-47a6-aa70-5d156d0aaef4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: rpc-client-api/src/lib.rs -> Scope: Critical. An unprivileged attacker can craft native-program input that makes honest nodes compute different stake, vote, or reward state, diverging epoch stakes, leader schedule, or bank hash.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b601fc8a-6b33-44f1-8b90-8c77113f5fdc?mode=deep",
+    "questions_generated": false
+  }
+]
