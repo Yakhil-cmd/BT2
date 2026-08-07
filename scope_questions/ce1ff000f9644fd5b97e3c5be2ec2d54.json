@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: xdp/src/route.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b71a24d4-7e56-422e-9f1f-730005f7931a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/route_monitor.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b6ca3639-37cf-4357-8eef-8259a5d173ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/socket.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a83ff98b-b784-46ec-91b3-f2c008b84f0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/transmitter.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7186e107-74de-4245-9526-305b50501b4b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/tx_loop.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a2292e05-a389-4b45-93b4-35b4d67d705b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/umem.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7e40e00c-bdb6-4051-9fc2-3319da0de31c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp-ebpf/src/bin/agave-xdp-prog.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_34e75dea-9876-4f88-8cc8-92a8d7e1ad61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp-ebpf/src/lib.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_218c774f-7b3e-438a-8d95-049326891324?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/lib.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5a70364-5dd6-43f7-9c7b-69e5efc7b2f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_account_data.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eb2d51f1-3211-41b3-9f99-77a17787b871?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_address_lookup_table.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c337170-ea90-4393-9ef8-352cba549697?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_bpf_loader.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d41f60b9-c1b8-4838-a300-6877157de71f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_config.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_070c5910-82ef-45e1-b028-efc0513a65e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_nonce.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_708a42cb-b0e3-4a78-a482-5f20730b2134?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_stake.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_43d41ab8-d1ce-475b-b19e-f290f1e4f630?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_sysvar.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0889dddd-758a-46fb-836f-35e2aea59f58?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_token.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_37ec5e75-8c6d-445e-87e7-08e6e4278a37?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_token_extension.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d071507e-2e24-42f9-b99c-55bb808bf0fc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_vote.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25586590-0746-4098-8bfc-bd97229cc5c8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/validator_info.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7af0a656-f072-45ef-810f-78144ac2f9a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder-client-types/src/lib.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7abc20a8-98a1-4795-8933-293904a484b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder-client-types/src/token.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d581f6ee-f644-4192-9cd0-a3258c2d44ec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-client/src/error.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b717756e-54c8-47d6-8339-cb9856794196?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-client/src/lib.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d64c2b02-ef1e-4219-bd5c-8acecb01dd25?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-interface/src/lib.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0deef81c-094f-4af0-92a7-f8f2040a304e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-server/src/banks_server.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af9c1e04-8598-45de-a0af-9d42f7294257?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-server/src/lib.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09ada045-03e2-4cb1-973c-f394ff02416e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pubsub-client/src/lib.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ee063de3-e2ac-4673-af54-8cb4100ef072?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pubsub-client/src/nonblocking/mod.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d00789fd-d5ac-40ae-a31c-8d7b0d5f98b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pubsub-client/src/nonblocking/pubsub_client.rs -> Scope: Critical. An unprivileged attacker can claim, double-claim, or redirect epoch rewards, commission, or collected fees belonging to another stake or vote account.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6ba92332-1c39-462c-bfa3-6581b9d4dbcf?mode=deep",
+    "questions_generated": false
+  }
+]
