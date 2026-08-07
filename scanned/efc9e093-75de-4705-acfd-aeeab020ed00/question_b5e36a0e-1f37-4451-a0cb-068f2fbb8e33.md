@@ -1,1 +1,0 @@
-[File: 'svm-measure/src/macros.rs' -> Scope: unbounded epoch-boundary work] [Function: measure_time!/measure_us! wrapping Bank::calculate_stake_rewards_and_commissions] Can an attacker inflate the number of stake delegations processed inside the `measure_redeem_rewards` timed block (`Measure::start(
