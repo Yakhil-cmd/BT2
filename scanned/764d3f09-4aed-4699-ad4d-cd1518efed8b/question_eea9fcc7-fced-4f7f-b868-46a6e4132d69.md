@@ -1,1 +1,0 @@
-[File: 'File Name: bucket_map/src/index_entry.rs -> Scope: High.'] [Function: IndexEntryPlaceInBucket::occupy_if_matches] Can an unprivileged attacker force two conflicting writes for the same pubkey (e.g. by racing a stake account close/recreate at the same address via System::CreateAccount + StakeInstruction paths) to reach the `assert_eq!(enum_tag, OccupiedEnumTag::Free, \
