@@ -1,1 +1,0 @@
-[File: 'File Name: account-decoder/src/parse_token_extension.rs -> Scope: High.'] [Function: parse_extension / ExtensionType::ConfidentialTransferFeeConfig] Can an unprivileged attacker set ConfidentialTransferFeeConfig.withheld_amount to a crafted Pod ciphertext value so that convert_confidential_transfer_fee_config's format!(\
