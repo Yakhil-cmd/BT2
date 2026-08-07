@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: xdp/src/route.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7080495-caee-4bea-b129-ca69456f9b87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/route_monitor.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_517e9445-64ee-4ec4-b519-c500c8b9fe42?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/socket.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6bbf39d3-0326-4646-849e-8e361717d58e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/transmitter.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b9962205-3f26-41c2-8581-521cba2b8384?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/tx_loop.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ca9cab00-0e3e-49ca-b500-60ddb14ed8fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp/src/umem.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bf4b5823-cbe7-4f3e-8142-590e3b43b9aa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp-ebpf/src/bin/agave-xdp-prog.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5c6d5544-6ec9-4f96-903b-afca4a9b6931?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: xdp-ebpf/src/lib.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_414d5b66-aa4a-4145-b3aa-96abc28c2890?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/lib.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f28e1822-500d-47b8-aa4f-2f87a3bc987d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_account_data.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ce33baa-dadf-4ddd-9e89-c337faa96538?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_address_lookup_table.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f80411a7-d934-45ba-8ab6-63d3582df268?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_bpf_loader.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0ecc95cd-4cc9-4869-8097-53d452c5ed29?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_config.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8c7b0923-66ab-42a7-b250-9840ef94a895?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_nonce.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f50eb7aa-4557-4677-bd4d-27bd572972a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_stake.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_212c0dde-d4bf-4778-8130-18c116681c61?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_sysvar.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_430e8ec7-42c7-4395-a60d-062e17347dc0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_token.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_493d2db4-d0bd-4204-a854-6aac7c80ee97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_token_extension.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c5dfa60e-51bf-4213-9707-9ec9188abb36?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/parse_vote.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d17fd41a-7bb0-4d43-8688-9ecfed01b9ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder/src/validator_info.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce177255-bf24-434b-84be-46be34efa41b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder-client-types/src/lib.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_02e814bc-c201-4ee9-9a10-515af89f2089?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: account-decoder-client-types/src/token.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b4fb0527-2321-4a7f-8bb1-e04b421253fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-client/src/error.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2165e4dc-f6e8-479e-8b29-680481a6bebb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-client/src/lib.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ba46bce6-8339-4ea6-98bc-fe61b0c2e05f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-interface/src/lib.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db2700a7-56b1-4248-98f7-e60538caa2f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-server/src/banks_server.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f1a099a3-2343-49a4-a221-ac3f35c9bdb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banks-server/src/lib.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b2975b6f-2bb3-4fbe-b112-16f69688f8dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pubsub-client/src/lib.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e75cbe1f-c472-462d-9d69-74609b4ff636?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pubsub-client/src/nonblocking/mod.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e9045a90-d526-4002-929d-3cfbfd1a28de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pubsub-client/src/nonblocking/pubsub_client.rs -> Scope: Critical. An unprivileged attacker can move, withdraw, split, merge, or redelegate lamports from a system, stake, or vote account whose authority key they do not hold.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5e2d5c24-c065-4869-a056-ad49fa8791fd?mode=deep",
+    "questions_generated": false
+  }
+]
