@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: gossip/src/crds_gossip_push.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fbdc2153-89fb-4966-8e5c-7029878a9af3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_shards.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bb4438e-d2f4-4e37-b47c-ee7eca6e53bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/crds_value.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eaee1c82-51ba-4320-a479-a3313270927a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/duplicate_shred.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9fae14bf-35c4-43b5-8844-d0363b1587b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/duplicate_shred_handler.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_05206f00-e333-4bbb-b508-6c5e18daa4a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/duplicate_shred_listener.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1b96866a-77e1-4a32-9d5c-f2951e9c14f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/epoch_slots.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce69cd69-e16f-48da-a105-24efcccc741f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/epoch_specs.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fff59391-f4ab-4321-b84e-123dc3606b07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/gossip_error.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_58185c2a-3fb8-4fac-a1ce-b8cada66abe1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/gossip_service.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a08a8589-d8ca-4244-befa-c856adf98f6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/harness.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f12a3c25-5184-40e9-8576-1275622606ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/lib.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b0486e0c-162d-45b0-a329-57986c341dd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/node.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c8ae5e4-a2fa-499b-bb91-b026fca19e2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/ping_pong.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc22cc53-5511-4ab2-a3b8-19b30dfe36bf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/protocol.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c1748989-c96e-458b-8828-fe33317691b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/push_active_set.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ae117fda-1838-4346-8d92-a863296c0328?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/received_cache.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad755d92-407c-4796-9a2c-173ff5fb8743?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/restart_crds_values.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a089c38-6775-410f-908b-54b5b1655501?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/sigverify_cache.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77b2bb4a-7587-48e0-b5ac-d9fb6bd334c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/tlv.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c2f3227c-6ff2-455b-8774-fee988c5c7a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: gossip/src/weighted_shuffle.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a819ed70-41a5-43a2-9464-440d32796c41?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/ancestor_iterator.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ec78c65c-5eb9-4e51-81f5-4a05ca2a2079?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/bank_forks_utils.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5ab504a8-23f1-414d-9bad-85d294ad7ceb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/bigtable_delete.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7f182705-e8a4-4840-81ab-24ffe11932f2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/bigtable_upload.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8b23d9c8-0c0b-4484-8487-45a8e18b0798?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/bigtable_upload_service.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d50e3557-30b9-49ef-827b-42d856a5eb99?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/bit_vec.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d3447da-ee56-4273-a018-404a62e0d385?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/block_error.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_88296327-ea26-45b4-a535-893034f32480?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/blockstore/blockstore_purge.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61eeb611-d090-4631-a38b-85c68e0cb7c1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/blockstore/cleanup_service.rs -> Scope: High. An unprivileged attacker can craft stake, vote, or reward-distribution input that panics, overflows, or unboundedly expands work during epoch boundary processing and stalls every validator.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f9dafc98-deff-4014-b46c-50c48b237b78?mode=deep",
+    "questions_generated": false
+  }
+]
