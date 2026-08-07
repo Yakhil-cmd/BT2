@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: ledger/src/slot_stats.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_208089b6-3066-456f-bca8-bb4ae9d548ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/staking_utils.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9f32314d-009c-40aa-9812-864a5a58c7ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/transaction_address_lookup_table_scanner.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3141c674-391a-4b2a-96dc-7f8beb47cddb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: ledger/src/use_snapshot_archives_at_startup.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_115f39a7-03e4-4561-a579-1a74b7de38f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/addr_cache.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_44130aa2-50f7-4179-8f0c-5041b77fb0c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/broadcast_stage/broadcast_duplicates_run.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c093d2ed-4465-48ac-a6a5-f8777173904c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/broadcast_stage/broadcast_metrics.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fc6b0af6-7c89-4dad-87c0-af24b2c9d07c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/broadcast_stage/broadcast_utils.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d6c58e34-aa34-4c6c-8e84-14e84903557f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/broadcast_stage/standard_broadcast_run.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0852e684-3095-48d7-9689-9eb7c8b054d4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/broadcast_stage.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93194722-3fdd-4619-806f-06aae3c11949?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/cluster_nodes.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b7a7febe-3c96-4e6a-acd4-583b83104720?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/lib.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c7b906c1-13bb-4baf-aebc-9aa3fc3f5d0d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/retransmit_stage.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df643bc6-6a9b-4d50-a457-abcecd51df5a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: turbine/src/sigverify_shreds.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a3440c4f-1ccb-4021-9fcf-36b44f9a0383?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: banking-stage-ingress-types/src/lib.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ab9540ce-55db-4d3e-9d8d-418e13a64b6e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/client_connection.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bb0bc75-f339-4279-b7e5-fb8cc971fa2d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_21597d69-6b38-4138-accd-614af9c8bed8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/connection_cache_stats.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9323bd48-006b-44eb-b769-10d233a171b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/lib.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_626ac580-bcfc-4445-ba8f-6461ed7ad594?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/client_connection.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a1c35e6-9eec-477f-947e-4a75eea65d78?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: connection-cache/src/nonblocking/mod.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af25f6fc-5faf-474a-b7ed-efca6d0d433e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/block_component.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b91ba85f-f6c1-4961-a027-4a29a21bf063?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/entry.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_313a97a9-ffd2-4496-b7b1-2ed9de3088ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/entry_or_marker.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_344e160d-2c82-48b7-b961-a5f27d49cbd8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/lib.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e44c7562-a746-420b-9daa-3ec3fe32fd19?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: entry/src/poh.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c858c704-eaa0-48da-ad85-eadde7f8ffac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/banlist.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_062f4289-d5fd-4beb-aa02-a6443ed54fbb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/ip_echo_client.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c481b246-a0ba-4dd0-ae7f-3f13b1390459?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/ip_echo_server.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1f66b22b-9d70-4c43-9185-5faad0c56673?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: net-utils/src/lib.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df53c113-6215-473f-b53e-6c36db7c5583?mode=deep",
+    "questions_generated": false
+  }
+]
