@@ -1,1 +1,0 @@
-[File: 'core/src/epoch_specs.rs -> Scope: High.'] [Function: EpochSpecs::maybe_refresh_cache and runtime/src/bank.rs current_epoch_stakes] Since `current_epoch_stakes()` on `Bank` does `self.epoch_stakes.get(&self.epoch.saturating_add(1)).expect(\
