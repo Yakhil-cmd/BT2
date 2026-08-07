@@ -1,1 +1,0 @@
-[File: 'runtime/src/stakes.rs -> Stakes::upsert_stake_delegation / sub_delegated_stake -> Scope: DelegatedStakes accounting divergence'] [Function: sub_delegated_stake] Can an attacker construct a rapid sequence of Delegate/Deactivate/redelegate instructions on their own stake account such that `sub_delegated_stake`'s `expect(\
