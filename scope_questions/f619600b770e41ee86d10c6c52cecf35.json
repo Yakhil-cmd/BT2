@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: transaction-status/src/lib.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9e17a2e2-011a-4161-a39f-0d96a0d00cdd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_accounts.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_30165969-6632-405a-bc20-6e96e0ef55a9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_address_lookup_table.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce78d158-e345-46c4-b235-c0fc5e3edd51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_associated_token.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0f6fc4f0-5f81-4ee1-8b91-aa871f5b5579?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_bpf_loader.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_445978f3-5ca2-4a48-b099-5c02a7b1a103?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_instruction.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dd095c5b-0718-4017-be3a-3c685a358e6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_stake.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ccb3eba4-315b-4030-8e4d-b950227f48fd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_system.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_319b8f95-6ffa-49ae-bf91-379a8aa5473d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/confidential_mint_burn.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a2daaf31-5b77-4297-a89e-1509cd94b44b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/confidential_transfer.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5229c67e-5442-41a0-abdd-7a8d22728c64?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/confidential_transfer_fee.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b440d22a-f9e3-44be-8f04-af92e28efad6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/cpi_guard.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_36220eb2-15aa-4395-841c-cf00e35154b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/default_account_state.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d7657ae3-a424-4334-80dd-f51d60e8a54f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/group_member_pointer.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6a11c90b-c3d9-4682-a6d8-5571036d77c7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/group_pointer.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_29ca2f13-3e74-4feb-95ea-7ce25ef609c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/interest_bearing_mint.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d59ce325-f71b-48f8-bb0e-f926b2752ed9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/memo_transfer.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e1b299a8-0b49-4c4e-80f9-e1cf5defeaf3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/metadata_pointer.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7dc40ec5-8d4a-4cdf-a5f8-547ecab9d531?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/mint_close_authority.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9c544ea8-2204-43b0-aea9-8e9b379d3a18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/mod.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5e02cff0-57cf-4111-8bd3-710b3878b133?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/pausable.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ea83991-6cc4-4331-b7aa-1b8c5103d7c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/permanent_delegate.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ca15a326-89eb-4780-80c9-10fb1ce52262?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/permissioned_burn.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b346d2c6-0f9d-4fdb-945c-ced95453dc51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/reallocate.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7cd1ff51-85f0-4ca3-9bde-525ef999d71a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/scaled_ui_amount.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_50019f6b-45b3-40a5-8f7f-d701aff3ac16?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/token_group.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1173893b-164c-4d61-a351-15fdfea10782?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/token_metadata.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3b93936b-b515-40c2-8006-07ac53626d53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/transfer_fee.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_44ae93c3-aee1-45d4-8519-d626cbe4eed6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token/extension/transfer_hook.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b739cb4-7d13-47a4-9452-dd03c6fb51d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: transaction-status/src/parse_token.rs -> Scope: High. An unprivileged attacker can permanently lock a victim's stake, vote, or nonce account by driving it into a state no instruction can exit, or by breaking rent-exempt or account-size invariants.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3bc00d0d-ddf7-4867-8495-5a23faac6e96?mode=deep",
+    "questions_generated": false
+  }
+]
