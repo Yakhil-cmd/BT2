@@ -1,1 +1,0 @@
-[File: 'account-decoder-client-types/src/token.rs' -> Scope: unbounded work / panic via crafted token-display input] [Function: real_number_string] Can an unprivileged attacker supply a UiTokenAmount-like (amount: String, decimals: u8) pair where decimals is near u8::MAX (255) so that format!(\
