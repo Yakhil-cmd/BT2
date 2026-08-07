@@ -1,0 +1,7 @@
+[File: 'File Name: programs/zk-token-proof/src/lib.rs -> Scope: High.'] [Function: process_close_proof_context, lines 136-142] Can an unprivileged attacker who is NOT the recorded context_state_authority still pass `is_instruction_account_signer(2)` by supplying a signer key that happens to equal expected_owner_pubkey through a crafted ProofContextStateMeta byte layout collision (e.g. via the account-size mismatch path in process_verify_proof line 122), thereby forging authority over someone else's context-state account? Preconditions: attacker can create a context-state account whose serialized ProofContextStateMeta.context_state_authority field is influenced by attacker-chosen offsets. Call sequence: craft VerifyProof instruction with account data such that ProofContextStateMeta::try_from_bytes parses attacker's own pubkey as context_state_authority even though a victim funded/created the account. Invariant tested: authority-check invariant — the recorded authority field must be set exactly once at creation and never attacker-influenced after the fact for accounts the attacker does not control. Scoped impact: unauthorized closing/draining of a victim-funded but attacker-authority-recorded context-state account. Proof idea: unit test asserting ProofContextState::encode always writes context_state_authority from the instruction's
+
+### Citations
+
+**File:** programs/zk-token-proof/src/lib.rs (L1-6)
+```rust
+#![cfg(feature =
