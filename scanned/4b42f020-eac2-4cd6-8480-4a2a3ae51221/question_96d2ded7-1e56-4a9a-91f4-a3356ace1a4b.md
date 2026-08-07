@@ -1,1 +1,0 @@
-[File: 'poh/src/poh_recorder.rs -> Scope: High'] [Function: EpochInflationAccountState::new_epoch_update_account / inflation_rewards_for_epoch] Can an attacker who is an unprivileged staker cause capitalization or point_value math in the Alpenglow epoch-boundary path (AlpenglowEpochType::is_alpenglow_or_migration_epoch) to panic via the `.unwrap_or_else(|| panic!(\
