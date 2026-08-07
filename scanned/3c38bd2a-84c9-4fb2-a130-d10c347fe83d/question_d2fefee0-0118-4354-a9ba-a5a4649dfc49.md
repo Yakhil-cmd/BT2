@@ -1,1 +1,0 @@
-[File: 'File Name: ledger/src/staking_utils.rs -> Scope: High.'] [Function: solana_vote::vote_account::VoteAccounts::sub_stake / VoteAccounts::do_sub_node_stake] Can an unprivileged attacker, by carefully sequencing StakeStateV2 deactivate/withdraw instructions across multiple stake accounts delegated to the same vote account within one epoch, trigger the `panic!(\
