@@ -1,0 +1,1 @@
+[File: 'File Name: download-utils/src/lib.rs -> Scope: High.'] [Function: Bank::calculate_epoch_inflation_rewards vs EpochInflationAccountState::inflation_rewards_for_epoch] Can an attacker straddling an Alpenglow migration epoch boundary (by delegating/voting such that `AlpenglowEpochType::is_alpenglow_or_migration_epoch` classification flips) trigger the `panic!(\

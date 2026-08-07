@@ -1,0 +1,1 @@
+[File: gossip/src/crds.rs -> Fn: overrides] Can an attacker craft two CrdsValue instances with identical CrdsValueLabel but non-matching pubkey/label semantics (e.g. by racing a ContactInfo update against a Vote/EpochSlots insert for the same label) to trigger the `assert_eq!(value.label(), other.value.label(), \

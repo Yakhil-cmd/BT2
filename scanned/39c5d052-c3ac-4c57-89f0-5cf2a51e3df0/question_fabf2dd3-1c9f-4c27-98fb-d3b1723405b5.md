@@ -1,0 +1,1 @@
+[File: 'File Name: rpc/src/rpc_service.rs -> Scope: High.'] [Function: Bank::distribute_partitioned_epoch_rewards in runtime/src/bank/partitioned_epoch_rewards/distribution.rs:80-171] Can an unprivileged attacker cause `partition_rewards.all_stake_rewards.get(*index).unwrap_or_else(|| panic!(...))` or the `.unwrap_or_else(|| panic!(

@@ -1,0 +1,1 @@
+[File: 'File Name: perf/src/lib.rs -> Scope: High. ...'] [Function: Stakes::upsert_stake_delegation / sub_delegated_stake] Can an unprivileged attacker construct a sequence of `Split`/`Merge`/`Deactivate`/re-`DelegateStake` instructions on their own stake account timed within a single slot such that `sub_delegated_stake`'s `current_stake.checked_sub(stake).expect(\

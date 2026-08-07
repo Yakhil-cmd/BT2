@@ -1,0 +1,1 @@
+[File: 'File Name: rpc/src/parsed_token_accounts.rs -> Scope: High.'] [Function: calculate_stake_rewards (tower_points path)] Can an attacker who accumulates tower_points near u128::MAX via massive credits over many epochs (never withdrawing) cause the checked_mul(point_value.rewards) '.expect(\

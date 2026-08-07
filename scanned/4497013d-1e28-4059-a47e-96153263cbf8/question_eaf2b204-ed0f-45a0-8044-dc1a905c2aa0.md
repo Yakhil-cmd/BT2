@@ -1,0 +1,1 @@
+[File: 'File Name: runtime/src/bank/builtins/mod.rs -> Scope: High.'] [Function: Bank::current_epoch_stakes (runtime/src/bank.rs)] Can an attacker-triggered sequence of stake changes right at an epoch boundary cause `self.epoch_stakes.get(&self.epoch.saturating_add(1))` to return `None`, hitting the `.expect(\

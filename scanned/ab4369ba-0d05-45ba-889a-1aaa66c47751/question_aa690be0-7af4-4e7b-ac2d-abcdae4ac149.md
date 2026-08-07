@@ -1,0 +1,1 @@
+[File: 'builtins-default-costs/src/lib.rs' -> Scope: High] [Function: get_builtin_migration_feature_index / BuiltinMigrationFeatureIndex::BuiltinWithMigrationFeature] Can an unprivileged attacker cause ComputeBudgetInstructionDetails::try_from's `migrating_builtin_feature_counters.migrating_builtin.get_mut(core_bpf_migration_feature_index).expect(\
