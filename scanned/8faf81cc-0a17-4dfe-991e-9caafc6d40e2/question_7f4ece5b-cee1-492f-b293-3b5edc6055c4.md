@@ -1,1 +1,0 @@
-[File: 'File Name: rpc-client/src/rpc_client.rs -> Scope: High.'] [Function: programs/vote/src/vote_state/handler.rs::increment_credits / process_next_vote_slot] Can an unprivileged attacker who controls their own vote account (as a self-staked node) craft a vote/vote-state-update sequence that forces `earned_credits.checked_add(...).expect(\
