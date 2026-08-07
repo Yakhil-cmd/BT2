@@ -1,0 +1,1 @@
+[File: core/src/forwarding_stage.rs -> Scope: High] [Function: buffer_packet_batches] Can an attacker send a packet whose RuntimeTransaction::try_new succeeds but whose SanitizedTransactionView::try_new_sanitized combined with packet.data(..) violates the assumed invariant behind the unreachable!(\
