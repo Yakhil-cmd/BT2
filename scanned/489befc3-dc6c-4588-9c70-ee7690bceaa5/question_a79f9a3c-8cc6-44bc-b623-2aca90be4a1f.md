@@ -1,1 +1,0 @@
-[File: 'core/src/cluster_slots_service/cluster_slots.rs' -> Scope: High] [Function: ClusterSlots::roll_cluster_slots startup init] Can an attacker who is a new/rejoining node's peer craft `EpochSlots` gossip data referencing slots far into a not-yet-populated ring buffer window so that the `panic!(
