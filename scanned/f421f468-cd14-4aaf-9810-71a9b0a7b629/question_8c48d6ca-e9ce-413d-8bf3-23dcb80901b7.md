@@ -1,0 +1,1 @@
+[File: accounts-db/src/account_info.rs -> Scope: Critical] [Function: AccountInfo::offset / reduced_offset_to_offset arithmetic] Can an attacker force an AppendVec offset that is a non-multiple of ALIGN_BOUNDARY_OFFSET to be produced by a legitimate stake/vote account resize path (bypassing the internal alignment guarantee), causing AccountInfo::new's assert_eq!(...,\

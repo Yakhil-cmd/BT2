@@ -1,0 +1,1 @@
+[File: 'File Name: gossip/src/crds_filter.rs -> Scope: Critical. An unprivileged attacker can mint value out of nothing through stake activation/deactivation math, credit accounting, or partitioned reward distribution and inflate total or circulating supply.'] [Function: runtime/src/stakes.rs::sub_delegated_stake] Given `sub_delegated_stake` uses `.expect(\
