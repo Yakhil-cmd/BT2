@@ -1,1 +1,0 @@
-[File: 'File Name: udp-client/src/nonblocking/mod.rs -> Scope: High. ...'] [Function: programs/vote/src/vote_state/mod.rs process_new_vote_state increment_credits] Can an unprivileged attacker who controls their own vote account submit crafted VoteStateUpdate/TowerSync sequences that repeatedly hit `checked_add(...).expect(\
