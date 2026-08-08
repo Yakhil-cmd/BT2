@@ -1,1 +1,0 @@
-[File: 'File Name: runtime/src/bank/builtins/mod.rs -> Scope: High.'] [Function: EpochInflationAccountState::inflation_rewards_for_epoch / calculate_rewards_for_partitioning (runtime/src/bank/partitioned_epoch_rewards/calculation.rs)] Can an attacker who is not staked at all trigger the `panic!(\
