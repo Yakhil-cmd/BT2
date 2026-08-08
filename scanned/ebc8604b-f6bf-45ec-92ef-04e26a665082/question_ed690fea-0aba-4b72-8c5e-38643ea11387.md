@@ -1,1 +1,0 @@
-[File: program-runtime/src/loading_task.rs -> Scope: Critical] [Function: LoadingTaskWaiter::wait] Can an unprivileged attacker construct a transaction batch pattern that permanently starves a subset of transactions inside `wait_while` (e.g., by ensuring the cooperative loading task never completes because the loader thread panics or the account load fails via `.expect(\
