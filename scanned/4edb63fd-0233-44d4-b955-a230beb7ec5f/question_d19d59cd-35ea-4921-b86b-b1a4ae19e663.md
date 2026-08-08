@@ -1,1 +1,0 @@
-[File: 'File Name: ledger/src/ancestor_iterator.rs -> Scope: High.'] [Function: EpochInflationAccountState::new_epoch_update_account] Can an attacker who cannot control the alpenglow feature-gate nonetheless drive Bank::process_new_epoch's alpenglow branch to panic via the `panic!(\
