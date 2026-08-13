@@ -1,1 +1,0 @@
-[File: 'plugins/hookify/hooks/pretooluse.py' -> Scope: High] [Function: rule_engine.RuleEngine._check_condition operator='contains'] Can an attacker-authored rule use an empty-string pattern (e.g. 'pattern: \
