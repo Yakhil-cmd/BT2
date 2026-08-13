@@ -1,0 +1,1 @@
+[File: plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh, lines 68-83] [Function: matcher/hooks-array presence check] Can an attacker-authored hooks.json omit or supply an overly broad matcher (e.g. matcher: \

@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/agent-development/scripts/validate-agent.sh -> DESCRIPTION/MODEL/COLOR/TOOLS grep|sed extraction'] [Function: validate-agent.sh frontmatter field extraction via 'grep \

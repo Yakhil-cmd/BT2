@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/agents/type-design-analyzer.md' -> Scope: Critical file read/write escape, secret/data exfiltration] [Function: type-design-analyzer frontmatter 'tools' field (absent) + Task tool dispatch from plugins/pr-review-toolkit/commands/review-pr.md allowed-tools:[\

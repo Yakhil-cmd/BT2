@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/plugin-settings/SKILL.md' -> 'Security Considerations' -> 'Validate File Paths' section] [Function: documented pattern `FILE_PATH=$(... grep '^data_file:' ...); if [[ \

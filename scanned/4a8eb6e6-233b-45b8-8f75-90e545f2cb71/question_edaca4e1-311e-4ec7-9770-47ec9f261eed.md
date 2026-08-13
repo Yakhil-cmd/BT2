@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/plugin-structure/SKILL.md' -> Scope: Critical] [Function: hooks.json wrapper format vs settings.json direct format] Can a plugin's 'hooks/hooks.json' omit the required '{\

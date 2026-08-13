@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/commands/list.md'] [Function: commands/list.md frontmatter 'allowed-tools'] Can an unprivileged attacker submit a modified plugins/hookify/commands/list.md (or configure.md/hookify.md) via a plugin repository contribution that expands the 'allowed-tools' frontmatter array (e.g. adding 'Bash', 'Write', or 'Edit' to a command originally scoped to [\

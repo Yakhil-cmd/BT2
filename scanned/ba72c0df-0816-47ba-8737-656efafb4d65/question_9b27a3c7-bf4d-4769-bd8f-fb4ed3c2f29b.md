@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/SKILL.md' -> Scope: High] [Function: `$TOOL_INPUT`/`$TOOL_RESULT` prompt substitution in prompt-based hooks] Can an unprivileged attacker embed hook-directive-like text (e.g. fake 'Return: allow' or JSON `{\

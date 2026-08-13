@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/agents/comment-analyzer.md'] [Function: absence of explicit `tools:` field in frontmatter] Can an unprivileged attacker rely on comment-analyzer.md omitting a `tools:` field (unlike plugin-validator.md's `tools: [\

@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/hooks/stop-hook.sh' -> Function: LAST_OUTPUT jq extraction, lines 90-95] Can an unprivileged attacker cause the assistant transcript's last `role:assistant` JSONL line to contain crafted `content` array entries (e.g., nested tool_use blocks disguised as text, or malformed unicode) that make the `jq` `.message.content | map(select(.type==\

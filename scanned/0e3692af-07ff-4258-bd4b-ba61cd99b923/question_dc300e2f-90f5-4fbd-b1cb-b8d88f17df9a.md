@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/scripts/test-hook.sh -> Scope: High'] [Function: --timeout argument parsing at lines 115-118] Can an attacker supply a non-numeric or negative TIMEOUT value (e.g. '-t -- ; rm -rf /') that is passed unquoted-adjacent into `timeout \

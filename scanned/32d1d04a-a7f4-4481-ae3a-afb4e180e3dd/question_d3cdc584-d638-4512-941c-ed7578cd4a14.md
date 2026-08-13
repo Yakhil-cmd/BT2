@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/commands/review-pr.md'] [Function: YAML frontmatter parser for 'allowed-tools']  Does the markdown frontmatter parser have a differential between how it tokenizes `allowed-tools: [\

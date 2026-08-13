@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/core/config_loader.py' -> Function: extract_frontmatter] Can an attacker who commits a hookify rule file (`.claude/hookify.*.local.md`) containing the literal sequence `---` inside a YAML scalar value (e.g. `pattern: \

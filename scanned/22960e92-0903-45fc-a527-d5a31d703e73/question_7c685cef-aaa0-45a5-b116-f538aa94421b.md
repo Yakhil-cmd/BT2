@@ -1,0 +1,1 @@
+[File: plugins/security-guidance/hooks/hooks.json + sg-python.sh] [Function: `${CLAUDE_PLUGIN_ROOT}` expansion in the `command` string] Can untrusted repository content (e.g. a `.claude-plugin/plugin.json` or nested plugin manifest checked into the repo) redefine or influence `CLAUDE_PLUGIN_ROOT` such that the `bash \

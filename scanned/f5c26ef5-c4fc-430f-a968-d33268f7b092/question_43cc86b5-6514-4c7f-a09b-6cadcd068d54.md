@@ -1,0 +1,1 @@
+[File: 'plugins/pr-review-toolkit/agents/silent-failure-hunter.md' -> Scope: Critical] [Function: plugins/pr-review-toolkit/commands/review-pr.md frontmatter 'allowed-tools'] Can an attacker-controlled '$ARGUMENTS' string passed to the '/pr-review-toolkit:review-pr' slash command (which only restricts tools via the static frontmatter 'allowed-tools: [\

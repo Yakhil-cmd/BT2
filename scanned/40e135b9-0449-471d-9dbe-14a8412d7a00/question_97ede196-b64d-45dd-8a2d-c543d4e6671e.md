@@ -1,0 +1,1 @@
+[File: plugins/agent-sdk-dev/agents/agent-sdk-verifier-py.md frontmatter, lines 1-5] The agent frontmatter declares no `tools:` restriction, defaulting to full tool access per plugin-dev's agent-development skill (\

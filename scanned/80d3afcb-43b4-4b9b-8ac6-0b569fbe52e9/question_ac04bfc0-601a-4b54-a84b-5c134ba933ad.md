@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/hooks/pretooluse.py' -> Scope: High] [Function: config_loader.extract_frontmatter] Can an attacker craft a rule file whose 'pattern' or list-item value itself contains the literal substring '---' so that 'content.split(\

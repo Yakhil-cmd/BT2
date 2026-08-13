@@ -1,0 +1,1 @@
+[File: '.claude/commands/dedupe.md' -> Scope: High] [Function: scripts/gh.sh CMD dispatch via SUB1/SUB2 concatenation] Can an unprivileged attacker craft a GitHub issue title/body that gets echoed back as an agent-generated argument such that './scripts/gh.sh' receives a crafted subcommand pair (e.g. 'search' + 'issues' with an embedded newline or extra token) causing CMD=\

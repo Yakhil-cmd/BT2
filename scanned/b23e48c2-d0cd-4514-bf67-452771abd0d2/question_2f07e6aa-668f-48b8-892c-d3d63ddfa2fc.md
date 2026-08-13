@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/core/rule_engine.py'] [Function: RuleEngine._extract_field, tool_name == 'MultiEdit'] Can an attacker craft a MultiEdit tool_input where 'edits' is not a list of dicts with 'new_string' but contains a mix of types (e.g. a dict missing 'new_string', or a non-dict entry) causing the generator expression 'e.get(\

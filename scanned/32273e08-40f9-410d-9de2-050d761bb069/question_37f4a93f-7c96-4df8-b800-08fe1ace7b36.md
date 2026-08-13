@@ -1,0 +1,1 @@
+[File: 'plugins/security-guidance/hooks/extensibility.py'] [Function: _load_user_patterns] When both `security-patterns.yaml` and `security-patterns.json` exist at the same precedence tier (e.g. both under `<cwd>/.claude/`), does the first-match-wins `for ext in (\

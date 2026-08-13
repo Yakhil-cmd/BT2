@@ -1,0 +1,1 @@
+[File: plugins/pr-review-toolkit/commands/review-pr.md] [Function: allowed-tools frontmatter parser] Can an unprivileged attacker who controls repo content craft a review-pr.md-like command frontmatter block (e.g. malformed YAML list syntax in 'allowed-tools: [\

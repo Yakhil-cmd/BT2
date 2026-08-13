@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh' -> Scope: High] [Function: check_script Check 6 unquoted-variable detector] Can an attacker construct a hook script that defeats the regex \\$[A-Za-z_][A-Za-z0-9_]*[^\

@@ -1,0 +1,1 @@
+[File: plugins/security-guidance/hooks/security_reminder_hook.py] [Function: `check_patterns`/`extract_content_from_input`, lines 386-440] Can crafted frontmatter or file content in an Edit/Write/MultiEdit tool_input (untrusted repo content the agent is asked to write) exploit `pattern[\

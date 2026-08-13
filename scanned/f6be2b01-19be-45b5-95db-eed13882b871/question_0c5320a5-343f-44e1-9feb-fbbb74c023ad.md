@@ -1,0 +1,1 @@
+[File: plugins/plugin-dev/skills/hook-development/scripts/test-hook.sh -> Scope: Critical] [Function: exit-code classification, lines 205-218 and 246] Can an attacker-authored hook script under test intentionally exit with 0 or 2 after performing unauthorized side effects (writing files, exfiltrating data, spawning background processes) so that test-hook.sh reports \

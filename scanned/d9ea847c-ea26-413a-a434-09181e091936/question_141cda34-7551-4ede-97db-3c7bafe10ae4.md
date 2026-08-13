@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/hooks/stop-hook.sh'] [Function: grep-based assistant-message selection, lines 71 and 81] Can an attacker craft transcript JSONL content (e.g. via a compromised MCP/tool response that gets logged into the transcript) containing the literal substring '\

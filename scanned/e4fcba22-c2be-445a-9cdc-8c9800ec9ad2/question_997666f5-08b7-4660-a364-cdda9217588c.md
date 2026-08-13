@@ -1,0 +1,1 @@
+[File: 'plugins/ralph-wiggum/commands/help.md -> Scope: High.'] [Function: help.md frontmatter parser vs ralph-loop.md/cancel-ralph.md 'allowed-tools' field] Can an unprivileged attacker who forks/checks-in a modified copy of help.md (which lacks an 'allowed-tools' restriction, unlike ralph-loop.md's 'allowed-tools: [\

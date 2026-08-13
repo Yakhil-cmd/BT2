@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh' -> Scope: High] [Function: timeout numeric validation, lines 130-143] Can an unprivileged ATTACKER supply a timeout value as a JSON string containing leading zeros, a plus sign, or scientific notation (e.g. \

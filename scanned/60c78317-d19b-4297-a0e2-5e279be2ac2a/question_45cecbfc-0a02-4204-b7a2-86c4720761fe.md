@@ -1,0 +1,1 @@
+[File: scripts/gh.sh -> Scope: High] [Function: search issues query, POSITIONAL[0] extraction, line 77] Can an attacker supply a search query string containing shell metacharacters or embedded `--repo` flag text (e.g., `\

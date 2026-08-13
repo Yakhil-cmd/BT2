@@ -1,0 +1,1 @@
+[File: 'plugins/feature-dev/agents/code-architect.md'] [Function: tools field enumeration/validation, cf. validate-agent.sh TOOLS check] Does the agent tools frontmatter parser (as exercised by validate-agent.sh's 'TOOLS=$(echo \

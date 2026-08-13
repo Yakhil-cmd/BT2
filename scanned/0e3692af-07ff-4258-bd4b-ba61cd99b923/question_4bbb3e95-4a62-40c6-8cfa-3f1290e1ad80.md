@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh' -> Scope: High] [Function: hook_array_count / integer-index loop over .hooks, lines 86-88, 68] Can an unprivileged ATTACKER submit a hooks.json where `.\

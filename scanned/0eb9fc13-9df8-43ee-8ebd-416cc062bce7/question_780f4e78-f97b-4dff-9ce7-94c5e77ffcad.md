@@ -1,0 +1,1 @@
+[File: scripts/auto-close-duplicates.ts] [Function: autoCloseDuplicates, dupeComments filter] Can an attacker who cannot post as a Bot but can influence which comment the Bot itself echoes (via crafted issue title/body) get a Bot-authored comment to simultaneously satisfy `comment.body.includes(\

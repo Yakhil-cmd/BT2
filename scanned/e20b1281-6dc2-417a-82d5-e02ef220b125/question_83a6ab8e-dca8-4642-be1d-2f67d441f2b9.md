@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/commands/list.md'] [Function: extract_frontmatter (plugins/hookify/core/config_loader.py)] Can an unprivileged attacker who contributes a checked-in '.claude/hookify.*.local.md' file (via PR/cloned repo) craft frontmatter using 'content.split(\

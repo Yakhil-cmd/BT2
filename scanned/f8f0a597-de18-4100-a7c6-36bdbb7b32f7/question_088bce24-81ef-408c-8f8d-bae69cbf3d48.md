@@ -1,0 +1,1 @@
+[File: SKILL.md Step 5 'Summarize all changes made'] [Function: summary/diff generation and output] Can matched code lines containing literal secrets (API keys accidentally embedded near a model-string constant, e.g. `model=\

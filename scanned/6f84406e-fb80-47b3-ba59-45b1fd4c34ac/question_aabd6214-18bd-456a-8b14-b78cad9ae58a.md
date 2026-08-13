@@ -1,0 +1,1 @@
+[File: scripts/backfill-duplicate-comments.ts] [Function: backfillDuplicateComments dupeDetectionComments filter] Can an unprivileged attacker who posts a public GitHub issue comment containing the literal substrings 'Found' and 'possible duplicate' cause the filter 'comment.body.includes(\

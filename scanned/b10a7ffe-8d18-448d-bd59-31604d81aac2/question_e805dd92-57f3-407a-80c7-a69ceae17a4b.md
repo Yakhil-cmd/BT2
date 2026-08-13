@@ -1,0 +1,1 @@
+[File: 'plugins/hookify/core/config_loader.py'] [Function: Rule.from_dict] Can an attacker-controlled rule file set 'action' to any string other than exactly 'block' (e.g. 'Block', 'BLOCK ', 'block\\n') so that rule_engine.RuleEngine.evaluate_rules treats it as a warning-only rule (line 55: 'if rule.action == \

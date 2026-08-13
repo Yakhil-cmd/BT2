@@ -1,0 +1,1 @@
+[File: 'plugins/commit-commands/commands/commit.md'] [Function: bash prefix-matching used to enforce allowed-tools like Bash(git commit:*)] Can an attacker supply a crafted commit message or staged diff containing shell metacharacters (e.g. `git commit -m \

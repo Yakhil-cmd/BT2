@@ -1,0 +1,1 @@
+[File: plugins/ralph-wiggum/hooks/stop-hook.sh] [Function: completion_promise quote stripping, line 25] Can an attacker craft a `completion_promise` value in the committed state file containing embedded double quotes or backslashes that survive the naive `sed 's/^\

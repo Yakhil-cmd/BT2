@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/skill-development/SKILL.md' -> Scope: High: diff/config parsing differential in plugin-settings-derived skill guidance] [Function: parse-frontmatter.sh grep/sed field extraction referenced from this skill's sibling plugin-settings pattern, 'VALUE=$(echo \

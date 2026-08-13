@@ -1,0 +1,1 @@
+[File: scripts/backfill-duplicate-comments.ts] [Function: dupeDetectionComments filter identity check] Can an attacker who controls a GitHub App/bot integration installed on the repo (not an admin, just an app with comment permission) post a comment where 'user.type === \

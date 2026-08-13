@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/plugin-settings/SKILL.md' -> Scope: Critical command-consuming field ('allowed-tools') trust-boundary failure] [Function: 'From Commands' example frontmatter 'allowed-tools: [\

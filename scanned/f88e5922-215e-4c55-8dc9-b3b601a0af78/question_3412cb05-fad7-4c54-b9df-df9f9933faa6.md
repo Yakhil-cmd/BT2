@@ -1,0 +1,1 @@
+[File: 'plugins/plugin-dev/skills/plugin-settings/scripts/validate-settings.sh' -> Scope: Critical.] [Function: full script invoked as a 'utility script' potentially wired into an agent/skill workflow that runs it via Bash tool on user-supplied or PR-derived paths] Can an attacker who supplies a slash-command argument like `$0 \

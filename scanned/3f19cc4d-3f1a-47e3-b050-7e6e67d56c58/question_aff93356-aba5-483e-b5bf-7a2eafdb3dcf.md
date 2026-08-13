@@ -1,0 +1,1 @@
+[File: plugins/plugin-dev/skills/hook-development/scripts/test-hook.sh] [Function: main script body, line 190] Can an unprivileged attacker who controls a plugin's hook script filename supply a path containing shell metacharacters (e.g. '`; touch pwned;`' or embedded spaces/quotes) such that `output=$(timeout \
