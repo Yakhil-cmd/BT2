@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh' -> Scope: High] [Function: check_script Check 6 combined with attacker-controlled '$script' filename containing shell metacharacters] Since '$script' from '\

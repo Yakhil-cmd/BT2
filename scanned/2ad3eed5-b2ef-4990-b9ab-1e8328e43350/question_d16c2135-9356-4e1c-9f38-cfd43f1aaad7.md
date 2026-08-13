@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/mcp-integration/SKILL.md -> SSE/HTTP/WS 'url' field'] [Function: MCP transport URL validator] Does the loader enforce HTTPS/WSS as claimed in 'Security Best Practices', or can an attacker-supplied '.mcp.json' set 'type: \

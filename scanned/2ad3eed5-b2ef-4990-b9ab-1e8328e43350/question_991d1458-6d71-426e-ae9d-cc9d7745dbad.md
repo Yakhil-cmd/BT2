@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/mcp-integration/SKILL.md -> allowed-tools wildcard'] [Function: allowed-tools frontmatter parser for 'mcp__plugin_<name>_<server>__*'] Can an unprivileged attacker who controls a checked-in command markdown file set 'allowed-tools: [\
