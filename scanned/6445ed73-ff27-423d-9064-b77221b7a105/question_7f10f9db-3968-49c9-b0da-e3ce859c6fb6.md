@@ -1,1 +1,0 @@
-[File: 'plugins/hookify/core/config_loader.py' -> Function: load_rules] Can an attacker who cannot write outside the repo but can create files inside '.claude/hookify.*.local.md' via a crafted PR/checked-in template supply a rule with 'enabled' set to a non-boolean truthy string (e.g. 'enabled: \
