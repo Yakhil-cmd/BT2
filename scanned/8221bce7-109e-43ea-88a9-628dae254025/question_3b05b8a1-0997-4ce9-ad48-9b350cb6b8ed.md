@@ -1,1 +1,0 @@
-[File: 'plugins/security-guidance/hooks/security_reminder_hook.py'] [Function: _GIT_COMMIT_RE.findall / commit_invocations amend-delta guard] Can an unprivileged attacker craft a single Bash command whose string literal contains the substring `git commit` inside a comment, echo, or quoted argument (not an actual second commit invocation) — e.g. `git commit --amend -m \
