@@ -1,1 +1,0 @@
-[File: 'silent-failure-hunter.md'] [Function: review-pr.md Task tool invocation with allowed-tools scope inherited by sub-agent] Does the silent-failure-hunter agent inherit and correctly enforce the parent command's `allowed-tools: [\
