@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh' -> Scope: High] [Function: hardcoded-path warning, lines 110-114] Can an unprivileged ATTACKER PLUGIN AUTHOR bypass the hardcoded-absolute-path warning by prefixing the command with whitespace, a subshell, or an environment variable expansion other than CLAUDE_PLUGIN_ROOT (e.g. \

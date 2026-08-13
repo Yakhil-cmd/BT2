@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/hook-development/scripts/test-hook.sh -> Scope: High'] [Function: HOOK_SCRIPT executable check at lines 144-147] Can an attacker supply a hook script path with a trailing crafted filename that, once split by the string-concatenated `HOOK_SCRIPT=\
