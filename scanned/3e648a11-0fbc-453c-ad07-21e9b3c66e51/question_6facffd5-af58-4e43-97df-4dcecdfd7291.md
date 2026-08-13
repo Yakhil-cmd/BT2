@@ -1,1 +1,0 @@
-[File: plugins/feature-dev/agents/code-explorer.md -> Scope: High] [Function: allowed-tools frontmatter format differential between comma-separated string (as in code-review.md) and YAML array (as in hookify.md/agent-creator.md)] Given code-explorer.md uses a bare comma-separated `tools:` string while other plugin files use `tools: [\

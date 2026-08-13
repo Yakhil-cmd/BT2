@@ -1,1 +1,0 @@
-[File: 'plugins/pr-review-toolkit/agents/comment-analyzer.md'] [Function: description field `<example>` block parsing] Can a crafted `description` frontmatter value containing a spoofed `<example>...assistant: \
