@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh' -> Scope: High] [Function: check_script] Can an unprivileged attacker craft a hook script filename argument containing shell metacharacters (e.g. '$(rm -rf /)' or embedded newline) passed via \
