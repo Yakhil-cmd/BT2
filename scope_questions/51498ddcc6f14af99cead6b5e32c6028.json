@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/review_api.py -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e818e4f5-3340-4cb8-a933-272094238d9f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/security_reminder_hook.py -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe0cc78a-2e1f-47e4-8491-f0266b188073?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/session_state.py -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d52ccea-ff19-4627-8c2f-987ebf31e997?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/sg-python.sh -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e0d33fd9-6da3-48b4-a8a9-5f2514853af2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/agents/agent-sdk-verifier-py.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_badaf9ab-eaf5-4524-83cc-69975a5770a4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cfe04e94-4264-404b-a4e9-2b6fce7ce1ff?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/commands/new-sdk-app.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed756e34-eabc-4552-9843-838edd67f79d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/code-review/commands/code-review.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_336e6a4b-aec1-4cb9-9fd8-92fe00d4b2c4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/clean_gone.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_77c7efdb-76e9-4b60-a872-e96b4ab8eac8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/commit-push-pr.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bfab7b4c-6ea1-428f-b0e5-8a9798e805b5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/commit.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6cb07ada-1a52-4d0d-b70f-6bd5060b0c39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-architect.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1e9d7b62-d3a3-4534-932c-4581b78c177f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-explorer.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33682318-6b2b-42fc-99a2-9ad0b2833f9e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-reviewer.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9e8a4d78-ba9b-4bba-a7af-f3fc4d425f4c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/commands/feature-dev.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f0d73a04-6256-462c-ba3b-4c0b51694945?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/code-reviewer.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c12a6380-2d9d-48ee-97db-d31065e05e49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/code-simplifier.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_72dcc747-4cde-46d3-9c33-4303909933b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/comment-analyzer.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_389b9594-f35f-4fdc-be5c-3ef2f52f9df2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/pr-test-analyzer.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60417859-eaa0-4029-9348-80f36def9e9f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/silent-failure-hunter.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d2b4819-ea4f-4e39-aa6b-d96f6bb8826a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/type-design-analyzer.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6e35a446-d0c2-4733-a578-30aeef924971?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/commands/review-pr.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8f86579b-930b-4439-b962-f451760cfc78?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/cancel-ralph.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ad6af57b-dbb6-44c4-a58b-7b90a10fd2f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/help.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_087c032b-75fe-466a-a6d9-46119aa8eeaa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/ralph-loop.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f1b0bde4-29b5-42fe-b6f0-1dbe08c2f356?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/hooks/stop-hook.sh -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_26b0b3ba-6c35-4a23-8094-a66324951c8b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/scripts/setup-ralph-loop.sh -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b9dc819a-4153-4ad7-9aa2-e697fb3d5ef9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/agent-creator.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_253f63f6-73a1-4822-b8d7-6a3069ce7367?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/plugin-validator.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cae5438b-39de-473d-ad64-c6a52b4d1f72?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/skill-reviewer.md -> Scope: Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_386914a3-d0b7-4a24-8528-065e464e270e?mode=deep",
+    "questions_generated": false
+  }
+]
