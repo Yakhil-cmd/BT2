@@ -1,1 +1,0 @@
-[File: 'plugins/ralph-wiggum/hooks/stop-hook.sh' line 25] [Function: COMPLETION_PROMISE extraction/quote-stripping] Can an attacker who supplies --completion-promise text containing embedded double-quotes or trailing characters that survive setup-ralph-loop.sh's YAML quoting (line 134-138) cause the sed 's/^\

@@ -1,1 +1,0 @@
-[File: plugins/ralph-wiggum/hooks/stop-hook.sh] [Function: PROMISE_TEXT=$(echo \
