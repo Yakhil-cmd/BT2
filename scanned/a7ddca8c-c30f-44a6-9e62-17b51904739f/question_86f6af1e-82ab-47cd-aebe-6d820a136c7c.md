@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/agents/plugin-validator.md' -> Scope: High] [Function: Step 8 'Validate MCP Configuration', HTTPS/WSS check] Can an attacker bypass the 'MCP servers use HTTPS/WSS not HTTP/WS' check via a case-mangled or otherwise textually-distinct scheme (e.g. `Http://`, `ws://` embedded after a redirect comment, or `url: \
