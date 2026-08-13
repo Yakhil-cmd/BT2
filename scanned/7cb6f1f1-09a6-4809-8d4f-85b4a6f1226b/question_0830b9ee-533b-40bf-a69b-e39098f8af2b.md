@@ -1,1 +1,0 @@
-[File: plugins/hookify/core/config_loader.py -> Scope: Critical] [Function: extract_frontmatter quoting logic] Can an attacker use a pattern value containing an unbalanced or nested quote character (e.g., `pattern:
