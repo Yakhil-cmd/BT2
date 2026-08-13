@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh'] [Function: matcher-extraction jq call at line 70] Can an unprivileged attacker who supplies a hooks.json with a crafted top-level event key (e.g. containing embedded double-quotes/brackets like `x\
