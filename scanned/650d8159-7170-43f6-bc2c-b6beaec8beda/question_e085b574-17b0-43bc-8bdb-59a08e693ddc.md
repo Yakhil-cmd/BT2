@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/plugin-structure/SKILL.md'] [Function: 'disable-model-invocation' frontmatter flag enforcement] Can an unprivileged attacker craft a command markdown file where 'disable-model-invocation: true' is set but the value is quoted as string '\
