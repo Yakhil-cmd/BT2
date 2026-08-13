@@ -1,1 +1,0 @@
-[File: diffstate.py -> Scope: High] [Function: get_baseline_file_content] Can an unprivileged attacker who controls `file_path` values recorded via `record_touched_path` (sourced from tool_input paths) supply a path containing `../` segments or an absolute path outside the repo such that `os.path.relpath(abs_path, cwd_abs)` produces a pathspec accepted by `git show f
