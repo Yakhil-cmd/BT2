@@ -1,1 +1,0 @@
-[File: 'plugins/commit-commands/commands/clean_gone.md'] [Function: bash pipeline `git branch -v | grep '\\[gone\\]' | sed 's/^[+* ]//' | awk '{print $1}' | while read branch; do ... git worktree remove --force \
