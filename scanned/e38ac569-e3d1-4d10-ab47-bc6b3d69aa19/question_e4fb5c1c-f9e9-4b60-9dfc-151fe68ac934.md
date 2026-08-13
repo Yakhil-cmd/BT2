@@ -1,1 +1,0 @@
-[File: validate-settings.sh -> Scope: leak beyond consent boundary] [Function: boolean check loop 'for field in enabled strict_mode' at lines 76-83] Can an unprivileged attacker set 'strict_mode: TRUE' or 'strict_mode: \

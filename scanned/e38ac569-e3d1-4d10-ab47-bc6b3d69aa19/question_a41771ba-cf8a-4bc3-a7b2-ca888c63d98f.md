@@ -1,1 +1,0 @@
-[File: 'parse-frontmatter.sh'] [Function: field-name grep, line 51] Can an attacker set FIELD to an empty or whitespace-only string combined with a frontmatter body containing a line like ':' to make 'grep

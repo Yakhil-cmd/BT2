@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/plugin-settings/scripts/validate-settings.sh -> Scope: High leak of private code/secrets to external model or network endpoints'] [Function: FRONTMATTER=$(sed -n '/^---$/,/^---$/{ /^---$/d; p; }' \
