@@ -1,1 +1,0 @@
-[File: 'plugins/ralph-wiggum/hooks/stop-hook.sh'] [Function: RALPH_STATE_FILE path handling, line 13-15] Can an attacker replace the tracked '.claude/ralph-loop.local.md' path with a symlink (checked into git as a symlink object) pointing outside the workspace (e.g. to a file containing secrets or SSH keys) so that '[[ -f \
