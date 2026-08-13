@@ -1,0 +1,1 @@
+Let me check the documentation to confirm the intended semantics of multi-condition rules before concluding.
