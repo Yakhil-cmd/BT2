@@ -1,1 +1,0 @@
-[File: plugins/hookify/core/config_loader.py -> extract_frontmatter] Can an attacker craft a hookify rule file whose frontmatter contains a 'pattern' or 'message' field with an embedded '---' sequence so that 'content.split(\
