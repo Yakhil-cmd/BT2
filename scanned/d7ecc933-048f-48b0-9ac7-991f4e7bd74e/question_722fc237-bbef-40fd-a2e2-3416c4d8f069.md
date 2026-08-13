@@ -1,1 +1,0 @@
-[File: SKILL.md 'allowed-tools' MCP tool wildcard pattern, e.g. 'mcp__plugin_x__*'] [Function: MCP tool-name wildcard matcher in command frontmatter] Can a plugin command declaring a broad MCP wildcard (e.g. '\
