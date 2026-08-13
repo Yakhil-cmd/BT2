@@ -1,1 +1,0 @@
-[File: 'plugins/commit-commands/commands/clean_gone.md' -> Scope: High] [Function: `while read branch; do ... done` loop without `IFS=` control] Can a branch name containing leading/trailing tabs or unusual whitespace (introduced via a crafted remote branch name accepted by some git hosting quirks) be mis-trimmed by the default IFS `read`, causing `git branch -D \
