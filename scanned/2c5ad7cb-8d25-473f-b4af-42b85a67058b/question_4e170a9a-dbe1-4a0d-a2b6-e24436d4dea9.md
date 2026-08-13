@@ -1,1 +1,0 @@
-[File: '.claude/commands/dedupe.md' -> Scope: High] [Function: comment-on-duplicates.sh --potential-duplicates arg loop] Can an attacker-influenced duplicate-issue list (produced by dedupe.md step 4's LLM filtering over attacker-controlled issue text) contain a crafted numeric-looking token that still matches ^[0-9]+$ but resolves via 'gh issue view \
