@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: scripts/auto-close-duplicates.ts -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7bb25871-1bde-477d-89cf-0508a7d439b2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/backfill-duplicate-comments.ts -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5d989230-39f0-4758-bf58-871f71d49827?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/comment-on-duplicates.sh -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25360eb4-3f22-4527-87bb-eebd8d686531?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/edit-issue-labels.sh -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_78c59c04-1c87-4027-b66d-77999ab8c60a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/gh.sh -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aebc2f18-829a-4c6c-815d-4a905ed7aeda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/issue-lifecycle.ts -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5f570584-8fa2-48a3-a1e1-a8f7421107d7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/lifecycle-comment.ts -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c2346515-e060-45ab-ab75-fc40d90f6f3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/sweep.ts -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0c520234-f61f-4ece-b42a-d6d755c7f244?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: .claude/commands/commit-push-pr.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e4ebdd82-d51a-406b-86d4-3c790e50d7e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: .claude/commands/dedupe.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f6883946-9cb2-46dd-b3dc-44810f3e5351?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: .claude/commands/triage-issue.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85ad9cd4-6fa6-4bba-a8e1-2a5e82e52911?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/agents/conversation-analyzer.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_48da8572-17c6-47d3-a98b-b78f335a8e65?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/configure.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2f5e1f87-3b3a-46dc-8c7a-9b1785a60cf1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/help.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0d28442d-676a-4056-86b0-19ae4a3122bb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/hookify.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3fbad619-e174-4b05-9f75-af19763ee12c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/list.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ece6d78e-746b-43b3-a7da-7db6d8f8cd02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/core/config_loader.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ecba108a-7546-41ee-a089-8da2f95ccd80?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/core/rule_engine.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a70c54d6-ec1c-48db-9423-a9a121f1dcca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/posttooluse.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_246cd7df-5905-4b77-9483-6db5654dd2cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/pretooluse.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_388ad974-757e-4c78-84b4-8b3ce50108a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/stop.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7b7f7396-9537-4a4b-ba1f-95564277df9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/userpromptsubmit.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_99500737-099d-4648-b77c-07de067c9d4b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/skills/writing-rules/SKILL.md -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0d036c9d-72a5-4552-a31a-99dfa16e8743?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/_base.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09af5362-3da6-471f-9ac7-5df3f912a360?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/diffstate.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7b53074d-d1f1-424a-8c73-f606a63496e8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/ensure_agent_sdk.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_736a2e5c-73f6-4ea1-a02b-3ea620499965?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/extensibility.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_04844932-1bc8-4f1f-88f6-974a8b9fb96f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/gitutil.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d6c7ada-bcaa-46d9-bb5b-bdb6a6090dc3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/llm.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_df10844e-3e3d-4afd-8f5a-f3e168dfb86a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/patterns.py -> Scope: Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b3f1a9a9-e26a-42b8-91e4-51297c3f06d1?mode=deep",
+    "questions_generated": false
+  }
+]
