@@ -1,1 +1,0 @@
-[File: parse-frontmatter.sh -> Scope: Critical] [Function: exit 1 on 'Field ... not found'] Can an attacker craft a settings file where the 'enabled' key is present but indented, commented, or written with non-matching case (e.g. 'Enabled:' or leading whitespace) so `grep \

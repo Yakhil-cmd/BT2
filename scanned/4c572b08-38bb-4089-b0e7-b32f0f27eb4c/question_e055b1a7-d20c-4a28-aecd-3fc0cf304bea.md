@@ -1,1 +1,0 @@
-[File: 'plugins/hookify/hooks/stop.py' -> main() Stop event decision mapping] Can an attacker-controlled Stop-event rule file with 'event: stop' and 'action: block' rely on RuleEngine.evaluate_rules returning '{\
