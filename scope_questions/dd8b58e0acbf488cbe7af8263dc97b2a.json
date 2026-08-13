@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/review_api.py -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a02260b4-c5d9-42c9-b69c-d3fd431ec0ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/security_reminder_hook.py -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7e5e9a32-d7e4-46a0-9706-014e8409aef1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/session_state.py -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3795ccf9-184d-40b6-bff2-e8b527ce572b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/sg-python.sh -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_04b3e6f0-a3f7-4824-a6c3-b65eda36188a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/agents/agent-sdk-verifier-py.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7e5c35a7-682e-4bcd-ac41-203672840775?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bb5028b4-0900-412e-b745-d233096b4d63?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/agent-sdk-dev/commands/new-sdk-app.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_635533d1-640f-473b-bd08-afd0bc546bd6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/code-review/commands/code-review.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d16bf5f5-8e24-4089-baf1-f8a8d3ca8faa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/clean_gone.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9cca76d6-5d02-4d0f-bea6-dfe61a7b0510?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/commit-push-pr.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a2eae1df-95d8-46da-b25e-731743239985?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/commit-commands/commands/commit.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d55898b2-7b2a-4573-936c-bc811050178c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-architect.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fccb8c35-d67c-4f36-bff2-418eded84b8a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-explorer.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_82c6ac29-0a4d-450f-b79f-deef9e537e2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/agents/code-reviewer.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_433a57a0-7416-4ec2-88f6-8c3a9abeaf95?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/feature-dev/commands/feature-dev.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_654b0c50-f415-4a77-a237-98451bcaa969?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/code-reviewer.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87cdb19b-5296-43e7-a094-dedbd6505b18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/code-simplifier.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3c791625-c0ba-42ab-9884-f73cc5137b7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/comment-analyzer.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_21461161-5f12-4645-81fc-95644f690496?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/pr-test-analyzer.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_99f34be5-e7d9-4736-8db4-fa24e0763463?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/silent-failure-hunter.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4218ef0d-43a0-49de-b76d-0c6622738532?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/agents/type-design-analyzer.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b38a5db1-551a-4202-8dc9-f709de150fa3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/pr-review-toolkit/commands/review-pr.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3461ea2c-4135-4a41-8aa0-06880215ec84?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/cancel-ralph.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8d0409f1-9d7c-4b1b-b807-448045f7fee3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/help.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fde068d4-427d-4642-952c-5859ac22c182?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/commands/ralph-loop.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b36b8e93-f184-4523-989b-ce9eaefb7359?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/hooks/stop-hook.sh -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_31b8fba2-b3aa-4cb6-aff3-16df183f8c97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/ralph-wiggum/scripts/setup-ralph-loop.sh -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8623ea8d-fba2-4be9-a653-3443c6804e0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/agent-creator.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_000abd1a-5957-48fe-83dd-d493cc8b1a8b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/plugin-validator.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f9d8e76e-8ba1-4e2d-89db-6959a5604404?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/plugin-dev/agents/skill-reviewer.md -> Scope: High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1b36c956-b444-4c90-856b-f2ea914a316c?mode=deep",
+    "questions_generated": false
+  }
+]
