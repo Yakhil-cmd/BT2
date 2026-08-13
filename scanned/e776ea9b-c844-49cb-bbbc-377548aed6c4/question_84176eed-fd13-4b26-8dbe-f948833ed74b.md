@@ -1,1 +1,0 @@
-[File: 'plugins/plugin-dev/skills/plugin-settings/SKILL.md' -> 'Reading Settings Files: From Commands'] [Function: command markdown instructs 'Read configuration using Read tool' + 'Apply settings to processing logic' with allowed-tools: [\
