@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: scripts/auto-close-duplicates.ts -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65f7b921-a656-4279-9d1b-85459968c41b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/backfill-duplicate-comments.ts -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b74caa39-292c-4ba5-adf0-afe17d03ddd4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/comment-on-duplicates.sh -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9b76dbc6-a3b8-44e1-bf39-1f5e70e10f6d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/edit-issue-labels.sh -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_493cb0f3-9e4c-408a-bcac-333ffa06eb6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/gh.sh -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eee97f10-de2f-41f2-9ddc-44d157a9a70d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/issue-lifecycle.ts -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ba8c3f68-ebde-4a0d-a84b-7641e81f0dc9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/lifecycle-comment.ts -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d6759ca7-28e1-48fc-ac46-1d99778ab394?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: scripts/sweep.ts -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4ae8f9b3-de07-4fb2-b1c0-602d8a82c898?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: .claude/commands/commit-push-pr.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1c818ba-dc33-4433-802f-73cd7ef26dbf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: .claude/commands/dedupe.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d3bf206-ee2e-490c-8da5-50a421f0bc25?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: .claude/commands/triage-issue.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0e12677f-650b-4144-abb5-3523680e48b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/agents/conversation-analyzer.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e3ffc9e1-ad3e-436a-9119-986c8b136ba9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/configure.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8647e41e-3a86-4a5b-9e52-849850081b37?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/help.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b631f929-b452-4b92-b49e-829dde1febdd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/hookify.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_43632331-3f1e-4560-9fd0-705e48e35974?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/commands/list.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3c407113-adf4-4d7b-9ceb-7dae0ea7bd40?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/core/config_loader.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2beaee0c-5645-481d-9f78-b0165e549d43?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/core/rule_engine.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_440fc240-6f99-4f1b-8bb9-0bb5139c890f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/posttooluse.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3d654b55-d299-4fda-b701-609888d408be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/pretooluse.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb07e9ca-2139-4623-998b-8df88a6cb50b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/stop.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b390df6d-b0b1-4640-9c19-6f04fef3df0f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/hooks/userpromptsubmit.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff67c129-5dae-4fc6-8b1b-6486e997f248?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/hookify/skills/writing-rules/SKILL.md -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98980c32-0a9c-41c1-9524-ddfdbb880101?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/_base.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b659014-f1ed-4595-9dd7-c73fd669afa6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/diffstate.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cc2a375d-5542-486f-a397-6942d8302d13?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/ensure_agent_sdk.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7f24f01c-5b47-40fb-ab39-2cba4230192e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/extensibility.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a4cc16e9-279e-4765-8e41-5985226822ad?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/gitutil.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c47f620-488f-4c6b-b1d4-999c33432e97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/llm.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70b386d4-b6a3-4be7-9101-8727f4674095?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: plugins/security-guidance/hooks/patterns.py -> Scope: High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_210feb33-e028-4094-8b81-e0decf8b124b?mode=deep",
+    "questions_generated": false
+  }
+]
