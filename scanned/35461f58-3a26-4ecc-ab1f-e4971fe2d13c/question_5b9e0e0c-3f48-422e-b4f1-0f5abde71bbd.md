@@ -1,1 +1,0 @@
-[File: 'plugins/commit-commands/commands/commit-push-pr.md'] [Function: gh pr create argument construction] Can an unprivileged attacker who controls file/diff content (comments, branch names, filenames) cause Claude to build a `gh pr create --title \

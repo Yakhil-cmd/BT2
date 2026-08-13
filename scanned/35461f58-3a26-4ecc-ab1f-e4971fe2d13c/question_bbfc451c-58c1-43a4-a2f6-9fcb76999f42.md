@@ -1,1 +1,0 @@
-[File: 'plugins/commit-commands/commands/commit-push-pr.md'] [Function: compound command handling for allowed Bash prefixes] Can an unprivileged attacker (via injected diff/commit-message content that influences the model's constructed commands) get Claude to issue a compound command like `git add . && git commit -m \
