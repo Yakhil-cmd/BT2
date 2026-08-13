@@ -1,1 +1,0 @@
-[File: plugins/hookify/core/config_loader.py] [Function: extract_frontmatter] Can an unprivileged attacker who controls a cloned repository's '.claude/hookify.*.local.md' file craft frontmatter content (e.g. nested '---' delimiters, unbalanced 'parts = content.split(\
