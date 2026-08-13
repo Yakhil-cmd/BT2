@@ -1,1 +1,0 @@
-[File: scripts/gh.sh -> Scope: High] [Function: label list branch, lines 90-95] Can an attacker cause `label list` (or `issue list`) to be invoked with a smuggled `--repo` or other unlisted flag via the `=`-syntax bypass (e.g., `--limit=100 --repo=attacker/repo`) since the flag-name extraction `flag=\
