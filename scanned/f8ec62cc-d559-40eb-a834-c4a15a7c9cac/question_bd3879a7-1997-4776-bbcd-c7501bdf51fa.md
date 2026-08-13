@@ -1,1 +1,0 @@
-[File: 'plugins/hookify/commands/configure.md' -> Scope: Critical approval bypass] [Function: '### 3. Ask User Which Rules to Toggle' -> AskUserQuestion label parsing in '### 4. Parse User Selection'] Since the option label format '{rule-name} (currently {enabled|disabled})' is attacker-influenced (rule 'name' field comes from untrusted frontmatter), can an attacker set 'name: \
