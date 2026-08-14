@@ -1,0 +1,1 @@
+Let me look at the actual `_maybe_bootstrap_agent_sdk_async` function directly.
