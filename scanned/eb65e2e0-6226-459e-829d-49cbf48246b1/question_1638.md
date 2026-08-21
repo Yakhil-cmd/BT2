@@ -1,0 +1,13 @@
+# Q1638: metadata desync in congestion_control::pop
+
+## Question
+Can an unprivileged attacker who runs an attacker contract that emits receipts via `promise_batch_action_*` host calls, controlling receipt append and pop sequences that stress outgoing metadata bookkeeping, drive `runtime/runtime/src/congestion_control.rs::pop` to desynchronise stored metadata from the real queue contents, breaking the invariant that queue metadata always matches the receipts actually stored, and leading to unintended permanent chain split requiring a hard fork?
+
+## Target
+- File/function: `runtime/runtime/src/congestion_control.rs` -> `pop`
+- Entrypoint: unprivileged attacker runs an attacker contract that emits receipts via `promise_batch_action_*` host calls
+- Attacker controls: receipt append and pop sequences that stress outgoing metadata bookkeeping
+- Exploit idea: desynchronise stored metadata from the real queue contents
+- Invariant to test: queue metadata always matches the receipts actually stored
+- Expected Immunefi impact: Critical - unintended permanent chain split requiring a hard fork
+- Fast validation: write a `core/store` trie unit test over adversarial key/value pairs and assert lookups, deletes and refcounts stay consistent

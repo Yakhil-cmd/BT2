@@ -1,0 +1,13 @@
+# Q3337: permanent congestion lock in congestion_control::int_overflow_to_storage_err
+
+## Question
+Can an unprivileged attacker who drives cross-shard traffic from many attacker-funded accounts on different shards, controlling a burst that pushes a shard past the point where it can accept the receipts needed to drain, drive `runtime/runtime/src/congestion_control.rs::int_overflow_to_storage_err` to wedge a shard into a state where it can never drain its own queues, breaking the invariant that a congested shard always retains a path back to an uncongested state, and leading to permanent freezing of funds?
+
+## Target
+- File/function: `runtime/runtime/src/congestion_control.rs` -> `int_overflow_to_storage_err`
+- Entrypoint: unprivileged attacker drives cross-shard traffic from many attacker-funded accounts on different shards
+- Attacker controls: a burst that pushes a shard past the point where it can accept the receipts needed to drain
+- Exploit idea: wedge a shard into a state where it can never drain its own queues
+- Invariant to test: a congested shard always retains a path back to an uncongested state
+- Expected Immunefi impact: Critical - permanent freezing of funds
+- Fast validation: write a multi-shard `test-loop-tests` scenario and assert every shard keeps producing chunks and all receipts drain

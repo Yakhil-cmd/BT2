@@ -1,0 +1,13 @@
+# Q17: unbounded query cost in view_access_key_list::rpc_from
+
+## Question
+Can an unprivileged attacker who issues unauthenticated JSON-RPC queries against a public node, controlling query ranges, prefixes and depths at their maxima, drive `chain/jsonrpc/src/api/view_access_key_list.rs::rpc_from` to make a single unauthenticated query consume unbounded node CPU or memory, breaking the invariant that every RPC query has a bounded, enforced cost, and leading to RPC node crash or unavailability?
+
+## Target
+- File/function: `chain/jsonrpc/src/api/view_access_key_list.rs` -> `rpc_from`
+- Entrypoint: unprivileged attacker issues unauthenticated JSON-RPC queries against a public node
+- Attacker controls: query ranges, prefixes and depths at their maxima
+- Exploit idea: make a single unauthenticated query consume unbounded node CPU or memory
+- Invariant to test: every RPC query has a bounded, enforced cost
+- Expected Immunefi impact: High - RPC node crash or unavailability
+- Fast validation: drive the endpoint from `integration-tests` with the crafted payload and assert a typed error, not a panic or unbounded allocation

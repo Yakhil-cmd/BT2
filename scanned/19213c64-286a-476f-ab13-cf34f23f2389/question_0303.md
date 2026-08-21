@@ -1,0 +1,13 @@
+# Q303: state record round-trip in types::from_le_bytes
+
+## Question
+Can an unprivileged attacker who calls a deployed contract with a `FunctionCall` action carrying attacker-chosen arguments, controlling state records at their field boundaries, drive `core/primitives-core/src/types.rs::from_le_bytes` to have a record decode into different state than it encoded, breaking the invariant that state records round-trip exactly, and leading to unintended permanent chain split requiring a hard fork?
+
+## Target
+- File/function: `core/primitives-core/src/types.rs` -> `from_le_bytes`
+- Entrypoint: unprivileged attacker calls a deployed contract with a `FunctionCall` action carrying attacker-chosen arguments
+- Attacker controls: state records at their field boundaries
+- Exploit idea: have a record decode into different state than it encoded
+- Invariant to test: state records round-trip exactly
+- Expected Immunefi impact: Critical - unintended permanent chain split requiring a hard fork
+- Fast validation: add a proptest/invariant test that randomises the inputs and asserts the accounting identity holds for every generated case

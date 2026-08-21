@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = "anthropics/claude-code"
+SOURCE_REPO = 'near/nearcore'
 # todo: the name of the repository
-REPO_NAME = "claude-code"
+REPO_NAME = 'nearcore'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -48,120 +48,162 @@ else:
 
 scope_files = [
     # =================================================================================
-    # Core automation entrypoints and issue/PR mutation flows
+    # Runtime: transaction/receipt validation, action execution, balance & gas accounting
     # =================================================================================
-    "scripts/auto-close-duplicates.ts",
-    "scripts/backfill-duplicate-comments.ts",
-    "scripts/comment-on-duplicates.sh",
-    "scripts/edit-issue-labels.sh",
-    "scripts/gh.sh",
-    "scripts/issue-lifecycle.ts",
-    "scripts/lifecycle-comment.ts",
-    "scripts/sweep.ts",
+    "runtime/runtime/src/lib.rs",
+    "runtime/runtime/src/verifier.rs",
+    "runtime/runtime/src/actions.rs",
+    "runtime/runtime/src/action_validation.rs",
+    "runtime/runtime/src/access_keys.rs",
+    "runtime/runtime/src/adapter.rs",
+    "runtime/runtime/src/config.rs",
+    "runtime/runtime/src/congestion_control.rs",
+    "runtime/runtime/src/contract_code.rs",
+    "runtime/runtime/src/conversions.rs",
+    "runtime/runtime/src/deterministic_account_id.rs",
+    "runtime/runtime/src/ext.rs",
+    "runtime/runtime/src/function_call.rs",
+    "runtime/runtime/src/global_contracts.rs",
+    "runtime/runtime/src/pipelining.rs",
+    "runtime/runtime/src/prefetch.rs",
+    "runtime/runtime/src/receipt_manager.rs",
+    "runtime/runtime/src/state_viewer/mod.rs",
+    "runtime/runtime/src/types.rs",
+    "runtime/runtime/src/bandwidth_scheduler/mod.rs",
+    "runtime/runtime/src/bandwidth_scheduler/scheduler.rs",
+    "runtime/runtime/src/bandwidth_scheduler/distribute_remaining.rs",
 
     # =================================================================================
-    # Built-in top-level commands shipped with the repo
+    # VM runner: wasm preparation, instrumentation, imports, host logic, gas metering
     # =================================================================================
-    ".claude/commands/commit-push-pr.md",
-    ".claude/commands/dedupe.md",
-    ".claude/commands/triage-issue.md",
+    "runtime/near-vm-runner/src/runner.rs",
+    "runtime/near-vm-runner/src/prepare.rs",
+    "runtime/near-vm-runner/src/prepare/prepare_v2.rs",
+    "runtime/near-vm-runner/src/prepare/prepare_v3.rs",
+    "runtime/near-vm-runner/src/prepare/instrument_v3.rs",
+    "runtime/near-vm-runner/src/imports.rs",
+    "runtime/near-vm-runner/src/cache.rs",
+    "runtime/near-vm-runner/src/features.rs",
+    "runtime/near-vm-runner/src/errors.rs",
+    "runtime/near-vm-runner/src/profile.rs",
+    "runtime/near-vm-runner/src/utils.rs",
+    "runtime/near-vm-runner/src/logic/logic.rs",
+    "runtime/near-vm-runner/src/logic/gas_counter.rs",
+    "runtime/near-vm-runner/src/logic/vmstate.rs",
+    "runtime/near-vm-runner/src/logic/context.rs",
+    "runtime/near-vm-runner/src/logic/dependencies.rs",
+    "runtime/near-vm-runner/src/logic/errors.rs",
+    "runtime/near-vm-runner/src/logic/types.rs",
+    "runtime/near-vm-runner/src/logic/utils.rs",
+    "runtime/near-vm-runner/src/logic/alt_bn128.rs",
+    "runtime/near-vm-runner/src/logic/bls12381.rs",
+    "runtime/near-vm-runner/src/logic/recorded_storage_counter.rs",
+    "runtime/near-vm-runner/src/wasmtime_runner/mod.rs",
+    "runtime/near-vm-runner/src/wasmtime_runner/logic.rs",
+    "runtime/near-vm-runner/src/wasmtime_runner/trap_classification.rs",
 
     # =================================================================================
-    # Hookify: untrusted rule parsing, hook dispatch, and decision enforcement
+    # Protocol primitives: transactions, actions, receipts, accounts, ids, serialization
     # =================================================================================
-    "plugins/hookify/agents/conversation-analyzer.md",
-    "plugins/hookify/commands/configure.md",
-    "plugins/hookify/commands/help.md",
-    "plugins/hookify/commands/hookify.md",
-    "plugins/hookify/commands/list.md",
-    "plugins/hookify/core/config_loader.py",
-    "plugins/hookify/core/rule_engine.py",
-    "plugins/hookify/hooks/posttooluse.py",
-    "plugins/hookify/hooks/pretooluse.py",
-    "plugins/hookify/hooks/stop.py",
-    "plugins/hookify/hooks/userpromptsubmit.py",
-    "plugins/hookify/skills/writing-rules/SKILL.md",
+    "core/primitives/src/transaction.rs",
+    "core/primitives/src/receipt.rs",
+    "core/primitives/src/action/mod.rs",
+    "core/primitives/src/action/delegate.rs",
+    "core/primitives/src/signable_message.rs",
+    "core/primitives/src/errors.rs",
+    "core/primitives/src/trie_key.rs",
+    "core/primitives/src/utils.rs",
+    "core/primitives/src/congestion_info.rs",
+    "core/primitives/src/bandwidth_scheduler.rs",
+    "core/primitives/src/state_record.rs",
+    "core/primitives/src/universal_state_init.rs",
+    "core/primitives/src/views.rs",
+    "core/primitives/src/utils/compression.rs",
+    "core/primitives-core/src/account.rs",
+    "core/primitives-core/src/code.rs",
+    "core/primitives-core/src/config.rs",
+    "core/primitives-core/src/gas.rs",
+    "core/primitives-core/src/global_contract.rs",
+    "core/primitives-core/src/deterministic_account_id.rs",
+    "core/primitives-core/src/universal_account_id.rs",
+    "core/primitives-core/src/universal_state_init.rs",
+    "core/primitives-core/src/trie_key.rs",
+    "core/primitives-core/src/serialize.rs",
+    "core/primitives-core/src/hash.rs",
+    "core/primitives-core/src/types.rs",
+    "core/primitives-core/src/errors.rs",
 
     # =================================================================================
-    # Security-guidance: diff capture, repo reads, external review calls, and findings enforcement
+    # Protocol fee/limit configuration consumed by validation and metering
     # =================================================================================
-    "plugins/security-guidance/hooks/_base.py",
-    "plugins/security-guidance/hooks/diffstate.py",
-    "plugins/security-guidance/hooks/ensure_agent_sdk.py",
-    "plugins/security-guidance/hooks/extensibility.py",
-    "plugins/security-guidance/hooks/gitutil.py",
-    "plugins/security-guidance/hooks/llm.py",
-    "plugins/security-guidance/hooks/patterns.py",
-    "plugins/security-guidance/hooks/review_api.py",
-    "plugins/security-guidance/hooks/security_reminder_hook.py",
-    "plugins/security-guidance/hooks/session_state.py",
-    "plugins/security-guidance/hooks/sg-python.sh",
+    "core/parameters/src/config.rs",
+    "core/parameters/src/cost.rs",
+    "core/parameters/src/vm.rs",
+    "core/parameters/src/parameter_table.rs",
 
     # =================================================================================
-    # Command packs that can steer tool use, git actions, or file mutations
+    # Storage: trie reads/writes, storage accounting, witness recording, flat storage
     # =================================================================================
-    "plugins/agent-sdk-dev/agents/agent-sdk-verifier-py.md",
-    "plugins/agent-sdk-dev/agents/agent-sdk-verifier-ts.md",
-    "plugins/agent-sdk-dev/commands/new-sdk-app.md",
-    "plugins/code-review/commands/code-review.md",
-    "plugins/commit-commands/commands/clean_gone.md",
-    "plugins/commit-commands/commands/commit-push-pr.md",
-    "plugins/commit-commands/commands/commit.md",
-    "plugins/feature-dev/agents/code-architect.md",
-    "plugins/feature-dev/agents/code-explorer.md",
-    "plugins/feature-dev/agents/code-reviewer.md",
-    "plugins/feature-dev/commands/feature-dev.md",
-    "plugins/pr-review-toolkit/agents/code-reviewer.md",
-    "plugins/pr-review-toolkit/agents/code-simplifier.md",
-    "plugins/pr-review-toolkit/agents/comment-analyzer.md",
-    "plugins/pr-review-toolkit/agents/pr-test-analyzer.md",
-    "plugins/pr-review-toolkit/agents/silent-failure-hunter.md",
-    "plugins/pr-review-toolkit/agents/type-design-analyzer.md",
-    "plugins/pr-review-toolkit/commands/review-pr.md",
-    "plugins/ralph-wiggum/commands/cancel-ralph.md",
-    "plugins/ralph-wiggum/commands/help.md",
-    "plugins/ralph-wiggum/commands/ralph-loop.md",
-    "plugins/ralph-wiggum/hooks/stop-hook.sh",
-    "plugins/ralph-wiggum/scripts/setup-ralph-loop.sh",
+    "core/store/src/trie/mod.rs",
+    "core/store/src/trie/update.rs",
+    "core/store/src/trie/update/iterator.rs",
+    "core/store/src/trie/iterator.rs",
+    "core/store/src/trie/trie_storage.rs",
+    "core/store/src/trie/trie_storage_update.rs",
+    "core/store/src/trie/trie_recording.rs",
+    "core/store/src/trie/raw_node.rs",
+    "core/store/src/trie/nibble_slice.rs",
+    "core/store/src/trie/shard_tries.rs",
+    "core/store/src/trie/config.rs",
+    "core/store/src/trie/outgoing_metadata.rs",
+    "core/store/src/trie/receipts_column_helper.rs",
+    "core/store/src/trie/prefetching_trie_storage.rs",
+    "core/store/src/trie/ops/insert_delete.rs",
+    "core/store/src/trie/ops/interface.rs",
+    "core/store/src/trie/ops/iter.rs",
+    "core/store/src/trie/mem/lookup.rs",
+    "core/store/src/trie/mem/memtrie_update.rs",
+    "core/store/src/trie/mem/node/encoding.rs",
+    "core/store/src/trie/mem/node/view.rs",
+    "core/store/src/trie/mem/flexible_data/encoding.rs",
+    "core/store/src/trie/mem/flexible_data/children.rs",
+    "core/store/src/trie/mem/flexible_data/value.rs",
+    "core/store/src/flat/storage.rs",
+    "core/store/src/flat/chunk_view.rs",
+    "core/store/src/flat/delta.rs",
+    "core/store/src/adapter/trie_store.rs",
+    "core/store/src/adapter/flat_store.rs",
+    "core/store/src/contract.rs",
 
     # =================================================================================
-    # Plugin-dev skills and bundled validators used to generate executable repo content
+    # Signature verification reachable from attacker-supplied transactions
     # =================================================================================
-    "plugins/plugin-dev/agents/agent-creator.md",
-    "plugins/plugin-dev/agents/plugin-validator.md",
-    "plugins/plugin-dev/agents/skill-reviewer.md",
-    "plugins/plugin-dev/commands/create-plugin.md",
-    "plugins/plugin-dev/skills/agent-development/SKILL.md",
-    "plugins/plugin-dev/skills/agent-development/scripts/validate-agent.sh",
-    "plugins/plugin-dev/skills/command-development/SKILL.md",
-    "plugins/plugin-dev/skills/hook-development/SKILL.md",
-    "plugins/plugin-dev/skills/hook-development/scripts/hook-linter.sh",
-    "plugins/plugin-dev/skills/hook-development/scripts/test-hook.sh",
-    "plugins/plugin-dev/skills/hook-development/scripts/validate-hook-schema.sh",
-    "plugins/plugin-dev/skills/mcp-integration/SKILL.md",
-    "plugins/plugin-dev/skills/plugin-settings/SKILL.md",
-    "plugins/plugin-dev/skills/plugin-settings/scripts/parse-frontmatter.sh",
-    "plugins/plugin-dev/skills/plugin-settings/scripts/validate-settings.sh",
-    "plugins/plugin-dev/skills/plugin-structure/SKILL.md",
-    "plugins/plugin-dev/skills/skill-development/SKILL.md",
+    "core/crypto/src/signature.rs",
 
     # =================================================================================
-    # Other shipped skills and hook handlers that influence runtime behavior
+    # Public RPC entrypoints an unprivileged user can reach directly
     # =================================================================================
-    "plugins/claude-opus-4-5-migration/skills/claude-opus-4-5-migration/SKILL.md",
-    "plugins/explanatory-output-style/hooks-handlers/session-start.sh",
-    "plugins/frontend-design/skills/frontend-design/SKILL.md",
-    "plugins/learning-output-style/hooks-handlers/session-start.sh",
+    "chain/jsonrpc/src/api/transactions.rs",
+    "chain/jsonrpc/src/api/query.rs",
+    "chain/jsonrpc/src/api/call_function.rs",
+    "chain/jsonrpc/src/api/view_state.rs",
+    "chain/jsonrpc/src/api/view_access_key.rs",
+    "chain/jsonrpc/src/api/view_access_key_list.rs",
+    "chain/jsonrpc/src/api/view_gas_key_nonces.rs",
+    "chain/jsonrpc/src/api/receipts.rs",
+    "chain/jsonrpc/src/api/changes.rs",
+    "chain/jsonrpc/src/lib.rs",
 ]
 
 
 target_scopes = [
-    "Critical. An unprivileged attacker controlling only normal Claude Code inputs such as repository files, slash-command arguments, plugin content, hook rule files, issue or PR text, git metadata, or MCP/tool output can bypass command-execution approval or other user-consent boundaries and cause Claude Code to run shell commands, edit files, or invoke tools the user did not authorize.",
-    "Critical. An unprivileged attacker can turn untrusted repository or plugin content into arbitrary file read/write outside the intended workspace boundary, unauthorized access to sensitive local files, or exfiltration of API tokens, auth material, prompts, diffs, or other confidential project data to a remote sink.",
-    "Critical. An unprivileged attacker can abuse hook parsing, rule evaluation, command frontmatter, agent prompts, or plugin wiring to silently disable, weaken, or route around deny/block security controls so dangerous operations execute when Claude Code or the user expects them to be stopped.",
-    "High. An unprivileged attacker can cause cross-repo, cross-session, or cross-target confusion so automation, review, labeling, commenting, or commit flows act on the wrong repository, wrong issue/PR, wrong diff baseline, or wrong filesystem target with real security impact.",
-    "High. An unprivileged attacker can use prompt, diff, path, markdown, or config parsing differentials to smuggle unsafe tool instructions, broaden allowed-tools scope, or make trusted validation logic interpret attacker input differently from the downstream execution path.",
-    "High. An unprivileged attacker can cause Claude Code security-review or automation components to leak private code, secrets, or sensitive metadata to external model or network endpoints beyond the intended reviewed scope or consent boundary.",
+    "Critical. An unprivileged attacker who can only submit signed transactions or deploy and call their own contracts can mint, duplicate, or steal NEAR tokens, breaking the total-supply or per-account balance invariant through deposit, refund, gas-refund, staking, storage-staking, or receipt-accounting paths.",
+    "Critical. An unprivileged attacker can craft a transaction, receipt, or contract that makes chunk application panic, abort, hang, or consume unbounded memory or time on every validating node, stalling a shard or halting the chain.",
+    "Critical. An unprivileged attacker can trigger nondeterministic or path-inconsistent execution so honest nodes disagree on state root, gas burn, or outcome for the same chunk, causing state divergence or an unintended chain split.",
+    "Critical. An unprivileged attacker can act on an account they do not control by bypassing signature, nonce, or access-key authorization, FunctionCall access-key restrictions such as allowance, receiver_id and method_names, delegate-action sender binding or replay protection, or predecessor_id attribution.",
+    "Critical. An unprivileged attacker can bypass gas metering or storage staking so compute, storage growth, receipt size, or recorded witness size is unaccounted or underpriced, obtaining free execution, unbounded state bloat, or validator resource exhaustion.",
+    "High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.",
+    "High. An unprivileged attacker can exploit serialization, trie-key, or account-id parsing differentials to collide storage keys across accounts, corrupt state accounting, or make validation and execution disagree about the same transaction.",
 ]
 
 
@@ -171,44 +213,44 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate exploit-focused audit and fuzzing questions for one claude-code target.
+    Generate exploit-focused audit and fuzzing questions for one nearcore target.
 
     ```
     target_file format:
-    "'File Name: plugins/hookify/core/config_loader.py -> Scope: Critical. ...'"
+    "'File Name: runtime/runtime/src/actions.rs -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate exploit-focused security audit and fuzzing questions for this exact claude-code target:
+    Generate exploit-focused security audit and fuzzing questions for this exact nearcore target:
 
     {target_file}
 
     Project focus:
-    Claude Code is a local agentic coding and plugin ecosystem. Focus on command approval boundaries, hook enforcement, tool and file-write authorization, workspace confinement, untrusted repo or plugin content, prompt/frontmatter parsing, git-driven automation, and secret/code disclosure to local or remote sinks.
+    nearcore is the NEAR Protocol reference client. Focus on transaction and receipt validation, action execution, access-key authorization, balance and gas accounting, storage staking, wasm preparation and metering, host functions, trie and state accounting, congestion and bandwidth limits, and determinism of chunk application.
 
     Rules:
     * Treat `File Name:` as the exact file/module.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Python/TS/Shell/Markdown symbols when possible.
-    * Attacker is unprivileged only: no employee/admin access, no prior shell on the victim machine, no leaked keys, no privileged plugin install rights, no malicious node/peer, no phishing, and no social engineering.
-    * Allowed attacker inputs are normal external surfaces: cloned repository content, checked-in plugin files, slash-command arguments, markdown/frontmatter content, hook rule files, issue/PR text, git branch/commit metadata, MCP/tool/API responses, and other data Claude Code normally reads or executes against.
-    * Ignore test files, mock files, docs, generated files, config-only findings, and dependency-only issues.
-    * Do not rely on impossible operator-only setup, victim self-compromise with their own local config only, or assumptions that a malicious maintainer already has privileged control of the machine.
+    * Use exact Rust symbols (fn, struct, enum, field) when possible.
+    * Attacker is unprivileged only: an ordinary account holder. They can submit signed transactions and meta-transactions through public RPC, deploy and call their own contracts, and fund their own accounts.
+    * Attacker is NOT a validator, block or chunk producer, node operator, or peer. Ignore malicious-node, malicious-peer, P2P message, network-layer, node-config, CLI, leaked-key, and social-engineering assumptions.
+    * Ignore test files, mocks, fuzz harnesses, docs, generated files, params-estimator, config-only findings, and dependency-only issues.
+    * Ignore issues gated behind protocol features that are not yet enabled unless the path is reachable on the current protocol version.
     * Generate 12 to 16 high-signal questions.
-    * At least 70% must target approval bypass, hook or guard bypass, unsafe file or command execution, workspace escape, secret exfiltration, parser differentials, or untrusted repo/plugin trust-boundary failures.
+    * At least 70% must target balance or supply invariants, gas or storage metering bypass, access-key and signer authorization, node panic or unbounded resource use, execution nondeterminism, or receipt and congestion accounting failures.
     * Every question must be testable by unit test, integration test, fuzz test, invariant test, or differential test.
     * Avoid generic checklist questions and repeated root causes.
 
     Core invariants:
-    * Consent is explicit and scoped: shell execution, file mutation, networked tool use, and automation side effects must stay bound to the user-approved target, repo, and permission state.
-    * Deny means deny: block hooks, approval gates, allowed-tools restrictions, and workspace boundaries must not be bypassable through parsing tricks, alternate call paths, or stale state.
-    * Secrets stay secret: tokens, auth headers, prompts, diffs, local file contents, and private project data must not become readable or exfiltratable by an unprivileged attacker.
-    * Untrusted repo or plugin content must not silently become executable authority or broaden Claude Code capabilities beyond what the user explicitly approved.
-    * State must stay correctly bound: session, diff, repo, issue/PR, and filesystem targets must not drift or cross between principals.
+    * Conservation: total token supply and per-account balances stay exact across transfers, refunds, gas refunds, staking, storage staking, and receipt processing. No mint, no loss.
+    * Metering is complete: every unit of compute, memory, storage, receipt and witness growth is charged before it is performed, and charges cannot overflow, saturate, or be skipped.
+    * Authorization is exact: only the account whose key signed a transaction may act, access-key restrictions hold, nonces are strictly increasing, and predecessor_id and signer_id cannot be forged.
+    * Determinism and liveness: applying the same chunk yields the same state root, gas, and outcomes on every node, and no attacker-supplied input can panic, hang, or unboundedly grow a validator.
+    * Progress is preserved: congestion control, bandwidth limits, and receipt queues bound resources without permanently stranding receipts or user funds.
 
     Each question must include:
     1. target function/module;
@@ -222,7 +264,7 @@ def question_generator(target_file: str) -> str:
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Function: symbol_or_module] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/integration/fuzz PARAMETERS and assert APPROVAL_BOUNDARY, SECRET_ISOLATION, WORKSPACE_CONFINEMENT, or TARGET_BINDING.",
+    "[File: {target_file}] [Function: symbol_or_module] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/integration/fuzz PARAMETERS and assert BALANCE_CONSERVATION, GAS_OR_STORAGE_METERING, AUTHORIZATION_BINDING, or DETERMINISM_AND_LIVENESS.",
     ]
     """
     return prompt
@@ -230,7 +272,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a focused claude-code exploit-validation prompt.
+    Generate a focused nearcore exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -240,14 +282,15 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: no admin or maintainer privilege on the victim machine, no leaked keys, no social engineering, and no malicious node/peer/operator assumptions.
-- Reject anything that depends only on test/mock/config/docs/generated files, dependency bugs alone, direct store mutation from tests, or best-practice cleanup without exploitable impact.
-- Focus on real Claude Code compromise paths reachable from ordinary repository content, plugin files, slash-command input, hook/frontmatter parsing, git metadata, issue/PR text, MCP/tool/API responses, or normal automation flows.
+- Attacker is unprivileged only: an ordinary account holder submitting transactions, meta-transactions, contract deploys, and contract calls through public RPC. No validator, chunk producer, node operator, peer, leaked key, or social engineering.
+- Reject malicious-node, malicious-peer, P2P/network-layer, node-config, and operator-only paths.
+- Reject anything that depends only on test/mock/fuzz-harness/docs/config/generated files, dependency bugs alone, direct store mutation from tests, or best-practice cleanup without exploitable impact.
+- Focus on real protocol compromise paths: balance or supply violations, gas or storage metering bypass, authorization bypass, node panic or unbounded resource use, state divergence, and receipt or congestion accounting failures.
 
 ## Validate
-- Trace the exact reachable path from the attacker input into hook enforcement, command execution, file mutation, git automation, review/export logic, or networked tool calls.
-- Check whether existing validation, approval prompts, allowlists, workspace guards, session binding, repo scoping, or parser checks already stop it.
-- Accept only real approval bypass, unauthorized command or file action, workspace escape, secret disclosure, trust-boundary bypass, or direct user/project compromise behavior.
+- Trace the exact reachable path from the attacker-supplied transaction, action, receipt, contract, or RPC request into the affected function.
+- Check whether existing validation, cost charging, limit checks, protocol-version gating, or overflow-checked arithmetic already stops it.
+- Accept only real fund loss or inflation, free or underpriced execution or storage, unauthorized action on another account, chain stall or node crash, or state divergence.
 - Require exact file/function support and a reproducible unit/integration/fuzz/invariant PoC.
 
 ## Output
@@ -263,7 +306,7 @@ If valid, output exactly:
 [Code path, root cause, attacker inputs, exploit flow, and why checks fail]
 
 ### Impact Explanation
-[Concrete scoped impact and matching Claude Code bounty impact]
+[Concrete scoped impact and matching NEAR bounty impact class]
 
 ### Likelihood Explanation
 [Preconditions, feasibility, repeatability]
@@ -284,7 +327,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for claude-code security claims.
+    Generate a strict bounty-style validation prompt for nearcore security claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -296,30 +339,30 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- Reject malicious-node, malicious-peer, operator-only, leaked-key, dependency-only, docs/style, generated-file, test/mock/config-only, self-XSS-only, and purely theoretical issues.
-- Reject if the exploit needs victim social engineering, impossible setup, or unsupported behavior outside normal Claude Code inputs.
+- Reject malicious-node, malicious-peer, validator-only, P2P/network-layer, operator-only, leaked-key, dependency-only, docs/style, generated-file, test/mock/config-only, and purely theoretical issues.
+- Reject if the exploit needs privileged access, victim social engineering, impossible setup, or behavior outside what an ordinary account can submit through public RPC.
 - Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
-- A valid report must be triggerable by an unprivileged user, unless the claim proves privilege escalation from an unprivileged path.
-- The final impact must map to an in-scope Claude Code impact such as permission-modal bypass, unauthorized shell or file action, workspace escape, secret/code disclosure, hook bypass, or direct compromise of user projects or local trust boundaries.
+- A valid report must be triggerable by an unprivileged account, unless the claim proves privilege escalation from an unprivileged path.
+- The final impact must map to an in-scope NEAR impact such as token inflation or theft, unauthorized state or balance modification, chain halt or shard stall, node crash or resource exhaustion from a submitted transaction, state divergence or chain split, or gas/storage metering bypass.
 - Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
 1. Exact in-scope file, function, and line/code references.
-2. Clear root cause and broken security assumption.
-3. Reachable exploit path: preconditions -> attacker action -> trigger -> bad result.
-4. Existing checks/guards reviewed and shown insufficient.
-5. Concrete in-scope impact with realistic likelihood.
-6. Reproducible proof path: unit PoC, integration test, invariant/fuzz test, or exact manual steps.
+2. Clear root cause and broken protocol assumption.
+3. Reachable exploit path: preconditions -> attacker transaction/receipt/contract -> trigger -> bad result.
+4. Existing checks, limits, and cost charging reviewed and shown insufficient.
+5. Concrete in-scope impact with realistic likelihood and, where relevant, attacker cost far below damage.
+6. Reproducible proof path: unit PoC, integration/test-loop test, invariant/fuzz test, or exact steps against a local node.
 7. No obvious rejection reason from SECURITY.md, known issues, privilege assumptions, or scope exclusions.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- Can a normal external user trigger this through real repository, plugin, command, hook, git, or tool surfaces without privileged access?
-- Does the code actually behave as claimed?
-- Is the impact caused by this code, not by a malicious node, peer, repository operator already holding privileged machine access, or dependency alone?
-- Is the unauthorized execution, disclosure, bypass, or local/project compromise concrete, not hypothetical?
-- Would a Claude Code bounty triager accept the proof?
+- Can an ordinary account trigger this through normal transactions, contract calls, or RPC without validator or node access?
+- Does the code actually behave as claimed on the current protocol version?
+- Is the impact caused by this code, not by a malicious node, peer, validator, or dependency alone?
+- Is the fund loss, inflation, unauthorized action, stall, crash, or divergence concrete, not hypothetical?
+- Would a NEAR bounty triager accept the proof?
 - What exact test would prove it?
 
 ## Output
@@ -337,7 +380,7 @@ Audit Report
 [Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete in-scope impact, severity rationale, and Claude Code bounty category]
+[Concrete in-scope impact, severity rationale, and NEAR bounty category]
 
 ## Likelihood Explanation
 [Attacker capability, required conditions, feasibility, repeatability]
@@ -358,7 +401,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for claude-code.
+    Generate a short cross-project analog scan prompt for nearcore.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -368,13 +411,13 @@ def scan_format(report: str) -> str:
 ## Rules
 - Use in-scope production repo context only. Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only unprivileged-user analogs in command approval, hook bypass, workspace escape, prompt/frontmatter parsing, git automation, tool authorization, or secret/code disclosure trust boundaries.
-- Reject malicious-node/peer/operator analogs, mocked-only paths, dependency-only bugs, and no-impact or self-XSS-only analogs.
+- Keep only unprivileged-account analogs in transaction/receipt validation, action execution, access-key authorization, balance and gas accounting, storage staking, wasm metering, host functions, trie/state accounting, or congestion and bandwidth limits.
+- Reject malicious-node, malicious-peer, validator-only, P2P/network-layer, mocked-only paths, dependency-only bugs, and no-impact analogs.
 
 ## Validate
-- Map the bug class to the strongest reachable claude-code path.
+- Map the bug class to the strongest reachable nearcore path from a submitted transaction, contract call, or RPC request.
 - Prove root cause with exact file/function support.
-- Accept only concrete approval bypass, unauthorized shell/file action, secret disclosure, workspace escape, cross-target automation bleed, or direct local/project compromise impact.
+- Accept only concrete token inflation or theft, unauthorized state or balance change, free or underpriced execution or storage, node panic or unbounded resource use, chain stall, or state divergence.
 
 ## Output (Strict)
 If valid analog exists, output:

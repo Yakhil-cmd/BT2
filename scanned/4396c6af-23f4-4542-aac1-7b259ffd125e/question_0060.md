@@ -1,0 +1,13 @@
+# Q60: changes endpoint blowup in lib::filter_request_to_shard_group
+
+## Question
+Can an unprivileged attacker who issues unauthenticated JSON-RPC queries against a public node, controlling block ranges and filters selected to maximise scanned data, drive `chain/jsonrpc/src/lib.rs::filter_request_to_shard_group` to make a changes query scan far more than the request implies, breaking the invariant that changes queries are bounded by the requested range, and leading to RPC node crash or unavailability?
+
+## Target
+- File/function: `chain/jsonrpc/src/lib.rs` -> `filter_request_to_shard_group`
+- Entrypoint: unprivileged attacker issues unauthenticated JSON-RPC queries against a public node
+- Attacker controls: block ranges and filters selected to maximise scanned data
+- Exploit idea: make a changes query scan far more than the request implies
+- Invariant to test: changes queries are bounded by the requested range
+- Expected Immunefi impact: High - RPC node crash or unavailability
+- Fast validation: drive the endpoint from `integration-tests` with the crafted payload and assert a typed error, not a panic or unbounded allocation

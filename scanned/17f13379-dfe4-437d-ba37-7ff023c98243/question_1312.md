@@ -1,0 +1,13 @@
+# Q1312: memory limit bypass in instrument_v3::namemap
+
+## Question
+Can an unprivileged attacker who deploys attacker-authored wasm with a `DeployContract` action and then calls it, controlling initial and maximum memory declarations at the limit boundaries, drive `runtime/near-vm-runner/src/prepare/instrument_v3.rs::namemap` to grow guest memory past the configured maximum, breaking the invariant that guest memory never exceeds the configured maximum pages, and leading to network unable to confirm new transactions (shard/chain halt)?
+
+## Target
+- File/function: `runtime/near-vm-runner/src/prepare/instrument_v3.rs` -> `namemap`
+- Entrypoint: unprivileged attacker deploys attacker-authored wasm with a `DeployContract` action and then calls it
+- Attacker controls: initial and maximum memory declarations at the limit boundaries
+- Exploit idea: grow guest memory past the configured maximum
+- Invariant to test: guest memory never exceeds the configured maximum pages
+- Expected Immunefi impact: Critical - network unable to confirm new transactions (shard/chain halt)
+- Fast validation: add a case under `runtime/near-vm-runner/src/tests/` and diff burnt gas / outcome against the expected costs
