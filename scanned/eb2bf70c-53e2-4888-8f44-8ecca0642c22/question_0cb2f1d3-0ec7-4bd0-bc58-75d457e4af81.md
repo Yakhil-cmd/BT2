@@ -1,1 +1,0 @@
-[File: 'runtime/near-vm-runner/src/prepare/prepare_v3.rs' -> Scope: Critical] [Function: SimpleMaxStackCfg::size_of_function_activation] Can an attacker construct a function's locals section whose `prefix_sum_vec::PrefixSumVec` iteration yields indices that appear to decrease, triggering the `.expect(\
