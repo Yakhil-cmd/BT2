@@ -1,1 +1,0 @@
-[File: core/primitives/src/trie_key.rs -> Scope: High] [Function: TrieKey::BufferedReceipt::append_into, assert!(receiving_shard <= u16::MAX)] Can an unprivileged attacker, by crafting cross-shard receipts/transactions that inflate the effective `receiving_shard` value used when buffering outgoing receipts, trigger the `assert!(receiving_shard <= u16::MAX as u64, \
