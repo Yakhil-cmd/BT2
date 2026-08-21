@@ -1,1 +1,0 @@
-[File: core/store/src/trie/outgoing_metadata.rs -> Scope: Critical] [Function: ReceiptGroupsQueue::update_on_receipt_pushed -> TrieQueue::push_back/pop_back (via receipts_column_helper)] Can an attacker force `push_back`'s `.expect(\
