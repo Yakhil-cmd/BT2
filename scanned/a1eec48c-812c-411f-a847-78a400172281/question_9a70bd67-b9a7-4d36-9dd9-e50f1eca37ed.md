@@ -1,1 +1,0 @@
-[File: runtime/near-vm-runner/src/wasmtime_runner/mod.rs -> Scope: Critical state divergence] Target: `IntoVMError::into_vm_error` (mod.rs ~373-424), specifically the `C::Unreachable{trap}` branch that calls `panic!(\
