@@ -1,1 +1,0 @@
-[File: core/parameters/src/vm.rs -> Scope: High] [Function: near_primitives_core::config::AccountIdValidityRulesVersion, core/parameters/src/vm.rs::LimitConfig::account_id_validity_rules_version] The `account_id_validity_rules_version` field defaults via `#[serde(default = \
