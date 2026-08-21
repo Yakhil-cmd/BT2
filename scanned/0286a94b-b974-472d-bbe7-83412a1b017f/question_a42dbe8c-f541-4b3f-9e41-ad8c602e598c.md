@@ -1,1 +1,0 @@
-[File: 'core/primitives-core/src/serialize.rs -> Scope: Critical.'] [Function: dec_format::deserialize / DecType::try_from_str for u128] Can an unprivileged attacker submit an RPC-facing struct (e.g. transaction/view query) whose field uses `#[serde(with = \
