@@ -1,1 +1,0 @@
-[File: 'core/store/src/flat/delta.rs -> Scope: High'] [Function: FlatStateChanges::from_state_changes] Can an unprivileged attacker trigger a chunk containing zero recorded changes for a `RawStateChangesWithTrieKey` entry (violating the `.expect(\
