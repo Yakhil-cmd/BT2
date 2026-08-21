@@ -1,1 +1,0 @@
-[File: 'runtime/runtime/src/bandwidth_scheduler/scheduler.rs' -> Scope: High] [Function: BandwidthRequest::make_from_receipt_sizes total_size accumulation] Since `total_size.checked_add(receipt_size).expect(\
