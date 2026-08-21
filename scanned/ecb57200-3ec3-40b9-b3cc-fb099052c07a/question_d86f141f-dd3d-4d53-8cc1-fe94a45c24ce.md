@@ -1,1 +1,0 @@
-[File: 'core/store/src/contract.rs' -> Scope: Critical] [Function: ContractStorage::finalize] Can an attacker trigger a code path where `ContractStorage::get` is called after `finalize()` has already been invoked (guard.take()), such that the `.expect(\
