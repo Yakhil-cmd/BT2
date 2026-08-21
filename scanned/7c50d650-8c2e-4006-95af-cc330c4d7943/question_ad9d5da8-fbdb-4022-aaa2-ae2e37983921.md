@@ -1,1 +1,0 @@
-[File: 'File Name: core/store/src/trie/ops/iter.rs -> Scope: Critical.'] [Function: Crumb::increment / TrieIteratorImpl::iter_step panic branch] Can an unprivileged attacker, via crafted account/contract keys causing an unexpected Empty/Leaf/Extension node to appear in `CrumbStatus::AtChild` state, reach the `_ => panic!(\
