@@ -1,1 +1,0 @@
-[File: runtime/runtime/src/pipelining.rs -> Scope: Critical] [Function: ReceiptPreparationPipeline::submit -> Action::Delegate/Action::DelegateV2 handling] Since `submit` explicitly treats `Action::Delegate(_) | Action::DelegateV2(_)` as no-ops (\
