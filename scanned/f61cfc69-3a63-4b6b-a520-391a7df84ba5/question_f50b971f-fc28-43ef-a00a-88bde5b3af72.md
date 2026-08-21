@@ -1,0 +1,1 @@
+[File: core/store/src/flat/delta.rs -> Scope: Critical] [Function: FlatStateChanges::from_state_changes] Given `let last_change = &change.changes.last().expect(...)`, can an attacker-triggered receipt produce a RawStateChangesWithTrieKey whose `changes` Vec is empty, causing the `.expect(\

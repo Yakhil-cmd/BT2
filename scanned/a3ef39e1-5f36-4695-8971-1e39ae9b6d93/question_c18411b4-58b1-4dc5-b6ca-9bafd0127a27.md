@@ -1,0 +1,1 @@
+[File: 'runtime/near-vm-runner/src/wasmtime_runner/logic.rs' -> Function: finite_wasm_stack / finite_wasm_unstack] Can an unprivileged ATTACKER deploy a contract crafted so that finite_wasm_unstack's `checked_add` (line 276-279) is called more times than finite_wasm_stack's corresponding `checked_sub`, expecting the `.expect(\

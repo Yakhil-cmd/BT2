@@ -1,0 +1,1 @@
+[File: core/store/src/trie/receipts_column_helper.rs -> Scope: Critical] [Function: ReceiptSinkV2::try_forward gas/size accounting interacting with OutgoingReceiptBuffer::push_back] Given the known `max_receipt_size` clamp bug (\

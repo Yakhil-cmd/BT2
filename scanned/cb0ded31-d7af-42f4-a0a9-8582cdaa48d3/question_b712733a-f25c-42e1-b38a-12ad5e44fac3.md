@@ -1,0 +1,1 @@
+[File: core/store/src/trie/shard_tries.rs -> Scope: High] [Function: ShardTries::load_memtrie / load_trie_from_flat_state_and_delta] Can an unprivileged attacker who spams a shard with enough delayed/buffered receipts to inflate flat-state delta size cause `load_memtrie`/background loading to retry `MEMTRIE_LOAD_MAX_RETRIES` times and then `panic!(\

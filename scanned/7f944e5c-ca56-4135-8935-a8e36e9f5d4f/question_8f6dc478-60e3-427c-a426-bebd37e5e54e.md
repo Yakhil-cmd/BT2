@@ -1,0 +1,1 @@
+[File: 'runtime/near-vm-runner/src/prepare/prepare_v2.rs -> Scope: High.'] [Function: SimpleMaxStackCfg::size_of_function_activation] Can an unprivileged attacker craft a function body with a PrefixSumVec of locals whose indices are non-monotonic or overflow-adjacent (large idx values near u64::MAX) so that the expect(\

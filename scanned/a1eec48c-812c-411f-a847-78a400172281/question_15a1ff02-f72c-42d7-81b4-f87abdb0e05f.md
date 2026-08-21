@@ -1,0 +1,1 @@
+[File: runtime/near-vm-runner/src/wasmtime_runner/mod.rs -> Scope: Critical liveness] Target: `IntoVMError::into_vm_error`'s `C::HeapMisaligned` and `C::Interrupt` branches (mod.rs ~399-401), both of which produce `VMRunnerError::WasmUnknownError{debug_message: \

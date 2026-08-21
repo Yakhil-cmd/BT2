@@ -1,0 +1,1 @@
+[File: runtime/near-vm-runner/src/logic/errors.rs -> Scope: Critical] [Function: MethodResolveError::MethodNotFound, MethodInvalidSignature, HostError::EmptyMethodName] Can an unprivileged attacker holding a FunctionCall access key restricted to `method_names: [\

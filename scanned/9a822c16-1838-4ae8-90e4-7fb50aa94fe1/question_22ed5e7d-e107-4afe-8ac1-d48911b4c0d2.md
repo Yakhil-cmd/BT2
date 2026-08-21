@@ -1,0 +1,1 @@
+[File: 'core/store/src/trie/iterator.rs'] [Function: DiskTrieIteratorInner::get_value, lines 58-67] Can an unprivileged attacker who deploys a contract writing many small trie values force the disk trie iterator's `get_value` to be invoked with `ValueHandle::InMemory`, hitting the `panic!(\

@@ -1,0 +1,1 @@
+[File: 'core/store/src/trie/iterator.rs'] [Function: TrieIteratorImpl::seek_nibble_slice, ops/iter.rs lines 174-244] Can an unprivileged attacker submit transactions producing account IDs/keys whose nibble prefixes collide (e.g. `\

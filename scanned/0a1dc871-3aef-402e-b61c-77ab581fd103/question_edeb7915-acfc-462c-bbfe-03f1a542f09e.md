@@ -1,0 +1,1 @@
+[File: core/store/src/trie/iterator.rs -> Scope: metering bypass via prune_condition] [Function: TrieIteratorImpl::next / prune_condition semantics (core/store/src/trie/ops/iter.rs)] Can an attacker craft account/contract keys such that a caller-supplied `prune_condition` that is valid for a prefix P but not for a strict superset key (violating the documented invariant \
