@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/errors.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aae18e94-94f4-4b68-9002-31ce4cddeae9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/profile.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_86678efa-8763-401e-84ad-20e58159d548?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/utils.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5fe6c93d-ed37-4576-9aca-6120a8daf4f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/logic.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_afe61dde-318a-4da6-b3fc-66330f13d8ab?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/gas_counter.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7a3b38f6-0348-4431-9400-9c8254c998f3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/vmstate.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fbe5d062-e6f8-43aa-a4c7-d265e7d8fa00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/context.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_958f5f48-647a-431b-b07d-f2f754a44e40?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/dependencies.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2f60ca51-69b9-4f29-8517-5ca8c612e353?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/errors.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2154e331-e6c2-4006-ba11-f7888ff08273?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/types.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1a438c5a-6bda-41c5-bbc7-195d598b553e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/utils.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0bf92908-e919-412a-a0fa-4eca186a0260?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/alt_bn128.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c325d7b-cb30-47bc-bd77-6605d9825e53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/bls12381.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_260633fe-500a-45e0-b82c-283d3fd91af2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/logic/recorded_storage_counter.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bfecfce6-c34e-4862-bca8-4f4f7549d43d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/wasmtime_runner/mod.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fa227596-d272-42e2-9a87-81c157c5a632?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/wasmtime_runner/logic.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1a86f7c-d233-4d16-aa84-2791f1cb29ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: runtime/near-vm-runner/src/wasmtime_runner/trap_classification.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a810796-c547-49f0-9436-aed744130ef6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/transaction.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_86f335d2-a2f3-45ba-9104-1aa2b560752c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/receipt.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c77ffb61-54b4-4910-a5e8-d42ee862241b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/action/mod.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b8972b1e-4bf1-49f2-a1bc-131f6dc25e9a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/action/delegate.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_34059095-783e-430e-830c-5b6b1a071961?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/signable_message.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_95192c12-2832-47ed-9e5d-496297212011?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/errors.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f18cf0af-6491-4ab7-9618-50abb78a1762?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/trie_key.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ef69faae-5079-429c-b103-cae766ff83cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/utils.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8842ea46-0a49-4cb5-9560-a2fbded4a639?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/congestion_info.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ff23138f-ae7c-4292-8279-4b730a519e18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/bandwidth_scheduler.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7ce4fc36-741d-479e-a9b8-1de29216a42b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/state_record.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ffe344f8-6267-4c27-8cad-73f537f99f5b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/universal_state_init.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_93ea16e1-57bd-48a9-939d-6f758804e450?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: core/primitives/src/views.rs -> Scope: High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b00b653-59f9-48f1-84b4-2a6835678bba?mode=deep",
+    "questions_generated": false
+  }
+]
