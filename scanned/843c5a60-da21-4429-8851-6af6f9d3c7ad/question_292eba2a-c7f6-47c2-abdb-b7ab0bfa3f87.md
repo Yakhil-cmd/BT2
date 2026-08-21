@@ -1,1 +1,0 @@
-[File: 'runtime/near-vm-runner/src/wasmtime_runner/logic.rs' -> Scope: Critical panic on validating node] [Function: finite_wasm_unstack] Can an unprivileged attacker craft WASM whose instrumented stack-tracking calls `finite_wasm_unstack` with `operand_size`/`frame_size` such that `ctx.remaining_stack.checked_add(...)` overflows, hitting the `.expect(\
