@@ -1,1 +1,0 @@
-[File: core/store/src/adapter/flat_store.rs -> Scope: Critical] [Function: FlatStoreAdapter::get] Since `get` deserializes with `store.get_ser::<FlatStateValue>` while the low-level iterator in `iter_range` (flat_store.rs:106-142) uses `FlatStateValue::try_from_slice(&value).expect(\
