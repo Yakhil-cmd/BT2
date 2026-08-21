@@ -1,1 +1,0 @@
-[File: runtime/near-vm-runner/src/wasmtime_runner/mod.rs -> Scope: Critical] Function: `link`'s generated trampoline in the `add_import!` macro wraps host errors in `ErrorContainer(Mutex::new(Some(err)))` and relies on `IntoVMError::into_vm_error` to unwrap exactly once (`panic!(
