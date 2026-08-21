@@ -1,1 +1,0 @@
-[File: 'runtime/runtime/src/function_call.rs -> execute_function_call'] Can an unprivileged attacker who deploys a WASM contract designed to consume close to `function_call.gas` cause `runtime_ext.receipt_manager.distribute_gas(unused_gas)` in `ReceiptManager::distribute_gas` (runtime/runtime/src/receipt_manager.rs) to hit the `unwrap_or_else(|| panic!(\
