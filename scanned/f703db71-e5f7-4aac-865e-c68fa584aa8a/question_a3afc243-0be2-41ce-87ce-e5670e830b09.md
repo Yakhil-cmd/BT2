@@ -1,1 +1,0 @@
-[File: 'runtime/near-vm-runner/src/prepare/prepare_v2.rs' -> Scope: Critical] [Function: prepare_contract, finite_wasm::Analysis::analyze/.instrument error mapping, lines 391-404] Can an unprivileged attacker craft a wasm module that causes `finite_wasm::Analysis::analyze` or `.instrument(\
