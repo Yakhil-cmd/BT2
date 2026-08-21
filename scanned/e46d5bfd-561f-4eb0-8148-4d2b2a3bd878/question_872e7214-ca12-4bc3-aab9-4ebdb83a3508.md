@@ -1,0 +1,1 @@
+[File: core/store/src/contract.rs -> Scope: Critical] [Function: ContractsTracker::finalize / ContractStorage::finalize] Can an unprivileged attacker cause record_call or record_deploy to be invoked on a ContractStorage after finalize() has consumed the tracker (guard.take()), triggering the `.expect(\

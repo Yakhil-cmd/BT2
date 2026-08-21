@@ -1,0 +1,1 @@
+[File: runtime/runtime/src/pipelining.rs -> Scope: Critical.] [Function: ReceiptPreparationPipeline::get_contract] Can an unprivileged attacker cause `get_contract` to be invoked twice for the same `(receipt_id, action_index)` pair, hitting the `PrepareTaskStatus::Finished => panic!(\
