@@ -1,1 +1,0 @@
-[File: runtime/runtime/src/receipt_manager.rs -> Scope: Critical] [Function: ReceiptManager::append_action / get_receipt_receiver / set_refund_to / set_deterministic_state_init_data_entry] All of these functions call `.expect(\
