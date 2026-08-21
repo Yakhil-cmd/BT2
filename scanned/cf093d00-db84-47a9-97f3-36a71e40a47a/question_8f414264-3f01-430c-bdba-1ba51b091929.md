@@ -1,1 +1,0 @@
-[File: 'core/store/src/flat/delta.rs' -> Scope: Critical] [Function: FlatStateChanges::from_state_changes] Can an unprivileged attacker who submits a sequence of transactions that repeatedly write and delete the same TrieKey (e.g. Account balance key) within a single chunk cause `changes.last().expect(\
