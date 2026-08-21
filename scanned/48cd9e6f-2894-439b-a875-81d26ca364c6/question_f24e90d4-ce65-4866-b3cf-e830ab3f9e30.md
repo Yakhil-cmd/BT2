@@ -1,1 +1,0 @@
-[File: runtime/runtime/src/global_contracts.rs -> Scope: Critical] [Function: get_nonce] Can an unprivileged attacker corrupt or influence the byte length of the value stored at TrieKey::GlobalContractNonce (expected to be exactly 8 bytes) such that `stored_nonce.try_into().expect(\
