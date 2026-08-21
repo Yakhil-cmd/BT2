@@ -1,1 +1,0 @@
-[File: universal_state_init.rs -> runtime/runtime/src/action_validation.rs::validate_deterministic_state_init] [Function: validate_deterministic_state_init] Can an attacker submit a DeterministicAccountStateInitV1 with data entries whose combined len_bytes() (used for action_deterministic_state_init_per_byte gas pricing) is computed via checked_add that only panics (`.expect(\
