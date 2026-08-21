@@ -1,1 +1,0 @@
-[File: 'File Name: runtime/runtime/src/lib.rs -> Scope: Critical.'] [Function: Runtime::apply_action_receipt / Runtime::process_receipt] Can an unprivileged attacker submit a receipt whose VersionedReceiptEnum variant does not match the `VersionedReceiptEnum::Action | VersionedReceiptEnum::PromiseYield` pattern expected at the `unreachable!(\
