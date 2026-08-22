@@ -1,0 +1,13 @@
+# Q1945: path from a repo file listing - viewRun in view.go
+
+## Question
+Can repository file paths returned by the API and used in `viewRun` in [pkg/cmd/gist/view/view.go](pkg/cmd/gist/view/view.go#L81) contain traversal or absolute components that escape the output directory?
+
+## Target
+- File/function: [pkg/cmd/gist/view/view.go:81](pkg/cmd/gist/view/view.go#L81) - `viewRun`
+- Entrypoint: gh gist view
+- Attacker controls: an asset, artifact, gist, or archive-member name and its bytes
+- Exploit idea: Publish a repo/tree whose entry path escapes.
+- Invariant to test: API-provided paths are validated exactly like archive members.
+- Expected Immunefi impact: Critical - Arbitrary file write or overwrite outside the intended directory, escalating to code execution via startup files, git hooks, or gh's own config
+- Fast validation: Table test over hostile tree paths.

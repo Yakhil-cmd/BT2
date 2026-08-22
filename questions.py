@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'near/nearcore'
+SOURCE_REPO = 'cli/cli'
 # todo: the name of the repository
-REPO_NAME = 'nearcore'
+REPO_NAME = 'cli'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -48,162 +48,201 @@ else:
 
 scope_files = [
     # =================================================================================
-    # Runtime: transaction/receipt validation, action execution, balance & gas accounting
+    # Auth: token storage, login/logout flows, git credential helper, OAuth scopes
     # =================================================================================
-    "runtime/runtime/src/lib.rs",
-    "runtime/runtime/src/verifier.rs",
-    "runtime/runtime/src/actions.rs",
-    "runtime/runtime/src/action_validation.rs",
-    "runtime/runtime/src/access_keys.rs",
-    "runtime/runtime/src/adapter.rs",
-    "runtime/runtime/src/config.rs",
-    "runtime/runtime/src/congestion_control.rs",
-    "runtime/runtime/src/contract_code.rs",
-    "runtime/runtime/src/conversions.rs",
-    "runtime/runtime/src/deterministic_account_id.rs",
-    "runtime/runtime/src/ext.rs",
-    "runtime/runtime/src/function_call.rs",
-    "runtime/runtime/src/global_contracts.rs",
-    "runtime/runtime/src/pipelining.rs",
-    "runtime/runtime/src/prefetch.rs",
-    "runtime/runtime/src/receipt_manager.rs",
-    "runtime/runtime/src/state_viewer/mod.rs",
-    "runtime/runtime/src/types.rs",
-    "runtime/runtime/src/bandwidth_scheduler/mod.rs",
-    "runtime/runtime/src/bandwidth_scheduler/scheduler.rs",
-    "runtime/runtime/src/bandwidth_scheduler/distribute_remaining.rs",
+    "internal/config/config.go",
+    "internal/config/migration/multi_account.go",
+    "internal/keyring/keyring.go",
+    "internal/authflow/flow.go",
+    "internal/authflow/success.go",
+    "pkg/cmd/auth/login/login.go",
+    "pkg/cmd/auth/logout/logout.go",
+    "pkg/cmd/auth/refresh/refresh.go",
+    "pkg/cmd/auth/token/token.go",
+    "pkg/cmd/auth/switch/switch.go",
+    "pkg/cmd/auth/setupgit/setupgit.go",
+    "pkg/cmd/auth/gitcredential/helper.go",
+    "pkg/cmd/auth/shared/login_flow.go",
+    "pkg/cmd/auth/shared/git_credential.go",
+    "pkg/cmd/auth/shared/gitcredentials/helper_config.go",
+    "pkg/cmd/auth/shared/gitcredentials/updater.go",
+    "pkg/cmd/auth/shared/oauth_scopes.go",
+    "pkg/cmd/auth/shared/writeable.go",
 
     # =================================================================================
-    # VM runner: wasm preparation, instrumentation, imports, host logic, gas metering
+    # HTTP client, host trust, redirects, repo/host resolution from untrusted remotes
     # =================================================================================
-    "runtime/near-vm-runner/src/runner.rs",
-    "runtime/near-vm-runner/src/prepare.rs",
-    "runtime/near-vm-runner/src/prepare/prepare_v2.rs",
-    "runtime/near-vm-runner/src/prepare/prepare_v3.rs",
-    "runtime/near-vm-runner/src/prepare/instrument_v3.rs",
-    "runtime/near-vm-runner/src/imports.rs",
-    "runtime/near-vm-runner/src/cache.rs",
-    "runtime/near-vm-runner/src/features.rs",
-    "runtime/near-vm-runner/src/errors.rs",
-    "runtime/near-vm-runner/src/profile.rs",
-    "runtime/near-vm-runner/src/utils.rs",
-    "runtime/near-vm-runner/src/logic/logic.rs",
-    "runtime/near-vm-runner/src/logic/gas_counter.rs",
-    "runtime/near-vm-runner/src/logic/vmstate.rs",
-    "runtime/near-vm-runner/src/logic/context.rs",
-    "runtime/near-vm-runner/src/logic/dependencies.rs",
-    "runtime/near-vm-runner/src/logic/errors.rs",
-    "runtime/near-vm-runner/src/logic/types.rs",
-    "runtime/near-vm-runner/src/logic/utils.rs",
-    "runtime/near-vm-runner/src/logic/alt_bn128.rs",
-    "runtime/near-vm-runner/src/logic/bls12381.rs",
-    "runtime/near-vm-runner/src/logic/recorded_storage_counter.rs",
-    "runtime/near-vm-runner/src/wasmtime_runner/mod.rs",
-    "runtime/near-vm-runner/src/wasmtime_runner/logic.rs",
-    "runtime/near-vm-runner/src/wasmtime_runner/trap_classification.rs",
+    "api/client.go",
+    "api/http_client.go",
+    "internal/ghinstance/host.go",
+    "internal/ghrepo/repo.go",
+    "internal/safeurl/safeurl.go",
+    "internal/safepaths/absolute.go",
+    "context/remote.go",
+    "pkg/cmd/factory/default.go",
+    "pkg/cmd/factory/remote_resolver.go",
+    "pkg/cmdutil/repo_override.go",
+    "pkg/cmdutil/file_input.go",
+    "pkg/cmd/api/api.go",
+    "pkg/cmd/api/http.go",
+    "pkg/cmd/api/pagination.go",
+    "pkg/cmd/api/fields.go",
 
     # =================================================================================
-    # Protocol primitives: transactions, actions, receipts, accounts, ids, serialization
+    # Git invocation and URL/ref handling driven by attacker-controlled repo metadata
     # =================================================================================
-    "core/primitives/src/transaction.rs",
-    "core/primitives/src/receipt.rs",
-    "core/primitives/src/action/mod.rs",
-    "core/primitives/src/action/delegate.rs",
-    "core/primitives/src/signable_message.rs",
-    "core/primitives/src/errors.rs",
-    "core/primitives/src/trie_key.rs",
-    "core/primitives/src/utils.rs",
-    "core/primitives/src/congestion_info.rs",
-    "core/primitives/src/bandwidth_scheduler.rs",
-    "core/primitives/src/state_record.rs",
-    "core/primitives/src/universal_state_init.rs",
-    "core/primitives/src/views.rs",
-    "core/primitives/src/utils/compression.rs",
-    "core/primitives-core/src/account.rs",
-    "core/primitives-core/src/code.rs",
-    "core/primitives-core/src/config.rs",
-    "core/primitives-core/src/gas.rs",
-    "core/primitives-core/src/global_contract.rs",
-    "core/primitives-core/src/deterministic_account_id.rs",
-    "core/primitives-core/src/universal_account_id.rs",
-    "core/primitives-core/src/universal_state_init.rs",
-    "core/primitives-core/src/trie_key.rs",
-    "core/primitives-core/src/serialize.rs",
-    "core/primitives-core/src/hash.rs",
-    "core/primitives-core/src/types.rs",
-    "core/primitives-core/src/errors.rs",
+    "git/client.go",
+    "git/command.go",
+    "git/url.go",
+    "git/objects.go",
+    "pkg/cmd/repo/clone/clone.go",
+    "pkg/cmd/repo/fork/fork.go",
+    "pkg/cmd/repo/sync/git.go",
+    "pkg/cmd/repo/sync/sync.go",
+    "pkg/cmd/repo/setdefault/setdefault.go",
+    "pkg/cmd/pr/checkout/checkout.go",
+    "pkg/cmd/pr/shared/worktree.go",
+    "pkg/cmd/pr/shared/finder.go",
+    "pkg/cmd/issue/develop/develop.go",
+    "pkg/cmd/gist/clone/clone.go",
 
     # =================================================================================
-    # Protocol fee/limit configuration consumed by validation and metering
+    # Extensions: discovery, install, upgrade, symlink, and local execution
     # =================================================================================
-    "core/parameters/src/config.rs",
-    "core/parameters/src/cost.rs",
-    "core/parameters/src/vm.rs",
-    "core/parameters/src/parameter_table.rs",
+    "pkg/cmd/extension/manager.go",
+    "pkg/cmd/extension/command.go",
+    "pkg/cmd/extension/extension.go",
+    "pkg/cmd/extension/git.go",
+    "pkg/cmd/extension/http.go",
+    "pkg/cmd/extension/symlink_other.go",
+    "pkg/cmd/extension/symlink_windows.go",
+    "pkg/cmd/extension/browse/browse.go",
+    "pkg/extensions/extension.go",
+    "pkg/extensions/official.go",
+    "pkg/cmd/root/extension.go",
+    "pkg/cmd/root/root.go",
+    "pkg/cmd/root/alias.go",
+    "internal/ghcmd/cmd.go",
+    "internal/run/run.go",
 
     # =================================================================================
-    # Storage: trie reads/writes, storage accounting, witness recording, flat storage
+    # Skills: remote package fetch, unpack, frontmatter, lockfile pinning, discovery
     # =================================================================================
-    "core/store/src/trie/mod.rs",
-    "core/store/src/trie/update.rs",
-    "core/store/src/trie/update/iterator.rs",
-    "core/store/src/trie/iterator.rs",
-    "core/store/src/trie/trie_storage.rs",
-    "core/store/src/trie/trie_storage_update.rs",
-    "core/store/src/trie/trie_recording.rs",
-    "core/store/src/trie/raw_node.rs",
-    "core/store/src/trie/nibble_slice.rs",
-    "core/store/src/trie/shard_tries.rs",
-    "core/store/src/trie/config.rs",
-    "core/store/src/trie/outgoing_metadata.rs",
-    "core/store/src/trie/receipts_column_helper.rs",
-    "core/store/src/trie/prefetching_trie_storage.rs",
-    "core/store/src/trie/ops/insert_delete.rs",
-    "core/store/src/trie/ops/interface.rs",
-    "core/store/src/trie/ops/iter.rs",
-    "core/store/src/trie/mem/lookup.rs",
-    "core/store/src/trie/mem/memtrie_update.rs",
-    "core/store/src/trie/mem/node/encoding.rs",
-    "core/store/src/trie/mem/node/view.rs",
-    "core/store/src/trie/mem/flexible_data/encoding.rs",
-    "core/store/src/trie/mem/flexible_data/children.rs",
-    "core/store/src/trie/mem/flexible_data/value.rs",
-    "core/store/src/flat/storage.rs",
-    "core/store/src/flat/chunk_view.rs",
-    "core/store/src/flat/delta.rs",
-    "core/store/src/adapter/trie_store.rs",
-    "core/store/src/adapter/flat_store.rs",
-    "core/store/src/contract.rs",
+    "internal/skills/installer/installer.go",
+    "internal/skills/source/source.go",
+    "internal/skills/registry/registry.go",
+    "internal/skills/frontmatter/frontmatter.go",
+    "internal/skills/lockfile/lockfile.go",
+    "internal/skills/discovery/discovery.go",
+    "internal/skills/discovery/collisions.go",
+    "pkg/cmd/skills/install/install.go",
+    "pkg/cmd/skills/update/update.go",
+    "pkg/cmd/skills/preview/preview.go",
+    "pkg/cmd/skills/publish/publish.go",
 
     # =================================================================================
-    # Signature verification reachable from attacker-supplied transactions
+    # Attestation and artifact signature verification (supply-chain trust decisions)
     # =================================================================================
-    "core/crypto/src/signature.rs",
+    "pkg/cmd/attestation/verify/verify.go",
+    "pkg/cmd/attestation/verify/policy.go",
+    "pkg/cmd/attestation/verify/attestation.go",
+    "pkg/cmd/attestation/verify/options.go",
+    "pkg/cmd/attestation/verification/sigstore.go",
+    "pkg/cmd/attestation/verification/policy.go",
+    "pkg/cmd/attestation/verification/attestation.go",
+    "pkg/cmd/attestation/verification/extensions.go",
+    "pkg/cmd/attestation/verification/tuf.go",
+    "pkg/cmd/attestation/api/client.go",
+    "pkg/cmd/attestation/api/attestation.go",
+    "pkg/cmd/attestation/api/trust_domain.go",
+    "pkg/cmd/attestation/artifact/artifact.go",
+    "pkg/cmd/attestation/artifact/file.go",
+    "pkg/cmd/attestation/artifact/image.go",
+    "pkg/cmd/attestation/artifact/digest/digest.go",
+    "pkg/cmd/attestation/artifact/oci/client.go",
+    "pkg/cmd/attestation/trustedroot/trustedroot.go",
+    "pkg/cmd/attestation/download/download.go",
+    "pkg/cmd/attestation/inspect/bundle.go",
+    "pkg/cmd/release/verify-asset/verify_asset.go",
+    "pkg/cmd/release/verify/verify.go",
+    "pkg/cmd/release/shared/attestation.go",
 
     # =================================================================================
-    # Public RPC entrypoints an unprivileged user can reach directly
+    # Downloading remote-controlled content to the local filesystem
     # =================================================================================
-    "chain/jsonrpc/src/api/transactions.rs",
-    "chain/jsonrpc/src/api/query.rs",
-    "chain/jsonrpc/src/api/call_function.rs",
-    "chain/jsonrpc/src/api/view_state.rs",
-    "chain/jsonrpc/src/api/view_access_key.rs",
-    "chain/jsonrpc/src/api/view_access_key_list.rs",
-    "chain/jsonrpc/src/api/view_gas_key_nonces.rs",
-    "chain/jsonrpc/src/api/receipts.rs",
-    "chain/jsonrpc/src/api/changes.rs",
-    "chain/jsonrpc/src/lib.rs",
+    "pkg/cmd/release/shared/fetch.go",
+    "pkg/cmd/release/download/download.go",
+    "pkg/cmd/run/download/download.go",
+    "pkg/cmd/run/download/http.go",
+    "pkg/cmd/run/shared/artifacts.go",
+    "pkg/cmd/run/view/logs.go",
+    "internal/zip/zip.go",
+    "pkg/cmd/repo/read-file/read_file.go",
+    "pkg/cmd/repo/read-dir/read_dir.go",
+    "pkg/cmd/gist/shared/shared.go",
+    "pkg/cmd/gist/edit/edit.go",
+    "pkg/cmd/gist/view/view.go",
+    "pkg/cmd/gist/create/create.go",
+
+    # =================================================================================
+    # Rendering untrusted server content into the user's terminal or browser
+    # =================================================================================
+    "pkg/iostreams/untrusted.go",
+    "pkg/iostreams/iostreams.go",
+    "pkg/iostreams/content.go",
+    "pkg/markdown/markdown.go",
+    "internal/text/text.go",
+    "internal/tableprinter/table_printer.go",
+    "pkg/cmd/pr/view/view.go",
+    "pkg/cmd/issue/view/view.go",
+    "pkg/cmd/pr/shared/display.go",
+    "pkg/cmd/pr/shared/comments.go",
+    "pkg/cmd/pr/checks/output.go",
+    "pkg/cmd/browse/browse.go",
+    "internal/browser/browser.go",
+
+    # =================================================================================
+    # Codespaces: connections, SSH, and port forwarding driven by remote responses
+    # =================================================================================
+    "internal/codespaces/ssh.go",
+    "internal/codespaces/codespaces.go",
+    "internal/codespaces/connection/connection.go",
+    "internal/codespaces/portforwarder/port_forwarder.go",
+    "internal/codespaces/rpc/invoker.go",
+    "internal/codespaces/api/api.go",
+    "pkg/cmd/codespace/ssh.go",
+    "pkg/cmd/codespace/ports.go",
+    "pkg/cmd/codespace/code.go",
+    "pkg/cmd/codespace/jupyter.go",
+    "pkg/cmd/codespace/common.go",
+
+    # =================================================================================
+    # Agent tasks, aliases, secrets, keys, and self-update
+    # =================================================================================
+    "pkg/cmd/agent-task/capi/client.go",
+    "pkg/cmd/agent-task/shared/capi.go",
+    "pkg/cmd/agent-task/create/create.go",
+    "pkg/cmd/copilot/copilot.go",
+    "pkg/cmd/alias/set/set.go",
+    "pkg/cmd/alias/imports/import.go",
+    "pkg/cmd/alias/shared/validations.go",
+    "pkg/cmd/secret/set/set.go",
+    "pkg/cmd/secret/set/http.go",
+    "pkg/cmd/secret/shared/shared.go",
+    "pkg/ssh/ssh_keys.go",
+    "internal/update/update.go",
 ]
 
 
 target_scopes = [
-    "Critical. An unprivileged attacker who can only submit signed transactions or deploy and call their own contracts can mint, duplicate, or steal NEAR tokens, breaking the total-supply or per-account balance invariant through deposit, refund, gas-refund, staking, storage-staking, or receipt-accounting paths.",
-    "Critical. An unprivileged attacker can craft a transaction, receipt, or contract that makes chunk application panic, abort, hang, or consume unbounded memory or time on every validating node, stalling a shard or halting the chain.",
-    "Critical. An unprivileged attacker can trigger nondeterministic or path-inconsistent execution so honest nodes disagree on state root, gas burn, or outcome for the same chunk, causing state divergence or an unintended chain split.",
-    "Critical. An unprivileged attacker can act on an account they do not control by bypassing signature, nonce, or access-key authorization, FunctionCall access-key restrictions such as allowance, receiver_id and method_names, delegate-action sender binding or replay protection, or predecessor_id attribution.",
-    "Critical. An unprivileged attacker can bypass gas metering or storage staking so compute, storage growth, receipt size, or recorded witness size is unaccounted or underpriced, obtaining free execution, unbounded state bloat, or validator resource exhaustion.",
-    "High. An unprivileged attacker can bypass congestion control, bandwidth scheduling, or receipt and queue limits to indefinitely stall receipt delivery for a shard, or permanently strand cross-shard receipts and lock user funds.",
-    "High. An unprivileged attacker can exploit serialization, trie-key, or account-id parsing differentials to collide storage keys across accounts, corrupt state accounting, or make validation and execution disagree about the same transaction.",
+    "Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.",
+    "Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.",
+    "Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.",
+    "Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.",
+    "Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.",
+    "High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.",
+    "High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.",
+    "High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.",
 ]
 
 
@@ -213,47 +252,48 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate exploit-focused audit and fuzzing questions for one nearcore target.
+    Generate exploit-focused audit and fuzzing questions for one GitHub CLI target.
 
     ```
     target_file format:
-    "'File Name: runtime/runtime/src/actions.rs -> Scope: Critical. ...'"
+    "'File Name: pkg/cmd/extension/manager.go -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate exploit-focused security audit and fuzzing questions for this exact nearcore target:
+    Generate exploit-focused security audit and fuzzing questions for this exact GitHub CLI (gh) target:
 
     {target_file}
 
     Project focus:
-    nearcore is the NEAR Protocol reference client. Focus on transaction and receipt validation, action execution, access-key authorization, balance and gas accounting, storage staking, wasm preparation and metering, host functions, trie and state accounting, congestion and bandwidth limits, and determinism of chunk application.
+    gh is the GitHub CLI, a Go client that runs on a developer machine with the user's GitHub token. Focus on token handling and host trust, HTTP client and redirect behavior, git command and URL construction, extension and skill install and execution, attestation verification, downloading remote content to disk, and rendering untrusted API content in the terminal.
 
     Rules:
-    * Treat `File Name:` as the exact file/module.
+    * Treat `File Name:` as the exact file/package.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Rust symbols (fn, struct, enum, field) when possible.
-    * Attacker is unprivileged only: an ordinary account holder. They can submit signed transactions and meta-transactions through public RPC, deploy and call their own contracts, and fund their own accounts.
-    * Attacker is NOT a validator, block or chunk producer, node operator, or peer. Ignore malicious-node, malicious-peer, P2P message, network-layer, node-config, CLI, leaked-key, and social-engineering assumptions.
-    * Ignore test files, mocks, fuzz harnesses, docs, generated files, params-estimator, config-only findings, and dependency-only issues.
-    * Ignore issues gated behind protocol features that are not yet enabled unless the path is reachable on the current protocol version.
+    * Use exact Go symbols (func, method, struct, field) when possible.
+    * Attacker is unprivileged only: any remote GitHub user with no rights on the victim's machine, repos, or org. They can publish repos, forks, PR branches, refs, issues, comments, gists, releases, workflow artifacts, extensions, and skills, and can control the responses of a host the victim points gh at.
+    * Attacker is NOT the local user, an admin of the victim's machine, an org or repo owner, a GitHub operator, or a network MITM. Ignore leaked-token, physical-access, local-network, social-engineering, and malicious-maintainer assumptions.
+    * The victim only runs ordinary gh commands on attacker-published content; no unusual flags or hand-edited config.
+    * Ignore test files, mocks, fixtures, docs, generated code, build scripts, dependency-only bugs, and config-only findings.
     * Generate 12 to 16 high-signal questions.
-    * At least 70% must target balance or supply invariants, gas or storage metering bypass, access-key and signer authorization, node panic or unbounded resource use, execution nondeterminism, or receipt and congestion accounting failures.
-    * Every question must be testable by unit test, integration test, fuzz test, invariant test, or differential test.
+    * At least 70% must target code execution on the victim host, credential or token exfiltration, writes outside the intended path, verification or authorization bypass, or wrong-host/wrong-account request routing.
+    * Every question must be testable by unit test, integration test, fuzz test, or an httpmock/git-stub based test.
     * Avoid generic checklist questions and repeated root causes.
 
     Core invariants:
-    * Conservation: total token supply and per-account balances stay exact across transfers, refunds, gas refunds, staking, storage staking, and receipt processing. No mint, no loss.
-    * Metering is complete: every unit of compute, memory, storage, receipt and witness growth is charged before it is performed, and charges cannot overflow, saturate, or be skipped.
-    * Authorization is exact: only the account whose key signed a transaction may act, access-key restrictions hold, nonces are strictly increasing, and predecessor_id and signer_id cannot be forged.
-    * Determinism and liveness: applying the same chunk yields the same state root, gas, and outcomes on every node, and no attacker-supplied input can panic, hang, or unboundedly grow a validator.
-    * Progress is preserved: congestion control, bandwidth limits, and receipt queues bound resources without permanently stranding receipts or user funds.
+    * Credential confinement: a host's token is attached only to requests to that host, never followed across a redirect or a remote/submodule URL to another host, and is never written to a log, argv, env, or extension-visible surface.
+    * Host and repo trust: hostnames, remote URLs, and repo overrides parsed from untrusted input resolve to the intended GitHub host, never to an attacker host or a non-HTTPS scheme.
+    * No injected execution: values from API responses, git output, repo metadata, or package archives never become git options, shell words, executable paths, or URI handlers.
+    * Path confinement: every file written from remote content stays inside the chosen output directory after decoding, symlink resolution, and case or Unicode normalization.
+    * Verification is sound: a verify success means the bundle's signature, digest, certificate identity, and policy all bound the exact artifact to the claimed repo and workflow.
+    * Output safety: untrusted text is sanitized before reaching a terminal, pager, or browser, and cannot forge gh's own prompts or trusted output.
 
     Each question must include:
-    1. target function/module;
+    1. target function/package;
     2. attacker action;
     3. preconditions;
     4. call sequence;
@@ -264,7 +304,7 @@ def question_generator(target_file: str) -> str:
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Function: symbol_or_module] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/integration/fuzz PARAMETERS and assert BALANCE_CONSERVATION, GAS_OR_STORAGE_METERING, AUTHORIZATION_BINDING, or DETERMINISM_AND_LIVENESS.",
+    "[File: {target_file}] [Function: symbol_or_package] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/integration/fuzz PARAMETERS and assert CREDENTIAL_CONFINEMENT, HOST_TRUST, NO_INJECTED_EXECUTION, PATH_CONFINEMENT, or VERIFICATION_SOUNDNESS.",
     ]
     """
     return prompt
@@ -272,7 +312,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a focused nearcore exploit-validation prompt.
+    Generate a focused GitHub CLI exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -282,16 +322,16 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: an ordinary account holder submitting transactions, meta-transactions, contract deploys, and contract calls through public RPC. No validator, chunk producer, node operator, peer, leaked key, or social engineering.
-- Reject malicious-node, malicious-peer, P2P/network-layer, node-config, and operator-only paths.
-- Reject anything that depends only on test/mock/fuzz-harness/docs/config/generated files, dependency bugs alone, direct store mutation from tests, or best-practice cleanup without exploitable impact.
-- Focus on real protocol compromise paths: balance or supply violations, gas or storage metering bypass, authorization bypass, node panic or unbounded resource use, state divergence, and receipt or congestion accounting failures.
+- Attacker is unprivileged only: a remote GitHub user who publishes repos, forks, PR branches and refs, issues, comments, gists, releases, artifacts, extensions, or skills, or controls responses from a host the victim points gh at. No local access, no admin or org rights, no leaked token, no MITM, no social engineering.
+- The victim runs ordinary gh commands on that attacker-published content.
+- Reject anything that depends only on test/mock/fixture/docs/generated files, dependency bugs alone, or best-practice cleanup without exploitable impact.
+- Focus on real compromise paths: code execution on the victim host, token or credential exfiltration, file write or overwrite outside the intended path, attestation or authorization bypass, and wrong-host or wrong-account request routing.
 
 ## Validate
-- Trace the exact reachable path from the attacker-supplied transaction, action, receipt, contract, or RPC request into the affected function.
-- Check whether existing validation, cost charging, limit checks, protocol-version gating, or overflow-checked arithmetic already stops it.
-- Accept only real fund loss or inflation, free or underpriced execution or storage, unauthorized action on another account, chain stall or node crash, or state divergence.
-- Require exact file/function support and a reproducible unit/integration/fuzz/invariant PoC.
+- Trace the exact reachable path from attacker-controlled input (API response field, repo or ref name, remote URL, archive entry, bundle, or terminal-bound text) into the affected function.
+- Check whether existing validation already stops it: host allowlists, safeurl, safepaths, ghrepo/ghinstance parsing, git argument handling, zip path checks, sigstore policy, or output sanitization.
+- Accept only concrete impact: command or code execution, credential disclosure, arbitrary file write or read, verification bypass, or authenticated request to an attacker host.
+- Require exact file/function support and a reproducible Go test, httpmock, git-stub, or fuzz PoC.
 
 ## Output
 If valid, output exactly:
@@ -306,7 +346,7 @@ If valid, output exactly:
 [Code path, root cause, attacker inputs, exploit flow, and why checks fail]
 
 ### Impact Explanation
-[Concrete scoped impact and matching NEAR bounty impact class]
+[Concrete scoped impact and matching GitHub bounty impact class]
 
 ### Likelihood Explanation
 [Preconditions, feasibility, repeatability]
@@ -315,7 +355,7 @@ If valid, output exactly:
 [Specific fix]
 
 ### Proof of Concept
-[Unit/integration test or fuzz/invariant test plan with expected assertions]
+[Go unit/integration test, httpmock or git-stub scenario, or fuzz plan with expected assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -327,7 +367,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for nearcore security claims.
+    Generate a strict bounty-style validation prompt for GitHub CLI security claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -339,30 +379,30 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- Reject malicious-node, malicious-peer, validator-only, P2P/network-layer, operator-only, leaked-key, dependency-only, docs/style, generated-file, test/mock/config-only, and purely theoretical issues.
-- Reject if the exploit needs privileged access, victim social engineering, impossible setup, or behavior outside what an ordinary account can submit through public RPC.
+- Reject local-attacker, admin/org-owner, GitHub-operator, MITM, leaked-token, physical-access, local-network, social-engineering, dependency-only, docs/style, generated-file, and test/mock/config-only issues.
+- Reject if the exploit needs the victim to hand-edit config, run unusual flags, or perform steps outside a normal gh workflow.
 - Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
-- A valid report must be triggerable by an unprivileged account, unless the claim proves privilege escalation from an unprivileged path.
-- The final impact must map to an in-scope NEAR impact such as token inflation or theft, unauthorized state or balance modification, chain halt or shard stall, node crash or resource exhaustion from a submitted transaction, state divergence or chain split, or gas/storage metering bypass.
+- A valid report must be triggerable by a remote unprivileged GitHub user through content they publish or a host they control, unless the claim proves escalation from that unprivileged position.
+- The final impact must map to an in-scope GitHub impact such as code execution on the victim machine, token or credential exfiltration, arbitrary file write or overwrite, arbitrary local file read or exfiltration, attestation or signature verification bypass, or authentication/authorization bypass in gh.
 - Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
 1. Exact in-scope file, function, and line/code references.
-2. Clear root cause and broken protocol assumption.
-3. Reachable exploit path: preconditions -> attacker transaction/receipt/contract -> trigger -> bad result.
-4. Existing checks, limits, and cost charging reviewed and shown insufficient.
-5. Concrete in-scope impact with realistic likelihood and, where relevant, attacker cost far below damage.
-6. Reproducible proof path: unit PoC, integration/test-loop test, invariant/fuzz test, or exact steps against a local node.
+2. Clear root cause and broken trust assumption.
+3. Reachable exploit path: preconditions -> attacker-published content or controlled host -> victim gh command -> bad result.
+4. Existing checks (host allowlist, safeurl, safepaths, ghrepo parsing, git argument handling, zip path checks, sigstore policy, output sanitization) reviewed and shown insufficient.
+5. Concrete in-scope impact with realistic likelihood for a normal gh workflow.
+6. Reproducible proof path: Go unit PoC, httpmock/git-stub integration test, fuzz test, or exact steps against a real repo.
 7. No obvious rejection reason from SECURITY.md, known issues, privilege assumptions, or scope exclusions.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- Can an ordinary account trigger this through normal transactions, contract calls, or RPC without validator or node access?
-- Does the code actually behave as claimed on the current protocol version?
-- Is the impact caused by this code, not by a malicious node, peer, validator, or dependency alone?
-- Is the fund loss, inflation, unauthorized action, stall, crash, or divergence concrete, not hypothetical?
-- Would a NEAR bounty triager accept the proof?
+- Can a remote unprivileged GitHub user trigger this with content they publish, without local or admin access?
+- Does the code actually behave as claimed on the current trunk?
+- Is the impact caused by this code, not by git, a dependency, or the user's own configuration?
+- Is the execution, credential leak, file write, or verification bypass concrete, not hypothetical?
+- Would a GitHub bounty triager accept the proof?
 - What exact test would prove it?
 
 ## Output
@@ -380,7 +420,7 @@ Audit Report
 [Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete in-scope impact, severity rationale, and NEAR bounty category]
+[Concrete in-scope impact, severity rationale, and GitHub bounty category]
 
 ## Likelihood Explanation
 [Attacker capability, required conditions, feasibility, repeatability]
@@ -389,7 +429,7 @@ Audit Report
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or fuzz/invariant/integration test plan]
+[Minimal reproducible steps or Go test/fuzz plan]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -401,7 +441,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for nearcore.
+    Generate a short cross-project analog scan prompt for the GitHub CLI.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -411,13 +451,13 @@ def scan_format(report: str) -> str:
 ## Rules
 - Use in-scope production repo context only. Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only unprivileged-account analogs in transaction/receipt validation, action execution, access-key authorization, balance and gas accounting, storage staking, wasm metering, host functions, trie/state accounting, or congestion and bandwidth limits.
-- Reject malicious-node, malicious-peer, validator-only, P2P/network-layer, mocked-only paths, dependency-only bugs, and no-impact analogs.
+- Keep only unprivileged remote-attacker analogs in token handling and host trust, HTTP client and redirects, git command and URL construction, extension or skill install and execution, attestation verification, downloads to disk, or untrusted terminal output.
+- Reject local-attacker, admin/operator-only, MITM, leaked-token, mocked-only paths, dependency-only bugs, and no-impact analogs.
 
 ## Validate
-- Map the bug class to the strongest reachable nearcore path from a submitted transaction, contract call, or RPC request.
+- Map the bug class to the strongest reachable gh path from attacker-published content or an attacker-controlled host during a normal gh command.
 - Prove root cause with exact file/function support.
-- Accept only concrete token inflation or theft, unauthorized state or balance change, free or underpriced execution or storage, node panic or unbounded resource use, chain stall, or state divergence.
+- Accept only concrete code execution, credential exfiltration, file write or read outside the intended path, verification bypass, or authenticated request sent to an attacker host.
 
 ## Output (Strict)
 If valid analog exists, output:

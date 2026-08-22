@@ -1,0 +1,13 @@
+# Q3153: TOCTOU between validation and write - RecordInstall in lockfile.go
+
+## Question
+Is there a window in `RecordInstall` in [internal/skills/lockfile/lockfile.go](internal/skills/lockfile/lockfile.go#L97) between validating the destination and creating it, during which the same attacker payload can turn that destination into a link?
+
+## Target
+- File/function: [internal/skills/lockfile/lockfile.go:97](internal/skills/lockfile/lockfile.go#L97) - `RecordInstall`
+- Entrypoint: gh skills install
+- Attacker controls: a published skill's archive entries, frontmatter, and registry metadata
+- Exploit idea: Interleave payload entries so validation sees a regular path and the write sees a link.
+- Invariant to test: Validation and creation act on the same file handle, not on a re-resolved path.
+- Expected Immunefi impact: Critical - Arbitrary file write or overwrite outside the intended directory, escalating to code execution via startup files, git hooks, or gh's own config
+- Fast validation: Concurrency test asserting the write uses openat-style handles or re-validates atomically.

@@ -1,0 +1,13 @@
+# Q0017: host list iteration authenticates the wrong one - (AuthConfig).HasActiveToken in config.go
+
+## Question
+When multiple hosts/accounts are configured, can `HasActiveToken` in [internal/config/config.go](internal/config/config.go#L263) select one by ordering, map iteration, or first-match rather than by the operation's target host?
+
+## Target
+- File/function: [internal/config/config.go:263](internal/config/config.go#L263) - `(AuthConfig).HasActiveToken`
+- Entrypoint: gh auth login
+- Attacker controls: a hostname, OAuth/device response, or git credential-protocol input the attacker supplies
+- Exploit idea: Add an attacker host to the flow so the wrong account is selected for the action.
+- Invariant to test: Selection is deterministic and target-host driven.
+- Expected Immunefi impact: Critical - Authentication/authorization bypass in gh: wrong account or host credentials used for a privileged action
+- Fast validation: Test with several configured hosts asserting the chosen account.

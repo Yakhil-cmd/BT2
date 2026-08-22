@@ -1,0 +1,13 @@
+# Q4752: suffix-match host confusion - FetchRelease in fetch.go
+
+## Question
+Does the host comparison used by `FetchRelease` in [pkg/cmd/release/shared/fetch.go](pkg/cmd/release/shared/fetch.go#L192) use a suffix/contains check that accepts `evil-github.com` or `github.com.attacker.tld` as a trusted host?
+
+## Target
+- File/function: [pkg/cmd/release/shared/fetch.go:192](pkg/cmd/release/shared/fetch.go#L192) - `FetchRelease`
+- Entrypoint: gh release
+- Attacker controls: an asset, artifact, gist, or archive-member name and its bytes
+- Exploit idea: Publish a remote or pass a URL whose hostname merely ends with or contains a trusted domain.
+- Invariant to test: Host trust uses exact equality or a label-boundary check against the configured hosts.
+- Expected Immunefi impact: Critical - Exfiltration of the victim's GitHub OAuth token / git credentials to an attacker-controlled host (sensitive credential disclosure)
+- Fast validation: Table test over lookalike hostnames asserting each is untrusted.

@@ -1,0 +1,13 @@
+# Q5079: error retry re-sends credentials elsewhere - NewExternalHTTPClient in http_client.go
+
+## Question
+On failure, does `NewExternalHTTPClient` in [api/http_client.go](api/http_client.go#L100) retry against a different host/endpoint (fallback API, mirror) while keeping the Authorization header?
+
+## Target
+- File/function: [api/http_client.go:100](api/http_client.go#L100) - `NewExternalHTTPClient`
+- Entrypoint: any authenticated command against attacker-influenced coordinates (gh api, gh pr list, gh repo view -R ...)
+- Attacker controls: a repo/remote/host string or API response field the attacker publishes
+- Exploit idea: Fail the primary request from an attacker-influenced endpoint to trigger the fallback.
+- Invariant to test: Fallbacks are host-pinned or unauthenticated.
+- Expected Immunefi impact: Critical - Exfiltration of the victim's GitHub OAuth token / git credentials to an attacker-controlled host (sensitive credential disclosure)
+- Fast validation: Test asserting the retry target host and headers.

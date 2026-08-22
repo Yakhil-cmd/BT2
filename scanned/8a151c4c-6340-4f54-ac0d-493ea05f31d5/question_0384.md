@@ -1,0 +1,13 @@
+# Q0384: discovery walks into attacker-controlled paths - checkSecuritySettings in publish.go
+
+## Question
+Can `checkSecuritySettings` in [pkg/cmd/skills/publish/publish.go](pkg/cmd/skills/publish/publish.go#L790) be made to traverse or follow links out of the skills root into other user directories while enumerating skills?
+
+## Target
+- File/function: [pkg/cmd/skills/publish/publish.go:790](pkg/cmd/skills/publish/publish.go#L790) - `checkSecuritySettings`
+- Entrypoint: gh skills publish
+- Attacker controls: a published skill's archive entries, frontmatter, and registry metadata
+- Exploit idea: Publish a skill containing a symlinked directory.
+- Invariant to test: Enumeration does not follow links out of the root and bounds depth.
+- Expected Immunefi impact: High - Arbitrary local file read / private data exfiltrated to an attacker-visible destination
+- Fast validation: Test with a symlinked fixture asserting confinement.
