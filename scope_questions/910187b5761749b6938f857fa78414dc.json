@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: pkg/cmd/attestation/trustedroot/trustedroot.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4329835f-0574-468a-a6db-058200f0e7d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/attestation/download/download.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4a390a7c-e491-4d33-b106-cde4b699a644?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/attestation/inspect/bundle.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0866a1ea-019e-41f4-8d03-8dd4dff5c575?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/verify-asset/verify_asset.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4e0b955e-062c-44ab-806b-9b40955e3026?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/verify/verify.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a13f623-73e0-4d8a-9111-b967ac17f89a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/shared/attestation.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_338cfc1d-1646-40b5-a5e3-12301b10e126?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/shared/fetch.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0a000f67-080e-457e-8d07-b0fbc167b09a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/download/download.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1cc4a91-b05b-4b95-8bdb-4b52ead5decc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/download/download.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_87b6b337-f14d-4276-94a0-a4bdd33541d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/download/http.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81055402-59e3-440d-9d88-6e804363cac3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/shared/artifacts.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a620707e-7f3b-4af0-95a4-db2448de3859?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/view/logs.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9a681146-2841-4b40-8738-ff2bb3884bc7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/zip/zip.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c06f4dc7-3280-4998-ab99-ae30e46f1af9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/read-file/read_file.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_870084d4-4d34-45a4-8e34-c391cb62ecd3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/read-dir/read_dir.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5dc23e20-6a02-4dcb-ad11-8777f764b810?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/shared/shared.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_28835862-73ef-4343-b1e7-fab812a51b77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/edit/edit.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_407e4af1-d855-4dfd-a01c-10904bc643dc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/view/view.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a562b890-7dd4-4bc2-b0f8-e206f16763fb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/create/create.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d3849cb-64f3-436f-b832-da63dc94d287?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/iostreams/untrusted.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_96b27052-1a9c-4540-b9ae-f47fc77d8301?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/iostreams/iostreams.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_809a7b71-2834-4ac5-96d3-c2afe5517499?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/iostreams/content.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4035bbf8-311b-4da4-a827-57b98649b2cd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/markdown/markdown.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1a8ee1b6-0134-4ab5-aebe-260356e1ce07?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/text/text.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0be293a1-4232-4276-be10-706cfecbd163?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/tableprinter/table_printer.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_17479fe7-e950-43f6-b240-9e8a26fa5e00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/view/view.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3336cf83-0d4f-48be-800a-170bed2a5335?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/issue/view/view.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_50ee0f76-44b2-4b6a-86c8-4b610872cece?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/shared/display.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0545a0e4-38dd-4716-b4cb-0dc82eafb5a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/shared/comments.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b4e9668-7e44-45d7-a9bf-c0d316d9f392?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/checks/output.go -> Scope: Critical. An unprivileged attacker gets `gh attestation verify` or release asset verification to report success for an artifact they built, by defeating digest binding, bundle or DSSE payload checks, certificate SAN, issuer, repo or workflow policy matching, trusted-root or TUF handling.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_91ec4500-e15e-4536-a214-65d0bc93effa?mode=deep",
+    "questions_generated": false
+  }
+]
