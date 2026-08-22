@@ -1,0 +1,1 @@
+Now let's look at the calling side in `logic.rs`, where the gas/limit charging for `key`/`value` happens before calling into `set_deterministic_state_init_data_entry`.
