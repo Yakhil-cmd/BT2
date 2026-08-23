@@ -1,1 +1,0 @@
-[File: pkg/cmd/extension/symlink_other.go -> Scope: High] [Function: makeSymlink(oldname, newname string) error] Can an unprivileged attacker who publishes a git repo with an extension name embedding path traversal sequences (e.g. \
