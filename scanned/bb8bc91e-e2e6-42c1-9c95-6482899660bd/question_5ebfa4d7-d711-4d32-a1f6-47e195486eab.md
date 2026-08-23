@@ -1,1 +1,0 @@
-[File: 'internal/text/text.go -> Scope: Critical'] [Function: git/client.go:CheckoutNewBranch track construction] Can an attacker-controlled remoteName (e.g. a custom `--upstream-remote-name` value processed from PR fork owner data) combined with an attacker branch name produce a track string `fmt.Sprintf(\
