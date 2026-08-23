@@ -1,1 +1,0 @@
-[File: 'File Name: internal/authflow/success.go -> Scope: Critical.'] [Function: git/client.go Client.CheckoutBranch / Client.CheckoutNewBranch] Do CheckoutBranch/CheckoutNewBranch validate that the branch argument does not begin with '-' before constructing `[]string{\
