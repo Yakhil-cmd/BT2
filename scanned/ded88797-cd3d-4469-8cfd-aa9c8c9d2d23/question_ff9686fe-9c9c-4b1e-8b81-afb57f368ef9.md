@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/pr/shared/finder.go -> Scope: High. Terminal/browser injection via issue, PR, check, release, or skill content.'] [Function: pkg/cmd/pr/view/view.go printHumanPrPreview + finder.Find] Can an unprivileged attacker who opens a PR set a Title containing raw ANSI escape sequences (e.g. OSC 8 hyperlink or cursor-repositioning codes) such that fmt.Fprintf(out, \
