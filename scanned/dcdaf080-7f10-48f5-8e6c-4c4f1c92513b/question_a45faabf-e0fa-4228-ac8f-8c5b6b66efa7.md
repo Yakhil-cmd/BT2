@@ -1,1 +1,0 @@
-[File: git/url.go -> Scope: Critical] Function `ParseURL(rawURL string) (*url.URL, error)`: can an attacker-controlled scp-like string (e.g. containing an embedded colon and no recognized scheme, such as `evil.com:owner/repo.git` or a crafted string with a userinfo `@` before the colon like `github.com@evil.com:x/y.git`) be rewritten by the `rawURL = \
