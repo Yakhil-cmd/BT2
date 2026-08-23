@@ -1,1 +1,0 @@
-[File: pkg/cmd/api/pagination.go -> Scope: High] [Function: findNextPage] Does findNextPage validate that the Link header's `next` URL shares the same scheme and host as the original request before it is used to fetch the next page? Attacker action: attacker-controlled host returns `Link: <http://github.com/...>; rel=\
