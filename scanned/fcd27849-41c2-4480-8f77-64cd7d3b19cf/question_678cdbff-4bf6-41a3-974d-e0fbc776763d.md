@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/extension/manager.go'] [Function: Manager.Dispatch(args []string, stdin io.Reader, stdout, stderr io.Writer) (bool, error)] Can an unprivileged attacker who publishes a gh extension with a crafted `extName`/shebang cause forwardArgs constructed at line ~128 (`append([]string{
