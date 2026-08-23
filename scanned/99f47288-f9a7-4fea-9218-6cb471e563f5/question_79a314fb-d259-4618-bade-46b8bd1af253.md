@@ -1,1 +1,0 @@
-[File: 'internal/skills/installer/installer.go' -> Scope: Critical] [Function: installSkill] Can an unprivileged attacker who controls a repo's skill tree publish a git tree entry whose file.Path (relative to skill.Path) contains '..' segments or is crafted so strings.TrimPrefix(file.Path, skill.Path+\
