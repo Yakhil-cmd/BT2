@@ -1,1 +1,0 @@
-[File: pkg/cmd/pr/checkout/checkout.go -> Scope: Critical] [Function: cmdsForMissingRemote] Can an attacker who opens a PR from a fork and sets pr.HeadRefName to a value starting with '-' (e.g. '--upload-pack=evil') cause the generated fetch/checkout argv (`[]string{\
