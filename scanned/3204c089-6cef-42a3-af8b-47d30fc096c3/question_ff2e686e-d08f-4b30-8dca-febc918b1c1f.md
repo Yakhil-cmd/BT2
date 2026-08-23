@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/read-file/read_file.go -> Scope: High] [Function: readFileRun, success message] Can an attacker set a file's `path`/`name` in their repository to contain terminal escape sequences that flow unsanitized into `fmt.Fprintf(opts.IO.ErrOut, \
