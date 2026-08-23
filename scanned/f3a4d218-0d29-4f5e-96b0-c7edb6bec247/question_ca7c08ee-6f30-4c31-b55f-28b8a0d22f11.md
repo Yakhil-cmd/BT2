@@ -1,1 +1,0 @@
-[File: 'File Name: pkg/cmd/api/http.go -> Scope: Critical.'] [Function: NewHTTPClient / AddAuthTokenHeader interplay in api/http_client.go] Can an attacker exploit the fact that `NewHTTPClient` seeds `ghAPI.ClientOptions{Host: \
