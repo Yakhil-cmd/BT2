@@ -1,1 +1,0 @@
-[File: pkg/cmd/api/pagination.go -> Scope: Critical] [Function: findEndCursor] Can an attacker place a `pageInfo.hasNextPage: true` and `pageInfo.endCursor` string containing characters that are later interpolated unsanitized into query variables (params[\

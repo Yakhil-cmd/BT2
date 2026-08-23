@@ -1,1 +1,0 @@
-[File: pkg/cmd/api/pagination.go -> Scope: Critical] [Function: findNextPage] Can an unprivileged attacker who controls the HTTP response to a `gh api --paginate` request set a `Link: <https://evil.example/steal>; rel=\
