@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/read-dir/read_dir.go -> Scope: Critical: GraphQL expression injection via Ref/Path] [Function: fetchTree] Can an attacker-controlled opts.Ref or opts.Path value (e.g. containing '\\n', ':', or GraphQL-significant characters) escape the `fmt.Sprintf(\
