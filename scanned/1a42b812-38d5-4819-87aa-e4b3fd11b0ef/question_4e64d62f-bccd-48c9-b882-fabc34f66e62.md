@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/verification/extensions.go] [Function: verifyCertExtensions] Can an unprivileged attacker who controls a repo/workflow craft a Fulcio-issued certificate whose Issuer string is 'expected.Issuer + \
