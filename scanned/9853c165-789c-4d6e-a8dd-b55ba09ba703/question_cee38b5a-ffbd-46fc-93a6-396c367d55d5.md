@@ -1,1 +1,0 @@
-[File: pkg/cmd/codespace/ssh.go -> Scope: High] [Function: newSSHCommand (internal/codespaces/ssh.go), consumed via App.SSH] Can sshUser returned by invoker.StartSSHServerWithOptions (attacker-controlled remote RPC response) be crafted to start with '-' so that connectDestination = fmt.Sprintf(\
