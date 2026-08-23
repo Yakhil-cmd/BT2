@@ -1,1 +1,0 @@
-[File: 'internal/skills/source/source.go'] [Function: source.ValidateSupportedHost / source.normalizeHost] Can an attacker supply a host string (e.g. via a crafted --repo URL or metadata github-repo field) that normalizeHost's simple TrimSpace/ToLower/TrimPrefix(\
