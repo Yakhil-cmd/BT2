@@ -1,1 +1,0 @@
-[File: pkg/cmd/browse/browse.go -> Scope: High] [Function: ghrepo.GenerateRepoURL used by runBrowse] Can baseRepo.RepoHost() ever be populated with a non-HTTPS scheme indicator or an embedded userinfo/port that ghinstance.HostPrefix does not sanitize, such that GenerateRepoURL's fmt.Sprintf(\
