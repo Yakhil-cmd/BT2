@@ -1,1 +1,0 @@
-[File: 'internal/text/text.go -> Scope: Critical'] [Function: pr/checkout/checkout.go:checkoutRun] Can an attacker who opens a pull request with a HeadRefName crafted like '--upload-pack=/bin/sh' (a ref name git might tolerate) bypass the existing `strings.HasPrefix(pr.HeadRefName, \
