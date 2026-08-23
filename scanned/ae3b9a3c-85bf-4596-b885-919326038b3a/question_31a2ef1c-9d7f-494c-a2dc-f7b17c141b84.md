@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/repo/fork/fork.go -> Scope: Critical.'] [Function: forkRun / gc.SetRemoteResolution and gc.Fetch upstream] Can an attacker who owns repoToFork (the ORIGINAL repo being forked, which is attacker-controlled if attacker names a public repo that the victim chooses to fork) cause the upstream remote fetch (`gc.Fetch(ctx, upstreamRemote, \
