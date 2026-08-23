@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/shared/gitcredentials/updater.go] [Function: (*Updater).Update] Can an attacker who controls the `username` or `password` argument (e.g. a device-code-flow-obtained OAuth token containing embedded newlines, or a maliciously crafted enterprise username) cause the `approveCmd.Stdin` heredoc built via `heredoc.Docf(\

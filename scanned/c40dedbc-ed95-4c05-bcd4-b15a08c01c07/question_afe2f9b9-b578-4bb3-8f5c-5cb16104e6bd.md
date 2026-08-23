@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/gitcredential/helper.go -> Function: helperRun, lines 138-141] Can an attacker who controls the `url=` value cause gh to echo back an attacker-chosen `host=` value in its stdout response (line 139 uses wants[\
