@@ -1,1 +1,0 @@
-[File: internal/skills/frontmatter/frontmatter.go -> Function: Parse, consumer: source.ParseMetadataRepo] An unprivileged attacker crafts SKILL.md YAML frontmatter with a github-repo value containing YAML-injected multiline/anchor tricks or embedded control bytes under the precondition frontmatter.Parse feeds meta[\

@@ -1,1 +1,0 @@
-[File: 'internal/skills/registry/registry.go -> ScopeLabels'] [Function: ScopeLabels] Can an unprivileged attacker who publishes a repository under a crafted owner/repo name (e.g. registering a GitHub org/repo whose name contains zero-width or bidi-override Unicode characters) cause `ScopeLabels(repoName)`'s `fmt.Sprintf(\

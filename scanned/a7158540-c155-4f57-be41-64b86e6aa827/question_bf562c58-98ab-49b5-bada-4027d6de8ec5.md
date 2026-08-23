@@ -1,1 +1,0 @@
-[File: internal/skills/installer/installer.go -> Scope: High] [Function: installSkill] Can an unprivileged attacker who controls a skill's SKILL.md filename casing or a file whose relative path (from `discovery.DiscoverSkillFiles`) equals exactly 'skill.md'/'SKILL.MD' bypass the `filepath.Base(relPath) == \
