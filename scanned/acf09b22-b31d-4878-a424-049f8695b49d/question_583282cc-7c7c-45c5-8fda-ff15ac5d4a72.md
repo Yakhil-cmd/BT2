@@ -1,1 +1,0 @@
-[File: 'pkg/extensions/extension.go' -> Scope: High] [Function: pkg/markdown.Render used by pr/view, issue/view, release/view, discussion/view] Can an unprivileged attacker embed a crafted glamour/goldmark markdown payload (e.g. deeply nested links, raw HTML `<a href=\
