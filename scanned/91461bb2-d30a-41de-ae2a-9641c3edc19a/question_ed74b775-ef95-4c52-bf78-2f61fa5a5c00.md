@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/gist/edit/edit.go -> Scope: Critical'] [Function: checkoutRun / cmdsForMissingRemote in pkg/cmd/pr/checkout/checkout.go:150-312] Can an attacker who opens a PR set pr.HeadRefName to a value starting with '-' (e.g. '--upload-pack=...') bypassing the existing guard `strings.HasPrefix(pr.HeadRefName, \
