@@ -1,1 +1,0 @@
-[File: pkg/cmd/skills/install/install.go -> Scope: Critical] [Function: checkUpstreamProvenance safeurl.JoinPath] Can an attacker-controlled skill.Path (from repo tree entries) containing path traversal or query-injection characters cause safeurl.JoinPath(\
