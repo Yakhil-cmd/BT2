@@ -1,1 +1,0 @@
-[File: pkg/cmd/agent-task/capi/client.go] [Function: capiTransport.RoundTrip] Can an unprivileged attacker who controls a redirect target or a CreateJob/GetJob response Location header cause httpClient.Do to follow a 3xx redirect to attacker.example, given RoundTrip unconditionally does req.Header.Set(\
