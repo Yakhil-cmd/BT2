@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: pkg/cmd/browse/browse.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_03dde0ae-f22f-4753-acf6-6fdf5c73eedc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/browser/browser.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c3eb3b1a-7169-4cc8-a01f-623c49674674?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/ssh.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7d272870-413d-4c41-8153-36085425c2d1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/codespaces.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1007bdc6-6ed8-49eb-8214-25b53f12ab4c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/connection/connection.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5080e689-1c17-4c00-970c-8948881d5673?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/portforwarder/port_forwarder.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_66ef93cf-52cb-464c-b9a3-3ba76032e514?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/rpc/invoker.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed118784-4115-495b-8eb6-61db6668d5f0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/api/api.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ba8b9b4a-aac4-4ab0-9ccb-e0c3c9383469?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/ssh.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e9c4110d-4f4a-4e1e-b5fc-2a79dc56118e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/ports.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cc68ae70-91d2-4de1-8b4a-3880d2f26fe3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/code.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a7ae9aa5-0f91-4956-8e12-529105baeda3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/jupyter.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_15789a33-7c0b-40dd-aefa-c50e34ac346a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/common.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f130bb82-a8b4-4b65-a1a7-96955e1e141d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/capi/client.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63f0bd6d-5b80-411a-919a-f4da296094b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/shared/capi.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a10682cc-6d3b-4205-a193-3915fdcbf3ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/create/create.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d943a945-05ae-41a6-b895-700bb26b169d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/copilot/copilot.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_193b1d79-41db-48e3-9144-5965b9cb9fac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/set/set.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9fc343c6-b9b7-4f7c-b619-18e0f79c5d77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/imports/import.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f8ddc448-2f1d-48d8-9d7d-e186555faba5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/shared/validations.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b821afc1-2345-496b-9ffb-ed367b2bf4af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/set/set.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d0824cb5-5011-435c-b9ab-ed7adf4232ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/set/http.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b70dbcc4-3590-4ef1-a29a-e997f0eb24ac?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/shared/shared.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d867f23d-f99c-4131-8a1c-460b82c6f01a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/ssh/ssh_keys.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1990d038-d583-4d60-ae91-bc40075c63d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/update/update.go -> Scope: High. An unprivileged attacker escalates the credentials or scope gh uses, by making gh select the wrong account or host, persist a token where it should not, expose it via the credential helper or an extension environment, or bypass the intended OAuth scope and confirmation checks.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_63ca4bb1-35a9-4493-8a6c-fe144a9b76ef?mode=deep",
+    "questions_generated": false
+  }
+]
