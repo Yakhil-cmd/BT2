@@ -1,1 +1,0 @@
-[File: 'internal/skills/installer/installer.go'] [Function: installSkill(opts *Options, skill discovery.Skill, baseDir string) error] Can an unprivileged attacker who owns a public skill repo craft a `discovery.DiscoverSkillFiles` response (tree listing) containing a `file.Path` that does not actually start with `skill.Path+\
