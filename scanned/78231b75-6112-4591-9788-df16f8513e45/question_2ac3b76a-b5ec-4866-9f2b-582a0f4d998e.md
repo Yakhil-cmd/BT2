@@ -1,1 +1,0 @@
-[File: pkg/extensions/official.go -> Scope: High] [Function: IsOfficial] Can an unprivileged attacker who registers a GitHub account/org whose username Unicode-case-folds (via `strings.EqualFold`) to `\
