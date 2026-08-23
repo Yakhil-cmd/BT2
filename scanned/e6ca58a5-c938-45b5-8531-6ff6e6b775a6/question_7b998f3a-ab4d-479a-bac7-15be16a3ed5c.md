@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/issue/view/view.go'] [Function: viewRun -> opts.IO.StartPager()/opts.Browser.Browse(text.DisplayURL(openURL))] Does `text.DisplayURL` sufficiently sanitize an attacker-controlled `issue.URL` before it is written to `opts.IO.ErrOut` in `fmt.Fprintf(opts.IO.ErrOut, \
