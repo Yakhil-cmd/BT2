@@ -1,1 +1,0 @@
-[File: 'internal/run/run.go -> Scope: Critical'] [Function: installSkill, internal/skills/installer/installer.go] Can a malicious skill repository return a git-tree listing where a file's `Path` does not literally begin with `skill.Path + \
