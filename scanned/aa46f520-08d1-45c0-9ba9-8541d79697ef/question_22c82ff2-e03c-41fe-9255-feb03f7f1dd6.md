@@ -1,1 +1,0 @@
-[File: 'File Name: pkg/cmd/release/download/download.go -> Scope: Critical.'] [Function: pkg/cmd/repo/sync/sync.go executeRemoteRepoSync and gitExecuter.Fetch] Because opts.Branch (from `--branch`) and srcRepo (from `--source`, attacker-nameable full name) flow into `fmt.Sprintf(\
