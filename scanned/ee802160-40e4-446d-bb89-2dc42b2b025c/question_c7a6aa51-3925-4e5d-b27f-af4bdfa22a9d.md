@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/read-dir/http.go -> Scope: Critical] [Function: fetchTree error paths] Can an attacker deliberately structure their repository (e.g. put a file where a directory is expected, or vice versa across renames) to make `fetchTree` consistently return the ambiguous \

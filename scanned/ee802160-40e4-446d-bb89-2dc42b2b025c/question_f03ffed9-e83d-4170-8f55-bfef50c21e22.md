@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/read-dir/http.go -> Scope: Critical] [Function: dirEntry.isExecutable / writeTable] Can an attacker craft a tree entry whose `Mode` sets the executable bits (`Mode&0o111 != 0`) on an entry whose `Type` is not really a regular file semantically (e.g. combined with a crafted `Name` that looks like a path a victim might later invoke, such as \

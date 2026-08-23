@@ -1,1 +1,0 @@
-[File: pkg/cmd/gist/edit/edit.go -> Scope: Critical code execution on victim via attacker-published content.] [Function: editRun / surveyext.edit] Can an unprivileged attacker who controls a gist file's key (filename) that ends up in gist.Files (e.g. via a gist the victim later owns/forks) cause editRun's `\
