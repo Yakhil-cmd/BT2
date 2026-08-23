@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/repo/setdefault/setdefault.go' -> Scope: Critical] [Function: git.Client.SetRemoteResolution / UnsetRemoteResolution argv construction] Can fuzzing remote names sourced from 'git remote -v' parsing (populateResolvedRemotes/parseRemotes) with adversarial bytes (embedded '=', quotes, or git config subsection syntax like 'remote.foo\
