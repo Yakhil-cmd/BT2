@@ -1,1 +1,0 @@
-[File: pkg/cmd/api/fields.go -> Scope: High] [Function: fillPlaceholders] Can an attacker who forces GH_REPO env var interplay (e.g., via a devcontainer or CI config committed to a repo the victim opens) combined with a crafted branch name cause fillPlaceholders' `case \
