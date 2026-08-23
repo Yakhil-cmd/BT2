@@ -1,1 +1,0 @@
-[File: git/client.go -> Function: CredentialPatternFromHost / AuthenticatedCommand] Given CredentialPatternFromHost documents 'does not perform any canonicalisation e.g. api.github.com will not work as expected', can an attacker who controls a repo's remote/submodule URL supply a host string that, when substituted unescaped into `fmt.Sprintf(\
