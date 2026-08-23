@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/shared/writeable.go] [Function: AuthTokenWriteable] Can an attacker who controls the source string returned by a custom or enterprise token source (via ActiveToken's tokenOverride or an extension-influenced config) craft a src value that both fails strings.HasSuffix(src, \
