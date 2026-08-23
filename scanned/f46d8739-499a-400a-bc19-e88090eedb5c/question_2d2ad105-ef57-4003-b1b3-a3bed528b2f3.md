@@ -1,1 +1,0 @@
-[File: pkg/cmd/extension/manager.go -> Scope: High] [Function: Manager.upgradeGitExtension] Can an attacker who controls the extension's git remote (e.g. by re-pointing `origin` via a malicious post-install hook or by controlling a fork that the victim later re-points to) cause `scopedClient.Fetch(\
