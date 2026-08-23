@@ -1,0 +1,1 @@
+[File: 'File Name: pkg/cmd/extension/symlink_windows.go -> Scope: Critical...'] [Function: pkg/cmd/repo/create/create.go:sourceInit] Can an attacker-controlled remoteURL string (constructed from ghrepo.FormatRemoteURL for a repo/org name the attacker chose) reaching gitClient.Command(ctx, \

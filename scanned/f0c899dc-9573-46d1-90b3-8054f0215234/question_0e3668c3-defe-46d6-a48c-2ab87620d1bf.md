@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verification/extensions.go -> Scope: Critical digest-binding bypass] [Function: verifyCertExtensions] Since `BuildSignerDigest` and `SourceRepositoryDigest` extension checks are only performed `if expected.X != \

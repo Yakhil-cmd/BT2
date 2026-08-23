@@ -1,0 +1,1 @@
+[File: 'git/client.go' -> Scope: High.] [Function: Client.Fetch/Pull/Push always using AllMatchingCredentialsPattern regardless of `remote` argument's actual URL] Can an attacker who gets the victim to add/rename a remote (e.g. through a documented workflow instructing `git remote add upstream <attacker-url>`, then `gh` internal code calling `Client.Fetch(ctx, \

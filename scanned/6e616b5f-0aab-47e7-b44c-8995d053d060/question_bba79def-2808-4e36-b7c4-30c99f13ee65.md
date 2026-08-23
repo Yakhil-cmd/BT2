@@ -1,0 +1,1 @@
+[File: internal/codespaces/connection/connection.go -> Scope: Critical] [Function: TunnelClient.Connect (wrapping tunnels.Client.Connect)] Could the underlying dev-tunnels relay, if attacker-reachable via a manipulated `ServiceUri`/`Domain`, respond with a redirect or alternate relay URI during `c.TunnelClient.Client.Connect(ctx, \

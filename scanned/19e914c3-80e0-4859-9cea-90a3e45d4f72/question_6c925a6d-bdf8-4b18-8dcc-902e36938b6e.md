@@ -1,0 +1,1 @@
+[File: pkg/cmd/root/official_extension_stub.go] [Function: officialExtensionStubRun] Can an attacker who controls network responses for github.com (per attacker model: attacker cannot MITM, but can control a host gh is *pointed at*) supply a repo at 'github/gh-stack' path via typosquat DNS or hosts-file confusion so that `em.Install(repo, \

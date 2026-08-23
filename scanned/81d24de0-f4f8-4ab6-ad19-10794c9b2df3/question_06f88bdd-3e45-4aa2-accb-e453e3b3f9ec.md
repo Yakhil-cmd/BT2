@@ -1,0 +1,1 @@
+[File: 'git/url.go -> Scope: High'] [Function: git.ParseURL / isPossibleProtocol] Can an unprivileged attacker publish a remote URL using an unlisted scheme (e.g. `ftp:`, `file:`, or a case-mixed `HTTPS:`) that bypasses the `isPossibleProtocol` check, causing the scp-like rewrite branch (`rawURL = \

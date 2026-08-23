@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/root/extension.go -> Scope: Critical'] [Function: git.Client.AddRemote URL-type branching in git/client.go:844-855] Can an attacker-controlled clone/remote URL that is *not* prefixed with 'https' (per `strings.HasPrefix(urlStr, \

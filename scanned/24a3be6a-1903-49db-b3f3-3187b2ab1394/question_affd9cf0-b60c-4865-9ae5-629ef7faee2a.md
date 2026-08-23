@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/clone/clone.go -> Scope: Critical] [Function: gitClient.Clone target directory derivation] Can an attacker-chosen repo name or URL path segment (e.g. `owner/../../etc/cron.d`, exploited via `path.Base(strings.TrimSuffix(cloneURL, \

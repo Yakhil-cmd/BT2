@@ -1,0 +1,1 @@
+[File: pkg/cmd/skills/update/update.go -> Scope: High] [Function: updateSkillInPlace / installer.Install] Can an attacker who controls remote skill files (via discovery.DiscoverSkillFiles) cause installer.installSkill's `relPath := strings.TrimPrefix(file.Path, skill.Path+\

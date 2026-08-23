@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/pr/shared/worktree.go' -> Scope: High] [Function: WorktreeCheckoutCommands] Can an unprivileged attacker who opens a PR with a HeadRefName crafted to begin with a dash (e.g. '--upload-pack=/bin/sh') reach WorktreeCheckoutCommands' localBranch/branch argument before checkout.go's `strings.HasPrefix(pr.HeadRefName, \

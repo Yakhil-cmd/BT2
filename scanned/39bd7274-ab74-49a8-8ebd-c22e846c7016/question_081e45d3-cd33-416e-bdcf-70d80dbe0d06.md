@@ -1,0 +1,1 @@
+[File: 'internal/skills/installer/installer.go' -> Scope: High] [Function: installSkill] Can an attacker-controlled skill.Path or file.Path returned from discovery.DiscoverSkillFiles contain a value such as '../' or an absolute path that, after strings.TrimPrefix(file.Path, skill.Path+\

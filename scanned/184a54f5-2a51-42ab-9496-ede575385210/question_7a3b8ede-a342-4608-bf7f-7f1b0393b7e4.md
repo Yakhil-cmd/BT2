@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/shared/attestation.go -> Function: buildVerificationPolicy] Can an attacker publish a GitHub release asset plus craft an attestation bundle whose certificate SAN matches the regex `^https://<trustDomain>\\.releases\\.github\\.com$` (built with `verify.NewSANMatcher(\

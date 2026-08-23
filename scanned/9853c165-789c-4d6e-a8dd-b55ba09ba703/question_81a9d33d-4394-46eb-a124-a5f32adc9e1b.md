@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/codespace/ports.go' -> Scope: High.] [Function: portInfo.BrowseURL] Can an attacker who controls 'codespace.Name' (via a crafted codespace name returned by a compromised/forked repo or org-shared codespace) inject characters into 'fmt.Sprintf(\

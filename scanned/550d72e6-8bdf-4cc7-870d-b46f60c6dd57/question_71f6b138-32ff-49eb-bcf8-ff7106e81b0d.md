@@ -1,0 +1,1 @@
+[File: pkg/cmd/agent-task/create/create.go -> createRun fallback message] Can attacker-influenced job.ID (returned from CreateJob response) containing format-string-like or ANSI-escape content be printed unsanitized via fmt.Fprintf(opts.IO.Out, \

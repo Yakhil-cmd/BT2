@@ -1,0 +1,1 @@
+[File: pkg/cmd/extension/browse/browse.go -> Scope: High] [Function: getExtensions] Can an unprivileged attacker who publishes a repo tagged `gh-extension` with a crafted `FullName`/`Owner.Login` cause `getExtensions` to build `extEntry.URL` as `\

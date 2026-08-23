@@ -1,0 +1,1 @@
+[File: internal/skills/frontmatter/frontmatter.go -> Scope: High] [Function: Parse] Can an unprivileged attacker who publishes a SKILL.md containing a YAML block scalar or string value with an embedded '\\n---' sequence before the real closing delimiter cause Parse's endIdx := strings.Index(rest, \

@@ -1,0 +1,1 @@
+[File: internal/skills/installer/installer.go -> Scope: High] [Function: installSkill] Given content, err = frontmatter.InjectGitHubMetadata(content, opts.Host, opts.Owner, opts.Repo, ...) is only invoked for files whose base name is exactly \

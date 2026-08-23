@@ -1,0 +1,1 @@
+[File: pkg/cmd/extension/browse/browse.go -> Scope: High] [Function: toggleSelected remove path] Can an attacker-controlled `ee.Name` (derived from `repo.Name` in search results, line 355) containing path traversal sequences (e.g. `gh-../../../etc`) cause `strings.TrimPrefix(ee.Name, \

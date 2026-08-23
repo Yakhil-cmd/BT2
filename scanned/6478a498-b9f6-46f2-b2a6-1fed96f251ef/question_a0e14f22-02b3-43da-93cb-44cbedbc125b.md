@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/extension/symlink_other.go -> Scope: Critical'] [Function: checkoutRun / cmdsForExistingRemote in pkg/cmd/pr/checkout/checkout.go] Given pr.HeadRefName is validated only via `strings.HasPrefix(pr.HeadRefName, \

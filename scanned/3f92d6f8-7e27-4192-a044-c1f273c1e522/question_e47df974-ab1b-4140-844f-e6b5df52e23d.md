@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/sync/sync.go -> Scope: Critical] [Function: executeLocalRepoSync + gitClient.MergeFastForward/ResetHard] Can attacker-supplied FETCH_HEAD content (from a malicious upstream ref advertised during fetch) cause git.ResetHard(\

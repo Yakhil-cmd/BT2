@@ -1,0 +1,1 @@
+[File: 'internal/ghrepo/repo.go' FromURL, consumer of git.ParseURL] [Function: ghrepo.FromURL] Can an unprivileged attacker supply a remote/submodule URL whose path contains extra segments or dot-segments (e.g. `https://github.com/owner/../../evil/repo.git`) that `ParseURL` passes through unmodified, such that `FromURL`'s `strings.SplitN(strings.Trim(u.Path, \

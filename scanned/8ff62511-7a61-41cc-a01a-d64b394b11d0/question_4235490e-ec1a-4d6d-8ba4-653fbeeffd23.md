@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/verify/verify.go -> Scope: High] [Function: verifyRun / api.FetchParams] Since baseRepo.RepoOwner() and baseRepo.RepoName() are concatenated directly into api.FetchParams.Repo (owner + \

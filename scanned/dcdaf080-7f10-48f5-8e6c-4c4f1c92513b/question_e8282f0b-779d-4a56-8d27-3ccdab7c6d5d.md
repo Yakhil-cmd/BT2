@@ -1,0 +1,1 @@
+[File: 'git/command.go' -> Scope: Critical.] [Function: git.(*Client).AddRemote] Can an unprivileged attacker supply a 'urlStr' to a code path calling 'AddRemote' (e.g. via 'gh repo fork'/'gh pr checkout' when adding a fork remote) that begins with a case-varied or whitespace-padded 'https' prefix (e.g. ' https://attacker.example') so that 'strings.HasPrefix(urlStr, \

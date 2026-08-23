@@ -1,0 +1,1 @@
+[File: internal/skills/installer/installer.go -> func installSkill] Can an unprivileged attacker who publishes a skill repo control file.Path returned by discovery.DiscoverSkillFiles such that relPath := strings.TrimPrefix(file.Path, skill.Path+\

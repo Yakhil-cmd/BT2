@@ -1,0 +1,1 @@
+[File: pkg/cmd/pr/checkout/checkout.go -> cmdsForMissingRemote defaultBranch collision] Can an attacker set pr.HeadRefName exactly equal to the victim repo's defaultBranch (fetched via api.RepoDefaultBranch) to trigger the localBranch = fmt.Sprintf(\

@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verification/extensions.go -> Function: verifyCertExtensions] Can an attacker whose OIDC issuer is a tenant-scoped GHE.com issuer (e.g. 'https://token.actions.evilcorp.ghe.com') exploit the partial-match branch `strings.Index(given.Issuer, expected.Issuer+\

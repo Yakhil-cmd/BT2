@@ -1,0 +1,1 @@
+[File: 'git/objects.go' -> Scope: Critical] [Function: internal/safepaths.Absolute.Join / isSubpathOf] Can a crafted destination-relative element containing Unicode-normalization-sensitive characters or case-variant path segments (on case-insensitive filesystems) cause 'isSubpathOf's 'filepath.Rel' + '!strings.HasPrefix(relativePath, \

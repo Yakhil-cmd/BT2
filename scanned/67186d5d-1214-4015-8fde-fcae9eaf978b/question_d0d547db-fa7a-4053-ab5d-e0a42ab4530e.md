@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/attestation/verification/sigstore.go'] [Function: getBundleIssuer] Since `getBundleIssuer` trusts `leafCert.Issuer.Organization[0]` from the untrusted bundle to select which verifier (`PublicGood`, `GitHub`, or `Custom[issuer]`) is used, can an attacker craft a bundle whose leaf certificate issuer Organization string exactly matches `GitHubIssuerOrg` (`

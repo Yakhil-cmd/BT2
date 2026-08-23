@@ -1,0 +1,1 @@
+[File: internal/text/text.go -> Scope: High] [Function: DisplayURL] Can an unprivileged attacker who controls an API response field (e.g. a gist, PR, or discussion URL) supply a URL with userinfo, unusual scheme, or IDN/punycode host that DisplayURL reduces to `scheme + \

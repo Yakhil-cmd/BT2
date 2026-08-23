@@ -1,0 +1,1 @@
+[File: 'File Name: pkg/cmd/extension/git.go -> Scope: High.'] [Function: Manager.installGit pin-file naming using commitSHA] Can an unprivileged attacker control 'commitSHA' (from fetchCommitSHA's API response) to contain path traversal characters (e.g. '../../evilfile') that get interpolated into 'pinPath := filepath.Join(targetDir, fmt.Sprintf(\

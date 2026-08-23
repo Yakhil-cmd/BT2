@@ -1,0 +1,1 @@
+[File: 'pkg/extensions/extension.go' -> Scope: High] [Function: pkg/cmd/skills/search.promptInstall] Can an unprivileged attacker control the `s.Repo` or `installArg` (derived from `s.SkillName`/`s.Path`) fields returned by a search result so that `exec.Command(opts.ExecutablePath, \

@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/skills/publish/publish.go' -> Scope: High] [Function: ensurePushed rev-list count] Can a crafted current branch name (attacker-controlled ref checked out from a hostile fork) be used to smuggle extra arguments into `gitClient.Command(ctx, \

@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/api/http.go' -> Scope: Critical path confinement] [Function: pkg/cmd/extension/manager.writeManifest and pin-file path] An unprivileged attacker names their extension repository or a tag/commitish argument such that `fmt.Sprintf(\

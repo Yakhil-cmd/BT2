@@ -1,0 +1,1 @@
+[File: pkg/cmd/extension/manager.go -> Scope: High] [Function: Manager.installGit / path.Base] Can an attacker-controlled `cloneURL` (derived from an attacker's repo name containing path traversal sequences, e.g. `..%2f..%2fname`) cause `name := strings.TrimSuffix(path.Base(cloneURL), \

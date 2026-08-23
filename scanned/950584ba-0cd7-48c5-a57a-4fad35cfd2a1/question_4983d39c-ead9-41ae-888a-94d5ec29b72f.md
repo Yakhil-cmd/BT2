@@ -1,0 +1,1 @@
+[File: internal/authflow/flow.go -> Scope: High] [Function: AuthFlow, oauth.Flow.BrowseURL callback lines 61-84] Can an attacker who controls the OAuth device-flow response from a host the victim points gh at (via `gh auth login --hostname <attacker-host>` or a host inferred from a malicious repo remote) return a verification_uri whose scheme passes the `u.Scheme != \

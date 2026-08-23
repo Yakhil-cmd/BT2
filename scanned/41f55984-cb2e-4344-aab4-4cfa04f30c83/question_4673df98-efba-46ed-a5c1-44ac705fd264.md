@@ -1,0 +1,1 @@
+[File: pkg/cmd/extension/browse/browse.go, Scope: High.] [Function: ExtBrowse input handler, key 'w'] Can an attacker-controlled `repo.FullName` (from GitHub search results with topic `gh-extension`) contain characters that, when concatenated into `ee.URL = \

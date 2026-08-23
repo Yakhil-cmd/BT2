@@ -1,0 +1,1 @@
+[File: pkg/cmd/issue/develop/develop.go -> Scope: High] [Function: checkoutBranch -> prShared.WorktreeCheckoutCommands(gc, worktreeTarget, checkoutBranch, ...)] In the fresh (non-reuse) branch-does-not-exist path, WorktreeCheckoutCommands returns `{\

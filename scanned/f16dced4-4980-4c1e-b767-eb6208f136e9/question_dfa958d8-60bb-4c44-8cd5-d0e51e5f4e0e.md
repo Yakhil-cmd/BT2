@@ -1,0 +1,1 @@
+[File: internal/text/text.go -> Scope: High] [Function: FormatSize] Does the byte-size string returned by FormatSize ever get concatenated into any command, path, or log line downstream (e.g., error message in read_file.go: `fmt.Errorf(\

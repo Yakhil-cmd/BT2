@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/extension/browse/browse.go' -> Scope: High.] [Function: getExtensions] Can an unprivileged attacker craft repo.FullName or repo.Name returned from search.Searcher.Repositories (e.g. containing '../', null bytes, or shell metacharacters) to break the string-concatenation URL builder `

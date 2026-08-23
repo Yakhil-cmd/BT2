@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/fork/fork.go -> Scope: High] [Function: forkRun] Can a crafted forkedRepo.RepoOwner()/RepoName() containing a literal newline or carriage return (if API-side validation is bypassed via a malicious/compromised GHES host) inject a second faux status line into stderr output via `fmt.Fprintf(stderr, \

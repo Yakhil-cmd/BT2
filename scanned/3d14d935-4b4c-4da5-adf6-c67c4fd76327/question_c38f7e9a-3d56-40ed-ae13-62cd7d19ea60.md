@@ -1,0 +1,1 @@
+[File: pkg/cmd/extension/browse/browse.go -> Scope: Critical] [Function: extList.toggleSelected (remove path)] Can an attacker-controlled ee.Name (derived from repo.Name in getExtensions) containing path traversal or shell metacharacters (e.g. '../../evil') survive strings.TrimPrefix(ee.Name, \

@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/clone/clone.go -> Scope: Critical] [Function: cloneRun fork upstream SetRemoteResolution/SetRemoteBranches with attacker-controlled parent name] Can an attacker who forks a victim-trusted repo and sets the fork's parent metadata's owner login to a string containing shell/git-config metacharacters (e.g. `owner\

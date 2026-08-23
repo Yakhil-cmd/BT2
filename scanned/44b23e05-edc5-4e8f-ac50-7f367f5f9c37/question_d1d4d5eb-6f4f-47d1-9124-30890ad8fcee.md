@@ -1,0 +1,1 @@
+[File: pkg/cmd/alias/set/set.go -> Scope: High] [Function: setRun, expansion prefix logic] Can supplying an expansion that already starts with an unusual unicode look-alike of '!' (e.g. a homoglyph) combined with --shell bypass the 'strings.HasPrefix(expansion, \

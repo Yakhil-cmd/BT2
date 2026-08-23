@@ -1,0 +1,1 @@
+[File: git/client.go -> Scope: Critical] [Function: git.Client.AddRemote / ParseURL] For a repository whose remotes or submodules were set up by an attacker-controlled clone (via `.gitmodules` or `remote add` invoked with attacker data reachable from gist clone workflows), can ParseURL's scp-like-syntax rewrite (`rawURL = \

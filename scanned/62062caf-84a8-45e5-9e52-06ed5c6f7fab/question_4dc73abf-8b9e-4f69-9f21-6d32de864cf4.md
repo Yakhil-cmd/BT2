@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/fork/fork.go -> Scope: High] [Function: forkRun, ghrepo.FullName] Can an unprivileged attacker who owns/controls the source repository (repoToFork) name their repo or organization such that api.ForkRepo's JSON response yields a RepoName()/RepoOwner() containing ANSI escape sequences, so that forkRun's `fmt.Fprintf(stderr, \

@@ -1,0 +1,1 @@
+[File: 'internal/skills/frontmatter/frontmatter.go -> Scope: Critical.'] [Function: frontmatter.InjectGitHubMetadata] Can a malicious skill author set frontmatter 'metadata' to a non-map type (e.g. a YAML string or list) so that the type assertion `result.RawYAML[\

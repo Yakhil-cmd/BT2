@@ -1,0 +1,1 @@
+[File: 'internal/browser/browser.go' -> Scope: High.] [Function: authflow.AuthFlow -> BrowseURL closure in internal/authflow/flow.go:61-84] Can an attacker who controls the value returned by oauth.Flow.DetectFlow's authURL (e.g. via a malicious/enterprise OAuth host response) bypass the `u.Scheme != \

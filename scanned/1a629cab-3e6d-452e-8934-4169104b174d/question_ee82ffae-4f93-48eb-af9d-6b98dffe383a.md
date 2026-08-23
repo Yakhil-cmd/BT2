@@ -1,0 +1,1 @@
+[File: 'internal/skills/installer/installer.go' -> Scope: High] [Function: installSkill] Can an attacker publish a skill directory containing a file literally named 'SKILL.md' at a nested relPath (e.g. 'sub/SKILL.md') that also matches filepath.Base(relPath)==\

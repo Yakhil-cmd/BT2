@@ -1,0 +1,1 @@
+[File: pkg/cmd/api/http.go -> Scope: High] [Function: httpRequest isGraphQL branch] An unprivileged attacker's GraphQL host response somehow causes `opts.RequestPath` to no longer equal the literal string `\

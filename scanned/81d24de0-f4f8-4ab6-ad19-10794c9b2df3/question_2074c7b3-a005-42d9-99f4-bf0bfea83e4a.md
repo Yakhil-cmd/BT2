@@ -1,0 +1,1 @@
+[File: 'git/command.go -> Scope: High'] [Function: Client.AuthenticatedCommand + Client.Command] Can an unprivileged attacker who controls a repo's PR branch or gh-resolved remote config make gh's `-C <repoDir>` invocation (git/command.go setRepoDir combined with client.Command's `args = append([]string{\

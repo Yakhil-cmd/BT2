@@ -1,0 +1,1 @@
+[File: 'File Name: pkg/cmd/api/http.go -> Scope: Critical.'] [Function: httpRequest isGraphQL / RESTPrefix TrimPrefix('/')] Can an attacker who fully controls the endpoint string via an untrusted alias/config cause `strings.TrimPrefix(p, \

@@ -1,0 +1,1 @@
+[File: pkg/cmd/extension/browse/browse.go -> Scope: High] [Function: getExtensions officialness check] Can an attacker create an organization or account whose `Owner.Login` string-compares equal to `\

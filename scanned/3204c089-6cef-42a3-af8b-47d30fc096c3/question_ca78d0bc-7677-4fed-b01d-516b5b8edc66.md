@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/read-file/http.go -> Scope: High] [Function: fetchFile, submodule branch] Can an attacker who adds a submodule to their repository with a crafted `submodule_git_url` value containing terminal escape/ANSI sequences reach the victim's terminal unsanitized via `fmt.Errorf(\

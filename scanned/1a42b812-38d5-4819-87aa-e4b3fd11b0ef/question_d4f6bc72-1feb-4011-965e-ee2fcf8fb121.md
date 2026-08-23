@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/release/shared/attestation.go'] [Function: buildVerificationPolicy] Because the SAN regex is fixed to '^https://{trustDomain}.releases.github.com$' with NO issuer matcher restriction (verify.NewIssuerMatcher(\

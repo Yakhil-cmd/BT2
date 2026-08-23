@@ -1,0 +1,1 @@
+[File: 'internal/codespaces/ssh.go' -> Scope: Critical] [Function: newSCPCommand, remote: prefix substitution] Can an unprivileged attacker control the `dst` (destination) value constructed from codespace metadata such that the `arg = dst +

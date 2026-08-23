@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/skills/update/update.go -> Scope: Critical'] [Function: updateRun repo/host trust for --dir scans] Can an attacker who controls a forked repository trigger `gh skill update --dir <attacker-influenced-path>` style scans (e.g. via a documented CI script the victim runs unmodified) where `scanInstalledSkills(opts.Dir, nil, \

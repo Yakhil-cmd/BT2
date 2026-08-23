@@ -1,0 +1,1 @@
+[File: 'git/client.go'] [Function: git.Client.AddRemote] An attacker-controlled cloneURL/urlStr (e.g. from a fork's declared remote or a skill/extension manifest) that does not start with 'https' is routed through git.ParseURL rather than net/url.Parse, per the branch 'if strings.HasPrefix(urlStr, \

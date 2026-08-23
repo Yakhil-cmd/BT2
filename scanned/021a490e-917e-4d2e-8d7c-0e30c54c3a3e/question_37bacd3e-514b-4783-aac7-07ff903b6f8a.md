@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/repo/setdefault/setdefault.go' -> Scope: Critical] [Function: git.Client.UnsetRemoteResolution] Can currentDefaultRepo.Name, sourced from git remote -v output of a maliciously crafted local repo (e.g. cloned from an attacker-controlled URL that sets remote names via .git/config), contain characters that make fmt.Sprintf(\

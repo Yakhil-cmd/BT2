@@ -1,0 +1,1 @@
+[File: git/objects.go -> Scope: Critical] [Function: git.Client.Clone(ctx, cloneURL, args, mods) target derivation] Can an attacker-controlled cloneURL (from a malicious repo's declared clone_url in an API response fed into `gh repo clone`) with a crafted path (e.g. containing '../' segments or being empty after TrimSuffix

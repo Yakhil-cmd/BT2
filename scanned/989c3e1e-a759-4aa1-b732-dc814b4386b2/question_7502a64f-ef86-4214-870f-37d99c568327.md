@@ -1,0 +1,1 @@
+[File: git/client.go -> Scope: Critical] [Function: AuthenticatedCommand] Can an attacker-controlled gistURL cause credentialPattern to equal AllMatchingCredentialsPattern or an empty/overly broad pattern (bypassing the disallowedCredentialPattern guard), so that `!\

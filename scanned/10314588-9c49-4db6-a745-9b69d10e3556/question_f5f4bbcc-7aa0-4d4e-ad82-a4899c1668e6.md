@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/codespace/jupyter.go' -> Scope: Critical.] [Function: App.Jupyter, strings.Replace port substitution at jupyter.go:91] Can an attacker-controlled `serverUrl` returned by `StartJupyterServer` contain the literal substring matching `fmt.Sprintf(\
