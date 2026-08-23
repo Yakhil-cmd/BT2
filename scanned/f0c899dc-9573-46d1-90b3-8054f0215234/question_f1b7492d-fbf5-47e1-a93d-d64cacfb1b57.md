@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/api/attestation.go -> Scope: High predicate-type spoofing] [Function: FilterAttestations] Since `FilterAttestations` inspects the *unverified* DSSE payload's `predicateType` field (parsed before any Sigstore signature check) to decide inclusion, can an attacker publish/attach an attestation whose DSSE payload claims `predicateType: \
