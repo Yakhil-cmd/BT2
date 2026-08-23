@@ -1,1 +1,0 @@
-[File: pkg/cmd/release/shared/fetch.go] [Function: FetchRefSHA] Can an unprivileged attacker who controls opts.TagName (via a crafted release tag name containing '/', '..', or URL-encoded segments) cause fmt.Sprintf(\
