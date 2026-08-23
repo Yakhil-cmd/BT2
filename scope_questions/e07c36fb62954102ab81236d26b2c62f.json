@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: pkg/cmd/browse/browse.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a0cc1873-4eb6-409f-b799-b75ceb26fa0e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/browser/browser.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d250d01f-c11f-4c5a-8d2c-2dd16ab4f428?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/ssh.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_70057afe-5478-4854-b38b-43ea86dd22af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/codespaces.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8969496-7449-436a-b32b-c65aacc56c51?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/connection/connection.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_028466a0-7164-43ba-b63a-ca9d6bec319f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/portforwarder/port_forwarder.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_25d91ffe-c368-4af0-bb35-d12c5ac9d9ba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/rpc/invoker.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_518b034a-c50d-4574-9c9b-7c5fcbe13bcc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/api/api.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_34e6269d-dd90-47d4-83cd-700b289a2df7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/ssh.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4da740a3-023b-480d-a318-c510043291b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/ports.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2d21b028-a041-4b69-ae6e-651d77bed86f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/code.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b660011f-4179-4ae6-b624-5b49da871ce5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/jupyter.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9e765fc6-f2c3-406f-9818-b5133c3c77dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/common.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b668a3e8-6051-4e68-8824-6b2eff0f51c5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/capi/client.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_be18accb-a336-41c0-a1e0-449923ed9394?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/shared/capi.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_71ebbd1a-515a-41ee-a3b2-0e5cc6a535c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/create/create.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2cb94a38-31ba-4698-95a3-d2db81f87b96?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/copilot/copilot.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3a0b4826-9b3b-4006-98ea-0acefa174407?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/set/set.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1108c755-54d1-49f9-986c-5902a80e0b3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/imports/import.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_23817e29-2209-4598-8af0-82776982fe27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/shared/validations.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d5c3306d-f55b-4179-b7e2-99f1be20ddde?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/set/set.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_45f3de88-0ebc-4fd3-8802-daa21a15e9fa?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/set/http.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bed9e015-372e-4dc9-9ffa-edc66fcda6b7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/shared/shared.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1230551-c40f-4488-a75b-dd82ed4154f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/ssh/ssh_keys.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9881901d-2e56-4e76-8ea3-861c50495b88?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/update/update.go -> Scope: Critical. An unprivileged attacker uses repo, branch, ref, or remote names they control to inject git options, protocol handlers, or config into gh's git invocations, so clone, fork, sync, pr checkout, or issue develop executes attacker-chosen commands.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9289c1c4-53e3-4c93-be9a-c6bd2fc1dc38?mode=deep",
+    "questions_generated": false
+  }
+]
