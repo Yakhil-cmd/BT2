@@ -1,0 +1,127 @@
+[
+  {
+    "question": "'File Name: pkg/cmd/browse/browse.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_855e1e25-85da-4ac9-9ac0-281515704891?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/browser/browser.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4cb5a9e0-cc38-4140-8daa-c25d269dd576?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/ssh.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9f5b707a-74ff-4f65-aa99-0f70fa8d14cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/codespaces.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_824ac95c-612d-48e7-bd4a-6d1fcaa5587d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/connection/connection.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a5d36ea1-145e-442e-88db-e20b42facd72?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/portforwarder/port_forwarder.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b58fae8-af55-4833-bd49-103a04e96d2c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/rpc/invoker.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1576e6e9-3f49-48ee-a8f3-86fdea88b1d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/codespaces/api/api.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5786efb9-d2fd-406c-a1ee-35c0c42d3228?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/ssh.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_667a712c-4406-4d48-8977-4f0837cbb195?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/ports.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1427328e-464c-469d-b87d-f87fac0105a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/code.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_90bbb9d4-c85d-4151-8f4b-3c6635b3f6ed?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/jupyter.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8659386-f5ab-4a28-a87c-ecd600f19e87?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/codespace/common.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4eef8a73-4bde-42e7-8a63-50c5ee1f0085?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/capi/client.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_11f15231-a71b-4a20-917c-f08e87d09f46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/shared/capi.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5409022-2f71-49e7-be5e-66c911f376fe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/agent-task/create/create.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc078cad-625e-47b2-9616-742f17c316e0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/copilot/copilot.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e70d5554-c1db-44a4-a0ed-389aaa4be7af?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/set/set.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_756ffc7a-f32b-478b-9d41-c1bcfa8857c9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/imports/import.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f09a8202-7aa2-4cfd-9d43-26894ebe6f97?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/alias/shared/validations.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_69ea6c24-aafb-419d-8138-33035574db83?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/set/set.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98ff117f-d833-4502-aff5-bbd251fff2cb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/set/http.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cde6cb56-7f57-4427-a2d3-144a475d7b74?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/secret/shared/shared.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f0542f32-7116-45e8-b614-83742b7be70f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/ssh/ssh_keys.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e9f9de28-740c-49e4-9afe-d83278eeceba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/update/update.go -> Scope: Critical. An unprivileged attacker causes gh to send the victim's OAuth token, git credentials, or codespace token to a host the attacker controls, through host or hostname parsing, redirect handling, remote or submodule URLs, the git credential helper, or a wrong-host authenticated request.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ef2294af-bf41-4f88-af8f-e85073f48530?mode=deep",
+    "questions_generated": false
+  }
+]
