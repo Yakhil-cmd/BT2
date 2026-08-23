@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/skills/publish/publish.go' -> Scope: High] [Function: renderDiagnosticsTTY / runPublishRelease Confirm prompts] Can attacker-controlled SKILL.md frontmatter (`result.Metadata.Name`, `result.Metadata.Description`, or install-metadata key names surfaced via findGitHubMetadataKeys) embedded verbatim into `fmt.Fprintf(opts.IO.Out, \
