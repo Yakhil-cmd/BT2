@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/verify-asset/verify_asset.go] [Function: verifyAssetRun] Can an attacker who controls release asset content (but not the attestation) craft an asset whose sha256 digest collides or is engineered to match another already-attested subject entry, given `artifact.NewDigestedArtifact(nil, opts.AssetFilePath, \

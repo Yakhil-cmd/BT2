@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/issue/develop/develop.go -> developRunCreate/checkoutBranch'] Can `opts.BranchRepo` (from `--branch-repo`, but also API-created `branchName` from `api.CreateLinkedBranch`, develop.go:261) contain a value that, when later used as `checkoutBranch` in `gc.Fetch(ctx, baseRemote.Name, fmt.Sprintf(\

@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verification/sigstore.go -> Scope: Critical] [Function: newGitHubVerifier] Can an attacker who controls a GHES/tenancy host that the victim points gh at (via `gh attestation verify --hostname attacker-host`) return an arbitrary string from GetTrustDomain that gets embedded unsanitized into the TUF target filename `fmt.Sprintf(\

@@ -1,0 +1,1 @@
+[File: 'internal/ghcmd/cmd.go -> Scope: High'] [Function: internal/gh/ghtelemetry combined with pkg/cmd/skills/install/install.go printHostHints/friendlyDir output] Can an attacker's skill repository set the `--dir` resolution or agent host hint text (derived from repo-controlled data such as owner/repo names or skill Namespace) to include escape sequences that spoof gh's own \

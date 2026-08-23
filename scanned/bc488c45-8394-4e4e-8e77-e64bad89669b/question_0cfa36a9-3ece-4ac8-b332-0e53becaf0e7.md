@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verification/extensions.go] [Function: verifyCertExtensions] Can an attacker who controls a self-hosted or forked CI environment produce a certificate whose Issuer is exactly expected.Issuer + '/' + arbitrary-suffix, exploiting the `strings.Index(given.Issuer, expected.Issuer+\

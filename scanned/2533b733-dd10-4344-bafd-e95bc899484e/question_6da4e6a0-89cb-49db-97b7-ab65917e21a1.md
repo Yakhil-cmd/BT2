@@ -1,0 +1,1 @@
+[File: internal/authflow/flow.go -> Scope: High] [Function: getViewer / cfg.ActiveToken] Can an unprivileged attacker who controls the target host's `/user` (or GraphQL viewer) response cause `api.CurrentLoginName` to return a login string containing control characters or another user's/org's name, which is later compared in pkg/cmd/auth/refresh/refresh.go's `activeUser != \

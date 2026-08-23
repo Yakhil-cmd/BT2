@@ -1,0 +1,1 @@
+[File: 'api/http_client.go'] [Function: AddAuthTokenHeader] Can an unprivileged attacker's API/HTML response pre-set an empty but present Authorization header (e.g. 'Authorization: ') on a redirect Location response causing gh's check `req.Header.Get(authorization) == \

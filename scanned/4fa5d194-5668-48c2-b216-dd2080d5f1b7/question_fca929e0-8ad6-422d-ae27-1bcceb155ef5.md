@@ -1,0 +1,1 @@
+[File: 'git/client.go -> parseRemoteURLOrName'] Can a git remote name that happens to contain a colon (an attacker having renamed a local remote via a script generated from PR/branch data) be misclassified by parseRemoteURLOrName's `strings.Contains(value, \

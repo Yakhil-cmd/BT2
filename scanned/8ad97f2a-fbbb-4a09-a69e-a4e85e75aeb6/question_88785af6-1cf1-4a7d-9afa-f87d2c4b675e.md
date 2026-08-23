@@ -1,0 +1,1 @@
+[File: 'File Name: pkg/cmd/skills/update/update.go -> Scope: High.'] [Function: installer.installSkill via updateSkillInPlace] Can an unprivileged attacker craft a git tree entry whose Path resolves (after strings.TrimPrefix(file.Path, skill.Path+\

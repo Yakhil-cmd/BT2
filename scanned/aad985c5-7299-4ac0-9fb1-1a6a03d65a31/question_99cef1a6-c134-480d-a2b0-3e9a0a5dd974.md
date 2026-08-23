@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/repo/create/create.go -> sourceInit/cloneWithRetry'] Can an attacker-influenced remoteURL or baseRemote (e.g., via --remote flag driven by API-returned repo name in an org/template flow) starting with '-' be passed unescaped into gitClient.Command(ctx, \

@@ -1,0 +1,1 @@
+[File: 'internal/skills/installer/installer.go'] [Function: installSkill] Can an attacker's repository skill tree return a `file.Path` value from `discovery.DiscoverSkillFiles` that, after `strings.TrimPrefix(file.Path, skill.Path+\

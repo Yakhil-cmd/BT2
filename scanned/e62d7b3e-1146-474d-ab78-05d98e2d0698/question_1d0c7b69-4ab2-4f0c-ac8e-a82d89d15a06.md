@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/repo/sync/git.go -> Scope: injected refspec via Fetch(remote, ref)'] [Function: gitExecuter.Fetch] Can an unprivileged attacker who controls the branch name used to build 'ref' (fmt.Sprintf(\

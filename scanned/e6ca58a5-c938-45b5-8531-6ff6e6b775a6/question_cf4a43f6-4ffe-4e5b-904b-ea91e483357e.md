@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/issue/view/view.go'] [Function: printHumanIssuePreview -> markdown.Render(issue.Body, ...)] Can an attacker embed ANSI/terminal escape sequences or crafted markdown link syntax in an issue body/title/comment that, when rendered via `markdown.Render` and printed with `fmt.Fprintf(out, \

@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/auth/shared/gitcredentials/helper_config.go' -> Scope: Critical.] [Function: Helper.IsOurs on Windows .exe suffix handling] Can an attacker who controls the repo-local credential.helper string craft a Cmd value like `!C:\\Users\\victim\\gh.exe.exe auth git-credential` or one using a differently-cased/extended basename (`GH.EXE`, `gh.EXE.bat`) that TrimSuffix(...,\

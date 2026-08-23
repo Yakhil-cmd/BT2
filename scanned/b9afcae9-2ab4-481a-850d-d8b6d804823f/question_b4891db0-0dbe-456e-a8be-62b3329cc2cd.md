@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/shared/attestation.go] [Function: shared.FilterAttestationsByFileDigest] Can an unprivileged attacker publish a release attestation whose in-toto Statement.Subject list contains multiple subjects where only one Subject.Digest[\

@@ -1,0 +1,1 @@
+[File: pkg/cmd/auth/gitcredential/helper.go -> Scope: High] [Function: helperRun gist fallback] Can an attacker who controls a repository or submodule pointing at a crafted host like 'gist.attacker.example' or a multi-level subdomain 'gist.gist.github.com' abuse the strings.TrimPrefix(lookupHost, \

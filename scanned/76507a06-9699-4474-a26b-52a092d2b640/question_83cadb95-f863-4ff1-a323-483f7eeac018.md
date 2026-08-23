@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/api/attestation.go -> Scope: Critical] [Function: LiveClient.buildRequestURL / safeurl.RepoPartsFromNWO] Can an attacker supplying a crafted `FetchParams.Repo` string (e.g. containing `../`, extra slashes, or percent-encoded separators) cause `RepoPartsFromNWO` to mis-split owner/name such that `safeurl.JoinPath(\

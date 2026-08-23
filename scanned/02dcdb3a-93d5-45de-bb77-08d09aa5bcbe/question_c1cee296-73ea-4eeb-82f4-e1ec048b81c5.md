@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/read-dir/http.go -> Scope: High] [Function: fetchTree, expression construction] Can an attacker publish a branch/tag/ref name (reachable via `--ref` supplied verbatim by the victim from, e.g., a README instruction) containing GraphQL-significant characters that, when concatenated as `fmt.Sprintf(\

@@ -1,0 +1,1 @@
+[File: pkg/cmd/skills/preview/preview.go] [Function: buildTree / renderFileTree path splitting] Can an attacker-controlled file path returned by `discovery.ListSkillFiles` (e.g. containing '../', NUL bytes, or extremely deep nesting via repeated '/') cause `buildTree`'s `strings.Split(f.Path, \

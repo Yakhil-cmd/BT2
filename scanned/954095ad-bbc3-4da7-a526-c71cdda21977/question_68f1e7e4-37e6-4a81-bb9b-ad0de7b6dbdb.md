@@ -1,0 +1,1 @@
+[File: 'internal/skills/installer/installer.go'] [Function: installer.installSkill] Can an attacker who fully controls their own repository's git tree craft a tree/blob entry whose `Path` field (from discovery.treeEntry.Path via discovery.DiscoverSkillFiles) does not start with `skill.Path+\

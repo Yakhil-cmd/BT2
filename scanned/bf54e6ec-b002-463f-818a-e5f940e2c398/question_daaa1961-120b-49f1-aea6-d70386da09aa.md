@@ -1,0 +1,1 @@
+[File: pkg/cmd/extension/browse/browse.go -> Scope: Critical] [Function: getExtensions Official-flag logic] Can an attacker create a repository whose Owner.Login string is crafted (via Unicode confusable/homograph characters or case variation) to compare equal to \

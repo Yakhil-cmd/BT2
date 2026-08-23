@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/repo/fork/fork.go -> func forkRun (RemoteName / rename path)'] [Function: forkRun] Can an unprivileged attacker who forks a victim-cloned repo cause the fork's owner login to collide with a git remote-rename target string ('upstream') such that the pre-existing rename logic (`gitClient.Command(ctx, \

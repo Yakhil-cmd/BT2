@@ -1,0 +1,1 @@
+[File: 'internal/skills/lockfile/lockfile.go' -> Scope: High.] [Function: RecordInstall] Given RecordInstall never validates that 'owner' and 'repo' arguments are free of path-separator or null-byte characters before building entry.Source = owner + \

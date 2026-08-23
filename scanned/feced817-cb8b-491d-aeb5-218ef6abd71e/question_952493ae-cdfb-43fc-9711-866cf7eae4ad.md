@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verify/attestation.go and verify/policy.go] [Function: verifyAttestations + buildCertificateIdentityOption] Can an attacker exploit the fact that buildCertificateIdentityOption calls verify.NewIssuerMatcher(\

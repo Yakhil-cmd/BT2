@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/clone/clone.go -> Function: simplifyURL / cloneRun] Since `simplifyURL` copies `u.Host` and `u.Scheme` verbatim from a user-supplied `opts.Repository` URL without revalidating against `ghinstance` known hosts, and `repositoryIsURL := strings.Contains(opts.Repository, \

@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verify/policy.go -> newEnforcementCriteria owner derivation] Can an attacker-controlled opts.Repo string without a '/' character (malformed, e.g., just 'attackerrepo') cause splitRepo := strings.Split(opts.Repo, \

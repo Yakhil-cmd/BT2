@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/shared/attestation.go -> Scope: Critical.] [Function: buildVerificationPolicy] Can an attacker exploit the fact that buildVerificationPolicy's SAN matcher is only anchored with `^https://<trustDomain>\\.releases\\.github\\.com$` (full string match, no path) and uses verify.NewIssuerMatcher(\

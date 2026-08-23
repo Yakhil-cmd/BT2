@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/create/create.go -> Scope: Critical] [Function: cloneWithRetry] Can opts.Template's resolved templateRepoMainBranch (an attacker-controlled default branch name on a public template repo that the victim chooses to use) contain a leading dash so that `args = append(args, \

@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verify/options.go -> Scope: Critical] [Function: isProvidedRepoValid] Can a `--repo`/`--signer-repo` value crafted as 'owner/repo/../../other' or containing a percent-encoded slash still satisfy `len(strings.Split(repo, \

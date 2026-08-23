@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/artifact/artifact.go -> Scope: Critical] [Function: DigestedArtifact.URL field population] Can an unprivileged attacker-influenced reference (via `NewDigestedArtifact`'s `URL: fmt.Sprintf(\

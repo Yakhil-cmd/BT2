@@ -1,0 +1,1 @@
+[File: 'File Name: internal/authflow/success.go -> Scope: Critical.'] [Function: pkg/cmd/issue/develop/develop.go checkoutBranch (gc.Fetch, gc.CheckoutNewBranch)] Can an attacker who controls the linked-branch name returned by the CreateLinkedBranch/ListLinkedBranches GraphQL mutation (branchName) inject a git refspec/option through `fmt.Sprintf(\

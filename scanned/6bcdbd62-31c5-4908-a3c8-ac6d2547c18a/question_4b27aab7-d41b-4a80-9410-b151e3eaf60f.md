@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/skills/publish/publish.go' -> Scope: Critical] [Function: ensurePushed ref construction] Can a branch name containing a newline or NUL-adjacent byte sequence (crafted via a low-level git plumbing command such as 'git symbolic-ref' or a corrupted packed-refs file distributed in a malicious repo archive) cause fmt.Sprintf(\

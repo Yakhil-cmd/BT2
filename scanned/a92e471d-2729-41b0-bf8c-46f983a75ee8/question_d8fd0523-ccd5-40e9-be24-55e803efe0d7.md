@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/artifact/artifact.go -> Scope: Critical] [Function: NewDigestedArtifact / normalizeReference dispatch] Can an unprivileged attacker supply a reference string that begins with `OCI://` (mixed case) or contains leading/trailing whitespace or a null byte so that `strings.HasPrefix(reference, \

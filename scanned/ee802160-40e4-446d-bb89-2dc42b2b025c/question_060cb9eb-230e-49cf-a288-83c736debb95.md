@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/read-dir/http.go -> Scope: Critical] [Function: entryTypeFromMode] Can an attacker set a git tree entry's `mode` field to a value whose masked type (`mode & modeTypeMask`) does not match any of `modeDir`, `modeFile`, `modeSymlink`, `modeSubmodule`, forcing `entryTypeFromMode` to return \

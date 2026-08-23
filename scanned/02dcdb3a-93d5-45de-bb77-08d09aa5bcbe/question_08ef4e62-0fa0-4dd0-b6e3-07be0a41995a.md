@@ -1,0 +1,1 @@
+[File: pkg/cmd/copilot/copilot.go -> Scope: High] [Function: runCopilot] After extraction, does runCopilot invoke exec.Command(copilotPath, opts.CopilotArgs...) with externalCmd.Env = append(os.Environ(), \

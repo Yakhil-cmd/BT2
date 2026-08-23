@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/extension/manager.go'] [Function: installGit] Can an attacker's repository content (via `.gitattributes`/hooks) result in the pin marker file path `filepath.Join(targetDir, fmt.Sprintf(\

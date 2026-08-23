@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/attestation/verification/extensions.go' -> Scope: Critical verification bypass] [Function: verifyCertExtensions] Can an attacker who controls only the OIDC issuer string embedded in a self-hosted or forked CI certificate craft an Issuer value like 'https://token.actions.githubusercontent.com/evil' so that strings.Index(given.Issuer, expected.Issuer+\

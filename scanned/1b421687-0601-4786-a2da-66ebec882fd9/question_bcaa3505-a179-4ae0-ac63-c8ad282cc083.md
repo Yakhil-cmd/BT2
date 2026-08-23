@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/shared/attestation.go -> Function: buildVerificationPolicy] Can an attacker publish a GitHub Release asset alongside a forged attestation whose SAN matches the regex `^https://<trustDomain>\\.releases\\.github\\.com$` at pkg/cmd/release/shared/attestation.go:108 without any issuer or repo-ownership extension check (issuerMatcher accepts \

@@ -1,0 +1,1 @@
+[File: internal/codespaces/ssh.go -> Scope: High] [Function: newSSHCommand / Shell] Can the 'command []string' argument, when derived from a devcontainer-provided or attacker-controlled RPC field concatenated by the caller (e.g., pkg/cmd/codespace/logs.go's 'fmt.Sprintf(\

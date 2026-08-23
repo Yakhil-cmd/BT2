@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/download/download.go] [Function: destinationWriter.makePath / Copy] Can an attacker who controls a release's asset Content-Disposition filename (fetched when fileName is empty for --archive downloads, params[\

@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/attestation/verification/extensions.go'] [Function: verifyCertExtensions] `BuildSignerDigest`, `SourceRepositoryDigest`, and `SourceRepositoryRef` are only compared `if expected.X != \

@@ -1,0 +1,1 @@
+[File: pkg/cmd/repo/create/create.go] [Function: sourceInit, cloneWithRetry] Can an attacker-controlled 'templateRepoMainBranch' (sourced from templateRepo.DefaultBranchRef.Name via the GraphQL API for an attacker-owned template repository) inject a git option into `args = append(args, \

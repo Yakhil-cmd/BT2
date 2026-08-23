@@ -1,0 +1,1 @@
+[File: pkg/cmd/auth/gitcredential/helper.go] [Function: helperRun] Can an attacker who controls a repository requiring git-credential lookups (e.g. via a submodule or a `.gitmodules`/remote URL fetched during clone) supply a crafted `host` value like `gist.attacker.com` that isn't a genuine subdomain but is engineered so the `strings.HasPrefix(lookupHost, \

@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/download/download.go -> Scope: High.] [Function: isWindowsReservedFilename] Can an attacker choose a release asset name that Windows treats as a reserved device file but that bypasses this check's normalization (`strings.ToUpper(strings.Split(filename, \

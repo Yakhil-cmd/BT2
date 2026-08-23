@@ -1,0 +1,1 @@
+[File: internal/skills/installer/installer.go] [Function: installSkill] Can an attacker-controlled skill.Path/file.Path returned by discovery.DiscoverSkillFiles (from an attacker's repo used as a skill source) produce a relPath (via strings.TrimPrefix(file.Path, skill.Path+\

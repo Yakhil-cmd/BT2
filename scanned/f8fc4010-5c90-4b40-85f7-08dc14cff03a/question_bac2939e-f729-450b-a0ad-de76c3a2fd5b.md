@@ -1,0 +1,1 @@
+[File: 'git/client.go -> Clone'] [Function: (*Client) Clone] Can a cloneURL/full-name resolved from an attacker-controlled repository name (via `gh repo clone <owner>/<repo>`) that begins with '-' (e.g., a repo literally named '--upload-pack=evil') bypass ghrepo.FromFullName validation and reach cloneArgs = append([]string{\

@@ -1,0 +1,1 @@
+[File: pkg/cmd/skills/update/update.go -> Function: updateRun --dir handling] When opts.Dir is used (or when scanAllAgents discovers a skill under an attacker-influenced project-scope path within the victim's own git repo, e.g. a skill added via a malicious PR branch checked out by the victim), does scanInstalledSkills(opts.Dir, nil, \

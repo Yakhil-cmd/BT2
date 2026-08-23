@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/auth/login/login.go' -> Scope: Critical] [Function: pkg/cmd/auth/gitcredential/helper.go:helperRun URL parsing] `url.Parse(value)` on the `url=` line from git's credential protocol is used to derive `wants[\

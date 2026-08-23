@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/api/trust_domain.go -> Scope: Critical.] [Function: LiveClient.GetTrustDomain / api.NewLiveClient host field] Is the `host` string stored on LiveClient (via strings.TrimSuffix(host, \

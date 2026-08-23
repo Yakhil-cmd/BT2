@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verify/options.go -> Scope: Critical] [Function: Options.AreFlagsValid] Can an attacker who controls opts.ArtifactPath (e.g. by publishing a filename or OCI URI string consumed by a wrapper) craft a value beginning with 'oci://' combined with opts.UseBundleFromRegistry=false so that AreFlagsValid's `strings.HasPrefix(opts.ArtifactPath, \

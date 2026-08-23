@@ -1,0 +1,1 @@
+[File: pkg/iostreams/content.go -> Scope: Critical.] [Function: BinaryTerminalError / ErrEscapeSequence wrapping in pkg/cmd/release/download/download.go destinationWriter.Copy] Can an attacker name a release asset or control resp.Header 'Content-Disposition' filename (mime.ParseMediaType) such that the error message constructed with fmt.Errorf(\

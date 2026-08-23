@@ -1,0 +1,1 @@
+[File: 'pkg/extensions/extension.go' -> Scope: Critical.'] [Function: Manager.Dispatch (Windows sh dispatch path) in pkg/cmd/extension/manager.go] On Windows, non-binary extensions are dispatched via `sh -c 'command \

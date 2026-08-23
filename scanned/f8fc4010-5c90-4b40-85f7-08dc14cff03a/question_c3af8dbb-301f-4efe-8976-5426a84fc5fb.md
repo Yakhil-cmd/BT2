@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/issue/develop/develop.go -> func checkoutBranch'] [Function: checkoutBranch] Can an unprivileged attacker who owns a linked branch (via `api.CreateLinkedBranch`/`api.ListLinkedBranches`) supply a branch name containing a leading '-' or git refspec metacharacters that flows unsanitized into `gc.Fetch(ctx.Background(), baseRemote.Name, fmt.Sprintf(\

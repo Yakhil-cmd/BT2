@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/repo/fork/fork.go -> forkRun (remoteDesired branch)'] [Function: forkRun] Can opts.RemoteName (default from `--remote-name`, or resolved from an '@owner' pattern using forkedRepo.RepoOwner() which is attacker-controlled fork owner login) contain characters that, when passed to `gitClient.Command(ctx, \

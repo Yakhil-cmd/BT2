@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/download/download.go -> Scope: Critical] [Function: downloadRun, opts.IO.SetContentSanitization(false)] Since `SetContentSanitization(false)` (download.go:225) disables sanitization for all `ContentOut` writes for the whole download run (not just per-asset), can an attacker-named asset error message or progress label (e.g., `fmt.Sprintf(\

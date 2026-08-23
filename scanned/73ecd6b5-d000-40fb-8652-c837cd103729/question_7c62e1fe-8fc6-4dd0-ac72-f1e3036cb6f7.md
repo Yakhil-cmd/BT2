@@ -1,0 +1,1 @@
+[File: 'pkg/cmd/auth/login/login.go' -> Scope: Critical] [Function: internal/authflow.AuthFlow / BrowseURL] Can the `oauth.Flow.BrowseURL` callback (internal/authflow/flow.go:61-68), which only checks `u.Scheme != \

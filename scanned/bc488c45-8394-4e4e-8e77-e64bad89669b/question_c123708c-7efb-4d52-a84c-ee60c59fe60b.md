@@ -1,0 +1,1 @@
+[File: pkg/cmd/attestation/verification/extensions.go] [Function: verifyCertExtensions] When ec.Certificate.SourceRepositoryURI is left empty (e.g. the CLI invocation used --owner instead of --repo), does the guarded `if expected.SourceRepositoryURI != \

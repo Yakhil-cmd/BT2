@@ -1,0 +1,1 @@
+[File: pkg/cmd/release/shared/attestation.go] [Function: AttestationVerifier.VerifyAttestation] Can an attacker who controls the `/meta` endpoint response of a victim-configured non-github.com host cause AttClient.GetTrustDomain() to return an empty string, forcing buildVerificationPolicy to fall back to the hardcoded default \

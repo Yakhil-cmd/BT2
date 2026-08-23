@@ -1,0 +1,1 @@
+[File: 'internal/safepaths/absolute.go'] [Function: Absolute.Join] Can an unprivileged attacker supply a zip/tar entry name containing a Windows drive-letter absolute path (e.g. 'C:\\Windows\\evil.exe') or a UNC path so that filepath.Join(a.path, elem) on Windows resolves to an entirely different volume/root, bypassing the `strings.HasPrefix(relativePath, \

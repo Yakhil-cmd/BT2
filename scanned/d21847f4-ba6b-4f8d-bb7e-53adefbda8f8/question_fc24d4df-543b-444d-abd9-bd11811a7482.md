@@ -1,0 +1,1 @@
+[File: pkg/cmd/skills/update/update.go -> Scope: Critical] [Function: installer.installSkill] Can an attacker who controls a repo's git tree return a 'skill.Path' value that collides with '..' via URL-encoding or unicode normalization tricks in the REST API JSON response, bypassing safepaths.ParseAbsolute's traversal check when relPath = strings.TrimPrefix(file.Path, skill.Path+\

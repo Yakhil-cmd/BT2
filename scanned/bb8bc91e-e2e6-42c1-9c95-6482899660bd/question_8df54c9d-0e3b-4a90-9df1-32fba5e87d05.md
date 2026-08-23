@@ -1,0 +1,1 @@
+[File: 'File Name: pkg/cmd/pr/view/view.go -> Scope: Critical.'] [Function: checkoutRun / cmdsForExistingRemote in pkg/cmd/pr/checkout/checkout.go] Can an unprivileged attacker who opens a PR with headRefName starting with a dash (e.g. '--upload-pack=touch /tmp/pwned;') get past the `strings.HasPrefix(pr.HeadRefName, \

@@ -1,0 +1,1 @@
+[File: internal/authflow/flow.go -> Scope: High] [Function: AuthFlow's BrowseURL closure] Can an attacker who controls the device/web flow's `verificationURL`/`authURL` value returned by the oauth server (e.g. a rogue enterprise host) supply a URL with scheme other than http/https that bypasses the `u.Scheme != \
