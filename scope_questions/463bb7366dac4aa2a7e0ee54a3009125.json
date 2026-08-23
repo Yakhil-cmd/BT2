@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: internal/config/config.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4ff5785c-07b8-4a82-886e-2f4b23bbade3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/config/migration/multi_account.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ae7983bb-a3cc-4690-bf6f-4744ebea2d53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/keyring/keyring.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e951a807-1d3b-4f48-8932-48a589f2e501?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/authflow/flow.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fad4fbb3-3f18-419e-a2f8-2389e6e36a8d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/authflow/success.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_edc4deb1-1f6d-4b42-9201-4b0e10427da8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/login/login.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d03746ce-4efc-4020-88c5-4677d8294079?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/logout/logout.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ea94ada3-c99a-4fa1-8b41-f309917ae953?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/refresh/refresh.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cdd13f11-7cb2-4c12-a95f-c94699ab9c62?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/token/token.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_39444bae-767e-4568-af43-9959a08bedb1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/switch/switch.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_11f92800-3293-4edd-b49f-30b705e72b0b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/setupgit/setupgit.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f89c3e12-463f-4e19-b086-1430af64e410?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/gitcredential/helper.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_077939fb-e684-4f65-8877-718004384d3f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/login_flow.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_94baa76b-fa41-455c-a610-378b30037047?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/git_credential.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_219334d9-79d9-44ee-b05a-3afcc6221ca3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/gitcredentials/helper_config.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_41368c96-e942-427d-8803-8188c2b40aba?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/gitcredentials/updater.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8d7630e-6ebd-422a-bdb6-560643c914e9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/oauth_scopes.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d7e9761-df4f-4f4e-8d9f-777b845d1cef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/writeable.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c0933e0e-0e5b-435a-9ace-8d9985afd356?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/client.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c9b696ac-80e2-40ed-8825-f21ad858c0ca?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/http_client.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_62081eca-c517-4c08-9d64-257d23f77070?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/ghinstance/host.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ecb215fc-74a6-4738-a71f-668625e925eb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/ghrepo/repo.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b89c6a1d-d2b0-46ff-8766-9faca9f85989?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/safeurl/safeurl.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a9056e14-efaf-4a4a-b253-74cd2a8361b0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/safepaths/absolute.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fa98ea80-63dd-4f4c-a28a-5ee28c446540?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: context/remote.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_01efe0c8-5fc9-4722-8cc9-d1f5439ef1c2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/factory/default.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_10a33e31-29c2-402e-87b3-5a7128cac7b9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/factory/remote_resolver.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e49c8f6e-ede9-41ff-9f7d-ea66a8dfffcd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmdutil/repo_override.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2668b2cd-da7c-4509-a6e4-6a8785f6562f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmdutil/file_input.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c5c9260e-5063-4893-b094-9f34db9ff643?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/api/api.go -> Scope: High. An unprivileged attacker embeds control sequences or crafted markup in issue, PR, check, release, or skill content so gh's terminal or browser output executes commands, spoofs prompts, or opens attacker-chosen URIs.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4b95970a-e52b-4c56-b640-54fc2b0515da?mode=deep",
+    "questions_generated": false
+  }
+]
