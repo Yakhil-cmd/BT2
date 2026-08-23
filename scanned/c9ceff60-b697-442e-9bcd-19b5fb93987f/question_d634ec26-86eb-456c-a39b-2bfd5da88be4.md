@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/attestation/verification/extensions.go -> Scope: Critical verification bypass'] [Function: verifyCertExtensions] Fuzz-test the partial-issuer-match branch: `strings.Index(given.Issuer, expected.Issuer+\
