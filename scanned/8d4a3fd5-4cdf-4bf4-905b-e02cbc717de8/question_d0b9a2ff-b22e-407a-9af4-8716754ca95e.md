@@ -1,1 +1,0 @@
-[File: pkg/cmd/issue/view/view.go -> Scope: Critical] [Function: formatLinkedIssueRef / issue.Parent.Repository.NameWithOwner] Can an attacker craft a linked issue (via sub-issue/parent/blocked-by relationship) whose Repository.NameWithOwner field contains crafted characters (e.g. embedded ANSI escapes or terminal control sequences) that get concatenated via fmt.Sprintf(\
