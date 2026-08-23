@@ -1,1 +1,0 @@
-[File: 'File Name: pkg/cmd/pr/view/view.go -> Scope: Critical.'] [Function: prProjectList] Can an unprivileged attacker who names a Project or Project Column/Status arbitrarily on a repo they control under preconditions of 'PR is linked to that project via ProjectCards/ProjectItems' trigger call sequence printHumanPrPreview -> prProjectList(*pr) -> fmt.Sprintf(\
