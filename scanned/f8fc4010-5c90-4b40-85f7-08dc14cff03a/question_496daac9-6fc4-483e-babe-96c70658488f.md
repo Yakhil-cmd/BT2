@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/pr/checkout/checkout.go -> cmdsForExistingRemote'] [Function: cmdsForExistingRemote] Can an attacker who opens a PR whose HeadRefName begins with a dash (e.g. '--upload-pack=touch /tmp/pwned;') survive the `strings.HasPrefix(pr.HeadRefName, \
