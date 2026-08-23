@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/gitcredential/helper.go -> Scope: Critical] [Function: helperRun gist-fallback logic] Can an attacker publish a malicious gist or crafted URL whose host is `gist.<victim-authenticated-host>.attacker.tld` so that `strings.HasPrefix(lookupHost, \
