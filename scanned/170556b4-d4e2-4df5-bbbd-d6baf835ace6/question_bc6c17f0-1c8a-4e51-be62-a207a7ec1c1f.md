@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/sync/git.go -> Scope: High] [Function: gitExecuter.CreateBranch] Can an attacker who controls the default branch name of a repo used as sync source (e.g. naming it '-D' or '--force') cause `g.client.Command(ctx,\
