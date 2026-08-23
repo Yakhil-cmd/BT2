@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/repo/sync/git.go -> gitExecuter.Fetch/CreateBranch/UpdateBranch'] Can `opts.Branch` (from `--branch` flag) or the API-resolved `RepoDefaultBranch` of an attacker-owned source repo become an argument to `g.client.Command(ctx, \
