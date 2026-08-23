@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/verify/policy.go] [Function: buildCertificateIdentityOption] Can an attacker who supplies attestation data cause the issuer check to be effectively skipped, given buildCertificateIdentityOption always constructs verify.NewIssuerMatcher(\
