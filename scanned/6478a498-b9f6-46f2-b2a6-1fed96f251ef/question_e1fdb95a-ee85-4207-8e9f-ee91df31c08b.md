@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/extension/symlink_other.go -> Scope: Critical'] [Function: git.Client.Push in git/client.go:896] Does Push(ctx, remote, ref) ever receive a ref value derived from an untrusted PR headRefName or branch name that starts with '-' (e.g. '--exec=id') without validation, given args := []string{\
