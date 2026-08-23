@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/attestation/verify/policy.go' -> newEnforcementCriteria SourceRepositoryURI omission] Can an unprivileged attacker exploit the fact that c.Certificate.SourceRepositoryURI is only set 'if opts.Repo != \
