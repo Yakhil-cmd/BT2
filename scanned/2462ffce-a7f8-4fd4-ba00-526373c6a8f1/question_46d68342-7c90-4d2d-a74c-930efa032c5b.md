@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/sync/git.go -> Scope: Critical] [Function: gitExecuter.Fetch] Can an unprivileged attacker who controls a source repository's default branch name (fetched via api.RepoDefaultBranch and passed unmodified into args := []string{\
