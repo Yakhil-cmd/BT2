@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/api/attestation.go -> Struct: Attestation.BundleURL vs Bundle] Can an attacker construct an AttestationsResponse where an entry has both Bundle set (attacker-embedded inline bundle bytes) and a benign-looking BundleURL, such that fetchBundleFromAttestations's precedence logic (`if a.BundleURL == \
