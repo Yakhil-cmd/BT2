@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/fork/fork.go -> Scope: Credential confinement during retry/backoff] [Function: forkRun backoff.RetryWithData clone loop] During the retry loop wrapping gitClient.Clone, does gh ever pass the constructed forkedRepoURL (containing embedded credentials via credential helper pattern) to any logging, error message (fmt.Errorf(\
