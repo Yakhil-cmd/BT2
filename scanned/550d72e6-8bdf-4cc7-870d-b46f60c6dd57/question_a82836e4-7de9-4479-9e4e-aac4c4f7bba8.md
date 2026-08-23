@@ -1,1 +1,0 @@
-[File: pkg/cmd/agent-task/shared/log.go -> Scope: High] [Function: renderToolCallTitle] Can an attacker control `v.Description` (bash tool) or `args.CommitMessage`/`args.PrDescription` (report_progress) such that `cs.Bold(title)` is fed directly into `fmt.Fprintf(w, \
