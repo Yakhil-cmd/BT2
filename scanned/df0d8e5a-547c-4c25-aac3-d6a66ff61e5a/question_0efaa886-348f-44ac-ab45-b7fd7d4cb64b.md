@@ -1,1 +1,0 @@
-[File: 'internal/skills/installer/installer.go'] [Function: installSkill, safeSkillDir.Join] Can an unprivileged attacker who authors a skill repository fetched via discovery.DiscoverSkillFiles supply a file.Path value that, after strings.TrimPrefix(file.Path, skill.Path+\
