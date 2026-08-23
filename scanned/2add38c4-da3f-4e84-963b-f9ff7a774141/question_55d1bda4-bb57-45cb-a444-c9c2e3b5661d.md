@@ -1,1 +1,0 @@
-[File: pkg/cmd/copilot/copilot.go -> Scope: High] [Function: downloadCopilot] Does downloadCopilot ever surface the constructed archiveURL/checksumsURL or the ios.StartProgressIndicatorWithLabel string (fmt.Sprintf(\
