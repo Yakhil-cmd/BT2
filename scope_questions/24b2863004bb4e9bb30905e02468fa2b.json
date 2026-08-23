@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: internal/config/config.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_907a8f39-7430-46b4-b3df-538181a39645?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/config/migration/multi_account.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9efc4caf-1856-43c8-844c-aaea7030256a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/keyring/keyring.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_64881657-bd18-4f45-9ea0-9955e6416c74?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/authflow/flow.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_71874307-a996-46e8-a0fe-13a7f9118dbf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/authflow/success.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_4c82520a-86ad-41d9-9d17-2159900fcb06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/login/login.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fe4f6c50-27e7-4c35-8dce-31015c620787?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/logout/logout.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_181f87b3-9e51-4a6e-b607-9a4eff8ef390?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/refresh/refresh.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_81cfc026-12dd-49a9-a923-99894a001a0b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/token/token.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_99286ba0-2091-4663-b0fe-ac0988df3389?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/switch/switch.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5ccbdd79-af8d-4754-a827-a66088f0bfe2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/setupgit/setupgit.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6b5de379-e492-4f88-9145-ff4f147789a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/gitcredential/helper.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_eeb486a5-6228-443e-9ac3-86f8e8918463?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/login_flow.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_43a80fb7-fd29-4cdf-bba7-d8dcba2bd5e5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/git_credential.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_44dca4a9-6668-443f-8993-3f62ccea639c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/gitcredentials/helper_config.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8bba04da-1163-43e0-b479-48264f2523b1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/gitcredentials/updater.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a8f5fb8c-02b0-4ba4-b5ac-a39532ca6ee3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/oauth_scopes.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65c8ae3d-f482-4c2a-9d2b-341f26afb89a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/auth/shared/writeable.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ce93d518-316b-4f7f-9725-126b9cd3667f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/client.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49c71411-857d-49cf-9049-06428e0915cf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: api/http_client.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_02bf37e6-98ae-4cbf-a551-6d4bc429d828?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/ghinstance/host.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_90704f71-6f30-4271-b3df-cf725e11a64c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/ghrepo/repo.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_412a79c8-451c-4d48-8a41-acd976cc28f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/safeurl/safeurl.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e8e6e431-b8e8-4d1a-8794-1d932b2dd96f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/safepaths/absolute.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a4ce4d02-3205-4d10-a41d-c0ac53bcce3a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: context/remote.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_79c85800-ca49-432d-9288-2995b3239692?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/factory/default.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_518c82cf-f8a4-4c84-99e6-56aee1e19780?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/factory/remote_resolver.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0943c896-8b31-4b64-9feb-2c6bfc97db57?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmdutil/repo_override.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2a5f6d7c-ca69-4507-a609-08f128b0ea3d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmdutil/file_input.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9cc1ed22-ca63-474b-ba72-64bbbf1f320d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/api/api.go -> Scope: High. An unprivileged attacker who controls an API response or a repo the victim runs gh in causes gh to read local files, reach internal hosts, or leak private data into an attacker-visible request or an unbounded resource consumption on the victim's machine.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9d284ea6-39ff-44ec-a949-f656dff8cc0b?mode=deep",
+    "questions_generated": false
+  }
+]
