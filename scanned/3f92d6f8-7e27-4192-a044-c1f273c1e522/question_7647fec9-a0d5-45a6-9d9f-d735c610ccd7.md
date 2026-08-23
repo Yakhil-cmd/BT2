@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/sync/sync.go -> Scope: Critical] [Function: executeLocalRepoSync + gitClient.CurrentBranch] Can an attacker who controls the local repo's ref layout (e.g. via a maliciously crafted cloned repository with a branch literally named 'FETCH_HEAD' or containing path separators) cause CurrentBranch()/UpdateBranch(branch, \
