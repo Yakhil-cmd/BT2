@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/read-dir/read_dir.go -> Scope: High] [Function: fetchTree in pkg/cmd/repo/read-dir/http.go, called from readDirRun] Can an attacker who controls a public fork or repo that the victim points `gh repo read-dir` at (via a local remote named 'origin' resolved by ReadDirOptions.BaseRepo) force `fetchTree` to call `client.Query(repo.RepoHost(), \
