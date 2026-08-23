@@ -1,1 +1,0 @@
-[File: internal/ghrepo/repo.go -> FormatRemoteURL / NewWithHost, consumed by pkg/cmd/pr/checkout/checkout.go cmdsForMissingRemote] Can an unprivileged attacker set pr.HeadRepositoryOwner.Login or pr.HeadRepository.Name to a string containing ':', '/', or '@' (e.g. Login=\
