@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/auth/setupgit/setupgit.go' -> Scope: Critical.] [Function: pkg/cmd/pr/checkout/checkout.go checkoutRun / cmdsForExistingRemote] Can an unprivileged attacker who opens a PR set pr.HeadRefName to a value that, despite the existing 'strings.HasPrefix(pr.HeadRefName, \
