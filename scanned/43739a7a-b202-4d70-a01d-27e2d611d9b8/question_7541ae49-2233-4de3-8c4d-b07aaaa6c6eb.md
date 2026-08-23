@@ -1,1 +1,0 @@
-[File: pkg/cmd/codespace/ssh.go -> Scope: High] [Function: App.Copy, arg escaping for 'remote:' prefix] Can an attacker who controls the remote codespace filesystem cause codespaces.Copy's re-prefixing (dst + \

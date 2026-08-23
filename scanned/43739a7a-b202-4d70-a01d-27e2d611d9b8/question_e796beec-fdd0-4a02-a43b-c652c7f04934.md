@@ -1,1 +1,0 @@
-[File: pkg/cmd/codespace/ssh.go -> Scope: High] [Function: App.printOpenSSHConfig, cs.State branching] Can an attacker who controls a codespace's reported State field (e.g. spoofing 'Available' via a compromised/rogue API response scenario, or race with codespace lifecycle) cause the skip-check 'cs.State != \

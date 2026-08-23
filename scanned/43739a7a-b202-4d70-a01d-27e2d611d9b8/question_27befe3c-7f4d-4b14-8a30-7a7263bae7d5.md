@@ -1,1 +1,0 @@
-[File: pkg/cmd/codespace/ssh.go -> Scope: High] [Function: codespaces.ParseSSHArgs / parseArgs flag arity table] Can a remote-influenced 'command' array (the trailing ssh command args after '--', which may be suggested via attacker-authored copy-paste instructions in an issue/PR referencing 'gh cs ssh') combined with the fixed flag-arity string \
