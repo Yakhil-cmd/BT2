@@ -1,1 +1,0 @@
-[File: pkg/cmd/skills/preview/preview.go] [Function: previewRun -> discovery.ResolveRef] Can an attacker who controls `opts.Version` (the `@version` suffix parsed via `strings.LastIndex(opts.SkillName, \

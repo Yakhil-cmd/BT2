@@ -1,1 +1,0 @@
-[File: pkg/cmd/skills/preview/preview.go] [Function: previewRun shared discovery path with installer.installSkill] Given discovery.ListSkillFiles/DiscoverSkillFiles return SkillFile.Path values built by simple string concatenation (`skillPath + \
