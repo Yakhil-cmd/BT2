@@ -1,1 +1,0 @@
-[File: 'git/client.go -> Scope: Critical.'] [Function: Client.Push / Client.AddRemote] Can an unprivileged attacker who controls the 'ref' argument passed to Client.Push (e.g. via an issue-develop or repo-create flow that pushes a branch name reflecting attacker-supplied --name or template-derived data) cause args := []string{\
