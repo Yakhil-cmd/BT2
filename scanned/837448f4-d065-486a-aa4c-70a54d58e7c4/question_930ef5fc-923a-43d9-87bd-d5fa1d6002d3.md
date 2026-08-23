@@ -1,1 +1,0 @@
-[File: 'internal/skills/lockfile/lockfile.go' -> Scope: High.] [Function: RecordInstall / lockfilePath] Can an attacker-controlled skillName (map key in file.Skills, derived from Skill.InstallName() = Namespace+\
