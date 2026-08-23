@@ -1,1 +1,0 @@
-[File: 'pkg/extensions/extension.go'] [Function: pkg/cmd/pr/checkout/checkout.go cmdsForExistingRemote/cmdsForMissingRemote] Can an attacker-controlled PR headRefName that begins with '-' (e.g. '--upload-pack=evil') bypass the single guard `strings.HasPrefix(pr.HeadRefName, \
