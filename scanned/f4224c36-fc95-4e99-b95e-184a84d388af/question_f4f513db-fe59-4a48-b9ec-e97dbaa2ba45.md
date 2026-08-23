@@ -1,1 +1,0 @@
-[File: pkg/cmd/gist/shared/shared.go -> Scope: High] [Function: GetGist, GistIDFromURL] Can an unprivileged attacker supply a crafted gist URL/selector (e.g. `https://attacker.example/../../gists/1`) that GistIDFromURL mis-parses via `strings.Split(u.Path, \
