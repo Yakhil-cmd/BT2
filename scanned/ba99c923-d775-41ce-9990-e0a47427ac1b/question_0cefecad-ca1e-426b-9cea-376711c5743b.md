@@ -1,1 +1,0 @@
-[File: git/url.go] [Function: ParseURL] Can an unprivileged attacker who controls a git remote URL embedded in a published repo, fork, or skill manifest (e.g. 'ssh:evil.com:22/x' or scp-like 'user@host:path') craft input that ParseURL's scp-like rewrite (`rawURL = \
