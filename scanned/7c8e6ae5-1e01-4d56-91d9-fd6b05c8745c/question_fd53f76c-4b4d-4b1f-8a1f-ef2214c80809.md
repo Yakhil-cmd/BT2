@@ -1,1 +1,0 @@
-[File: internal/ghinstance/host.go] [Function: isGarage, GraphQLEndpoint, RESTPrefix, GistHost] Can an attacker who controls a hostname string chosen via case variation or a crafted subdomain (e.g. 'Garage.GitHub.com.attacker.evil') bypass `strings.EqualFold(h, \
