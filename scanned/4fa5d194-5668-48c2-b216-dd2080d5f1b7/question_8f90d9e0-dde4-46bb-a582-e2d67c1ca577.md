@@ -1,1 +1,0 @@
-[File: internal/skills/installer/installer.go -> Scope: Critical] [Function: installSkill] Can an attacker who controls a published repo's skill tree make `discovery.DiscoverSkillFiles` return a `file.Path` that, once `strings.TrimPrefix(file.Path, skill.Path+\
