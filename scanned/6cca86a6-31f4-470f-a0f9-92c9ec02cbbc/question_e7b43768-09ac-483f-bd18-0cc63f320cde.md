@@ -1,1 +1,0 @@
-[File: pkg/cmd/release/verify-asset/verify_asset.go -> Scope: High] [Function: shared.FetchRefSHA] Can an attacker who names a release tag with path-traversal or URL-manipulating characters (e.g. `../../../evil.com/x`) cause `safeurl.JoinPathWithHostPrefix(ghinstance.RESTPrefix(repo.RepoHost()), \

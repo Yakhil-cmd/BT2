@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/inspect/bundle.go -> Scope: High] [Function: getOrgAndRepo] Can an attacker supply a `repoURL` with fewer than 2 path segments after the prefix (e.g. `https://github.com/onlyorg`) causing `parts := strings.Split(after, \
