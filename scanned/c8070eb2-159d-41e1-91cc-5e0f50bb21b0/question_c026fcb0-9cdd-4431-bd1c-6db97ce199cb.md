@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/verification/extensions.go -> Function: verifyCertExtensions Issuer check] Can an attacker whose OIDC issuer string is a prefix of the expected issuer plus extra path (given.Issuer = expected.Issuer + '/attacker-controlled') pass the Issuer check due to the partial-match branch `strings.Index(given.Issuer, expected.Issuer+\
