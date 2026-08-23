@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/pr/checkout/checkout.go' -> Scope: High] [Function: checkoutRun stdout message] Can an attacker set `pr.Number` or influence `opts.Worktree` display text such that the terminal output `\

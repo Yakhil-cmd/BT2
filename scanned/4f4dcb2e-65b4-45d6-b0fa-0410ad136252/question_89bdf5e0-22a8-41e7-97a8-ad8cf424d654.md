@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/pr/checkout/checkout.go' -> Scope: High] [Function: cmdsForExistingRemote / WorktreeCheckoutCommands] Can an attacker-controlled `pr.HeadRefName` value (only the `-` prefix is filtered via `strings.HasPrefix(pr.HeadRefName, \
