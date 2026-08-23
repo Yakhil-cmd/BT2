@@ -1,1 +1,0 @@
-[File: pkg/cmd/factory/default.go -> Scope: High] [Function: factory.remoteResolver.Resolver default-host fallback logic] Can an attacker who cannot control GH_HOST but can influence the *number* of matching remotes (by adding several remotes to hosts equal to the config's non-env default host) manipulate the `if src != \
