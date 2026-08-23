@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/download/metadata.go] [Function: LiveStore.createJSONLinesFilePath / createMetadataFile] Can an unprivileged attacker who controls the artifact digest string or predicate content fed into api.FetchParams.Digest cause createJSONLinesFilePath (which builds the path via fmt.Sprintf(\

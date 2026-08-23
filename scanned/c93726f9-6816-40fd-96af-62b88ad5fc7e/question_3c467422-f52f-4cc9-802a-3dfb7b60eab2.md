@@ -1,1 +1,0 @@
-[File: 'internal/safepaths/absolute.go -> Absolute.Join/isSubpathOf'] [Function: isSubpathOf] Can an attacker supply a zip/tar member name equal to the destDir's sibling directory prefix (e.g. destDir='/tmp/out', name='../out-evil/x') so that filepath.Rel + strings.HasPrefix(relativePath, \
