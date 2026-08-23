@@ -1,1 +1,0 @@
-[File: internal/codespaces/api/api.go -> Scope: Critical] [Function: GetCodespacesMachines / GetCodespacesPermissionsCheck] Can an attacker-controlled devcontainerPath or branch string (from a repository the victim opens a codespace against) containing CRLF sequences or control characters be smuggled through q.Add(\
