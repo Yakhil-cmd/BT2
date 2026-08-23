@@ -1,1 +1,0 @@
-[File: pkg/cmd/skills/update/update.go -> Function: updateRun repoKey loop / discovery.ResolveRef] Can an attacker who controls a tag or branch name in their own repository (resolved via discovery.resolveExplicitRef/resolveBranchRef/resolveTagRef) inject '../' or encoded path segments into the ref parameter such that safeurl.JoinPath(\
