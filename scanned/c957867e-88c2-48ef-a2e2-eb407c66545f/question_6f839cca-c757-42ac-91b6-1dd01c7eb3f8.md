@@ -1,1 +1,0 @@
-[File: internal/browser/browser.go] [Function: Browse called from pkg/cmd/codespace/code.go:vscodeProtocolURL] Can an attacker who controls a codespace name or web URL string returned by the Codespaces API inject extra query parameters or shell-significant characters into the vscode:// URI built via fmt.Sprintf(\
