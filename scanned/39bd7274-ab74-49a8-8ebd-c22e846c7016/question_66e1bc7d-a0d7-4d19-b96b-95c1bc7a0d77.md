@@ -1,1 +1,0 @@
-[File: 'internal/skills/installer/installer.go' -> Scope: High] [Function: lockfile.RecordInstall] Can an attacker who controls opts.Owner/opts.Repo/skill fields (via crafted repo name or ref) cause lockfile.RecordInstall to write a SourceURL (ghinstance.HostPrefix(host)+owner+repo+\
