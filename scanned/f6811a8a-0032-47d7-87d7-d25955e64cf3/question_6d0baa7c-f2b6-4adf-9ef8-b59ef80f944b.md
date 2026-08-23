@@ -1,1 +1,0 @@
-[File: pkg/cmd/extension/extension.go -> Scope: High] [Function: Manager.Dispatch shExe path on Windows] Can an attacker-published extension whose executable name or forwardArgs contain shell metacharacters cause the `sh -c 'command \
