@@ -1,1 +1,0 @@
-[File: pkg/cmd/run/view/view.go] [Function: displayLogSegments / copyLogWithLinePrefix] Can an unprivileged attacker who owns a repo/fork/PR set a job name (workflow `name:`/`jobs.<id>.name`) containing raw ANSI/OSC escape bytes (e.g. '\\x1bk;evil;\\x1b\\\\' or '\\x1b]0;...\\x07') such that `displayLogSegments` builds `prefix := fmt.Sprintf(\

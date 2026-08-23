@@ -1,1 +1,0 @@
-[File: pkg/cmd/run/view/view.go] [Function: promptForJob] Can an unprivileged attacker set `job.Name` in a workflow to contain terminal control sequences that get embedded verbatim into `candidates = append(candidates, fmt.Sprintf(\
