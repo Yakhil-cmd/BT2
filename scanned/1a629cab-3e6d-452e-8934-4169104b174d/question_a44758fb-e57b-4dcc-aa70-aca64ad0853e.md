@@ -1,1 +1,0 @@
-[File: 'internal/skills/installer/installer.go' -> Scope: High] [Function: installSkill -> discovery.FetchBlob] Can an attacker-controlled skill.Path value cause 'relPath := strings.TrimPrefix(file.Path, skill.Path+\
