@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: pkg/cmd/attestation/trustedroot/trustedroot.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e2f12f23-d40f-4a24-93c0-eedd41697b53?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/attestation/download/download.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3c996070-59ca-4a2b-bfde-6558292ede27?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/attestation/inspect/bundle.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed56c1b0-8a5c-411c-8ae6-a4c4a5c6ce46?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/verify-asset/verify_asset.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c584c22-d9c1-46e0-b13b-7f24d7db4811?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/verify/verify.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a72897b2-f438-480a-88fe-487625957db3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/shared/attestation.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_be13aaa8-f0a9-48bd-a6dd-26eb70e2572f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/shared/fetch.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b1af72e6-f0d1-4bd1-949e-cc67aaf4a0f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/release/download/download.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c8744615-eefd-4fb4-9f01-5c3c585401a2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/download/download.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_20344017-0884-4091-9725-8f6274a291d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/download/http.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b2093a61-e277-4a5d-81b4-0b10f5b4042c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/shared/artifacts.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e6315720-2e5a-4214-8c63-be64eed2b4a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/run/view/logs.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ae9cc0ef-4014-422c-ab04-44c1ce8103b3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/zip/zip.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1ec43e3f-e756-4670-98f6-d16f6be4fc04?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/read-file/read_file.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8220eda0-937d-4bb3-95b2-f66ee64d92e3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/read-dir/read_dir.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_694e5418-5e92-4162-8829-cab29c3c3351?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/shared/shared.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aed2ca5f-33d8-489d-8579-e2eabb890e0b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/edit/edit.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_47dd0848-303b-4f55-8b9c-4508e6d16384?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/view/view.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_85bc53df-deaf-410b-bd72-2a057605bdd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/create/create.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e19c914a-35e7-4f81-93c4-3742975dee17?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/iostreams/untrusted.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2e7b859e-8913-488e-a61b-09f0bef5a31b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/iostreams/iostreams.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d98fb08a-98e2-42a0-a13d-541e799d8f6b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/iostreams/content.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed392922-c4a4-4f78-a0d6-0bac53a2d0bc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/markdown/markdown.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c16014fe-73db-4277-9d70-317be4863576?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/text/text.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_861c606f-73fe-4495-8a76-30dab18bd513?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: internal/tableprinter/table_printer.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_de5e8599-fb92-4d47-b9fb-db4488c27760?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/view/view.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fccac89a-d932-4cee-9b68-de6dd7901739?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/issue/view/view.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_35ccf3f8-6217-479a-b68d-610d972c8027?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/shared/display.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_60e69af7-4f8f-42f3-8f2e-a651af92d20a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/shared/comments.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e2e66958-b3eb-4649-8e30-65b88fda8a1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/checks/output.go -> Scope: Critical. An unprivileged attacker who only publishes content the victim's gh fetches (a repo, fork, PR, issue, gist, release asset, workflow artifact, extension, or skill) achieves arbitrary code or command execution on the victim's machine during an ordinary gh command.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33a36dc8-3e2f-47ae-98de-ad9c9bfd42a4?mode=deep",
+    "questions_generated": false
+  }
+]
