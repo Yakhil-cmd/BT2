@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/verify/policy.go -> Scope: Critical] [Function: expandToGitHubURLRegex / newEnforcementCriteria] Can an unprivileged attacker who controls a repo name containing regex metacharacters (e.g. 'foo/bar.evilXcom') get gh attestation verify to build a SANRegex via regexp.QuoteMeta(url+\
