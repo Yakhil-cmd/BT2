@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/verification/sigstore.go -> Scope: High] [Function: NewLiveSigstoreVerifier / TrustDomain field] Can an attacker who controls the `trustDomain` value (if it is derived from an untrusted source such as a repo's `.github` config, GHES hostname discovery, or CLI-resolved enterprise host) cause newGitHubVerifier to fetch `
