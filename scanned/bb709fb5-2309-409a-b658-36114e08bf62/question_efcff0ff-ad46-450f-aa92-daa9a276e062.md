@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/attestation/verification/sigstore.go -> Scope: Critical'] [Function: getBundleIssuer] Can an attacker supply a DSSE/Sigstore bundle whose leaf certificate has zero or multiple Issuer.Organization values, or a bundle below MinVersion(\
