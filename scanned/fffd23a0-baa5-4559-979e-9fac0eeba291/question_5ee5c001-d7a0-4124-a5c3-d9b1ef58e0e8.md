@@ -1,1 +1,0 @@
-[File: pkg/cmd/attestation/trustedroot/trustedroot.go] [Function: NewTrustedRootCmd RunE] Can an attacker who controls a tenancy host's `/meta` response force `opts.TrustDomain` to be empty or malformed after `ghauth.IsTenancy(opts.Hostname)` returns true, causing the code to silently fall back to the unqualified `defaultTR = \
