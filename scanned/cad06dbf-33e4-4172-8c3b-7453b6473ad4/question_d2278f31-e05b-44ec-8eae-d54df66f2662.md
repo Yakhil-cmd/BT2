@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/repo/clone/clone.go' -> Scope: High] [Function: cloneRun, when opts.Repository is a bare name like 'myrepo'] Can an unprivileged attacker who controls the target host's response to cfg.Authentication().DefaultHost() (e.g. via a multi-account or enterprise config edge case) or the response of api.CurrentLoginName cause fullName := currentUser + \
