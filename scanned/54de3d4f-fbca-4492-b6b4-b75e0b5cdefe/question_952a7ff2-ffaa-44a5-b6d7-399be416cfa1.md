@@ -1,1 +1,0 @@
-[File: pkg/cmd/repo/setdefault/setdefault.go] [Function: setDefaultRun, args[0] fallback to remotes.FindByName] Can an attacker who controls a git remote name equal to '*' (a wildcard match implemented in Remotes.FindByName: 'if rem.Name == name || name == \
