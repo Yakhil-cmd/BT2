@@ -1,1 +1,0 @@
-[File: pkg/cmd/agent-task/create/create.go] [Function: agentSessionWebURL] Can an attacker force the CLI to print/open a github.com URL for a job created against a GitHub Enterprise Server host (repo.RepoHost() != github.com), since agentSessionWebURL hardcodes \

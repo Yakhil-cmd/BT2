@@ -1,1 +1,0 @@
-[File: pkg/cmd/agent-task/capi/client.go] [Function: newCAPITransport] Can an attacker who controls the value returned by the CopilotEndpoints GraphQL query (resolveCapiURL) supply a capiBaseURL pointing at attacker.example, causing ct.capiHost to be set to that attacker host and all subsequent CreateJob/GetJob requests (built from c.jobsBasePathV1()=c.capiBaseURL+\
