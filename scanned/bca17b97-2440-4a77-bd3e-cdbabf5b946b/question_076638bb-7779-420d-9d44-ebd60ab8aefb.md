@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/release/shared/attestation.go' -> Scope: Critical verification bypass] [Function: buildVerificationPolicy] Can an attacker whose Fulcio-issued certificate SAN legitimately matches `^https://<trustDomain>\\.releases\\.github\\.com$` (e.g. via a crafted or GHES tenant-scoped signer) satisfy the SANMatcher while the IssuerMatcher is set to `NewIssuerMatcher(\

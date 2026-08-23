@@ -1,1 +1,0 @@
-[File: 'pkg/cmd/release/verify/verify.go' -> Scope: Critical.] [Function: verifyRun] Can an attacker who controls a repository publish a release tag whose resolved git SHA (via `shared.FetchRefSHA`) collides in digest-with-alg format with an attestation obtained via `config.AttClient.GetByDigest` for `PredicateType: \
