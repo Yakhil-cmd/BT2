@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/gitcredential/helper.go -> Scope: High] [Function: helperRun url.Parse handling] Can an attacker supply a malformed or unusual 'url=' value (e.g. containing userinfo with embedded control characters, an IPv6 host, or percent-encoded host) that url.Parse succeeds on but which, once split into wants[\

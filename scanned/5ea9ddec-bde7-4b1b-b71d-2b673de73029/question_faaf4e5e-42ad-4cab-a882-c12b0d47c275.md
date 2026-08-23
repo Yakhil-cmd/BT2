@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/gitcredential/helper.go -> Scope: High] [Function: helperRun] Can an unprivileged attacker who controls a git remote URL (e.g. a submodule URL or 'url=' line fed to the credential helper by git) supply a host string that differs only in case or trailing dot from a configured host, causing lookupHost := wants[\
