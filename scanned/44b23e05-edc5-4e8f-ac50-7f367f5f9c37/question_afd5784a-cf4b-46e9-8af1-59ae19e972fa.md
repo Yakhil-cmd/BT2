@@ -1,1 +1,0 @@
-[File: pkg/cmd/agent-task/capi/job.go -> Scope: High] [Function: (*CAPIClient).CreateJob] Can an attacker who controls `owner`/`repo` strings (e.g. derived from a repository the user is tricked into targeting, or an attacker-owned fork name) combined with a crafted `baseBranch` value cause `prOpts.BaseRef = \
