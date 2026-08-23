@@ -1,0 +1,152 @@
+[
+  {
+    "question": "'File Name: pkg/cmd/api/http.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92216412-05c3-44f9-b479-80a0e230193b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/api/pagination.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_49fe5153-a57c-499a-83e5-32a282863570?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/api/fields.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ee4367a3-6590-4eed-ab0b-6b0931646bec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: git/client.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bbf34177-22d1-4a04-81ee-0b256038fd6f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: git/command.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b2f64a9-753d-4e8e-8632-522b1715b979?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: git/url.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fb321cb9-0194-48d7-becc-b84ee0b79179?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: git/objects.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a73bb6f8-8026-4381-98e1-c962422e7a18?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/clone/clone.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_606db197-a624-4707-ae25-5ce5a0e4fe91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/fork/fork.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_350f3e1b-e04a-40d5-9bed-28a3a07f3d7d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/sync/git.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_9f4a4c28-3e09-4532-bbbb-63c4f1f1e29d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/sync/sync.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b79a905-c858-46d7-ac95-f663b7732288?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/repo/setdefault/setdefault.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_27c2dadd-d174-4396-a0f3-ce3457dfac9b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/checkout/checkout.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3e72a9f-80c0-4108-b593-7e3add7db391?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/shared/worktree.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a07778bb-89bd-4090-9815-5ff85b712eb7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/pr/shared/finder.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_09c94cd8-d87a-42d5-8866-6f11a703bdae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/issue/develop/develop.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_cff60bac-2164-4f5a-a7b0-f559109a8254?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/gist/clone/clone.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2c40b032-815b-4631-b8bb-335a09e18933?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/manager.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0be903b2-accc-4491-86cd-16a93f7065bc?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/command.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d15c162d-9eab-44e5-a0a4-ba0fff577d85?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/extension.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_79f27faa-ffea-450b-9a97-b4417efe4c09?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/git.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d3bccf88-45da-4ac9-8060-3a55158db296?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/http.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aff32c3f-b13b-4a9d-ae4a-02a4694a26a0?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/symlink_other.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3ea69110-3aef-4855-a170-e62e379407a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/symlink_windows.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_98992855-f917-4407-b6c8-aa9dce3c6195?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/extension/browse/browse.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0498829e-6be4-43f7-bf45-3119287b404a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/extensions/extension.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_38f53c6c-51eb-4915-9aa3-05e0d90aacc2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/extensions/official.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_56da2a26-c8cf-40f8-bf7a-0f37ff9b0264?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/root/extension.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ed247d01-49f1-4a4c-8a09-13640f93ac34?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/root/root.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c9b60efc-88f0-4a52-8d33-22d7245d5fbb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/root/alias.go -> Scope: Critical. An unprivileged attacker controls a downloaded name or path (artifact entry, zip member, release asset, gist file, skill or extension file) so gh writes, overwrites, or symlinks outside the intended output directory, reaching startup files, git hooks, or gh's own config and binaries.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_1c38808a-bd65-462e-8dd5-d1713f57ef89?mode=deep",
+    "questions_generated": false
+  }
+]
