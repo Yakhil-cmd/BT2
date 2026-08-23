@@ -1,1 +1,0 @@
-[File: 'File Name: pkg/cmd/auth/shared/writeable.go -> Scope: Critical.'] [Function: pkg/cmd/repo/clone/clone.go cloneRun wiki URL branch] Can an attacker who owns a repository named to look like a wiki (ending in '.wiki') craft opts.Repository such that wantsWiki detection and the subsequent `strings.TrimSuffix(canonicalCloneURL, \
