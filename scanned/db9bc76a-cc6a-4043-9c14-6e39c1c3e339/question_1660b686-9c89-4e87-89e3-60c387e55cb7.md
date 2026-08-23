@@ -1,1 +1,0 @@
-[File: 'File Name: pkg/cmd/auth/shared/writeable.go -> Scope: Critical.'] [Function: git.(*Client).AuthenticatedCommand credential.<pattern>.helper construction] Can an attacker-controlled hostname derived from a crafted repo URL (e.g. a GHES host string containing shell metacharacters or embedded quotes) escape the `fmt.Sprintf(\

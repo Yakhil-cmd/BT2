@@ -1,1 +1,0 @@
-[File: 'File Name: pkg/cmd/auth/shared/writeable.go -> Scope: Critical.'] [Function: pkg/cmd/pr/checkout/checkout.go cmdsForExistingRemote / cmdsForMissingRemote] Can an attacker who opens a pull request with a HeadRefName beginning with '-' (e.g. '--upload-pack=...') bypass the existing guard `strings.HasPrefix(pr.HeadRefName, \
