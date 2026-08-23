@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/shared/gitcredentials/helper_config.go -> Scope: Critical] [Function: keyFor(hostname string) string] Can an attacker who controls the hostname string reaching HelperConfig.ConfigureOurs (e.g. via a host value derived from a remote URL parsed from an attacker-published fork/remote) inject characters (spaces, '=', '\\n', extra dots) into fmt.Sprintf(\

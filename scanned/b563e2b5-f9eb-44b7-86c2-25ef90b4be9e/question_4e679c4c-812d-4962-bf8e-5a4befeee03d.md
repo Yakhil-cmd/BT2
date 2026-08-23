@@ -1,1 +1,0 @@
-[File: pkg/cmd/auth/shared/login_flow.go] [Function: Login, GetCurrentLogin] Does ghinstance.GraphQLEndpoint(hostname) combined with safeurl.JoinPathWithHostPrefix enforce HTTPS-only scheme, or could a hostname value containing an explicit \
