@@ -1,1 +1,0 @@
-[File: pkg/cmd/extension/extension.go -> Scope: Critical] [Function: (*Extension).Name] Can an unprivileged attacker publish an extension repository whose directory/binary is named such that strings.TrimPrefix(filepath.Base(e.path), \
