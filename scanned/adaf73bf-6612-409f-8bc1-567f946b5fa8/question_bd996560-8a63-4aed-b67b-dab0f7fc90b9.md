@@ -1,1 +1,0 @@
-[File: main.go] [Function: repoSync.configureWorktree, sparse-checkout path] Can an attacker-controlled repo cause the sparse-checkout file write to `gitSparseConfigPath` (`.git/worktrees/<hash>/info/sparse-checkout`) to escape via a crafted `hash` used in `filepath.Join(git.root.String(), \
