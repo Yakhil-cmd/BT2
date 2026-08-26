@@ -1,0 +1,52 @@
+[
+  {
+    "question": "'File Name: main.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_46fd20f4-aee1-4884-9c47-db98f1d81d08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: abspath.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65f3ad0b-f427-493f-bb1f-ef86d1faaca2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: credential.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_2474ecf9-1ed3-445e-b683-d804e0b3a2d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: env.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61c1e4c4-c08d-4bb4-8928-a4409236c8be?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/cmd.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d14450ec-c326-4064-acae-ed6cd762c1f1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/hook.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a9f6fc83-9a36-4e42-adce-f4f3739fcac7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/exechook.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_fc8cb188-1998-40cb-b900-8cf63cae52e1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/webhook.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ea83e4d7-ae8b-4676-8a4a-d7ba0600fd48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/logging/logging.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b6642196-67d6-4805-9fb4-57abde8fe429?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/pid1/pid1.go -> Scope: Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c8ee6f4b-5148-4fe8-8848-edc86a397972?mode=deep",
+    "questions_generated": false
+  }
+]
