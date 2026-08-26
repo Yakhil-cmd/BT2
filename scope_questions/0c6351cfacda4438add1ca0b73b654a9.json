@@ -1,0 +1,52 @@
+[
+  {
+    "question": "'File Name: main.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3fbb96e0-21db-4ea8-9cfe-277267958404?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: abspath.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_04374ea4-6fd1-41e3-b037-15f604ec3774?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: credential.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_92ed437d-7292-431c-a312-b3017c56c86f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: env.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5b3517b8-5b8e-408c-b7f1-a3a9c30cfdc8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/cmd.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c2ec761b-a591-423f-8e9f-dd4fdf6d875e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/hook.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aaa07abe-a1fc-4b52-aa10-f2e21c95d7c3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/exechook.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_14695990-f122-44ec-a307-f4a855c618f4?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/webhook.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_3c7f1397-3040-4da9-bc0b-16f59dd04f48?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/logging/logging.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bb6afc8b-73c5-4aca-97e7-bcee64ef1dde?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/pid1/pid1.go -> Scope: High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_33a85581-9934-44d6-9bf1-7dbf2b6900ef?mode=deep",
+    "questions_generated": false
+  }
+]
