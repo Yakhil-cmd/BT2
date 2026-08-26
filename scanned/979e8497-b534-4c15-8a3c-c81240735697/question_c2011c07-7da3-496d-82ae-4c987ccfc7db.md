@@ -1,0 +1,1 @@
+[File: pkg/hook/webhook.go -> Scope: Critical secret leakage via repo-controlled content/refs] [Function: Webhook.Do] Can an unprivileged attacker who pushes a commit that becomes the new HEAD cause the resulting `hash` string passed into `req.Header.Set(\

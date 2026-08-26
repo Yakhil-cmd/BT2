@@ -1,0 +1,1 @@
+[File: pkg/logging/logging.go -> Scope: High] [Function: Logger.Error, kvList odd-length handling] Can an attacker-influenced error path pass an odd number of key-value pairs derived from parsed repo/submodule output (e.g. splitting a crafted .gitmodules error line) so that Logger.Error's 'kvList = append(kvList, \

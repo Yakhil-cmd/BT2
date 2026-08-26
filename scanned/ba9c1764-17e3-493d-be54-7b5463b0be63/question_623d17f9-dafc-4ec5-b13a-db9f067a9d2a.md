@@ -1,0 +1,1 @@
+[File: main.go] [Function: removeDirContentsIf (used by removeStaleWorktrees)] Can an attacker who controls repo content that gets checked out into `.worktrees/<hash>/` place a symlink at the top level of the worktree such that when removeStaleWorktrees later calls removeDirContentsIf on `git.worktreeFor(\

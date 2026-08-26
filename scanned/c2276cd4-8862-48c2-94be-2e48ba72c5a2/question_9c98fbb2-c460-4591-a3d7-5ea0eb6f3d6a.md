@@ -1,0 +1,1 @@
+[File: 'env.go -> Scope: High volume exhaustion via oversized blobs'] [Function: repoSync.fetch] Can an attacker who pushes a single huge blob or many large objects to the tracked ref cause git.fetch (main.go args := []string{\

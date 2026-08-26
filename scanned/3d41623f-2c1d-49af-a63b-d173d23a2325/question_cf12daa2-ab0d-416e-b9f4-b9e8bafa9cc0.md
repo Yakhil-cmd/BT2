@@ -1,0 +1,1 @@
+[File: 'main.go'] [Function: repoSync.worktreeFor] Fuzz worktreeFor(hash) with attacker-influenced 'hash' strings derived from `git rev-parse FETCH_HEAD^{}` output parsing (git.Run output trimmed only with strings.Trim(output, \

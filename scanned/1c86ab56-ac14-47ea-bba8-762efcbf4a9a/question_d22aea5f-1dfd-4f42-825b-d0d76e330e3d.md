@@ -1,0 +1,1 @@
+[File: env.go] [Function: envStringArray parsing a colon-separated allow/deny list for submodules or refs] Can a submodule path or ref name that itself contains a literal colon (valid in some git ref/path contexts) cause the colon-splitting `strings.Split(s, \

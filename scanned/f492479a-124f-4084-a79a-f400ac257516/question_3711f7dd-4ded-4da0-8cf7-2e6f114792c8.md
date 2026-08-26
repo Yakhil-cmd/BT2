@@ -1,0 +1,1 @@
+[File: 'pkg/logging/logging.go -> Scope: Critical. Published --link symlink integrity.'] [Function: Logger.writeContent] Can an unprivileged attacker who forces repeated git-command failures (e.g. by pushing a corrupt ref or object that fails 'git worktree add') cause writeContent's os.CreateTemp(l.root, \
