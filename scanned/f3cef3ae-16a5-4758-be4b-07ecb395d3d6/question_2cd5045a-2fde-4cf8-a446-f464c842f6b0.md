@@ -1,1 +1,0 @@
-[File: pkg/hook/hook.go -> Scope: High.] [Function: hookData zero-value hash and initial lastHash mismatch] Can an attacker who controls the very first synced commit's hash value (unlikely since hash format is fixed, but relevant if hash resolution logic ever produces empty string, e.g., from a repo with zero commits/empty ref resolving to
