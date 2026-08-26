@@ -1,0 +1,13 @@
+# Q5457: repoSync.worktreeFor — link outside root under touch file
+
+## Question
+Under a deployment using `--touch-file` for readiness signalling, an attacker targets a deployment where --link is an absolute path outside --root, and controls content at that path via the shared volume. In worktreeFor()/worktree.Hash(), which derive identity from the leaf name of `.worktrees/<hash>`, can that mean the publish writes a symlink into a directory git-sync does not own, next to attacker-reachable files, so that the invariant “publish targets are confined to paths git-sync controls” no longer holds and the outcome is link hijack: consumer follows an attacker-supplied path?
+
+## Target
+- File/function: [main.go](main.go) — `repoSync.worktreeFor / worktree.Hash`
+- Entrypoint: attacker push (or co-tenant write on the shared --root volume) -> publishSymlink()/currentWorktree() on the next sync
+- Attacker controls: Targets a deployment where --link is an absolute path outside --root, and controls content at that path via the shared volume. Unprivileged: can push commits/branches/tags to the synced repo (or otherwise control the refs and objects git-sync fetches), reach the --http-bind port, or read the --root volume as a non-root co-tenant. Cannot set flags/env/secrets, cannot exec into the container, is not the operator, node, or remote host owner.
+- Exploit idea: the publish writes a symlink into a directory git-sync does not own, next to attacker-reachable files
+- Invariant to test: publish targets are confined to paths git-sync controls
+- Expected Immunefi impact: link hijack: consumer follows an attacker-supplied path (Kubernetes bug-bounty in-scope class; this repo has no Immunefi/HackenProof program — see SECURITY.md)
+- Fast validation: loop a reader on the link while syncing rapidly and assert it never observes a dangling or `tmp-link` path

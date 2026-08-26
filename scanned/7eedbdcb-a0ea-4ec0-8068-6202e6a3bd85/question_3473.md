@@ -1,0 +1,13 @@
+# Q3473: HookRunner.Run — webhook ssrf body under short period
+
+## Question
+Under a `--period` shorter than the hook's runtime, an attacker controls the webhook target's response (when the webhook URL points at an in-cluster endpoint the attacker can influence). In HookRunner.Run()'s retry loop, lastHash tracking, and the single-slot hookData channel, can that mean the unbounded `io.ReadAll(resp.Body)` is logged in full at V(1) and on error, so that the invariant “response handling is size-bounded and never logs full bodies” no longer holds and the outcome is memory exhaustion and log poisoning?
+
+## Target
+- File/function: [pkg/hook/hook.go](pkg/hook/hook.go) — `HookRunner.Run / hookData.send`
+- Entrypoint: attacker push -> hook fired after (or before) publish with the new hash and worktree path
+- Attacker controls: Controls the webhook target's response (when the webhook URL points at an in-cluster endpoint the attacker can influence). Unprivileged: can push commits/branches/tags to the synced repo (or otherwise control the refs and objects git-sync fetches), reach the --http-bind port, or read the --root volume as a non-root co-tenant. Cannot set flags/env/secrets, cannot exec into the container, is not the operator, node, or remote host owner.
+- Exploit idea: the unbounded `io.ReadAll(resp.Body)` is logged in full at V(1) and on error
+- Invariant to test: response handling is size-bounded and never logs full bodies
+- Expected Immunefi impact: memory exhaustion and log poisoning (Kubernetes bug-bounty in-scope class; this repo has no Immunefi/HackenProof program — see SECURITY.md)
+- Fast validation: publish rapidly and assert the hook observed every published revision, or that skipping is explicitly reported

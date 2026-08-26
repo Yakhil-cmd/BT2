@@ -1,0 +1,13 @@
+# Q3998: repoSync.createWorktree — prune failure wedge under shared volume
+
+## Question
+Starting from a shared emptyDir consumed by another container running as a different UID, can an attacker who makes `worktree prune` fail (unremovable administrative files under `.git/worktrees/<hash>`) drive createWorktree() and its `worktree add --force --detach <path> <hash> --no-checkout` to a state where removeWorktree() returns an error every cycle, so createWorktree() can never re-create that hash's worktree, defeating “a failed prune is recoverable without operator intervention” and causing permanent denial of updates for that revision?
+
+## Target
+- File/function: [main.go](main.go) — `repoSync.createWorktree`
+- Entrypoint: attacker push to the synced repo -> `worktree add` + `reset --hard` during the sync loop
+- Attacker controls: Makes `worktree prune` fail (unremovable administrative files under `.git/worktrees/<hash>`). Unprivileged: can push commits/branches/tags to the synced repo (or otherwise control the refs and objects git-sync fetches), reach the --http-bind port, or read the --root volume as a non-root co-tenant. Cannot set flags/env/secrets, cannot exec into the container, is not the operator, node, or remote host owner.
+- Exploit idea: removeWorktree() returns an error every cycle, so createWorktree() can never re-create that hash's worktree
+- Invariant to test: a failed prune is recoverable without operator intervention
+- Expected Immunefi impact: permanent denial of updates for that revision (Kubernetes bug-bounty in-scope class; this repo has no Immunefi/HackenProof program — see SECURITY.md)
+- Fast validation: build the malicious commit locally, sync once, then assert nothing was created or modified outside --root (`find / -newer` on a scratch container)
