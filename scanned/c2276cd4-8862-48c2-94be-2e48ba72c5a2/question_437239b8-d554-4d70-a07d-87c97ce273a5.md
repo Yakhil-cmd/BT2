@@ -1,1 +1,0 @@
-[File: 'env.go -> Scope: High volume exhaustion via submodule depth ignoring parent depth'] [Function: repoSync.configureWorktree] Does the submodule fetch depth control ('if git.depth != 0 { submodulesArgs = append(submodulesArgs, \
