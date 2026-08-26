@@ -1,1 +1,0 @@
-, secretValue), writeContent marshals and writes 0644 file. Invariant tested: secret confinement. Scoped impact: secret leakage to any process with --root read access. Proof idea: grep/fuzz test enumerating all Error()/ExportError() call sites for secret-typed arguments and asserting none reach kvList.
