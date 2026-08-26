@@ -1,0 +1,52 @@
+[
+  {
+    "question": "'File Name: main.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c5de3ff3-adbe-4b79-9f0f-fc360cfcb248?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: abspath.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_bc866379-e8ce-45b2-b608-cc0af14c330f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: credential.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e288f79d-3c38-4113-9b2a-84f7a55d371b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: env.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_c3fe7c6d-e00e-4bb8-a889-ff589050414b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/cmd.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_ee7d3ddf-44a5-4344-afbc-76cc8c0bb889?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/hook.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b8c9e834-57eb-47b2-a76a-7d9206169b49?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/exechook.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e5722e5a-64bc-4d79-8a77-0d63c9731057?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/webhook.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_84bed330-37f7-446b-a023-1e25865f6dbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/logging/logging.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a1f53dc6-e433-48ea-a533-b2aa0e321aec?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/pid1/pid1.go -> Scope: High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_b082dc63-1b6b-441c-b798-8c72a1866804?mode=deep",
+    "questions_generated": false
+  }
+]
