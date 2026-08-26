@@ -1,0 +1,52 @@
+[
+  {
+    "question": "'File Name: main.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_dc9be7cb-8dc7-4a63-813b-8bc73afef2ea?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: abspath.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_65100105-f124-4c20-960d-8b19bfd79ad3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: credential.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f8810355-2366-4932-b269-0f221d6c23f7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: env.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d465308e-5443-4cc4-8a18-f38a0708e050?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/cmd.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f5a0679b-e35b-4a7e-905a-07e66743e3d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/hook.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_8effb31d-b1cd-4958-8e0f-221b1db96430?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/exechook.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7017d0a8-0f12-4823-8f98-ddffcd28beda?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/webhook.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0dda665f-835e-48d6-b324-bbaf77f54f2e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/logging/logging.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_90ba4668-10b5-4c4f-b9ab-994070ad2cc2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/pid1/pid1.go -> Scope: Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_684ce8bb-2aa1-4692-9071-d295ddb4ee1a?mode=deep",
+    "questions_generated": false
+  }
+]
