@@ -1,0 +1,3 @@
+[Function: SetupAuth writing per-credential git config sections keyed by URL] Can a crafted repo ref name or tag name (fully attacker-controlled) that is later interpolated into a `git config` section header alongside the credential URL (e.g. for per-ref auth scoping, if implemented) allow config-section injection that adds a malicious `[credential]` or `[core]` section altering subsequent git behavior (e.g. sshCommand, http.proxy)? Preconditions: none beyond push access to create ref names. Call sequence: parse ref -> build config key string -> git config --add. Proof idea: unit test with ref name containing `]
+[core]
+	sshCommand = evil`, assert the resulting git config file has no attacker-controlled section boundaries, enforcing ARGV_OR_CONFIG_INTEGRITY.
