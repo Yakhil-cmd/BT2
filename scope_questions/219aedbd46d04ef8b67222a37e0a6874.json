@@ -1,0 +1,52 @@
+[
+  {
+    "question": "'File Name: main.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_724e03e7-f3c7-4925-a9a1-551ab09f32d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: abspath.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_e0711319-a20d-47c1-a46c-447a561f46a1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: credential.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_910ae3e0-9d1a-49ef-9bfc-2f85540efa17?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: env.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_aca6ecfc-2bd6-46fc-b6b8-74f1e0258c1b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/cmd.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5a9fc0af-b26a-4b1b-a4a8-85d3d198c15b?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/hook.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5569e168-db2e-45d0-a10a-feff36c30361?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/exechook.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_0b2b45d1-a1f6-4ad4-9e2e-c64cb18a59ef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/webhook.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_796b87b3-1665-463d-ba59-968ce84c3a3c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/logging/logging.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_a2a4203e-b77c-4dc0-bae7-011a01400564?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/pid1/pid1.go -> Scope: Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_f575ef71-7709-4855-9b9f-b1c7df1eabdd?mode=deep",
+    "questions_generated": false
+  }
+]
