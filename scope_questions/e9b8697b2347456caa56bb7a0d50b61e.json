@@ -1,0 +1,52 @@
+[
+  {
+    "question": "'File Name: main.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d1d7c658-74ab-4349-a578-c9960730c4d5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: abspath.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_5939864c-7210-4c54-a4bb-d35ea1662584?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: credential.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_afc77cbe-0336-4926-8f96-5fd2b187157d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: env.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_d56c679e-bc81-4e23-b8a9-6ef15e0b94a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/cmd/cmd.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_6c944260-998f-41b7-b4b4-0193eb5db7d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/hook.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_7dbd2897-8dd1-4e87-8b7d-0414658841ee?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/exechook.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_db23ee63-197e-40f1-a04b-a02e6e57bf06?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/hook/webhook.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_878b1642-06a5-4bfd-8d77-4b395517ac4d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/logging/logging.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_61e033e5-9380-40a0-890e-e6058f2b80ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: pkg/pid1/pid1.go -> Scope: Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.'",
+    "url": "https://deepwiki.com/search/-generate-exploitfocused-secur_af78f45f-a913-430f-96c2-13449dbe23ea?mode=deep",
+    "questions_generated": false
+  }
+]
