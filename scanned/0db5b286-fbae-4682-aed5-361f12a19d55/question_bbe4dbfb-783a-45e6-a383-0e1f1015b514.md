@@ -1,1 +1,0 @@
-[File: main.go configureWorktree] [Function: configureWorktree] Can a tracked file named `.git` inside the worktree (not the worktree's own gitlink) collide with or be overwritten by the `os.WriteFile(worktree.Path().Join(\
