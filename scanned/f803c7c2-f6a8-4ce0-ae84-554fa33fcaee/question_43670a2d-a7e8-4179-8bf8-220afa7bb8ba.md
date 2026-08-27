@@ -1,1 +1,0 @@
-[File: 'File Name: env.go -> Scope: Critical.'] [Function: configureWorktree reset --hard] Can a repo-controlled `.gitattributes` entry (e.g. a smudge/clean filter `filter.foo.smudge = sh -c ...`) combined with a checked-in `.gitattributes` referencing that filter cause command execution when `git.Run(ctx, worktree.Path(), \

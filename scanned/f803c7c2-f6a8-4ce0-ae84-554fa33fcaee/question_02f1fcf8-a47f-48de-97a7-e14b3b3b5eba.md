@@ -1,1 +1,0 @@
-[File: 'File Name: env.go -> Scope: Critical.'] [Function: SyncRepo reset --soft remoteHash] Can a crafted/malformed `remoteHash` value (from `rev-parse FETCH_HEAD^{}`, main.go:1893-1897, potentially multi-line if peeling an unusual tag object with embedded newlines in its message that leaks into stdout under some git versions) cause `git.Run(ctx, git.root, \
