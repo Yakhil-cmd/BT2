@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_0b6e8616-313d-4fd3-b636-59f06b4d9bfb?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_6da205d7-ceaf-4066-9e73-28e6edad1362?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_7d399652-c483-408b-a9d2-390635ad5abf?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_ccdfb812-2624-4a74-b886-a5b642aa24d8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_fc5e7e7f-e6fd-4041-9730-ff68e7410af2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_ff1c56da-97b4-4e93-bb2e-290985d29985?mode=deep",
+    "questions_generated": false
+  }
+]
