@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_c3de1286-d0de-486b-bce8-2f12591d8cae?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_caf85e47-6309-4563-a025-977b3ae7cf7e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_0cc8666f-114f-4f61-b70b-a8e6152544dd?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_c2dff66d-4c2c-49a4-b1b8-c4c9fef41a94?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_e221ac5e-c061-4fd9-83c6-f69535ff1445?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_7d3e21a2-ab30-496a-ba82-c2ab592d2eba?mode=deep",
+    "questions_generated": false
+  }
+]
