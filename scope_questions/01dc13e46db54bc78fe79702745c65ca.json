@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_30a2a808-f98b-443b-a79c-9dd907ff492f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_31caf209-49ba-4d53-a551-490aa4ed93df?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_0ba00731-43ef-459d-9bfd-d75fff309bc8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_6385d261-555c-4ae7-8e12-d6e2b8d8200c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_cdf43a75-6d06-49a5-acc1-98a8ac9ab497?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_0163c036-ea70-40c6-9baa-b49726021de8?mode=deep",
+    "questions_generated": false
+  }
+]
