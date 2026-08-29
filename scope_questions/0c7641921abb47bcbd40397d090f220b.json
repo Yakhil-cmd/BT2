@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_d929e411-8f88-4ec3-9545-a4290579941d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_0fedc6fd-c491-4597-9240-2f32f6c49a4a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_a4a390a3-0e0e-40d1-b33e-6b797e1e5cef?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_d3d158ff-fc09-4992-a3b2-35230490b067?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_ef0059ce-6cfc-4889-9456-3b1d97d46b08?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_bad3de6d-034a-4622-8a9a-ffcf857bf933?mode=deep",
+    "questions_generated": false
+  }
+]
