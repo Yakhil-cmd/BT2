@@ -1,0 +1,13 @@
+# Q3562: interpolate-rate via borrow: route a victim's mandatory payout through a principal that
+
+## Question
+Entering through `borrow` (mainnet/contracts/market/v0-4-market.clar:1238) while controlling `amount`, can an unprivileged attacker make `interpolate-rate` (mainnet/contracts/vault/v0-vault-stx.clar:196) route a victim's mandatory payout through a principal that always rejects delivery? `interpolate-rate` interpolates between packed u16 curve points, so the invariant that no transaction by one principal changes what another can withdraw beyond the pool economics the protocol implements would fail, yielding direct theft of another user's collateral.
+
+## Target
+- File/function: `mainnet/contracts/vault/v0-vault-stx.clar:196` -> `interpolate-rate`
+- Entrypoint: `borrow` (`mainnet/contracts/market/v0-4-market.clar:1238`), unprivileged and publicly callable
+- Attacker controls: `amount`
+- Exploit idea: `interpolate-rate` interpolates between packed u16 curve points. Reach it through `borrow` and route a victim's mandatory payout through a principal that always rejects delivery.
+- Invariant to test: no transaction by one principal changes what another can withdraw beyond the pool economics the protocol implements
+- Expected Immunefi impact: Critical - direct theft of another user's collateral
+- Fast validation: Set up the position in simnet, call `borrow` with `amount`, and assert on the printed event plus the post-state that collateral, debt and share totals still reconcile.

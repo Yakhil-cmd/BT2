@@ -4,11 +4,11 @@ import os
 from decouple import config
 
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
-MAX_REPO = 5
+MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'kubernetes/git-sync'
+SOURCE_REPO = 'Zest-Protocol/zest-v2-contracts'
 # todo: the name of the repository
-REPO_NAME = 'git-sync'
+REPO_NAME = 'zest-v2-contracts'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -48,61 +48,97 @@ else:
 
 scope_files = [
     # =================================================================================
-    # Core sync engine: fetch, worktree create/configure, submodules, symlink publish,
-    # cleanup, credential setup, askpass/GitHub-App auth, git config parsing, HTTP server
+    # LENS: THE CROSS-ACCOUNT SURFACE - one unprivileged user against another.
+    #
+    # Zest is a shared pool. Almost every call a user makes moves state that OTHER users
+    # depend on: `index` and `lindex` reprice everyone's debt and everyone's zToken
+    # collateral; `socialize-debt` charges every supplier in a vault for one borrower's
+    # loss; the per-block `index-cache` is primed by whoever calls first and consumed by
+    # whoever calls next; utilization, `cap-supply`, `cap-debt` and available liquidity are
+    # global; `repay` writes a stranger's ledger by design; and `liquidate` is a sanctioned
+    # write to another principal's position. This variant hunts ONLY for a scenario where
+    # attacker A profits at victim B's expense, or freezes B's funds - never a user harming
+    # only itself, and never a shared-pool effect that is simply how lending works.
+    #
+    # DELIBERATELY ABSENT: the whole dao directory (impacts needing DAO compromise are out
+    # of scope, and full DAO control of the registries is intended design), and all
+    # flashloan logic, which is out of scope protocol-wide.
     # =================================================================================
-    "main.go",
 
-    # =================================================================================
-    # Path handling used for --root, worktrees and the published --link symlink
-    # =================================================================================
-    "abspath.go",
+    # -- Where one principal touches another --------------------------------------------
+    # `repay` with `on-behalf-of`; the entire `liquidate` / `liquidate-multi` /
+    # `liquidate-redeem` family; `socialize-debt-asset`; every `receiver`,
+    # `collateral-receiver` and `funds-receiver`; and the shared `index-cache` and
+    # `last-update` maps that one caller writes and the next caller reads.
+    "mainnet/contracts/market/v0-4-market.clar",
 
-    # =================================================================================
-    # Credential flag decoding and secret handling
-    # =================================================================================
-    "credential.go",
+    # -- The shared ledger and the 64-element bounds every position must fit through -----
+    # `resolve-or-create` binding principals to ids; `mask-to-list-internal` and its
+    # `as-max-len? ... u64` with `unwrap-panic`; `last-borrow-block` written onto whichever
+    # account the market names, not necessarily the caller.
+    "mainnet/contracts/market/v0-market-vault.clar",
 
-    # =================================================================================
-    # Env/flag parsing that feeds every sync parameter
-    # =================================================================================
-    "env.go",
+    # -- Pool-wide state one user moves for everybody ------------------------------------
+    # `index`, `lindex`, `assets`, `principal-scaled`, `utilization`, `cap-supply`,
+    # `cap-debt`, `get-available-assets`, `socialize-debt`, and the freely transferable zft.
+    # v0-vault-usdc and v0-vault-usdh are the two 6-decimal stablecoin vaults - the pair most
+    # likely to sit in one egroup together, where one user's dust becomes another's rounding.
+    # v0-vault-stx is the native-STX path through .wstx.
+    "mainnet/contracts/vault/v0-vault-stx.clar",
+    "mainnet/contracts/vault/v0-vault-usdc.clar",
+    "mainnet/contracts/vault/v0-vault-usdh.clar",
 
-    # =================================================================================
-    # Subprocess execution: git and hook command invocation, env and stdin handling
-    # =================================================================================
-    "pkg/cmd/cmd.go",
-
-    # =================================================================================
-    # Hooks fired on every successful sync with attacker-influenced hash/worktree data
-    # =================================================================================
-    "pkg/hook/hook.go",
-    "pkg/hook/exechook.go",
-    "pkg/hook/webhook.go",
-
-    # =================================================================================
-    # Logging and error-file export written inside --root
-    # =================================================================================
-    "pkg/logging/logging.go",
-
-    # =================================================================================
-    # PID-1 re-exec and child reaping inside the container
-    # =================================================================================
-    "pkg/pid1/pid1.go",
+    # -- Read paths only: how a victim's position is enumerated and priced ----------------
+    # `status`, `status-multi`, `get-bitmap`, `mask-pos`, `subset`, `uint-to-list-u64`.
+    # Assume the DAO configured the registry correctly; the bug must be in the lookup.
+    "mainnet/contracts/registry/v0-assets.clar",
 ]
 
 
 target_scopes = [
-    "Critical. An unprivileged attacker who can only push a commit, branch, or tag to the synced repository achieves command execution inside the git-sync container through git-controlled mechanisms reachable from fetch, reset, or `submodule update` (for example .gitmodules `ext::`/`file::` URLs, in-repo hooks, .gitattributes filters, or config-driven helpers).",
-    "Critical. Repository-controlled content (submodule paths, symlinks, filenames, .git file rewriting in configureWorktree) makes git-sync create, overwrite, or delete files outside the --root directory, letting the attacker plant code or config into the container filesystem or a co-mounted volume.",
-    "Critical. Repository-controlled content or refs cause git-sync to leak its own secrets - GITSYNC_PASSWORD, the git credential store, SSH key, cookie file, askpass response, or GitHub App installation token - into the published worktree, logs, error file, metrics, or an attacker-controlled network endpoint.",
-    "Critical. The published --link symlink is made to point at content that is not the requested ref, at a partially built or still-mutable worktree, or at a path outside --root, so the consuming workload loads attacker-chosen code while git-sync reports a successful sync.",
-    "Critical. Attacker-controlled ref names, hashes, remote URLs, or submodule values flow unescaped into git argv (Runner.Run/RunWithStdin) or into exec-hook argv/env, giving git option injection or command execution with git-sync's credentials.",
-    "High. Attacker-controlled repository state permanently wedges syncing - panic, deadlock, unhandled error loop, stale lock file, or failed worktree cleanup - while getRepoReady/setRepoReady and the health endpoint still report ready, freezing consumers on stale content.",
-    "High. Attacker-controlled repository content exhausts the volume or container memory (oversized blobs or history, deep or recursive submodules, accumulated stale worktrees that removeStaleWorktrees/cleanup fails to reclaim), causing denial of service for the pod or node.",
-    "High. In-repo files influence git-sync's effective git configuration for later syncs (SetupDefaultGitConfigs, SetupExtraGitConfigs, parseGitConfigs, safe.directory, sparse-checkout, worktree .git file), giving the attacker persistence across sync cycles or across restarts.",
-    "High. Checked-out repository content is published with unsafe modes or ownership (setuid/setgid bits, world-writable files, symlinks into host mounts, addUser/passwd handling), letting an unprivileged process in a co-mounted container escalate or tamper with synced data.",
-    "High. A sync of a moved tag, force-pushed branch, shallow fetch, or hash ref silently publishes content that does not match the requested revision or is never updated again, breaking the hash-in-symlink contract that consumers rely on for integrity.",
+    "Critical. LIQUIDATION READS A DIFFERENT POSITION THAN THE HEALTH CHECK WROTE. `liquidate` builds `position` from `get-liquidation-position` (enabled collateral plus ALL debt) and `pos-full` from `get-full-position`, then derives `mask` and the egroup from the first, while `borrow` and `collateral-remove` proved health against `get-position` (enabled only). Show a borrower that is healthy under the mask its own operations were validated against but liquidatable under the mask `liquidate` selects, and seize collateral from a solvent user. Impact: direct theft of user funds.",
+
+    "Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.",
+
+    "Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.",
+
+    "Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.",
+
+    "Critical. THE FIRST CALLER IN A BLOCK SETS THE INDEXES EVERYONE ELSE USES. `accrue-and-cache` keys `index-cache` on `stacks-block-time` and returns the cached record to every later caller in that block, while the vault's `accrue` is itself a no-op once `last-update` equals the current time. Show attacker A calling first to fix an index favourable to A and unfavourable to victim B, then B's liquidation, borrow or repay in the same block executing against A's snapshot rather than a freshly accrued one. Impact: direct theft of user funds.",
+
+    "Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.",
+
+    "Critical. `liquidate-multi` PRICES N BORROWERS AGAINST ONE SNAPSHOT. `call-liquidate` invokes `liquidate` with `none` for `price-feeds`, so the whole batch runs on whatever `last-update`, `index-cache` and price state the first item established, and each seizure mutates the vault state the next item is evaluated against. Show a batch ordering in which a later borrower is seized on stale or attacker-shaped state, or in which one borrower's socialization changes the health of the next borrower in the same list. Impact: direct theft of user funds.",
+
+    "Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.",
+
+    "Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.",
+
+    "Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.",
+
+    "Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.",
+
+    "Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.",
+
+    "High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.",
+
+    "Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.",
+
+    "Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.",
+
+    "High. SHARES MOVE FREELY WHILE THEY BACK SOMEONE ELSE'S POSITION. The vault `transfer` is a plain FT transfer, and pledged zft is held by .v0-market-vault. Establish exactly who holds pledged shares at every step of `supply-collateral-add`, `collateral-remove-redeem` and `liquidate-redeem`, and whether a third party can transfer shares into the market or market-vault, or out of a transient balance, in a way that changes what another user's position is worth or what it can withdraw. Impact: direct theft, or freezing of user funds.",
+
+    "Critical. `debt-add-scaled` STAMPS `last-borrow-block` ON THE ACCOUNT, NOT THE CALLER. The same-block liquidation guard behind `ERR-LIQUIDATION-BORROW-SAME-BLOCK` reads that stamp. Establish every path on which the market writes debt for an account other than `contract-caller`, and whether an attacker can cause a victim's stamp to be set or left stale - shielding a position that should be liquidated, or exposing one that should be protected. Impact: protocol insolvency, or direct theft from the borrower.",
+
+    "High. LIQUIDATION GRACE IS RESOLVED PER ASSET AND THE ATTACKER PICKS THE ASSET. `is-liquidation-paused` returns true if `pause-liquidation` is set, if the `GLOBAL-LIQUIDATION-GRACE-ID` entry is live, or if the entry for the asset id passed to it is live. Determine exactly which asset id `liquidate` supplies, and show a borrower composing a multi-asset position so that the checked asset is the one under grace while the rest of the position is freely underwater. Impact: protocol insolvency, with the loss borne by suppliers.",
+
+    "High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.",
+
+    "High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.",
+
+    "Critical. LIQUIDATION LEAVES THE VICTIM'S POSITION UNUSABLE. After a seizure and any socialization, check what remains on the borrower: `debt` rows for assets the fold did not reach, `collateral` rows at zero that `remove-user-collateral` did not `map-delete`, mask bits `mask-update` did not clear, and a `last-borrow-block` that never resets. Show a fully liquidated user who can no longer deposit, borrow, or withdraw because its own stale position state now fails a check, or resolves to an egroup that admits nothing. Impact: permanent freezing of the victim's funds.",
+
+    "Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.",
 ]
 
 
@@ -112,58 +148,121 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate exploit-focused audit and fuzzing questions for one git-sync target.
+    Generate cross-account exploit questions for one Zest v2 target.
 
     ```
     target_file format:
-    "'File Name: main.go -> Scope: Critical. ...'"
+    "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate exploit-focused security audit and fuzzing questions for this exact git-sync target:
+    Generate cross-account security audit questions for this exact Zest Protocol v2 target:
 
     {target_file}
 
     Project focus:
-    git-sync is a Kubernetes sidecar that clones a remote git repo into --root and publishes each sync via the --link symlink for another container to consume. Focus on fetch and checkout of untrusted repo content, submodule handling, symlink publish and cleanup, path handling under --root, git argv construction, credential/askpass/GitHub-App secret handling, git config setup, and exec/web hooks.
+    Zest v2 is a Clarity lending market on Stacks, and it is a SHARED POOL: almost every call one
+    user makes moves state other users depend on. `accrue` writes `index` and `lindex`, repricing
+    every borrower's debt and every holder's rehypothecated zToken collateral. `socialize-debt`
+    charges every supplier in a vault for one borrower's loss. The market's `index-cache`, keyed
+    on `stacks-block-time`, is primed by whoever calls first in a block and consumed by whoever
+    calls next. Utilization, `cap-supply`, `cap-debt` and available liquidity are global. `repay`
+    accepts `on-behalf-of` and writes a stranger's ledger by design. `liquidate`, `liquidate-multi`
+    and `liquidate-redeem` are sanctioned writes to another principal's position. Every position
+    evaluation runs through 64-element list folds ending in `unwrap-panic`.
+
+    EVERY question in this batch must have TWO named parties: attacker A and victim B, where B is
+    a different unprivileged principal. A question where the only party affected is the caller
+    itself is worthless here and must not be generated.
 
     Rules:
-    * Treat `File Name:` as the exact file/module.
+    * Treat `File Name:` as the exact contract.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Go symbols (func, method, struct, field, flag name) when possible.
-    * Attacker is unprivileged only: someone who can push a commit, branch, or tag to the synced repository, or otherwise control the repo content and refs git-sync fetches, plus any process that can reach git-sync's HTTP port or read the --root volume as a non-root user.
-    * Attacker is NOT the operator: they cannot set git-sync flags, env vars, secrets, mounts, or the Pod spec, and cannot exec into the container. Ignore malicious-operator, malicious-node, leaked-key, and social-engineering assumptions.
-    * Ignore test files, mocks, e2e scripts, docs, Makefile/Dockerfile/build tooling, generated files, and dependency-only issues.
-    * Ignore findings that need a non-default flag combination that no sane deployment would use; note the flags required when the path is opt-in but documented.
+    * Use exact Clarity symbols (define-public/private/read-only names, map, data-var, constant).
+    * Name victim B explicitly and state what B loses, what B can no longer do, and for how long.
+    * Both A and B are unprivileged: ordinary Stacks principals that fund a wallet, call any
+      public function, deploy their own Clarity contracts, pass them as `<ft-trait>`, supply their
+      own `price-feeds`, and choose amounts, recipients, `on-behalf-of` and ordering within a block.
+    * Neither is a DAO signer, executor, market impl, authorized contract, miner, oracle publisher
+      or node operator. Ignore malicious-miner, chain-reorg, MEV-only and social-engineering
+      assumptions.
+    * An ordinary shared-pool consequence is NOT a finding: a borrower legitimately raising the
+      rate everyone pays, a supplier legitimately withdrawing liquidity, a liquidator being paid
+      the configured penalty, or a price move affecting all positions. The finding must be a
+      defect in this code that lets A take from B or freeze B beyond what the design intends.
+    * PROGRAM EXCLUSIONS - a question landing in any of these wastes the whole batch:
+      - ANY logic related to flashloans is OUT OF SCOPE. A flashloan may be used as a source of
+        capital for a different attack, but never target `flashloan` itself, its fee, its
+        `flashloan-permissions` / `default-flashloan-permissions` whitelist, or `in-flashloan`.
+      - Liquidation of disabled collateral, and any other deliberate protocol safety design
+        decision, is OUT OF SCOPE.
+      - Anything requiring DAO compromise, or an accidental or incorrect registry update by the
+        DAO, is OUT OF SCOPE. Full DAO control of the asset and egroup registries is intended
+        design, and every egroup invariant needing global market and position knowledge is
+        verified off-chain by the DAO before approval. Assume both registries are correctly
+        configured, and target only the read and resolution paths an ordinary user call executes.
+      - Also excluded everywhere: leaked keys or credentials, privileged addresses, external
+        stablecoin depegs the attacker did not cause through a bug in this code, 51% and basic
+        economic or governance attacks, Sybil attacks, centralization risk, lack of liquidity,
+        incorrect data supplied by third-party oracles, best-practice notes, feature requests,
+        and test or configuration files.
+      - Oracle manipulation caused by a bug in THIS code remains fully in scope.
+    * IN-SCOPE IMPACTS - every question must land on one and name it:
+      Critical: direct theft of user funds at rest or in motion, other than unclaimed yield;
+      permanent freezing of funds; protocol insolvency.
+      High: theft of unclaimed yield or royalties; permanent freezing of unclaimed yield or
+      royalties; temporary freezing of funds.
+    * Every question must be a concrete real-world scenario A can execute on mainnet with its own
+      capital. No speculative unbounded-list, memory or resource-hygiene questions - though a
+      64-element list bound that a THIRD PARTY can push a victim's position past is in scope.
+    * Clarity `+` `-` `*` abort on overflow and underflow; an abort is a finding here when it
+      makes a VICTIM's position permanently or temporarily unevaluable - say which.
     * Generate 30 to 40 high-signal questions.
-    * At least 70% must target code execution from repo content, file writes outside --root, secret leakage, symlink/publish integrity, git argv or config injection, or permanent sync wedging.
-    * Every question must be testable by unit test, integration test, fuzz test, or a scripted local git server repo.
+    * At least 70% must land on a Critical impact rather than a High one.
+    * Every question must be testable by a Clarinet / vitest simnet test in `local-testing/tests`
+      using at least TWO accounts, on a local fork. Never propose testing on mainnet or a public testnet.
     * Avoid generic checklist questions and repeated root causes.
+    * Prefer questions where the proof is an ORDERING or an INTERFERENCE test: run B's transaction
+      alone, then run it after A's in the same block, and assert B's balance, health, or ability to
+      withdraw differs.
 
-    Core invariants:
-    * Content containment: fetched repo content is data only - it never executes code in the git-sync container and never causes writes, deletes, or links outside --root.
-    * Publish integrity: the --link symlink only ever points to a fully built worktree inside --root whose leaf name is the hash of the exact requested revision.
-    * Secret confinement: credentials, SSH keys, cookie files, and tokens stay inside git-sync's private state and never reach the published worktree, logs, error file, hook payloads, or an unintended host.
-    * Argv and config integrity: no repo-controlled string becomes a git option, a git config value, or a hook argument/env value that changes behavior.
-    * Liveness and honesty: no repo state can permanently stop syncing, exhaust the volume, or leave readiness and metrics claiming success while data is stale.
+    Known dead ends - do NOT generate questions about these:
+    * A user harming only its own position, with no second party.
+    * Normal shared-pool economics: rates moving, liquidity being used, penalties being paid.
+    * Governance setting a bad LTV, cap, fee, penalty, staleness or interest curve.
+    * An external oracle or token misbehaving on its own.
+    * Findings requiring the attacker to already be an authorized contract, market impl or signer.
+    * Anything only reproducible against mock tokens or the mock oracle.
+
+    Core cross-account invariants (each question must break one):
+    * NON-INTERFERENCE: no transaction by A changes the value B can withdraw, or B's health, other
+      than through the pool economics the protocol openly implements.
+    * SANCTIONED WRITES ONLY: the only writes to B's position by another principal are a correct
+      liquidation of a genuinely unhealthy position and a repayment that strictly reduces B's debt.
+    * SEIZURE BOUND: in any liquidation of B, collateral leaving B equals debt cleared for B scaled
+      by the penalty, and never more.
+    * ORDERING NEUTRALITY: the outcome of B's transaction does not depend on whether A transacted
+      first in the same block.
+    * EVALUABILITY: B's position can always be enumerated, priced, liquidated and withdrawn from,
+      whatever state any other principal has created.
 
     Each question must include:
-    1. target function/module;
-    2. attacker action;
-    3. preconditions;
-    4. call sequence;
-    5. invariant tested;
-    6. scoped impact;
-    7. proof idea.
+    1. target function/method;
+    2. attacker A's action (a concrete contract call with arguments);
+    3. victim B and B's starting position;
+    4. the interleaving or call sequence, with block boundaries marked;
+    5. the cross-account invariant broken;
+    6. what B loses and the in-scope impact class;
+    7. proof idea using two accounts.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Function: symbol_or_module] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/integration/fuzz PARAMETERS and assert CONTENT_CONTAINMENT, PUBLISH_INTEGRITY, SECRET_CONFINEMENT, ARGV_OR_CONFIG_INTEGRITY, or LIVENESS_AND_HONESTY.",
+    "[File: {target_file}] [Function: symbol_or_method] Can unprivileged attacker A, by ATTACKER_ACTION, cause victim B holding VICTIM_POSITION to suffer VICTIM_LOSS through CALL_SEQUENCE, violating INVARIANT, causing IMPACT_CLASS? Proof idea: two-account Clarinet simnet test PARAMETERS and assert NON_INTERFERENCE, SANCTIONED_WRITES_ONLY, SEIZURE_BOUND, ORDERING_NEUTRALITY, or EVALUABILITY.",
     ]
     """
     return prompt
@@ -171,7 +270,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a focused git-sync exploit-validation prompt.
+    Generate a cross-account Zest v2 exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -181,17 +280,23 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: they control repo content and refs that git-sync fetches, or can reach its HTTP port or read the --root volume as a non-root user. They do NOT control flags, env vars, secrets, mounts, or the Pod spec, and cannot exec into the container.
-- Reject malicious-operator, malicious-node, leaked-key, social-engineering, and misconfiguration-only paths.
-- Reject anything that depends only on test/mock/e2e/docs/build/generated files, dependency bugs alone, or best-practice cleanup without exploitable impact.
-- Focus on real compromise paths: code execution from repo content, writes or deletes outside --root, secret leakage, symlink/publish integrity failure, git argv or config injection, and permanent sync wedging or resource exhaustion.
+- The claim must involve TWO unprivileged principals: attacker A and a distinct victim B. If the only party affected is the caller, output no vulnerability.
+- Both are ordinary Stacks principals: fund a wallet, call any public function, deploy a Clarity contract and pass it as `<ft-trait>`, supply `price-feeds`, choose recipients, `on-behalf-of` and ordering. Neither is a DAO signer, executor, market impl, authorized contract, miner, oracle publisher or node operator.
+- Reject malicious-miner, chain-reorg, MEV-only and social-engineering paths.
+- Reject ordinary shared-pool economics: rates moving with utilization, liquidity being consumed, a liquidator earning the configured penalty, or a price move affecting everyone.
+- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
+- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
+- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
+- Reject Pyth and Wormhole internals, third-party token behaviour, `local-testing/**`, tests, mocks, deployment plans, docs, read-only aggregators, and dependency-only findings.
 
 ## Validate
-- Trace the exact reachable path from attacker-controlled repo content, ref name, or HTTP request into the affected function.
-- Check whether existing validation, flag defaults, git's own protections (fsck, protocol.allow, safe.directory), path handling in absPath, or error handling already stops it.
-- Name any non-default flags the path requires and confirm they are documented, supported settings.
-- Accept only code execution, file writes outside --root, secret disclosure, publishing wrong or partial content, or a persistent stall/exhaustion that a consumer would suffer.
-- Require exact file/function support and a reproducible unit/integration/fuzz PoC.
+- State who A is, who B is, and what B holds before A acts.
+- Trace A's exact call sequence and mark the block boundaries, then trace B's transaction against the state A left behind.
+- Identify every shared variable A wrote that B's transaction reads: `index`, `lindex`, `last-update`, `index-cache`, the oracle `last-update` map, `assets`, `principal-scaled`, `total-borrowed`, the zft supply, `nonce`, the position registry.
+- Compute B's outcome twice - with and without A's transaction - and show the difference numerically.
+- Check whether health checks, `min-collateral-expected`, caps, pause states, the same-block borrow guard, or Clarity's own aborts already prevent it.
+- Confirm the difference is a defect, not the pool economics the protocol openly implements.
+- Require exact file/function support and a reproducible two-account Clarinet / vitest simnet PoC on a local fork.
 
 ## Output
 If valid, output exactly:
@@ -200,22 +305,22 @@ If valid, output exactly:
 [Bug statement] - ([File: file_path])
 
 ### Summary
-[2-3 sentences]
+[2-3 sentences naming attacker, victim and loss]
 
 ### Finding Description
-[Code path, root cause, attacker inputs, exploit flow, and why checks fail]
+[Shared state written by A and read by B, the code path, root cause, exact call arguments, interleaving, and why existing checks fail]
 
 ### Impact Explanation
-[Concrete scoped impact and matching Kubernetes bounty impact class]
+[What B loses or can no longer do, for how long, and the exact in-scope severity category]
 
 ### Likelihood Explanation
-[Preconditions, required flags, feasibility, repeatability]
+[Preconditions, A's capital cost, whether A profits, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[Unit/integration test or local-git-server repro with expected assertions]
+[Two-account Clarinet simnet test plan: B alone, then B after A, asserting the difference]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -227,7 +332,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for git-sync security claims.
+    Generate a strict bounty-style validation prompt for Zest v2 cross-account claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -239,31 +344,35 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- Reject malicious-operator, malicious-node, leaked-key, dependency-only, docs/style, generated-file, build-tooling, test/mock/e2e-only, and purely theoretical issues.
-- Reject if the exploit needs control of git-sync flags, env vars, secrets, mounts, the Pod spec, or shell access to the container.
-- Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
-- A valid report must be triggerable by someone who only controls repo content/refs, the git-sync HTTP port, or non-root access to the --root volume, unless the claim proves escalation from such a position.
-- The final impact must map to an in-scope class: code execution in the git-sync or consumer container, file write/delete outside --root, disclosure of credentials or tokens, publishing content that does not match the requested revision, or persistent denial of sync with dishonest readiness.
-- Prefer #NoVulnerability over speculative reports.
+- A cross-account claim is only valid if the report names a distinct victim principal and shows that victim's outcome changing because of the attacker's transaction. Reject any claim whose only affected party is the caller.
+- Reject ordinary shared-pool economics: utilization moving rates, liquidity being consumed, a liquidator earning the configured penalty, or a market-wide price move.
+- Reject anything requiring a DAO signer, executor, market impl, authorized contract, miner, oracle publisher, node operator, or leaked keys.
+- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
+- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
+- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
+- Reject Pyth and Wormhole internals, third-party contracts, `local-testing/**`, tests, mocks, deployment plans, `.toml`, docs, read-only aggregator and dependency-only findings.
+- Reject if the bug was already fixed, acknowledged, or covered by the published Clarity Alliance, Greybeard or Asymmetric audits.
+- Reject any PoC requiring testing on mainnet or a public testnet; only local forks are permitted.
+- A PoC is mandatory for every severity. Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
 1. Exact in-scope file, function, and line/code references.
-2. Clear root cause and broken assumption about untrusted repo content.
-3. Reachable exploit path: preconditions -> attacker commit/ref/request -> trigger -> bad result.
-4. Existing checks, path handling, git defaults, and error handling reviewed and shown insufficient.
-5. Concrete in-scope impact with realistic likelihood and clearly stated flag requirements.
-6. Reproducible proof path: unit PoC, integration test, fuzz test, or exact steps against a local git server and a real git-sync run.
-7. No obvious rejection reason from SECURITY.md, known issues, privilege assumptions, or scope exclusions.
+2. Attacker and victim named as distinct unprivileged principals, with the victim's starting position stated.
+3. The shared state the attacker writes and the victim reads, identified precisely.
+4. Reachable path: victim's baseline outcome, attacker's transaction, victim's outcome after, with the difference quantified.
+5. Health checks, slippage bounds, caps, pause states, the same-block borrow guard and Clarity aborts reviewed and shown insufficient.
+6. The difference shown to be a defect rather than the intended pool economics, and the attacker shown to profit or the victim shown to be frozen.
+7. Reproducible proof: two-account Clarinet / vitest simnet test on a local fork.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- Can someone who only pushes to the repo, hits the HTTP port, or reads the volume trigger this without operator access?
-- Does the code actually behave as claimed on the current master branch and default flags?
-- Is the impact caused by this code, not by git itself, the operator's config, or a dependency alone?
-- Is the execution, file write, secret disclosure, wrong-content publish, or stall concrete, not hypothetical?
-- Would a Kubernetes security triager accept the proof?
-- What exact test would prove it?
+- Who is the victim, and would they accept that they lost something they should not have?
+- Does the victim's outcome actually depend on the attacker's transaction, or only on market conditions?
+- Is this a defect, or simply how a shared lending pool works?
+- Which in-scope impact class does it land on, exactly?
+- Does the attacker profit, or is this pure griefing, and does the program's impact list still cover it?
+- What exact two-account test would prove it?
 
 ## Output
 If valid, output exactly:
@@ -274,22 +383,22 @@ Audit Report
 [Clear vulnerability statement] - ([File: file_path])
 
 ## Summary
-[2-3 sentence summary of the bug and impact]
+[2-3 sentence summary naming attacker, victim and impact]
 
 ## Finding Description
-[Exact code path, root cause, exploit flow, and why existing checks fail]
+[Exact code path, shared state, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[Concrete in-scope impact, severity rationale, and bounty category]
+[What the victim loses, duration, and the exact in-scope category]
 
 ## Likelihood Explanation
-[Attacker capability, required conditions, feasibility, repeatability]
+[Attacker capability, preconditions, capital cost, profitability, repeatability]
 
 ## Recommendation
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or unit/integration test plan]
+[Two-account Clarinet simnet test plan on a local fork]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -301,7 +410,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for git-sync.
+    Generate a short cross-project cross-account analog scan prompt for Zest v2.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -309,15 +418,20 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Rules
-- Use in-scope production repo context only. Do not ask for code or claim missing files.
+- Use in-scope production repo context only (`mainnet/contracts/**`, excluding the dao directory). Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only unprivileged analogs reachable from untrusted repo content, ref names, submodules, symlink publish and cleanup, path handling under --root, git argv or config construction, credential/askpass/token handling, or exec/web hooks.
-- Reject malicious-operator, malicious-node, leaked-key, mocked-only paths, dependency-only bugs, and no-impact analogs.
+- Keep only analogs in which one unprivileged principal harms another: a write to a stranger's position, a shared index or cache primed by one caller and consumed by another, a socialization charged to all suppliers, a seizure exceeding its bound, a position made unevaluable by a third party, or an ordering dependence between two users in one block.
+- Reject any analog whose only affected party is the caller, and reject ordinary shared-pool economics.
+- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
+- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
+- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
+- Reject malicious-miner, chain-reorg, MEV-only, oracle-publisher, third-party token, `local-testing/**`, mock, deployment-plan, dependency-only and no-impact analogs.
 
 ## Validate
-- Map the bug class to the strongest reachable git-sync path from an attacker-pushed commit, ref, or an HTTP request to git-sync.
-- Prove root cause with exact file/function support and state any required flags.
-- Accept only code execution, file write or delete outside --root, credential or token disclosure, publishing wrong or partial content, or persistent sync denial.
+- Map the bug class to the strongest reachable Zest path and name attacker, victim and the shared state between them.
+- Compute the victim's outcome with and without the attacker's transaction.
+- Prove root cause with exact file/function support.
+- Name the in-scope impact class it lands on.
 
 ## Output (Strict)
 If valid analog exists, output:
