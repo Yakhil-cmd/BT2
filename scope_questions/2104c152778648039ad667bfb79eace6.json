@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_a11b7939-8d77-4081-b345-421668fede77?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_0ebfe288-8d69-49bf-be50-44f4c3c5ace7?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_e08c7801-82b0-4d00-a5d3-38f91e13696d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_e273c9c0-bb4c-4b5e-bf93-e4ad68d940a6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_63d90662-2d18-46a3-b012-faa384cc0550?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_19364a8c-a573-44a3-bf43-261bc173f27f?mode=deep",
+    "questions_generated": false
+  }
+]
