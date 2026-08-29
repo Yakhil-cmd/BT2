@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_37a0cfce-47e3-4f27-9e64-51076c48b6ce?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_cf2db0a9-fe16-4272-a325-eec47b7b223d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_2e8cceb7-c187-4270-9edd-59c4aad5ed39?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_6f860f1c-12bb-4902-8fda-e604fb39a8de?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_c6921bd2-7928-47d6-834e-8da5e362423a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_e5e9ded5-3068-4669-8473-d2298b5038d7?mode=deep",
+    "questions_generated": false
+  }
+]
