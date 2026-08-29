@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_0c004825-2b21-4c17-a2e7-1294535cdad9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_e92d996b-26bb-47c3-8045-ac19bf916d1c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_696feb6c-c098-462b-90c5-e4428977c4d3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_2890facb-b005-442a-a3cc-3a383d7e9f8f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_2e7e4f73-5be6-40ff-a12a-dd15849f8891?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_6b5e8c29-85a9-4ec7-aa13-3056e2a55462?mode=deep",
+    "questions_generated": false
+  }
+]
