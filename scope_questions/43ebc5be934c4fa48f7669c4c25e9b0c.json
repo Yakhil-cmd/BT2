@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_2893f4ef-5e05-4949-965a-1545756acf5a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_b72c984d-a96b-457c-bc10-491344b0309d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_820f8af4-b22a-46a7-9503-00d477183146?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_43555e01-c208-480d-9dc9-b97a86241f02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_4a0dd2b6-af91-45ed-97d7-f474d543c34a?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_cf8d551d-be89-4150-88cd-1d5272cc9767?mode=deep",
+    "questions_generated": false
+  }
+]
