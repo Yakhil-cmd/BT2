@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_2ecd986f-81f6-4f62-83ae-4a2fb258174c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_355b1d5f-7962-4cd7-bf2b-e8e5d82f3339?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_17589de3-c697-4438-9e6a-9cdb759545d9?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_1480875f-beeb-43b6-9edc-c24bed6c797f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_ae5cd8a4-81d2-4ba5-8b9c-509ac71c9ae1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_617de4ab-d9a9-4e02-9e47-648433bce148?mode=deep",
+    "questions_generated": false
+  }
+]
