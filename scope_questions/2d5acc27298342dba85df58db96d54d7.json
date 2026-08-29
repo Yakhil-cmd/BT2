@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_3f6f1af8-0e1c-469b-8b28-9634d1f228a8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_26e375f3-ef5c-4c3c-88bd-429afc9e1981?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_eadec6f7-f36b-423b-9193-094e86203b98?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_e23e00e9-85a7-49e9-b0fc-60eab6b25f14?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_a77a8b90-8141-485b-adc4-b03b66772cd1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_ded2ed10-379e-4a4f-bc89-64865b37f914?mode=deep",
+    "questions_generated": false
+  }
+]
