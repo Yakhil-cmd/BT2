@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_99409f3d-d8ce-4483-abc4-f3994adf95d6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_a4c9a748-0b4d-4aaf-90e6-91e06a98f4a3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_379d9a74-08b6-4ecb-b9f8-6160dde76824?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_2ab2cae4-8d60-48b8-b475-dd61dd6a84b8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_1a7ebe76-dbca-4825-ac11-1c002eada046?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_b58dd5e0-5d42-496e-807c-8a4a2a13340a?mode=deep",
+    "questions_generated": false
+  }
+]
