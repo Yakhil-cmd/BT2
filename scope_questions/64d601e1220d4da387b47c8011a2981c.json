@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_2264b9e2-cda7-4ca5-80be-62fff74b1895?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_f97dc0f3-a74c-45cc-aeb9-dc011ba90b02?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_f2cd7dfe-cac3-4ad0-8f5c-afedd2fe8b00?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_5f117669-cdf6-4b31-b0c1-f4d43039e24f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_f57ac313-8a78-4cea-8bb2-e86c39f4bfbe?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_bc8f1024-8b5a-4c59-ae6a-4d51db9e2309?mode=deep",
+    "questions_generated": false
+  }
+]
