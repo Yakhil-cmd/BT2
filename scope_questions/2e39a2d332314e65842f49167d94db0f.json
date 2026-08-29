@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_f30e3e4b-ebe0-4287-a909-2ddd8c819dc1?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_da39311d-2a34-4ed4-bcdd-1e80a29fdbb5?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_1f8a1688-85a0-4737-8937-9cf94f12753f?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_92e765b1-3e52-441d-af8a-bbbe5450f5d2?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_d01f47d6-4700-464d-be78-f9a49ce03494?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_8aaa0025-652c-4f50-80f1-f5f15f75a6bd?mode=deep",
+    "questions_generated": false
+  }
+]
