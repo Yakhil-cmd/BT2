@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_05d2da37-ea5f-402d-8bec-4ee5e7bbcc0c?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_408cf7b4-b981-49e7-9eb9-3cb0f4968868?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_d2390dd0-1113-4007-8be1-ec3893042801?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_f5db3987-3736-4546-b737-23187c8d6e91?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_b34820be-2495-47b9-a077-abd1dabd694d?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_78bbde40-fb3b-4930-87f5-26f079f4f317?mode=deep",
+    "questions_generated": false
+  }
+]
