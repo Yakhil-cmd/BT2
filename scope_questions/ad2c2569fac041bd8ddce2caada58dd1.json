@@ -1,0 +1,32 @@
+[
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_881f05f1-1262-4332-8e2d-8615296ab27e?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/market/v0-market-vault.clar -> Scope: Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_70dcce42-e74d-49ca-9f8b-145fdb337220?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-stx.clar -> Scope: Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_9876dde1-72f4-42a2-a6ae-32dea9b85ee3?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdc.clar -> Scope: Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_59d23322-7210-42e7-8127-5556245c83b6?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/vault/v0-vault-usdh.clar -> Scope: Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_1ac224ab-213c-4cdf-afe7-9e9a0ee777f8?mode=deep",
+    "questions_generated": false
+  },
+  {
+    "question": "'File Name: mainnet/contracts/registry/v0-assets.clar -> Scope: Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.'",
+    "url": "https://deepwiki.com/search/-generate-crossaccount-securit_3e2bdefb-2fbb-45c0-a75d-efc96db9dd7a?mode=deep",
+    "questions_generated": false
+  }
+]
