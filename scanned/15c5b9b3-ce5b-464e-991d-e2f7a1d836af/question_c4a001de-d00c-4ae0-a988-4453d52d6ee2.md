@@ -1,1 +1,0 @@
-must be enforced but is not. Scoped impact: full authorization bypass for the primary Shipit deployment. Proof idea: minitest configuring two orgs' secrets (mirroring `docs/setup.md`'s multi-org example), asserting cross-org membership escalation is possible today.
