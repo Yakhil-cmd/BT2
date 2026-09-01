@@ -1,0 +1,1 @@
+[File: app/controllers/concerns/shipit/authentication.rb#find_current_user -> Scope: Critical] Can an attacker who can write to `session[:user_id]` through ANY other unrelated engine mutable-session write path (e.g. a param reflected into session by a misconfigured host, out of scope) — SKIP as host-app dependent; not in-engine.
