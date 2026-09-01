@@ -1,0 +1,13 @@
+# Q1684: PUT /api/stacks/*stack_id/tasks/:id/abort: stack scope not enforced on ccmenu
+
+## Question
+On `PUT /api/stacks/*stack_id/tasks/:id/abort` (tasks#abort), can an unprivileged attacker exploit that `Api::CCMenuController#stack` uses `Stack.from_param!(params[:stack_id])` directly instead of the token-scoped `stacks` relation to act outside a token's stack scope or permission, breaking that a stack-scoped ccmenu token can only read the stack it is scoped to?
+
+## Target
+- File/function: app/controllers/shipit/api/base_controller.rb + app/controllers/shipit/api/*.rb
+- Entrypoint: PUT /api/stacks/*stack_id/tasks/:id/abort (tasks#abort)
+- Attacker controls: the token (basic-auth or ?token=), X-Shipit-User header, and stack_id path (`Api::CCMenuController#stack` uses `Stack.from_param!(params[:stack_id])` directly instead of the token-scoped `stacks` relation)
+- Exploit idea: `require_permission!` and the token-scoped `stacks` relation are the only guards; `Api::CCMenuController#stack` uses `Stack.from_param!(params[:stack_id])` directly instead of the token-scoped `stacks` relation, so a stack-scoped ccmenu token can only read the stack it is scoped to may fail on `PUT /api/stacks/*stack_id/tasks/:id/abort`
+- Invariant to test: `PUT /api/stacks/*stack_id/tasks/:id/abort` only succeeds for a token scoped to that stack with the required permission, attributed to the authenticated principal.
+- Expected Immunefi impact: High — Unauthenticated disclosure of stack state, task streams, or deploy output
+- Fast validation: minitest: call `PUT /api/stacks/*stack_id/tasks/:id/abort` with a mis-scoped/insufficient token (or via ?token= / X-Shipit-User), assert rejection.

@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'Zest-Protocol/zest-v2-contracts'
+SOURCE_REPO = 'Shopify/shipit-engine'
 # todo: the name of the repository
-REPO_NAME = 'zest-v2-contracts'
+REPO_NAME = 'shipit-engine'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -48,97 +48,148 @@ else:
 
 scope_files = [
     # =================================================================================
-    # LENS: THE CROSS-ACCOUNT SURFACE - one unprivileged user against another.
-    #
-    # Zest is a shared pool. Almost every call a user makes moves state that OTHER users
-    # depend on: `index` and `lindex` reprice everyone's debt and everyone's zToken
-    # collateral; `socialize-debt` charges every supplier in a vault for one borrower's
-    # loss; the per-block `index-cache` is primed by whoever calls first and consumed by
-    # whoever calls next; utilization, `cap-supply`, `cap-debt` and available liquidity are
-    # global; `repay` writes a stranger's ledger by design; and `liquidate` is a sanctioned
-    # write to another principal's position. This variant hunts ONLY for a scenario where
-    # attacker A profits at victim B's expense, or freezes B's funds - never a user harming
-    # only itself, and never a shared-pool effect that is simply how lending works.
-    #
-    # DELIBERATELY ABSENT: the whole dao directory (impacts needing DAO compromise are out
-    # of scope, and full DAO control of the registries is intended design), and all
-    # flashloan logic, which is out of scope protocol-wide.
+    # LENS: FROM A GITHUB PAYLOAD TO A SHELL ON THE DEPLOY HOST.
+    # Shipit is a deployment engine: it turns bytes it receives - a webhook body, a pull
+    # request branch, a label, a session cookie, a basic-auth token - into three things:
+    # a record it writes on some tenant's behalf, a deploy it triggers, and a command it
+    # runs with `GITHUB_TOKEN` in the process environment. Every file below sits on the
+    # path between attacker-reachable input and one of those three outcomes. A question
+    # belongs here only if it closes on a binding that must hold across that path.
     # =================================================================================
 
-    # -- Where one principal touches another --------------------------------------------
-    # `repay` with `on-behalf-of`; the entire `liquidate` / `liquidate-multi` /
-    # `liquidate-redeem` family; `socialize-debt-asset`; every `receiver`,
-    # `collateral-receiver` and `funds-receiver`; and the shared `index-cache` and
-    # `last-update` maps that one caller writes and the next caller reads.
-    "mainnet/contracts/market/v0-4-market.clar",
+    # -- The unauthenticated front door: webhook receipt and signature ----------------
+    # `WebhooksController` picks the verifying GitHub App from the UNSIGNED body
+    # (`repository.owner.login`), `GitHubApp#verify_webhook_signature` returns true when
+    # that org has no `webhook_secret`, and the handlers then act on `repository.full_name`
+    # from the same body.
+    "app/controllers/shipit/webhooks_controller.rb",
+    "lib/shipit/github_app.rb",
+    "lib/shipit.rb",
+    "config/routes.rb",
+    "lib/shipit/engine.rb",
 
-    # -- The shared ledger and the 64-element bounds every position must fit through -----
-    # `resolve-or-create` binding principals to ids; `mask-to-list-internal` and its
-    # `as-max-len? ... u64` with `unwrap-panic`; `last-borrow-block` written onto whichever
-    # account the market names, not necessarily the caller.
-    "mainnet/contracts/market/v0-market-vault.clar",
+    # -- What a webhook body is allowed to mutate -------------------------------------
+    # Handler dispatch, cross-repository writes (`StatusHandler` matches on bare SHA),
+    # team membership grants, and the review-stack lifecycle that provisions a stack from
+    # an arbitrary contributor's pull request branch.
+    "app/models/shipit/webhooks.rb",
+    "app/models/shipit/webhooks/handlers/handler.rb",
+    "app/models/shipit/webhooks/handlers/status_handler.rb",
+    "app/models/shipit/webhooks/handlers/push_handler.rb",
+    "app/models/shipit/webhooks/handlers/check_suite_handler.rb",
+    "app/models/shipit/webhooks/handlers/membership_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/review_stack_adapter.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/opened_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/reopened_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/closed_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/labeled_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/unlabeled_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/label_capturing_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/assigned_handler.rb",
+    "app/models/shipit/webhooks/handlers/pull_request/edited_handler.rb",
 
-    # -- Pool-wide state one user moves for everybody ------------------------------------
-    # `index`, `lindex`, `assets`, `principal-scaled`, `utilization`, `cap-supply`,
-    # `cap-debt`, `get-available-assets`, `socialize-debt`, and the freely transferable zft.
-    # v0-vault-usdc and v0-vault-usdh are the two 6-decimal stablecoin vaults - the pair most
-    # likely to sit in one egroup together, where one user's dust becomes another's rounding.
-    # v0-vault-stx is the native-STX path through .wstx.
-    "mainnet/contracts/vault/v0-vault-stx.clar",
-    "mainnet/contracts/vault/v0-vault-usdc.clar",
-    "mainnet/contracts/vault/v0-vault-usdh.clar",
+    # -- Who the request is, and what it is allowed to do -----------------------------
+    "app/controllers/concerns/shipit/authentication.rb",
+    "app/controllers/shipit/shipit_controller.rb",
+    "app/controllers/shipit/github_authentication_controller.rb",
+    "app/controllers/shipit/api/base_controller.rb",
+    "app/controllers/shipit/api/ccmenu_controller.rb",
+    "app/controllers/shipit/merge_status_controller.rb",
+    "app/controllers/shipit/ccmenu_url_controller.rb",
+    "app/controllers/shipit/status_controller.rb",
+    "app/models/shipit/api_client.rb",
+    "app/models/shipit/unlimited_api_client.rb",
+    "app/models/shipit/user.rb",
+    "app/models/shipit/anonymous_user.rb",
+    "app/models/shipit/command_line_user.rb",
+    "app/models/shipit/team.rb",
+    "app/models/shipit/membership.rb",
+    "lib/shipit/simple_message_verifier.rb",
+    "lib/shipit/same_site_cookie_middleware.rb",
 
-    # -- Read paths only: how a victim's position is enumerated and priced ----------------
-    # `status`, `status-multi`, `get-bitmap`, `mask-pos`, `subset`, `uint-to-list-u64`.
-    # Assume the DAO configured the registry correctly; the bug must be in the lookup.
-    "mainnet/contracts/registry/v0-assets.clar",
+    # -- Everything that ends in a process being spawned ------------------------------
+    # `Command#start` spawns `interpolated_arguments`; `unbundled_env` is the merge of
+    # `Shipit.env`, the stack env, the deploy spec's `machine_env`, the review stack's
+    # PR labels and the task's own env, and it carries `GITHUB_TOKEN` and `GIT_ASKPASS`.
+    "lib/shipit/command.rb",
+    "lib/shipit/commands.rb",
+    "lib/shipit/stack_commands.rb",
+    "lib/shipit/task_commands.rb",
+    "lib/shipit/deploy_commands.rb",
+    "lib/shipit/rollback_commands.rb",
+    "lib/shipit/review_stack_commands.rb",
+    "lib/shipit/environment_variables.rb",
+    "lib/shipit/flock.rb",
+    "app/models/shipit/deploy_spec.rb",
+    "app/models/shipit/deploy_spec/file_system.rb",
+    "app/models/shipit/task_definition.rb",
+    "app/models/shipit/variable_definition.rb",
+
+    # -- The records that decide what gets deployed, where, and as whom ---------------
+    "app/models/shipit/stack.rb",
+    "app/models/shipit/review_stack.rb",
+    "app/models/shipit/repository.rb",
+    "app/models/shipit/task.rb",
+    "app/models/shipit/deploy.rb",
+    "app/models/shipit/rollback.rb",
+    "app/models/shipit/commit.rb",
+    "app/models/shipit/merge_request.rb",
+    "app/models/shipit/pull_request.rb",
+    "app/models/shipit/review_stack_provisioning_queue.rb",
+    "app/models/shipit/hook.rb",
+    "app/models/shipit/delivery.rb",
+    "app/validators/ascii_only_validator.rb",
+    "app/validators/subset_validator.rb",
+
+    # -- Authenticated write surfaces and the jobs they enqueue -----------------------
+    "app/controllers/shipit/stacks_controller.rb",
+    "app/controllers/shipit/tasks_controller.rb",
+    "app/controllers/shipit/deploys_controller.rb",
+    "app/controllers/shipit/commits_controller.rb",
+    "app/controllers/shipit/api_clients_controller.rb",
+    "app/controllers/shipit/api/stacks_controller.rb",
+    "app/controllers/shipit/api/tasks_controller.rb",
+    "app/controllers/shipit/api/deploys_controller.rb",
+    "app/controllers/shipit/api/hooks_controller.rb",
+    "app/controllers/shipit/api/outputs_controller.rb",
+    "app/controllers/shipit/api/merge_requests_controller.rb",
+    "app/jobs/shipit/perform_task_job.rb",
+    "app/jobs/shipit/github_sync_job.rb",
+    "app/jobs/shipit/cache_deploy_spec_job.rb",
+    "app/jobs/shipit/continuous_delivery_job.rb",
+    "app/jobs/shipit/deliver_hook_job.rb",
+
+    # =================================================================================
+    # NOT IN THIS VARIANT:
+    # * test/** (including test/dummy), docs/**, examples/**, contrib/**, script/**,
+    #   vendor/**, db/migrate/**, app/assets/**, template.rb, Rakefile, *.gemspec,
+    #   Gemfile*, dev.yml, *.md - tests, fixtures, generated and configuration files.
+    # * app/helpers/**, app/serializers/** and app/views/** carry no authentication or
+    #   execution decision.
+    # =================================================================================
 ]
 
 
 target_scopes = [
-    "Critical. LIQUIDATION READS A DIFFERENT POSITION THAN THE HEALTH CHECK WROTE. `liquidate` builds `position` from `get-liquidation-position` (enabled collateral plus ALL debt) and `pos-full` from `get-full-position`, then derives `mask` and the egroup from the first, while `borrow` and `collateral-remove` proved health against `get-position` (enabled only). Show a borrower that is healthy under the mask its own operations were validated against but liquidatable under the mask `liquidate` selects, and seize collateral from a solvent user. Impact: direct theft of user funds.",
+    "Critical. THE BODY CHOOSES ITS OWN VERIFIER. `WebhooksController#verify_signature` reads `repository_owner` - `params.dig('repository','owner','login') || params.dig('organization','login')` - out of the UNSIGNED request body, hands it to `Shipit.github(organization:)`, and verifies the HMAC with that app's `webhook_secret`; `GitHubApp#verify_webhook_signature` returns `true` outright when that org's config has no `webhook_secret`, and only accepts `sha1`. `#create` then re-parses `request.raw_post` and every handler resolves its target from `repository.full_name` in the same body. Show a single POST /webhooks whose body names one organization for verification and another organization's repository for the handler, or names an org with no configured secret, and land it on a real stack. Binding: the organization whose `webhook_secret` verified the bytes == the organization owning the repository, stack, commit or team the handler writes.",
 
-    "Critical. NOTHING BOUNDS THE SEIZURE ON THE BORROWER'S SIDE. `min-collateral-expected` protects the liquidator only; the borrower's protection is entirely the arithmetic in `calc-final-liquidation-amounts` and `scale-debt-for-liquidation`, where collateral is re-scaled by `scaled-to-remove / scaled-debt` after debt was already re-derived from capped collateral by `calc-liq-debt-repay-real`. Show a two-step re-derivation that seizes more than `debt-to-repay` times (BPS + liq-penalty), and name the borrower as the victim. Impact: direct theft of user funds.",
+    "Critical. A STATUS WEBHOOK IS NOT SCOPED TO A REPOSITORY AT ALL. `StatusHandler#process` is `Commit.where(sha: params.sha).each { |c| c.create_status_from_github!(params) }` - it never consults `Handler#stacks`, `repository.full_name`, or the commit's own stack, so a `state: success` status for any SHA rewrites that commit's CI state in EVERY stack of EVERY repository Shipit knows. `Commit#deployable?` is `!locked? && (stack.ignore_ci? || (success? && !blocked?))`, which `Stack#trigger_continuous_delivery` and `MergeRequest#all_status_checks_passed?` consult. Show a status event the attacker can legitimately cause on a repository they control (same SHA, e.g. an empty-tree or copied commit) marking another tenant's commit green, and follow it through to a continuous deployment or a queued merge. Binding: the repository a `Status` is written against == the repository named in the payload that carried it.",
 
-    "Critical. ONE BORROWER'S LOSS IS CHARGED TO EVERY SUPPLIER. `socialize-debt-asset` writes `lindex` down for the whole vault, so an attacker can convert its own engineered bad debt into a haircut on strangers. Compute the cheapest position - dust collateral, an asset at a price edge, a partially seized multi-asset borrower - that reaches the socialization branch, and compare the attacker's cost against the value removed from other suppliers. Show the attacker profiting, whether by holding the other side, by redeeming first, or by liquidating the cascade it caused. Impact: direct theft of supplier funds.",
+    "Critical. AN OUTSIDE CONTRIBUTOR'S BRANCH BECOMES THE COMMAND LINE. `PullRequest::OpenedHandler#provision?` is `repository.review_stacks_enabled && repository.provisioning_behavior_allow_all? || (allow_with_label? && label) || (prevent_with_label? && !label)` - Ruby's `&&`/`||` precedence means the last two branches never test `review_stacks_enabled`. `ReviewStackAdapter#create!` then builds a `ReviewStack` with `branch: params.pull_request.head.ref` and `environment: \"pr#{params.number}\"`, queues it for provisioning, and `TaskCommands#perform` executes `@task.definition.steps` read by `DeploySpec::FileSystem` from `shipit.yml` in that branch's checkout via `Command#start` -> `PTY.spawn`. Show an unprivileged pull request causing a stack to be created and its attacker-authored steps to run, on a repository whose review stacks were never enabled. Binding: the ref whose `shipit.yml` supplies the executed steps == a ref an authorized Shipit user approved for that stack.",
 
-    "Critical. THE `lindex` WRITE-DOWN INSTANTLY REPRICES EVERY OTHER USER'S COLLATERAL. `resolve-ztoken` values rehypothecated collateral as price times the cached `lindex`, and `socialize-debt` lowers `lindex` for the entire vault in one call, with `socialize-debt-asset` immediately refreshing the market's `index-cache` with the new value. Show a single transaction that lowers `lindex` and, in the same block, liquidates third parties whose zToken collateral just lost value through no action of their own. Impact: direct theft of user funds.",
+    "Critical. PULL REQUEST LABELS ARE WRITTEN STRAIGHT INTO THE PROCESS ENVIRONMENT. `ReviewStack#env` merges `pull_request.labels.each_with_object({}) { |name, h| h[name.upcase] = 'true' }` into the stack env with no name whitelist; `TaskCommands#env` merges that with `Shipit.env`, `deploy_spec.machine_env` and `@task.env`, and `Command#unbundled_env` merges the result over `BASE_ENV` and the `PATH` Shipit builds, then passes it as the env hash to `PTY.spawn`. `PullRequest::LabelCapturingHandler#capture_labels` is what persists those names from the webhook body. Show a label name that becomes an interpreter- or loader-honoured variable (`PATH`, `GIT_ASKPASS`, `BUNDLE_PATH`, `RUBYOPT`, `LD_PRELOAD`, `GIT_SSH_COMMAND`) in the deploy process, and state what it executes. Binding: the set of keys in `Command#unbundled_env` == the set of variables the deploy spec's `machine_env` and `VariableDefinition` list permit.",
 
-    "Critical. THE FIRST CALLER IN A BLOCK SETS THE INDEXES EVERYONE ELSE USES. `accrue-and-cache` keys `index-cache` on `stacks-block-time` and returns the cached record to every later caller in that block, while the vault's `accrue` is itself a no-op once `last-update` equals the current time. Show attacker A calling first to fix an index favourable to A and unfavourable to victim B, then B's liquidation, borrow or repay in the same block executing against A's snapshot rather than a freshly accrued one. Impact: direct theft of user funds.",
+    "Critical. A STEP IS A STRING, AND THE ENVIRONMENT FILTER ONLY CHECKS NAMES. `Command#parse_arguments` keeps each configured step as one string and `PTY.spawn(env, *interpolated_arguments)` runs a single-element argv through a shell; `EnvironmentVariables#interpolate` substitutes `$WORD` with `Shellwords.escape(@env.fetch(...) { ENV[...] })`, falling back to Shipit's own process ENV when the key is absent; `EnvironmentVariables#permit` compares only `variable_definitions.map(&:name)` and never inspects values; `TaskDefinition#render_title` does `@title % env.symbolize_keys`. Show a task or deploy env value, an unset variable name, or a `machine_env` entry that changes what the shell executes or leaks a Shipit process secret into the task output. Binding: the bytes handed to the shell == the step string as written in the repository's `shipit.yml`, with every interpolated value escaped exactly once.",
 
-    "Critical. `socialize-debt-asset` REFRESHES THE SHARED CACHE MID-TRANSACTION. Inside the fold it calls `vault-socialize-debt`, then writes `(vault-accrue asset-id)` straight into `index-cache` for the current timestamp, replacing the record other in-flight computations in the same transaction already read. Show a multi-asset liquidation in which values computed before the refresh are combined with values computed after it, so the seizure, the repayment and the socialization are priced against three different index states. Impact: direct theft, or protocol insolvency.",
+    "Critical. A WEBHOOK GRANTS ACCESS TO SHIPIT ITSELF. `MembershipHandler#process` calls `Team.find_or_create_by!(github_id: params.team.id)` and `User.find_or_create_by_login!(params.member.login)` then `team.add_member(member)` on `action == 'added'`, taking the team id, slug, organization and member login entirely from the payload. `Authentication#force_github_authentication` renders a 403 unless `current_user.authorized?`, and `User#authorized?` is `Shipit.github_teams.empty? || teams.where(id: Shipit.github_teams.map(&:id)).exists?` - membership rows are the whole authorization model. Show a membership event, reaching `create` through the verification gap of scope 1 or through an organization the attacker can genuinely emit events for, that inserts the attacker's login into a team id listed in `Shipit.github_teams`. Binding: a `Membership` row for a team in `Shipit.github_teams` == a membership GitHub actually reports for that team.",
 
-    "Critical. `liquidate-multi` PRICES N BORROWERS AGAINST ONE SNAPSHOT. `call-liquidate` invokes `liquidate` with `none` for `price-feeds`, so the whole batch runs on whatever `last-update`, `index-cache` and price state the first item established, and each seizure mutates the vault state the next item is evaluated against. Show a batch ordering in which a later borrower is seized on stale or attacker-shaped state, or in which one borrower's socialization changes the health of the next borrower in the same list. Impact: direct theft of user funds.",
+    "Critical. THE SESSION IS BOUND AFTER THE FACT, NOT AT THE START. `GithubAuthenticationController#callback` is `ActionController::Base` with no `protect_from_forgery`, is routed for both GET and POST, sets `session[:user_id] = sign_in_github(auth)` and `session[:authenticated] = true` WITHOUT `reset_session`, and redirects to `request.env['omniauth.origin']` unfiltered. `Authentication#find_current_user` is `session[:user_id].present? && User.find_by(id: session[:user_id])`, and `User.find_or_create_from_github` keys on `github_user.id` while `find_or_create_by_login!` keys on a login string. Show a fixed or attacker-planted session surviving a victim's login, a callback completed cross-site, or an identity that resolves to a `User` row other than the GitHub account that authenticated - then use it against a stack the victim can deploy. Binding: the `User` row `session[:user_id]` names == the GitHub account that completed this OAuth exchange in this session.",
 
-    "Critical. `repay` WRITES A STRANGER'S LEDGER. With `on-behalf-of`, an attacker pays dust and `debt-remove-scaled` mutates the victim's `debt` map, its mask through `mask-update`, and its `last-update` through `refresh`. Show a one-unit unsolicited repayment used as a weapon: clearing a debt bit so the victim's mask resolves to a different egroup with different LTVs, removing the asset that made the victim's group favourable, or changing a timestamp another check depends on. Impact: direct theft, or temporary freezing of the victim's funds.",
+    "Critical. AN API TOKEN'S STACK SCOPE IS NOT ENFORCED EVERYWHERE IT MATTERS. `Api::BaseController#authenticate_api_client` joins basic-auth parts with `token = parts.select(&:present?).join('--')` before `ApiClient.authenticate`, which is a bare `SimpleMessageVerifier` over `Shipit.api_clients_secret` (falling back to `secret_key_base`) whose payload is a decimal id; `#stacks` narrows to `current_api_client.stack_id` but `Api::CCMenuController` overrides both `stack` (`Stack.from_param!`) and `authenticate_api_client` to accept `ApiClient.authenticate(params[:token])` from the query string, and `CCMenuUrlController#fetch` mints and hands out exactly such a URL. `#identify_user` trusts the `X-Shipit-User` header for attribution while `require_permission!` only ever checks the client. Show a token or a token-bearing URL that reads or acts on a stack outside its own scope, or an id/permission comparison that accepts a value it should not. Binding: the stack an API request touches ∈ the stacks `current_api_client.stack_id` authorises, and the permission checked == the permission the action needs.",
 
-    "Critical. AN UNSOLICITED WRITE CREATES A POSITION FOR A PRINCIPAL THAT NEVER ACTED. `resolve-or-create` allocates a user id whenever the market names an account, and `repay` accepts an arbitrary `on-behalf-of`. Establish whether an attacker can cause a registry entry, a mask, or a `last-borrow-block` to be created or set for a principal that has never used the protocol, and what that does the first time the victim actually deposits - a pre-existing mask, a consumed id, or an egroup resolution the victim never chose. Impact: permanent or temporary freezing of the victim's funds.",
+    "High. ROUTES THAT NEVER ASK WHO IS CALLING. `MergeStatusController` declares `skip_authentication only: %i[check show]`, sets `X-Frame-Options: ALLOWALL`, and derives its stack from `params[:referrer]` through `ReferrerParser`; `StatusController#version` is a bare `ActionController::Base`; `Pubsubstub::StreamAction` is mounted at `/events` inside the engine's own routes with no authentication concern in front of it; `SameSiteCookieMiddleware` rewrites every cookie to `SameSite=None` when enabled. Deploy and task output (`Task#chunk_output`, the `tail` and `.txt` renderings) is where `GITHUB_TOKEN`-bearing commands print. Show an unauthenticated or cross-origin request that reads stack state, a live task stream or deploy output, or that rides a victim's cookie into a state-changing merge-queue action. Binding: every response carrying stack, task or output data was produced after `force_github_authentication` and `authorized?` both passed for the caller.",
 
-    "Critical. THE 64-ELEMENT BOUND IS A WEAPON. `mask-to-list-internal`, `get-assets`, `price-multi-resolve`, `iter-price-multi`, `remove-if-match` and the lookup folds all end in `(unwrap-panic (as-max-len? ... u64))`, and every one of them is executed over a VICTIM's position during liquidation and during the victim's own withdrawals. Establish how many collateral and debt rows a position can accumulate, whether any of those rows can be created by someone other than the position owner, and whether a position can be pushed to a size where every evaluation of it aborts. Impact: permanent freezing of the victim's funds.",
-
-    "Critical. A RECIPIENT THAT REFUSES DELIVERY FREEZES THE OPERATION FOREVER. `send-tokens` in market-vault and `send-underlying` in the vaults push value to a principal chosen by the caller - `collateral-receiver`, `funds-receiver`, `recipient` - and a contract principal can make that transfer fail deterministically. Establish which of these are reachable with a victim, rather than the caller, as the destination, and whether any position can be put into a state where liquidation or withdrawal must route through an address that always aborts. Impact: permanent freezing of funds.",
-
-    "Critical. ONE BORROWER CAN LOCK EVERY SUPPLIER OUT. `redeem` requires `(>= available-assets inkind)` where `get-available-assets` reads real liquidity, while `system-borrow` only requires `(<= amount available-assets)` and `(<= (+ debt amount) CAP-DEBT)`. Show a borrow sized to leave the vault unable to service redemptions, held open at a cost the attacker can bear because the interest curve at that utilization is mispriced or because the position is self-funded, and quantify how long suppliers are locked out. Impact: temporary freezing of funds, escalating to permanent if the position cannot be liquidated.",
-
-    "High. THE SUPPLY AND DEBT CAPS ARE A DENIAL SURFACE. `deposit` checks `(<= (+ current-assets amount) CAP-SUPPLY)` against the `assets` var and `system-borrow` checks `(<= (+ debt amount) CAP-DEBT)` against `total-debt`, which grows with accrued interest alone. Show one principal occupying a cap so that no other user can deposit, or accrued interest alone tripping `CAP-DEBT` so that no borrower can refinance and no liquidator can act. Impact: temporary freezing of funds.",
-
-    "Critical. THE VICTIM'S COLLATERAL ROUNDS TO ZERO WHILE ITS DEBT ROUNDS UP. `calculate-asset-notional-value` normalizes collateral with round-down and debt with round-up, and `normalize` divides by `(pow u10 decimals)` after multiplying by price, so the protocol's USD unit is a whole dollar. For a victim holding a small position in an 8-decimal asset against a 6-decimal stablecoin debt, show the pair of amounts at which the position reads as under-collateralised while it is economically healthy, and liquidate it. Impact: direct theft of user funds.",
-
-    "Critical. THE UTILIZATION EVERY OTHER USER IS PRICED BY IS SET BY WHOEVER ACTS FIRST. `interest-rate` interpolates on `calc-utilization` of available liquidity against `total-debt`, and both move with any borrow, repay, deposit or redeem in the same block, while `accrue` only rewrites the indexes once per timestamp. Show a borrow-then-repay, or a deposit-then-redeem, that leaves the accrued index reflecting a utilization no borrower actually experienced, and identify who gained and who lost. Impact: theft of unclaimed yield.",
-
-    "High. SHARES MOVE FREELY WHILE THEY BACK SOMEONE ELSE'S POSITION. The vault `transfer` is a plain FT transfer, and pledged zft is held by .v0-market-vault. Establish exactly who holds pledged shares at every step of `supply-collateral-add`, `collateral-remove-redeem` and `liquidate-redeem`, and whether a third party can transfer shares into the market or market-vault, or out of a transient balance, in a way that changes what another user's position is worth or what it can withdraw. Impact: direct theft, or freezing of user funds.",
-
-    "Critical. `debt-add-scaled` STAMPS `last-borrow-block` ON THE ACCOUNT, NOT THE CALLER. The same-block liquidation guard behind `ERR-LIQUIDATION-BORROW-SAME-BLOCK` reads that stamp. Establish every path on which the market writes debt for an account other than `contract-caller`, and whether an attacker can cause a victim's stamp to be set or left stale - shielding a position that should be liquidated, or exposing one that should be protected. Impact: protocol insolvency, or direct theft from the borrower.",
-
-    "High. LIQUIDATION GRACE IS RESOLVED PER ASSET AND THE ATTACKER PICKS THE ASSET. `is-liquidation-paused` returns true if `pause-liquidation` is set, if the `GLOBAL-LIQUIDATION-GRACE-ID` entry is live, or if the entry for the asset id passed to it is live. Determine exactly which asset id `liquidate` supplies, and show a borrower composing a multi-asset position so that the checked asset is the one under grace while the rest of the position is freely underwater. Impact: protocol insolvency, with the loss borne by suppliers.",
-
-    "High. `status-multi` MISALIGNS ONE USER'S ASSETS WITH ANOTHER'S FLAGS. `(map unwrap-status ids mask)` is a two-list map where `mask` is `uint-to-list-u64` of the enabled bitmap, so an asset id is paired positionally with one element of that expansion rather than with the whole bitmap, and `map` truncates to the shorter list. Since `ids` comes from the position being evaluated, two different users produce two different pairings. Show a victim whose collateral or debt flags come out wrong purely because of which assets it holds. Impact: direct theft, or protocol insolvency.",
-
-    "High. THE VICTIM PAYS FOR SOMEONE ELSE'S ACCRUAL ROUNDING. `accrue` computes `debt-delta` from two round-down products of `principal-scaled`, takes `reserve-inc` from it, and mints treasury shares, while each borrower's own debt grows by a round-up against their scaled balance. Show that across many small borrowers the interest charged and the interest distributed do not agree, and that the residue is taken from, or given to, a party that did not earn it. Impact: theft of unclaimed yield.",
-
-    "Critical. LIQUIDATION LEAVES THE VICTIM'S POSITION UNUSABLE. After a seizure and any socialization, check what remains on the borrower: `debt` rows for assets the fold did not reach, `collateral` rows at zero that `remove-user-collateral` did not `map-delete`, mask bits `mask-update` did not clear, and a `last-borrow-block` that never resets. Show a fully liquidated user who can no longer deposit, borrow, or withdraw because its own stale position state now fails a check, or resolves to an egroup that admits nothing. Impact: permanent freezing of the victim's funds.",
-
-    "Critical. THE SHARED STATE NOBODY TREATED AS SHARED - what the design never modelled. Enumerate every data var and map that ONE user's call writes and ANOTHER user's call reads within the same block: `index`, `lindex`, `last-update` in each vault; `index-cache` and the oracle `last-update` map in the market; `assets`, `principal-scaled`, `total-borrowed`, the zft supply; `nonce` and the position `registry` in market-vault. For each, determine whether reordering the two users' transactions changes the second user's outcome, and find the one where the attacker chooses the ordering and the victim absorbs the difference. Prove it with two accounts in one simnet block and assert the victim's balance or health differs by ordering alone. Impact: name it as direct theft, permanent freezing, or insolvency.",
+    "Critical. THE MISSING BINDING - what nobody built. There is no notion of an untrusted contributor anywhere in this engine: no code path records WHICH organization's webhook secret authenticated a payload and re-checks it before writing, nothing marks a `ReviewStack` branch as fork-authored before its `shipit.yml` steps are executed, and no allowlist ever constrains the KEYS of the environment hash that reaches `PTY.spawn`. Identify the FIRST point at which GitHub-sourced or attacker-sourced bytes - a webhook field, a PR head ref, a label name, a commit message parsed by `User.find_or_create_author_from_github_commit`, a `Stack#base_path` segment - become a shell argument, an environment key, a deploy trigger or an authorization row without any authenticated actor in between. Prove it with one minitest integration test asserting both the value written and the value that authenticated it, and show that once they diverge nothing in the engine ever reconciles them.",
 ]
 
 
@@ -148,121 +199,129 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate cross-account exploit questions for one Zest v2 target.
+    Generate deployment-trust audit questions for one shipit-engine target.
 
     ```
     target_file format:
-    "'File Name: mainnet/contracts/market/v0-4-market.clar -> Scope: Critical. ...'"
+    "'File Name: app/models/shipit/webhooks/handlers/status_handler.rb -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate cross-account security audit questions for this exact Zest Protocol v2 target:
+    Generate authorization and code-execution security audit questions for this exact
+    shipit-engine target:
 
     {target_file}
 
     Project focus:
-    Zest v2 is a Clarity lending market on Stacks, and it is a SHARED POOL: almost every call one
-    user makes moves state other users depend on. `accrue` writes `index` and `lindex`, repricing
-    every borrower's debt and every holder's rehypothecated zToken collateral. `socialize-debt`
-    charges every supplier in a vault for one borrower's loss. The market's `index-cache`, keyed
-    on `stacks-block-time`, is primed by whoever calls first in a block and consumed by whoever
-    calls next. Utilization, `cap-supply`, `cap-debt` and available liquidity are global. `repay`
-    accepts `on-behalf-of` and writes a stranger's ledger by design. `liquidate`, `liquidate-multi`
-    and `liquidate-redeem` are sanctioned writes to another principal's position. Every position
-    evaluation runs through 64-element list folds ending in `unwrap-panic`.
-
-    EVERY question in this batch must have TWO named parties: attacker A and victim B, where B is
-    a different unprivileged principal. A question where the only party affected is the caller
-    itself is worthless here and must not be generated.
+    Shipit is a Rails engine that deploys code. Untrusted bytes enter through four doors:
+    a GitHub webhook (`WebhooksController` -> `Webhooks::Handlers::*`, where the UNSIGNED
+    body picks the app whose `webhook_secret` verifies it), a pull request an outside
+    contributor opens (branch name, labels, title, and the `shipit.yml` on that branch),
+    the browser session (`Authentication`, the OmniAuth callback), and the API
+    (`Api::BaseController`, basic-auth or a `token` query param). Those bytes end up in
+    three places: a database row written on some tenant's behalf, a deploy or merge that
+    ships code, and a `Command`/`PTY.spawn` whose environment carries `GITHUB_TOKEN` and
+    `GIT_ASKPASS`. Anything that crosses from one repository to another, or from a payload
+    to a process, without an authenticated actor in between is the bug.
 
     Rules:
-    * Treat `File Name:` as the exact contract.
+    * Treat `File Name:` as the exact file.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Clarity symbols (define-public/private/read-only names, map, data-var, constant).
-    * Name victim B explicitly and state what B loses, what B can no longer do, and for how long.
-    * Both A and B are unprivileged: ordinary Stacks principals that fund a wallet, call any
-      public function, deploy their own Clarity contracts, pass them as `<ft-trait>`, supply their
-      own `price-feeds`, and choose amounts, recipients, `on-behalf-of` and ordering within a block.
-    * Neither is a DAO signer, executor, market impl, authorized contract, miner, oracle publisher
-      or node operator. Ignore malicious-miner, chain-reorg, MEV-only and social-engineering
-      assumptions.
-    * An ordinary shared-pool consequence is NOT a finding: a borrower legitimately raising the
-      rate everyone pays, a supplier legitimately withdrawing liquidity, a liquidator being paid
-      the configured penalty, or a price move affecting all positions. The finding must be a
-      defect in this code that lets A take from B or freeze B beyond what the design intends.
+    * Use exact Ruby symbols (module, class, method, constant, ivar) as they appear in the file.
+    * EVERY question must close on a binding that must hold across a call. State it explicitly.
+      Narrative questions with no stated binding are rejected.
+    * Attacker is unprivileged only: any GitHub user who can open a pull request, push to a
+      fork, name a branch, add a label to their own PR, write a commit message, and emit
+      webhooks from a repository they own; and any internet user who can send HTTP requests
+      to the Shipit host, including POST /webhooks.
+    * Attacker is NOT a Shipit operator, not a member of any team in `Shipit.github_teams`,
+      not a repository maintainer, and never holds a Shipit session, an `ApiClient` token,
+      `api_clients_secret`, `secret_key_base`, a GitHub App private key, or a
+      `webhook_secret`. No TLS interception, no local or physical access, no compromised
+      dependency, no social engineering.
+    * Assume the host application mounts this engine as documented in README.md. The bug
+      must be in this engine's code, not in a hypothetical host app misusing it.
     * PROGRAM EXCLUSIONS - a question landing in any of these wastes the whole batch:
-      - ANY logic related to flashloans is OUT OF SCOPE. A flashloan may be used as a source of
-        capital for a different attack, but never target `flashloan` itself, its fee, its
-        `flashloan-permissions` / `default-flashloan-permissions` whitelist, or `in-flashloan`.
-      - Liquidation of disabled collateral, and any other deliberate protocol safety design
-        decision, is OUT OF SCOPE.
-      - Anything requiring DAO compromise, or an accidental or incorrect registry update by the
-        DAO, is OUT OF SCOPE. Full DAO control of the asset and egroup registries is intended
-        design, and every egroup invariant needing global market and position knowledge is
-        verified off-chain by the DAO before approval. Assume both registries are correctly
-        configured, and target only the read and resolution paths an ordinary user call executes.
-      - Also excluded everywhere: leaked keys or credentials, privileged addresses, external
-        stablecoin depegs the attacker did not cause through a bug in this code, 51% and basic
-        economic or governance attacks, Sybil attacks, centralization risk, lack of liquidity,
-        incorrect data supplied by third-party oracles, best-practice notes, feature requests,
-        and test or configuration files.
-      - Oracle manipulation caused by a bug in THIS code remains fully in scope.
+      - test/** (including test/dummy), docs/**, examples/**, contrib/**, script/**,
+        vendor/**, db/migrate/**, app/assets/**, template.rb, Rakefile, *.gemspec,
+        Gemfile*, dev.yml and *.md are OUT OF SCOPE.
+      - Denial of service, rate limiting, retry/backoff, job queue depth, resource
+        exhaustion, unbounded collections and memory hygiene are OUT OF SCOPE.
+      - Defects in third-party gems (octokit, faraday, omniauth, pubsubstub, state_machines,
+        explicit-parameters) with no exploit path through this engine's own code are OUT OF
+        SCOPE.
+      - Also excluded: leaked keys or credentials, privileged Shipit or GitHub accounts,
+        best-practice notes, feature requests, missing security headers on their own,
+        self-XSS, and theoretical findings with no demonstration.
+      - A weakness in this engine that manipulates a third-party gem into unsafe behaviour
+        remains fully in scope.
     * IN-SCOPE IMPACTS - every question must land on one and name it:
-      Critical: direct theft of user funds at rest or in motion, other than unclaimed yield;
-      permanent freezing of funds; protocol insolvency.
-      High: theft of unclaimed yield or royalties; permanent freezing of unclaimed yield or
-      royalties; temporary freezing of funds.
-    * Every question must be a concrete real-world scenario A can execute on mainnet with its own
-      capital. No speculative unbounded-list, memory or resource-hygiene questions - though a
-      64-element list bound that a THIRD PARTY can push a victim's position past is in scope.
-    * Clarity `+` `-` `*` abort on overflow and underflow; an abort is a finding here when it
-      makes a VICTIM's position permanently or temporarily unevaluable - say which.
+      Critical: remote code execution on the deploy host (an attacker-influenced string or
+      environment key reaching `Command#start` / `PTY.spawn`); authentication bypass (a
+      forged webhook, session or API token accepted); exfiltration of `GITHUB_TOKEN`, a
+      user's `github_access_token`, `api_clients_secret` or deploy-time secrets; a payload
+      for one repository mutating another repository's stack, commit, task or team;
+      unauthorized deploy, rollback or merge of attacker-controlled code.
+      High: escalation into `Shipit.github_teams` authorization; unauthenticated read of
+      stack state, task streams or deploy output; SSRF carrying the app's GitHub
+      credentials; session fixation or forced OAuth completion.
+    * Every question must be a concrete real-world scenario an unprivileged attacker can
+      execute against a running Shipit instance - a pull request they open, a webhook they
+      POST, a link they get an operator to visit, an HTTP request they send. No speculative
+      resource-hygiene, memory or unbounded-growth questions.
+    * A raised exception is a finding only when it lets an unauthenticated request through
+      or leaks a secret in its message or in task output - say which.
     * Generate 30 to 40 high-signal questions.
-    * At least 70% must land on a Critical impact rather than a High one.
-    * Every question must be testable by a Clarinet / vitest simnet test in `local-testing/tests`
-      using at least TWO accounts, on a local fork. Never propose testing on mainnet or a public testnet.
+    * At least 70% must land on a Critical impact - RCE, authentication bypass, credential
+      exfiltration, cross-repository writes or an unauthorized ship - rather than a High one.
+    * Every question must be testable by a minitest test under `test/` (ActiveSupport,
+      ActionDispatch::IntegrationTest, WebMock or Mocha) with no live GitHub and no network.
     * Avoid generic checklist questions and repeated root causes.
-    * Prefer questions where the proof is an ORDERING or an INTERFERENCE test: run B's transaction
-      alone, then run it after A's in the same block, and assert B's balance, health, or ability to
-      withdraw differs.
+    * Prefer questions that name TWO values that must be equal and ask whether they are: the
+      org that authenticated a payload and the org whose record is written, a ref approved
+      and a ref executed, an env key permitted and an env key spawned, a stack a token
+      authorises and a stack it touches, a GitHub identity and a `session[:user_id]`.
 
     Known dead ends - do NOT generate questions about these:
-    * A user harming only its own position, with no second party.
-    * Normal shared-pool economics: rates moving, liquidity being used, penalties being paid.
-    * Governance setting a bad LTV, cap, fee, penalty, staleness or interest curve.
-    * An external oracle or token misbehaving on its own.
-    * Findings requiring the attacker to already be an authorized contract, market impl or signer.
-    * Anything only reproducible against mock tokens or the mock oracle.
+    * Anything needing a Shipit session, an `ApiClient` token, `webhook_secret`,
+      `api_clients_secret`, a GitHub App private key, or repository write access.
+    * A CVE in a dependency with no reachable path through this engine.
+    * The host application choosing not to mount or protect the engine as documented.
+    * Findings only reproducible in test/dummy, fixtures or generated files.
+    * Timing, DoS, log volume, or an attacker affecting only their own repository with no
+      tenant boundary crossed, no command executed and no credential exposed.
 
-    Core cross-account invariants (each question must break one):
-    * NON-INTERFERENCE: no transaction by A changes the value B can withdraw, or B's health, other
-      than through the pool economics the protocol openly implements.
-    * SANCTIONED WRITES ONLY: the only writes to B's position by another principal are a correct
-      liquidation of a genuinely unhealthy position and a repayment that strictly reduces B's debt.
-    * SEIZURE BOUND: in any liquidation of B, collateral leaving B equals debt cleared for B scaled
-      by the penalty, and never more.
-    * ORDERING NEUTRALITY: the outcome of B's transaction does not depend on whether A transacted
-      first in the same block.
-    * EVALUABILITY: B's position can always be enumerated, priced, liquidated and withdrawn from,
-      whatever state any other principal has created.
+    Core bindings (each question must close on one):
+    * WEBHOOK PROVENANCE: the organization whose `webhook_secret` verified the body == the
+      organization owning the repository, stack, commit or team the handler mutates.
+    * REPOSITORY SCOPE: a row written from a payload belongs to the repository named in that
+      same verified payload.
+    * EXECUTION TRUST: every string reaching `Command#start` and every key in
+      `Command#unbundled_env` originates from a ref and a spec an authorized user approved.
+    * IDENTITY BINDING: `session[:user_id]`, `current_user` and the acting `ApiClient` ==
+      the GitHub identity and scope that authenticated this request.
+    * AUTHORIZATION TRUTH: `force_github_authentication`, `authorized?`, `require_permission!`,
+      the `stacks` scope and `deployable?` never answer permissively for a caller that lacks
+      the right.
 
     Each question must include:
-    1. target function/method;
-    2. attacker A's action (a concrete contract call with arguments);
-    3. victim B and B's starting position;
-    4. the interleaving or call sequence, with block boundaries marked;
-    5. the cross-account invariant broken;
-    6. what B loses and the in-scope impact class;
-    7. proof idea using two accounts.
+    1. target class/method;
+    2. attacker action (a concrete pull request, webhook POST, or HTTP request with body,
+       headers, params or cookies);
+    3. preconditions (Shipit configuration, repository settings, existing stack state);
+    4. call sequence through the engine;
+    5. the binding that breaks, written as an equality;
+    6. scoped impact and whose repository, credential or host is affected;
+    7. proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Function: symbol_or_method] Can unprivileged attacker A, by ATTACKER_ACTION, cause victim B holding VICTIM_POSITION to suffer VICTIM_LOSS through CALL_SEQUENCE, violating INVARIANT, causing IMPACT_CLASS? Proof idea: two-account Clarinet simnet test PARAMETERS and assert NON_INTERFERENCE, SANCTIONED_WRITES_ONLY, SEIZURE_BOUND, ORDERING_NEUTRALITY, or EVALUABILITY.",
+    "[File: {target_file}] [Method: class_or_method] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, breaking the binding BINDING_EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: minitest test PARAMETERS asserting WEBHOOK_PROVENANCE, REPOSITORY_SCOPE, EXECUTION_TRUST, IDENTITY_BINDING, or AUTHORIZATION_TRUTH.",
     ]
     """
     return prompt
@@ -270,7 +329,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a cross-account Zest v2 exploit-validation prompt.
+    Generate a deployment-trust shipit-engine exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -280,23 +339,20 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- The claim must involve TWO unprivileged principals: attacker A and a distinct victim B. If the only party affected is the caller, output no vulnerability.
-- Both are ordinary Stacks principals: fund a wallet, call any public function, deploy a Clarity contract and pass it as `<ft-trait>`, supply `price-feeds`, choose recipients, `on-behalf-of` and ordering. Neither is a DAO signer, executor, market impl, authorized contract, miner, oracle publisher or node operator.
-- Reject malicious-miner, chain-reorg, MEV-only and social-engineering paths.
-- Reject ordinary shared-pool economics: rates moving with utilization, liquidity being consumed, a liquidator earning the configured penalty, or a price move affecting everyone.
-- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
-- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
-- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
-- Reject Pyth and Wormhole internals, third-party token behaviour, `local-testing/**`, tests, mocks, deployment plans, docs, read-only aggregators, and dependency-only findings.
+- Attacker is unprivileged only: any GitHub user who can open a pull request, push to a fork, name a branch, label their own PR, write a commit message and emit webhooks from a repository they own; and any internet user who can send HTTP requests to the Shipit host, including POST /webhooks. They hold no Shipit session, no `ApiClient` token, no `api_clients_secret`, `secret_key_base`, GitHub App private key or `webhook_secret`, are not in `Shipit.github_teams`, and are not a repository maintainer or Shipit operator.
+- Reject TLS interception, local or physical access, compromised dependencies, social engineering, and any path requiring Shipit or GitHub secrets or privileged roles.
+- Assume the host app mounts this engine as documented. The bug must be in this engine's code.
+- OUT OF SCOPE, reject on sight: `test/**`, `docs/**`, `examples/**`, `contrib/**`, `script/**`, `vendor/**`, `db/migrate/**`, `app/assets/**`, `template.rb`, `Rakefile`, `*.gemspec`, `Gemfile*`, `*.md`; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party gem defects with no exploit path through this engine's own code; best-practice notes; feature requests; theoretical findings with no demonstration.
+- The impact must be one of: Critical - RCE on the deploy host via `Command`/`PTY.spawn`, authentication bypass (forged webhook, session or API token accepted), exfiltration of `GITHUB_TOKEN`, a user's `github_access_token`, `api_clients_secret` or deploy-time secrets, a payload for one repository mutating another's stack, commit, task or team, or an unauthorized deploy, rollback or merge; High - escalation into `Shipit.github_teams` authorization, unauthenticated read of stack state, task streams or deploy output, SSRF carrying the app's GitHub credentials, or session fixation / forced OAuth completion.
+- Focus on real impact: a command running that should not, a record written for a repository that did not authenticate it, or a credential leaving the host.
 
 ## Validate
-- State who A is, who B is, and what B holds before A acts.
-- Trace A's exact call sequence and mark the block boundaries, then trace B's transaction against the state A left behind.
-- Identify every shared variable A wrote that B's transaction reads: `index`, `lindex`, `last-update`, `index-cache`, the oracle `last-update` map, `assets`, `principal-scaled`, `total-borrowed`, the zft supply, `nonce`, the position registry.
-- Compute B's outcome twice - with and without A's transaction - and show the difference numerically.
-- Check whether health checks, `min-collateral-expected`, caps, pause states, the same-block borrow guard, or Clarity's own aborts already prevent it.
-- Confirm the difference is a defect, not the pool economics the protocol openly implements.
-- Require exact file/function support and a reproducible two-account Clarinet / vitest simnet PoC on a local fork.
+- Write the binding the question claims is broken as an explicit equality between two named values BEFORE tracing any code.
+- Trace the exact reachable path from the attacker's request or pull request, and record every read and write of `params`/`payload`, `repository_owner`, `repository.full_name`, `session[:user_id]`, `current_user`, `current_api_client.stack_id`, the stack `branch` and `environment`, `Command#args`, and the merged env hash reaching `PTY.spawn`.
+- Evaluate both sides of the equality before and after. If they still match, output no vulnerability.
+- Check whether `verify_signature`, `GitHubApp#verify_webhook_signature`, `drop_unhandled_event`, the `ExplicitParameters` schema, `force_github_authentication`, `User#authorized?`, `require_permission!`, the `stacks` scope, model validations (`Repository` format, `Stack` environment format, `subset`/`url` validators) or `EnvironmentVariables#permit` already prevent the divergence.
+- State what the attacker gains per request and whether it is repeatable against arbitrary repositories or stacks.
+- Require exact file/method support and a reproducible minitest proof under `test/` with no live GitHub.
 
 ## Output
 If valid, output exactly:
@@ -305,22 +361,22 @@ If valid, output exactly:
 [Bug statement] - ([File: file_path])
 
 ### Summary
-[2-3 sentences naming attacker, victim and loss]
+[2-3 sentences]
 
 ### Finding Description
-[Shared state written by A and read by B, the code path, root cause, exact call arguments, interleaving, and why existing checks fail]
+[The broken binding as an equality, the code path, root cause, the attacker's exact request or pull request, exploit flow, and why existing guards fail]
 
 ### Impact Explanation
-[What B loses or can no longer do, for how long, and the exact in-scope severity category]
+[What is executed, exposed or bypassed, which repository or party, repeatability, blast radius across tenants, matching severity category]
 
 ### Likelihood Explanation
-[Preconditions, A's capital cost, whether A profits, feasibility, repeatability]
+[Preconditions, Shipit and repository configuration required, attacker cost, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[Two-account Clarinet simnet test plan: B alone, then B after A, asserting the difference]
+[minitest test plan with the exact assertions on both sides of the binding]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -332,7 +388,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for Zest v2 cross-account claims.
+    Generate a strict bounty-style validation prompt for shipit-engine claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -344,35 +400,34 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- A cross-account claim is only valid if the report names a distinct victim principal and shows that victim's outcome changing because of the attacker's transaction. Reject any claim whose only affected party is the caller.
-- Reject ordinary shared-pool economics: utilization moving rates, liquidity being consumed, a liquidator earning the configured penalty, or a market-wide price move.
-- Reject anything requiring a DAO signer, executor, market impl, authorized contract, miner, oracle publisher, node operator, or leaked keys.
-- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
-- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
-- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
-- Reject Pyth and Wormhole internals, third-party contracts, `local-testing/**`, tests, mocks, deployment plans, `.toml`, docs, read-only aggregator and dependency-only findings.
-- Reject if the bug was already fixed, acknowledged, or covered by the published Clarity Alliance, Greybeard or Asymmetric audits.
-- Reject any PoC requiring testing on mainnet or a public testnet; only local forks are permitted.
-- A PoC is mandatory for every severity. Prefer #NoVulnerability over speculative reports.
+- A binding claim is only valid if the report states the broken equality between two named values and shows both sides concretely. Reject prose-only claims.
+- Reject anything requiring a Shipit session, an `ApiClient` token, `api_clients_secret`, `secret_key_base`, a GitHub App private key, a `webhook_secret`, membership in `Shipit.github_teams`, repository write access, operator access, TLS interception, local or physical access, a compromised dependency, or social engineering.
+- OUT OF SCOPE, reject on sight: `test/**`, `docs/**`, `examples/**`, `contrib/**`, `script/**`, `vendor/**`, `db/migrate/**`, `app/assets/**`, `template.rb`, `Rakefile`, `*.gemspec`, `Gemfile*`, `*.md`; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party gem defects with no exploit path through this engine's own code; best-practice notes; feature requests; missing security headers alone; self-XSS; theoretical findings with no demonstration.
+- The impact must be one of: Critical - RCE on the deploy host, authentication bypass, exfiltration of `GITHUB_TOKEN`, a user's `github_access_token` or `api_clients_secret`, cross-repository writes, or an unauthorized deploy, rollback or merge; High - escalation into `Shipit.github_teams` authorization, unauthenticated read of stack state, task streams or deploy output, SSRF with the app's GitHub credentials, or session fixation / forced OAuth completion.
+- Reject claims that depend on the host application not mounting or protecting the engine as documented.
+- Reject if the bug was already fixed, publicly disclosed, or is covered by an existing advisory or CHANGELOG entry for a supported version.
+- Reject a divergence with no repository, credential, execution or authentication boundary crossed.
+- A valid report must be triggerable by an unprivileged attacker against a Shipit instance running the current release.
+- A PoC is mandatory. Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
-1. Exact in-scope file, function, and line/code references.
-2. Attacker and victim named as distinct unprivileged principals, with the victim's starting position stated.
-3. The shared state the attacker writes and the victim reads, identified precisely.
-4. Reachable path: victim's baseline outcome, attacker's transaction, victim's outcome after, with the difference quantified.
-5. Health checks, slippage bounds, caps, pause states, the same-block borrow guard and Clarity aborts reviewed and shown insufficient.
-6. The difference shown to be a defect rather than the intended pool economics, and the attacker shown to profit or the victim shown to be frozen.
-7. Reproducible proof: two-account Clarinet / vitest simnet test on a local fork.
+1. Exact in-scope file, class/method, and line references.
+2. The binding written explicitly as an equality, with both sides shown before and after.
+3. Clear root cause: which unverified payload field, which unscoped query, which unfiltered environment key, which missing authorization check causes the divergence.
+4. Reachable exploit path: preconditions -> attacker pull request or HTTP request -> engine call sequence -> observed divergence.
+5. `verify_signature`, `GitHubApp#verify_webhook_signature`, the `ExplicitParameters` schemas, `force_github_authentication`, `User#authorized?`, `require_permission!`, the `stacks` scope, model validators and `EnvironmentVariables#permit` reviewed and shown insufficient.
+6. Impact stated concretely: which command runs, which credential or which repository's data, and whether it is repeatable against arbitrary tenants.
+7. Reproducible proof: minitest test with the asserted values.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- Who is the victim, and would they accept that they lost something they should not have?
-- Does the victim's outcome actually depend on the attacker's transaction, or only on market conditions?
-- Is this a defect, or simply how a shared lending pool works?
-- Which in-scope impact class does it land on, exactly?
-- Does the attacker profit, or is this pure griefing, and does the program's impact list still cover it?
-- What exact two-account test would prove it?
+- What exactly is the equality, and does it actually fail?
+- Can an ordinary GitHub user or internet user trigger it with no secret and no privileged role?
+- Is the flaw in this engine's code, not in a dependency or in a careless host app?
+- What executes, what credential leaks, or whose repository is written, and is it repeatable?
+- Would a Shopify HackerOne triager accept the exploit path?
+- What exact test would prove it?
 
 ## Output
 If valid, output exactly:
@@ -383,22 +438,22 @@ Audit Report
 [Clear vulnerability statement] - ([File: file_path])
 
 ## Summary
-[2-3 sentence summary naming attacker, victim and impact]
+[2-3 sentence summary of the broken binding and impact]
 
 ## Finding Description
-[Exact code path, shared state, root cause, exploit flow, and why existing checks fail]
+[Exact code path, the equality, root cause, exploit flow, and why existing guards fail]
 
 ## Impact Explanation
-[What the victim loses, duration, and the exact in-scope category]
+[What is executed, exposed or bypassed, affected party, repeatability, severity category]
 
 ## Likelihood Explanation
-[Attacker capability, preconditions, capital cost, profitability, repeatability]
+[Attacker capability, preconditions, configuration, cost, feasibility]
 
 ## Recommendation
 [Specific fix guidance]
 
 ## Proof of Concept
-[Two-account Clarinet simnet test plan on a local fork]
+[Minimal reproducible steps or minitest test plan with concrete assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -410,7 +465,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project cross-account analog scan prompt for Zest v2.
+    Generate a short cross-project analog scan prompt for shipit-engine.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -418,20 +473,18 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Rules
-- Use in-scope production repo context only (`mainnet/contracts/**`, excluding the dao directory). Do not ask for code or claim missing files.
+- Use in-scope engine context only (`app/**` excluding assets, views, helpers and serializers, plus `lib/shipit/**` and `config/routes.rb`). Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only analogs in which one unprivileged principal harms another: a write to a stranger's position, a shared index or cache primed by one caller and consumed by another, a socialization charged to all suppliers, a seizure exceeding its bound, a position made unevaluable by a third party, or an ordering dependence between two users in one block.
-- Reject any analog whose only affected party is the caller, and reject ordinary shared-pool economics.
-- OUT OF SCOPE, reject on sight: any flashloan logic (`flashloan`, its fee, its permission whitelist, `in-flashloan`) - though a flashloan used purely as capital for a different attack is fine; liquidation of disabled collateral and other deliberate safety design decisions; anything requiring DAO compromise or an accidental or incorrect DAO registry update, since full DAO control of the asset and egroup registries is intended design and egroup invariants needing global position knowledge are verified off-chain before approval.
-- Also reject: leaked keys, privileged addresses, external stablecoin depegs the attacker did not cause through a bug here, 51% / basic economic / governance attacks, Sybil, centralization risk, lack of liquidity, incorrect data supplied by third-party oracles, best-practice notes, feature requests, and test or configuration files. Oracle manipulation caused by a bug in THIS code stays in scope.
-- The impact must be one of: Critical - direct theft of user funds at rest or in motion other than unclaimed yield, permanent freezing of funds, or protocol insolvency; High - theft of unclaimed yield or royalties, permanent freezing of unclaimed yield or royalties, or temporary freezing of funds.
-- Reject malicious-miner, chain-reorg, MEV-only, oracle-publisher, third-party token, `local-testing/**`, mock, deployment-plan, dependency-only and no-impact analogs.
+- Keep only unprivileged-attacker analogs that break a deployment-trust binding: a payload field acted on but never covered by the verified signature, an organization that authenticated versus the repository that is written, a ref approved versus a ref whose `shipit.yml` steps execute, an environment key permitted versus an environment key spawned, a stack a token authorises versus a stack it touches, or a GitHub identity versus the `User` bound to the session.
+- OUT OF SCOPE, reject on sight: `test/**`, `docs/**`, `examples/**`, `contrib/**`, `script/**`, `vendor/**`, `db/migrate/**`, `app/assets/**`, `template.rb`, `*.gemspec`, `Gemfile*`, `*.md`; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party gem defects with no exploit path through this engine's own code; anything requiring a Shipit session, an `ApiClient` token, `webhook_secret`, `api_clients_secret`, a GitHub App private key, repository write access, a privileged account, TLS interception, local access or social engineering; best-practice notes; feature requests; theoretical findings.
+- The impact must be one of: Critical - RCE on the deploy host, authentication bypass, exfiltration of `GITHUB_TOKEN`, a user's `github_access_token` or `api_clients_secret`, cross-repository writes, or an unauthorized deploy, rollback or merge; High - escalation into `Shipit.github_teams` authorization, unauthenticated read of stack state, task streams or deploy output, SSRF with the app's GitHub credentials, or session fixation / forced OAuth completion.
+- Reject analogs that depend on the host application not mounting the engine as documented, and analogs with no credential, repository, execution or authentication boundary crossed.
 
 ## Validate
-- Map the bug class to the strongest reachable Zest path and name attacker, victim and the shared state between them.
-- Compute the victim's outcome with and without the attacker's transaction.
-- Prove root cause with exact file/function support.
-- Name the in-scope impact class it lands on.
+- Map the bug class to the strongest reachable path in this engine and state the binding it would break as an equality.
+- Evaluate both sides before and after the attacker's pull request or request sequence.
+- Prove root cause with exact file/method support.
+- Accept only concrete RCE, authentication bypass, credential exfiltration, cross-repository writes, an unauthorized ship, or SSRF carrying the app's GitHub credentials.
 
 ## Output (Strict)
 If valid analog exists, output:

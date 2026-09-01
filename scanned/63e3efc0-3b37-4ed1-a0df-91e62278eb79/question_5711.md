@@ -1,0 +1,13 @@
+# Q5711: Unprivileged PR provisions/executes a review stack (environment collision pr#N, allow_with_label)
+
+## Question
+With repository provisioning_behavior=`allow_with_label`, can an unprivileged contributor's pull request exploit that `environment: "pr#{params.number}"` is derived from the PR number with no uniqueness against existing stacks, so a `ReviewStack` is created and its fork-authored `shipit.yml` steps are later executed by `TaskCommands#perform` via `PTY.spawn`?
+
+## Target
+- File/function: app/models/shipit/webhooks/handlers/pull_request/opened_handler.rb + app/models/shipit/webhooks/handlers/pull_request/review_stack_adapter.rb
+- Entrypoint: Unprivileged pull_request webhook (opened/labeled/reopened) -> ReviewStackProvisioningQueue -> deploy
+- Attacker controls: the PR head ref, labels, number, and sender.login; attacker relies that `environment: "pr#{params.number}"` is derived from the PR number with no uniqueness against existing stacks
+- Exploit idea: the provisioning gate and stack attributes are computed from fork-controlled webhook fields, so the review-stack environment key cannot collide with or hijack another stack's records
+- Invariant to test: A review stack is provisioned and its steps executed only for a ref an authorized user approved on a repository with review stacks explicitly enabled.
+- Expected Immunefi impact: Critical — Remote Code Execution on the Shipit deploy host (HackerOne/Immunefi RCE class)
+- Fast validation: minitest: with the given provisioning_behavior, process an `opened` PR payload for an external head ref, assert a ReviewStack was created/queued and its checked-out shipit.yml steps would be spawned.
