@@ -1,1 +1,0 @@
-` rather than as a `Shellwords.escape`d single token. Proof idea: minitest constructing a `TaskDefinition` with one permitted variable, setting its runtime value to `; rm -rf /`, calling `filter_envs`, then `Command#interpolated_arguments`, asserting the final argv element is a single Shellwords-escaped token, not multiple shell-interpreted commands.
