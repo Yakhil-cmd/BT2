@@ -1,1 +1,0 @@
-[File: app/controllers/shipit/webhooks_controller.rb -> Scope: Critical] Given two configured GitHub organizations 'org-a' (real webhook_secret) and 'org-b' (real webhook_secret), can an attacker who owns a repo under 'org-a' compute a valid HMAC with org-a's secret if leaked... — excluded (needs secret). Skip.
