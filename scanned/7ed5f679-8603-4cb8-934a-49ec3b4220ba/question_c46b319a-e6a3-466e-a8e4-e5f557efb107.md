@@ -1,1 +1,0 @@
-[File: app/models/shipit/variable_definition.rb -> Scope: Critical.] Target: Shipit::VariableDefinition#default combined with Shipit::TaskDefinition#render_title. Attacker action: define a task variable in shipit.yml whose `name` collides with a Ruby String#% format directive misuse is out of scope, but define default containing shell metacharacters, e.g. `default:
