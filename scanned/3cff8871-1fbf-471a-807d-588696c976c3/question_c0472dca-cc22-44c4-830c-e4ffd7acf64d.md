@@ -1,0 +1,1 @@
+`, asserting `TaskCommands.new(task).env['EMAIL']` contains the raw unescaped payload and that `Command.new('echo $EMAIL', env: {'EMAIL' => payload}, chdir:'.').interpolated_arguments` neutralizes it — flag if it does not.]

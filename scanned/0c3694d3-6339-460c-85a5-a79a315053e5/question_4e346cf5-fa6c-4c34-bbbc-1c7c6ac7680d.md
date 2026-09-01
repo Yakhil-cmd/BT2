@@ -1,0 +1,1 @@
+is FALSE. Scoped impact: lowers the bar for the RCE chains above (removes any casing-based mitigation the operator might assume protects them). Proof idea: minitest asserting `ReviewStack.new(pull_request: build_pull_request(labels: ['Ld_Preload'])).env['LD_PRELOAD'] == 'true'`.

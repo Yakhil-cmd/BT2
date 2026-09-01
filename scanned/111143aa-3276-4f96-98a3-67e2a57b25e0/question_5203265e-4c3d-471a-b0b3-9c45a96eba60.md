@@ -1,0 +1,1 @@
+Given two unrelated `Shipit::Repository` records R1 (attacker-owned, webhook_secret W1) and R2 (victim, webhook_secret W2) each with a `Stack` containing a `Commit` with identical `sha`, can the attacker who only knows W1 send `POST /webhooks` with header `X-Hub-Signature` valid for W1 and body `{

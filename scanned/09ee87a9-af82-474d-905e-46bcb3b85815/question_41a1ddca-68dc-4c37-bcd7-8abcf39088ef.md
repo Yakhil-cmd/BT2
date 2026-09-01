@@ -1,0 +1,1 @@
+[File: lib/shipit/github_app.rb -> Scope: Critical] `Api::BaseController#authenticate_api_client` builds `token = parts.select(&:present?).join('--')` from HTTP Basic Auth username/password before calling `ApiClient.authenticate`. Attacker action: attacker sends `Authorization: Basic base64(
