@@ -1,1 +1,0 @@
-[Target: Shipit::CCMenuUrlController#client, #fetch] Attacker action: this endpoint requires session[:user_id] (force_github_authentication applies via ShipitController), so an unprivileged attacker without a session cannot reach it directly - however, an authenticated-but-unauthorized-team user is excluded by rules too. Skip as out of scope; N/A.
