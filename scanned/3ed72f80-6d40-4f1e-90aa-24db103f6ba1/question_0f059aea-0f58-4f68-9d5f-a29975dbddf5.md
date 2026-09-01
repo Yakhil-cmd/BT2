@@ -1,1 +1,0 @@
-Target: `Shipit::Api::BaseController#authenticate_api_client`, specifically `token = parts.select(&:present?).join('--')`. Attacker action: an unprivileged internet user sends `GET /api` (or any API endpoint) with HTTP Basic-Auth `Authorization: Basic base64(
