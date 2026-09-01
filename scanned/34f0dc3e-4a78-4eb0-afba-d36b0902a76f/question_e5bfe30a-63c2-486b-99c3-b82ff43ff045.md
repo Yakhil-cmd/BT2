@@ -1,0 +1,1 @@
+; it does not, so the equality `authorized_stack_id == requested_stack_id` is never evaluated. Impact: cross-tenant unauthenticated read of stack B's deploy status/output via a token minted only for stack A. Proof idea: minitest asserting `CCMenuController#show` response body contains stack B data when authenticated with stack-A-scoped token.

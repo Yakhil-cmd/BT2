@@ -1,0 +1,1 @@
+[File: app/controllers/shipit/api/base_controller.rb -> Scope: Critical] Does `authenticate_api_client`'s block `token = parts.select(&:present?).join('--')` let an attacker who only knows a CCMenu-token's numeric id (visible as the token's own decimal prefix, e.g. from a partially-masked display) submit `Authorization: Basic base64(

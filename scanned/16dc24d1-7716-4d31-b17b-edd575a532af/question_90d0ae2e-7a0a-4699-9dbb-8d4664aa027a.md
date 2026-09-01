@@ -1,0 +1,1 @@
+)`. Preconditions: none beyond default config. Call sequence: `BasicAuth.authenticate(request) { |*parts| token = parts.select(&:present?).join('--'); ApiClient.authenticate(token) }` strips blank parts before joining, so `[

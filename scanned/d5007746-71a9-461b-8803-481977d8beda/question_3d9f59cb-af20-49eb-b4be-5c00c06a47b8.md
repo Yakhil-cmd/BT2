@@ -1,0 +1,1 @@
+[File: app/models/shipit/webhooks/handlers/status_handler.rb -> Scope: Critical] Does `Shipit.github(organization: repository_owner)` (webhooks_controller.rb:25) perform a case-sensitive or case-insensitive lookup of the configured org keyed by login, and can an attacker exploit a case/whitespace mismatch (e.g. `Repository.owner.login` = `

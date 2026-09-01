@@ -1,0 +1,1 @@
+[File: lib/shipit/rollback_commands.rb -> Scope: Critical] Target: `Shipit::Api::BaseController#authenticate_api_client` and `ApiClient.authenticate`. Attacker action: attacker sends `Authorization: Basic base64(

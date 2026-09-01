@@ -1,0 +1,1 @@
+[Target: app/controllers/shipit/github_authentication_controller.rb#callback] Can an attacker abuse the redirect-then-cookie ordering (headers containing `Set-Cookie` are computed by `SameSiteCookieMiddleware#call` *after* `@app.call(env)`, i.e., after `callback` finishes and issues its 302) to inject or duplicate `Set-Cookie` entries via a crafted `COOKIE_SEPARATOR` (

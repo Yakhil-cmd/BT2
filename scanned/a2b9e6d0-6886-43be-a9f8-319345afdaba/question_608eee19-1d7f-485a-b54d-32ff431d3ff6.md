@@ -1,0 +1,1 @@
+[File: 'app/models/shipit/webhooks/handlers/membership_handler.rb' -> Scope: Critical] `params.team.id` is declared `Integer` in the `params do ... end` schema — does `explicit-parameters`' coercion of a webhook-supplied numeric string/float (e.g. `

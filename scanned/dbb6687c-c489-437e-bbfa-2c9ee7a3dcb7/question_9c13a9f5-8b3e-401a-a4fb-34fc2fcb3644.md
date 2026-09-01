@@ -1,0 +1,1 @@
+Target: Api::DeploysController#create params.env (app/controllers/shipit/api/deploys_controller.rb:12-27) merged into the deploy's environment, ultimately reaching Command#unbundled_env's @env.stringify_keys merge (lib/shipit/command.rb:103-105). Attacker action: using any deploy:stack-permitted token regardless of stack scope, POST /stacks/:id/deploys with env: {

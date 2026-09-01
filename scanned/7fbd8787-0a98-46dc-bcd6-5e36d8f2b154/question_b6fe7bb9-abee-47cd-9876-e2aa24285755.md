@@ -1,0 +1,1 @@
+) returns nil for a real id and that timing/behavior does not leak whether the id portion is valid before signature check (functional test only, no timing measurement, per DoS/timing exclusion — assert only correctness, not timing).
