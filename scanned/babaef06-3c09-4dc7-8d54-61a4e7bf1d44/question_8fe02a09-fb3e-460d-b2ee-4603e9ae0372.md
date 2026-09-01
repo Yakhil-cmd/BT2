@@ -1,1 +1,0 @@
-[File: app/models/shipit/deploy_spec/file_system.rb -> Scope: Critical] [Method: Api::BaseController#authenticate_api_client] Can an unprivileged attacker exploit inconsistent case-handling between Basic-Auth username/password parts and the verifier by sending mixed-case or whitespace-padded token strings, relying on `parts.select(&:present?).join('--')` to normalize `[
