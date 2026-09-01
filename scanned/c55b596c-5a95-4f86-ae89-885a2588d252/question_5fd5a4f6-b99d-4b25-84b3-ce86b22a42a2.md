@@ -1,1 +1,0 @@
-[File: 'File Name: app/models/shipit/user.rb -> Scope: High. THE BODY CHOOSES ITS OWN VERIFIER.'] [Method: Shipit::WebhooksController#verify_signature error-message leakage] When `Shipit::GithubOrganizationUnknown` is rescued and `Rails.logger.warn` logs `
