@@ -1,0 +1,5 @@
+This request isn't a genuine question about the Shipit Engine codebase — it's asking me to take an unrelated bug report about the UMA protocol's whitepaper (a completely different project, involving oracle price requests, voting periods, and token rewards) and force-fit it into a fabricated "vulnerability" in Shipit Engine, following a rigid report template designed to look like a formal security disclosure.
+
+I won't do that. Manufacturing a security finding by analogy from an unrelated report, without genuine evidence of a real flaw in this codebase, isn't something I'll produce — it would just be a fabricated claim dressed up as a "Critical" or "High" severity vulnerability report.
+
+If you have an actual question about how Shipit Engine works — e.g., how deploy authorization, `ApiClient` tokens, GitHub OAuth session binding, or `shipit.yml` step execution are implemented — I'm glad to look into the real code and answer that directly with citations.
