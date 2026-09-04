@@ -1,0 +1,1 @@
+[File: 'stackslib/src/chainstate/stacks/boot/pox-5.clar' -> Scope: Critical.] Can an unprivileged attacker call `register-for-bond` through their own `signer-manager-trait` contract, supplying a `signer-key` whose `signer-key-grants{signer-key, signer-manager}` entry was granted for `auth-id=1` under domain `POX_5_SIGNER_DOMAIN` version `

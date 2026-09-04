@@ -1,0 +1,1 @@
+[File: stackslib/src/chainstate/burn/operations/stack_stx.rs -> Scope: Critical] Can an attacker exploit that `StackStxOp::parse_data`'s `max_amount` field is only parsed when `data.len() >= 66` (line 210-215), so a payload of exactly 65 bytes yields `max_amount: None`, which then fails `collect_pox_4_stacking_args`'s `None => return Err(
