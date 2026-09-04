@@ -1,0 +1,13 @@
+# Q3413: set_pox_5_pause_admin: signer-set linked list counts a stake in two cycles
+
+## Question
+Can an unprivileged attacker reach `set_pox_5_pause_admin` (in `stackslib/src/chainstate/nakamoto/signer_set.rs`) via a pox-5 `contract-call?` (stake / register-for-bond / unstake / unstake-sbtc / stake-update / claim-rewards) or a burnchain stacking op the attacker crafts, such that the `signer-set-ll` insertion double-lists a staker, breaking the invariant that a stake counted per cycle == once — leading to double-counted weight?
+
+## Target
+- File/function: `stackslib/src/chainstate/nakamoto/signer_set.rs` -> `set_pox_5_pause_admin`
+- Entrypoint: a pox-5 `contract-call?` (stake / register-for-bond / unstake / unstake-sbtc / stake-update / claim-rewards) or a burnchain stacking op the attacker crafts
+- Attacker controls: every call argument, the attacker-deployed signer-manager contract, the L1 Bitcoin lockup proof, the sBTC amount, and the ordering of their own transactions
+- Exploit idea: the `signer-set-ll` insertion double-lists a staker
+- Invariant to test: a stake counted per cycle == once
+- Expected Immunefi impact: High - double-counted weight
+- Fast validation: test an insertion across a cycle edge

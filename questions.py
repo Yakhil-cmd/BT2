@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'Shopify/shipit-engine'
+SOURCE_REPO = 'stacks-network/stacks-core'
 # todo: the name of the repository
-REPO_NAME = 'shipit-engine'
+REPO_NAME = 'stacks-core'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -46,150 +46,518 @@ else:
     else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
+
 scope_files = [
     # =================================================================================
-    # LENS: FROM A GITHUB PAYLOAD TO A SHELL ON THE DEPLOY HOST.
-    # Shipit is a deployment engine: it turns bytes it receives - a webhook body, a pull
-    # request branch, a label, a session cookie, a basic-auth token - into three things:
-    # a record it writes on some tenant's behalf, a deploy it triggers, and a command it
-    # runs with `GITHUB_TOKEN` in the process environment. Every file below sits on the
-    # path between attacker-reachable input and one of those three outcomes. A question
-    # belongs here only if it closes on a binding that must hold across that path.
+    # LENS: STACKING, BONDS AND REWARD ACCOUNTING (POX-5 / sBTC).
+    # Stacks locks STX and sBTC to secure the chain and pays sBTC rewards. The files
+    # below sit on the path from an attacker-supplied contract-call - stake,
+    # register-for-bond, unstake, claim-rewards, the signer-manager trait, an L1 Bitcoin
+    # lockup proof - to one of three decisions: does locked STX/sBTC equal what the
+    # staker committed, do rewards paid equal rewards earned, and can locked value be
+    # unlocked exactly once by exactly its owner. A question belongs here only if it can
+    # be closed by an equality between value committed and value moved or unlocked.
     # =================================================================================
+    # -- The staking contract: every public entry point --------------------------------
+    # pox-5 owns stake / register-for-bond / unstake / unstake-sbtc / stake-update /
+    # claim-rewards, the reentrancy guard around the signer-manager trait, the reward
+    # settlement math, and the Clarity-Bitcoin L1 lockup proof verification.
 
-    # -- The unauthenticated front door: webhook receipt and signature ----------------
-    # `WebhooksController` picks the verifying GitHub App from the UNSIGNED body
-    # (`repository.owner.login`), `GitHubApp#verify_webhook_signature` returns true when
-    # that org has no `webhook_secret`, and the handlers then act on `repository.full_name`
-    # from the same body.
-    "app/controllers/shipit/webhooks_controller.rb",
-    "lib/shipit/github_app.rb",
-    "lib/shipit.rb",
-    "config/routes.rb",
-    "lib/shipit/engine.rb",
+    # -- clarity-types: Clarity value, type and effect model -------------------------------
+    "clarity-types/src/effects/asset_map.rs",
+    "clarity-types/src/effects/mod.rs",
+    "clarity-types/src/errors/mod.rs",
+    "clarity-types/src/lib.rs",
+    "clarity-types/src/representations.rs",
+    "clarity-types/src/types/mod.rs",
+    "clarity-types/src/types/serialization.rs",
+    "clarity-types/src/types/signatures.rs",
+    "clarity-types/src/version.rs",
 
-    # -- What a webhook body is allowed to mutate -------------------------------------
-    # Handler dispatch, cross-repository writes (`StatusHandler` matches on bare SHA),
-    # team membership grants, and the review-stack lifecycle that provisions a stack from
-    # an arbitrary contributor's pull request branch.
-    "app/models/shipit/webhooks.rb",
-    "app/models/shipit/webhooks/handlers/handler.rb",
-    "app/models/shipit/webhooks/handlers/status_handler.rb",
-    "app/models/shipit/webhooks/handlers/push_handler.rb",
-    "app/models/shipit/webhooks/handlers/check_suite_handler.rb",
-    "app/models/shipit/webhooks/handlers/membership_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/review_stack_adapter.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/opened_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/reopened_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/closed_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/labeled_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/unlabeled_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/label_capturing_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/assigned_handler.rb",
-    "app/models/shipit/webhooks/handlers/pull_request/edited_handler.rb",
+    # -- clarity: the Clarity language, analyser, interpreter, costs and database ----------
+    "clarity/src/libclarity.rs",
+    "clarity/src/vm/analysis/analysis_db.rs",
+    "clarity/src/vm/analysis/arithmetic_checker/mod.rs",
+    "clarity/src/vm/analysis/contract_interface_builder/mod.rs",
+    "clarity/src/vm/analysis/errors.rs",
+    "clarity/src/vm/analysis/mod.rs",
+    "clarity/src/vm/analysis/read_only_checker/mod.rs",
+    "clarity/src/vm/analysis/trait_checker/mod.rs",
+    "clarity/src/vm/analysis/type_checker/contexts.rs",
+    "clarity/src/vm/analysis/type_checker/mod.rs",
+    "clarity/src/vm/analysis/type_checker/v2_05/contexts.rs",
+    "clarity/src/vm/analysis/type_checker/v2_05/mod.rs",
+    "clarity/src/vm/analysis/type_checker/v2_05/natives/assets.rs",
+    "clarity/src/vm/analysis/type_checker/v2_05/natives/maps.rs",
+    "clarity/src/vm/analysis/type_checker/v2_05/natives/mod.rs",
+    "clarity/src/vm/analysis/type_checker/v2_05/natives/options.rs",
+    "clarity/src/vm/analysis/type_checker/v2_05/natives/sequences.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/contexts.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/mod.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/natives/assets.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/natives/conversions.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/natives/maps.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/natives/mod.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/natives/options.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/natives/post_conditions.rs",
+    "clarity/src/vm/analysis/type_checker/v2_1/natives/sequences.rs",
+    "clarity/src/vm/analysis/types.rs",
+    "clarity/src/vm/ast/definition_sorter/mod.rs",
+    "clarity/src/vm/ast/errors.rs",
+    "clarity/src/vm/ast/expression_identifier/mod.rs",
+    "clarity/src/vm/ast/mod.rs",
+    "clarity/src/vm/ast/parser/mod.rs",
+    "clarity/src/vm/ast/parser/v1.rs",
+    "clarity/src/vm/ast/parser/v2/lexer/error.rs",
+    "clarity/src/vm/ast/parser/v2/lexer/mod.rs",
+    "clarity/src/vm/ast/parser/v2/lexer/token.rs",
+    "clarity/src/vm/ast/parser/v2/mod.rs",
+    "clarity/src/vm/ast/stack_depth_checker.rs",
+    "clarity/src/vm/ast/sugar_expander/mod.rs",
+    "clarity/src/vm/ast/traits_resolver/mod.rs",
+    "clarity/src/vm/ast/types.rs",
+    "clarity/src/vm/callables.rs",
+    "clarity/src/vm/clarity.rs",
+    "clarity/src/vm/contexts.rs",
+    "clarity/src/vm/contracts.rs",
+    "clarity/src/vm/costs/constants.rs",
+    "clarity/src/vm/costs/cost_functions.rs",
+    "clarity/src/vm/costs/costs_1.rs",
+    "clarity/src/vm/costs/costs_2.rs",
+    "clarity/src/vm/costs/costs_2_testnet.rs",
+    "clarity/src/vm/costs/costs_3.rs",
+    "clarity/src/vm/costs/costs_4.rs",
+    "clarity/src/vm/costs/costs_5.rs",
+    "clarity/src/vm/costs/errors.rs",
+    "clarity/src/vm/costs/execution_cost.rs",
+    "clarity/src/vm/costs/mod.rs",
+    "clarity/src/vm/database/caching/mod.rs",
+    "clarity/src/vm/database/caching/weight_limited_fifo.rs",
+    "clarity/src/vm/database/clarity_db.rs",
+    "clarity/src/vm/database/clarity_store.rs",
+    "clarity/src/vm/database/key_value_wrapper.rs",
+    "clarity/src/vm/database/mod.rs",
+    "clarity/src/vm/database/sqlite.rs",
+    "clarity/src/vm/database/structures.rs",
+    "clarity/src/vm/diagnostic.rs",
+    "clarity/src/vm/errors.rs",
+    "clarity/src/vm/events.rs",
+    "clarity/src/vm/functions/arithmetic.rs",
+    "clarity/src/vm/functions/assets.rs",
+    "clarity/src/vm/functions/bitcoin.rs",
+    "clarity/src/vm/functions/boolean.rs",
+    "clarity/src/vm/functions/conversions.rs",
+    "clarity/src/vm/functions/crypto.rs",
+    "clarity/src/vm/functions/database.rs",
+    "clarity/src/vm/functions/define.rs",
+    "clarity/src/vm/functions/mod.rs",
+    "clarity/src/vm/functions/options.rs",
+    "clarity/src/vm/functions/post_conditions.rs",
+    "clarity/src/vm/functions/principals.rs",
+    "clarity/src/vm/functions/sequences.rs",
+    "clarity/src/vm/functions/tuples.rs",
+    "clarity/src/vm/hooks/internals.rs",
+    "clarity/src/vm/hooks/mod.rs",
+    "clarity/src/vm/hooks/trace.rs",
+    "clarity/src/vm/mod.rs",
+    "clarity/src/vm/representations.rs",
+    "clarity/src/vm/resource_limiter.rs",
+    "clarity/src/vm/tooling/mod.rs",
+    "clarity/src/vm/types/mod.rs",
+    "clarity/src/vm/types/serialization.rs",
+    "clarity/src/vm/types/signatures.rs",
+    "clarity/src/vm/variables.rs",
+    "clarity/src/vm/version.rs",
 
-    # -- Who the request is, and what it is allowed to do -----------------------------
-    "app/controllers/concerns/shipit/authentication.rb",
-    "app/controllers/shipit/shipit_controller.rb",
-    "app/controllers/shipit/github_authentication_controller.rb",
-    "app/controllers/shipit/api/base_controller.rb",
-    "app/controllers/shipit/api/ccmenu_controller.rb",
-    "app/controllers/shipit/merge_status_controller.rb",
-    "app/controllers/shipit/ccmenu_url_controller.rb",
-    "app/controllers/shipit/status_controller.rb",
-    "app/models/shipit/api_client.rb",
-    "app/models/shipit/unlimited_api_client.rb",
-    "app/models/shipit/user.rb",
-    "app/models/shipit/anonymous_user.rb",
-    "app/models/shipit/command_line_user.rb",
-    "app/models/shipit/team.rb",
-    "app/models/shipit/membership.rb",
-    "lib/shipit/simple_message_verifier.rb",
-    "lib/shipit/same_site_cookie_middleware.rb",
+    # -- stacks-codec: transaction and message wire encoding -------------------------------
+    "stacks-codec/src/lib.rs",
+    "stacks-codec/src/strings.rs",
+    "stacks-codec/src/transaction.rs",
 
-    # -- Everything that ends in a process being spawned ------------------------------
-    # `Command#start` spawns `interpolated_arguments`; `unbundled_env` is the merge of
-    # `Shipit.env`, the stack env, the deploy spec's `machine_env`, the review stack's
-    # PR labels and the task's own env, and it carries `GITHUB_TOKEN` and `GIT_ASKPASS`.
-    "lib/shipit/command.rb",
-    "lib/shipit/commands.rb",
-    "lib/shipit/stack_commands.rb",
-    "lib/shipit/task_commands.rb",
-    "lib/shipit/deploy_commands.rb",
-    "lib/shipit/rollback_commands.rb",
-    "lib/shipit/review_stack_commands.rb",
-    "lib/shipit/environment_variables.rb",
-    "lib/shipit/flock.rb",
-    "app/models/shipit/deploy_spec.rb",
-    "app/models/shipit/deploy_spec/file_system.rb",
-    "app/models/shipit/task_definition.rb",
-    "app/models/shipit/variable_definition.rb",
+    # -- crates/stacks-transactions: standalone transaction and post-condition checks ------
+    "crates/stacks-transactions/src/lib.rs",
 
-    # -- The records that decide what gets deployed, where, and as whom ---------------
-    "app/models/shipit/stack.rb",
-    "app/models/shipit/review_stack.rb",
-    "app/models/shipit/repository.rb",
-    "app/models/shipit/task.rb",
-    "app/models/shipit/deploy.rb",
-    "app/models/shipit/rollback.rb",
-    "app/models/shipit/commit.rb",
-    "app/models/shipit/merge_request.rb",
-    "app/models/shipit/pull_request.rb",
-    "app/models/shipit/review_stack_provisioning_queue.rb",
-    "app/models/shipit/hook.rb",
-    "app/models/shipit/delivery.rb",
-    "app/validators/ascii_only_validator.rb",
-    "app/validators/subset_validator.rb",
+    # -- stacks-common: addresses, hashing, secp256k1, codec and shared utils --------------
+    "stacks-common/src/address/b58.rs",
+    "stacks-common/src/address/c32.rs",
+    "stacks-common/src/address/c32_old.rs",
+    "stacks-common/src/address/mod.rs",
+    "stacks-common/src/alloc_tracker.rs",
+    "stacks-common/src/bitvec.rs",
+    "stacks-common/src/codec/macros.rs",
+    "stacks-common/src/codec/mod.rs",
+    "stacks-common/src/libcommon.rs",
+    "stacks-common/src/types/chainstate.rs",
+    "stacks-common/src/types/mod.rs",
+    "stacks-common/src/types/net.rs",
+    "stacks-common/src/types/sqlite.rs",
+    "stacks-common/src/util/chunked_encoding.rs",
+    "stacks-common/src/util/db.rs",
+    "stacks-common/src/util/ed25519.rs",
+    "stacks-common/src/util/hash.rs",
+    "stacks-common/src/util/log.rs",
+    "stacks-common/src/util/lru_cache.rs",
+    "stacks-common/src/util/macros.rs",
+    "stacks-common/src/util/mod.rs",
+    "stacks-common/src/util/pair.rs",
+    "stacks-common/src/util/pipe.rs",
+    "stacks-common/src/util/retry.rs",
+    "stacks-common/src/util/secp256k1/mod.rs",
+    "stacks-common/src/util/secp256k1/native.rs",
+    "stacks-common/src/util/secp256k1/wasm.rs",
+    "stacks-common/src/util/secp256r1.rs",
+    "stacks-common/src/util/serde_serializers.rs",
+    "stacks-common/src/util/uint.rs",
+    "stacks-common/src/util/vrf.rs",
 
-    # -- Authenticated write surfaces and the jobs they enqueue -----------------------
-    "app/controllers/shipit/stacks_controller.rb",
-    "app/controllers/shipit/tasks_controller.rb",
-    "app/controllers/shipit/deploys_controller.rb",
-    "app/controllers/shipit/commits_controller.rb",
-    "app/controllers/shipit/api_clients_controller.rb",
-    "app/controllers/shipit/api/stacks_controller.rb",
-    "app/controllers/shipit/api/tasks_controller.rb",
-    "app/controllers/shipit/api/deploys_controller.rb",
-    "app/controllers/shipit/api/hooks_controller.rb",
-    "app/controllers/shipit/api/outputs_controller.rb",
-    "app/controllers/shipit/api/merge_requests_controller.rb",
-    "app/jobs/shipit/perform_task_job.rb",
-    "app/jobs/shipit/github_sync_job.rb",
-    "app/jobs/shipit/cache_deploy_spec_job.rb",
-    "app/jobs/shipit/continuous_delivery_job.rb",
-    "app/jobs/shipit/deliver_hook_job.rb",
+    # -- libsigner: signer transport, events and v0 messages -------------------------------
+    "libsigner/src/error.rs",
+    "libsigner/src/events.rs",
+    "libsigner/src/http.rs",
+    "libsigner/src/libsigner.rs",
+    "libsigner/src/runloop.rs",
+    "libsigner/src/session.rs",
+    "libsigner/src/signer_set.rs",
+    "libsigner/src/v0/messages.rs",
+    "libsigner/src/v0/mod.rs",
+    "libsigner/src/v0/signer_state.rs",
+
+    # -- libstackerdb: StackerDB chunk signing and verification ----------------------------
+    "libstackerdb/src/libstackerdb.rs",
+
+    # -- pox-locking: the Rust side that locks and unlocks STX for PoX/stacking ------------
+    "pox-locking/src/events.rs",
+    "pox-locking/src/events_24.rs",
+    "pox-locking/src/lib.rs",
+    "pox-locking/src/pox_1.rs",
+    "pox-locking/src/pox_2.rs",
+    "pox-locking/src/pox_3.rs",
+    "pox-locking/src/pox_4.rs",
+    "pox-locking/src/pox_5.rs",
+
+    # -- stacks-signer: the Nakamoto signer decision logic and chainstate view -------------
+    "stacks-signer/src/chainstate/mod.rs",
+    "stacks-signer/src/chainstate/v1.rs",
+    "stacks-signer/src/chainstate/v2.rs",
+    "stacks-signer/src/cli.rs",
+    "stacks-signer/src/client/mod.rs",
+    "stacks-signer/src/client/stackerdb.rs",
+    "stacks-signer/src/client/stacks_client.rs",
+    "stacks-signer/src/config.rs",
+    "stacks-signer/src/lib.rs",
+    "stacks-signer/src/main.rs",
+    "stacks-signer/src/monitor_signers.rs",
+    "stacks-signer/src/monitoring/mod.rs",
+    "stacks-signer/src/monitoring/prometheus.rs",
+    "stacks-signer/src/monitoring/server.rs",
+    "stacks-signer/src/runloop.rs",
+    "stacks-signer/src/signerdb.rs",
+    "stacks-signer/src/utils.rs",
+    "stacks-signer/src/v0/mod.rs",
+    "stacks-signer/src/v0/signer.rs",
+    "stacks-signer/src/v0/signer_state.rs",
+
+    # -- stacks-node: the node binary, run loops, miner, burnchain and event dispatch ------
+    "stacks-node/src/burnchains/bitcoin/core_controller.rs",
+    "stacks-node/src/burnchains/bitcoin/mod.rs",
+    "stacks-node/src/burnchains/bitcoin_regtest_controller.rs",
+    "stacks-node/src/burnchains/mod.rs",
+    "stacks-node/src/burnchains/rpc/bitcoin_rpc_client/mod.rs",
+    "stacks-node/src/burnchains/rpc/mod.rs",
+    "stacks-node/src/burnchains/rpc/rpc_transport/mod.rs",
+    "stacks-node/src/event_dispatcher.rs",
+    "stacks-node/src/event_dispatcher/db.rs",
+    "stacks-node/src/event_dispatcher/payloads.rs",
+    "stacks-node/src/event_dispatcher/stacker_db.rs",
+    "stacks-node/src/event_dispatcher/worker.rs",
+    "stacks-node/src/globals.rs",
+    "stacks-node/src/keychain.rs",
+    "stacks-node/src/main.rs",
+    "stacks-node/src/monitoring/mod.rs",
+    "stacks-node/src/monitoring/prometheus.rs",
+    "stacks-node/src/nakamoto_node.rs",
+    "stacks-node/src/nakamoto_node/miner.rs",
+    "stacks-node/src/nakamoto_node/miner_db.rs",
+    "stacks-node/src/nakamoto_node/peer.rs",
+    "stacks-node/src/nakamoto_node/relayer.rs",
+    "stacks-node/src/nakamoto_node/signer_coordinator.rs",
+    "stacks-node/src/nakamoto_node/stackerdb_listener.rs",
+    "stacks-node/src/neon_node.rs",
+    "stacks-node/src/node.rs",
+    "stacks-node/src/operations.rs",
+    "stacks-node/src/run_loop/boot_nakamoto.rs",
+    "stacks-node/src/run_loop/helium.rs",
+    "stacks-node/src/run_loop/mod.rs",
+    "stacks-node/src/run_loop/nakamoto.rs",
+    "stacks-node/src/run_loop/neon.rs",
+    "stacks-node/src/syncctl.rs",
+    "stacks-node/src/tenure.rs",
+
+    # -- stackslib: consensus, chainstate, the Clarity VM host, burn ops and the P2P/RPC network ----
+    "stackslib/src/burnchains/bitcoin/address.rs",
+    "stackslib/src/burnchains/bitcoin/bits.rs",
+    "stackslib/src/burnchains/bitcoin/blocks.rs",
+    "stackslib/src/burnchains/bitcoin/indexer.rs",
+    "stackslib/src/burnchains/bitcoin/keys.rs",
+    "stackslib/src/burnchains/bitcoin/messages.rs",
+    "stackslib/src/burnchains/bitcoin/mod.rs",
+    "stackslib/src/burnchains/bitcoin/network.rs",
+    "stackslib/src/burnchains/bitcoin/spv.rs",
+    "stackslib/src/burnchains/burnchain.rs",
+    "stackslib/src/burnchains/db.rs",
+    "stackslib/src/burnchains/indexer.rs",
+    "stackslib/src/burnchains/mod.rs",
+    "stackslib/src/chainstate/burn/atc.rs",
+    "stackslib/src/chainstate/burn/db/mod.rs",
+    "stackslib/src/chainstate/burn/db/processing.rs",
+    "stackslib/src/chainstate/burn/db/sortdb.rs",
+    "stackslib/src/chainstate/burn/distribution.rs",
+    "stackslib/src/chainstate/burn/mod.rs",
+    "stackslib/src/chainstate/burn/operations/delegate_stx.rs",
+    "stackslib/src/chainstate/burn/operations/leader_block_commit.rs",
+    "stackslib/src/chainstate/burn/operations/leader_key_register.rs",
+    "stackslib/src/chainstate/burn/operations/mod.rs",
+    "stackslib/src/chainstate/burn/operations/stack_stx.rs",
+    "stackslib/src/chainstate/burn/operations/transfer_stx.rs",
+    "stackslib/src/chainstate/burn/operations/vote_for_aggregate_key.rs",
+    "stackslib/src/chainstate/burn/sortition.rs",
+    "stackslib/src/chainstate/coordinator/comm.rs",
+    "stackslib/src/chainstate/coordinator/mod.rs",
+    "stackslib/src/chainstate/mod.rs",
+    "stackslib/src/chainstate/nakamoto/coordinator/mod.rs",
+    "stackslib/src/chainstate/nakamoto/keys.rs",
+    "stackslib/src/chainstate/nakamoto/miner.rs",
+    "stackslib/src/chainstate/nakamoto/mod.rs",
+    "stackslib/src/chainstate/nakamoto/shadow.rs",
+    "stackslib/src/chainstate/nakamoto/signer_set.rs",
+    "stackslib/src/chainstate/nakamoto/staging_blocks.rs",
+    "stackslib/src/chainstate/nakamoto/tenure.rs",
+    "stackslib/src/chainstate/stacks/address.rs",
+    "stackslib/src/chainstate/stacks/auth.rs",
+    "stackslib/src/chainstate/stacks/block.rs",
+    "stackslib/src/chainstate/stacks/boot/bns.clar",
+    "stackslib/src/chainstate/stacks/boot/contract_tests.rs",
+    "stackslib/src/chainstate/stacks/boot/cost-voting.clar",
+    "stackslib/src/chainstate/stacks/boot/costs-2.clar",
+    "stackslib/src/chainstate/stacks/boot/costs-3.clar",
+    "stackslib/src/chainstate/stacks/boot/costs-4.clar",
+    "stackslib/src/chainstate/stacks/boot/costs.clar",
+    "stackslib/src/chainstate/stacks/boot/docs.rs",
+    "stackslib/src/chainstate/stacks/boot/genesis.clar",
+    "stackslib/src/chainstate/stacks/boot/lockup.clar",
+    "stackslib/src/chainstate/stacks/boot/mod.rs",
+    "stackslib/src/chainstate/stacks/boot/pox-2.clar",
+    "stackslib/src/chainstate/stacks/boot/pox-3.clar",
+    "stackslib/src/chainstate/stacks/boot/pox-4.clar",
+    "stackslib/src/chainstate/stacks/boot/pox-5.clar",
+    "stackslib/src/chainstate/stacks/boot/pox-mainnet.clar",
+    "stackslib/src/chainstate/stacks/boot/pox.clar",
+    "stackslib/src/chainstate/stacks/boot/pox_2_tests.rs",
+    "stackslib/src/chainstate/stacks/boot/pox_3_tests.rs",
+    "stackslib/src/chainstate/stacks/boot/pox_4_tests.rs",
+    "stackslib/src/chainstate/stacks/boot/signers-0-xxx.clar",
+    "stackslib/src/chainstate/stacks/boot/signers-1-xxx.clar",
+    "stackslib/src/chainstate/stacks/boot/signers-voting.clar",
+    "stackslib/src/chainstate/stacks/boot/signers.clar",
+    "stackslib/src/chainstate/stacks/boot/signers_tests.rs",
+    "stackslib/src/chainstate/stacks/boot/sip-031.clar",
+    "stackslib/src/chainstate/stacks/db/accounts.rs",
+    "stackslib/src/chainstate/stacks/db/blocks.rs",
+    "stackslib/src/chainstate/stacks/db/contracts.rs",
+    "stackslib/src/chainstate/stacks/db/headers.rs",
+    "stackslib/src/chainstate/stacks/db/mod.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/blocks.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/burnchain.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/clarity.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/common.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/fork_storage.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/index.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/mod.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/sortition.rs",
+    "stackslib/src/chainstate/stacks/db/snapshot/spv.rs",
+    "stackslib/src/chainstate/stacks/db/transactions.rs",
+    "stackslib/src/chainstate/stacks/db/unconfirmed.rs",
+    "stackslib/src/chainstate/stacks/events.rs",
+    "stackslib/src/chainstate/stacks/index/bits.rs",
+    "stackslib/src/chainstate/stacks/index/blob_layout.rs",
+    "stackslib/src/chainstate/stacks/index/cache.rs",
+    "stackslib/src/chainstate/stacks/index/file.rs",
+    "stackslib/src/chainstate/stacks/index/marf.rs",
+    "stackslib/src/chainstate/stacks/index/mod.rs",
+    "stackslib/src/chainstate/stacks/index/node.rs",
+    "stackslib/src/chainstate/stacks/index/profile.rs",
+    "stackslib/src/chainstate/stacks/index/proofs.rs",
+    "stackslib/src/chainstate/stacks/index/squash.rs",
+    "stackslib/src/chainstate/stacks/index/squash/node_store.rs",
+    "stackslib/src/chainstate/stacks/index/squash/stream.rs",
+    "stackslib/src/chainstate/stacks/index/storage.rs",
+    "stackslib/src/chainstate/stacks/index/trie.rs",
+    "stackslib/src/chainstate/stacks/index/trie_sql.rs",
+    "stackslib/src/chainstate/stacks/miner.rs",
+    "stackslib/src/chainstate/stacks/mod.rs",
+    "stackslib/src/chainstate/stacks/sbtc.rs",
+    "stackslib/src/chainstate/stacks/transaction.rs",
+    "stackslib/src/clarity_vm/clarity.rs",
+    "stackslib/src/clarity_vm/database/ephemeral.rs",
+    "stackslib/src/clarity_vm/database/marf.rs",
+    "stackslib/src/clarity_vm/database/mod.rs",
+    "stackslib/src/clarity_vm/mod.rs",
+    "stackslib/src/clarity_vm/special.rs",
+    "stackslib/src/config/chain_data.rs",
+    "stackslib/src/config/mod.rs",
+    "stackslib/src/core/mempool.rs",
+    "stackslib/src/core/mod.rs",
+    "stackslib/src/core/nonce_cache.rs",
+    "stackslib/src/cost_estimates/fee_medians.rs",
+    "stackslib/src/cost_estimates/fee_rate_fuzzer.rs",
+    "stackslib/src/cost_estimates/fee_scalar.rs",
+    "stackslib/src/cost_estimates/metrics.rs",
+    "stackslib/src/cost_estimates/mod.rs",
+    "stackslib/src/cost_estimates/pessimistic.rs",
+    "stackslib/src/deps/mod.rs",
+    "stackslib/src/lib.rs",
+    "stackslib/src/monitoring/mod.rs",
+    "stackslib/src/monitoring/prometheus.rs",
+    "stackslib/src/net/api/blockreplay.rs",
+    "stackslib/src/net/api/blocksimulate.rs",
+    "stackslib/src/net/api/callreadonly.rs",
+    "stackslib/src/net/api/fastcallreadonly.rs",
+    "stackslib/src/net/api/get_tenure_tip_meta.rs",
+    "stackslib/src/net/api/get_tenures_fork_info.rs",
+    "stackslib/src/net/api/getaccount.rs",
+    "stackslib/src/net/api/getattachment.rs",
+    "stackslib/src/net/api/getattachmentsinv.rs",
+    "stackslib/src/net/api/getblock.rs",
+    "stackslib/src/net/api/getblock_v3.rs",
+    "stackslib/src/net/api/getblockbyheight.rs",
+    "stackslib/src/net/api/getclaritymarfvalue.rs",
+    "stackslib/src/net/api/getclaritymetadata.rs",
+    "stackslib/src/net/api/getconstantval.rs",
+    "stackslib/src/net/api/getcontractabi.rs",
+    "stackslib/src/net/api/getcontractsrc.rs",
+    "stackslib/src/net/api/getdatavar.rs",
+    "stackslib/src/net/api/getheaders.rs",
+    "stackslib/src/net/api/gethealth.rs",
+    "stackslib/src/net/api/getinfo.rs",
+    "stackslib/src/net/api/getistraitimplemented.rs",
+    "stackslib/src/net/api/getmapentry.rs",
+    "stackslib/src/net/api/getmicroblocks_confirmed.rs",
+    "stackslib/src/net/api/getmicroblocks_indexed.rs",
+    "stackslib/src/net/api/getmicroblocks_unconfirmed.rs",
+    "stackslib/src/net/api/getneighbors.rs",
+    "stackslib/src/net/api/getpoxinfo.rs",
+    "stackslib/src/net/api/getsigner.rs",
+    "stackslib/src/net/api/getsortition.rs",
+    "stackslib/src/net/api/getstackerdbchunk.rs",
+    "stackslib/src/net/api/getstackerdbmetadata.rs",
+    "stackslib/src/net/api/getstackers.rs",
+    "stackslib/src/net/api/getstxtransfercost.rs",
+    "stackslib/src/net/api/gettenure.rs",
+    "stackslib/src/net/api/gettenureblocks.rs",
+    "stackslib/src/net/api/gettenureblocksbyhash.rs",
+    "stackslib/src/net/api/gettenureblocksbyheight.rs",
+    "stackslib/src/net/api/gettenureinfo.rs",
+    "stackslib/src/net/api/gettenuretip.rs",
+    "stackslib/src/net/api/gettransaction.rs",
+    "stackslib/src/net/api/gettransaction_unconfirmed.rs",
+    "stackslib/src/net/api/liststackerdbreplicas.rs",
+    "stackslib/src/net/api/mod.rs",
+    "stackslib/src/net/api/postblock.rs",
+    "stackslib/src/net/api/postblock_proposal.rs",
+    "stackslib/src/net/api/postblock_v3.rs",
+    "stackslib/src/net/api/postfeerate.rs",
+    "stackslib/src/net/api/postmempoolquery.rs",
+    "stackslib/src/net/api/postmicroblock.rs",
+    "stackslib/src/net/api/poststackerdbchunk.rs",
+    "stackslib/src/net/api/posttransaction.rs",
+    "stackslib/src/net/api/read_only/mod.rs",
+    "stackslib/src/net/api/read_only/parse.rs",
+    "stackslib/src/net/api/txsimulate.rs",
+    "stackslib/src/net/asn.rs",
+    "stackslib/src/net/atlas/db.rs",
+    "stackslib/src/net/atlas/download.rs",
+    "stackslib/src/net/atlas/mod.rs",
+    "stackslib/src/net/chat.rs",
+    "stackslib/src/net/codec.rs",
+    "stackslib/src/net/connection.rs",
+    "stackslib/src/net/db.rs",
+    "stackslib/src/net/dns.rs",
+    "stackslib/src/net/download/epoch2x.rs",
+    "stackslib/src/net/download/mod.rs",
+    "stackslib/src/net/download/nakamoto/download_state_machine.rs",
+    "stackslib/src/net/download/nakamoto/mod.rs",
+    "stackslib/src/net/download/nakamoto/tenure.rs",
+    "stackslib/src/net/download/nakamoto/tenure_downloader.rs",
+    "stackslib/src/net/download/nakamoto/tenure_downloader_set.rs",
+    "stackslib/src/net/download/nakamoto/tenure_downloader_unconfirmed.rs",
+    "stackslib/src/net/http/common.rs",
+    "stackslib/src/net/http/error.rs",
+    "stackslib/src/net/http/mod.rs",
+    "stackslib/src/net/http/request.rs",
+    "stackslib/src/net/http/response.rs",
+    "stackslib/src/net/http/stream.rs",
+    "stackslib/src/net/httpcore.rs",
+    "stackslib/src/net/inv/epoch2x.rs",
+    "stackslib/src/net/inv/mod.rs",
+    "stackslib/src/net/inv/nakamoto.rs",
+    "stackslib/src/net/mempool/mod.rs",
+    "stackslib/src/net/mod.rs",
+    "stackslib/src/net/neighbors/comms.rs",
+    "stackslib/src/net/neighbors/db.rs",
+    "stackslib/src/net/neighbors/mod.rs",
+    "stackslib/src/net/neighbors/neighbor.rs",
+    "stackslib/src/net/neighbors/rpc.rs",
+    "stackslib/src/net/neighbors/walk.rs",
+    "stackslib/src/net/p2p.rs",
+    "stackslib/src/net/poll.rs",
+    "stackslib/src/net/prune.rs",
+    "stackslib/src/net/relay.rs",
+    "stackslib/src/net/rpc.rs",
+    "stackslib/src/net/server.rs",
+    "stackslib/src/net/stackerdb/config.rs",
+    "stackslib/src/net/stackerdb/db.rs",
+    "stackslib/src/net/stackerdb/mod.rs",
+    "stackslib/src/net/stackerdb/sync.rs",
+    "stackslib/src/net/unsolicited.rs",
+    "stackslib/src/util_lib/bloom.rs",
+    "stackslib/src/util_lib/boot.rs",
+    "stackslib/src/util_lib/db.rs",
+    "stackslib/src/util_lib/mod.rs",
+    "stackslib/src/util_lib/signed_structured_data.rs",
+    "stackslib/src/util_lib/strings.rs",
 
     # =================================================================================
-    # NOT IN THIS VARIANT:
-    # * test/** (including test/dummy), docs/**, examples/**, contrib/**, script/**,
-    #   vendor/**, db/migrate/**, app/assets/**, template.rb, Rakefile, *.gemspec,
-    #   Gemfile*, dev.yml, *.md - tests, fixtures, generated and configuration files.
-    # * app/helpers/**, app/serializers/** and app/views/** carry no authentication or
-    #   execution decision.
+    # NOT AUDITED (excluded from every variant): tests, mocks and *test* files; fuzz and
+    # bench harnesses; test_util and the hooks/testing render helpers; docs/ and README;
+    # config, *.toml and CHANGELOG; generated tables (stx-genesis, genesis_data.rs) and
+    # build.rs; vendored third-party code under deps_common/ (bitcoin, httparse, bech32,
+    # ctrlc); the contrib/ tools and stacks-profiler; sample/ example contracts; and the
+    # *-testnet / *.tests.clar network- and test-only contract bodies. A defect in any of
+    # these is only in scope when it is reachable from the audited code above.
     # =================================================================================
 ]
 
 
 target_scopes = [
-    "Critical. THE BODY CHOOSES ITS OWN VERIFIER. `WebhooksController#verify_signature` reads `repository_owner` - `params.dig('repository','owner','login') || params.dig('organization','login')` - out of the UNSIGNED request body, hands it to `Shipit.github(organization:)`, and verifies the HMAC with that app's `webhook_secret`; `GitHubApp#verify_webhook_signature` returns `true` outright when that org's config has no `webhook_secret`, and only accepts `sha1`. `#create` then re-parses `request.raw_post` and every handler resolves its target from `repository.full_name` in the same body. Show a single POST /webhooks whose body names one organization for verification and another organization's repository for the handler, or names an org with no configured secret, and land it on a real stack. Binding: the organization whose `webhook_secret` verified the bytes == the organization owning the repository, stack, commit or team the handler writes.",
+    "Critical. LOCKED STX MUST EQUAL WHAT THE STAKER COMMITTED. `stake` in pox-5.clar reads `(stx-account tx-sender)`, computes `total-balance` and calls the signer-manager trait, then Clarity returns a tuple that `pox_5.rs` `parse_pox_stake_result` turns into a real `STXBalance` lock via `handle_lockup_pox_v5` / `pox_lock_v5`. Probe every gap between the amount the contract validated and the amount `structures.rs` actually locks: a `lock_amount` larger than `amount_unlocked`, a rollover in `handle_stake_on_locked_account` that rolls forward a higher or lower amount than the response tuple states, an `unlock_height` in the past, a `stake-update` that increases locked STX without a matching balance debit, an error response that `locking_error_to_vm_error` swallows so the Clarity call succeeds but no lock is written. Identity: STX locked in the account's `STXBalance` after `stake` == the `amount-ustx` the pox-5 body validated against the account's spendable balance.",
 
-    "Critical. A STATUS WEBHOOK IS NOT SCOPED TO A REPOSITORY AT ALL. `StatusHandler#process` is `Commit.where(sha: params.sha).each { |c| c.create_status_from_github!(params) }` - it never consults `Handler#stacks`, `repository.full_name`, or the commit's own stack, so a `state: success` status for any SHA rewrites that commit's CI state in EVERY stack of EVERY repository Shipit knows. `Commit#deployable?` is `!locked? && (stack.ignore_ci? || (success? && !blocked?))`, which `Stack#trigger_continuous_delivery` and `MergeRequest#all_status_checks_passed?` consult. Show a status event the attacker can legitimately cause on a repository they control (same SHA, e.g. an empty-tree or copied commit) marking another tenant's commit green, and follow it through to a continuous deployment or a queued merge. Binding: the repository a `Status` is written against == the repository named in the payload that carried it.",
+    "Critical. sBTC REWARDS PAID MUST EQUAL sBTC REWARDS EARNED. `claim-rewards` and `claim-staker-rewards-for-signer` fold `update-claimable-bond-rewards`, settle with `settle-rewards` / `settle-staker-rewards`, transfer sBTC through `as-contract?` with a `with-ft` allowance, then decrement `last-accounted-rewards-only`. Probe the settlement: `compute-earned-rewards` using `get-rewards-per-token-for-cycle` against a per-token snapshot the claimer can advance, a bond period listed twice in the `(list 6 uint)` so its reward is folded twice, a `reward-cycle` claimed before it settled, `PRECISION` rounding that leaves dust claimable every cycle, a `settle-staker-rewards` that zeroes `staker-unclaimed-rewards-for-cycle` after the transfer so a reentrant path re-reads the old value. Identity: sBTC transferred out of pox-5 for a (signer, staker, cycle) == the rewards that (signer, staker, cycle) actually accrued, summed once.",
 
-    "Critical. AN OUTSIDE CONTRIBUTOR'S BRANCH BECOMES THE COMMAND LINE. `PullRequest::OpenedHandler#provision?` is `repository.review_stacks_enabled && repository.provisioning_behavior_allow_all? || (allow_with_label? && label) || (prevent_with_label? && !label)` - Ruby's `&&`/`||` precedence means the last two branches never test `review_stacks_enabled`. `ReviewStackAdapter#create!` then builds a `ReviewStack` with `branch: params.pull_request.head.ref` and `environment: \"pr#{params.number}\"`, queues it for provisioning, and `TaskCommands#perform` executes `@task.definition.steps` read by `DeploySpec::FileSystem` from `shipit.yml` in that branch's checkout via `Command#start` -> `PTY.spawn`. Show an unprivileged pull request causing a stack to be created and its attacker-authored steps to run, on a repository whose review stacks were never enabled. Binding: the ref whose `shipit.yml` supplies the executed steps == a ref an authorized Shipit user approved for that stack.",
+    "Critical. THE REENTRANCY GUARD IS THE ONLY THING BETWEEN A TRAIT CALL AND DOUBLE-COUNTING. Every stake path calls the caller-supplied `signer-manager-trait.validate-stake!`, guarded by `signer-manager-validate-stake` setting `signer-manager-call-active`; `validate-no-reentrancy` guards the claim and unstake paths. An unprivileged staker deploys the signer-manager contract, so `validate-stake!` runs attacker code with pox-5 mid-mutation. Show a path where the guard is not held for the whole critical section - a public function that mutates next-cycle state before setting the flag, a `claim-rewards` that transfers sBTC and only then updates `last-accounted-rewards-only`, a trait call that re-enters a sibling entry point the guard does not cover - so the staker's own contract re-enters and stakes, unstakes or claims twice against one commitment. Identity: the number of times a commitment or reward is counted across one transaction == one, for every reachable re-entry through `validate-stake!`.",
 
-    "Critical. PULL REQUEST LABELS ARE WRITTEN STRAIGHT INTO THE PROCESS ENVIRONMENT. `ReviewStack#env` merges `pull_request.labels.each_with_object({}) { |name, h| h[name.upcase] = 'true' }` into the stack env with no name whitelist; `TaskCommands#env` merges that with `Shipit.env`, `deploy_spec.machine_env` and `@task.env`, and `Command#unbundled_env` merges the result over `BASE_ENV` and the `PATH` Shipit builds, then passes it as the env hash to `PTY.spawn`. `PullRequest::LabelCapturingHandler#capture_labels` is what persists those names from the webhook body. Show a label name that becomes an interpreter- or loader-honoured variable (`PATH`, `GIT_ASKPASS`, `BUNDLE_PATH`, `RUBYOPT`, `LD_PRELOAD`, `GIT_SSH_COMMAND`) in the deploy process, and state what it executes. Binding: the set of keys in `Command#unbundled_env` == the set of variables the deploy spec's `machine_env` and `VariableDefinition` list permit.",
+    "Critical. THE L1 BITCOIN LOCKUP PROOF DECIDES sBTC OUT OF THIN AIR. `register-for-bond` accepts `btc-lockup` as either an L1 proof or an sBTC amount; on the L1 path `verify-l1-lockups` folds `validate-l1-lockup` over up to 10 outputs, each parsing a Bitcoin header with `parse-block-header`, verifying inclusion with `verify-block-header` / `get-burn-block-info?`, checking the timelock script built by `construct-lockup-script`, and summing `amount` while `seen-outpoints` rejects duplicates. Show an unprivileged staker crediting sats they did not lock: an output whose `amount` field differs from the real Bitcoin output value, a `header` for a burn block that `get-burn-block-info?` cannot bind to the claimed `height`, a merkle proof with `leaf-hashes` that validates a transaction from a different block, a `staker-unlock-bytes` subscript that does not commit to `tx-sender`, an `unlock-burn-height` below `minimum-unlock-height`, two outputs with different indexes but the same value double-summed. Identity: sats credited to a bond by `verify-l1-lockups` == sats actually locked to the staker's timelock script in a confirmed Bitcoin transaction.",
 
-    "Critical. A STEP IS A STRING, AND THE ENVIRONMENT FILTER ONLY CHECKS NAMES. `Command#parse_arguments` keeps each configured step as one string and `PTY.spawn(env, *interpolated_arguments)` runs a single-element argv through a shell; `EnvironmentVariables#interpolate` substitutes `$WORD` with `Shellwords.escape(@env.fetch(...) { ENV[...] })`, falling back to Shipit's own process ENV when the key is absent; `EnvironmentVariables#permit` compares only `variable_definitions.map(&:name)` and never inspects values; `TaskDefinition#render_title` does `@title % env.symbolize_keys`. Show a task or deploy env value, an unset variable name, or a `machine_env` entry that changes what the shell executes or leaks a Shipit process secret into the task output. Binding: the bytes handed to the shell == the step string as written in the repository's `shipit.yml`, with every interpolated value escaped exactly once.",
+    "Critical. UNSTAKING sBTC MUST NOT EXCEED WHAT WAS STAKED. `unstake-sbtc` reads `protocol-bond-memberships`, computes `new-amount-sats` only when `amount-to-withdrawal-sats <= current-amount-sats`, checks the membership is not an L1 lock, runs `validate-no-reentrancy`, then transfers sBTC through `as-contract?`. Probe the accounting across cycles: `first-changed-reward-cycle` from `clamp` excluding the current cycle so custody is released while still counted for rewards, `get-total-sbtc-staked` not decremented in lockstep with the per-staker amount, a withdrawal during the prepare phase that `verify-not-prepare-phase` should block, a membership whose `signer` no longer matches so `ERR_INVALID_OLD_SIGNER_MANAGER` is dodged, a rollover in `register-for-bond` that refunds `old-sbtc` while the new bond still custodies it. Identity: sBTC transferred out by `unstake-sbtc` plus sBTC still custodied for the staker == sBTC the staker originally staked to that bond.",
 
-    "Critical. A WEBHOOK GRANTS ACCESS TO SHIPIT ITSELF. `MembershipHandler#process` calls `Team.find_or_create_by!(github_id: params.team.id)` and `User.find_or_create_by_login!(params.member.login)` then `team.add_member(member)` on `action == 'added'`, taking the team id, slug, organization and member login entirely from the payload. `Authentication#force_github_authentication` renders a 403 unless `current_user.authorized?`, and `User#authorized?` is `Shipit.github_teams.empty? || teams.where(id: Shipit.github_teams.map(&:id)).exists?` - membership rows are the whole authorization model. Show a membership event, reaching `create` through the verification gap of scope 1 or through an organization the attacker can genuinely emit events for, that inserts the attacker's login into a team id listed in `Shipit.github_teams`. Binding: a `Membership` row for a team in `Shipit.github_teams` == a membership GitHub actually reports for that team.",
+    "Critical. STX UNLOCKS EXACTLY ONCE, AT THE HEIGHT THE STAKER CHOSE. `stake` derives `unlock-cycle` from `first-reward-cycle + num-cycles`, `check-pox-lock-period` bounds `num-cycles`, and the coordinator's `handle_pox_cycle_start_pox_5` / `handle_pox_cycle_missed_unlocks` (signer_set.rs, boot/mod.rs) release locks at cycle boundaries by writing `STXBalance` unlock heights. Show a staker whose STX unlocks early or stays locked forever: a `num-cycles` that overflows `unlock-cycle`, a `stake-update` extending a lock whose old unlock height already passed so `handle_stake_lockup_update_pox_v5` returns an internal error but leaves state changed, a missed-unlock handler that skips an account, an `announce-l1-early-exit` that shifts the unlock height without a matching L1 event, a start-burn-height in the past so `specified-reward-cycle` precedes `first-reward-cycle`. Identity: the burn height at which an account's `STXBalance` becomes spendable == the unlock height the accepted `stake` / `stake-update` committed.",
 
-    "Critical. THE SESSION IS BOUND AFTER THE FACT, NOT AT THE START. `GithubAuthenticationController#callback` is `ActionController::Base` with no `protect_from_forgery`, is routed for both GET and POST, sets `session[:user_id] = sign_in_github(auth)` and `session[:authenticated] = true` WITHOUT `reset_session`, and redirects to `request.env['omniauth.origin']` unfiltered. `Authentication#find_current_user` is `session[:user_id].present? && User.find_by(id: session[:user_id])`, and `User.find_or_create_from_github` keys on `github_user.id` while `find_or_create_by_login!` keys on a login string. Show a fixed or attacker-planted session surviving a victim's login, a callback completed cross-site, or an identity that resolves to a `User` row other than the GitHub account that authenticated - then use it against a stack the victim can deploy. Binding: the `User` row `session[:user_id]` names == the GitHub account that completed this OAuth exchange in this session.",
+    "High. THE SIGNER-KEY AUTHORIZATION SIGNS EXACTLY ONE STACKING ACTION. `register-signer` / `grant-signer-key` and `verify-signer-key-grant` check a SIP-018 signature over `get-signer-grant-message-hash`, built from the `POX_5_SIGNER_DOMAIN` (name `pox-5-signer`, version, `chain-id`) and the grant fields, with `ERR_SIGNER_KEY_GRANT_USED` guarding replay via `used` state. Show a signature an unprivileged staker replays or repurposes: a message hash that omits a field the contract acts on (amount, reward cycle, staker, bond index), a grant reused across two bonds because the `used` key does not include every distinguishing field, a domain that omits `chain-id` so a testnet signature works on mainnet, a `secp256k1-recover?` result whose low-S is not enforced so a second malleable signature bypasses the used-set. Identity: every stacking action authorised by a signer key == exactly one grant the signer signed for that (staker, amount, cycle, chain).",
 
-    "Critical. AN API TOKEN'S STACK SCOPE IS NOT ENFORCED EVERYWHERE IT MATTERS. `Api::BaseController#authenticate_api_client` joins basic-auth parts with `token = parts.select(&:present?).join('--')` before `ApiClient.authenticate`, which is a bare `SimpleMessageVerifier` over `Shipit.api_clients_secret` (falling back to `secret_key_base`) whose payload is a decimal id; `#stacks` narrows to `current_api_client.stack_id` but `Api::CCMenuController` overrides both `stack` (`Stack.from_param!`) and `authenticate_api_client` to accept `ApiClient.authenticate(params[:token])` from the query string, and `CCMenuUrlController#fetch` mints and hands out exactly such a URL. `#identify_user` trusts the `X-Shipit-User` header for attribution while `require_permission!` only ever checks the client. Show a token or a token-bearing URL that reads or acts on a stack outside its own scope, or an id/permission comparison that accepts a value it should not. Binding: the stack an API request touches ∈ the stacks `current_api_client.stack_id` authorises, and the permission checked == the permission the action needs.",
+    "Critical. BURNCHAIN STACKING OPS MOVE STX FROM AN OFF-CHAIN IDENTITY. `stack_stx.rs`, `delegate_stx.rs` and `transfer_stx.rs` `parse_from_tx` derive `sender` from the first Bitcoin input via `get_sender_txid` / `get_input_tx_ref(0)` and `check` validates amounts and outputs; the Stacks node then applies the op as if that Stacks address authorised it. Show an op that moves or locks STX the deriving address did not authorise: a `TransferStxOp` whose `sender == recipient` slips past the check, a `StackStxOp` whose parsed `signer_key` is `None` yet still locks, a `PreStxOp`/`StackStxOp` pairing where the pre-op sender differs from the stack sender, a `DelegateStxOp` with a `delegated_ustx` exceeding the sender's balance, a truncated `parse_data` accepted with defaulted fields. Identity: the STX locked or transferred by an applied burnchain op == STX owned by the Stacks address the op's first Bitcoin input maps to, and only with that address's committed parameters.",
 
-    "High. ROUTES THAT NEVER ASK WHO IS CALLING. `MergeStatusController` declares `skip_authentication only: %i[check show]`, sets `X-Frame-Options: ALLOWALL`, and derives its stack from `params[:referrer]` through `ReferrerParser`; `StatusController#version` is a bare `ActionController::Base`; `Pubsubstub::StreamAction` is mounted at `/events` inside the engine's own routes with no authentication concern in front of it; `SameSiteCookieMiddleware` rewrites every cookie to `SameSite=None` when enabled. Deploy and task output (`Task#chunk_output`, the `tail` and `.txt` renderings) is where `GITHUB_TOKEN`-bearing commands print. Show an unauthenticated or cross-origin request that reads stack state, a live task stream or deploy output, or that rides a victim's cookie into a state-changing merge-queue action. Binding: every response carrying stack, task or output data was produced after `force_github_authentication` and `authorized?` both passed for the caller.",
+    "High. REWARD-SET AND SIGNER-SET WEIGHT MUST EQUAL STAKED STX. `boot/mod.rs` `make_reward_set` / `make_signer_set` / `get_threshold_from_participation` / `get_reward_threshold_and_participation` and `signer_set.rs` `get_signers_weights` derive each cycle's signer weights and PoX threshold from pox-5 stacking state read through `get-reward-set` and the signer linked list. Show a staker who gains signing weight or a reward slot exceeding their locked STX: a stake counted in two cycles by the `signer-set-ll` insertion, a `pox_ustx_threshold` computed from a participation total that includes an already-unlocked staker, a weight rounded up by `PRECISION`, a bond whose sats convert to ustx via `min-ustx-for-sats-amount` at a stale ratio. Identity: the signing weight and reward slots assigned to a principal for a cycle == the STX (or sats-equivalent) that principal has locked and unexpired for that cycle.",
 
-    "Critical. THE MISSING BINDING - what nobody built. There is no notion of an untrusted contributor anywhere in this engine: no code path records WHICH organization's webhook secret authenticated a payload and re-checks it before writing, nothing marks a `ReviewStack` branch as fork-authored before its `shipit.yml` steps are executed, and no allowlist ever constrains the KEYS of the environment hash that reaches `PTY.spawn`. Identify the FIRST point at which GitHub-sourced or attacker-sourced bytes - a webhook field, a PR head ref, a label name, a commit message parsed by `User.find_or_create_author_from_github_commit`, a `Stack#base_path` segment - become a shell argument, an environment key, a deploy trigger or an authorization row without any authenticated actor in between. Prove it with one minitest integration test asserting both the value written and the value that authenticated it, and show that once they diverge nothing in the engine ever reconciles them.",
+    "Critical. THE MISSING INVARIANT - what nobody built. No assertion ties the sBTC balance pox-5 custodies to the sum of all bond memberships plus the reserve; no check proves `last-accounted-rewards-only` equals the sum of unclaimed rewards across signers and stakers; nothing binds the STX locked across all accounts to the participation total the reward set is computed from; the L1 lockup proof trusts `get-burn-block-info?` for a height the fold never re-checks against the header; a rollover refunds `old-sbtc` on the assumption the old bond is fully released. Identify the FIRST place one of these unstated conservation assumptions is violated by an unprivileged staker with their own STX, their own sBTC and their own signer-manager contract, prove it with a Rust integration test on a booted chainstate that asserts custodied sBTC versus outstanding memberships, or locked STX versus participation, before and after, and show that once the two diverge no cycle boundary can detect or reverse it.",
 ]
 
 
@@ -199,129 +567,112 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate deployment-trust audit questions for one shipit-engine target.
+    Generate stacking / bond / reward audit questions for one stacks-core target.
 
     ```
     target_file format:
-    "'File Name: app/models/shipit/webhooks/handlers/status_handler.rb -> Scope: Critical. ...'"
+    "'File Name: stackslib/src/chainstate/stacks/boot/pox-5.clar -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate authorization and code-execution security audit questions for this exact
-    shipit-engine target:
+    Generate blockchain-consensus and smart-contract security audit questions for this exact
+    stacks-core target:
 
     {target_file}
 
     Project focus:
-    Shipit is a Rails engine that deploys code. Untrusted bytes enter through four doors:
-    a GitHub webhook (`WebhooksController` -> `Webhooks::Handlers::*`, where the UNSIGNED
-    body picks the app whose `webhook_secret` verifies it), a pull request an outside
-    contributor opens (branch name, labels, title, and the `shipit.yml` on that branch),
-    the browser session (`Authentication`, the OmniAuth callback), and the API
-    (`Api::BaseController`, basic-auth or a `token` query param). Those bytes end up in
-    three places: a database row written on some tenant's behalf, a deploy or merge that
-    ships code, and a `Command`/`PTY.spawn` whose environment carries `GITHUB_TOKEN` and
-    `GIT_ASKPASS`. Anything that crosses from one repository to another, or from a payload
-    to a process, without an authenticated actor in between is the bug.
+    stacks-core secures the Stacks chain by locking STX and sBTC. Untrusted input enters
+    through pox-5 contract-calls an unprivileged account makes - `stake`,
+    `register-for-bond`, `unstake`, `unstake-sbtc`, `stake-update`, `claim-rewards` - each
+    passing a caller-deployed `signer-manager-trait` contract and, on the bond path, a
+    Clarity-Bitcoin L1 lockup proof, plus burnchain `stack-stx` / `delegate-stx` /
+    `transfer-stx` operations whose sender is derived from a Bitcoin input. The system
+    decides (a) whether STX/sBTC locked equals what the staker committed; (b) whether sBTC
+    rewards paid equal rewards earned; (c) whether locked value unlocks exactly once, at the
+    chosen height, only for its owner. The pox-5 Clarity result and the `pox-locking` Rust
+    lock must agree. Anything locked, unlocked, credited or paid that the contract did not
+    validate, or counted twice, is the bug.
 
     Rules:
     * Treat `File Name:` as the exact file.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Ruby symbols (module, class, method, constant, ivar) as they appear in the file.
-    * EVERY question must close on a binding that must hold across a call. State it explicitly.
-      Narrative questions with no stated binding are rejected.
-    * Attacker is unprivileged only: any GitHub user who can open a pull request, push to a
-      fork, name a branch, add a label to their own PR, write a commit message, and emit
-      webhooks from a repository they own; and any internet user who can send HTTP requests
-      to the Shipit host, including POST /webhooks.
-    * Attacker is NOT a Shipit operator, not a member of any team in `Shipit.github_teams`,
-      not a repository maintainer, and never holds a Shipit session, an `ApiClient` token,
-      `api_clients_secret`, `secret_key_base`, a GitHub App private key, or a
-      `webhook_secret`. No TLS interception, no local or physical access, no compromised
-      dependency, no social engineering.
-    * Assume the host application mounts this engine as documented in README.md. The bug
-      must be in this engine's code, not in a hypothetical host app misusing it.
+    * Use exact Clarity and Rust symbols (define-public/-private/-read-only name, map,
+      constant, error code, trait, Rust function, struct field) as they appear in the file.
+    * EVERY question must close on an equality that must hold across a call. State it
+      explicitly. Narrative questions with no stated equality are rejected.
+    * Attacker is unprivileged only: any Stacks account with its own STX and sBTC. They may
+      deploy the `signer-manager` contract, call any pox-5 entry point, submit L1 lockup
+      proofs, craft burnchain stacking ops from Bitcoin inputs they control, and order
+      their own transactions.
+    * Attacker is NOT the bond admin, pause admin, a miner, a signer with another's key, the
+      SIP-031 recipient, or the victim staker. No malicious peer, node, RPC, relayer or
+      Bitcoin miner; no compromised dependency; no social engineering.
     * PROGRAM EXCLUSIONS - a question landing in any of these wastes the whole batch:
-      - test/** (including test/dummy), docs/**, examples/**, contrib/**, script/**,
-        vendor/**, db/migrate/**, app/assets/**, template.rb, Rakefile, *.gemspec,
-        Gemfile*, dev.yml and *.md are OUT OF SCOPE.
-      - Denial of service, rate limiting, retry/backoff, job queue depth, resource
-        exhaustion, unbounded collections and memory hygiene are OUT OF SCOPE.
-      - Defects in third-party gems (octokit, faraday, omniauth, pubsubstub, state_machines,
-        explicit-parameters) with no exploit path through this engine's own code are OUT OF
-        SCOPE.
-      - Also excluded: leaked keys or credentials, privileged Shipit or GitHub accounts,
-        best-practice notes, feature requests, missing security headers on their own,
-        self-XSS, and theoretical findings with no demonstration.
-      - A weakness in this engine that manipulates a third-party gem into unsafe behaviour
-        remains fully in scope.
+      - pox.clar, pox-2.clar, pox-3.clar and pox_1/2/3.rs are superseded and OUT OF SCOPE,
+        as are README, tests, benches and config.
+      - The externally deployed `sbtc-token` contract is out of scope except where pox-5's
+        own use of it (allowance, transfer order, recipient) is the flaw.
+      - Denial of service, gas griefing, block stuffing, unbounded loops and memory hygiene
+        are OUT OF SCOPE.
+      - Defects in secp256k1, Bitcoin consensus, or the Clarity VM internals with no exploit
+        path through pox-5 or pox-locking are OUT OF SCOPE; a weakness here that steers them
+        wrong is fully IN scope.
+      - Also excluded: leaked keys, privileged accounts, centralization risk, best-practice
+        notes, feature requests, STX/BTC price assumptions, funds sent by mistake, and
+        theoretical findings.
     * IN-SCOPE IMPACTS - every question must land on one and name it:
-      Critical: remote code execution on the deploy host (an attacker-influenced string or
-      environment key reaching `Command#start` / `PTY.spawn`); authentication bypass (a
-      forged webhook, session or API token accepted); exfiltration of `GITHUB_TOKEN`, a
-      user's `github_access_token`, `api_clients_secret` or deploy-time secrets; a payload
-      for one repository mutating another repository's stack, commit, task or team;
-      unauthorized deploy, rollback or merge of attacker-controlled code.
-      High: escalation into `Shipit.github_teams` authorization; unauthenticated read of
-      stack state, task streams or deploy output; SSRF carrying the app's GitHub
-      credentials; session fixation or forced OAuth completion.
-    * Every question must be a concrete real-world scenario an unprivileged attacker can
-      execute against a running Shipit instance - a pull request they open, a webhook they
-      POST, a link they get an operator to visit, an HTTP request they send. No speculative
-      resource-hygiene, memory or unbounded-growth questions.
-    * A raised exception is a finding only when it lets an unauthenticated request through
-      or leaks a secret in its message or in task output - say which.
-    * Generate 30 to 40 high-signal questions.
-    * At least 70% must land on a Critical impact - RCE, authentication bypass, credential
-      exfiltration, cross-repository writes or an unauthorized ship - rather than a High one.
-    * Every question must be testable by a minitest test under `test/` (ActiveSupport,
-      ActionDispatch::IntegrationTest, WebMock or Mocha) with no live GitHub and no network.
+      Critical: theft or unbacked minting of locked STX or sBTC rewards; permanent freezing
+      of staked STX or sBTC; unlocking value that was never locked; double-counting a
+      commitment or reward.
+      High: theft or permanent freezing of protocol reserve or fees; temporary freezing of
+      staked funds; gaining signing weight or reward slots exceeding locked value;
+      authorising a stacking action the staker or signer never signed.
+    * Every question must be a concrete real-world scenario an unprivileged account can
+      execute on the deployed chain with their own funds and their own contracts.
+    * A revert is a finding only when it permanently strands staked value or lets an
+      unbacked lock/credit through - say which.
+    * Generate 20 to 40 high-signal questions.
+    * At least 70% must land on a Critical impact rather than a High one.
+    * Every question must be testable with a Rust integration test on a booted chainstate
+      (or a Clarity unit test) locally. Never propose testing on mainnet or a public
+      testnet.
     * Avoid generic checklist questions and repeated root causes.
-    * Prefer questions that name TWO values that must be equal and ask whether they are: the
-      org that authenticated a payload and the org whose record is written, a ref approved
-      and a ref executed, an env key permitted and an env key spawned, a stack a token
-      authorises and a stack it touches, a GitHub identity and a `session[:user_id]`.
+    * Prefer questions that name TWO values that must be equal and ask whether they are: STX
+      locked and STX committed, sBTC paid and sBTC earned, sats credited and sats locked on
+      Bitcoin, value unlocked and value staked, weight assigned and value locked.
 
     Known dead ends - do NOT generate questions about these:
-    * Anything needing a Shipit session, an `ApiClient` token, `webhook_secret`,
-      `api_clients_secret`, a GitHub App private key, or repository write access.
-    * A CVE in a dependency with no reachable path through this engine.
-    * The host application choosing not to mount or protect the engine as documented.
-    * Findings only reproducible in test/dummy, fixtures or generated files.
-    * Timing, DoS, log volume, or an attacker affecting only their own repository with no
-      tenant boundary crossed, no command executed and no credential exposed.
+    * Anything needing the bond admin, pause admin, a miner, or another staker's key.
+    * A bug in the external sbtc-token or in Bitcoin itself with no path through pox-5.
+    * Superseded PoX contracts, timing, DoS, gas, or a staker harming only their own stake.
+    * Findings only reproducible through tests or tooling.
 
-    Core bindings (each question must close on one):
-    * WEBHOOK PROVENANCE: the organization whose `webhook_secret` verified the body == the
-      organization owning the repository, stack, commit or team the handler mutates.
-    * REPOSITORY SCOPE: a row written from a payload belongs to the repository named in that
-      same verified payload.
-    * EXECUTION TRUST: every string reaching `Command#start` and every key in
-      `Command#unbundled_env` originates from a ref and a spec an authorized user approved.
-    * IDENTITY BINDING: `session[:user_id]`, `current_user` and the acting `ApiClient` ==
-      the GitHub identity and scope that authenticated this request.
-    * AUTHORIZATION TRUTH: `force_github_authentication`, `authorized?`, `require_permission!`,
-      the `stacks` scope and `deployable?` never answer permissively for a caller that lacks
-      the right.
+    Core equalities (each question must close on one):
+    * LOCK CONSERVATION: STX/sBTC locked == value the staker committed and owns.
+    * REWARD CONSERVATION: sBTC paid for a (signer, staker, cycle) == rewards earned, once.
+    * PROOF TRUTH: sats credited by an L1 lockup proof == sats locked in a confirmed
+      Bitcoin timelock committed to the staker.
+    * SINGLE UNLOCK: value unlocks once, at the committed height, only for its owner.
+    * AUTHORITY: every stacking action == one the staker or their signer signed for exactly
+      those parameters on this chain.
 
     Each question must include:
-    1. target class/method;
-    2. attacker action (a concrete pull request, webhook POST, or HTTP request with body,
-       headers, params or cookies);
-    3. preconditions (Shipit configuration, repository settings, existing stack state);
-    4. call sequence through the engine;
-    5. the binding that breaks, written as an equality;
-    6. scoped impact and whose repository, credential or host is affected;
+    1. target define-public/-private/-read-only or Rust function;
+    2. attacker action (a concrete call with the arguments and trait/proof fields that matter);
+    3. preconditions (cycle phase, existing membership, balances, allowlist state);
+    4. call sequence through the contract, pox-locking and the coordinator;
+    5. the equality that breaks, written explicitly;
+    6. scoped impact and whose funds are exposed;
     7. proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Method: class_or_method] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, breaking the binding BINDING_EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: minitest test PARAMETERS asserting WEBHOOK_PROVENANCE, REPOSITORY_SCOPE, EXECUTION_TRUST, IDENTITY_BINDING, or AUTHORIZATION_TRUTH.",
+    "[File: {target_file}] [Method: function_name] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, breaking the equality EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: Rust or Clarity test PARAMETERS asserting LOCK_CONSERVATION, REWARD_CONSERVATION, PROOF_TRUTH, SINGLE_UNLOCK, or AUTHORITY.",
     ]
     """
     return prompt
@@ -329,7 +680,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a deployment-trust shipit-engine exploit-validation prompt.
+    Generate a stacking / bond / reward exploit-validation prompt for stacks-core.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -339,20 +690,19 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: any GitHub user who can open a pull request, push to a fork, name a branch, label their own PR, write a commit message and emit webhooks from a repository they own; and any internet user who can send HTTP requests to the Shipit host, including POST /webhooks. They hold no Shipit session, no `ApiClient` token, no `api_clients_secret`, `secret_key_base`, GitHub App private key or `webhook_secret`, are not in `Shipit.github_teams`, and are not a repository maintainer or Shipit operator.
-- Reject TLS interception, local or physical access, compromised dependencies, social engineering, and any path requiring Shipit or GitHub secrets or privileged roles.
-- Assume the host app mounts this engine as documented. The bug must be in this engine's code.
-- OUT OF SCOPE, reject on sight: `test/**`, `docs/**`, `examples/**`, `contrib/**`, `script/**`, `vendor/**`, `db/migrate/**`, `app/assets/**`, `template.rb`, `Rakefile`, `*.gemspec`, `Gemfile*`, `*.md`; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party gem defects with no exploit path through this engine's own code; best-practice notes; feature requests; theoretical findings with no demonstration.
-- The impact must be one of: Critical - RCE on the deploy host via `Command`/`PTY.spawn`, authentication bypass (forged webhook, session or API token accepted), exfiltration of `GITHUB_TOKEN`, a user's `github_access_token`, `api_clients_secret` or deploy-time secrets, a payload for one repository mutating another's stack, commit, task or team, or an unauthorized deploy, rollback or merge; High - escalation into `Shipit.github_teams` authorization, unauthenticated read of stack state, task streams or deploy output, SSRF carrying the app's GitHub credentials, or session fixation / forced OAuth completion.
-- Focus on real impact: a command running that should not, a record written for a repository that did not authenticate it, or a credential leaving the host.
+- Attacker is unprivileged only: any Stacks account with its own STX and sBTC who can deploy the signer-manager contract, call any pox-5 entry point, submit L1 lockup proofs, craft burnchain stacking ops from their own Bitcoin inputs, and order their own transactions. They are not the bond admin, pause admin, a miner, a signer with another's key, the SIP-031 recipient or the victim staker.
+- Reject malicious peer/node/RPC/relayer/Bitcoin-miner assumptions, compromised dependencies, social engineering, and any path requiring a privileged role.
+- OUT OF SCOPE, reject on sight: pox.clar, pox-2.clar, pox-3.clar, pox_1/2/3.rs (superseded), README, tests, benches, config; the external sbtc-token except where pox-5's own use of it is the flaw; denial of service, gas griefing, unbounded loops and memory hygiene; secp256k1, Bitcoin-consensus or Clarity-VM-internal defects with no path through pox-5 or pox-locking; STX/BTC price assumptions; funds sent by mistake; best-practice notes; theoretical findings.
+- The impact must be one of: Critical - theft or unbacked minting of locked STX or sBTC rewards, permanent freezing of staked STX or sBTC, unlocking value never locked, double-counting a commitment or reward; High - theft or permanent freezing of reserve or fees, temporary freezing of staked funds, signing weight or reward slots exceeding locked value, an unsigned stacking action.
+- Focus on real impact: value locked/unlocked/paid that the contract did not validate, sats credited that were never locked on Bitcoin, or a reward or commitment counted twice.
 
 ## Validate
-- Write the binding the question claims is broken as an explicit equality between two named values BEFORE tracing any code.
-- Trace the exact reachable path from the attacker's request or pull request, and record every read and write of `params`/`payload`, `repository_owner`, `repository.full_name`, `session[:user_id]`, `current_user`, `current_api_client.stack_id`, the stack `branch` and `environment`, `Command#args`, and the merged env hash reaching `PTY.spawn`.
+- Write the equality the question claims is broken between two named values BEFORE tracing any code.
+- Trace the exact reachable path from the attacker's call and record every read and write of locked/unlocked `STXBalance`, `protocol-bond-memberships`, `staker-info`, the reward-per-token snapshots, `last-accounted-rewards-only`, `seen-outpoints`, the sBTC `as-contract?` allowance, and `signer-manager-call-active`.
 - Evaluate both sides of the equality before and after. If they still match, output no vulnerability.
-- Check whether `verify_signature`, `GitHubApp#verify_webhook_signature`, `drop_unhandled_event`, the `ExplicitParameters` schema, `force_github_authentication`, `User#authorized?`, `require_permission!`, the `stacks` scope, model validations (`Repository` format, `Stack` environment format, `subset`/`url` validators) or `EnvironmentVariables#permit` already prevent the divergence.
-- State what the attacker gains per request and whether it is repeatable against arbitrary repositories or stacks.
-- Require exact file/method support and a reproducible minitest proof under `test/` with no live GitHub.
+- Check whether `verify-not-prepare-phase`, `validate-no-reentrancy` / `signer-manager-call-active`, `check-pox-lock-period`, `verify-signer-key-grant`, the `<=` guards, `parse_pox_stake_result`, or the coordinator's cycle-start handlers already prevent the divergence.
+- State what the attacker gains per transaction and whether it is repeatable.
+- Require exact file/function support and a reproducible Rust or Clarity test on a local chainstate.
 
 ## Output
 If valid, output exactly:
@@ -364,19 +714,19 @@ If valid, output exactly:
 [2-3 sentences]
 
 ### Finding Description
-[The broken binding as an equality, the code path, root cause, the attacker's exact request or pull request, exploit flow, and why existing guards fail]
+[The broken equality, the code path, root cause, the attacker's exact call, exploit flow, and why existing guards fail]
 
 ### Impact Explanation
-[What is executed, exposed or bypassed, which repository or party, repeatability, blast radius across tenants, matching severity category]
+[What is stolen, minted, frozen, unlocked or double-counted, which party, repeatability, matching severity category]
 
 ### Likelihood Explanation
-[Preconditions, Shipit and repository configuration required, attacker cost, feasibility, repeatability]
+[Preconditions, cycle phase and membership state required, attacker cost, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[minitest test plan with the exact assertions on both sides of the binding]
+[Rust or Clarity test plan with the exact assertions on both sides of the equality]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -388,7 +738,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for shipit-engine claims.
+    Generate a strict bounty-style validation prompt for stacks-core stacking claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -400,33 +750,32 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- A binding claim is only valid if the report states the broken equality between two named values and shows both sides concretely. Reject prose-only claims.
-- Reject anything requiring a Shipit session, an `ApiClient` token, `api_clients_secret`, `secret_key_base`, a GitHub App private key, a `webhook_secret`, membership in `Shipit.github_teams`, repository write access, operator access, TLS interception, local or physical access, a compromised dependency, or social engineering.
-- OUT OF SCOPE, reject on sight: `test/**`, `docs/**`, `examples/**`, `contrib/**`, `script/**`, `vendor/**`, `db/migrate/**`, `app/assets/**`, `template.rb`, `Rakefile`, `*.gemspec`, `Gemfile*`, `*.md`; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party gem defects with no exploit path through this engine's own code; best-practice notes; feature requests; missing security headers alone; self-XSS; theoretical findings with no demonstration.
-- The impact must be one of: Critical - RCE on the deploy host, authentication bypass, exfiltration of `GITHUB_TOKEN`, a user's `github_access_token` or `api_clients_secret`, cross-repository writes, or an unauthorized deploy, rollback or merge; High - escalation into `Shipit.github_teams` authorization, unauthenticated read of stack state, task streams or deploy output, SSRF with the app's GitHub credentials, or session fixation / forced OAuth completion.
-- Reject claims that depend on the host application not mounting or protecting the engine as documented.
-- Reject if the bug was already fixed, publicly disclosed, or is covered by an existing advisory or CHANGELOG entry for a supported version.
-- Reject a divergence with no repository, credential, execution or authentication boundary crossed.
-- A valid report must be triggerable by an unprivileged attacker against a Shipit instance running the current release.
+- A claim is only valid if the report states the broken equality between two named values and shows both sides concretely. Reject prose-only claims.
+- Reject anything requiring the bond admin, pause admin, a miner, a signer with another's key, the SIP-031 recipient, another staker's key, a malicious peer/node/RPC/relayer/Bitcoin-miner, a compromised dependency, or social engineering.
+- OUT OF SCOPE, reject on sight: pox.clar, pox-2.clar, pox-3.clar, pox_1/2/3.rs (superseded), README, tests, benches, config; the external sbtc-token except where pox-5's own use of it is the flaw; denial of service, gas griefing, unbounded loops and memory hygiene; secp256k1, Bitcoin-consensus or Clarity-VM-internal defects with no path through pox-5 or pox-locking; STX/BTC price assumptions; centralization risk; funds sent by mistake; best-practice notes; feature requests; theoretical findings.
+- The impact must be one of: Critical - theft or unbacked minting of locked STX or sBTC rewards, permanent freezing of staked STX or sBTC, unlocking value never locked, double-counting a commitment or reward; High - theft or permanent freezing of reserve or fees, temporary freezing of staked funds, signing weight or reward slots exceeding locked value, an unsigned stacking action.
+- Reject claims where the only loss is the attacker's own stake.
+- Reject if the bug was already fixed, publicly disclosed, or covered by a known-issues list.
+- A valid report must be triggerable by an unprivileged account against the current code with their own funds and their own contracts.
 - A PoC is mandatory. Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
-1. Exact in-scope file, class/method, and line references.
-2. The binding written explicitly as an equality, with both sides shown before and after.
-3. Clear root cause: which unverified payload field, which unscoped query, which unfiltered environment key, which missing authorization check causes the divergence.
-4. Reachable exploit path: preconditions -> attacker pull request or HTTP request -> engine call sequence -> observed divergence.
-5. `verify_signature`, `GitHubApp#verify_webhook_signature`, the `ExplicitParameters` schemas, `force_github_authentication`, `User#authorized?`, `require_permission!`, the `stacks` scope, model validators and `EnvironmentVariables#permit` reviewed and shown insufficient.
-6. Impact stated concretely: which command runs, which credential or which repository's data, and whether it is repeatable against arbitrary tenants.
-7. Reproducible proof: minitest test with the asserted values.
+1. Exact in-scope file, function/native/struct, and line references.
+2. The equality written explicitly, with both sides shown before and after.
+3. Clear root cause: which lock/commit mismatch, reward-settlement gap, L1-proof weakness, unlock error, reentrancy, or authorization gap causes it.
+4. Reachable exploit path: preconditions -> attacker call -> pox-5, pox-locking and coordinator sequence -> observed divergence.
+5. `verify-not-prepare-phase`, the reentrancy guard, `check-pox-lock-period`, `verify-signer-key-grant`, `parse_pox_stake_result` and the cycle-start handlers reviewed and shown insufficient.
+6. Impact stated concretely: which funds, whose, and whether it is repeatable.
+7. Reproducible proof: Rust or Clarity test on a local chainstate with the asserted values.
 
 ## Silent Triage Questions
 Before output, internally answer:
 - What exactly is the equality, and does it actually fail?
-- Can an ordinary GitHub user or internet user trigger it with no secret and no privileged role?
-- Is the flaw in this engine's code, not in a dependency or in a careless host app?
-- What executes, what credential leaks, or whose repository is written, and is it repeatable?
-- Would a Shopify HackerOne triager accept the exploit path?
+- Can an ordinary staker trigger it with no privileged role and no other user's key?
+- Is the flaw in pox-5 / pox-locking / the coordinator, not in the external sbtc-token or Bitcoin?
+- What value is stolen, minted, frozen, unlocked or double-counted, whose is it, and can it be repeated?
+- Would an Immunefi triager accept the exploit path under the Blockchain/DLT severity system?
 - What exact test would prove it?
 
 ## Output
@@ -438,22 +787,22 @@ Audit Report
 [Clear vulnerability statement] - ([File: file_path])
 
 ## Summary
-[2-3 sentence summary of the broken binding and impact]
+[2-3 sentence summary of the broken equality and impact]
 
 ## Finding Description
 [Exact code path, the equality, root cause, exploit flow, and why existing guards fail]
 
 ## Impact Explanation
-[What is executed, exposed or bypassed, affected party, repeatability, severity category]
+[What is stolen, minted, frozen, unlocked or double-counted, affected party, repeatability, severity category]
 
 ## Likelihood Explanation
-[Attacker capability, preconditions, configuration, cost, feasibility]
+[Attacker capability, preconditions, state required, cost, feasibility]
 
 ## Recommendation
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or minitest test plan with concrete assertions]
+[Minimal reproducible steps or Rust/Clarity test plan with concrete assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -465,7 +814,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for shipit-engine.
+    Generate a short cross-project analog scan prompt for stacks-core stacking.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -473,18 +822,18 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Rules
-- Use in-scope engine context only (`app/**` excluding assets, views, helpers and serializers, plus `lib/shipit/**` and `config/routes.rb`). Do not ask for code or claim missing files.
+- Use in-scope repo context only (pox-5.clar, pox-4.clar, sip-031.clar, lockup.clar, `pox-locking/src/**`, boot/mod.rs, signer_set.rs, coordinator/mod.rs, accounts.rs, the burn stacking ops and signed_structured_data.rs, excluding superseded PoX versions). Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only unprivileged-attacker analogs that break a deployment-trust binding: a payload field acted on but never covered by the verified signature, an organization that authenticated versus the repository that is written, a ref approved versus a ref whose `shipit.yml` steps execute, an environment key permitted versus an environment key spawned, a stack a token authorises versus a stack it touches, or a GitHub identity versus the `User` bound to the session.
-- OUT OF SCOPE, reject on sight: `test/**`, `docs/**`, `examples/**`, `contrib/**`, `script/**`, `vendor/**`, `db/migrate/**`, `app/assets/**`, `template.rb`, `*.gemspec`, `Gemfile*`, `*.md`; denial of service, rate limiting, retry behaviour, resource exhaustion and memory hygiene; third-party gem defects with no exploit path through this engine's own code; anything requiring a Shipit session, an `ApiClient` token, `webhook_secret`, `api_clients_secret`, a GitHub App private key, repository write access, a privileged account, TLS interception, local access or social engineering; best-practice notes; feature requests; theoretical findings.
-- The impact must be one of: Critical - RCE on the deploy host, authentication bypass, exfiltration of `GITHUB_TOKEN`, a user's `github_access_token` or `api_clients_secret`, cross-repository writes, or an unauthorized deploy, rollback or merge; High - escalation into `Shipit.github_teams` authorization, unauthenticated read of stack state, task streams or deploy output, SSRF with the app's GitHub credentials, or session fixation / forced OAuth completion.
-- Reject analogs that depend on the host application not mounting the engine as documented, and analogs with no credential, repository, execution or authentication boundary crossed.
+- Keep only unprivileged-account analogs that break an equality: STX/sBTC locked or unlocked that the contract did not validate, sBTC rewards paid that were not earned or counted twice, sats credited by an L1 proof that were never locked on Bitcoin, value unlocked early or frozen forever, or a stacking action the staker/signer never authorised.
+- OUT OF SCOPE, reject on sight: superseded PoX contracts, README, tests, benches, config; the external sbtc-token except where pox-5's own use of it is the flaw; denial of service, gas griefing, unbounded loops and memory hygiene; secp256k1, Bitcoin-consensus or Clarity-VM-internal defects with no path through pox-5 or pox-locking; anything requiring the bond/pause admin, a miner, another user's key; malicious peer/node assumptions; STX/BTC price assumptions; funds sent by mistake; best-practice notes; theoretical findings.
+- The impact must be one of: Critical - theft or unbacked minting of locked STX or sBTC rewards, permanent freezing of staked STX or sBTC, unlocking value never locked, double-counting a commitment or reward; High - theft or permanent freezing of reserve or fees, temporary freezing of staked funds, signing weight or reward slots exceeding locked value, an unsigned stacking action.
+- Reject analogs where the only loss is the attacker's own stake.
 
 ## Validate
-- Map the bug class to the strongest reachable path in this engine and state the binding it would break as an equality.
-- Evaluate both sides before and after the attacker's pull request or request sequence.
-- Prove root cause with exact file/method support.
-- Accept only concrete RCE, authentication bypass, credential exfiltration, cross-repository writes, an unauthorized ship, or SSRF carrying the app's GitHub credentials.
+- Map the bug class to the strongest reachable path in this repo and state the equality it would break.
+- Evaluate both sides before and after the attacker's call sequence.
+- Prove root cause with exact file/function support.
+- Accept only concrete theft, unbacked minting, permanent or temporary freezing, unlocking value never locked, double-counting, or an unsigned stacking action.
 
 ## Output (Strict)
 If valid analog exists, output:
