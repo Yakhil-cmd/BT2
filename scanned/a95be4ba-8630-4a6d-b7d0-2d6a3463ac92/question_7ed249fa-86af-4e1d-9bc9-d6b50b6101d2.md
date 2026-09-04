@@ -1,0 +1,1 @@
+)`) to build the Clarity call args. Call sequence: `StackStxOp::check()` passes (only validates `signer_key` bytes as a valid secp256k1 key, nothing about `max_amount`), but `collect_pox_4_stacking_args` then errors out with `
