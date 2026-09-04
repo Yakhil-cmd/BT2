@@ -1,0 +1,1 @@
+op receipt exist without a corresponding lock (double-counting a commitment that was never actually locked). Proof idea: integration test submitting a 66-byte StackStxOp payload and asserting the resulting transaction receipt shows the exact failure mode with no partial lock state persisted for VICTIM's account.
