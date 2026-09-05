@@ -1,1 +1,0 @@
-[File: stackslib/src/chainstate/burn/operations/stack_stx.rs -> Scope: Critical] `StackStxOp::parse_data` treats `max_amount` and `auth_id` as optional trailing fields gated purely by `data.len()` thresholds (>=66, >=70) — can an attacker submit a truncated payload of exactly 65 bytes so `max_amount = None`, then rely on `collect_pox_4_stacking_args` (`blocks.rs`) returning `Err(
