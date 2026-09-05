@@ -1,1 +1,0 @@
-[File: 'pox-locking/src/lib.rs' -> Scope: High] Can an unprivileged attacker exploit that `StackStxOp::parse_data` in stack_stx.rs treats `max_amount` as `None` whenever the wire payload is shorter than 66 bytes, and that `collect_pox_4_stacking_args` in blocks.rs returns `Err(
