@@ -1,1 +1,0 @@
-[File: stackslib/src/chainstate/burn/operations/stack_stx.rs -> Scope: High] Can an attacker deliberately omit `auth_id` (truncate `data` to length in `[17,66)`, leaving `auth_id: None`) while still supplying a valid `signer_key`, so `collect_pox_4_stacking_args` returns `Err(
