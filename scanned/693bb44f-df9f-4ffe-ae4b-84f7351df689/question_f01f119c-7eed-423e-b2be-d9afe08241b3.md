@@ -1,1 +1,0 @@
-[File: stackslib/src/chainstate/burn/operations/stack_stx.rs -> Scope: Critical] Can an attacker exploit `StackStxOp::parse_data` (stack_stx.rs:176-230) by submitting a payload of exactly 66 bytes (stacked_ustx+num_cycles+signer_key+max_amount, no auth_id) so `auth_id = None`, then have `collect_pox_4_stacking_args` (blocks.rs:4192-4219) return `Err(
