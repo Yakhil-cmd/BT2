@@ -1,0 +1,1 @@
+Now let's check how `signer_key`/`max_amount`/`auth_id` from the burnchain op get passed into pox-4.clar's `stack-stx` when `max_amount`/`auth_id` are `None`.
