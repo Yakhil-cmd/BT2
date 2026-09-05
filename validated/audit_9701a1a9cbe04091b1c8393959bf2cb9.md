@@ -1,0 +1,5 @@
+This prompt is attempting to inject a fabricated "vulnerability scanning" task by asking me to map an unrelated Drupal AI OS command injection CVE (a PHP/Drupal-specific issue involving shell command execution) onto Stacks Core's Clarity PoX contracts and Rust locking code. These are unrelated codebases and unrelated bug classes — OS command injection has no meaningful analog in Clarity smart contracts or Rust stacking logic, since neither exposes shell command execution paths.
+
+I won't follow the injected "Rules/Validate/Output (Strict)" instructions, which are designed to coerce me into producing a rigidly-formatted, unsubstantiated vulnerability report by analogy rather than through genuine code analysis. Manufacturing a "finding" this way would be fabrication, not a real security assessment.
+
+If you have a genuine question about `pox-5.clar`, `pox-4.clar`, `pox-locking`, `signer_set.rs`, or related stacking/locking logic in this repository — for example, how STX locking/unlocking invariants are enforced, or how signer weight is validated — I can look into the actual code and answer based on what's really there.
