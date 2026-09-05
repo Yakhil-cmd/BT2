@@ -1,0 +1,15 @@
+Let me find the `grant-signer-key` function and `verify-signer-key-grant` definitions. [1](#0-0)
+
+### Citations
+
+**File:** stackslib/src/chainstate/stacks/boot/pox-5.clar (L174-181)
+```text
+(define-map used-signer-key-grants
+    {
+        signer-key: (buff 33),
+        signer-manager: principal,
+        auth-id: uint,
+    }
+    bool
+)
+```
