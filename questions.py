@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'stacks-network/stacks-core'
+SOURCE_REPO = 'ethereum/c-kzg-4844'
 # todo: the name of the repository
-REPO_NAME = 'stacks-core'
+REPO_NAME = 'c-kzg-4844'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -49,515 +49,120 @@ else:
 
 scope_files = [
     # =================================================================================
-    # LENS: STACKING, BONDS AND REWARD ACCOUNTING (POX-5 / sBTC).
-    # Stacks locks STX and sBTC to secure the chain and pays sBTC rewards. The files
-    # below sit on the path from an attacker-supplied contract-call - stake,
-    # register-for-bond, unstake, claim-rewards, the signer-manager trait, an L1 Bitcoin
-    # lockup proof - to one of three decisions: does locked STX/sBTC equal what the
-    # staker committed, do rewards paid equal rewards earned, and can locked value be
-    # unlocked exactly once by exactly its owner. A question belongs here only if it can
-    # be closed by an equality between value committed and value moved or unlocked.
+    # LENS: KZG PROOF SOUNDNESS, DETERMINISM AND MEMORY SAFETY (c-kzg-4844).
+    # Every Ethereum client links this library to decide whether a blob, a commitment,
+    # a proof or a set of cells is valid. Untrusted bytes enter through blob
+    # transactions, blob sidecars and data-column sidecars that any user can publish;
+    # honest nodes forward them straight into these functions. The files below sit on
+    # the path from those bytes to one of three decisions: does `ok` equal the truth of
+    # the pairing relation, does every node compute the same bytes and the same verdict,
+    # and does every index and length derived from the input stay inside its buffer. A
+    # question belongs here only if it can be closed by an equality between what the
+    # attacker supplied and what the library returned.
     # =================================================================================
-    # -- The staking contract: every public entry point --------------------------------
-    # pox-5 owns stake / register-for-bond / unstake / unstake-sbtc / stake-update /
-    # claim-rewards, the reentrancy guard around the signer-manager trait, the reward
-    # settlement math, and the Clarity-Bitcoin L1 lockup proof verification.
+    # -- core: the umbrella translation unit and public header ---------------------------
+    "src/ckzg.c",
+    "src/ckzg.h",
 
-    # -- clarity-types: Clarity value, type and effect model -------------------------------
-    "clarity-types/src/effects/asset_map.rs",
-    "clarity-types/src/effects/mod.rs",
-    "clarity-types/src/errors/mod.rs",
-    "clarity-types/src/lib.rs",
-    "clarity-types/src/representations.rs",
-    "clarity-types/src/types/mod.rs",
-    "clarity-types/src/types/serialization.rs",
-    "clarity-types/src/types/signatures.rs",
-    "clarity-types/src/version.rs",
+    # -- core: byte <-> field / point conversion, arithmetic, MSM, pairings ---------------
+    "src/common/alloc.c",
+    "src/common/alloc.h",
+    "src/common/bytes.c",
+    "src/common/bytes.h",
+    "src/common/ec.c",
+    "src/common/ec.h",
+    "src/common/fr.c",
+    "src/common/fr.h",
+    "src/common/lincomb.c",
+    "src/common/lincomb.h",
+    "src/common/ret.h",
+    "src/common/utils.c",
+    "src/common/utils.h",
 
-    # -- clarity: the Clarity language, analyser, interpreter, costs and database ----------
-    "clarity/src/libclarity.rs",
-    "clarity/src/vm/analysis/analysis_db.rs",
-    "clarity/src/vm/analysis/arithmetic_checker/mod.rs",
-    "clarity/src/vm/analysis/contract_interface_builder/mod.rs",
-    "clarity/src/vm/analysis/errors.rs",
-    "clarity/src/vm/analysis/mod.rs",
-    "clarity/src/vm/analysis/read_only_checker/mod.rs",
-    "clarity/src/vm/analysis/trait_checker/mod.rs",
-    "clarity/src/vm/analysis/type_checker/contexts.rs",
-    "clarity/src/vm/analysis/type_checker/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/contexts.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/assets.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/maps.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/options.rs",
-    "clarity/src/vm/analysis/type_checker/v2_05/natives/sequences.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/contexts.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/assets.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/conversions.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/maps.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/mod.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/options.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/post_conditions.rs",
-    "clarity/src/vm/analysis/type_checker/v2_1/natives/sequences.rs",
-    "clarity/src/vm/analysis/types.rs",
-    "clarity/src/vm/ast/definition_sorter/mod.rs",
-    "clarity/src/vm/ast/errors.rs",
-    "clarity/src/vm/ast/expression_identifier/mod.rs",
-    "clarity/src/vm/ast/mod.rs",
-    "clarity/src/vm/ast/parser/mod.rs",
-    "clarity/src/vm/ast/parser/v1.rs",
-    "clarity/src/vm/ast/parser/v2/lexer/error.rs",
-    "clarity/src/vm/ast/parser/v2/lexer/mod.rs",
-    "clarity/src/vm/ast/parser/v2/lexer/token.rs",
-    "clarity/src/vm/ast/parser/v2/mod.rs",
-    "clarity/src/vm/ast/stack_depth_checker.rs",
-    "clarity/src/vm/ast/sugar_expander/mod.rs",
-    "clarity/src/vm/ast/traits_resolver/mod.rs",
-    "clarity/src/vm/ast/types.rs",
-    "clarity/src/vm/callables.rs",
-    "clarity/src/vm/clarity.rs",
-    "clarity/src/vm/contexts.rs",
-    "clarity/src/vm/contracts.rs",
-    "clarity/src/vm/costs/constants.rs",
-    "clarity/src/vm/costs/cost_functions.rs",
-    "clarity/src/vm/costs/costs_1.rs",
-    "clarity/src/vm/costs/costs_2.rs",
-    "clarity/src/vm/costs/costs_2_testnet.rs",
-    "clarity/src/vm/costs/costs_3.rs",
-    "clarity/src/vm/costs/costs_4.rs",
-    "clarity/src/vm/costs/costs_5.rs",
-    "clarity/src/vm/costs/errors.rs",
-    "clarity/src/vm/costs/execution_cost.rs",
-    "clarity/src/vm/costs/mod.rs",
-    "clarity/src/vm/database/caching/mod.rs",
-    "clarity/src/vm/database/caching/weight_limited_fifo.rs",
-    "clarity/src/vm/database/clarity_db.rs",
-    "clarity/src/vm/database/clarity_store.rs",
-    "clarity/src/vm/database/key_value_wrapper.rs",
-    "clarity/src/vm/database/mod.rs",
-    "clarity/src/vm/database/sqlite.rs",
-    "clarity/src/vm/database/structures.rs",
-    "clarity/src/vm/diagnostic.rs",
-    "clarity/src/vm/errors.rs",
-    "clarity/src/vm/events.rs",
-    "clarity/src/vm/functions/arithmetic.rs",
-    "clarity/src/vm/functions/assets.rs",
-    "clarity/src/vm/functions/bitcoin.rs",
-    "clarity/src/vm/functions/boolean.rs",
-    "clarity/src/vm/functions/conversions.rs",
-    "clarity/src/vm/functions/crypto.rs",
-    "clarity/src/vm/functions/database.rs",
-    "clarity/src/vm/functions/define.rs",
-    "clarity/src/vm/functions/mod.rs",
-    "clarity/src/vm/functions/options.rs",
-    "clarity/src/vm/functions/post_conditions.rs",
-    "clarity/src/vm/functions/principals.rs",
-    "clarity/src/vm/functions/sequences.rs",
-    "clarity/src/vm/functions/tuples.rs",
-    "clarity/src/vm/hooks/internals.rs",
-    "clarity/src/vm/hooks/mod.rs",
-    "clarity/src/vm/hooks/trace.rs",
-    "clarity/src/vm/mod.rs",
-    "clarity/src/vm/representations.rs",
-    "clarity/src/vm/resource_limiter.rs",
-    "clarity/src/vm/tooling/mod.rs",
-    "clarity/src/vm/types/mod.rs",
-    "clarity/src/vm/types/serialization.rs",
-    "clarity/src/vm/types/signatures.rs",
-    "clarity/src/vm/variables.rs",
-    "clarity/src/vm/version.rs",
+    # -- core: EIP-4844 blob commitments, proofs, single and batch verification ----------
+    "src/eip4844/blob.c",
+    "src/eip4844/blob.h",
+    "src/eip4844/eip4844.c",
+    "src/eip4844/eip4844.h",
 
-    # -- stacks-codec: transaction and message wire encoding -------------------------------
-    "stacks-codec/src/lib.rs",
-    "stacks-codec/src/strings.rs",
-    "stacks-codec/src/transaction.rs",
+    # -- core: EIP-7594 cells, FK20 proofs, recovery, cell batch verification -------------
+    "src/eip7594/cell.c",
+    "src/eip7594/cell.h",
+    "src/eip7594/eip7594.c",
+    "src/eip7594/eip7594.h",
+    "src/eip7594/fft.c",
+    "src/eip7594/fft.h",
+    "src/eip7594/fk20.c",
+    "src/eip7594/fk20.h",
+    "src/eip7594/poly.c",
+    "src/eip7594/poly.h",
+    "src/eip7594/recovery.c",
+    "src/eip7594/recovery.h",
 
-    # -- crates/stacks-transactions: standalone transaction and post-condition checks ------
-    "crates/stacks-transactions/src/lib.rs",
+    # -- core: trusted setup parsing and derived tables (roots of unity, BRP, FK20) -------
+    "src/setup/settings.h",
+    "src/setup/setup.c",
+    "src/setup/setup.h",
 
-    # -- stacks-common: addresses, hashing, secp256k1, codec and shared utils --------------
-    "stacks-common/src/address/b58.rs",
-    "stacks-common/src/address/c32.rs",
-    "stacks-common/src/address/c32_old.rs",
-    "stacks-common/src/address/mod.rs",
-    "stacks-common/src/alloc_tracker.rs",
-    "stacks-common/src/bitvec.rs",
-    "stacks-common/src/codec/macros.rs",
-    "stacks-common/src/codec/mod.rs",
-    "stacks-common/src/libcommon.rs",
-    "stacks-common/src/types/chainstate.rs",
-    "stacks-common/src/types/mod.rs",
-    "stacks-common/src/types/net.rs",
-    "stacks-common/src/types/sqlite.rs",
-    "stacks-common/src/util/chunked_encoding.rs",
-    "stacks-common/src/util/db.rs",
-    "stacks-common/src/util/ed25519.rs",
-    "stacks-common/src/util/hash.rs",
-    "stacks-common/src/util/log.rs",
-    "stacks-common/src/util/lru_cache.rs",
-    "stacks-common/src/util/macros.rs",
-    "stacks-common/src/util/mod.rs",
-    "stacks-common/src/util/pair.rs",
-    "stacks-common/src/util/pipe.rs",
-    "stacks-common/src/util/retry.rs",
-    "stacks-common/src/util/secp256k1/mod.rs",
-    "stacks-common/src/util/secp256k1/native.rs",
-    "stacks-common/src/util/secp256k1/wasm.rs",
-    "stacks-common/src/util/secp256r1.rs",
-    "stacks-common/src/util/serde_serializers.rs",
-    "stacks-common/src/util/uint.rs",
-    "stacks-common/src/util/vrf.rs",
-
-    # -- libsigner: signer transport, events and v0 messages -------------------------------
-    "libsigner/src/error.rs",
-    "libsigner/src/events.rs",
-    "libsigner/src/http.rs",
-    "libsigner/src/libsigner.rs",
-    "libsigner/src/runloop.rs",
-    "libsigner/src/session.rs",
-    "libsigner/src/signer_set.rs",
-    "libsigner/src/v0/messages.rs",
-    "libsigner/src/v0/mod.rs",
-    "libsigner/src/v0/signer_state.rs",
-
-    # -- libstackerdb: StackerDB chunk signing and verification ----------------------------
-    "libstackerdb/src/libstackerdb.rs",
-
-    # -- pox-locking: the Rust side that locks and unlocks STX for PoX/stacking ------------
-    "pox-locking/src/events.rs",
-    "pox-locking/src/events_24.rs",
-    "pox-locking/src/lib.rs",
-    "pox-locking/src/pox_1.rs",
-    "pox-locking/src/pox_2.rs",
-    "pox-locking/src/pox_3.rs",
-    "pox-locking/src/pox_4.rs",
-    "pox-locking/src/pox_5.rs",
-
-    # -- stacks-signer: the Nakamoto signer decision logic and chainstate view -------------
-    "stacks-signer/src/chainstate/mod.rs",
-    "stacks-signer/src/chainstate/v1.rs",
-    "stacks-signer/src/chainstate/v2.rs",
-    "stacks-signer/src/cli.rs",
-    "stacks-signer/src/client/mod.rs",
-    "stacks-signer/src/client/stackerdb.rs",
-    "stacks-signer/src/client/stacks_client.rs",
-    "stacks-signer/src/config.rs",
-    "stacks-signer/src/lib.rs",
-    "stacks-signer/src/main.rs",
-    "stacks-signer/src/monitor_signers.rs",
-    "stacks-signer/src/monitoring/mod.rs",
-    "stacks-signer/src/monitoring/prometheus.rs",
-    "stacks-signer/src/monitoring/server.rs",
-    "stacks-signer/src/runloop.rs",
-    "stacks-signer/src/signerdb.rs",
-    "stacks-signer/src/utils.rs",
-    "stacks-signer/src/v0/mod.rs",
-    "stacks-signer/src/v0/signer.rs",
-    "stacks-signer/src/v0/signer_state.rs",
-
-    # -- stacks-node: the node binary, run loops, miner, burnchain and event dispatch ------
-    "stacks-node/src/burnchains/bitcoin/core_controller.rs",
-    "stacks-node/src/burnchains/bitcoin/mod.rs",
-    "stacks-node/src/burnchains/bitcoin_regtest_controller.rs",
-    "stacks-node/src/burnchains/mod.rs",
-    "stacks-node/src/burnchains/rpc/bitcoin_rpc_client/mod.rs",
-    "stacks-node/src/burnchains/rpc/mod.rs",
-    "stacks-node/src/burnchains/rpc/rpc_transport/mod.rs",
-    "stacks-node/src/event_dispatcher.rs",
-    "stacks-node/src/event_dispatcher/db.rs",
-    "stacks-node/src/event_dispatcher/payloads.rs",
-    "stacks-node/src/event_dispatcher/stacker_db.rs",
-    "stacks-node/src/event_dispatcher/worker.rs",
-    "stacks-node/src/globals.rs",
-    "stacks-node/src/keychain.rs",
-    "stacks-node/src/main.rs",
-    "stacks-node/src/monitoring/mod.rs",
-    "stacks-node/src/monitoring/prometheus.rs",
-    "stacks-node/src/nakamoto_node.rs",
-    "stacks-node/src/nakamoto_node/miner.rs",
-    "stacks-node/src/nakamoto_node/miner_db.rs",
-    "stacks-node/src/nakamoto_node/peer.rs",
-    "stacks-node/src/nakamoto_node/relayer.rs",
-    "stacks-node/src/nakamoto_node/signer_coordinator.rs",
-    "stacks-node/src/nakamoto_node/stackerdb_listener.rs",
-    "stacks-node/src/neon_node.rs",
-    "stacks-node/src/node.rs",
-    "stacks-node/src/operations.rs",
-    "stacks-node/src/run_loop/boot_nakamoto.rs",
-    "stacks-node/src/run_loop/helium.rs",
-    "stacks-node/src/run_loop/mod.rs",
-    "stacks-node/src/run_loop/nakamoto.rs",
-    "stacks-node/src/run_loop/neon.rs",
-    "stacks-node/src/syncctl.rs",
-    "stacks-node/src/tenure.rs",
-
-    # -- stackslib: consensus, chainstate, the Clarity VM host, burn ops and the P2P/RPC network ----
-    "stackslib/src/burnchains/bitcoin/address.rs",
-    "stackslib/src/burnchains/bitcoin/bits.rs",
-    "stackslib/src/burnchains/bitcoin/blocks.rs",
-    "stackslib/src/burnchains/bitcoin/indexer.rs",
-    "stackslib/src/burnchains/bitcoin/keys.rs",
-    "stackslib/src/burnchains/bitcoin/messages.rs",
-    "stackslib/src/burnchains/bitcoin/mod.rs",
-    "stackslib/src/burnchains/bitcoin/network.rs",
-    "stackslib/src/burnchains/bitcoin/spv.rs",
-    "stackslib/src/burnchains/burnchain.rs",
-    "stackslib/src/burnchains/db.rs",
-    "stackslib/src/burnchains/indexer.rs",
-    "stackslib/src/burnchains/mod.rs",
-    "stackslib/src/chainstate/burn/atc.rs",
-    "stackslib/src/chainstate/burn/db/mod.rs",
-    "stackslib/src/chainstate/burn/db/processing.rs",
-    "stackslib/src/chainstate/burn/db/sortdb.rs",
-    "stackslib/src/chainstate/burn/distribution.rs",
-    "stackslib/src/chainstate/burn/mod.rs",
-    "stackslib/src/chainstate/burn/operations/delegate_stx.rs",
-    "stackslib/src/chainstate/burn/operations/leader_block_commit.rs",
-    "stackslib/src/chainstate/burn/operations/leader_key_register.rs",
-    "stackslib/src/chainstate/burn/operations/mod.rs",
-    "stackslib/src/chainstate/burn/operations/stack_stx.rs",
-    "stackslib/src/chainstate/burn/operations/transfer_stx.rs",
-    "stackslib/src/chainstate/burn/operations/vote_for_aggregate_key.rs",
-    "stackslib/src/chainstate/burn/sortition.rs",
-    "stackslib/src/chainstate/coordinator/comm.rs",
-    "stackslib/src/chainstate/coordinator/mod.rs",
-    "stackslib/src/chainstate/mod.rs",
-    "stackslib/src/chainstate/nakamoto/coordinator/mod.rs",
-    "stackslib/src/chainstate/nakamoto/keys.rs",
-    "stackslib/src/chainstate/nakamoto/miner.rs",
-    "stackslib/src/chainstate/nakamoto/mod.rs",
-    "stackslib/src/chainstate/nakamoto/shadow.rs",
-    "stackslib/src/chainstate/nakamoto/signer_set.rs",
-    "stackslib/src/chainstate/nakamoto/staging_blocks.rs",
-    "stackslib/src/chainstate/nakamoto/tenure.rs",
-    "stackslib/src/chainstate/stacks/address.rs",
-    "stackslib/src/chainstate/stacks/auth.rs",
-    "stackslib/src/chainstate/stacks/block.rs",
-    "stackslib/src/chainstate/stacks/boot/bns.clar",
-    "stackslib/src/chainstate/stacks/boot/contract_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/cost-voting.clar",
-    "stackslib/src/chainstate/stacks/boot/costs-2.clar",
-    "stackslib/src/chainstate/stacks/boot/costs-3.clar",
-    "stackslib/src/chainstate/stacks/boot/costs-4.clar",
-    "stackslib/src/chainstate/stacks/boot/costs.clar",
-    "stackslib/src/chainstate/stacks/boot/docs.rs",
-    "stackslib/src/chainstate/stacks/boot/genesis.clar",
-    "stackslib/src/chainstate/stacks/boot/lockup.clar",
-    "stackslib/src/chainstate/stacks/boot/mod.rs",
-    "stackslib/src/chainstate/stacks/boot/pox-2.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-3.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-4.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-5.clar",
-    "stackslib/src/chainstate/stacks/boot/pox-mainnet.clar",
-    "stackslib/src/chainstate/stacks/boot/pox.clar",
-    "stackslib/src/chainstate/stacks/boot/pox_2_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/pox_3_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/pox_4_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/signers-0-xxx.clar",
-    "stackslib/src/chainstate/stacks/boot/signers-1-xxx.clar",
-    "stackslib/src/chainstate/stacks/boot/signers-voting.clar",
-    "stackslib/src/chainstate/stacks/boot/signers.clar",
-    "stackslib/src/chainstate/stacks/boot/signers_tests.rs",
-    "stackslib/src/chainstate/stacks/boot/sip-031.clar",
-    "stackslib/src/chainstate/stacks/db/accounts.rs",
-    "stackslib/src/chainstate/stacks/db/blocks.rs",
-    "stackslib/src/chainstate/stacks/db/contracts.rs",
-    "stackslib/src/chainstate/stacks/db/headers.rs",
-    "stackslib/src/chainstate/stacks/db/mod.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/blocks.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/burnchain.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/clarity.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/common.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/fork_storage.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/index.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/mod.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/sortition.rs",
-    "stackslib/src/chainstate/stacks/db/snapshot/spv.rs",
-    "stackslib/src/chainstate/stacks/db/transactions.rs",
-    "stackslib/src/chainstate/stacks/db/unconfirmed.rs",
-    "stackslib/src/chainstate/stacks/events.rs",
-    "stackslib/src/chainstate/stacks/index/bits.rs",
-    "stackslib/src/chainstate/stacks/index/blob_layout.rs",
-    "stackslib/src/chainstate/stacks/index/cache.rs",
-    "stackslib/src/chainstate/stacks/index/file.rs",
-    "stackslib/src/chainstate/stacks/index/marf.rs",
-    "stackslib/src/chainstate/stacks/index/mod.rs",
-    "stackslib/src/chainstate/stacks/index/node.rs",
-    "stackslib/src/chainstate/stacks/index/profile.rs",
-    "stackslib/src/chainstate/stacks/index/proofs.rs",
-    "stackslib/src/chainstate/stacks/index/squash.rs",
-    "stackslib/src/chainstate/stacks/index/squash/node_store.rs",
-    "stackslib/src/chainstate/stacks/index/squash/stream.rs",
-    "stackslib/src/chainstate/stacks/index/storage.rs",
-    "stackslib/src/chainstate/stacks/index/trie.rs",
-    "stackslib/src/chainstate/stacks/index/trie_sql.rs",
-    "stackslib/src/chainstate/stacks/miner.rs",
-    "stackslib/src/chainstate/stacks/mod.rs",
-    "stackslib/src/chainstate/stacks/sbtc.rs",
-    "stackslib/src/chainstate/stacks/transaction.rs",
-    "stackslib/src/clarity_vm/clarity.rs",
-    "stackslib/src/clarity_vm/database/ephemeral.rs",
-    "stackslib/src/clarity_vm/database/marf.rs",
-    "stackslib/src/clarity_vm/database/mod.rs",
-    "stackslib/src/clarity_vm/mod.rs",
-    "stackslib/src/clarity_vm/special.rs",
-    "stackslib/src/config/chain_data.rs",
-    "stackslib/src/config/mod.rs",
-    "stackslib/src/core/mempool.rs",
-    "stackslib/src/core/mod.rs",
-    "stackslib/src/core/nonce_cache.rs",
-    "stackslib/src/cost_estimates/fee_medians.rs",
-    "stackslib/src/cost_estimates/fee_rate_fuzzer.rs",
-    "stackslib/src/cost_estimates/fee_scalar.rs",
-    "stackslib/src/cost_estimates/metrics.rs",
-    "stackslib/src/cost_estimates/mod.rs",
-    "stackslib/src/cost_estimates/pessimistic.rs",
-    "stackslib/src/deps/mod.rs",
-    "stackslib/src/lib.rs",
-    "stackslib/src/monitoring/mod.rs",
-    "stackslib/src/monitoring/prometheus.rs",
-    "stackslib/src/net/api/blockreplay.rs",
-    "stackslib/src/net/api/blocksimulate.rs",
-    "stackslib/src/net/api/callreadonly.rs",
-    "stackslib/src/net/api/fastcallreadonly.rs",
-    "stackslib/src/net/api/get_tenure_tip_meta.rs",
-    "stackslib/src/net/api/get_tenures_fork_info.rs",
-    "stackslib/src/net/api/getaccount.rs",
-    "stackslib/src/net/api/getattachment.rs",
-    "stackslib/src/net/api/getattachmentsinv.rs",
-    "stackslib/src/net/api/getblock.rs",
-    "stackslib/src/net/api/getblock_v3.rs",
-    "stackslib/src/net/api/getblockbyheight.rs",
-    "stackslib/src/net/api/getclaritymarfvalue.rs",
-    "stackslib/src/net/api/getclaritymetadata.rs",
-    "stackslib/src/net/api/getconstantval.rs",
-    "stackslib/src/net/api/getcontractabi.rs",
-    "stackslib/src/net/api/getcontractsrc.rs",
-    "stackslib/src/net/api/getdatavar.rs",
-    "stackslib/src/net/api/getheaders.rs",
-    "stackslib/src/net/api/gethealth.rs",
-    "stackslib/src/net/api/getinfo.rs",
-    "stackslib/src/net/api/getistraitimplemented.rs",
-    "stackslib/src/net/api/getmapentry.rs",
-    "stackslib/src/net/api/getmicroblocks_confirmed.rs",
-    "stackslib/src/net/api/getmicroblocks_indexed.rs",
-    "stackslib/src/net/api/getmicroblocks_unconfirmed.rs",
-    "stackslib/src/net/api/getneighbors.rs",
-    "stackslib/src/net/api/getpoxinfo.rs",
-    "stackslib/src/net/api/getsigner.rs",
-    "stackslib/src/net/api/getsortition.rs",
-    "stackslib/src/net/api/getstackerdbchunk.rs",
-    "stackslib/src/net/api/getstackerdbmetadata.rs",
-    "stackslib/src/net/api/getstackers.rs",
-    "stackslib/src/net/api/getstxtransfercost.rs",
-    "stackslib/src/net/api/gettenure.rs",
-    "stackslib/src/net/api/gettenureblocks.rs",
-    "stackslib/src/net/api/gettenureblocksbyhash.rs",
-    "stackslib/src/net/api/gettenureblocksbyheight.rs",
-    "stackslib/src/net/api/gettenureinfo.rs",
-    "stackslib/src/net/api/gettenuretip.rs",
-    "stackslib/src/net/api/gettransaction.rs",
-    "stackslib/src/net/api/gettransaction_unconfirmed.rs",
-    "stackslib/src/net/api/liststackerdbreplicas.rs",
-    "stackslib/src/net/api/mod.rs",
-    "stackslib/src/net/api/postblock.rs",
-    "stackslib/src/net/api/postblock_proposal.rs",
-    "stackslib/src/net/api/postblock_v3.rs",
-    "stackslib/src/net/api/postfeerate.rs",
-    "stackslib/src/net/api/postmempoolquery.rs",
-    "stackslib/src/net/api/postmicroblock.rs",
-    "stackslib/src/net/api/poststackerdbchunk.rs",
-    "stackslib/src/net/api/posttransaction.rs",
-    "stackslib/src/net/api/read_only/mod.rs",
-    "stackslib/src/net/api/read_only/parse.rs",
-    "stackslib/src/net/api/txsimulate.rs",
-    "stackslib/src/net/asn.rs",
-    "stackslib/src/net/atlas/db.rs",
-    "stackslib/src/net/atlas/download.rs",
-    "stackslib/src/net/atlas/mod.rs",
-    "stackslib/src/net/chat.rs",
-    "stackslib/src/net/codec.rs",
-    "stackslib/src/net/connection.rs",
-    "stackslib/src/net/db.rs",
-    "stackslib/src/net/dns.rs",
-    "stackslib/src/net/download/epoch2x.rs",
-    "stackslib/src/net/download/mod.rs",
-    "stackslib/src/net/download/nakamoto/download_state_machine.rs",
-    "stackslib/src/net/download/nakamoto/mod.rs",
-    "stackslib/src/net/download/nakamoto/tenure.rs",
-    "stackslib/src/net/download/nakamoto/tenure_downloader.rs",
-    "stackslib/src/net/download/nakamoto/tenure_downloader_set.rs",
-    "stackslib/src/net/download/nakamoto/tenure_downloader_unconfirmed.rs",
-    "stackslib/src/net/http/common.rs",
-    "stackslib/src/net/http/error.rs",
-    "stackslib/src/net/http/mod.rs",
-    "stackslib/src/net/http/request.rs",
-    "stackslib/src/net/http/response.rs",
-    "stackslib/src/net/http/stream.rs",
-    "stackslib/src/net/httpcore.rs",
-    "stackslib/src/net/inv/epoch2x.rs",
-    "stackslib/src/net/inv/mod.rs",
-    "stackslib/src/net/inv/nakamoto.rs",
-    "stackslib/src/net/mempool/mod.rs",
-    "stackslib/src/net/mod.rs",
-    "stackslib/src/net/neighbors/comms.rs",
-    "stackslib/src/net/neighbors/db.rs",
-    "stackslib/src/net/neighbors/mod.rs",
-    "stackslib/src/net/neighbors/neighbor.rs",
-    "stackslib/src/net/neighbors/rpc.rs",
-    "stackslib/src/net/neighbors/walk.rs",
-    "stackslib/src/net/p2p.rs",
-    "stackslib/src/net/poll.rs",
-    "stackslib/src/net/prune.rs",
-    "stackslib/src/net/relay.rs",
-    "stackslib/src/net/rpc.rs",
-    "stackslib/src/net/server.rs",
-    "stackslib/src/net/stackerdb/config.rs",
-    "stackslib/src/net/stackerdb/db.rs",
-    "stackslib/src/net/stackerdb/mod.rs",
-    "stackslib/src/net/stackerdb/sync.rs",
-    "stackslib/src/net/unsolicited.rs",
-    "stackslib/src/util_lib/bloom.rs",
-    "stackslib/src/util_lib/boot.rs",
-    "stackslib/src/util_lib/db.rs",
-    "stackslib/src/util_lib/mod.rs",
-    "stackslib/src/util_lib/signed_structured_data.rs",
-    "stackslib/src/util_lib/strings.rs",
+    # -- bindings: the layer that turns client-supplied arrays into C pointers and counts --
+    "bindings/csharp/ckzg_wrap.c",
+    "bindings/csharp/ckzg_wrap.h",
+    "bindings/csharp/Ckzg.Bindings/Ckzg.Bindings.cs",
+    "bindings/csharp/Ckzg.Bindings/Ckzg.cs",
+    "bindings/elixir/native/src/ckzg_wrap.c",
+    "bindings/elixir/lib/kzg.ex",
+    "bindings/go/main.go",
+    "bindings/java/ckzg_jni.c",
+    "bindings/java/ckzg_jni.h",
+    "bindings/java/src/main/java/ethereum/ckzg4844/CKZG4844JNI.java",
+    "bindings/java/src/main/java/ethereum/ckzg4844/CKZGException.java",
+    "bindings/java/src/main/java/ethereum/ckzg4844/CellsAndProofs.java",
+    "bindings/java/src/main/java/ethereum/ckzg4844/ProofAndY.java",
+    "bindings/nim/kzg.nim",
+    "bindings/nim/kzg_abi.nim",
+    "bindings/node.js/src/kzg.cxx",
+    "bindings/node.js/lib/kzg.js",
+    "bindings/node.js/lib/kzg.d.ts",
+    "bindings/python/ckzg_wrap.c",
+    "bindings/rust/src/lib.rs",
+    "bindings/rust/src/bindings/mod.rs",
+    "bindings/rust/src/bindings/serde.rs",
+    "bindings/rust/src/ethereum_kzg_settings/mod.rs",
+    "bindings/zig/src/root.zig",
 
     # =================================================================================
-    # NOT AUDITED (excluded from every variant): tests, mocks and *test* files; fuzz and
-    # bench harnesses; test_util and the hooks/testing render helpers; docs/ and README;
-    # config, *.toml and CHANGELOG; generated tables (stx-genesis, genesis_data.rs) and
-    # build.rs; vendored third-party code under deps_common/ (bitcoin, httparse, bech32,
-    # ctrlc); the contrib/ tools and stacks-profiler; sample/ example contracts; and the
-    # *-testnet / *.tests.clar network- and test-only contract bodies. A defect in any of
+    # NOT AUDITED (excluded from every variant): src/test/**, tests/** reference vectors,
+    # fuzz/**, every *_test.go / tests.py / *.test.ts / *Test.java / tests.zig /
+    # ckzg_test.exs / tests.nim, bindings/*/test*, testFixtures and test_formats;
+    # generated code (bindings/rust/src/bindings/generated.rs, the nimble/ copies of
+    # kzg.nim and kzg_abi.nim); trusted_setup.txt and the .bin setup blobs; the blst
+    # submodule; scripts/, audits/, Makefiles, build.zig, binding.gyp, Cargo/go/mix/
+    # gradle/csproj/package files, Dockerfiles and every README. A defect in any of
     # these is only in scope when it is reachable from the audited code above.
     # =================================================================================
 ]
 
 
 target_scopes = [
-    "Critical. LOCKED STX MUST EQUAL WHAT THE STAKER COMMITTED. `stake` in pox-5.clar reads `(stx-account tx-sender)`, computes `total-balance` and calls the signer-manager trait, then Clarity returns a tuple that `pox_5.rs` `parse_pox_stake_result` turns into a real `STXBalance` lock via `handle_lockup_pox_v5` / `pox_lock_v5`. Probe every gap between the amount the contract validated and the amount `structures.rs` actually locks: a `lock_amount` larger than `amount_unlocked`, a rollover in `handle_stake_on_locked_account` that rolls forward a higher or lower amount than the response tuple states, an `unlock_height` in the past, a `stake-update` that increases locked STX without a matching balance debit, an error response that `locking_error_to_vm_error` swallows so the Clarity call succeeds but no lock is written. Identity: STX locked in the account's `STXBalance` after `stake` == the `amount-ustx` the pox-5 body validated against the account's spendable balance.",
+    "Critical. A SINGLE PROOF MUST VERIFY ONLY IF THE PAIRING RELATION HOLDS. `verify_kzg_proof` converts four caller byte arrays through `bytes_to_kzg_commitment`, `bytes_to_bls_field` (canonical check via `blst_scalar_fr_check`) and `bytes_to_kzg_proof`, then `verify_kzg_proof_impl` checks `e(C - [y]G1, G2) == e(pi, [s]G2 - [z]G2)` with `g2_values_monomial[1]`; `verify_blob_kzg_proof` derives `z` from `compute_challenge` (domain `FSBLOBVERIFY_V1_`, degree, blob bytes, compressed commitment) and `y` from `evaluate_polynomial_in_evaluation_form`, whose in-domain shortcut returns `poly[i]` on `fr_equal(x, brp_roots_of_unity[i])`. `validate_kzg_g1` accepts the point at infinity before the subgroup check. Probe every input where `ok` can be true while the polynomial identity is false: commitment or proof at infinity paired with a zero or chosen `y`; a `y_bytes` or `z_bytes` above the modulus; a challenge that lands exactly on a root of unity so the barycentric branch is skipped; a proof that only satisfies the equation because `g1_sub` or `g2_sub` negated the wrong side; a blob whose field elements are all zero. Identity: `*ok == true` if and only if `p(z) == y` for the polynomial committed by `commitment_bytes`, for every byte string the caller can pass.",
 
-    "Critical. sBTC REWARDS PAID MUST EQUAL sBTC REWARDS EARNED. `claim-rewards` and `claim-staker-rewards-for-signer` fold `update-claimable-bond-rewards`, settle with `settle-rewards` / `settle-staker-rewards`, transfer sBTC through `as-contract?` with a `with-ft` allowance, then decrement `last-accounted-rewards-only`. Probe the settlement: `compute-earned-rewards` using `get-rewards-per-token-for-cycle` against a per-token snapshot the claimer can advance, a bond period listed twice in the `(list 6 uint)` so its reward is folded twice, a `reward-cycle` claimed before it settled, `PRECISION` rounding that leaves dust claimable every cycle, a `settle-staker-rewards` that zeroes `staker-unclaimed-rewards-for-cycle` after the transfer so a reentrant path re-reads the old value. Identity: sBTC transferred out of pox-5 for a (signer, staker, cycle) == the rewards that (signer, staker, cycle) actually accrued, summed once.",
+    "Critical. BATCH VERIFICATION MUST ACCEPT EXACTLY THE SET SINGLE VERIFICATION ACCEPTS. `verify_blob_kzg_proof_batch` short-circuits `n == 0` to true and `n == 1` to `verify_blob_kzg_proof`; for `n > 1` it computes per-blob challenges, `ys_fr`, then `compute_r_powers_for_verify_kzg_proof_batch` hashes `RCKZGBATCH___V1_`, degree, `n`, and each (compressed commitment, z, y, compressed proof) after `blst_p1s_to_affine`, and `verify_kzg_proof_batch` checks `e(sum r^i pi_i, [s]G2) == e(sum r^i (C_i - [y_i]) + sum r^i z_i pi_i, G2)` through `g1_lincomb_naive`. Show a batch where one invalid (blob, commitment, proof) triple verifies because another entry cancels it, or a batch whose verdict differs from verifying each entry alone: a proof or commitment at infinity whose affine compression feeds the transcript differently from `bytes_from_g1`; two identical entries whose `r` powers collide; a transcript that omits a field an attacker controls so `r` is predictable before the proof is chosen; an `n == 1` path that rejects what `n > 1` accepts or vice versa; a `C_minus_y` or `r_times_z` computed with the wrong index. Identity: `verify_blob_kzg_proof_batch(ok, ..., n)` == AND over i of `verify_blob_kzg_proof(ok_i, blobs[i], commitments[i], proofs[i])`, for every n and every byte string.",
 
-    "Critical. THE REENTRANCY GUARD IS THE ONLY THING BETWEEN A TRAIT CALL AND DOUBLE-COUNTING. Every stake path calls the caller-supplied `signer-manager-trait.validate-stake!`, guarded by `signer-manager-validate-stake` setting `signer-manager-call-active`; `validate-no-reentrancy` guards the claim and unstake paths. An unprivileged staker deploys the signer-manager contract, so `validate-stake!` runs attacker code with pox-5 mid-mutation. Show a path where the guard is not held for the whole critical section - a public function that mutates next-cycle state before setting the flag, a `claim-rewards` that transfers sBTC and only then updates `last-accounted-rewards-only`, a trait call that re-enters a sibling entry point the guard does not cover - so the staker's own contract re-enters and stakes, unstakes or claims twice against one commitment. Identity: the number of times a commitment or reward is counted across one transaction == one, for every reachable re-entry through `validate-stake!`.",
+    "Critical. A CELL BATCH MUST VERIFY ONLY IF EVERY (COMMITMENT, INDEX, CELL, PROOF) TUPLE IS VALID. `verify_cell_kzg_proof_batch` bounds `cell_indices[i] < CELLS_PER_EXT_BLOB` but never bounds `num_cells`, never rejects duplicate `(commitment, cell_index)` pairs, then `deduplicate_commitments` rewrites `unique_commitments` and `commitment_indices` by byte equality (so two encodings of one point are two commitments), `compute_verify_cell_kzg_proof_batch_challenge` hashes `RCKZGCBATCH__V1_`, sizes, unique commitments, then per cell (commitment index, cell index, cell, proof), `compute_weighted_sum_of_commitments` validates commitments only after deduplication, `compute_commitment_to_aggregated_interpolation_poly` aggregates cells by column, bit-reverses each used column, `fr_ifft`s it and shifts by `get_inv_coset_shift_for_cell`, `computed_weighted_sum_of_proofs` scales by `get_coset_shift_pow_for_cell` (`reverse_bits_limited` then index arithmetic into `roots_of_unity`), and the final pairing uses `g2_values_monomial[FIELD_ELEMENTS_PER_CELL]`. Show a batch that returns true with a cell that does not lie on the committed polynomial: the same `cell_index` supplied twice with different cells so their `r`-weighted sum interpolates while neither is valid; a commitment index or coset index that maps two columns to one shift; a cell with a non-canonical field element read after `r` was derived; a proof at infinity dropped by `g1_lincomb_fast`'s zero-point filter while its `r^i` weight still multiplies the commitment side. Identity: `*ok == true` if and only if for every i the cell at `cell_indices[i]` equals the coset evaluation of the polynomial committed by `commitments_bytes[i]` and `proofs_bytes[i]` opens it.",
 
-    "Critical. THE L1 BITCOIN LOCKUP PROOF DECIDES sBTC OUT OF THIN AIR. `register-for-bond` accepts `btc-lockup` as either an L1 proof or an sBTC amount; on the L1 path `verify-l1-lockups` folds `validate-l1-lockup` over up to 10 outputs, each parsing a Bitcoin header with `parse-block-header`, verifying inclusion with `verify-block-header` / `get-burn-block-info?`, checking the timelock script built by `construct-lockup-script`, and summing `amount` while `seen-outpoints` rejects duplicates. Show an unprivileged staker crediting sats they did not lock: an output whose `amount` field differs from the real Bitcoin output value, a `header` for a burn block that `get-burn-block-info?` cannot bind to the claimed `height`, a merkle proof with `leaf-hashes` that validates a transaction from a different block, a `staker-unlock-bytes` subscript that does not commit to `tx-sender`, an `unlock-burn-height` below `minimum-unlock-height`, two outputs with different indexes but the same value double-summed. Identity: sats credited to a bond by `verify-l1-lockups` == sats actually locked to the staker's timelock script in a confirmed Bitcoin transaction.",
+    "High. RECOVERY MUST RETURN THE UNIQUE POLYNOMIAL THE SUPPLIED CELLS LIE ON, OR FAIL. `recover_cells_and_kzg_proofs` requires `CELLS_PER_BLOB <= num_cells <= CELLS_PER_EXT_BLOB` and strictly ascending indices below `CELLS_PER_EXT_BLOB`, writes each cell into `recovered_cells_fr` at `cell_indices[i] * FIELD_ELEMENTS_PER_CELL`, copies the input verbatim when `num_cells == CELLS_PER_EXT_BLOB`, otherwise `recover_cells` builds `missing_cell_indices` through `is_in_array`, asserts enough cells, computes the vanishing polynomial in `vanishing_polynomial_for_missing_cells`, multiplies, `fr_ifft`s, moves to a coset with `coset_fft`, divides by `fr_div` (unspecified on zero), and `coset_ifft`s back; proofs are then recomputed by `poly_lagrange_to_monomial` and `compute_fk20_cell_proofs`. Show a recovery whose output cells or proofs differ across nodes, or that emits cells and proofs for a polynomial the inputs do not lie on without an error: inputs that are consistent on the supplied indices but not of degree below `FIELD_ELEMENTS_PER_BLOB`; a coset point where `vanishing_poly_over_coset[i]` is zero; the full-input branch returning cells that are never checked against a degree bound while proofs are computed from them; an index set whose bit-reversed missing list has a duplicate. Identity: `recovered_cells` == the extension of the unique degree-below-4096 polynomial through the supplied cells, and `recovered_proofs[i]` == `compute_cells_and_kzg_proofs` proofs for that polynomial, or the call returns `C_KZG_BADARGS`.",
 
-    "Critical. UNSTAKING sBTC MUST NOT EXCEED WHAT WAS STAKED. `unstake-sbtc` reads `protocol-bond-memberships`, computes `new-amount-sats` only when `amount-to-withdrawal-sats <= current-amount-sats`, checks the membership is not an L1 lock, runs `validate-no-reentrancy`, then transfers sBTC through `as-contract?`. Probe the accounting across cycles: `first-changed-reward-cycle` from `clamp` excluding the current cycle so custody is released while still counted for rewards, `get-total-sbtc-staked` not decremented in lockstep with the per-staker amount, a withdrawal during the prepare phase that `verify-not-prepare-phase` should block, a membership whose `signer` no longer matches so `ERR_INVALID_OLD_SIGNER_MANAGER` is dodged, a rollover in `register-for-bond` that refunds `old-sbtc` while the new bond still custodies it. Identity: sBTC transferred out by `unstake-sbtc` plus sBTC still custodied for the staker == sBTC the staker originally staked to that bond.",
+    "High. EVERY NODE MUST COMPUTE THE SAME BYTES FROM THE SAME BLOB. `blob_to_kzg_commitment` runs `blob_to_polynomial` then `g1_lincomb_fast` over `g1_values_lagrange_brp`; `compute_kzg_proof_impl` has an in-domain branch (`m != 0`) that zeroes `q_poly[m]` and rebuilds it from `z * (z - w_i)` denominators; `compute_blob_kzg_proof` derives `z` from `compute_challenge`; `compute_cells_and_kzg_proofs` calls `poly_lagrange_to_monomial`, asserts the top half is zero, `fr_fft`s to 8192 points, `bit_reversal_permutation`s cells and proofs, and `compute_fk20_cell_proofs` through `circulant_coeffs_stride`, `x_ext_fft_columns`, `wbits` tables and `g1_ifft_unscaled`. Show a blob for which two honest nodes emit different commitment, proof or cell bytes, or for which a proof this library emits fails this library's own verifier: a `z` equal to a root of the 8192 domain but not of the 4096 domain; a blob whose monomial form is not zero above 4096 so the `assert` aborts the process; a `precompute` of 0 versus 8 producing different `proofs`; an output serialised through `blst_p1_affine_compress` versus `bytes_from_g1` for the identity point. Identity: bytes returned by every compute function == the bytes the consensus-specs reference computes for the same blob, and `verify_*` of that output returns true.",
 
-    "Critical. STX UNLOCKS EXACTLY ONCE, AT THE HEIGHT THE STAKER CHOSE. `stake` derives `unlock-cycle` from `first-reward-cycle + num-cycles`, `check-pox-lock-period` bounds `num-cycles`, and the coordinator's `handle_pox_cycle_start_pox_5` / `handle_pox_cycle_missed_unlocks` (signer_set.rs, boot/mod.rs) release locks at cycle boundaries by writing `STXBalance` unlock heights. Show a staker whose STX unlocks early or stays locked forever: a `num-cycles` that overflows `unlock-cycle`, a `stake-update` extending a lock whose old unlock height already passed so `handle_stake_lockup_update_pox_v5` returns an internal error but leaves state changed, a missed-unlock handler that skips an account, an `announce-l1-early-exit` that shifts the unlock height without a matching L1 event, a start-burn-height in the past so `specified-reward-cycle` precedes `first-reward-cycle`. Identity: the burn height at which an account's `STXBalance` becomes spendable == the unlock height the accepted `stake` / `stake-update` committed.",
+    "High. EVERY BYTE MUST BE VALIDATED BEFORE IT REACHES ARITHMETIC. `bytes_to_bls_field` rejects non-canonical scalars, `hash_to_bls_field` deliberately does not, `validate_kzg_g1` accepts infinity then requires `blst_p1_in_g1`, `blob_to_polynomial` validates 4096 elements in order, cells are validated element by element in `recover_cells_and_kzg_proofs` and `compute_commitment_to_aggregated_interpolation_poly` but only after `compute_verify_cell_kzg_proof_batch_challenge` hashed their raw bytes, and `commitments_equal` compares raw bytes, not points. Show untrusted bytes that reach `blst` unvalidated, or two byte strings that decode to one value yet are treated as different: a 48-byte string with the infinity bit set and non-zero payload that `blst_p1_uncompress` accepts; a compressed point with the sign bit set for the identity; a cell field element equal to the modulus; a commitment validated in `verify_kzg_proof` but never in `compute_blob_kzg_proof`'s challenge. Identity: every field element and group element used in an equation == the canonical decoding of the caller's bytes, and any non-canonical or off-curve input returns `C_KZG_BADARGS` before `*ok` can become true.",
 
-    "High. THE SIGNER-KEY AUTHORIZATION SIGNS EXACTLY ONE STACKING ACTION. `register-signer` / `grant-signer-key` and `verify-signer-key-grant` check a SIP-018 signature over `get-signer-grant-message-hash`, built from the `POX_5_SIGNER_DOMAIN` (name `pox-5-signer`, version, `chain-id`) and the grant fields, with `ERR_SIGNER_KEY_GRANT_USED` guarding replay via `used` state. Show a signature an unprivileged staker replays or repurposes: a message hash that omits a field the contract acts on (amount, reward cycle, staker, bond index), a grant reused across two bonds because the `used` key does not include every distinguishing field, a domain that omits `chain-id` so a testnet signature works on mainnet, a `secp256k1-recover?` result whose low-S is not enforced so a second malleable signature bypasses the used-set. Identity: every stacking action authorised by a signer key == exactly one grant the signer signed for that (staker, amount, cycle, chain).",
+    "High. EVERY INDEX AND LENGTH DERIVED FROM INPUT MUST STAY INSIDE ITS BUFFER. `num_cells` and `n` are `uint64_t` documented as trusted, yet `compute_verify_cell_kzg_proof_batch_challenge` computes `input_size` as sums of `num_cells * BYTES_PER_CELL`, `verify_cell_kzg_proof_batch` allocates `num_cells * sizeof(Bytes48)` for `unique_commitments`, `deduplicate_commitments` writes `indices_out[i]` for every i, `is_cell_used[cell_indices[i]]`, `commitment_weights[commitment_indices[i]]` and `aggregated_column_cells[column_index * FIELD_ELEMENTS_PER_CELL + fr_index]` index by attacker-supplied values, `bit_reversal_permutation` asserts on `n`, `get_inv_coset_shift_for_cell` asserts `cell_idx_rbl <= FIELD_ELEMENTS_PER_EXT_BLOB`, and `fr_batch_inv` mutates `out` before returning `C_KZG_BADARGS`. Show one input that writes or reads outside an allocation, wraps a size computation, or reaches an `assert` in a release build so the process aborts: a `num_cells` that overflows `input_size`; a cell index of `CELLS_PER_EXT_BLOB - 1` after `reverse_bits_limited`; an `n` such that `n * sizeof(blst_p1_affine)` wraps; a `c_kzg_calloc` of zero elements dereferenced later. Identity: every array access index < the length passed to the allocation that created it, and no input reachable from a blob or sidecar can terminate the process.",
 
-    "Critical. BURNCHAIN STACKING OPS MOVE STX FROM AN OFF-CHAIN IDENTITY. `stack_stx.rs`, `delegate_stx.rs` and `transfer_stx.rs` `parse_from_tx` derive `sender` from the first Bitcoin input via `get_sender_txid` / `get_input_tx_ref(0)` and `check` validates amounts and outputs; the Stacks node then applies the op as if that Stacks address authorised it. Show an op that moves or locks STX the deriving address did not authorise: a `TransferStxOp` whose `sender == recipient` slips past the check, a `StackStxOp` whose parsed `signer_key` is `None` yet still locks, a `PreStxOp`/`StackStxOp` pairing where the pre-op sender differs from the stack sender, a `DelegateStxOp` with a `delegated_ustx` exceeding the sender's balance, a truncated `parse_data` accepted with defaulted fields. Identity: the STX locked or transferred by an applied burnchain op == STX owned by the Stacks address the op's first Bitcoin input maps to, and only with that address's committed parameters.",
+    "High. THE BYTES A BINDING HANDS TO C MUST BE THE BYTES THE CLIENT PASSED, WITH THE COUNT IT PASSED. Java `ckzg_jni.c` trusts a `jlong count` cast to `size_t` and checks `GetArrayLength == count * BYTES_PER_*`; Node `kzg.cxx` derives `num_cells` from `Array::Length()` and `get_cell_index` from a JS number; Python `ckzg_wrap.c` derives counts from `PyBytes_Size` modulo element size; C# `Ckzg.cs` passes an `int count` and `ThrowOnInvalidLength(..., BytesPerCell * numCells)`; Go `main.go` casts slice lengths to `C.uint64_t` and unsafe-casts pointers; Rust `mod.rs` checks slice lengths then `as u64`; Zig `root.zig` returns null for empty slices; Nim and Elixir check equal lengths then call the ABI. Show a binding call where the count, the pointer or the output the client observes differs from what C validated: a negative or huge `count` that multiplies past `Integer.MAX_VALUE` yet matches a length check; a cell index above 2^53 or negative rounded by JS; an error return where the binding still reads an uninitialised `ok` or output buffer; a `verify_*` that maps `C_KZG_BADARGS` to `false` in one binding and to an exception in another so two clients disagree on the same sidecar. Identity: (pointer contents, count, ok/error) seen by the C function == (bytes, length, result) seen by the client, in every binding.",
 
-    "High. REWARD-SET AND SIGNER-SET WEIGHT MUST EQUAL STAKED STX. `boot/mod.rs` `make_reward_set` / `make_signer_set` / `get_threshold_from_participation` / `get_reward_threshold_and_participation` and `signer_set.rs` `get_signers_weights` derive each cycle's signer weights and PoX threshold from pox-5 stacking state read through `get-reward-set` and the signer linked list. Show a staker who gains signing weight or a reward slot exceeding their locked STX: a stake counted in two cycles by the `signer-set-ll` insertion, a `pox_ustx_threshold` computed from a participation total that includes an already-unlocked staker, a weight rounded up by `PRECISION`, a bond whose sats convert to ustx via `min-ustx-for-sats-amount` at a stale ratio. Identity: the signing weight and reward slots assigned to a principal for a cycle == the STX (or sats-equivalent) that principal has locked and unexpired for that cycle.",
+    "High. THIS LIBRARY'S VERDICT MUST EQUAL THE REFERENCE SPECIFICATION'S VERDICT FOR EVERY INPUT. The consensus-specs treat an invalid input as a failed verification; here `verify_blob_kzg_proof_batch` accepts `n == 0`, `verify_cell_kzg_proof_batch` accepts `num_cells == 0`, `C_KZG_BADARGS` and `*ok == false` are distinct outcomes, `verify_cell_kzg_proof_batch` has no upper bound on `num_cells` while the spec bounds columns, `deduplicate_commitments` compares bytes where the spec compares points, and `compute_challenge` and both batch transcripts must match the spec byte for byte (domain, degree, counts, endianness, compressed encodings). Show an input that this library accepts and the reference rejects or the reverse, so that nodes running c-kzg fork from nodes running another implementation: a cell batch with a duplicate `(commitment, index)` pair; a proof at infinity for a zero blob; a `y` or `z` at the modulus boundary; a commitment whose two encodings dedupe differently; a transcript field ordered differently from the spec. Identity: `verify_*` here == `verify_*` in consensus-specs for the same bytes, and the (commitment, proof, cells) bytes computed here == the spec's.",
 
-    "Critical. THE MISSING INVARIANT - what nobody built. No assertion ties the sBTC balance pox-5 custodies to the sum of all bond memberships plus the reserve; no check proves `last-accounted-rewards-only` equals the sum of unclaimed rewards across signers and stakers; nothing binds the STX locked across all accounts to the participation total the reward set is computed from; the L1 lockup proof trusts `get-burn-block-info?` for a height the fold never re-checks against the header; a rollover refunds `old-sbtc` on the assumption the old bond is fully released. Identify the FIRST place one of these unstated conservation assumptions is violated by an unprivileged staker with their own STX, their own sBTC and their own signer-manager contract, prove it with a Rust integration test on a booted chainstate that asserts custodied sBTC versus outstanding memberships, or locked STX versus participation, before and after, and show that once the two diverge no cycle boundary can detect or reverse it.",
+    "Critical. THE MISSING INVARIANT - what nobody built. No check ties `num_cells` or `n` back to the sizes of the buffers a binding actually allocated; nothing rejects duplicate `(commitment, cell_index)` pairs before their cells are summed; the challenge transcripts hash raw cell and commitment bytes before those bytes are validated, so validity and challenge derivation see different objects; `compute_kzg_proof`'s in-domain branch and `evaluate_polynomial_in_evaluation_form`'s shortcut are two code paths for one mathematical case; the point at infinity is accepted as a commitment and as a proof with no rule about what it commits to; and nothing asserts that a proof this library computes is accepted by this library's verifier. Identify the FIRST place one of these unstated soundness or determinism assumptions is violated by an unprivileged user publishing a blob transaction, blob sidecar or data-column sidecar, prove it with a C unit test in the style of src/test/tests.c or a binding test that asserts both sides (`ok` versus the pairing relation, bytes here versus the reference, index versus buffer length) before and after, and show that no later step in the client can detect or reverse it.",
 ]
 
 
@@ -567,112 +172,119 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate stacking / bond / reward audit questions for one stacks-core target.
+    Generate KZG soundness / determinism / memory-safety audit questions for one c-kzg-4844 target.
 
     ```
     target_file format:
-    "'File Name: stackslib/src/chainstate/stacks/boot/pox-5.clar -> Scope: Critical. ...'"
+    "'File Name: src/eip4844/eip4844.c -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate blockchain-consensus and smart-contract security audit questions for this exact
-    stacks-core target:
+    Generate cryptographic-library security audit questions for this exact c-kzg-4844
+    target:
 
     {target_file}
 
     Project focus:
-    stacks-core secures the Stacks chain by locking STX and sBTC. Untrusted input enters
-    through pox-5 contract-calls an unprivileged account makes - `stake`,
-    `register-for-bond`, `unstake`, `unstake-sbtc`, `stake-update`, `claim-rewards` - each
-    passing a caller-deployed `signer-manager-trait` contract and, on the bond path, a
-    Clarity-Bitcoin L1 lockup proof, plus burnchain `stack-stx` / `delegate-stx` /
-    `transfer-stx` operations whose sender is derived from a Bitcoin input. The system
-    decides (a) whether STX/sBTC locked equals what the staker committed; (b) whether sBTC
-    rewards paid equal rewards earned; (c) whether locked value unlocks exactly once, at the
-    chosen height, only for its owner. The pox-5 Clarity result and the `pox-locking` Rust
-    lock must agree. Anything locked, unlocked, credited or paid that the contract did not
-    validate, or counted twice, is the bug.
+    c-kzg-4844 is the C implementation of the EIP-4844 and EIP-7594 Polynomial
+    Commitments API that Ethereum execution and consensus clients link through the
+    Go, Rust, Java, C#, Node.js, Python, Nim, Zig and Elixir bindings. Untrusted bytes
+    - blobs, commitments, proofs, cells, cell indices, z and y values, and the counts
+    that describe them - arrive from blob transactions, blob sidecars and data-column
+    sidecars that any user can publish; honest nodes forward them into these functions
+    unchanged. The library decides (a) whether `ok` equals the truth of the pairing
+    relation for the supplied bytes; (b) whether every node computes the same
+    commitment, proof, cell and verdict bytes as the reference specification; (c)
+    whether every index and length derived from the input stays inside its buffer and
+    no input can abort the process. A proof accepted that should fail, a verdict that
+    differs between nodes, or a crash reachable from one sidecar is the bug.
 
     Rules:
     * Treat `File Name:` as the exact file.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Clarity and Rust symbols (define-public/-private/-read-only name, map,
-      constant, error code, trait, Rust function, struct field) as they appear in the file.
+    * Use exact C or binding symbols (function, static helper, macro, constant, struct
+      field, return code) as they appear in the file.
     * EVERY question must close on an equality that must hold across a call. State it
       explicitly. Narrative questions with no stated equality are rejected.
-    * Attacker is unprivileged only: any Stacks account with its own STX and sBTC. They may
-      deploy the `signer-manager` contract, call any pox-5 entry point, submit L1 lockup
-      proofs, craft burnchain stacking ops from Bitcoin inputs they control, and order
-      their own transactions.
-    * Attacker is NOT the bond admin, pause admin, a miner, a signer with another's key, the
-      SIP-031 recipient, or the victim staker. No malicious peer, node, RPC, relayer or
-      Bitcoin miner; no compromised dependency; no social engineering.
+    * Attacker is unprivileged only: an ordinary Ethereum user who submits a blob
+      transaction, or publishes a blob sidecar or data-column sidecar, with their own
+      keys and funds. They choose every byte of blobs, commitments, proofs, cells, cell
+      indices, z, y and the number of items, and honest nodes pass those bytes into the
+      public API through the bindings.
+    * Attacker is NOT a node operator, a client developer misusing the API, the
+      trusted-setup provider, or a malicious peer, node or RPC. No compromised
+      dependency, build or device; no social engineering.
     * PROGRAM EXCLUSIONS - a question landing in any of these wastes the whole batch:
-      - pox.clar, pox-2.clar, pox-3.clar and pox_1/2/3.rs are superseded and OUT OF SCOPE,
-        as are README, tests, benches and config.
-      - The externally deployed `sbtc-token` contract is out of scope except where pox-5's
-        own use of it (allowance, transfer order, recipient) is the flaw.
-      - Denial of service, gas griefing, block stuffing, unbounded loops and memory hygiene
-        are OUT OF SCOPE.
-      - Defects in secp256k1, Bitcoin consensus, or the Clarity VM internals with no exploit
-        path through pox-5 or pox-locking are OUT OF SCOPE; a weakness here that steers them
-        wrong is fully IN scope.
-      - Also excluded: leaked keys, privileged accounts, centralization risk, best-practice
-        notes, feature requests, STX/BTC price assumptions, funds sent by mistake, and
-        theoretical findings.
+      - Tests, reference vectors, fuzz targets, generated bindings, trusted setup
+        files, scripts, build and package files, READMEs and audits are OUT OF SCOPE.
+      - Resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops,
+        cache growth and memory hygiene are OUT OF SCOPE. Memory corruption, reachable
+        asserts and undefined behaviour from one input are IN scope.
+      - The contents of the trusted setup are trusted; a wrong file is OUT OF SCOPE.
+        Wrong tables derived from a correct file are IN scope.
+      - Defects inside blst or inside a client with no path through this repo are OUT
+        OF SCOPE; a weakness here that misuses blst or steers a client wrong is IN.
+      - Also excluded: leaked keys, privileged accounts, centralization risk,
+        best-practice notes, feature requests, publicly known issues, and findings
+        with no path from a blob, sidecar or data-column sidecar.
     * IN-SCOPE IMPACTS - every question must land on one and name it:
-      Critical: theft or unbacked minting of locked STX or sBTC rewards; permanent freezing
-      of staked STX or sBTC; unlocking value that was never locked; double-counting a
-      commitment or reward.
-      High: theft or permanent freezing of protocol reserve or fees; temporary freezing of
-      staked funds; gaining signing weight or reward slots exceeding locked value;
-      authorising a stacking action the staker or signer never signed.
-    * Every question must be a concrete real-world scenario an unprivileged account can
-      execute on the deployed chain with their own funds and their own contracts.
-    * A revert is a finding only when it permanently strands staked value or lets an
-      unbacked lock/credit through - say which.
-    * Generate 20 to 40 high-signal questions.
+      Critical: a forged proof, commitment or cell batch verifies, so invalid blob data
+      is accepted and the chain can be split or unavailable data finalised; the same
+      bytes verify on some nodes and fail on others.
+      High: one blob or sidecar crashes or aborts every node running this library
+      (memory corruption, reachable assert, UB); a valid proof rejected here but
+      accepted by the reference, or the reverse, so more than a third of the network
+      forks; a compute function emitting bytes that differ between honest nodes.
+    * Every question must be a concrete real-world scenario an unprivileged party can
+      trigger through the public API with bytes they publish on the network.
+    * A returned `C_KZG_BADARGS` is a finding only when the reference accepts the same
+      input, or when state was already mutated or memory already written - say which.
+    * Generate 40 to 80 high-signal questions.
     * At least 70% must land on a Critical impact rather than a High one.
-    * Every question must be testable with a Rust integration test on a booted chainstate
-      (or a Clarity unit test) locally. Never propose testing on mainnet or a public
-      testnet.
+    * Every question must be testable locally with a C unit test in src/test/tests.c
+      style or a binding test against the local trusted setup. Never propose testing
+      on mainnet or a public testnet.
     * Avoid generic checklist questions and repeated root causes.
-    * Prefer questions that name TWO values that must be equal and ask whether they are: STX
-      locked and STX committed, sBTC paid and sBTC earned, sats credited and sats locked on
-      Bitcoin, value unlocked and value staked, weight assigned and value locked.
+    * Prefer questions that name TWO values that must be equal and ask whether they are:
+      ok and the pairing relation, batch verdict and per-item verdicts, bytes here and
+      bytes in the reference, index and buffer length, count passed and count checked.
 
     Known dead ends - do NOT generate questions about these:
-    * Anything needing the bond admin, pause admin, a miner, or another staker's key.
-    * A bug in the external sbtc-token or in Bitcoin itself with no path through pox-5.
-    * Superseded PoX contracts, timing, DoS, gas, or a staker harming only their own stake.
-    * Findings only reproducible through tests or tooling.
+    * Anything needing a node operator, client developer, trusted-setup provider, peer
+      or RPC to act maliciously.
+    * A bug inside blst or a client with no path through this repo.
+    * Slow verification, big allocations, unbounded memory, logging, or an input that
+      only harms the attacker's own transaction.
+    * Findings only reproducible through tests, fuzzers or tooling.
 
     Core equalities (each question must close on one):
-    * LOCK CONSERVATION: STX/sBTC locked == value the staker committed and owns.
-    * REWARD CONSERVATION: sBTC paid for a (signer, staker, cycle) == rewards earned, once.
-    * PROOF TRUTH: sats credited by an L1 lockup proof == sats locked in a confirmed
-      Bitcoin timelock committed to the staker.
-    * SINGLE UNLOCK: value unlocks once, at the committed height, only for its owner.
-    * AUTHORITY: every stacking action == one the staker or their signer signed for exactly
-      those parameters on this chain.
+    * SOUNDNESS: `*ok == true` iff the pairing relation holds for the decoded inputs.
+    * BATCH TRUTH: batch verdict == AND of the per-item verdicts, for every n.
+    * REFERENCE TRUTH: bytes and verdicts here == consensus-specs for the same input.
+    * VALIDATION TRUTH: every value in an equation == canonical decoding of input bytes.
+    * BOUNDS TRUTH: every index < buffer length; no input aborts the process.
+    * BINDING TRUTH: (bytes, count, result) seen by C == (bytes, length, result) seen
+      by the client.
 
     Each question must include:
-    1. target define-public/-private/-read-only or Rust function;
-    2. attacker action (a concrete call with the arguments and trait/proof fields that matter);
-    3. preconditions (cycle phase, existing membership, balances, allowlist state);
-    4. call sequence through the contract, pox-locking and the coordinator;
+    1. target function, static helper or constant;
+    2. attacker input (the concrete blob, commitment, proof, cell, index, count or
+       field-element bytes that matter);
+    3. preconditions (which API, which binding, n or num_cells, precompute, in-domain
+       point, infinity point, duplicate entries);
+    4. call sequence through the binding, the public function and its helpers;
     5. the equality that breaks, written explicitly;
-    6. scoped impact and whose funds are exposed;
+    6. scoped impact and which nodes are affected;
     7. proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Method: function_name] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger CALL_SEQUENCE, breaking the equality EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: Rust or Clarity test PARAMETERS asserting LOCK_CONSERVATION, REWARD_CONSERVATION, PROOF_TRUTH, SINGLE_UNLOCK, or AUTHORITY.",
+    "[File: {target_file}] [Method: function_name] Can an unprivileged ATTACKER_INPUT under PRECONDITIONS trigger CALL_SEQUENCE, breaking the equality EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: C unit test PARAMETERS asserting SOUNDNESS, BATCH_TRUTH, REFERENCE_TRUTH, VALIDATION_TRUTH, BOUNDS_TRUTH, or BINDING_TRUTH.",
     ]
     """
     return prompt
@@ -680,7 +292,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a stacking / bond / reward exploit-validation prompt for stacks-core.
+    Generate a KZG soundness / determinism / memory-safety exploit-validation prompt for c-kzg-4844.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -690,19 +302,19 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: any Stacks account with its own STX and sBTC who can deploy the signer-manager contract, call any pox-5 entry point, submit L1 lockup proofs, craft burnchain stacking ops from their own Bitcoin inputs, and order their own transactions. They are not the bond admin, pause admin, a miner, a signer with another's key, the SIP-031 recipient or the victim staker.
-- Reject malicious peer/node/RPC/relayer/Bitcoin-miner assumptions, compromised dependencies, social engineering, and any path requiring a privileged role.
-- OUT OF SCOPE, reject on sight: pox.clar, pox-2.clar, pox-3.clar, pox_1/2/3.rs (superseded), README, tests, benches, config; the external sbtc-token except where pox-5's own use of it is the flaw; denial of service, gas griefing, unbounded loops and memory hygiene; secp256k1, Bitcoin-consensus or Clarity-VM-internal defects with no path through pox-5 or pox-locking; STX/BTC price assumptions; funds sent by mistake; best-practice notes; theoretical findings.
-- The impact must be one of: Critical - theft or unbacked minting of locked STX or sBTC rewards, permanent freezing of staked STX or sBTC, unlocking value never locked, double-counting a commitment or reward; High - theft or permanent freezing of reserve or fees, temporary freezing of staked funds, signing weight or reward slots exceeding locked value, an unsigned stacking action.
-- Focus on real impact: value locked/unlocked/paid that the contract did not validate, sats credited that were never locked on Bitcoin, or a reward or commitment counted twice.
+- Attacker is unprivileged only: an ordinary Ethereum user who submits a blob transaction or publishes a blob sidecar or data-column sidecar. They choose every byte of blobs, commitments, proofs, cells, cell indices, z, y and item counts; honest nodes pass those bytes into the public API through the bindings.
+- Reject anything requiring a node operator, a client developer misusing the API, the trusted-setup provider, a malicious peer/node/RPC, a compromised dependency, build or device, or social engineering.
+- OUT OF SCOPE, reject on sight: tests, reference vectors, fuzz targets, generated bindings, trusted setup files, scripts, build and package files, READMEs, audits; resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops, cache growth and memory hygiene; a wrong trusted setup file; defects inside blst or a client with no path through this repo; publicly known issues; best-practice notes; theoretical findings.
+- The impact must be one of: Critical - a forged proof, commitment or cell batch verifies so invalid blob data is accepted or the chain splits, or the same bytes verify on some nodes and fail on others; High - one blob or sidecar crashes or aborts every node running this library (memory corruption, reachable assert, UB), a verdict that differs from the reference specification so more than a third of the network forks, or a compute function emitting bytes that differ between honest nodes.
+- Focus on real impact: a proof accepted that should fail, a verdict that differs between nodes, or a crash reachable from one sidecar.
 
 ## Validate
 - Write the equality the question claims is broken between two named values BEFORE tracing any code.
-- Trace the exact reachable path from the attacker's call and record every read and write of locked/unlocked `STXBalance`, `protocol-bond-memberships`, `staker-info`, the reward-per-token snapshots, `last-accounted-rewards-only`, `seen-outpoints`, the sBTC `as-contract?` allowance, and `signer-manager-call-active`.
+- Trace the exact reachable path from the attacker's bytes and record every read and write of `n` / `num_cells`, `cell_indices`, `commitment_indices`, the decoded `fr_t` and `g1_t` values, the challenge transcript bytes, `r_powers`, every array index, and `*ok`.
 - Evaluate both sides of the equality before and after. If they still match, output no vulnerability.
-- Check whether `verify-not-prepare-phase`, `validate-no-reentrancy` / `signer-manager-call-active`, `check-pox-lock-period`, `verify-signer-key-grant`, the `<=` guards, `parse_pox_stake_result`, or the coordinator's cycle-start handlers already prevent the divergence.
-- State what the attacker gains per transaction and whether it is repeatable.
-- Require exact file/function support and a reproducible Rust or Clarity test on a local chainstate.
+- Check whether `bytes_to_bls_field`, `validate_kzg_g1`, the `cell_indices` bound checks, `deduplicate_commitments`, the `n == 0` / `n == 1` short-circuits, the `assert` calls, the binding length checks, or blst's own subgroup and curve checks already prevent the divergence.
+- State what the attacker gains per input and whether it is repeatable.
+- Require exact file/function support and a reproducible C unit test or binding test against the local trusted setup.
 
 ## Output
 If valid, output exactly:
@@ -714,19 +326,19 @@ If valid, output exactly:
 [2-3 sentences]
 
 ### Finding Description
-[The broken equality, the code path, root cause, the attacker's exact call, exploit flow, and why existing guards fail]
+[The broken equality, the code path, root cause, the attacker's exact bytes, exploit flow, and why existing guards fail]
 
 ### Impact Explanation
-[What is stolen, minted, frozen, unlocked or double-counted, which party, repeatability, matching severity category]
+[What verifies, diverges or crashes, which nodes, repeatability, matching severity category]
 
 ### Likelihood Explanation
-[Preconditions, cycle phase and membership state required, attacker cost, feasibility, repeatability]
+[Preconditions, API and binding required, attacker cost, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[Rust or Clarity test plan with the exact assertions on both sides of the equality]
+[C unit test or binding test plan with the exact assertions on both sides of the equality]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -738,7 +350,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for stacks-core stacking claims.
+    Generate a strict bounty-style validation prompt for c-kzg-4844 claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -751,31 +363,31 @@ def validation_format(report: str) -> str:
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
 - A claim is only valid if the report states the broken equality between two named values and shows both sides concretely. Reject prose-only claims.
-- Reject anything requiring the bond admin, pause admin, a miner, a signer with another's key, the SIP-031 recipient, another staker's key, a malicious peer/node/RPC/relayer/Bitcoin-miner, a compromised dependency, or social engineering.
-- OUT OF SCOPE, reject on sight: pox.clar, pox-2.clar, pox-3.clar, pox_1/2/3.rs (superseded), README, tests, benches, config; the external sbtc-token except where pox-5's own use of it is the flaw; denial of service, gas griefing, unbounded loops and memory hygiene; secp256k1, Bitcoin-consensus or Clarity-VM-internal defects with no path through pox-5 or pox-locking; STX/BTC price assumptions; centralization risk; funds sent by mistake; best-practice notes; feature requests; theoretical findings.
-- The impact must be one of: Critical - theft or unbacked minting of locked STX or sBTC rewards, permanent freezing of staked STX or sBTC, unlocking value never locked, double-counting a commitment or reward; High - theft or permanent freezing of reserve or fees, temporary freezing of staked funds, signing weight or reward slots exceeding locked value, an unsigned stacking action.
-- Reject claims where the only loss is the attacker's own stake.
+- Reject anything requiring a node operator, a client developer misusing the API, the trusted-setup provider, a malicious peer/node/RPC, a compromised dependency, build or device, or social engineering.
+- OUT OF SCOPE, reject on sight: tests, reference vectors, fuzz targets, generated bindings, trusted setup files, scripts, build and package files, READMEs, audits; resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops, cache growth and memory hygiene; a wrong trusted setup file; defects inside blst or a client with no path through this repo; publicly known issues; centralization risk; best-practice notes; feature requests; theoretical findings.
+- The impact must be one of: Critical - a forged proof, commitment or cell batch verifies so invalid blob data is accepted or the chain splits, or the same bytes verify on some nodes and fail on others; High - one blob or sidecar crashes or aborts every node running this library (memory corruption, reachable assert, UB), a verdict that differs from the reference specification so more than a third of the network forks, or a compute function emitting bytes that differ between honest nodes.
+- Reject claims where the only effect is on the attacker's own transaction or the attacker's own node.
 - Reject if the bug was already fixed, publicly disclosed, or covered by a known-issues list.
-- A valid report must be triggerable by an unprivileged account against the current code with their own funds and their own contracts.
+- A valid report must be triggerable by an unprivileged party against the current code through bytes they can publish on the network.
 - A PoC is mandatory. Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
-1. Exact in-scope file, function/native/struct, and line references.
+1. Exact in-scope file, function/helper/constant, and line references.
 2. The equality written explicitly, with both sides shown before and after.
-3. Clear root cause: which lock/commit mismatch, reward-settlement gap, L1-proof weakness, unlock error, reentrancy, or authorization gap causes it.
-4. Reachable exploit path: preconditions -> attacker call -> pox-5, pox-locking and coordinator sequence -> observed divergence.
-5. `verify-not-prepare-phase`, the reentrancy guard, `check-pox-lock-period`, `verify-signer-key-grant`, `parse_pox_stake_result` and the cycle-start handlers reviewed and shown insufficient.
-6. Impact stated concretely: which funds, whose, and whether it is repeatable.
-7. Reproducible proof: Rust or Clarity test on a local chainstate with the asserted values.
+3. Clear root cause: which decoding gap, transcript or challenge drift, index or length error, batch aggregation flaw, or spec divergence causes it.
+4. Reachable exploit path: preconditions -> attacker bytes -> binding, public function and helper sequence -> observed divergence.
+5. `bytes_to_bls_field`, `validate_kzg_g1`, the `cell_indices` bound checks, `deduplicate_commitments`, the `n == 0` / `n == 1` short-circuits, the `assert` calls, the binding length checks and blst's own checks reviewed and shown insufficient.
+6. Impact stated concretely: what verifies, diverges or crashes, on which nodes, and whether it is repeatable.
+7. Reproducible proof: C unit test or binding test against the local trusted setup, with the asserted values.
 
 ## Silent Triage Questions
 Before output, internally answer:
 - What exactly is the equality, and does it actually fail?
-- Can an ordinary staker trigger it with no privileged role and no other user's key?
-- Is the flaw in pox-5 / pox-locking / the coordinator, not in the external sbtc-token or Bitcoin?
-- What value is stolen, minted, frozen, unlocked or double-counted, whose is it, and can it be repeated?
-- Would an Immunefi triager accept the exploit path under the Blockchain/DLT severity system?
+- Can an ordinary user publishing a blob, sidecar or data-column sidecar trigger it with no privileged role?
+- Is the flaw in this repo's code, not in blst, a client or the trusted setup file?
+- What verifies, diverges or crashes, on which nodes, and can it be repeated?
+- Would the Ethereum Foundation bug bounty panel accept the exploit path for c-kzg-4844?
 - What exact test would prove it?
 
 ## Output
@@ -793,7 +405,7 @@ Audit Report
 [Exact code path, the equality, root cause, exploit flow, and why existing guards fail]
 
 ## Impact Explanation
-[What is stolen, minted, frozen, unlocked or double-counted, affected party, repeatability, severity category]
+[What verifies, diverges or crashes, affected nodes, repeatability, severity category]
 
 ## Likelihood Explanation
 [Attacker capability, preconditions, state required, cost, feasibility]
@@ -802,7 +414,7 @@ Audit Report
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or Rust/Clarity test plan with concrete assertions]
+[Minimal reproducible steps or C unit test / binding test plan with concrete assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -814,7 +426,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for stacks-core stacking.
+    Generate a short cross-project analog scan prompt for c-kzg-4844.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -822,18 +434,18 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Rules
-- Use in-scope repo context only (pox-5.clar, pox-4.clar, sip-031.clar, lockup.clar, `pox-locking/src/**`, boot/mod.rs, signer_set.rs, coordinator/mod.rs, accounts.rs, the burn stacking ops and signed_structured_data.rs, excluding superseded PoX versions). Do not ask for code or claim missing files.
+- Use in-scope repo context only (`src/common/**`, `src/eip4844/**`, `src/eip7594/**`, `src/setup/**`, `src/ckzg.c` and the non-test, non-generated binding sources under `bindings/*`). Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only unprivileged-account analogs that break an equality: STX/sBTC locked or unlocked that the contract did not validate, sBTC rewards paid that were not earned or counted twice, sats credited by an L1 proof that were never locked on Bitcoin, value unlocked early or frozen forever, or a stacking action the staker/signer never authorised.
-- OUT OF SCOPE, reject on sight: superseded PoX contracts, README, tests, benches, config; the external sbtc-token except where pox-5's own use of it is the flaw; denial of service, gas griefing, unbounded loops and memory hygiene; secp256k1, Bitcoin-consensus or Clarity-VM-internal defects with no path through pox-5 or pox-locking; anything requiring the bond/pause admin, a miner, another user's key; malicious peer/node assumptions; STX/BTC price assumptions; funds sent by mistake; best-practice notes; theoretical findings.
-- The impact must be one of: Critical - theft or unbacked minting of locked STX or sBTC rewards, permanent freezing of staked STX or sBTC, unlocking value never locked, double-counting a commitment or reward; High - theft or permanent freezing of reserve or fees, temporary freezing of staked funds, signing weight or reward slots exceeding locked value, an unsigned stacking action.
-- Reject analogs where the only loss is the attacker's own stake.
+- Keep only unprivileged analogs that break an equality: `ok` true while the pairing relation is false, a batch verdict that is not the AND of its items, bytes or verdicts that differ from the reference specification, a value used in an equation that is not the canonical decoding of the input, an index outside its buffer or an input that aborts the process, or a count or result that differs between a binding and the C function.
+- OUT OF SCOPE, reject on sight: tests, reference vectors, fuzz targets, generated bindings, trusted setup files, scripts, build files, READMEs; resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops, cache growth and memory hygiene; a wrong trusted setup file; defects inside blst or a client with no path here; anything requiring a node operator, client developer, trusted-setup provider, peer or RPC to act maliciously; publicly known issues; best-practice notes; theoretical findings.
+- The impact must be one of: Critical - a forged proof, commitment or cell batch verifies so invalid blob data is accepted or the chain splits, or the same bytes verify on some nodes and fail on others; High - one blob or sidecar crashes or aborts every node running this library, a verdict that differs from the reference specification so more than a third of the network forks, or a compute function emitting bytes that differ between honest nodes.
+- Reject analogs where the only effect is on the attacker's own transaction or node.
 
 ## Validate
 - Map the bug class to the strongest reachable path in this repo and state the equality it would break.
-- Evaluate both sides before and after the attacker's call sequence.
+- Evaluate both sides before and after the attacker's bytes.
 - Prove root cause with exact file/function support.
-- Accept only concrete theft, unbacked minting, permanent or temporary freezing, unlocking value never locked, double-counting, or an unsigned stacking action.
+- Accept only concrete forged acceptance, cross-node divergence, spec divergence, memory corruption, reachable abort, or binding/C mismatch.
 
 ## Output (Strict)
 If valid analog exists, output:
