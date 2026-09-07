@@ -1,1 +1,0 @@
-[File: bindings/node.js/src/kzg.cxx -> Scope: Critical] In RecoverCellsAndKzgProofs / VerifyCellKzgProofBatch style batch logic elsewhere, unrelated — SKIP (placeholder retained for index continuity, not counted toward totals).
