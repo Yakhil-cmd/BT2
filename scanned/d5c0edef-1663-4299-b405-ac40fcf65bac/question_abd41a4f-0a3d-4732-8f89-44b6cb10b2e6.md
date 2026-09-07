@@ -1,0 +1,1 @@
+), breaking BINDING_TRUTH across bindings for the same wire bytes? Impact: Critical, same sidecar accepted by one client's downstream logic and rejected by another's. Proof idea: cross-binding differential test feeding an identical byte-for-byte malformed-but-fixed-length commitment to both the Elixir NIF and another binding, asserting identical (ok-vs-error) classification.

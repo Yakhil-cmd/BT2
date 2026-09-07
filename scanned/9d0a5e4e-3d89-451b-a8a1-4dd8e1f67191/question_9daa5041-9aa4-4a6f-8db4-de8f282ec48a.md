@@ -1,0 +1,1 @@
+corrupting reconstruction consistency across nodes. Proof idea: C unit test with cell_indices=[5,5] and cells=[cellA,cellB] (cellA != cellB), commitments/proofs computed consistently for each individually valid claim; assert verify_cell_kzg_proof_batch either returns C_KZG_BADARGS for duplicate indices or that *ok being true is escorted by cellA==cellB byte-for-byte.

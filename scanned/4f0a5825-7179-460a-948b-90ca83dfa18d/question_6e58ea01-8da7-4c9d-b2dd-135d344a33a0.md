@@ -1,0 +1,1 @@
+and treats BADARGS the same as a normal rejection will not distinguish a malformed out-of-range index (protocol violation, should reject the whole sidecar) from a well-formed but cryptographically failing proof (should reject just that proof) — the two return signals must be checked as a pair: (ret==C_KZG_OK, *ok) is the only valid

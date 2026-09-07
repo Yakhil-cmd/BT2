@@ -1,0 +1,1 @@
+makes BADARGS a finding). Scoped impact: High, verify that no partially-initialized commitments/cells buffer is read by a subsequent call path if `ret` object is reused. Proof idea: Python test with a cell index of 2**64 mixed among valid ones, asserting the function returns a clean error and never touches `ok` as true, testing VALIDATION_TRUTH.
