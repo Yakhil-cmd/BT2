@@ -1,0 +1,1 @@
+Now let's check `recover_cells_and_kzg_proofs` in `eip7594.c` for bound checks on `cell_indices` before recovery is invoked, since that's the actual public API entrypoint bound by node.js.
