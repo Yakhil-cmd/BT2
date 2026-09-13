@@ -6,9 +6,9 @@ from decouple import config
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
 MAX_REPO = 20
 # todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'ethereum/c-kzg-4844'
+SOURCE_REPO = 'anza-xyz/agave'
 # todo: the name of the repository
-REPO_NAME = 'c-kzg-4844'
+REPO_NAME = 'agave'
 
 run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
 
@@ -46,123 +46,158 @@ else:
     else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
-
 scope_files = [
     # =================================================================================
-    # LENS: KZG PROOF SOUNDNESS, DETERMINISM AND MEMORY SAFETY (c-kzg-4844).
-    # Every Ethereum client links this library to decide whether a blob, a commitment,
-    # a proof or a set of cells is valid. Untrusted bytes enter through blob
-    # transactions, blob sidecars and data-column sidecars that any user can publish;
-    # honest nodes forward them straight into these functions. The files below sit on
-    # the path from those bytes to one of three decisions: does `ok` equal the truth of
-    # the pairing relation, does every node compute the same bytes and the same verdict,
-    # and does every index and length derived from the input stay inside its buffer. A
-    # question belongs here only if it can be closed by an equality between what the
-    # attacker supplied and what the library returned.
+    # Transaction admission: sanitization, signature verification and precompiles
     # =================================================================================
-    # -- core: the umbrella translation unit and public header ---------------------------
-    "src/ckzg.c",
-    "src/ckzg.h",
-
-    # -- core: byte <-> field / point conversion, arithmetic, MSM, pairings ---------------
-    "src/common/alloc.c",
-    "src/common/alloc.h",
-    "src/common/bytes.c",
-    "src/common/bytes.h",
-    "src/common/ec.c",
-    "src/common/ec.h",
-    "src/common/fr.c",
-    "src/common/fr.h",
-    "src/common/lincomb.c",
-    "src/common/lincomb.h",
-    "src/common/ret.h",
-    "src/common/utils.c",
-    "src/common/utils.h",
-
-    # -- core: EIP-4844 blob commitments, proofs, single and batch verification ----------
-    "src/eip4844/blob.c",
-    "src/eip4844/blob.h",
-    "src/eip4844/eip4844.c",
-    "src/eip4844/eip4844.h",
-
-    # -- core: EIP-7594 cells, FK20 proofs, recovery, cell batch verification -------------
-    "src/eip7594/cell.c",
-    "src/eip7594/cell.h",
-    "src/eip7594/eip7594.c",
-    "src/eip7594/eip7594.h",
-    "src/eip7594/fft.c",
-    "src/eip7594/fft.h",
-    "src/eip7594/fk20.c",
-    "src/eip7594/fk20.h",
-    "src/eip7594/poly.c",
-    "src/eip7594/poly.h",
-    "src/eip7594/recovery.c",
-    "src/eip7594/recovery.h",
-
-    # -- core: trusted setup parsing and derived tables (roots of unity, BRP, FK20) -------
-    "src/setup/settings.h",
-    "src/setup/setup.c",
-    "src/setup/setup.h",
-
-    # -- bindings: the layer that turns client-supplied arrays into C pointers and counts --
-    "bindings/csharp/ckzg_wrap.c",
-    "bindings/csharp/ckzg_wrap.h",
-    "bindings/csharp/Ckzg.Bindings/Ckzg.Bindings.cs",
-    "bindings/csharp/Ckzg.Bindings/Ckzg.cs",
-    "bindings/elixir/native/src/ckzg_wrap.c",
-    "bindings/elixir/lib/kzg.ex",
-    "bindings/go/main.go",
-    "bindings/java/ckzg_jni.c",
-    "bindings/java/ckzg_jni.h",
-    "bindings/java/src/main/java/ethereum/ckzg4844/CKZG4844JNI.java",
-    "bindings/java/src/main/java/ethereum/ckzg4844/CKZGException.java",
-    "bindings/java/src/main/java/ethereum/ckzg4844/CellsAndProofs.java",
-    "bindings/java/src/main/java/ethereum/ckzg4844/ProofAndY.java",
-    "bindings/nim/kzg.nim",
-    "bindings/nim/kzg_abi.nim",
-    "bindings/node.js/src/kzg.cxx",
-    "bindings/node.js/lib/kzg.js",
-    "bindings/node.js/lib/kzg.d.ts",
-    "bindings/python/ckzg_wrap.c",
-    "bindings/rust/src/lib.rs",
-    "bindings/rust/src/bindings/mod.rs",
-    "bindings/rust/src/bindings/serde.rs",
-    "bindings/rust/src/ethereum_kzg_settings/mod.rs",
-    "bindings/zig/src/root.zig",
+    "runtime-transaction/src/runtime_transaction.rs",
+    "runtime-transaction/src/runtime_transaction/sdk_transactions.rs",
+    "runtime-transaction/src/runtime_transaction/transaction_view.rs",
+    "runtime-transaction/src/sanitize_config.rs",
+    "runtime-transaction/src/signature_details.rs",
+    "runtime-transaction/src/instruction_data_len.rs",
+    "runtime-transaction/src/transaction_meta.rs",
+    "perf/src/sigverify.rs",
+    "perf/src/packet.rs",
+    "precompiles/src/lib.rs",
+    "precompiles/src/ed25519.rs",
+    "precompiles/src/secp256k1.rs",
+    "precompiles/src/secp256r1.rs",
 
     # =================================================================================
-    # NOT AUDITED (excluded from every variant): src/test/**, tests/** reference vectors,
-    # fuzz/**, every *_test.go / tests.py / *.test.ts / *Test.java / tests.zig /
-    # ckzg_test.exs / tests.nim, bindings/*/test*, testFixtures and test_formats;
-    # generated code (bindings/rust/src/bindings/generated.rs, the nimble/ copies of
-    # kzg.nim and kzg_abi.nim); trusted_setup.txt and the .bin setup blobs; the blst
-    # submodule; scripts/, audits/, Makefiles, build.zig, binding.gyp, Cargo/go/mix/
-    # gradle/csproj/package files, Dockerfiles and every README. A defect in any of
-    # these is only in scope when it is reachable from the audited code above.
+    # Replay protection, nonce, blockhash, fee charging and compute budget parsing
     # =================================================================================
+    "runtime/src/bank/check_transactions.rs",
+    "accounts-db/src/blockhash_queue.rs",
+    "runtime/src/status_cache.rs",
+    "svm/src/nonce_info.rs",
+    "svm/src/rollback_accounts.rs",
+    "fee/src/lib.rs",
+    "compute-budget-instruction/src/compute_budget_instruction_details.rs",
+    "compute-budget-instruction/src/instructions_processor.rs",
+    "compute-budget-instruction/src/builtin_programs_filter.rs",
+    "compute-budget-instruction/src/compute_budget_program_id_filter.rs",
+    "compute-budget/src/compute_budget_limits.rs",
+    "compute-budget/src/compute_budget.rs",
+    "runtime/src/bank/fee_distribution.rs",
+
+    # =================================================================================
+    # Account loading, lamport/rent conservation, locking and commit
+    # =================================================================================
+    "svm/src/account_loader.rs",
+    "svm/src/rent_calculator.rs",
+    "svm/src/transaction_account_state_info.rs",
+    "runtime/src/rent_collector.rs",
+    "accounts-db/src/account_locks.rs",
+    "accounts-db/src/accounts.rs",
+    "runtime/src/account_saver.rs",
+
+    # =================================================================================
+    # SVM transaction processing, program loading and program cache
+    # =================================================================================
+    "svm/src/transaction_processor.rs",
+    "svm/src/program_loader.rs",
+    "program-runtime/src/loaded_programs.rs",
+    "program-runtime/src/program_cache_entry.rs",
+    "program-runtime/src/loading_task.rs",
+    "program-runtime/src/execution_budget.rs",
+
+    # =================================================================================
+    # Invoke context, CPI privilege propagation, VM memory and serialization
+    # =================================================================================
+    "program-runtime/src/invoke_context.rs",
+    "program-runtime/src/cpi.rs",
+    "program-runtime/src/serialization.rs",
+    "program-runtime/src/memory.rs",
+    "program-runtime/src/memory_context.rs",
+    "program-runtime/src/vm.rs",
+    "program-runtime/src/sysvar_cache.rs",
+    "program-runtime/src/deploy.rs",
+    "transaction-context/src/lib.rs",
+    "transaction-context/src/transaction.rs",
+    "transaction-context/src/transaction_accounts.rs",
+    "transaction-context/src/instruction.rs",
+    "transaction-context/src/instruction_accounts.rs",
+    "transaction-context/src/vm_slice.rs",
+    "transaction-context/src/vm_addresses.rs",
+    "syscalls/src/lib.rs",
+    "syscalls/src/cpi.rs",
+    "syscalls/src/mem_ops.rs",
+    "syscalls/src/sysvar.rs",
+    "syscalls/src/logging.rs",
+
+    # =================================================================================
+    # Native programs any signer can invoke
+    # =================================================================================
+    "programs/system/src/system_processor.rs",
+    "programs/system/src/system_instruction.rs",
+    "programs/vote/src/vote_processor.rs",
+    "programs/vote/src/vote_state/mod.rs",
+    "programs/vote/src/vote_state/handler.rs",
+    "programs/bpf_loader/src/lib.rs",
+    "programs/compute-budget/src/lib.rs",
+    "programs/zk-elgamal-proof/src/lib.rs",
+    "builtins/src/core_bpf_migration.rs",
+    "builtins/src/lib.rs",
+    "runtime/src/bank/builtins/core_bpf_migration/mod.rs",
+    "runtime/src/bank/builtins/core_bpf_migration/target_bpf_v2.rs",
+    "runtime/src/bank/builtins/core_bpf_migration/source_buffer.rs",
+
+    # =================================================================================
+    # Bank state commit, account hashing and cross-validator determinism
+    # =================================================================================
+    "runtime/src/bank.rs",
+    "runtime/src/bank/accounts_lt_hash.rs",
+    "runtime/src/bank/sysvar_cache.rs",
+    "runtime/src/bank/recent_blockhashes_account.rs",
+    "runtime/src/bank/address_lookup_table.rs",
+    "lattice-hash/src/lt_hash.rs",
+    "accounts-db/src/accounts_db.rs",
+    "accounts-db/src/accounts_cache.rs",
+    "accounts-db/src/read_only_accounts_cache.rs",
+
+    # =================================================================================
+    # Stake weight, epoch stakes and reward distribution driven by on-chain state
+    # =================================================================================
+    "runtime/src/stakes.rs",
+    "runtime/src/stake_account.rs",
+    "runtime/src/epoch_stakes.rs",
+    "runtime/src/bank/partitioned_epoch_rewards/calculation.rs",
+    "runtime/src/bank/partitioned_epoch_rewards/distribution.rs",
+    "runtime/src/bank/partitioned_epoch_rewards/sysvar.rs",
+    "runtime/src/inflation_rewards/points.rs",
+
+    # =================================================================================
+    # Block cost accounting, QoS and leader-side transaction processing
+    # =================================================================================
+    "cost-model/src/cost_model.rs",
+    "cost-model/src/cost_tracker.rs",
+    "cost-model/src/block_cost_limits.rs",
+    "cost-model/src/transaction_cost.rs",
+    "core/src/banking_stage/qos_service.rs",
+    "core/src/banking_stage/consumer.rs",
+    "core/src/banking_stage/committer.rs",
+    "core/src/banking_stage/transaction_scheduler/receive_and_buffer.rs",
+    "core/src/banking_stage/transaction_scheduler/transaction_state_container.rs",
+    "core/src/banking_stage/transaction_scheduler/scheduler_common.rs",
+    "core/src/banking_stage/transaction_scheduler/greedy_scheduler.rs",
+    "runtime/src/bank/entry_bytes_budget.rs",
+    "runtime/src/prioritization_fee_cache.rs",
 ]
 
 
 target_scopes = [
-    "Critical. A SINGLE PROOF MUST VERIFY ONLY IF THE PAIRING RELATION HOLDS. `verify_kzg_proof` converts four caller byte arrays through `bytes_to_kzg_commitment`, `bytes_to_bls_field` (canonical check via `blst_scalar_fr_check`) and `bytes_to_kzg_proof`, then `verify_kzg_proof_impl` checks `e(C - [y]G1, G2) == e(pi, [s]G2 - [z]G2)` with `g2_values_monomial[1]`; `verify_blob_kzg_proof` derives `z` from `compute_challenge` (domain `FSBLOBVERIFY_V1_`, degree, blob bytes, compressed commitment) and `y` from `evaluate_polynomial_in_evaluation_form`, whose in-domain shortcut returns `poly[i]` on `fr_equal(x, brp_roots_of_unity[i])`. `validate_kzg_g1` accepts the point at infinity before the subgroup check. Probe every input where `ok` can be true while the polynomial identity is false: commitment or proof at infinity paired with a zero or chosen `y`; a `y_bytes` or `z_bytes` above the modulus; a challenge that lands exactly on a root of unity so the barycentric branch is skipped; a proof that only satisfies the equation because `g1_sub` or `g2_sub` negated the wrong side; a blob whose field elements are all zero. Identity: `*ok == true` if and only if `p(z) == y` for the polynomial committed by `commitment_bytes`, for every byte string the caller can pass.",
-
-    "Critical. BATCH VERIFICATION MUST ACCEPT EXACTLY THE SET SINGLE VERIFICATION ACCEPTS. `verify_blob_kzg_proof_batch` short-circuits `n == 0` to true and `n == 1` to `verify_blob_kzg_proof`; for `n > 1` it computes per-blob challenges, `ys_fr`, then `compute_r_powers_for_verify_kzg_proof_batch` hashes `RCKZGBATCH___V1_`, degree, `n`, and each (compressed commitment, z, y, compressed proof) after `blst_p1s_to_affine`, and `verify_kzg_proof_batch` checks `e(sum r^i pi_i, [s]G2) == e(sum r^i (C_i - [y_i]) + sum r^i z_i pi_i, G2)` through `g1_lincomb_naive`. Show a batch where one invalid (blob, commitment, proof) triple verifies because another entry cancels it, or a batch whose verdict differs from verifying each entry alone: a proof or commitment at infinity whose affine compression feeds the transcript differently from `bytes_from_g1`; two identical entries whose `r` powers collide; a transcript that omits a field an attacker controls so `r` is predictable before the proof is chosen; an `n == 1` path that rejects what `n > 1` accepts or vice versa; a `C_minus_y` or `r_times_z` computed with the wrong index. Identity: `verify_blob_kzg_proof_batch(ok, ..., n)` == AND over i of `verify_blob_kzg_proof(ok_i, blobs[i], commitments[i], proofs[i])`, for every n and every byte string.",
-
-    "Critical. A CELL BATCH MUST VERIFY ONLY IF EVERY (COMMITMENT, INDEX, CELL, PROOF) TUPLE IS VALID. `verify_cell_kzg_proof_batch` bounds `cell_indices[i] < CELLS_PER_EXT_BLOB` but never bounds `num_cells`, never rejects duplicate `(commitment, cell_index)` pairs, then `deduplicate_commitments` rewrites `unique_commitments` and `commitment_indices` by byte equality (so two encodings of one point are two commitments), `compute_verify_cell_kzg_proof_batch_challenge` hashes `RCKZGCBATCH__V1_`, sizes, unique commitments, then per cell (commitment index, cell index, cell, proof), `compute_weighted_sum_of_commitments` validates commitments only after deduplication, `compute_commitment_to_aggregated_interpolation_poly` aggregates cells by column, bit-reverses each used column, `fr_ifft`s it and shifts by `get_inv_coset_shift_for_cell`, `computed_weighted_sum_of_proofs` scales by `get_coset_shift_pow_for_cell` (`reverse_bits_limited` then index arithmetic into `roots_of_unity`), and the final pairing uses `g2_values_monomial[FIELD_ELEMENTS_PER_CELL]`. Show a batch that returns true with a cell that does not lie on the committed polynomial: the same `cell_index` supplied twice with different cells so their `r`-weighted sum interpolates while neither is valid; a commitment index or coset index that maps two columns to one shift; a cell with a non-canonical field element read after `r` was derived; a proof at infinity dropped by `g1_lincomb_fast`'s zero-point filter while its `r^i` weight still multiplies the commitment side. Identity: `*ok == true` if and only if for every i the cell at `cell_indices[i]` equals the coset evaluation of the polynomial committed by `commitments_bytes[i]` and `proofs_bytes[i]` opens it.",
-
-    "High. RECOVERY MUST RETURN THE UNIQUE POLYNOMIAL THE SUPPLIED CELLS LIE ON, OR FAIL. `recover_cells_and_kzg_proofs` requires `CELLS_PER_BLOB <= num_cells <= CELLS_PER_EXT_BLOB` and strictly ascending indices below `CELLS_PER_EXT_BLOB`, writes each cell into `recovered_cells_fr` at `cell_indices[i] * FIELD_ELEMENTS_PER_CELL`, copies the input verbatim when `num_cells == CELLS_PER_EXT_BLOB`, otherwise `recover_cells` builds `missing_cell_indices` through `is_in_array`, asserts enough cells, computes the vanishing polynomial in `vanishing_polynomial_for_missing_cells`, multiplies, `fr_ifft`s, moves to a coset with `coset_fft`, divides by `fr_div` (unspecified on zero), and `coset_ifft`s back; proofs are then recomputed by `poly_lagrange_to_monomial` and `compute_fk20_cell_proofs`. Show a recovery whose output cells or proofs differ across nodes, or that emits cells and proofs for a polynomial the inputs do not lie on without an error: inputs that are consistent on the supplied indices but not of degree below `FIELD_ELEMENTS_PER_BLOB`; a coset point where `vanishing_poly_over_coset[i]` is zero; the full-input branch returning cells that are never checked against a degree bound while proofs are computed from them; an index set whose bit-reversed missing list has a duplicate. Identity: `recovered_cells` == the extension of the unique degree-below-4096 polynomial through the supplied cells, and `recovered_proofs[i]` == `compute_cells_and_kzg_proofs` proofs for that polynomial, or the call returns `C_KZG_BADARGS`.",
-
-    "High. EVERY NODE MUST COMPUTE THE SAME BYTES FROM THE SAME BLOB. `blob_to_kzg_commitment` runs `blob_to_polynomial` then `g1_lincomb_fast` over `g1_values_lagrange_brp`; `compute_kzg_proof_impl` has an in-domain branch (`m != 0`) that zeroes `q_poly[m]` and rebuilds it from `z * (z - w_i)` denominators; `compute_blob_kzg_proof` derives `z` from `compute_challenge`; `compute_cells_and_kzg_proofs` calls `poly_lagrange_to_monomial`, asserts the top half is zero, `fr_fft`s to 8192 points, `bit_reversal_permutation`s cells and proofs, and `compute_fk20_cell_proofs` through `circulant_coeffs_stride`, `x_ext_fft_columns`, `wbits` tables and `g1_ifft_unscaled`. Show a blob for which two honest nodes emit different commitment, proof or cell bytes, or for which a proof this library emits fails this library's own verifier: a `z` equal to a root of the 8192 domain but not of the 4096 domain; a blob whose monomial form is not zero above 4096 so the `assert` aborts the process; a `precompute` of 0 versus 8 producing different `proofs`; an output serialised through `blst_p1_affine_compress` versus `bytes_from_g1` for the identity point. Identity: bytes returned by every compute function == the bytes the consensus-specs reference computes for the same blob, and `verify_*` of that output returns true.",
-
-    "High. EVERY BYTE MUST BE VALIDATED BEFORE IT REACHES ARITHMETIC. `bytes_to_bls_field` rejects non-canonical scalars, `hash_to_bls_field` deliberately does not, `validate_kzg_g1` accepts infinity then requires `blst_p1_in_g1`, `blob_to_polynomial` validates 4096 elements in order, cells are validated element by element in `recover_cells_and_kzg_proofs` and `compute_commitment_to_aggregated_interpolation_poly` but only after `compute_verify_cell_kzg_proof_batch_challenge` hashed their raw bytes, and `commitments_equal` compares raw bytes, not points. Show untrusted bytes that reach `blst` unvalidated, or two byte strings that decode to one value yet are treated as different: a 48-byte string with the infinity bit set and non-zero payload that `blst_p1_uncompress` accepts; a compressed point with the sign bit set for the identity; a cell field element equal to the modulus; a commitment validated in `verify_kzg_proof` but never in `compute_blob_kzg_proof`'s challenge. Identity: every field element and group element used in an equation == the canonical decoding of the caller's bytes, and any non-canonical or off-curve input returns `C_KZG_BADARGS` before `*ok` can become true.",
-
-    "High. EVERY INDEX AND LENGTH DERIVED FROM INPUT MUST STAY INSIDE ITS BUFFER. `num_cells` and `n` are `uint64_t` documented as trusted, yet `compute_verify_cell_kzg_proof_batch_challenge` computes `input_size` as sums of `num_cells * BYTES_PER_CELL`, `verify_cell_kzg_proof_batch` allocates `num_cells * sizeof(Bytes48)` for `unique_commitments`, `deduplicate_commitments` writes `indices_out[i]` for every i, `is_cell_used[cell_indices[i]]`, `commitment_weights[commitment_indices[i]]` and `aggregated_column_cells[column_index * FIELD_ELEMENTS_PER_CELL + fr_index]` index by attacker-supplied values, `bit_reversal_permutation` asserts on `n`, `get_inv_coset_shift_for_cell` asserts `cell_idx_rbl <= FIELD_ELEMENTS_PER_EXT_BLOB`, and `fr_batch_inv` mutates `out` before returning `C_KZG_BADARGS`. Show one input that writes or reads outside an allocation, wraps a size computation, or reaches an `assert` in a release build so the process aborts: a `num_cells` that overflows `input_size`; a cell index of `CELLS_PER_EXT_BLOB - 1` after `reverse_bits_limited`; an `n` such that `n * sizeof(blst_p1_affine)` wraps; a `c_kzg_calloc` of zero elements dereferenced later. Identity: every array access index < the length passed to the allocation that created it, and no input reachable from a blob or sidecar can terminate the process.",
-
-    "High. THE BYTES A BINDING HANDS TO C MUST BE THE BYTES THE CLIENT PASSED, WITH THE COUNT IT PASSED. Java `ckzg_jni.c` trusts a `jlong count` cast to `size_t` and checks `GetArrayLength == count * BYTES_PER_*`; Node `kzg.cxx` derives `num_cells` from `Array::Length()` and `get_cell_index` from a JS number; Python `ckzg_wrap.c` derives counts from `PyBytes_Size` modulo element size; C# `Ckzg.cs` passes an `int count` and `ThrowOnInvalidLength(..., BytesPerCell * numCells)`; Go `main.go` casts slice lengths to `C.uint64_t` and unsafe-casts pointers; Rust `mod.rs` checks slice lengths then `as u64`; Zig `root.zig` returns null for empty slices; Nim and Elixir check equal lengths then call the ABI. Show a binding call where the count, the pointer or the output the client observes differs from what C validated: a negative or huge `count` that multiplies past `Integer.MAX_VALUE` yet matches a length check; a cell index above 2^53 or negative rounded by JS; an error return where the binding still reads an uninitialised `ok` or output buffer; a `verify_*` that maps `C_KZG_BADARGS` to `false` in one binding and to an exception in another so two clients disagree on the same sidecar. Identity: (pointer contents, count, ok/error) seen by the C function == (bytes, length, result) seen by the client, in every binding.",
-
-    "High. THIS LIBRARY'S VERDICT MUST EQUAL THE REFERENCE SPECIFICATION'S VERDICT FOR EVERY INPUT. The consensus-specs treat an invalid input as a failed verification; here `verify_blob_kzg_proof_batch` accepts `n == 0`, `verify_cell_kzg_proof_batch` accepts `num_cells == 0`, `C_KZG_BADARGS` and `*ok == false` are distinct outcomes, `verify_cell_kzg_proof_batch` has no upper bound on `num_cells` while the spec bounds columns, `deduplicate_commitments` compares bytes where the spec compares points, and `compute_challenge` and both batch transcripts must match the spec byte for byte (domain, degree, counts, endianness, compressed encodings). Show an input that this library accepts and the reference rejects or the reverse, so that nodes running c-kzg fork from nodes running another implementation: a cell batch with a duplicate `(commitment, index)` pair; a proof at infinity for a zero blob; a `y` or `z` at the modulus boundary; a commitment whose two encodings dedupe differently; a transcript field ordered differently from the spec. Identity: `verify_*` here == `verify_*` in consensus-specs for the same bytes, and the (commitment, proof, cells) bytes computed here == the spec's.",
-
-    "Critical. THE MISSING INVARIANT - what nobody built. No check ties `num_cells` or `n` back to the sizes of the buffers a binding actually allocated; nothing rejects duplicate `(commitment, cell_index)` pairs before their cells are summed; the challenge transcripts hash raw cell and commitment bytes before those bytes are validated, so validity and challenge derivation see different objects; `compute_kzg_proof`'s in-domain branch and `evaluate_polynomial_in_evaluation_form`'s shortcut are two code paths for one mathematical case; the point at infinity is accepted as a commitment and as a proof with no rule about what it commits to; and nothing asserts that a proof this library computes is accepted by this library's verifier. Identify the FIRST place one of these unstated soundness or determinism assumptions is violated by an unprivileged user publishing a blob transaction, blob sidecar or data-column sidecar, prove it with a C unit test in the style of src/test/tests.c or a binding test that asserts both sides (`ok` versus the pairing relation, bytes here versus the reference, index versus buffer length) before and after, and show that no later step in the client can detect or reverse it.",
+    "Critical. An ordinary fee-paying transaction sender moves lamports or data out of an account they do not sign for, because account privilege derivation - is_signer/is_writable flags, index-to-key resolution, duplicate account dedup, address-lookup-table expansion, or borrow/ref handling in TransactionContext and InstructionContext - lets an unsigned or read-only account be debited or reassigned, giving theft of funds without the owner's signature.",
+    "Critical. A crafted instruction or CPI chain escalates privileges the caller never held, because InvokeContext::prepare_next_instruction, the CPI account-info translation in syscalls/src/cpi.rs and program-runtime/src/cpi.rs, or signer-seed/PDA derivation propagates signer or writable status to an account the top-level transaction did not authorize, letting an attacker program drain arbitrary accounts.",
+    "Critical. A transaction breaks lamport conservation or rent invariants - creating lamports from nothing, keeping a debited balance after a failed instruction, or evading TransactionAccountStateInfo/rent-exempt checks - through system program handlers, account_loader balance tracking, rollback accounts, or fee collection, resulting in unbacked supply or stolen balances.",
+    "Critical. An attacker takes over a vote account or redirects its stake value by exploiting authorized-voter/authorized-withdrawer checks, VoteState deserialization and size handling, or the withdraw/update-commission paths in the vote program, allowing withdrawal of a validator's balance or capture of delegated stake rewards.",
+    "Critical. A single submitted transaction makes two honest validators compute different state for the same block - divergent account contents, accounts lt hash, fee or rent result, sysvar snapshot, or capitalization - because execution or hashing depends on ordering, caching, feature-gate evaluation, or uninitialized/nondeterministic data, producing a consensus safety violation and chain fork.",
+    "Critical. On-chain state an unprivileged user can write drives stake weight or epoch state incorrectly - stakes cache updates, StakeAccount parsing, epoch_stakes snapshots, delegation activation/deactivation accounting, or partitioned epoch reward calculation and distribution - so leader schedule, vote weight, or reward payout diverges from the true delegated stake.",
+    "Critical. A transaction that any user can submit halts or crashes block processing on every validator - a panic, arithmetic overflow, slice/index violation, unwrap on attacker-controlled input, or unrecoverable error surfaced from SVM processing, a builtin program, account loading, or bank commit - producing a cluster-wide liveness failure requiring human intervention.",
+    "High. A transaction executes without paying, or is accepted twice, because of flaws in blockhash age validation, the status cache dedup key, durable-nonce advance and rollback handling, fee calculation and refund, or signature counting, letting an attacker obtain free execution, replay a signed transaction, or bypass replay protection.",
+    "High. A transaction consumes far more real work than it is charged for, because compute-budget instruction parsing, per-instruction CU defaults, cost-model estimation, cost tracker block limits, entry byte budget, or QoS accounting undercounts it, letting a cheap transaction exhaust the leader's block capacity and starve or stall block production.",
+    "High. A user-submitted deploy, upgrade, close, or invocation causes the wrong program bytecode to execute or a stale/poisoned entry to be served, through program cache tombstoning and effective-slot handling, loading-task races, bpf_loader deploy/upgrade authority checks, or core-BPF migration source validation, so a program behaves differently from its on-chain state.",
+    "Critical/High blind spot. An unprivileged transaction sender abuses an assumption the protocol never wrote down: a value validated in one stage and trusted as already-validated in a later one, an account or index re-resolved after the check that authorized it, a limit or feature gate enforced only on one execution path (leader vs replay, cached vs freshly loaded, top-level vs CPI), state carried across instruction, transaction, slot or epoch boundaries that was only proven safe within one of them, or an error path that commits partial effects - yielding unsigned fund movement, state divergence between validators, or a cluster-wide stall.",
 ]
 
 
@@ -172,119 +207,60 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate KZG soundness / determinism / memory-safety audit questions for one c-kzg-4844 target.
+    Generate exploit-focused audit and fuzzing questions for one agave target.
 
     ```
     target_file format:
-    "'File Name: src/eip4844/eip4844.c -> Scope: Critical. ...'"
+    "'File Name: svm/src/account_loader.rs -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate cryptographic-library security audit questions for this exact c-kzg-4844
-    target:
+    Generate exploit-focused security audit questions for this exact agave target:
 
     {target_file}
 
     Project focus:
-    c-kzg-4844 is the C implementation of the EIP-4844 and EIP-7594 Polynomial
-    Commitments API that Ethereum execution and consensus clients link through the
-    Go, Rust, Java, C#, Node.js, Python, Nim, Zig and Elixir bindings. Untrusted bytes
-    - blobs, commitments, proofs, cells, cell indices, z and y values, and the counts
-    that describe them - arrive from blob transactions, blob sidecars and data-column
-    sidecars that any user can publish; honest nodes forward them into these functions
-    unchanged. The library decides (a) whether `ok` equals the truth of the pairing
-    relation for the supplied bytes; (b) whether every node computes the same
-    commitment, proof, cell and verdict bytes as the reference specification; (c)
-    whether every index and length derived from the input stays inside its buffer and
-    no input can abort the process. A proof accepted that should fail, a verdict that
-    differs between nodes, or a crash reachable from one sidecar is the bug.
+    agave is the Solana validator. Focus only on what an ordinary user reaches by submitting a signed, fee-paying transaction (including deploying and invoking their own BPF program): sanitization and sigverify, precompiles, blockhash/nonce replay protection, fee and compute-budget accounting, account loading and lamport/rent conservation, SVM execution, CPI privilege propagation, syscalls and VM memory, the system/vote/bpf_loader builtins, bank commit and accounts lt hash determinism, stake and reward accounting, and leader-side cost/QoS limits.
 
     Rules:
-    * Treat `File Name:` as the exact file.
+    * Treat `File Name:` as the exact file/module.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact C or binding symbols (function, static helper, macro, constant, struct
-      field, return code) as they appear in the file.
-    * EVERY question must close on an equality that must hold across a call. State it
-      explicitly. Narrative questions with no stated equality are rejected.
-    * Attacker is unprivileged only: an ordinary Ethereum user who submits a blob
-      transaction, or publishes a blob sidecar or data-column sidecar, with their own
-      keys and funds. They choose every byte of blobs, commitments, proofs, cells, cell
-      indices, z, y and the number of items, and honest nodes pass those bytes into the
-      public API through the bindings.
-    * Attacker is NOT a node operator, a client developer misusing the API, the
-      trusted-setup provider, or a malicious peer, node or RPC. No compromised
-      dependency, build or device; no social engineering.
-    * PROGRAM EXCLUSIONS - a question landing in any of these wastes the whole batch:
-      - Tests, reference vectors, fuzz targets, generated bindings, trusted setup
-        files, scripts, build and package files, READMEs and audits are OUT OF SCOPE.
-      - Resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops,
-        cache growth and memory hygiene are OUT OF SCOPE. Memory corruption, reachable
-        asserts and undefined behaviour from one input are IN scope.
-      - The contents of the trusted setup are trusted; a wrong file is OUT OF SCOPE.
-        Wrong tables derived from a correct file are IN scope.
-      - Defects inside blst or inside a client with no path through this repo are OUT
-        OF SCOPE; a weakness here that misuses blst or steers a client wrong is IN.
-      - Also excluded: leaked keys, privileged accounts, centralization risk,
-        best-practice notes, feature requests, publicly known issues, and findings
-        with no path from a blob, sidecar or data-column sidecar.
-    * IN-SCOPE IMPACTS - every question must land on one and name it:
-      Critical: a forged proof, commitment or cell batch verifies, so invalid blob data
-      is accepted and the chain can be split or unavailable data finalised; the same
-      bytes verify on some nodes and fail on others.
-      High: one blob or sidecar crashes or aborts every node running this library
-      (memory corruption, reachable assert, UB); a valid proof rejected here but
-      accepted by the reference, or the reverse, so more than a third of the network
-      forks; a compute function emitting bytes that differ between honest nodes.
-    * Every question must be a concrete real-world scenario an unprivileged party can
-      trigger through the public API with bytes they publish on the network.
-    * A returned `C_KZG_BADARGS` is a finding only when the reference accepts the same
-      input, or when state was already mutated or memory already written - say which.
+    * Use exact Rust symbols (fn, method, struct, enum, field) when possible.
+    * Attacker is unprivileged only: any keypair holder who can pay fees and submit a transaction, deploy and invoke their own BPF program, or create and own stake/vote/token accounts. They sign only for their own keys.
+    * Attacker is NOT a validator, leader, node operator, host or DB owner, RPC operator, or upgrade authority of someone else's program. Never assume a malicious peer, malicious leader, malicious node, gossip/turbine/shred/QUIC network attacker, crafted snapshot, Geyser plugin, misconfiguration, or social engineering.
+    * Out of scope, never ask about: votor/Alpenglow crates, loader-v4, the VM interpreter, RPC endpoints, snapshots, gossip/turbine/repair, metrics, dependencies.
+    * Ignore test files, mocks, fuzz harnesses, benches, docs, generated code, and TOML/config-only findings.
+    * Every question must describe a real transaction an attacker actually sends. No generic unbounded-allocation, memory-growth, cache-size, or resource-exhaustion speculation; no "what if the input is huge" questions without a concrete signed transaction and a concrete broken invariant.
     * Generate 40 to 80 high-signal questions.
-    * At least 70% must land on a Critical impact rather than a High one.
-    * Every question must be testable locally with a C unit test in src/test/tests.c
-      style or a binding test against the local trusted setup. Never propose testing
-      on mainnet or a public testnet.
+    * At least 70% must target theft or creation of lamports without the owner's signature, CPI/privilege escalation, consensus divergence between validators, stake or reward corruption, replay or free execution, or a transaction-triggered validator panic that halts the cluster.
+    * Every question must be testable by a Rust unit test, an SVM/program-test integration test, or a bank-level test.
     * Avoid generic checklist questions and repeated root causes.
-    * Prefer questions that name TWO values that must be equal and ask whether they are:
-      ok and the pairing relation, batch verdict and per-item verdicts, bytes here and
-      bytes in the reference, index and buffer length, count passed and count checked.
 
-    Known dead ends - do NOT generate questions about these:
-    * Anything needing a node operator, client developer, trusted-setup provider, peer
-      or RPC to act maliciously.
-    * A bug inside blst or a client with no path through this repo.
-    * Slow verification, big allocations, unbounded memory, logging, or an input that
-      only harms the attacker's own transaction.
-    * Findings only reproducible through tests, fuzzers or tooling.
-
-    Core equalities (each question must close on one):
-    * SOUNDNESS: `*ok == true` iff the pairing relation holds for the decoded inputs.
-    * BATCH TRUTH: batch verdict == AND of the per-item verdicts, for every n.
-    * REFERENCE TRUTH: bytes and verdicts here == consensus-specs for the same input.
-    * VALIDATION TRUTH: every value in an equation == canonical decoding of input bytes.
-    * BOUNDS TRUTH: every index < buffer length; no input aborts the process.
-    * BINDING TRUTH: (bytes, count, result) seen by C == (bytes, length, result) seen
-      by the client.
+    Core invariants:
+    * Authorization is exact: an account is debited, reassigned, or written only when a required signer signed the transaction, and CPI never grants privileges the caller did not hold.
+    * Value is conserved: lamports in equals lamports out plus fees and rent; failed transactions leave only the intended fee and nonce effects.
+    * Determinism holds: every validator replaying the same block reaches the same accounts, hash, and capitalization, regardless of order, caching, or timing.
+    * Replay protection is sound: a signed transaction executes at most once and only within a valid blockhash or nonce window, and always pays its fee.
+    * Accounting is honest: charged compute, cost-model cost, stake weight, and reward payout match the real work and real on-chain state.
+    * Execution is total: no attacker-supplied transaction can panic, overflow, or abort block processing.
 
     Each question must include:
-    1. target function, static helper or constant;
-    2. attacker input (the concrete blob, commitment, proof, cell, index, count or
-       field-element bytes that matter);
-    3. preconditions (which API, which binding, n or num_cells, precompute, in-domain
-       point, infinity point, duplicate entries);
-    4. call sequence through the binding, the public function and its helpers;
-    5. the equality that breaks, written explicitly;
-    6. scoped impact and which nodes are affected;
+    1. target function/method;
+    2. attacker action (a concrete transaction: instructions, accounts, signers, data);
+    3. preconditions (accounts the attacker owns and funds);
+    4. execution sequence;
+    5. invariant tested;
+    6. scoped impact;
     7. proof idea.
 
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Method: function_name] Can an unprivileged ATTACKER_INPUT under PRECONDITIONS trigger CALL_SEQUENCE, breaking the equality EQUALITY, causing scoped impact: SCOPE_IMPACT against PARTY? Proof idea: C unit test PARAMETERS asserting SOUNDNESS, BATCH_TRUTH, REFERENCE_TRUTH, VALIDATION_TRUTH, BOUNDS_TRUTH, or BINDING_TRUTH.",
+    "[File: {target_file}] [Function: symbol_or_method] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger EXECUTION_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/SVM/bank test PARAMETERS and assert AUTHORIZATION_EXACTNESS, VALUE_CONSERVATION, DETERMINISM, REPLAY_PROTECTION, HONEST_ACCOUNTING, or TOTAL_EXECUTION.",
     ]
     """
     return prompt
@@ -292,7 +268,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a KZG soundness / determinism / memory-safety exploit-validation prompt for c-kzg-4844.
+    Generate a focused agave exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -302,19 +278,18 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: an ordinary Ethereum user who submits a blob transaction or publishes a blob sidecar or data-column sidecar. They choose every byte of blobs, commitments, proofs, cells, cell indices, z, y and item counts; honest nodes pass those bytes into the public API through the bindings.
-- Reject anything requiring a node operator, a client developer misusing the API, the trusted-setup provider, a malicious peer/node/RPC, a compromised dependency, build or device, or social engineering.
-- OUT OF SCOPE, reject on sight: tests, reference vectors, fuzz targets, generated bindings, trusted setup files, scripts, build and package files, READMEs, audits; resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops, cache growth and memory hygiene; a wrong trusted setup file; defects inside blst or a client with no path through this repo; publicly known issues; best-practice notes; theoretical findings.
-- The impact must be one of: Critical - a forged proof, commitment or cell batch verifies so invalid blob data is accepted or the chain splits, or the same bytes verify on some nodes and fail on others; High - one blob or sidecar crashes or aborts every node running this library (memory corruption, reachable assert, UB), a verdict that differs from the reference specification so more than a third of the network forks, or a compute function emitting bytes that differ between honest nodes.
-- Focus on real impact: a proof accepted that should fail, a verdict that differs between nodes, or a crash reachable from one sidecar.
+- Attacker is unprivileged only: any keypair holder who submits a signed, fee-paying transaction, deploys and invokes their own BPF program, or owns stake/vote/token accounts. No validator, leader, operator, host, RPC, or foreign upgrade-authority access.
+- Reject malicious-peer, malicious-leader, malicious-node, gossip/turbine/repair/QUIC network, snapshot, Geyser, operator-only, host-level, and misconfiguration-only paths.
+- Reject votor/Alpenglow, loader-v4, VM interpreter, RPC, metrics, dependency-only, and test/mock/bench/docs/generated/config-only findings.
+- Reject generic unbounded-allocation or resource-growth claims with no concrete transaction and no broken invariant.
+- Focus on real cluster impact: theft or minting of lamports without the owner's signature, CPI privilege escalation, consensus divergence between validators, stake or reward corruption, replay or free execution, or a transaction that halts block processing.
 
 ## Validate
-- Write the equality the question claims is broken between two named values BEFORE tracing any code.
-- Trace the exact reachable path from the attacker's bytes and record every read and write of `n` / `num_cells`, `cell_indices`, `commitment_indices`, the decoded `fr_t` and `g1_t` values, the challenge transcript bytes, `r_powers`, every array index, and `*ok`.
-- Evaluate both sides of the equality before and after. If they still match, output no vulnerability.
-- Check whether `bytes_to_bls_field`, `validate_kzg_g1`, the `cell_indices` bound checks, `deduplicate_commitments`, the `n == 0` / `n == 1` short-circuits, the `assert` calls, the binding length checks, or blst's own subgroup and curve checks already prevent the divergence.
-- State what the attacker gains per input and whether it is repeatable.
-- Require exact file/function support and a reproducible C unit test or binding test against the local trusted setup.
+- Trace the exact reachable path from the attacker's transaction (instructions, accounts, signers, data) into the affected function.
+- Check whether sanitization, sigverify, feature gates, account privilege checks, balance and rent checks, or existing error handling already stop it.
+- Confirm the path is reachable on the default feature set of current mainnet-beta behavior.
+- Accept only concrete unsigned fund movement, privilege escalation, state divergence, corrupted stake/reward accounting, replay, or cluster-wide stall.
+- Require exact file/function support and a reproducible Rust unit, SVM, program-test, or bank-level PoC.
 
 ## Output
 If valid, output exactly:
@@ -326,19 +301,19 @@ If valid, output exactly:
 [2-3 sentences]
 
 ### Finding Description
-[The broken equality, the code path, root cause, the attacker's exact bytes, exploit flow, and why existing guards fail]
+[Code path, root cause, attacker transaction inputs, exploit flow, and why checks fail]
 
 ### Impact Explanation
-[What verifies, diverges or crashes, which nodes, repeatability, matching severity category]
+[Concrete scoped impact and matching Solana bounty category: Loss of Funds, Consensus/Safety Violation, Liveness, or DoS via non-RPC protocols]
 
 ### Likelihood Explanation
-[Preconditions, API and binding required, attacker cost, feasibility, repeatability]
+[Preconditions, accounts and funds needed, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[C unit test or binding test plan with the exact assertions on both sides of the equality]
+[Rust unit/SVM/bank test plan with expected assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -350,7 +325,7 @@ No extra text.
 
 def validation_format(report: str) -> str:
     """
-    Generate a strict bounty-style validation prompt for c-kzg-4844 claims.
+    Generate a strict bounty-style validation prompt for agave security claims.
     """
     prompt = f"""# VALIDATION PROMPT
 
@@ -362,32 +337,31 @@ def validation_format(report: str) -> str:
 - Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
 - Do not create a new vulnerability if the submitted claim is weak or invalid.
 - Do not upgrade severity unless the provided evidence proves the higher impact.
-- A claim is only valid if the report states the broken equality between two named values and shows both sides concretely. Reject prose-only claims.
-- Reject anything requiring a node operator, a client developer misusing the API, the trusted-setup provider, a malicious peer/node/RPC, a compromised dependency, build or device, or social engineering.
-- OUT OF SCOPE, reject on sight: tests, reference vectors, fuzz targets, generated bindings, trusted setup files, scripts, build and package files, READMEs, audits; resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops, cache growth and memory hygiene; a wrong trusted setup file; defects inside blst or a client with no path through this repo; publicly known issues; centralization risk; best-practice notes; feature requests; theoretical findings.
-- The impact must be one of: Critical - a forged proof, commitment or cell batch verifies so invalid blob data is accepted or the chain splits, or the same bytes verify on some nodes and fail on others; High - one blob or sidecar crashes or aborts every node running this library (memory corruption, reachable assert, UB), a verdict that differs from the reference specification so more than a third of the network forks, or a compute function emitting bytes that differ between honest nodes.
-- Reject claims where the only effect is on the attacker's own transaction or the attacker's own node.
-- Reject if the bug was already fixed, publicly disclosed, or covered by a known-issues list.
-- A valid report must be triggerable by an unprivileged party against the current code through bytes they can publish on the network.
-- A PoC is mandatory. Prefer #NoVulnerability over speculative reports.
+- Reject malicious-peer, malicious-leader, malicious-node, network-layer, snapshot, Geyser plugin, operator-only, host-level, misconfiguration, dependency-only, docs/style, generated-file, and test/mock/bench/config-only issues.
+- Reject votor/Alpenglow crates, loader-v4, VM interpreter, RPC service, metrics, and bootstrap-phase-only issues, per SECURITY.md exclusions.
+- Reject if the exploit needs validator, leader, operator, host, or database access, a foreign upgrade authority, victim social engineering, a non-default feature set, or anything outside what an unprivileged keypair holder can put in a submitted transaction.
+- Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
+- A valid report must be triggerable by an unprivileged transaction sender, unless the claim proves escalation from that starting point.
+- The final impact must map to an in-scope Solana category: Loss of Funds (theft without the user's signature, including system/stake/vote programs), Consensus/Safety Violation, Liveness/loss of availability requiring human intervention, or remote resource exhaustion via non-RPC protocols.
+- Prefer #NoVulnerability over speculative reports.
 
 ## Required Validation Checks
 All must pass:
-1. Exact in-scope file, function/helper/constant, and line references.
-2. The equality written explicitly, with both sides shown before and after.
-3. Clear root cause: which decoding gap, transcript or challenge drift, index or length error, batch aggregation flaw, or spec divergence causes it.
-4. Reachable exploit path: preconditions -> attacker bytes -> binding, public function and helper sequence -> observed divergence.
-5. `bytes_to_bls_field`, `validate_kzg_g1`, the `cell_indices` bound checks, `deduplicate_commitments`, the `n == 0` / `n == 1` short-circuits, the `assert` calls, the binding length checks and blst's own checks reviewed and shown insufficient.
-6. Impact stated concretely: what verifies, diverges or crashes, on which nodes, and whether it is repeatable.
-7. Reproducible proof: C unit test or binding test against the local trusted setup, with the asserted values.
+1. Exact in-scope file, function, and line/code references.
+2. Clear root cause and broken security assumption.
+3. Reachable exploit path: preconditions (attacker-owned accounts and funds) -> submitted transaction -> trigger -> bad result.
+4. Existing sanitization, sigverify, privilege checks, balance/rent checks, feature gates, and error handling reviewed and shown insufficient.
+5. Concrete in-scope impact with realistic likelihood.
+6. Reproducible proof path: Rust unit PoC, SVM/program-test integration test, bank-level test, or exact transaction steps against a local cluster.
+7. No obvious rejection reason from SECURITY.md, known issues, privilege assumptions, or scope exclusions.
 
 ## Silent Triage Questions
 Before output, internally answer:
-- What exactly is the equality, and does it actually fail?
-- Can an ordinary user publishing a blob, sidecar or data-column sidecar trigger it with no privileged role?
-- Is the flaw in this repo's code, not in blst, a client or the trusted setup file?
-- What verifies, diverges or crashes, on which nodes, and can it be repeated?
-- Would the Ethereum Foundation bug bounty panel accept the exploit path for c-kzg-4844?
+- Can an ordinary fee-paying user trigger this with a transaction, without validator, operator, or host access?
+- Does the code actually behave as claimed under the currently active feature set?
+- Is the impact caused by this code, not by a malicious peer, snapshot, plugin, or dependency?
+- Is the theft, divergence, replay, or halt concrete rather than hypothetical?
+- Would a Solana Foundation triager accept the proof-of-concept?
 - What exact test would prove it?
 
 ## Output
@@ -399,22 +373,22 @@ Audit Report
 [Clear vulnerability statement] - ([File: file_path])
 
 ## Summary
-[2-3 sentence summary of the broken equality and impact]
+[2-3 sentence summary of the bug and impact]
 
 ## Finding Description
-[Exact code path, the equality, root cause, exploit flow, and why existing guards fail]
+[Exact code path, root cause, exploit flow, and why existing checks fail]
 
 ## Impact Explanation
-[What verifies, diverges or crashes, affected nodes, repeatability, severity category]
+[Concrete in-scope impact, severity rationale, and Solana bounty category]
 
 ## Likelihood Explanation
-[Attacker capability, preconditions, state required, cost, feasibility]
+[Attacker capability, accounts and funds required, feasibility, repeatability]
 
 ## Recommendation
 [Specific fix guidance]
 
 ## Proof of Concept
-[Minimal reproducible steps or C unit test / binding test plan with concrete assertions]
+[Minimal reproducible steps or Rust unit/SVM/bank test plan]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -426,7 +400,7 @@ Output only one of the two outcomes above. No extra text.
 
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for c-kzg-4844.
+    Generate a short cross-project analog scan prompt for agave.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -434,18 +408,15 @@ def scan_format(report: str) -> str:
 {report}
 
 ## Rules
-- Use in-scope repo context only (`src/common/**`, `src/eip4844/**`, `src/eip7594/**`, `src/setup/**`, `src/ckzg.c` and the non-test, non-generated binding sources under `bindings/*`). Do not ask for code or claim missing files.
+- Use in-scope production repo context only. Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only unprivileged analogs that break an equality: `ok` true while the pairing relation is false, a batch verdict that is not the AND of its items, bytes or verdicts that differ from the reference specification, a value used in an equation that is not the canonical decoding of the input, an index outside its buffer or an input that aborts the process, or a count or result that differs between a binding and the C function.
-- OUT OF SCOPE, reject on sight: tests, reference vectors, fuzz targets, generated bindings, trusted setup files, scripts, build files, READMEs; resource exhaustion, slow inputs, large allocations, timeouts, unbounded loops, cache growth and memory hygiene; a wrong trusted setup file; defects inside blst or a client with no path here; anything requiring a node operator, client developer, trusted-setup provider, peer or RPC to act maliciously; publicly known issues; best-practice notes; theoretical findings.
-- The impact must be one of: Critical - a forged proof, commitment or cell batch verifies so invalid blob data is accepted or the chain splits, or the same bytes verify on some nodes and fail on others; High - one blob or sidecar crashes or aborts every node running this library, a verdict that differs from the reference specification so more than a third of the network forks, or a compute function emitting bytes that differ between honest nodes.
-- Reject analogs where the only effect is on the attacker's own transaction or node.
+- Keep only analogs an unprivileged transaction sender can reach: sanitization and sigverify, precompiles, blockhash/nonce replay protection, fee and compute-budget accounting, account loading and lamport/rent conservation, SVM execution and CPI privilege propagation, syscalls and VM memory, system/vote/bpf_loader builtins, bank commit determinism, stake and reward accounting, or leader-side cost limits.
+- Reject malicious-peer, malicious-leader, network-layer, snapshot, Geyser, operator-only, votor/Alpenglow, loader-v4, interpreter, RPC, mocked-only paths, dependency-only bugs, and no-impact analogs.
 
 ## Validate
-- Map the bug class to the strongest reachable path in this repo and state the equality it would break.
-- Evaluate both sides before and after the attacker's bytes.
+- Map the bug class to the strongest reachable agave path from a single submitted transaction.
 - Prove root cause with exact file/function support.
-- Accept only concrete forged acceptance, cross-node divergence, spec divergence, memory corruption, reachable abort, or binding/C mismatch.
+- Accept only concrete unsigned fund movement or minting, CPI privilege escalation, consensus divergence between validators, stake or reward corruption, replay or free execution, or a transaction-triggered cluster halt.
 
 ## Output (Strict)
 If valid analog exists, output:
