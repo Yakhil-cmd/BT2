@@ -4,13 +4,12 @@ import os
 from decouple import config
 
 # todo: if scope_files is: 500 > 50, 300 > 30 , 100 > 10
-MAX_REPO = 20
-# todo: the GitLab namespace/project path, for example group/project
-SOURCE_REPO = 'anza-xyz/agave'
+MAX_REPO = 25
+# todo: the path from https://github.com/byteball/ocore
+SOURCE_REPO = "byteball/ocore"
 # todo: the name of the repository
-REPO_NAME = 'agave'
-
-run_number = os.environ.get('GITHUB_RUN_NUMBER', '0')
+REPO_NAME = "ocore"
+run_number = os.environ.get('GITHUB_RUN_NUMBER') or os.environ.get('CI_PIPELINE_IID', '0')
 
 
 def get_cyclic_index(run_number, max_index=100):
@@ -46,158 +45,117 @@ else:
     else:
         BASE_URL = f"https://deepwiki.com/{SOURCE_REPO}"
 
+
 scope_files = [
     # =================================================================================
-    # Transaction admission: sanitization, signature verification and precompiles
+    # Unit/joint validation: the rules that decide whether a posted unit is accepted
     # =================================================================================
-    "runtime-transaction/src/runtime_transaction.rs",
-    "runtime-transaction/src/runtime_transaction/sdk_transactions.rs",
-    "runtime-transaction/src/runtime_transaction/transaction_view.rs",
-    "runtime-transaction/src/sanitize_config.rs",
-    "runtime-transaction/src/signature_details.rs",
-    "runtime-transaction/src/instruction_data_len.rs",
-    "runtime-transaction/src/transaction_meta.rs",
-    "perf/src/sigverify.rs",
-    "perf/src/packet.rs",
-    "precompiles/src/lib.rs",
-    "precompiles/src/ed25519.rs",
-    "precompiles/src/secp256k1.rs",
-    "precompiles/src/secp256r1.rs",
+    "validation.js",
+    "validation_utils.js",
+    "joint_storage.js",
+    "writer.js",
+    "archiving.js",
+    "storage.js",
+    "constants.js",
 
     # =================================================================================
-    # Replay protection, nonce, blockhash, fee charging and compute budget parsing
+    # Authorization: address definitions, authentifiers, hashing and signatures
     # =================================================================================
-    "runtime/src/bank/check_transactions.rs",
-    "accounts-db/src/blockhash_queue.rs",
-    "runtime/src/status_cache.rs",
-    "svm/src/nonce_info.rs",
-    "svm/src/rollback_accounts.rs",
-    "fee/src/lib.rs",
-    "compute-budget-instruction/src/compute_budget_instruction_details.rs",
-    "compute-budget-instruction/src/instructions_processor.rs",
-    "compute-budget-instruction/src/builtin_programs_filter.rs",
-    "compute-budget-instruction/src/compute_budget_program_id_filter.rs",
-    "compute-budget/src/compute_budget_limits.rs",
-    "compute-budget/src/compute_budget.rs",
-    "runtime/src/bank/fee_distribution.rs",
+    "definition.js",
+    "signature.js",
+    "object_hash.js",
+    "object_length.js",
+    "string_utils.js",
+    "chash.js",
+    "merkle.js",
+    "signed_message.js",
 
     # =================================================================================
-    # Account loading, lamport/rent conservation, locking and commit
+    # DAG ordering, stability, main chain and graph reachability
     # =================================================================================
-    "svm/src/account_loader.rs",
-    "svm/src/rent_calculator.rs",
-    "svm/src/transaction_account_state_info.rs",
-    "runtime/src/rent_collector.rs",
-    "accounts-db/src/account_locks.rs",
-    "accounts-db/src/accounts.rs",
-    "runtime/src/account_saver.rs",
+    "main_chain.js",
+    "graph.js",
+    "parent_composer.js",
+    "mc_outputs.js",
 
     # =================================================================================
-    # SVM transaction processing, program loading and program cache
+    # Value accounting: inputs, outputs, balances, commissions, witnessing earnings
     # =================================================================================
-    "svm/src/transaction_processor.rs",
-    "svm/src/program_loader.rs",
-    "program-runtime/src/loaded_programs.rs",
-    "program-runtime/src/program_cache_entry.rs",
-    "program-runtime/src/loading_task.rs",
-    "program-runtime/src/execution_budget.rs",
+    "inputs.js",
+    "balances.js",
+    "headers_commission.js",
+    "paid_witnessing.js",
+    "composer.js",
 
     # =================================================================================
-    # Invoke context, CPI privilege propagation, VM memory and serialization
+    # Assets: issuance, transfer conditions, divisible and indivisible private payments
     # =================================================================================
-    "program-runtime/src/invoke_context.rs",
-    "program-runtime/src/cpi.rs",
-    "program-runtime/src/serialization.rs",
-    "program-runtime/src/memory.rs",
-    "program-runtime/src/memory_context.rs",
-    "program-runtime/src/vm.rs",
-    "program-runtime/src/sysvar_cache.rs",
-    "program-runtime/src/deploy.rs",
-    "transaction-context/src/lib.rs",
-    "transaction-context/src/transaction.rs",
-    "transaction-context/src/transaction_accounts.rs",
-    "transaction-context/src/instruction.rs",
-    "transaction-context/src/instruction_accounts.rs",
-    "transaction-context/src/vm_slice.rs",
-    "transaction-context/src/vm_addresses.rs",
-    "syscalls/src/lib.rs",
-    "syscalls/src/cpi.rs",
-    "syscalls/src/mem_ops.rs",
-    "syscalls/src/sysvar.rs",
-    "syscalls/src/logging.rs",
+    "divisible_asset.js",
+    "indivisible_asset.js",
+    "private_payment.js",
 
     # =================================================================================
-    # Native programs any signer can invoke
+    # Autonomous Agents: definition validation, trigger execution, response accounting
     # =================================================================================
-    "programs/system/src/system_processor.rs",
-    "programs/system/src/system_instruction.rs",
-    "programs/vote/src/vote_processor.rs",
-    "programs/vote/src/vote_state/mod.rs",
-    "programs/vote/src/vote_state/handler.rs",
-    "programs/bpf_loader/src/lib.rs",
-    "programs/compute-budget/src/lib.rs",
-    "programs/zk-elgamal-proof/src/lib.rs",
-    "builtins/src/core_bpf_migration.rs",
-    "builtins/src/lib.rs",
-    "runtime/src/bank/builtins/core_bpf_migration/mod.rs",
-    "runtime/src/bank/builtins/core_bpf_migration/target_bpf_v2.rs",
-    "runtime/src/bank/builtins/core_bpf_migration/source_buffer.rs",
+    "aa_validation.js",
+    "aa_composer.js",
+    "aa_addresses.js",
 
     # =================================================================================
-    # Bank state commit, account hashing and cross-validator determinism
+    # Oscript/OJSON: parsing, validation and deterministic evaluation of AA formulas
     # =================================================================================
-    "runtime/src/bank.rs",
-    "runtime/src/bank/accounts_lt_hash.rs",
-    "runtime/src/bank/sysvar_cache.rs",
-    "runtime/src/bank/recent_blockhashes_account.rs",
-    "runtime/src/bank/address_lookup_table.rs",
-    "lattice-hash/src/lt_hash.rs",
-    "accounts-db/src/accounts_db.rs",
-    "accounts-db/src/accounts_cache.rs",
-    "accounts-db/src/read_only_accounts_cache.rs",
+    "formula/index.js",
+    "formula/parse_ojson.js",
+    "formula/validation.js",
+    "formula/evaluation.js",
+    "formula/common.js",
+    "formula/grammars/ojson.ne",
+    "formula/grammars/oscript.ne",
 
     # =================================================================================
-    # Stake weight, epoch stakes and reward distribution driven by on-chain state
+    # Oracles, attestations, order-provider votes and system vars read by AAs
     # =================================================================================
-    "runtime/src/stakes.rs",
-    "runtime/src/stake_account.rs",
-    "runtime/src/epoch_stakes.rs",
-    "runtime/src/bank/partitioned_epoch_rewards/calculation.rs",
-    "runtime/src/bank/partitioned_epoch_rewards/distribution.rs",
-    "runtime/src/bank/partitioned_epoch_rewards/sysvar.rs",
-    "runtime/src/inflation_rewards/points.rs",
+    "data_feeds.js",
+    "initial_votes.js",
+    "my_witnesses.js",
+    "arbiters.js",
 
     # =================================================================================
-    # Block cost accounting, QoS and leader-side transaction processing
+    # Wallets, multisig cosigners and peer-to-peer contract flows a counterparty drives
     # =================================================================================
-    "cost-model/src/cost_model.rs",
-    "cost-model/src/cost_tracker.rs",
-    "cost-model/src/block_cost_limits.rs",
-    "cost-model/src/transaction_cost.rs",
-    "core/src/banking_stage/qos_service.rs",
-    "core/src/banking_stage/consumer.rs",
-    "core/src/banking_stage/committer.rs",
-    "core/src/banking_stage/transaction_scheduler/receive_and_buffer.rs",
-    "core/src/banking_stage/transaction_scheduler/transaction_state_container.rs",
-    "core/src/banking_stage/transaction_scheduler/scheduler_common.rs",
-    "core/src/banking_stage/transaction_scheduler/greedy_scheduler.rs",
-    "runtime/src/bank/entry_bytes_budget.rs",
-    "runtime/src/prioritization_fee_cache.rs",
+    "wallet.js",
+    "wallet_general.js",
+    "wallet_defined_by_keys.js",
+    "wallet_defined_by_addresses.js",
+    "device.js",
+    "prosaic_contract.js",
+    "arbiter_contract.js",
+    "private_profile.js",
+    "uri.js",
+
+    # =================================================================================
+    # Persistence and concurrency the consensus and AA writes depend on
+    # =================================================================================
+    "db.js",
+    "sqlite_pool.js",
+    "mysql_pool.js",
+    "kvstore.js",
+    "mutex.js",
 ]
 
 
 target_scopes = [
-    "Critical. An ordinary fee-paying transaction sender moves lamports or data out of an account they do not sign for, because account privilege derivation - is_signer/is_writable flags, index-to-key resolution, duplicate account dedup, address-lookup-table expansion, or borrow/ref handling in TransactionContext and InstructionContext - lets an unsigned or read-only account be debited or reassigned, giving theft of funds without the owner's signature.",
-    "Critical. A crafted instruction or CPI chain escalates privileges the caller never held, because InvokeContext::prepare_next_instruction, the CPI account-info translation in syscalls/src/cpi.rs and program-runtime/src/cpi.rs, or signer-seed/PDA derivation propagates signer or writable status to an account the top-level transaction did not authorize, letting an attacker program drain arbitrary accounts.",
-    "Critical. A transaction breaks lamport conservation or rent invariants - creating lamports from nothing, keeping a debited balance after a failed instruction, or evading TransactionAccountStateInfo/rent-exempt checks - through system program handlers, account_loader balance tracking, rollback accounts, or fee collection, resulting in unbacked supply or stolen balances.",
-    "Critical. An attacker takes over a vote account or redirects its stake value by exploiting authorized-voter/authorized-withdrawer checks, VoteState deserialization and size handling, or the withdraw/update-commission paths in the vote program, allowing withdrawal of a validator's balance or capture of delegated stake rewards.",
-    "Critical. A single submitted transaction makes two honest validators compute different state for the same block - divergent account contents, accounts lt hash, fee or rent result, sysvar snapshot, or capitalization - because execution or hashing depends on ordering, caching, feature-gate evaluation, or uninitialized/nondeterministic data, producing a consensus safety violation and chain fork.",
-    "Critical. On-chain state an unprivileged user can write drives stake weight or epoch state incorrectly - stakes cache updates, StakeAccount parsing, epoch_stakes snapshots, delegation activation/deactivation accounting, or partitioned epoch reward calculation and distribution - so leader schedule, vote weight, or reward payout diverges from the true delegated stake.",
-    "Critical. A transaction that any user can submit halts or crashes block processing on every validator - a panic, arithmetic overflow, slice/index violation, unwrap on attacker-controlled input, or unrecoverable error surfaced from SVM processing, a builtin program, account loading, or bank commit - producing a cluster-wide liveness failure requiring human intervention.",
-    "High. A transaction executes without paying, or is accepted twice, because of flaws in blockhash age validation, the status cache dedup key, durable-nonce advance and rollback handling, fee calculation and refund, or signature counting, letting an attacker obtain free execution, replay a signed transaction, or bypass replay protection.",
-    "High. A transaction consumes far more real work than it is charged for, because compute-budget instruction parsing, per-instruction CU defaults, cost-model estimation, cost tracker block limits, entry byte budget, or QoS accounting undercounts it, letting a cheap transaction exhaust the leader's block capacity and starve or stall block production.",
-    "High. A user-submitted deploy, upgrade, close, or invocation causes the wrong program bytecode to execute or a stale/poisoned entry to be served, through program cache tombstoning and effective-slot handling, loading-task races, bpf_loader deploy/upgrade authority checks, or core-BPF migration source validation, so a program behaves differently from its on-chain state.",
-    "Critical/High blind spot. An unprivileged transaction sender abuses an assumption the protocol never wrote down: a value validated in one stage and trusted as already-validated in a later one, an account or index re-resolved after the check that authorized it, a limit or feature gate enforced only on one execution path (leader vs replay, cached vs freshly loaded, top-level vs CPI), state carried across instruction, transaction, slot or epoch boundaries that was only proven safe within one of them, or an error path that commits partial effects - yielding unsigned fund movement, state divergence between validators, or a cluster-wide stall.",
+    "Critical. An attacker spends outputs of an address whose private keys they do not hold, because authorization is evaluated wrongly: validateAuthentifiers and pathIncludesOneOfAuthentifiers in definition.js, sig/hash/address/and/or/r-of-set/cosigned-by handling, chash derivation in chash.js, getUnitHashToSign and getSourceString in object_hash.js and string_utils.js, or verification in signature.js accepts authentifiers over a payload or definition the owner never authorized.",
+    "Critical. The same output is spent twice and both spends end up stable, because double-spend detection fails: checkForDoublespends and input uniqueness in validation.js, serial/nonserial classification, sequence marking in writer.js saveJoint, purgeUncoveredNonserialJoints in joint_storage.js, or the unspend queries in archiving.js let a conflicting pair of units both keep their outputs spendable.",
+    "Critical. Bytes or asset units are created out of nothing, because value accounting does not balance: validatePaymentInputsAndOutputs in validation.js, coin selection and confirmation conditions in inputs.js, headers-commission attribution in headers_commission.js calcHeadersCommissions, witnessing earnings in paid_witnessing.js calcWitnessEarnings, oversize/tps fee computation in storage.js, or balance updates in balances.js credit an input twice or let outputs plus fees exceed inputs.",
+    "Critical. An attacker's trigger makes an Autonomous Agent pay out funds it was never meant to release, because aa_composer.js mishandles the response: handleTrigger payment and output construction, sortOutputs, bounce and bounce-fee refunds, secondary/nested trigger dispatch, max_aa_responses limits, checkBalances/checkStorageSizes, or revertResponsesInCaches lets the attacker drain an AA balance, get a bounce that keeps the funds, or have a failed response committed anyway.",
+    "Critical. An AA reaches a state or payout the script forbids, because oscript evaluation is wrong: Decimal arithmetic and toOscriptPrecision in formula/common.js, state var read/write and parseStateVar in storage.js, assignment and concurrent var updates, getter execution in executeGetter/callGetter, or data feed and balance lookups in formula/evaluation.js return a value that contradicts the validated definition, letting an attacker move another user's funds held by the AA.",
+    "Critical. One posted unit or AA trigger makes honest nodes disagree, because validation or execution is non-deterministic across nodes: ojson/oscript parsing in formula/parse_ojson.js and the grammars, validation-time vs execution-time checks in aa_validation.js and formula/validation.js, cache-dependent reads in storage.js, or ordering assumptions in aa_composer.js make one node accept a unit or response another rejects, splitting the DAG.",
+    "Critical. The main chain or stability decision can be steered or made inconsistent by an ordinary poster, because updateMainChain, advanceMcStability, determineIfStableInLaterUnits, findMinMcWitnessedLevel, best-parent and witnessed-level computation in main_chain.js, parent/skiplist checks in validation.js, or inclusion tests in graph.js let a crafted unit reverse a stable unit, stall stability advance, or make nodes compute different last stable units.",
+    "Critical. A single crafted unit, asset definition or AA trigger permanently stops nodes from confirming new transactions, because writer.js saveJoint, main_chain.js stability advance, aa_composer.js trigger handling, mutex.js lock acquisition, or the unhandled-joint queue in joint_storage.js throws, deadlocks or leaves the DB in a state every restart re-enters, requiring a coordinated upgrade to recover.",
+    "High. A victim accepts asset units that were never validly issued or loses control of funds they hold, because asset rules are bypassed: validateAssetDefinition and transfer/issue conditions in validation.js, cap and issuance checks, spender attestation, or private payment chain validation in indivisible_asset.js validatePrivatePayment/parsePrivatePaymentChain and divisible_asset.js validateDivisiblePrivatePayment lets an attacker hand a counterparty a forged or replayed private chain.",
+    "High. A counterparty tricks a victim's wallet into authorizing or crediting something the user never approved, because messages from an arbitrary paired device are trusted: handling in device.js, cosigner and address-definition flows in wallet_defined_by_keys.js and wallet_defined_by_addresses.js, payment and contract handling in wallet.js, prosaic_contract.js, arbiter_contract.js, private_profile.js, signed-message checks in signed_message.js validateSignedMessage, or link parsing in uri.js.",
+    "Critical/High blind spot. An ordinary unit poster, AA author, AA trigger sender, asset issuer, private-payment counterparty or paired device abuses an assumption ocore never wrote down: a value checked at validation time and trusted as already-checked at write or AA-execution time, a definition, asset or state var re-read after the check that authorized it, a limit enforced on one message type but not on its asset, private, AA-posted or multi-author twin, state carried across unit, mci, stability, upgrade-mci, cache or bounce boundaries that was only proven safe inside one of them, or an error path that commits partial state - yielding unauthorized spending, supply inflation, node disagreement, or a network that stops confirming transactions.",
 ]
 
 
@@ -207,51 +165,50 @@ scope_scan = [
 
 def question_generator(target_file: str) -> str:
     """
-    Generate exploit-focused audit and fuzzing questions for one agave target.
+    Generate exploit-focused audit and fuzzing questions for one ocore target.
 
     ```
     target_file format:
-    "'File Name: svm/src/account_loader.rs -> Scope: Critical. ...'"
+    "'File Name: aa_composer.js -> Scope: Critical. ...'"
     """
 
     prompt = f"""
     ```
 
-    Generate exploit-focused security audit questions for this exact agave target:
+    Generate exploit-focused security audit questions for this exact ocore target:
 
     {target_file}
 
     Project focus:
-    agave is the Solana validator. Focus only on what an ordinary user reaches by submitting a signed, fee-paying transaction (including deploying and invoking their own BPF program): sanitization and sigverify, precompiles, blockhash/nonce replay protection, fee and compute-budget accounting, account loading and lamport/rent conservation, SVM execution, CPI privilege propagation, syscalls and VM memory, the system/vote/bpf_loader builtins, bank commit and accounts lt hash determinism, stake and reward accounting, and leader-side cost/QoS limits.
+    ocore is the Obyte DAG full-node library. Focus only on what an ordinary user reaches: posting a unit, spending outputs, address definitions and authentifiers, unit hashing and signatures, DAG parents/main-chain/stability, headers commissions and witnessing earnings, asset issuance and transfer conditions, private payment chains sent to a counterparty, Autonomous Agent definitions and triggers, oscript/ojson parsing and evaluation, data feeds and attestations read by AAs, and wallet/multisig/contract messages from a paired device.
 
     Rules:
     * Treat `File Name:` as the exact file/module.
     * Treat `Scope:` as the ONLY impact to target.
     * Assume full repo context is accessible.
     * Do not ask for code or say anything is missing.
-    * Use exact Rust symbols (fn, method, struct, enum, field) when possible.
-    * Attacker is unprivileged only: any keypair holder who can pay fees and submit a transaction, deploy and invoke their own BPF program, or create and own stake/vote/token accounts. They sign only for their own keys.
-    * Attacker is NOT a validator, leader, node operator, host or DB owner, RPC operator, or upgrade authority of someone else's program. Never assume a malicious peer, malicious leader, malicious node, gossip/turbine/shred/QUIC network attacker, crafted snapshot, Geyser plugin, misconfiguration, or social engineering.
-    * Out of scope, never ask about: votor/Alpenglow crates, loader-v4, the VM interpreter, RPC endpoints, snapshots, gossip/turbine/repair, metrics, dependencies.
-    * Ignore test files, mocks, fuzz harnesses, benches, docs, generated code, and TOML/config-only findings.
-    * Every question must describe a real transaction an attacker actually sends. No generic unbounded-allocation, memory-growth, cache-size, or resource-exhaustion speculation; no "what if the input is huge" questions without a concrete signed transaction and a concrete broken invariant.
+    * Use exact JS symbols (function, exported method, object field, constant) when possible.
+    * Attacker is unprivileged only: any user who funds an address and posts signed units of any message type, defines and triggers Autonomous Agents, defines and issues assets, sends private payment chains or contract offers to a counterparty, or pairs a device with a victim wallet. They sign only for their own keys.
+    * Attacker is NOT a witness, order provider, hub, relay, node operator, host or DB owner, or holder of another user's key. Never assume a malicious peer, malicious node, malicious hub, p2p/gossip/catchup/sync-message attacker, network-level DoS, leaked key, compromised host, non-default conf.js, or social engineering.
+    * Out of scope, never ask about: p2p protocol and peer handling, hub/relay behaviour, catchup and light-client proof serving, witness-proof fetching, network-level flooding, TLS/websocket layer, CLI, logging, dependencies.
+    * Ignore test files, mocks, docs, generated grammar output, and config-only findings.
+    * Every question must describe a real unit, AA trigger, asset issuance, private payment chain or device message an attacker actually posts through a valid entrypoint. No generic unbounded-allocation, memory-growth, cache-size, or resource-exhaustion speculation; no "what if the input is huge" without a concrete posted payload and a concrete broken invariant.
     * Generate 40 to 80 high-signal questions.
-    * At least 70% must target theft or creation of lamports without the owner's signature, CPI/privilege escalation, consensus divergence between validators, stake or reward corruption, replay or free execution, or a transaction-triggered validator panic that halts the cluster.
-    * Every question must be testable by a Rust unit test, an SVM/program-test integration test, or a bank-level test.
+    * At least 70% must target spending funds without the owner's keys, double-spending a stable output, supply inflation, draining an Autonomous Agent, honest nodes disagreeing on validity or stability, or the network permanently failing to confirm new units.
+    * Every question must be testable by an ava unit test in test/, a validation test over a crafted joint, an aa_composer trigger test, or a local testnet run.
     * Avoid generic checklist questions and repeated root causes.
 
     Core invariants:
-    * Authorization is exact: an account is debited, reassigned, or written only when a required signer signed the transaction, and CPI never grants privileges the caller did not hold.
-    * Value is conserved: lamports in equals lamports out plus fees and rent; failed transactions leave only the intended fee and nonce effects.
-    * Determinism holds: every validator replaying the same block reaches the same accounts, hash, and capitalization, regardless of order, caching, or timing.
-    * Replay protection is sound: a signed transaction executes at most once and only within a valid blockhash or nonce window, and always pays its fee.
-    * Accounting is honest: charged compute, cost-model cost, stake weight, and reward payout match the real work and real on-chain state.
-    * Execution is total: no attacker-supplied transaction can panic, overflow, or abort block processing.
+    * Authorization is exact: an output is spent only when authentifiers satisfy that address's definition, as of the definition active at the unit's last_ball_mci, over the exact unit hash that is stored.
+    * Value is conserved: per asset and per unit, inputs equal outputs plus fees; commissions and witnessing earnings are attributed once; an AA never pays out more than it holds.
+    * Determinism holds: every honest node validating the same joint reaches the same accept/reject, the same main chain and stability, and the same AA responses and state vars.
+    * Finality is final: once a unit is stable its effects, balances and spent outputs never change, and no conflicting unit becomes stable.
+    * Liveness of valid users: no posted unit, asset or AA trigger can permanently stop nodes from validating and confirming new units.
 
     Each question must include:
     1. target function/method;
-    2. attacker action (a concrete transaction: instructions, accounts, signers, data);
-    3. preconditions (accounts the attacker owns and funds);
+    2. attacker action (a concrete unit, trigger, asset, private chain or device message: message type, fields, authentifiers);
+    3. preconditions (addresses, balance, definitions, AAs and keys the attacker owns);
     4. execution sequence;
     5. invariant tested;
     6. scoped impact;
@@ -260,7 +217,7 @@ def question_generator(target_file: str) -> str:
     Output only valid Python. No markdown. No explanations.
 
     questions = [
-    "[File: {target_file}] [Function: symbol_or_method] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger EXECUTION_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: unit/SVM/bank test PARAMETERS and assert AUTHORIZATION_EXACTNESS, VALUE_CONSERVATION, DETERMINISM, REPLAY_PROTECTION, HONEST_ACCOUNTING, or TOTAL_EXECUTION.",
+    "[File: {target_file}] [Function: symbol_or_method] Can an unprivileged ATTACKER_ACTION under PRECONDITIONS trigger EXECUTION_SEQUENCE, violating INVARIANT, causing scoped impact: SCOPE_IMPACT? Proof idea: ava unit/validation/aa_composer/testnet test PARAMETERS and assert AUTHORIZATION_EXACTNESS, VALUE_CONSERVATION, DETERMINISM, FINALITY, or USER_LIVENESS.",
     ]
     """
     return prompt
@@ -268,7 +225,7 @@ def question_generator(target_file: str) -> str:
 
 def audit_format(security_question: str) -> str:
     """
-    Generate a focused agave exploit-validation prompt.
+    Generate a focused ocore exploit-validation prompt.
     """
 
     prompt = f"""# SECURITY AUDIT PROMPT
@@ -278,18 +235,18 @@ def audit_format(security_question: str) -> str:
 
 ## Rules
 - Use existing repo context only. Analyze only this question and scoped impact.
-- Attacker is unprivileged only: any keypair holder who submits a signed, fee-paying transaction, deploys and invokes their own BPF program, or owns stake/vote/token accounts. No validator, leader, operator, host, RPC, or foreign upgrade-authority access.
-- Reject malicious-peer, malicious-leader, malicious-node, gossip/turbine/repair/QUIC network, snapshot, Geyser, operator-only, host-level, and misconfiguration-only paths.
-- Reject votor/Alpenglow, loader-v4, VM interpreter, RPC, metrics, dependency-only, and test/mock/bench/docs/generated/config-only findings.
-- Reject generic unbounded-allocation or resource-growth claims with no concrete transaction and no broken invariant.
-- Focus on real cluster impact: theft or minting of lamports without the owner's signature, CPI privilege escalation, consensus divergence between validators, stake or reward corruption, replay or free execution, or a transaction that halts block processing.
+- Attacker is unprivileged only: any user who funds an address and posts signed units, defines and triggers Autonomous Agents, defines and issues assets, sends private payment chains or contract offers to a counterparty, or pairs a device with a victim wallet. No witness, order provider, hub, relay, operator, host, DB, or foreign-key access.
+- Reject malicious-peer, malicious-node, malicious-hub, p2p/gossip/catchup/sync, network-DoS, leaked-key, host-level, and misconfiguration-only paths.
+- Reject light-client proof serving, witness-proof fetching, TLS/websocket, CLI, logging, dependency-only, and test/mock/docs/generated/config-only findings.
+- Reject generic unbounded-allocation or resource-growth claims with no concrete posted payload and no broken invariant.
+- This program pays High and Critical only. Focus on real chain impact: spending funds without the owner's keys, double-spending a stable output, supply inflation, permanent freezing or draining of Autonomous Agent funds, honest nodes disagreeing on validity or stability, or the network permanently unable to confirm new transactions.
 
 ## Validate
-- Trace the exact reachable path from the attacker's transaction (instructions, accounts, signers, data) into the affected function.
-- Check whether sanitization, sigverify, feature gates, account privilege checks, balance and rent checks, or existing error handling already stop it.
-- Confirm the path is reachable on the default feature set of current mainnet-beta behavior.
-- Accept only concrete unsigned fund movement, privilege escalation, state divergence, corrupted stake/reward accounting, replay, or cluster-wide stall.
-- Require exact file/function support and a reproducible Rust unit, SVM, program-test, or bank-level PoC.
+- Trace the exact reachable path from the attacker's unit, trigger, asset, private chain or device message into the affected function.
+- Check whether authentifier and definition validation, unit size and fee checks, duplicate/double-spend detection, aa_validation limits, or existing error handling already stop it.
+- Confirm the path is reachable on current mainnet constants and the active upgrade mci.
+- Accept only concrete unauthorized spending, supply inflation, AA fund loss, stable-unit reversal, node disagreement, or a lasting inability to confirm new units.
+- Require exact file/function support and a reproducible ava unit, validation, aa_composer, or local-testnet PoC.
 
 ## Output
 If valid, output exactly:
@@ -301,19 +258,19 @@ If valid, output exactly:
 [2-3 sentences]
 
 ### Finding Description
-[Code path, root cause, attacker transaction inputs, exploit flow, and why checks fail]
+[Code path, root cause, attacker payload, exploit flow, and why checks fail]
 
 ### Impact Explanation
-[Concrete scoped impact and matching Solana bounty category: Loss of Funds, Consensus/Safety Violation, Liveness, or DoS via non-RPC protocols]
+[Concrete scoped impact and severity: Critical (loss or permanent freezing of funds, spending without the owner's keys, supply inflation, consensus divergence, network permanently unable to confirm transactions) or High (authorization bypass, corruption of unit, balance or AA state, or honest nodes unable to confirm new transactions for at least a day)]
 
 ### Likelihood Explanation
-[Preconditions, accounts and funds needed, feasibility, repeatability]
+[Preconditions, addresses and balance needed, feasibility, repeatability]
 
 ### Recommendation
 [Specific fix]
 
 ### Proof of Concept
-[Rust unit/SVM/bank test plan with expected assertions]
+[ava unit/validation/aa_composer/testnet test plan with expected assertions]
 
 If invalid, output exactly:
 #NoVulnerability found for this question.
@@ -323,84 +280,9 @@ No extra text.
     return prompt
 
 
-def validation_format(report: str) -> str:
-    """
-    Generate a strict bounty-style validation prompt for agave security claims.
-    """
-    prompt = f"""# VALIDATION PROMPT
-
-## Security Claim
-{report}
-
-## Rules
-- Validate only the submitted claim.
-- Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
-- Do not create a new vulnerability if the submitted claim is weak or invalid.
-- Do not upgrade severity unless the provided evidence proves the higher impact.
-- Reject malicious-peer, malicious-leader, malicious-node, network-layer, snapshot, Geyser plugin, operator-only, host-level, misconfiguration, dependency-only, docs/style, generated-file, and test/mock/bench/config-only issues.
-- Reject votor/Alpenglow crates, loader-v4, VM interpreter, RPC service, metrics, and bootstrap-phase-only issues, per SECURITY.md exclusions.
-- Reject if the exploit needs validator, leader, operator, host, or database access, a foreign upgrade authority, victim social engineering, a non-default feature set, or anything outside what an unprivileged keypair holder can put in a submitted transaction.
-- Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
-- A valid report must be triggerable by an unprivileged transaction sender, unless the claim proves escalation from that starting point.
-- The final impact must map to an in-scope Solana category: Loss of Funds (theft without the user's signature, including system/stake/vote programs), Consensus/Safety Violation, Liveness/loss of availability requiring human intervention, or remote resource exhaustion via non-RPC protocols.
-- Prefer #NoVulnerability over speculative reports.
-
-## Required Validation Checks
-All must pass:
-1. Exact in-scope file, function, and line/code references.
-2. Clear root cause and broken security assumption.
-3. Reachable exploit path: preconditions (attacker-owned accounts and funds) -> submitted transaction -> trigger -> bad result.
-4. Existing sanitization, sigverify, privilege checks, balance/rent checks, feature gates, and error handling reviewed and shown insufficient.
-5. Concrete in-scope impact with realistic likelihood.
-6. Reproducible proof path: Rust unit PoC, SVM/program-test integration test, bank-level test, or exact transaction steps against a local cluster.
-7. No obvious rejection reason from SECURITY.md, known issues, privilege assumptions, or scope exclusions.
-
-## Silent Triage Questions
-Before output, internally answer:
-- Can an ordinary fee-paying user trigger this with a transaction, without validator, operator, or host access?
-- Does the code actually behave as claimed under the currently active feature set?
-- Is the impact caused by this code, not by a malicious peer, snapshot, plugin, or dependency?
-- Is the theft, divergence, replay, or halt concrete rather than hypothetical?
-- Would a Solana Foundation triager accept the proof-of-concept?
-- What exact test would prove it?
-
-## Output
-If valid, output exactly:
-
-Audit Report
-
-## Title
-[Clear vulnerability statement] - ([File: file_path])
-
-## Summary
-[2-3 sentence summary of the bug and impact]
-
-## Finding Description
-[Exact code path, root cause, exploit flow, and why existing checks fail]
-
-## Impact Explanation
-[Concrete in-scope impact, severity rationale, and Solana bounty category]
-
-## Likelihood Explanation
-[Attacker capability, accounts and funds required, feasibility, repeatability]
-
-## Recommendation
-[Specific fix guidance]
-
-## Proof of Concept
-[Minimal reproducible steps or Rust unit/SVM/bank test plan]
-
-If invalid, output exactly:
-#NoVulnerability found for this question.
-
-Output only one of the two outcomes above. No extra text.
-"""
-    return prompt
-
-
 def scan_format(report: str) -> str:
     """
-    Generate a short cross-project analog scan prompt for agave.
+    Generate a short cross-project analog scan prompt for ocore.
     """
     prompt = f"""# ANALOG SCAN PROMPT
 
@@ -410,13 +292,14 @@ def scan_format(report: str) -> str:
 ## Rules
 - Use in-scope production repo context only. Do not ask for code or claim missing files.
 - Use the external report only as a bug-class hint, not as proof.
-- Keep only analogs an unprivileged transaction sender can reach: sanitization and sigverify, precompiles, blockhash/nonce replay protection, fee and compute-budget accounting, account loading and lamport/rent conservation, SVM execution and CPI privilege propagation, syscalls and VM memory, system/vote/bpf_loader builtins, bank commit determinism, stake and reward accounting, or leader-side cost limits.
-- Reject malicious-peer, malicious-leader, network-layer, snapshot, Geyser, operator-only, votor/Alpenglow, loader-v4, interpreter, RPC, mocked-only paths, dependency-only bugs, and no-impact analogs.
+- Keep only analogs an unprivileged unit poster, AA author, AA trigger sender, asset issuer, private-payment counterparty or paired device can reach: unit validation, address definitions and authentifiers, hashing and signatures, DAG parents and stability, payment inputs/outputs and commissions, asset issuance and transfer conditions, private payment chains, AA definitions and triggers, oscript/ojson evaluation, data feeds, or wallet and contract message handling.
+- Reject malicious-peer, malicious-node, malicious-hub, p2p/catchup/sync, network-DoS, leaked-key, operator-only, light-proof-serving, TLS, CLI, mocked-only paths, dependency-only bugs, and no-impact analogs.
+- Medium , High and Critical only; no low, or resource-only analogs.
 
 ## Validate
-- Map the bug class to the strongest reachable agave path from a single submitted transaction.
+- Map the bug class to the strongest reachable ocore path from a single posted unit, trigger, asset, private chain or device message.
 - Prove root cause with exact file/function support.
-- Accept only concrete unsigned fund movement or minting, CPI privilege escalation, consensus divergence between validators, stake or reward corruption, replay or free execution, or a transaction-triggered cluster halt.
+- Accept only concrete unauthorized spending, double-spend of a stable output, supply inflation, AA fund loss or freezing, node disagreement on validity or stability, or a network unable to confirm new units.
 
 ## Output (Strict)
 If valid analog exists, output:
@@ -435,5 +318,81 @@ If not, output exactly:
 #NoVulnerability found for this question.
 
 No extra text.
+"""
+    return prompt
+
+
+def validation_format(report: str) -> str:
+    """
+    Generate a strict bounty-style validation prompt for ocore security claims.
+    """
+    prompt = f"""# VALIDATION PROMPT
+
+## Security Claim
+{report}
+
+## Rules
+- Validate only the submitted claim.
+- Check SECURITY.md and Researcher.Md for scope, exclusions, and valid impact classes.
+- Do not create a new vulnerability if the submitted claim is weak or invalid.
+- Do not upgrade severity unless the provided evidence proves the higher impact.
+- This program pays High and Critical only; reject low, medium, informational, best-practice, and resource-only reports.
+- Reject malicious-peer, malicious-node, malicious-hub, p2p/gossip/catchup/sync, network-level DoS, light-client proof serving, witness-proof fetching, TLS/websocket, CLI, logging, dependency-only, docs/style, generated-file, and test/mock/config-only issues.
+- Reject if the exploit needs witness, order-provider, hub, relay, operator, host, database, or privileged access, another user's key, victim social engineering, a non-default conf.js, or anything outside what an unprivileged user can put in a posted unit, AA trigger, asset, private payment chain, or device message.
+- Reject 51%-style majority-witness attacks, sybil and centralization claims, and third-party oracle data being wrong without a manipulation path.
+- Reject if the bug was fixed, acknowledged, or publicly disclosed already, per the eligibility rules.
+- A valid report must be triggerable by an unprivileged unit poster, AA author, AA trigger sender, asset issuer, private-payment counterparty or paired device, unless the claim proves escalation from that starting point.
+- The final impact must map to an in-scope category: Critical - direct loss of funds, permanent freezing of funds, spending or executing transactions from another user's address without their private keys, supply inflation, double-spending a stable output, consensus divergence between honest nodes, or the network permanently unable to confirm new transactions; High - authorization bypass, corruption of unit, balance, asset or AA state, or honest nodes unable to process valid transactions for at least a day.
+- Prefer #NoVulnerability over speculative reports.
+
+## Required Validation Checks
+All must pass:
+1. Exact in-scope file, function, and line/code references.
+2. Clear root cause and broken authorization, value-conservation, determinism, finality, or user-liveness invariant.
+3. Reachable exploit path: preconditions (attacker-owned addresses, balance, definitions, AAs) -> posted unit, trigger, asset, private chain or device message -> trigger -> bad result.
+4. Existing authentifier and definition validation, size and fee checks, double-spend detection, aa_validation limits, and error handling reviewed and shown insufficient.
+5. Concrete in-scope High/Critical impact with realistic likelihood.
+6. Reproducible proof path: ava unit PoC, validation test over a crafted joint, aa_composer trigger test, or exact steps on a local testnet.
+7. No obvious rejection reason from SECURITY.md, known issues, privilege assumptions, or scope exclusions.
+
+## Silent Triage Questions
+Before output, internally answer:
+- Can an ordinary user trigger this by posting a unit, trigger, asset, private chain or device message, without witness, hub, operator, host, or foreign-key access?
+- Does the code actually behave as claimed under current mainnet constants and the active upgrade mci?
+- Is the impact caused by this code, not by a malicious peer, hub, or dependency?
+- Is the theft, inflation, divergence, or halt concrete rather than hypothetical?
+- Would an Obyte triager on Immunefi accept the proof-of-concept?
+- What exact test would prove it?
+
+## Output
+If valid, output exactly:
+
+Audit Report
+
+## Title
+[Clear vulnerability statement] - ([File: file_path])
+
+## Summary
+[2-3 sentence summary of the bug and impact]
+
+## Finding Description
+[Exact code path, root cause, exploit flow, and why existing checks fail]
+
+## Impact Explanation
+[Concrete in-scope impact, severity rationale, and Obyte bounty category]
+
+## Likelihood Explanation
+[Attacker capability, addresses and balance required, feasibility, repeatability]
+
+## Recommendation
+[Specific fix guidance]
+
+## Proof of Concept
+[Minimal reproducible steps or ava unit/validation/aa_composer/testnet test plan]
+
+If invalid, output exactly:
+#NoVulnerability found for this question.
+
+Output only one of the two outcomes above. No extra text.
 """
     return prompt
