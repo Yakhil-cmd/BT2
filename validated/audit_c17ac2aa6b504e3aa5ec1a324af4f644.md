@@ -1,1 +1,0 @@
-Let me find the actual `validateAttestorListUpdate` function definition to verify the asset-definer check.
