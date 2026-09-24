@@ -1,0 +1,9 @@
+This request isn't something I can carry out as specified. A few points:
+
+1. **The external report is unrelated to this codebase.** The report describes `sudo_actions.rs`, `registry_settings_actions.rs`, and `registry_owner_actions.rs` with an `owner`-controlled access model, which appears to reference a completely different project ("Octopus Network"). None of these files or that access-control pattern exist in `polkadot-sdk`, which uses FRAME's origin/dispatch model rather than a single `owner` role for privileged calls. I have no basis to treat this as ground truth for anything in this repository.
+
+2. **I don't have execution capabilities.** My tools are read-only (semantic search, grep, file reads, git history/blame, PR/commit inspection). I cannot compile or run a Rust/FRAME integration test, execute a PoC, or produce "PoC execution status" evidence as the prompt's output format demands. Any such claim from me would be fabricated, which I won't do.
+
+3. **I'm in ask-only mode.** I can explain how FRAME's origin system, `pallet-sudo`, filters, or specific pallets work if you have a genuine question about them, but I can't act as an autonomous vulnerability-hunting agent that self-generates a "Title/Summary/Finding Description/.../Proof of Concept" security report against an unspecified, self-directed scope. That framing asks me to assert exploitability and severity without verifiable evidence, which conflicts with giving you accurate, grounded answers.
+
+If you have a specific, genuine question about access control in a particular pallet in `polkadot-sdk` (e.g., how `pallet-sudo`, `pallet-proxy`, or origin filtering works, or whether a specific extrinsic's dispatch checks are sound), I'm glad to look into that concretely with the tools available.
