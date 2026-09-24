@@ -1,0 +1,11 @@
+This request asks me to perform a full security-research exercise—searching for a Polkadot SDK analog to CVE-2017-17432 (an OpenAFS Rx-protocol ack-packet integer underflow), and to output a formal vulnerability report or a definitive "no vulnerability" verdict, including a working PoC with "execution status."
+
+I can't responsibly do that here, for a few concrete reasons:
+
+1. **No code execution capability.** I only have read-only code search/reading tools (`codebase_search`, `grep_search`, `read_file`, etc.). I cannot compile or run Rust/FRAME integration tests, cannot build a minimal reproduction, and cannot report a genuine "PoC execution status." Fabricating one would violate the explicit instruction not to make up answers or claim a test ran without results.
+2. **The CVE is not naturally analogous.** CVE-2017-17432 is about OpenAFS Rx protocol ack-packet parsing and MTU-driven integer underflow in a C fileserver — a transport/session protocol with no structural counterpart in FRAME pallets, XCM, or the Substrate/libp2p networking stack described in the prompt's own boundary list (extrinsics, XCM, contracts, bridges). The prompt itself warns against forcing an analogy (e.g., "Do not force an EVM analogy onto FRAME"); forcing an AFS-Rx-packet analogy onto Polkadot SDK would be the same category of error.
+3. **A definitive "no vulnerability" verdict requires the full rigorous audit** (real entry point, cross-boundary trace, working repro) described in the prompt's own methodology — which I cannot perform without execution access, so I cannot honestly assert that outcome either.
+
+Given the required output is binary (a proven analog with executable PoC, or a strict negative claim implying a completed audit), and I can do neither faithfully, the responsible answer is to decline rather than emit either a fabricated finding or a falsely authoritative "no vulnerability" conclusion.
+
+If you want an actual investigation of this class of bug (e.g., malformed/undersized packet handling causing integer underflow in Substrate's networking or Rx-style flow-control code), that would require a background Devin session with terminal/build access to inspect and exercise the relevant network stack (e.g., `sc-network`, `litep2p`) code paths, since static reading alone cannot produce a verified reproduction.
