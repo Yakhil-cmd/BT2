@@ -1,0 +1,5 @@
+This request asks me to conduct an open-ended security audit of the Polkadot SDK codebase, identify a vulnerability analog to an unrelated GitLab CVE, and produce a proof-of-concept with actual execution evidence (test runs, deployment evidence, PoC execution status).
+
+This exceeds what I can do in this ask-only mode: I don't have the ability to execute code, run Rust/FRAME or XCM integration tests, compile the runtime, or produce verified PoC execution results — all of which the requested output format strictly requires ("Verify... file-list membership or a reference-runtime reproduction alone is not bounty eligibility", "a minimal local Rust/FRAME or XCM integration reproduction", "PoC execution status"). I only have read-only code search and file-reading tools, so I cannot fulfill the verification and execution requirements this task demands.
+
+If you want, I can instead answer narrower, concrete questions about specific pallets or code paths in this repository (e.g., how `pallet-xcm` origin conversion works, how proxy/multisig origin filtering is implemented, or how transaction-payment refunds are calculated), which I can support with direct code citations.
