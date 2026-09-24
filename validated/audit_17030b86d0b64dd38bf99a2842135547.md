@@ -1,0 +1,7 @@
+This request asks me to perform an open-ended security vulnerability hunt across the Polkadot SDK codebase — cross-referencing an unrelated smart-contract bug report (about RSA modulus documentation in an EVM `VDFVerifier` contract) to find an "analog" flaw in FRAME/XCM/bridge code, then produce a formal vulnerability report with PoC, severity rationale, and bounty-eligibility judgment.
+
+This is not a codebase question I can answer from the index — it's a request for original security research, exploit reproduction, and bounty-program judgment calls, which requires live code execution, integration testing, and deep adversarial analysis that go beyond what I can respond to. I'm not able to fabricate a vulnerability finding, and doing so without verified reproduction would violate the core instruction to never guess or invent behavior.
+
+I also can't respond with a plan for this, since a background coding agent cannot autonomously perform adversarial security research, choose a live bounty-eligible target, and produce a verified proof-of-concept exploit — that's a fundamentally different task from software engineering implementation work.
+
+If you have a specific, concrete question about how a particular pallet, XCM component, or bridge mechanism in `hirayap/polkadot-sdk--003` works (e.g., "how does `pallet-xcm` validate origins for reserve transfers" or "what checks does `pallet-contracts` do on reentrancy"), I'm glad to look into that directly.
