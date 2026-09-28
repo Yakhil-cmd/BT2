@@ -1,0 +1,20 @@
+### Title
+Unvalidated route registry lets a swap strategy invoke attacker contracts inside the caller's authorization tree - (File: contracts/swap-aggregator/src/execute/mod.rs)
+
+### Summary
+Like the Buildah cache-mount flaw (user path not confined to the cache directory), `execute_strategy` does not confine the user-supplied `assets` registry to real tokens/pools: every `pool` and `token` address in a route is taken verbatim from `swap_xdr` and invoked. A rogue `pool` contract placed in a route runs arbitrary code below the caller's `require_auth` entry, and any `token.transfer(caller, attacker, x)` it makes is recorded as a child of the caller's signature and drains the caller's whole wallet — not just the routed amount. Reachable unprivileged via `swap_collateral`, `swap_debt`, `repay_debt_with_collateral`, `multiply`, or a direct `execute_strategy` call.
+
+### Finding Description
+`execute_op` builds `SwapHop { pool, token_in, token_out }` directly from `assets.get_unchecked(...)` — all attacker-chosen — and `dispatch_hop` calls that `pool` address via `invoke_contract` with no allowlist (`execute/mod.rs:152-165`, `venues/mod.rs:23-40`, `venues/phoenix.rs:22-25`, `venues/aquarius/pool.rs:34`). `Program::validate` only checks index bounds and token-chain structure, never that pool/token addresses belong to a venue (`program.rs:239-303`). The controller then forwards user-supplied `swap` bytes to the router under the caller's auth with only an input-spend and positive-output check (`controller/src/strategies/swap.rs:34-54`), which does not bound side effects on the caller's account. This is confirmed by `tests/test-harness/tests/strategy/rogue_hop_pool_transfer_joins_caller_auth_tree.rs`, where `RogueHopPool::swap` calls `token.transfer(alice, attacker, WALLET_BALANCE)` of an unrelated token and simulation records it as a child of Alice's `swap_collateral` entry; the test asserts her balance goes to zero while the swap still delivers fair output. The threat model documents the same exposure at `docs/explanation/threat-model.md:154-165`.
+
+### Impact Explanation
+Theft of user funds beyond the routed amount: any token the victim holds can be transferred to the attacker if the victim signs the simulated authorization tree, which honest wallets/quote flows produce automatically. Severity Medium: requires the victim to sign a poisoned tree (the malicious transfer appears in simulation), so exploitation needs a malicious or compromised route source / careless signing rather than being fully unilateral.
+
+### Likelihood Explanation
+Any unprivileged user can craft `swap_xdr` naming an attacker contract as `pool`; the controller and router impose no venue/pool allowlist. Success depends on a victim signing an auth tree containing the extra child invocation — plausible when routes come from a quote API or third-party integrator the user trusts, since standard clients auto-sign the simulated tree.
+
+### Recommendation
+Maintain an allowlist (or venue-verified registry) of callable pool/token addresses in the router and reject routes naming other contracts; additionally, the controller could simulate-and-diff the authorization tree, or wallets/integrators must enforce the documented rule: refuse any auth tree for `execute_strategy`/strategy entrypoints that contains children other than the single expected input `transfer`.
+
+### Proof of Concept
+See `tests/test-harness/tests/strategy/rogue_hop_pool_transfer_joins_caller_auth_tree.rs:33-72,111-227`: `UnlistedPoolRouter` mirrors production `execute_strategy` (require auth, pull input, invoke `route.hop_pool`, pay output); `RogueHopPool::swap` transfers Alice's unrelated `wallet_token` to the attacker; `simulation_records_the_rogue_pool_wallet_transfer_under_the_callers_swap_collateral_entry` shows the stolen transfer recorded under Alice's `swap_collateral` auth entry, and enforcing mode executes it if she signs that tree — wallet drained while she receives fair `ETH` supply output.
