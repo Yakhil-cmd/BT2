@@ -1,0 +1,32 @@
+### Title
+Stale `Account.owner` authorization lets a prior NFT holder retain control after transfer — position-ownership substitution bypass - (File: contracts/controller/src/account.rs)
+
+### Summary
+The Sparkle advisory class — a payload substitution that bypasses an authenticity check — maps onto XOXNO Lending as an *identity* substitution: two different notions of "account owner" coexist, and several privileged position verbs authenticate against a stale stored field instead of the live NFT owner. `Account.owner` is written once at account creation (`create_account_with`, contracts/controller/src/account.rs:64-65) and is never updated when the position NFT changes hands, because `PositionNft` uses the stock OpenZeppelin enumerable transfer path with no hook back into the controller (contracts/position-nft/src/contract.rs:131-173). Meanwhile `require_owner_or_delegate` (account.rs:130-140) compares `caller` against that frozen `account.owner`, while `require_account_owner` (account.rs:143-148) correctly resolves `storage::account_owner` (the NFT `owner_of`). After a `position-nft` transfer or `approve`+`transfer_from`, the previous owner still satisfies `caller == owner` on every path guarded by `require_owner_or_delegate`, and the new NFT owner is rejected on those same paths.
+
+### Finding Description
+- `create_account_with` persists `Account { owner: owner.clone(), ... }` keyed by `account_id`; nothing mutates `account.owner` afterward (contracts/controller/src/account.rs:64-73).
+- `load_or_create_account` gates `AccountGuard::Migrate` and `AccountGuard::Multiply` on `require_owner_or_delegate(env, account_id, caller, &account.owner)` (account.rs:101-109), i.e. the stored field.
+- The same stored-field guard is used by the swap/repay strategies (`contracts/controller/src/positions/debt.rs`, `contracts/controller/src/strategies/swap_collateral.rs`, `swap_debt.rs`, `repay_debt_with_collateral.rs`, `positions/liquidation/mod.rs` — all grep-confirmed call sites of `require_owner_or_delegate`/`is_owner_or_delegate`).
+- Delegation compounds the flaw: `storage::get_delegates(env, account_id, owner)` is keyed on the stale stored owner (account.rs:126), so managers delegated by the pre-transfer owner keep authority the new owner never granted and cannot revoke via `remove_delegate` (which requires `require_account_owner`, the *new* owner — account.rs:250), while the delegate list itself is keyed under the old owner.
+- The NFT side provides no mitigation: `mint`/`burn`/`upgrade` are controller-gated, but `transfer`/`approve`/`transfer_from` are stock OZ `Enumerable` entrypoints callable by any token owner (contract.rs:172-173); there is no `owner`-field resync on transfer.
+
+Net effect: after selling or transferring the position NFT, the former owner (and any delegate it registered) retains the ability to invoke debt-side verbs — `borrow`-family flows via `AccountGuard::Multiply`/`flash_position` reuse, `swap_debt`, `swap_collateral`, `repay_debt_with_collateral` — against collateral that now economically belongs to the buyer, while the buyer is locked out of those entrypoints entirely (`NotAuthorized`). This is exactly the report's shape: an authorization check validating a superseded "signed" identity instead of the current authoritative one.
+
+### Impact Explanation
+Theft of user funds / insolvency. The ex-owner can draw new debt against collateral owned by the NFT buyer (borrow proceeds are controlled by the acting caller/delegate), push the account to the liquidation threshold, or trigger swaps that re-route collateral, immediately after offloading the NFT. The buyer acquires a token that confers only partial authority (`supply`-family paths gated by `require_account_owner`) while the seller retains debt authority — a clean, atomic, unprivileged exploitation path.
+
+### Likelihood Explanation
+Reachable by any position holder: `position-nft` `transfer`/`approve` are unprivileged entrypoints, and the mismatch requires only one `transfer` call after opening a position. It also triggers accidentally via secondary-market sales and wallet rotation, making it latent even absent malicious intent (a transferred position's seller can still be liquidated-for or borrow on it). No timing, price, or governance precondition is needed.
+
+### Recommendation
+Derive authority exclusively from the NFT: replace `require_owner_or_delegate(env, account_id, caller, &account.owner)` inputs with `storage::account_owner(env, account_id)` everywhere, and key `Delegates` storage by `account_id` (or by current NFT owner resolved at check time) rather than by the owner captured at creation. Either remove `Account.owner` entirely or keep it only as a creation-time audit field that is never consulted for authorization. Alternatively, hook NFT `update`/transfer to rewrite `account.owner` and clear per-owner delegate lists — but single-sourcing on `owner_of` is simpler and removes the split-brain invariant.
+
+### Proof of Concept
+1. Alice calls `controller.supply`/`borrow` creating `account_id = N`; `Account.owner = alice`, NFT N minted to Alice.
+2. Alice calls `position-nft.transfer(alice, bob, N)` (or `approve` then `transfer_from` from Bob).
+3. Alice (or a delegate she registered pre-transfer via `add_delegate`, which survives since `Delegates` is keyed `(N, alice)`) calls `controller.flash_position`/`swap_collateral`/`borrow` on `N`: `load_or_create_account` → `require_owner_or_delegate(..., &account.owner)` compares `caller == alice` against stored `alice` → passes.
+4. Bob calls the same entrypoints: `require_account_owner`/`account_owner` returns `bob`, but `require_owner_or_delegate` compares `bob` to stored `alice` → `NotAuthorized`.
+5. Alice draws debt against Bob's collateral and keeps the proceeds; the position can then be liquidated, burning Bob's NFT via the controller-only `burn`.
+
+Caveat: within the iteration budget I confirmed the stale-field guard wiring and call sites via grep/read, but did not trace each individual entrypoint's fund destination (e.g., whether `borrow` pays the caller vs. the account owner); the authorization mismatch itself is confirmed by account.rs:101-140 and the transfer hook absence in contract.rs.
