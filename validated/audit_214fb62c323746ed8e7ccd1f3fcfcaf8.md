@@ -1,0 +1,24 @@
+### Title
+Debt-value i128 overflow in accrual permanently freezes the market before the borrow-index cap can engage - (File: common/src/rates/index.rs)
+
+### Summary
+`calculate_supplier_rewards` computes `borrowed * borrow_index` in `i128`/`I256`-backed RAY space on every accrual step. Once the scaled debt value `borrowed.mul(env, new_borrow_index)` exceeds `i128::MAX`, the fixed-point multiply panics with `GenericError::MathOverflow` — before `update_borrow_index` can clamp the index to `MAX_BORROW_INDEX_RAY`. Because `global_sync` runs at the head of every pool verb, the panic permanently bricks the market: no repay, withdraw, supply, borrow, liquidation, or bad-debt cleanup can execute. This is the direct analog of the CVE-2020-35523 integer-overflow bug class: an unchecked intermediate product (`x * y` in fixed-point `mul`) traps and takes down the whole entry surface.
+
+### Finding Description
+- `contracts/pool/src/interest.rs` `global_sync` → `accrue_chunk` → `accrue_step` runs before every state-changing op; it calls `calculate_supplier_rewards`.
+- In `common/src/rates/index.rs:80-81`, `calculate_supplier_rewards` evaluates `borrowed.mul(env, old_borrow_index)` and `borrowed.mul(env, new_borrow_index)`. `Ray::mul` widens to `I256` only for the intermediate; the result must still fit `i128` (`common/src/math/fp_core.rs:122-143`), else it panics with `MathOverflow`.
+- The index ceiling `MAX_BORROW_INDEX_RAY = 10^36` (i.e., ~10⁹×RAY, `common/src/constants/pool.rs:19`) is applied to the index inside `update_borrow_index` (`common/src/rates/index.rs:15`), but the panic happens in the *value* computation `borrowed × index`, which overflows at `borrowed_raw ≈ 10^38 / index_multiple`. For a whale-scale 18-decimal market (scaled debt ~10³⁶ raw), overflow occurs at index ≈ 170×RAY — three orders of magnitude below the cap.
+- The repo's own regression test proves the freeze: `tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:321-360` supplies 10²⁷ units of an 18-decimal asset, borrows 98%, advances time, and `update_indexes` fails with `MATH_OVERFLOW`; subsequent `withdraw` and `repay` revert identically because "every verb accrues first". There is no recovery path: `clean_bad_debt` and `recapitalize` also accrue first.
+- Reachability is permissionless: `supply`/`borrow` are unprivileged entrypoints, and accrual is triggered by any caller via `update_indexes`. The only requirement is a large enough market — `max_cap_for_decimals(18)` permits ~1.7×10²⁹ base units (`common/src/validation.rs:48-56`), comfortably above the ~10²⁷ needed to overflow at modest index growth.
+
+### Impact Explanation
+Permanent freezing of all funds in the affected market (and any controller position touching it, since spoke operations also accrue): suppliers cannot withdraw, borrowers cannot repay, liquidators cannot liquidate. Every entrypoint routes through `global_sync`, so the `MathOverflow` panic is a hard, unrecoverable DoS — equivalent to total loss of the market's pooled assets.
+
+### Likelihood Explanation
+Requires a large supplied/borrowed base relative to the asset's cap and sustained high utilization long enough for the borrow index to reach the overflow multiple (below the intended `MAX_BORROW_INDEX_RAY` cap, which therefore never protects anything). No privileged action is needed once governance has listed a market whose cap admits whale-scale scaled balances — for high-decimal assets the cap bound itself already permits it. Not exploitable instantly; it is a horizon/scale-dependent freeze rather than a single-transaction attack. Medium likelihood, high impact.
+
+### Recommendation
+Make the index cap effective before the value ceiling: in `update_borrow_index`/`calculate_supplier_rewards`, detect that `borrowed.mul(env, index)` would overflow `i128` and clamp the index (or use `mul_div`-style saturating paths) so accrual degrades gracefully instead of panicking. Alternatively, enforce caps such that `scaled_shares × MAX_BORROW_INDEX_RAY ≤ i128::MAX` at listing time (`require_cap_within_asset_domain` should bound against the index ceiling, not just the asset→RAY rescale), and add a non-accruing emergency path for `clean_bad_debt`/`recapitalize` so a frozen market is not unrecoverable.
+
+### Proof of Concept
+The scenario is already encoded in `tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:321-360` (`a_whale_market_at_sustained_high_utilization_hits_the_ray_value_ceiling_before_the_index_cap`): an 18-decimal market with ~10²⁷ supplied base units and a 98%-utilization borrow accrues until `accrue_step` panics inside `calculate_supplier_rewards` (`common/src/rates/index.rs:81`), after which `try_withdraw_raw` and `try_repay` both revert with `MATH_OVERFLOW`, demonstrating irreversible freeze — the index cap `MAX_BORROW_INDEX_RAY` is never reached.
