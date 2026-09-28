@@ -1,0 +1,29 @@
+### Title
+Debt-value overflow in `accrue_step` permanently freezes a market — no repay, withdraw, or liquidation — (`File: common/src/rates/simulate.rs`)
+
+### Summary
+CVE-2019-2531 is a repeatable-crash/DoS bug class. The analog in XOXNO Lending: `accrue_step` (common/src/rates/simulate.rs:51-94) unscales total debt via `scaled_to_original` (`borrowed * borrow_index`) inside `Ray::mul`, which panics with `MathOverflow` when the debt value exceeds `i128`. The `MAX_BORROW_INDEX_RAY` cap in `update_borrow_index` (common/src/rates/index.rs:13-19) bounds the *index* at 10^36 raw RAY but does not bound the *product* `borrowed × index`, so a market with a large scaled-debt book overflows the unscaled-value computation well before the index cap engages. Because every pool mutation runs `interest::global_sync` → `accrue_chunk` → `accrue_step` first (contracts/pool/src/interest.rs:20-53), once the market crosses that product bound the panic is hit on every entrypoint — repay, withdraw, borrow, liquidate, seize, even `update_indexes` — permanently.
+
+### Finding Description
+`accrue_step` line 60 calls `scaled_to_original(env, borrowed, borrow_index)` to compute `borrowed_original` for utilization; `scaled_to_original` is `scaled.mul(env, index)` (common/src/rates/scaling.rs:14-16), and `Ray::mul` panics on an unrepresentable `i128` result. The index cap `MAX_BORROW_INDEX_RAY = 10^36` was designed to bound accrual, but the debt value ceiling is `i128::MAX ≈ 1.7×10^38`; a scaled debt of `10^30` shares reaches it at index ≈170 RAY, far below `10^36`. The test `a_whale_market_at_sustained_high_utilization_hits_the_ray_value_ceiling_before_the_index_cap` (tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:320-361) demonstrates the exact failure: a whale market at 98% utilization on a steep interest-rate curve panics with `MATH_OVERFLOW` in `try_update_indexes_for`, and subsequent `withdraw` and `repay` revert with the same error — the market is bricked. The panic is not transient: nothing in the code can lower the index or the debt without first accruing, and accrual is what panics. `repay` cannot reduce `borrowed` because `ops::repay::accounting` calls `ops::load_leg` which accrues first.
+
+### Impact Explanation
+Permanent freezing of all funds in the affected market, plus protocol insolvency on the outstanding debt: suppliers' deposits can never be withdrawn, the debt can never be repaid or liquidated, `clean_bad_debt`/`seize_positions` cannot run (they accrue first), and `recapitalize` also accrues first. Every state-changing entrypoint for that `(hub, token)` book routes through `Cache::load` → `global_sync` → `accrue_step`, so the `MathOverflow` panic is reachable on all of them, forever. This is the "complete DoS" analog of the source CVE mapped onto a stored-state cliff rather than a request-level crash.
+
+### Likelihood Explanation
+No privileged action is required: an unprivileged address creates the precondition with ordinary `supply` and `borrow` calls — supply a large principal into a market with a steep rate curve and borrow it to sustained high utilization, then simply let time pass (each `update_indexes` call is permissionless, so the attacker can also drive the accrual cadence). The cost is capital, not privileges: the test reaches the cliff with ~10^27-token-scale books at ~98% utilization over multi-year horizons; the horizon shrinks with larger books and steeper curves (the borrow rate at full utilization is governance-set per market but the check is exercised by ordinary borrowing). Caveat: `docs/reference/invariants.md` INV-IDX-01 documents that "debt-value overflow can still revert accrual before that ceiling is reached," so this boundary is a known limitation; the vulnerability is that it is *irreversible* — there is no recovery path once crossed.
+
+### Recommendation
+Make the value-overflow non-fatal instead of a panic inside accrual:
+- In `accrue_step`, saturate `borrowed_original`/`supplied_original` at the maximum representable value for utilization purposes (utilization saturates at 100% anyway) rather than letting `scaled_to_original` overflow, and let `update_borrow_index` pin the index at `MAX_BORROW_INDEX_RAY` so the market keeps operating at capped interest.
+- Alternatively add a recovery path: allow `repay`/`seize_positions`/`recapitalize` to run against the *stored* (pre-accrual) indexes when accrual panics, so debt can be burned down and the market unfrozen.
+- At minimum, enforce a product bound `borrowed_scaled × index ≤ i128::MAX` at borrow time so the cliff is unreachable.
+
+### Proof of Concept
+1. Attacker supplies a whale-scale amount of an 18-decimal token into market `M` and supplies cheap collateral elsewhere.
+2. Attacker borrows `M` to ~98% utilization; the steep segment of the IRM applies.
+3. Attacker (or anyone) calls the permissionless `update_indexes` periodically. Each call runs `global_sync` → `accrue_step` → `scaled_to_original(borrowed, borrow_index)`.
+4. Once `borrowed × borrow_index > i128::MAX` — reached at index ≈170 RAY on a `10^30`-share book, well before the 10^36 index cap — `accrue_step` panics with `MathOverflow`. The ledger's `last_timestamp` is not advanced, so the panic recurs identically on every future call.
+5. `withdraw`, `repay`, `liquidate`, `seize_positions`, `recapitalize` all accrue first and revert identically; all supplied cash and outstanding debt in `M` are frozen permanently.
+
+This is demonstrated by the existing test `a_whale_market_at_sustained_high_utilization_hits_the_ray_value_ceiling_before_the_index_cap` (tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:320-361), which asserts `MATH_OVERFLOW` on `update_indexes`, `withdraw`, and `repay`, and that "the index cap did not engage before the value overflow."
