@@ -1,0 +1,22 @@
+### Title
+RAY-domain value overflow during accrual permanently freezes a market (no repay/withdraw/liquidate) - (File: contracts/pool/src/cache/scale.rs)
+
+### Summary
+Every pool verb accrues interest first, and accrual re-prices the market by multiplying scaled share totals by the RAY-scaled indexes via `scaled_to_original`/`Ray::mul`, which panics with `MathOverflow` when `total * index` exceeds `i128`. A whale-driven market at sustained high utilization can push `borrowed * borrow_index` (or `supplied * supply_index`) past the RAY domain ceiling well before the protocol's index cap (`MAX_BORROW_INDEX_RAY`) engages. From that point every accrual panics, so `supply`, `borrow`, `withdraw`, `repay`, `liquidate`, `clean_bad_debt`, `recapitalize`, and even `update_indexes` all revert forever — permanent freezing of all funds in that market.
+
+### Finding Description
+The analog of CVE-2017-0841 (integer overflow → memory corruption) is an `i128` overflow in value recomputation during accrual. `Cache::calculate_utilization` calls `scaled_to_original(env, self.borrowed, self.borrow_index)` and `scaled_to_original(env, self.supplied, self.supply_index)`, each a `Ray::mul` (`x * index / RAY` half-up) that widens to `I256` only for the intermediate; the *result* must still fit `i128`, otherwise `mul_div_half_up` raises `MathOverflow` (`common/src/math/fp_core.rs`, `common/src/rates/scaling.rs:14`). The RAY-domain ceiling is `i128::MAX / RAY` whole tokens ≈ 1.7e11, while `MAX_BORROW_INDEX_RAY` = 1e36 allows the index to grow to 1e9× initial — so for any market whose book exceeds ~170 whole-token-equivalents at RAY scale, index growth hits the value ceiling first. The protocol's own harness test `a_whale_market_at_sustained_high_utilization_hits_the_ray_value_ceiling_before_the_index_cap` (`tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:321-356`) demonstrates exactly this: after the cliff, `try_withdraw_raw` and `try_repay` both fail with `MATH_OVERFLOW` and the index cap never engages. Because there is no path that skips accrual, no `catch_unwind` semantics exist in Soroban, and `clean_bad_debt`/`recapitalize` also accrue first, the freeze is unrecoverable.
+
+### Impact Explanation
+Permanent freezing of user funds: every depositor's supply and every borrower's collateral in the affected (hub, token) book becomes inaccessible. Liquidations cannot execute, so pending bad debt cannot be cleaned and `recapitalize` cannot run either — the market is bricked and, where hub-level accounting aggregates the frozen book, protocol insolvency risk follows as the debt can never be repaid or seized against.
+
+### Likelihood Explanation
+Reachable by an unprivileged address via `supply` + `borrow` + permissionless `update_indexes`, but economically expensive: the attacker must fund a book whose RAY-scaled borrowed value can cross ~1.7e38 (e.g., ~1e11 units of an 18-decimal asset borrowed at ~98% utilization on a steep curve segment) and sustain high utilization while interest compounds over a long accrual horizon. The docs (`docs/reference/formulas.md` "Caps, fees, and numeric limits") acknowledge the limit but offer no mitigation — no early-warning, no index clamp before the value ceiling, and no accrual-free emergency exit. The required capital and horizon make this Medium rather than High.
+
+### Recommendation
+- Clamp accrual: cap `borrow_index`/`supply_index` growth such that `total_scaled * index` stays within the RAY domain (e.g., derive an effective index ceiling per book from current `supplied`/`borrowed`), or freeze the index at the cap while still allowing repay/withdraw/liquidate on the frozen index.
+- Add an accrual-free degradation path for `repay`, `withdraw`, and `liquidate` (or `clean_bad_debt`) so a saturated market can be unwound instead of bricking.
+- Emit an event/alarm as a market approaches the value ceiling so caps can be lowered before the cliff.
+
+### Proof of Concept
+Reproduced by the in-repo harness test `tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:321-356`: list an 18-decimal asset with a steep rate curve, `supply_raw(BOB, "BIG18", 1e9 * 10^18)`, `borrow_raw(ALICE, "BIG18", 98% of principal)`, then advance time and call `update_indexes` until it reverts with `MATH_OVERFLOW` inside `scaled_to_original`; afterward `try_withdraw_raw` and `try_repay` both revert with `MATH_OVERFLOW` while `borrow_index < MAX_BORROW_INDEX_RAY`, confirming the freeze precedes the index cap and is permanent.
