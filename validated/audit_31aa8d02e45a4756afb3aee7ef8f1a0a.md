@@ -1,0 +1,24 @@
+### Title
+Router executes unallowlisted, payload-supplied pool/token addresses under the caller's authorization tree, enabling wallet theft via a malicious swap route - (File: contracts/controller/src/strategies/swap.rs)
+
+### Summary
+The SSRF bug class — "unrestricted attacker-supplied destination that the trusted component then contacts" — maps onto XOXNO Lending's router strategy path. `swap_tokens` in `contracts/controller/src/strategies/swap.rs` (lines 25–38) loads the fixed router address but forwards fully attacker-influenced `swap: Bytes` route payloads into `router.execute_strategy`. The router keeps no allowlist of the pool/token contracts named in the payload, so a crafted route places arbitrary third-party contract code on the call stack *below* the caller's signed authorization entry. That code can invoke `token.transfer` from the caller's address; Soroban records it as a child of the caller's auth tree, so it executes against the caller's whole wallet — not just the routed amount. The repository's own test harness demonstrates the theft end-to-end.
+
+### Finding Description
+- `swap_collateral`, `swap_debt`, `repay_debt_with_collateral`, and `multiply` all funnel into `swap_tokens`, which calls `router.execute_strategy(&controller, &amount_in, swap)` with caller-supplied `swap` bytes inside the flash guard (`contracts/controller/src/strategies/swap.rs:36-38`). The controller only constrains the *input grant* (one exact `authorize_transfer_as_current`, `swap.rs:34`) and measures balance deltas afterward (`swap.rs:41-54`).
+- Per `contracts/swap-aggregator/README.md` and `docs/explanation/threat-model.md:154-165`, the router dispatches hops to whatever pool/token addresses the payload names and "keeps no allowlist of them". The controller's delta checks bound the *routed* amount only.
+- A malicious venue contract invoked mid-route can call `token.transfer(caller, attacker, balance)` from the caller's address. Because the invocation sits under the caller's `swap_collateral` authorization root, an honest simulation records it as a child auth entry, and if the caller signs that tree the transfer executes.
+- Proof already exists in-tree: `tests/test-harness/tests/strategy/rogue_hop_pool_transfer_joins_caller_auth_tree.rs:194-227` builds a `route_through_pool_stealing(WALLET_BALANCE)`, shows the recorded auth tree contains a rogue `transfer(alice → attacker, WALLET_BALANCE)` beneath `swap_collateral`, and asserts `wallet(alice) == 0` and `wallet(attacker) == WALLET_BALANCE`.
+
+### Impact Explanation
+Theft of user funds exceeding the routed amount: the entire token balance of the victim's wallet (or any child transfer the venue chooses to request) is drained under a signature the victim believed only authorized a collateral/debt swap. Neither the payload's `min_out`, the controller's `RouterOverspend`/`NoSwapOutput` checks, nor the final health-factor gate bounds this loss — the stolen transfer is orthogonal to the swap accounting.
+
+### Likelihood Explanation
+Reachable by an unprivileged address: the attacker deploys a contract exposing a pool-compatible ABI, builds a route payload that hops through it, and gets a victim (or the victim's quoting/signing pipeline) to submit `swap_collateral`/`swap_debt`/`repay_debt_with_collateral`/`multiply` with those bytes. The victim's wallet loss requires the victim to sign the poisoned auth tree; the threat model notes simulation records the rogue transfer as a child of the caller's entry, so a client that does not decode and reject unexpected children signs it blindly. The in-repo test confirms the mechanism works exactly as described.
+
+### Recommendation
+- Add a venue/token allowlist in the router (or a controller-side registry of approved pool contracts per hub) so routes can only dispatch to governed addresses, matching how markets themselves are governed.
+- Short-term: enforce at the SDK/client layer a hard check that the simulated auth tree for a strategy verb contains exactly the documented children (the single input `transfer` to the router) and refuse to sign otherwise — the threat model already prescribes this; make it a library-level enforcement rather than documentation.
+
+### Proof of Concept
+See `tests/test-harness/tests/strategy/rogue_hop_pool_transfer_joins_caller_auth_tree.rs:194-227`: a route is constructed through an attacker pool whose hop performs `token.transfer(alice, attacker, WALLET_BALANCE)`; simulation records the theft as a child of Alice's `swap_collateral` auth entry, execution leaves Alice's wallet at 0 and the attacker's at `WALLET_BALANCE`, while the swap itself still settles normally (`supply_balance_raw(ALICE, "ETH") == FAIR_OUT_ETH`), so all controller-side guards pass.
