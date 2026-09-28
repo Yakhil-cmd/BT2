@@ -1,0 +1,29 @@
+### Title
+Stale delegate grants survive NFT transfer and silently reactivate when the position NFT returns to the granting owner - (File: contracts/controller/src/storage/account.rs)
+
+### Summary
+The bug class is "cleanup that does not traverse keyed sub-state, so stale entries persist and are reused on re-entry". In Ajna, `delete stakes[tokenId_]` left the nested `snapshot` mapping intact, so a re-stake reused stale `BucketState`. In XOXNO Lending the same shape exists for `ControllerKey::Delegates(account_id)`: a `DelegateGrant` is stored under the account id, and validity is decided by a *read-time filter* (`grant.granted_by == owner`) rather than by clearing the entry when authority changes. Nothing deletes the grant on position-NFT transfer; the only deletions are `remove_delegate` (which only the *current* owner can authorize, and which deletes a stale grant merely as a side effect) and `remove_account_entry` (only on full account deletion). If the NFT leaves the granting owner and later returns, `granted_by == owner` is true again and the entire old delegate list is live again — with no fresh `add_delegate` consent. Delegates may borrow and withdraw to arbitrary recipients, so a dormant or forgotten delegate can then drain the account.
+
+### Finding Description
+`get_delegates` filters the stored `DelegateGrant` by `granted_by == *owner` and returns the delegates list; it never removes a mismatched grant on read (`contracts/controller/src/storage/account.rs:174-181`). The code itself documents the revival hazard: `remove_delegate` deletes a grant whose `granted_by` mismatches "preventing those grants from reactivating if the NFT returns to their original owner" (`storage/account.rs:224-238`) — but that cleanup only runs if the *new* owner voluntarily calls `remove_delegate` for every stale delegate. There is no hook on `position-nft` `transfer`/`approve` that clears `ControllerKey::Delegates`, and `remove_account_entry` (which does remove it) runs only when both position maps are empty (`account.rs:159-170`, `storage/account.rs:250-256`). Like Ajna's `snapshot` map, the keyed sub-state persists across the operation that "ends" the prior owner's tenure and is transparently reused when the original owner's address again satisfies the filter.
+
+Reachable by unprivileged actors: owner calls `add_delegate` for an active position manager (e.g., automation), later transfers the NFT (`position-nft transfer`), and the NFT subsequently returns to that same owner via transfer, sale, or `Credit`-mode liquidation proceeds. At that instant every previously granted delegate regains full act-on-behalf power.
+
+### Impact Explanation
+Theft of user funds. Per the protocol's own integrator docs, "Delegates may borrow or withdraw to arbitrary recipients" (`skills/xoxno-lending-contracts/positions.md`), and `add_delegate` exists to grant managers borrowing authority (`account.rs:228-258`). A delegate that was legitimately granted, then implicitly revoked by a transfer, can — the moment the NFT returns to the original owner — call `borrow`/`withdraw` on that account and send proceeds to itself, without the owner ever re-authorizing the grant. The victim reasonably believes ownership change severed the delegation, since `get_delegates` returned empty while they did not own the NFT.
+
+### Likelihood Explanation
+Requires a specific sequence — grant → NFT leaves owner → NFT returns to the same owner — rather than a single call, which lowers likelihood versus the Ajna original (where mere re-staking sufficed). However, round-tripping an NFT (collateral wrapper, marketplace listing and delisting, lending the NFT, `SeizeMode::Credit` flows, wallet migration back) is plausible, and an attacker aware of the mechanics who controls an approved position manager can actively engineer or wait for the return. Once the return happens, exploitation is a single `borrow`/`withdraw` call. Rated Medium likelihood.
+
+### Recommendation
+Invalidate delegate grants on any ownership change rather than by a lazy `granted_by` filter. Options: (a) bind the grant to an ownership epoch or NFT sequence — store a monotonically increasing owner nonce in `AccountMeta`/`DelegateGrant` and compare nonces instead of addresses, so returning to the same address cannot reactivate; (b) have the controller expose a transfer notification that deletes `ControllerKey::Delegates(account_id)`; or (c) at minimum, document and enforce that any path re-establishing prior ownership first purges stale `Delegates` entries. Also consider emitting a warning invariant in `get_delegates`: a grant surviving across an ownership change should be deleted, not re-filtered.
+
+### Proof of Concept
+1. Alice owns account `A` (position-NFT id `A`) with collateral. Governance has activated position manager `M`.
+2. Alice calls `controller.add_delegate(alice, A, M)` → `DelegateGrant{granted_by: alice, delegates: [M]}` stored at `Delegates(A)` (`storage/account.rs:203-221`).
+3. Alice transfers NFT `A` to Bob. `get_delegates(A, bob)` returns empty (filter mismatch), but the entry persists — no deletion occurred.
+4. Bob (or a later holder) transfers NFT `A` back to Alice — e.g., Bob returns it, or Alice repurchases it.
+5. `get_delegates(A, alice)` now returns `[M]` again: `grant.granted_by == alice` once more (`storage/account.rs:176-180`). No `add_delegate` was ever re-authorized.
+6. `M` calls `controller.borrow(caller=M, account_id=A, ...)` / `withdraw(..., to=M)` and drains Alice's collateral/debt capacity to its own address.
+
+Uncertain/limited: I did not read `risk/validation.rs::require_authorized_caller` in full to confirm the exact delegate-authorization check, but the docs and `add_delegate`'s gating on "active position manager" confirm delegates act with account authority; the revival mechanism itself is fully confirmed by the source comments at `storage/account.rs:224-225`.
