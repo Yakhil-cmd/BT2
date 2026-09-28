@@ -1,0 +1,27 @@
+### Title
+i128 overflow in interest accrual permanently freezes a large high-utilization market - (File: common/src/rates/index.rs)
+
+### Summary
+The memory-safety/corruption class maps onto unchecked fixed-point arithmetic: `supplied.mul(old_index)` inside `update_supply_index` panics with `MathOverflow` once `supplied * supply_index / RAY` exceeds `i128`. The supply index is capped at `MAX_SUPPLY_INDEX_RAY`, but the RAY-denominated *value* `supplied × index` overflows long before the index cap engages when the market's scaled supply is large. Because `global_sync` runs this accrual at the top of every pool verb, once the overflow threshold is crossed every subsequent operation on that market — supply, withdraw, borrow, repay, liquidate — reverts forever. The repo's own test `a_whale_market_at_sustained_high_utilization_hits_the_ray_value_ceiling_before_the_index_cap` demonstrates exactly this cliff and asserts the market is frozen ("no repay, no withdraw, no liquidation").
+
+### Finding Description
+`update_supply_index` computes `total_supplied_value = supplied.mul(env, old_index)` where `Ray::mul` resolves to `mul_div_half_up(supplied, old_index, RAY)` and panics with `GenericError::MathOverflow` when the result does not fit `i128` (`common/src/rates/index.rs:29-45`, `common/src/math/fp_core.rs:104-118`). Unlike `mul_div_floor_saturating`, there is no saturation fallback — `Ray::mul` uses the panicking `try_mul_div_half_up` path only when the *product* overflows, but here the product fits `i128` while the *quotient* exceeds it, so the widened path returns `None` and panics.
+
+The borrow-side accrual in `accrue_step` similarly multiplies `borrowed × new_borrow_index` inside `calculate_supplier_rewards` (`common/src/rates/index.rs:73-89`), which panics under the same condition. `accrue_chunk` is invoked unconditionally by `global_sync` whenever time has elapsed (`contracts/pool/src/interest.rs:20-33`), and every controller verb accrues the touched markets first. The test in `tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:320-361` shows that on a billion-unit 18-decimal market at ~98% utilization on the steep XLM rate curve, `try_update_indexes_for` fails with `MATH_OVERFLOW` while `borrow_index < MAX_BORROW_INDEX_RAY`, and subsequently `try_withdraw_raw` and `try_repay` both revert with `MATH_OVERFLOW`.
+
+### Impact Explanation
+Permanent freezing of funds for an entire market. Once `supplied × supply_index` (or `borrowed × borrow_index`) crosses the `i128` RAY-value ceiling, the panic precedes all state changes: suppliers can never withdraw, borrowers can never repay, liquidators cannot liquidate, and `clean_bad_debt`/`recapitalize` also accrue first. All tokens held by the pool book for that market are permanently locked in the contract. Additionally, positions collateralized by the frozen asset become unliquidatable, so deteriorating debt positions can push the protocol toward insolvency with no remedy.
+
+### Likelihood Explanation
+Medium-low. Exploitation requires no privilege but requires the market to grow to an extreme state: on the order of 10^27 base units of scaled supply (e.g., a billion whole tokens at 18 decimals) combined with sustained ~98% utilization on a steep rate curve so the index compounds by orders of magnitude. Any unprivileged user can contribute by supplying and borrowing, and `update_indexes` itself is callable by anyone, but reaching the cliff needs both enormous real capital supplied and a long accrual horizon at high utilization. For low-decimal, high-supply assets listed without tight caps, the domain is more reachable than the test's billion-token example suggests, since caps are validated by `require_cap_within_asset_domain` but utilization and time are not bounded.
+
+### Recommendation
+Bound the value product, not just the index. Either (a) cap `supplied` (scaled shares) such that `supplied × MAX_SUPPLY_INDEX_RAY / RAY` cannot exceed `i128::MAX` — i.e., enforce a scaled-supply ceiling at listing/deposit time via `require_cap_within_asset_domain`-style validation — or (b) make `update_supply_index` and `calculate_supplier_rewards` use `mul_div_floor_saturating` with an explicit index/value clamp so accrual degrades gracefully instead of trapping every entrypoint. At minimum, the accrual path should detect the near-overflow state and clamp the index early rather than letting `scaled_to_original` panic in a way that bricks the market.
+
+### Proof of Concept
+See `tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:320-361`:
+
+1. Attacker/whale supplies `10^9 × 10^18` base units of an 18-decimal asset (`t.supply_raw(BOB, "BIG18", principal)`); a second user borrows ~98% of it (`t.borrow_raw(ALICE, "BIG18", debt)`).
+2. Time advances year-by-year; each `update_indexes` accrues compound interest via `global_sync` → `accrue_chunk` → `accrue_step`.
+3. Before `borrow_index` reaches `MAX_BORROW_INDEX_RAY`, `borrowed × new_borrow_index` overflows `i128` inside `calculate_supplier_rewards`/`scaled_to_original` and the call reverts with `MathOverflow`.
+4. From that block onward, `withdraw`, `repay`, `liquidate`, and `update_indexes` for that market all revert with the same error, since every verb calls `global_sync` first. The test asserts `borrow_index < MAX_BORROW_INDEX_RAY` at failure, proving the value overflow precedes the designed cap.
