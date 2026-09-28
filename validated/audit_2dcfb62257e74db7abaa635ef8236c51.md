@@ -1,0 +1,29 @@
+### Title
+Permissionless third-party `supply` can indefinitely front-run `clean_bad_debt`, keeping insolvent accounts above the dust threshold - (File: contracts/controller/src/positions/supply.rs)
+
+### Summary
+`clean_bad_debt` is the only permissionless path that socializes an insolvent account's residual debt, and it reverts unless the account's remaining collateral value is at or below the configured dust threshold. `supply` is callable by any authenticated address against an existing foreign account as long as every supplied asset is a supply position the account already holds. An unprivileged attacker can therefore monitor `clean_bad_debt` invocations and front-run each one with a minimal top-up of an already-held collateral asset, pushing the account's total collateral back above the dust threshold and reverting the cleanup — mirroring the Usual bug class where a public `claim` raced a pending redirection to neutralize it.
+
+### Finding Description
+- `process_supply` in `contracts/controller/src/positions/supply.rs` authenticates only the caller and, for a foreign `account_id`, requires only that each supplied `HubAssetKey` already exists in `account.supply_positions` (`require_third_party_existing_supply`, lines 78-97). There is no solvency, health-factor, or bad-debt gate on the target account — ordinary supply skips the post-flow risk checks.
+- `clean_bad_debt` (`contracts/controller/src/lib.rs`) socializes the account's debt and burns its NFT only when the account is insolvent and its remaining collateral value is at or below the dust threshold; it reverts otherwise. This is confirmed by `docs/reference/endpoints.md` ("Socializes ... when it is insolvent and its remaining collateral value is at or below the dust threshold; reverts otherwise") and by INV-LIQ-04 in `scripts/permissionless_entrypoints.txt`: "only once its remaining collateral is at or below the dust threshold; only the owner-gated `force_socialize_bad_debt` omits the dust cap."
+- Because total collateral for the eligibility check is unweighted USD value (INV-RISK-02 notes the bad-debt total rounds half-up), even a dust-denominated top-up of any already-held supply asset deterministically moves the account above the threshold when it was previously exactly at or just below it.
+- The attack is repeatable: each time the account's collateral drifts back under the threshold (or a keeper retries), the attacker spends only a dust-scale amount of a token the account already holds. There is no cooling-off, pending-cleanup flag, or minimum top-up analogous to the missing `initiatedRedirectedOffChainDistribution` guard.
+
+### Impact Explanation
+Bad-debt socialization is permanently delayed as long as the attacker is willing to spend dust-sized top-ups. While blocked, the insolvent account's debt continues to accrue borrow interest via the index, worsening the shortfall that suppliers must ultimately absorb through the supply-index write-down. The owner-gated `force_socialize_bad_debt` exists but requires a governance/owner action for each affected account, so the practical effect is a griefing DoS on the permissionless cleanup path and growth of protocol insolvency — a temporary (indefinitely extendable) freezing of the bad-debt resolution mechanism.
+
+### Likelihood Explanation
+Requires only an authenticated address and a dust-value amount of a token the target already supplies; no leverage, oracle manipulation, or privileged role. Any liquidation that leaves collateral slightly above the dust threshold is already blockable; the attacker can also grief right at the boundary each time. Cost per grief is bounded by the dust threshold value, while the damage (unpaid debt accrual) compounds. Medium likelihood: it requires an insolvent account to exist and an economically motivated griefer (e.g., a supplier hoping for better recovery, or the debtor delaying NFT burn).
+
+### Recommendation
+Gate third-party top-ups for insolvent or cleanup-eligible accounts: in `require_third_party_existing_supply` or `process_supply`, reject foreign `supply` when the target account is insolvent and at/near the bad-debt dust threshold (e.g., total collateral ≤ dust threshold + margin). Alternatively, allow `clean_bad_debt` to seize and refund any same-transaction top-ups, or snapshot eligibility so a front-run top-up is swept into the cleanup rather than disqualifying it. A minimal fix mirroring the report's suggestion: record a pending-cleanup marker (or check eligibility inside `clean_bad_debt` against a state the attacker cannot inflate) so dust top-ups cannot veto socialization.
+
+### Proof of Concept
+1. ALICE supplies USDC and borrows ETH; the ETH price move leaves her insolvent: total collateral value `C` sits exactly at the dust threshold `D` (`C <= D`), so `clean_bad_debt(caller, alice_id)` would succeed.
+2. Keeper submits `clean_bad_debt(alice_id)`.
+3. Attacker BOB observes the submission and front-runs with `supply(bob, alice_id, spoke_id, [(usdc_hub_asset, ε)])` where `ε` is the minimum positive amount; `require_third_party_existing_supply` passes because USDC is already in ALICE's `supply_positions`.
+4. The keeper's `clean_bad_debt` now computes total collateral `C + ε_value > D` and reverts on the dust-threshold check.
+5. Whenever collateral again reaches `<= D` (interest accrual lowers HF but collateral value only changes via price), BOB repeats step 3 for another dust-priced top-up, keeping the bad debt unsocialized indefinitely while the debt index accrues against suppliers.
+
+Caveat: if the spoke asset is `paused` or `frozen`, the top-up leg is blocked, so the grief requires the collateral listing to remain open for entries — which is the normal state.
