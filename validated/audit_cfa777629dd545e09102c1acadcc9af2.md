@@ -1,0 +1,22 @@
+### Title
+i128 overflow in RAY interest accrual permanently freezes a high-decimal market before the index caps engage - (File: common/src/rates/index.rs)
+
+### Summary
+CVE-2023-0137 is a heap buffer overflow — an arithmetic write past a representable bound corrupting state. The analog in XOXNO Lending is a fixed-point `i128` overflow inside interest accrual: `Ray::mul` (`mul_div` on `i128`) panics when a market's RAY-denominated debt value exceeds `i128::MAX` well before `MAX_BORROW_INDEX_RAY` is reached. Because every pool verb accrues first via `global_sync`, once the market crosses that cliff no `supply`, `borrow`, `withdraw`, `repay`, `liquidate`, `update_indexes`, or `clean_bad_debt` call can ever execute again, and the cap intended to bound the index never engages.
+
+### Finding Description
+Accrual runs through `interest::global_sync` → `accrue_chunk` → `accrue_step`, which calls `update_borrow_index` and `calculate_supplier_rewards` in `common/src/rates/index.rs`. `update_borrow_index` multiplies `old_index.mul(env, interest_factor)` and only afterwards compares to `MAX_BORROW_INDEX_RAY`, so an index overflowing `i128` traps before the cap can clamp it (index.rs:13-19). `calculate_supplier_rewards` computes `borrowed.mul(env, new_borrow_index)` (index.rs:80-81) and `update_supply_index` computes `supplied.mul(env, old_index)` (index.rs:34); both panic via `Ray::mul`/`scaled_to_original` (scaling.rs:14-16, fp_core `mul_div_*` raising `MathOverflow`) when `scaled * index / RAY` exceeds `i128::MAX`. `ops::accrue` (the `update_indexes` entrypoint) and every other pool op load the `Cache` and run `global_sync` unconditionally (ops/market.rs:65-72, interest.rs:20-33), so the panic poisons the whole market. The repository's own test `a_whale_market_at_sustained_high_utilization_hits_the_ray_value_ceiling_before_the_index_cap` (tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:320-361) demonstrates: on an 18-decimal market with ~`1e36` raw ray supplied and 98% utilization on the XLM curve, accrual fails with `MATH_OVERFLOW`, `borrow_index < MAX_BORROW_INDEX_RAY`, and both `withdraw` and `repay` revert with the same error.
+
+### Impact Explanation
+Permanent freezing of funds: all suppliers' deposits and all collateral backing borrows in the affected `(hub, token)` market become unrecoverable — `withdraw`, `repay`, `liquidate`, and `clean_bad_debt` all execute `global_sync` first and hit the same `MathOverflow` panic. The panic is atomic and state is never committed, so the index cap never writes and there is no recovery path; no verb can skip accrual.
+
+### Likelihood Explanation
+A single unprivileged address can drive the market to the cliff: supply a large amount of a high-decimals asset (`supply`), borrow up to max utilization (`borrow` against separately supplied collateral), then let sustained high-utilization interest accrue (permissionless `update_indexes` advances indexes; passage of time does the rest). No governance action, key compromise, or oracle manipulation is required — only capital and the protocol's own interest-rate curve.
+
+### Recommendation
+Apply the `MAX_BORROW_INDEX_RAY`/`MAX_SUPPLY_INDEX_RAY` caps via a saturating path *before* materializing `scaled * index` products: e.g., compute the new index with `mul_div_floor_saturating` and clamp, and in `calculate_supplier_rewards`/`update_supply_index` saturate `borrowed.mul(index)`/`supplied.mul(index)` rather than panicking. Additionally consider a per-market RAY-value ceiling on `supplied`/`borrowed` enforced at `supply`/`borrow` so the value domain always stays below `i128::MAX` at `MAX_BORROW_INDEX_RAY`.
+
+### Proof of Concept
+See `tests/test-harness/tests/controller/large_positions_and_long_horizons.rs:320-361`: it creates an 18-decimals `BIG18` market on the XLM curve, supplies `1e9 * 1e18` units, borrows 98% of it, advances time year-by-year calling `update_indexes`, and observes `MATH_OVERFLOW` with `borrow_index < MAX_BORROW_INDEX_RAY`, after which `withdraw` and `repay` revert identically.
+
+Caveat: this behavior is already exercised by an in-repo test whose comment notes the documented bound in `docs/reference/formulas.md` is wrong; if the protocol considers this a documented domain limitation, it may be treated as a known issue rather than a new finding.
